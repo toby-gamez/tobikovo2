@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Český jazyk - Tobikovo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <nav id="myNavbar">
+        <a href="#home"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
+        <a href="#home">Domů</a>
+        <a href="#ucivo">Učivo</a>
+        <a href="#o-nas">O nás</a>
+    </nav>
+
+    <!-- Obsah stránky -->
+    <main>
+
+        <section>
+            <h1 class="verybig">Český jazyk</h1>
+            <ul class="grid">
+                <li class="item">
+                    <h3></h3>
+                    <div class="grid-content">
+                    </div>
+                </li>
+                <li class="grid-item">
+                    <h3>Mluvnice</h3>
+                    <div class="grid-content">
+                        <button type="button" class="ripple-button" onclick="openMluvnice()">Otevřít</button>
+                    </div>
+                </li>
+                <li class="grid-item">
+                    <h3>Literatura</h3>
+                    <div class="grid-content">
+                        <button type="button" class="ripple-button">Otevřít</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+           
+    </main>
+    <!-- Patička -->
+    <footer>
+        <div class="footer-content">
+            <a href="about.html"><img src="images/white-logo.png"  alt="Tobikovo Logo" width="100px"></a> 
+        </div>
+    </footer>
+    <script src="javastripts/nav.js"></script>
+    <script>
+        function openMluvnice() {
+            window.location.href = "mluvnice.html";
+        }
+    </script>
+</body>
+
+</html>
