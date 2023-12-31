@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Přídavná jména - Mluvnice - Tobikovo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <nav id="myNavbar">
+        <a href="#home"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
+        <a href="#home">Domů</a>
+        <a href="#ucivo">Učivo</a>
+        <a href="#o-nas">O nás</a>
+    </nav>
+
+    <!-- Obsah stránky -->
+    <main>
+
+        <section>
+            <h1 class="verybig">Přídavná jména</h1>
+            <ul class="grid">
+                <li class="grid-item">
+                    <h3>Mluvnické kategorie</h3>
+                    <div class="grid-content">
+                        <button type="button" class="ripple-button2" onclick="openMluvKat()">Otevřít</button>
+                    </div>
+                </li>
+                <li class="grid-item">
+                    <h3>Jmenné tvary</h3>
+                    <div class="grid-content">
+                        <button type="button" class="ripple-button" onclick="openJmenne()">Otevřít</button>
+                    </div>
+                </li>
+                <li class="grid-item">
+                    <h3>Stupňování</h3>
+                    <div class="grid-content">
+                        <button type="button" class="ripple-button" onclick="openStupnovani()">Otevřít</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+    <!-- Patička -->
+    <footer>
+        <div class="footer-content">
+            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+        </div>
+    </footer>
+    <script src="javastripts/nav.js"></script>
+    <script>
+        function openMluvKat() {
+            window.location.href = "ml-mluv-kat-prid.html";
+        }
+    </script>
+    <script>
+        function openJmenne() {
+            window.location.href = "ml-jmenne-tvary.html";
+        }
+    </script>
+    <script>
+        function openStupnovani() {
+            window.location.href = "ml-stupnovani-prid.html";
+        }
+    </script>
+</body>
+
+</html>

@@ -37,19 +37,19 @@
                 <li class="grid-item">
                     <h3>Přídavná jména</h3>
                     <div class="grid-content">
-                        <button type="button" class="ripple-button">Otevřít</button>
+                        <button type="button" class="ripple-button" onclick="openPridJmena()">Otevřít</button>
                     </div>
                 </li>
                 <li class="grid-item">
                     <h3>Zájmena</h3>
                     <div class="grid-content">
-                        <button type="button" class="ripple-button">Otevřít</button>
+                        <button type="button" class="ripple-button" onclick="openZajmena()">Otevřít</button>
                     </div>
                 </li>
                 <li class="grid-item">
                     <h3>Číslovky</h3>
                     <div class="grid-content">
-                        <button type="button" class="ripple-button">Otevřít</button>
+                        <button type="button" class="ripple-button" onclick="openCislovky()">Otevřít</button>
                     </div>
                 </li>
                 <li class="item">
@@ -58,7 +58,7 @@
                 <li class="grid-item">
                     <h3>Slovesa</h3>
                     <div class="grid-content">
-                        <button type="button" class="ripple-button">Otevřít</button>
+                        <button type="button" class="ripple-button" onclick="openSlovesa()">Otevřít</button>
                     </div>
                 </li>
                 <li class="grid-item">
@@ -69,18 +69,38 @@
                 </li>
             </ul>
         </section>
-           
+
     </main>
     <!-- Patička -->
     <footer>
         <div class="footer-content">
-            <a href="about.html"><img src="images/white-logo.png"  alt="Tobikovo Logo" width="100px"></a> 
+            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
         </div>
     </footer>
     <script src="javastripts/nav.js"></script>
     <script>
         function openPodsJmena() {
             window.location.href = "ml-pods-jmena.html";
+        }
+    </script>
+    <script>
+        function openPridJmena() {
+            window.location.href = "ml-prid-jmena.html";
+        }
+    </script>
+    <script>
+        function openZajmena() {
+            window.location.href = "ml-zajmena.html";
+        }
+    </script>
+    <script>
+        function openCislovky() {
+            window.location.href = "ml-cislovky.html";
+        }
+    </script>
+    <script>
+        function openSlovesa() {
+            window.location.href = "ml-slovesa.html";
         }
     </script>
 </body>
