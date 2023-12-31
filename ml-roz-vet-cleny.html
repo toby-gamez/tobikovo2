@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slovesa - Mluvnice - Tobikovo</title>
+    <title>Rozvíjející větné členy - Mluvnice - Tobikovo</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/nav.css">
@@ -26,30 +26,24 @@
     <main>
 
         <section>
-            <h1 class="verybig">Slovesa</h1>
+            <h1 class="verybig">Rozvíjející větné členy</h1>
             <ul class="grid">
                 <li class="grid-item">
-                    <h3>Mluvnické kategorie</h3>
+                    <h3>Předmět</h3>
                     <div class="grid-content">
-                        <button type="button" class="ripple-button2" onclick="openMluvKat()">Otevřít</button>
+                        <button type="button" class="ripple-button" onclick="openPredmet()">Otevřít</button>
                     </div>
                 </li>
                 <li class="grid-item">
-                    <h3>Tvar jednoduchý a složený</h3>
+                    <h3>Přívlastek</h3>
                     <div class="grid-content">
-                        <button type="button" class="ripple-button3" onclick="openTvar();">Otevřít</button>
+                        <button type="button" class="ripple-button" onclick="openPrivlastek()">Otevřít</button>
                     </div>
                 </li>
                 <li class="grid-item">
-                    <h3>Shoda přísudku s podmětem</h3>
+                    <h3>Příslovečné určení</h3>
                     <div class="grid-content">
-                        <button type="button" class="ripple-button2" onclick="openShoda()">Otevřít</button>
-                    </div>
-                </li>
-                <li class="grid-item">
-                    <h3>Přísudek</h3>
-                    <div class="grid-content">
-                        <button type="button" class="ripple-button" onclick="openPrisudek()">Otevřít</button>
+                        <button type="button" class="ripple-button2" onclick="openPrislovecne()">Otevřít</button>
                     </div>
                 </li>
             </ul>
@@ -64,23 +58,18 @@
     </footer>
     <script src="javastripts/nav.js"></script>
     <script>
-        function openMluvKat() {
-            window.location.href = "ml-mluv-kat-slovesa.html";
+        function openPredmet() {
+            window.location.href = "ml-predmet.html"
         }
     </script>
     <script>
-        function openTvar() {
-            window.location.href = "ml-tvary-sloves.html";
+        function openPrivlastek() {
+            window.location.href = "ml-privlastek.html"
         }
     </script>
     <script>
-        function openShoda() {
-            window.location.href = "ml-shoda-prisudku-s-podmetem.html";
-        }
-    </script>
-    <script>
-        function openPrisudek() {
-            window.location.href = "ml-prisudek.html";
+        function openPrislovecne() {
+            window.location.href = "ml-prislovecne-urceni.html"
         }
     </script>
 </body>
