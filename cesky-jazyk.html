@@ -15,6 +15,9 @@
 </head>
 
 <body>
+    <div class="loading-bar-container">
+        <div class="loading-bar"></div>
+    </div>
     <nav id="myNavbar">
         <a href="#home"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
         <a href="#home">Domů</a>
@@ -28,11 +31,6 @@
         <section>
             <h1 class="verybig">Český jazyk</h1>
             <ul class="grid">
-                <li class="item">
-                    <h3></h3>
-                    <div class="grid-content">
-                    </div>
-                </li>
                 <li class="grid-item">
                     <h3>Mluvnice</h3>
                     <div class="grid-content">
@@ -42,23 +40,39 @@
                 <li class="grid-item">
                     <h3>Literatura</h3>
                     <div class="grid-content">
-                        <button type="button" class="ripple-button">Otevřít</button>
+                        <button type="button" class="ripple-button" onclick="openLiteratura()">Otevřít</button>
+                    </div>
+                </li>
+                <li class="grid-item">
+                    <h3>Sloh</h3>
+                    <div class="grid-content">
+                        <button type="button" class="ripple-button" onclick="openSloh()">Otevřít</button>
                     </div>
                 </li>
             </ul>
         </section>
-           
+
     </main>
     <!-- Patička -->
     <footer>
         <div class="footer-content">
-            <a href="about.html"><img src="images/white-logo.png"  alt="Tobikovo Logo" width="100px"></a> 
+            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
         </div>
     </footer>
     <script src="javastripts/nav.js"></script>
     <script>
         function openMluvnice() {
             window.location.href = "mluvnice.html";
+        }
+    </script>
+    <script>
+        function openLiteratura() {
+            window.location.href = "literatura.html";
+        }
+    </script>
+    <script>
+        function openSloh() {
+            window.location.href = "sloh.html";
         }
     </script>
 </body>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Představitelé - Hudební výchova - Tobikovo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/grid.css">
+</head>
+
+<body>
+    <div class="loading-bar-container">
+        <div class="loading-bar"></div>
+    </div>
+    
+    <nav id="myNavbar">
+        <a href="#home"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
+        <a href="#home">Domů</a>
+        <a href="#ucivo">Učivo</a>
+        <a href="#o-nas">O nás</a>
+    </nav>
+
+    <!-- Obsah stránky -->
+    <main>
+
+        <section>
+            <h1 style="font-size: 45px;">Představitelé</h1>
+            <ul class="grid">
+                <li class="grid-item">
+                    <h3>Bedřich Smetana</h3>
+                    <div class="grid-content">
+                        <button type="button" class="ripple-button2" onclick="openSmetana()">Otevřít</button>
+                    </div>
+                </li>
+                <li class="grid-item">
+                    <h3>Antonín Dvořák</h3>
+                    <div class="grid-content">
+                        <button type="button" class="ripple-button" onclick="openDvorak()">Otevřít</button>
+                    </div>
+                </li>
+                <li class="grid-item">
+                    <h3>Fryderyk Chopin</h3>
+                    <div class="grid-content">
+                        <button type="button" class="ripple-button2" onclick="openChopin()">Otevřít</button>
+                    </div>
+                </li>
+                <li class="grid-item">
+                    <h3>Leoš Janáček</h3>
+                    <div class="grid-content">
+                        <button type="button" class="ripple-button" onclick="openJanacek()">Otevřít</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+    <!-- Patička -->
+    <footer>
+        <div class="footer-content">
+            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+        </div>
+    </footer>
+    <!-- JSs -->
+    <script src="javastripts/nav.js"></script>
+    <script>
+        function openSmetana() {
+            window.location.href = "hv-smetana.html"
+        }
+    </script>
+    <script>
+        function openDvorak() {
+            window.location.href = "hv-dvorak.html"
+        }
+    </script>
+    <script>
+        function openChopin() {
+            window.location.href = "hv-chopin.html"
+        }
+    </script>
+    <script>
+        function openJanacek() {
+            window.location.href = "hv-janacek.html"
+        }
+    </script>
+</body>
+
+</html>

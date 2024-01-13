@@ -7,6 +7,30 @@ navbar.innerHTML = `
     <a href="index.html"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
     <a href="index.html">Domů</a>
     <a href="cesky-jazyk.html">Český jazyk</a>
-    <a href="#o-nas">hoida</a>
+    <a href="hudebni-vychova.html">Hudební výchova</a>
 </nav>
 `;
+/* Loading bar */
+document.addEventListener('DOMContentLoaded', function () {
+    var loadingBarContainer = document.querySelector('.loading-bar-container');
+    var loadingBar = document.querySelector('.loading-bar');
+
+    // Funkce pro zobrazení loading baru s postupně narůstající šířkou
+    function showLoadingBar() {
+        loadingBar.style.width = '100%';
+    }
+
+    // Po dokončení animace loading baru skryje celý container
+    function hideLoadingContainer() {
+        loadingBarContainer.style.display = 'none';
+    }
+
+    // Spustí simulaci načítání při načtení stránky
+    simulateLoading();
+
+    // Funkce pro simulaci načítání
+    function simulateLoading() {
+        setTimeout(showLoadingBar, 1000); // Simulace trvání načítání (1 sekunda)
+        setTimeout(hideLoadingContainer, 3000); // Po dokončení animace skryje loading container (3 sekundy)
+    }
+});

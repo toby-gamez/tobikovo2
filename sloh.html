@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sloh - Tobikovo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/grid.css">
+</head>
+
+<body>
+    <div class="loading-bar-container">
+        <div class="loading-bar"></div>
+    </div>
+
+    <nav id="myNavbar">
+        <a href="#home"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
+        <a href="#home">Domů</a>
+        <a href="#ucivo">Učivo</a>
+        <a href="#o-nas">O nás</a>
+    </nav>
+
+    <!-- Obsah stránky -->
+    <main>
+
+        <section>
+            <h1 class="verybig">Sloh</h1>
+            <ul class="grid">
+                <li class="grid-item">
+                    <h3>Popis uměleckého díla</h3>
+                    <div class="grid-content">
+                        <button type="button" class="ripple-button3" onclick="openPopis()">Otevřít</button>
+                    </div>
+                </li>
+                <li class="grid-item">
+                    <h3>Líčení</h3>
+                    <div class="grid-content">
+                        <button type="button" class="ripple-button" onclick="openLiceni()">Otevřít</button>
+                    </div>
+                </li>
+                <li class="grid-item">
+                    <h3>Charakteristika</h3>
+                    <div class="grid-content">
+                        <button type="button" class="ripple-button" onclick="openCharakteristika()">Otevřít</button>
+                    </div>
+                </li>
+                <li class="grid-item">
+                    <h3>Hmm...</h3>
+                    <div class="grid-content">
+                        <button type="button" class="ripple-button" disabled>Otevřít</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+    <!-- Patička -->
+    <footer>
+        <div class="footer-content">
+            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+        </div>
+    </footer>
+    <!-- JSs -->
+    <script src="javastripts/nav.js"></script>
+    <script>
+        function openPopis() {
+            window.location.href = "sl-popis.html"
+        }
+    </script>
+    <script>
+        function openLiceni() {
+            window.location.href = "sl-liceni.html"
+        }
+    </script>
+    <script>
+        function openCharakteristika() {
+            window.location.href = "sl-charakteristika.html"
+        }
+    </script>
+</body>
+
+</html>

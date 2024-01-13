@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/grid.css">
-    <style>
-
-    </style>
 </head>
 
 <body>
+    <div class="loading-bar-container">
+        <div class="loading-bar"></div>
+    </div>
+
     <nav id="myNavbar">
         <a href="#"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
         <a href="#">Domů</a>
@@ -28,7 +29,6 @@
         <section id="#ucivo">
             <h1 class="verybig">Tobikovo</h1>
             <h1>Naše učivo</h1>
-            <!-- Zde bude váš grid s učivem -->
             <ul class="grid">
                 <li class="grid-item">
                     <h3>Mluvnice</h3>
@@ -39,23 +39,23 @@
                 <li class="grid-item">
                     <h3>Literatura</h3>
                     <div class="grid-content">
-                        <button type="button" class="ripple-button">Otevřít</button>
+                        <button type="button" class="ripple-button" onclick="openLiteratura()">Otevřít</button>
                     </div>
                 </li>
                 <li class="grid-item">
-                    <h3>Matematika</h3>
+                    <h3>Sloh</h3>
                     <div class="grid-content">
-                        <button type="button" class="ripple-button">Otevřít</button>
+                        <button type="button" class="ripple-button" onclick="openSloh()">Otevřít</button>
                     </div>
                 </li>
                 <li class="grid-item">
                     <h3>Hudební výchova</h3>
                     <div class="grid-content">
-                        <button type="button" class="ripple-button2">Otevřít</button>
+                        <button type="button" class="ripple-button2" onclick="openHudebka()">Otevřít</button>
                     </div>
                 </li>
                 <li class="grid-item">
-                    <h3>Sloh</h3>
+                    <h3>Matematika</h3>
                     <div class="grid-content">
                         <button type="button" class="ripple-button">Otevřít</button>
                     </div>
@@ -99,7 +99,7 @@
                 <li class="grid-item">
                     <h3><em>Chemie</em></h3>
                     <div class="grid-content">
-                        <button type="button"  class="ripple-button" disabled>Otevřít</button>
+                        <button type="button" class="ripple-button" disabled>Otevřít</button>
                     </div>
                 </li>
             </ul>
@@ -116,7 +116,7 @@
     <!-- Patička -->
     <footer>
         <div class="footer-content">
-            <a href="about.html"><img src="images/white-logo.png"  alt="Tobikovo Logo" width="100px"></a> 
+            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
         </div>
     </footer>
     <script src="javastripts/nav.js"></script>
@@ -125,7 +125,21 @@
             window.location.href = "mluvnice.html";
         }
     </script>
-    
+    <script>
+        function openLiteratura() {
+            window.location.href = "literatura.html";
+        }
+    </script>
+    <script>
+        function openSloh() {
+            window.location.href = "sloh.html";
+        }
+    </script>
+    <script>
+        function openHudebka() {
+            window.location.href = "hudebni-vychova.html";
+        }
+    </script>
 </body>
 
 </html>
