@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hudební výchova - Tobikovo</title>
+    <title>Písně - Hudební výchova - Tobikovo</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/nav.css">
@@ -27,30 +27,39 @@
     <main>
 
         <section>
-            <h1 class="verybig">Hudební výchova</h1>
+            <h1 class="verybig">Písně</h1>
             <ul class="grid">
                 <li class="grid-item">
-                    <h3>Teorie a základy</h3>
+                    <h3>Dělení</h3>
                     <div class="grid-content">
-                        <button type="button" class="ripple-button2" onclick="openTeorie()">Otevřít</button>
+                        <button type="button" class="ripple-button" onclick="openDeleni()">Otevřít</button>
                     </div>
                 </li>
                 <li class="grid-item">
-                    <h3>Představitelé</h3>
+                    <h3>Písně o vojně</h3>
                     <div class="grid-content">
-                        <button type="button" class="ripple-button" onclick="openPredstavitele()">Otevřít</button>
+                        <button type="button" class="ripple-button" onclick="openVojne()">Otevřít</button>
                     </div>
                 </li>
                 <li class="grid-item">
-                    <h3>Hudební nástroje</h3>
+                    <h3>Milostné písně</h3>
                     <div class="grid-content">
-                        <button type="button" class="ripple-button2" onclick="openNastroje()">Otevřít</button>
+                        <button type="button" class="ripple-button" onclick="openMilostne()">Otevřít</button>
                     </div>
                 </li>
                 <li class="grid-item">
-                    <h3>Písně</h3>
+                    <h3>Pracovní písně</h3>
                     <div class="grid-content">
-                        <button type="button" class="ripple-button" onclick="openPisne()">Otevřít</button>
+                        <button type="button" class="ripple-button" onclick="openPracovni()">Otevřít</button>
+                    </div>
+                </li>
+                <li class="item">
+                    <h3></h3>
+                </li>
+                <li class="grid-item">
+                    <h3>Polyfonie a homofonie</h3>
+                    <div class="grid-content">
+                        <button type="button" class="ripple-button2" onclick="openPolyHomo()">Otevřít</button>
                     </div>
                 </li>
             </ul>
@@ -66,23 +75,28 @@
     <!-- JSs -->
     <script src="javastripts/nav.js"></script>
     <script>
-        function openTeorie() {
-            window.location.href = "hv-teorie.html"
+        function openDeleni() {
+            window.location.href = "hv-pisne-deleni.html"
         }
     </script>
     <script>
-        function openPredstavitele() {
-            window.location.href = "hv-predstavitele.html"
+        function openVojne() {
+            window.location.href = "hv-pisne-vojne.html"
         }
     </script>
     <script>
-        function openNastroje() {
-            window.location.href = "hv-nastroje.html"
+        function openPracovni() {
+            window.location.href = "hv-pisne-pracovni.html"
         }
     </script>
     <script>
-        function openPisne() {
-            window.location.href = "hv-pisne.html"
+        function openMilostne() {
+            window.location.href = "hv-pisne-milostne.html"
+        }
+    </script>
+    <script>
+        function openPolyHomo() {
+            window.location.href = "hv-pisne-poly-homo.html"
         }
     </script>
 </body>

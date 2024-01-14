@@ -8,6 +8,7 @@ navbar.innerHTML = `
     <a href="index.html">Domů</a>
     <a href="cesky-jazyk.html">Český jazyk</a>
     <a href="hudebni-vychova.html">Hudební výchova</a>
+    <a href="matematika.html">Matema- tika</a>
 </nav>
 `;
 /* Loading bar */

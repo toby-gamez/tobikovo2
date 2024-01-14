@@ -36,7 +36,7 @@
     }
 
     .grid-item {
-        width: 85%;
+        width: 100% !important;
         margin-bottom: 20px;
     }
 
