@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matematika - Tobikovo</title>
+    <title>Dějepis - Tobikovo</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/nav.css">
@@ -27,30 +27,39 @@
     <main>
 
         <section>
-            <h1 class="verybig">Matematika</h1>
+            <h1 class="verybig">Dějepis</h1>
             <ul class="grid">
                 <li class="grid-item">
-                    <h3>Celá čísla</h3>
+                    <h3>Pravěk</h3>
                     <div class="grid-content">
-                        <button type="button" class="ripple-button" onclick="openCela()">Otevřít</button>
+                        <button type="button" class="ripple-button" onclick="openPravek()">Otevřít</button>
                     </div>
                 </li>
                 <li class="grid-item">
-                    <h3>Desetinná čísla</h3>
+                    <h3>Starověk</h3>
                     <div class="grid-content">
-                        <button type="button" class="ripple-button2" onclick="openDesetinna()">Otevřít</button>
+                        <button type="button" class="ripple-button" onclick="openStarovek()">Otevřít</button>
                     </div>
                 </li>
                 <li class="grid-item">
-                    <h3>Zlomky</h3>
+                    <h3>Středověk</h3>
                     <div class="grid-content">
-                        <button type="button" class="ripple-button" onclick="openZlomky()">Otevřít</button>
+                        <button type="button" class="ripple-button" onclick="openStredovek()">Otevřít</button>
                     </div>
                 </li>
                 <li class="grid-item">
-                    <h3>Geometrie</h3>
+                    <h3>Novověk</h3>
                     <div class="grid-content">
-                        <button type="button" class="ripple-button" onclick="openGeo()">Otevřít</button>
+                        <button type="button" class="ripple-button" onclick="openNovovek()">Otevřít</button>
+                    </div>
+                </li>
+                <li class="item">
+                    <h3></h3>
+                </li>
+                <li class="grid-item">
+                    <h3>Moderní dějiny</h3>
+                    <div class="grid-content">
+                        <button type="button" class="ripple-button" onclick="openModerni()">Otevřít</button>
                     </div>
                 </li>
             </ul>
@@ -66,8 +75,18 @@
     <!-- JSs -->
     <script src="javastripts/nav.js"></script>
     <script>
-        function openGeo() {
-            window.location.href = "geometrie.html"
+        function openPravek() {
+            window.location.href = "dj-pravek.html"
+        }
+    </script>
+    <script>
+        function openStarovek() {
+            window.location.href = "dj-starovek.html"
+        }
+    </script>
+    <script>
+        function openStredovek() {
+            window.location.href = "dj-stredovek.html"
         }
     </script>
 </body>

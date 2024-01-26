@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matematika - Tobikovo</title>
+    <title>Anglický jazyk - Tobikovo</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/nav.css">
@@ -27,30 +27,23 @@
     <main>
 
         <section>
-            <h1 class="verybig">Matematika</h1>
+            <h1 class="verybig">Anglický jazyk</h1>
             <ul class="grid">
+                <li class="item">
+                    <h3></h3>
+                </li>
                 <li class="grid-item">
-                    <h3>Celá čísla</h3>
+                    <h3>Learning book</h3>
+                    <span class="subtitle">[Lr:ning bu:k]</span>
                     <div class="grid-content">
-                        <button type="button" class="ripple-button" onclick="openCela()">Otevřít</button>
+                        <button type="button" class="ripple-button2" onclick="openBook()">Otevřít</button>
                     </div>
                 </li>
                 <li class="grid-item">
-                    <h3>Desetinná čísla</h3>
+                    <h3>Vocabulary</h3>
+                    <span class="subtitle">[Voke:bjuery]</span>
                     <div class="grid-content">
-                        <button type="button" class="ripple-button2" onclick="openDesetinna()">Otevřít</button>
-                    </div>
-                </li>
-                <li class="grid-item">
-                    <h3>Zlomky</h3>
-                    <div class="grid-content">
-                        <button type="button" class="ripple-button" onclick="openZlomky()">Otevřít</button>
-                    </div>
-                </li>
-                <li class="grid-item">
-                    <h3>Geometrie</h3>
-                    <div class="grid-content">
-                        <button type="button" class="ripple-button" onclick="openGeo()">Otevřít</button>
+                        <button type="button" class="ripple-button2" onclick="openVocabulary()">Otevřít</button>
                     </div>
                 </li>
             </ul>
@@ -66,8 +59,13 @@
     <!-- JSs -->
     <script src="javastripts/nav.js"></script>
     <script>
-        function openGeo() {
-            window.location.href = "geometrie.html"
+        function openBook() {
+            window.location.href = "aj-book.html";
+        }
+    </script>
+    <script>
+        function openVocabulary() {
+            window.location.href = "aj-vocabulary.html";
         }
     </script>
 </body>

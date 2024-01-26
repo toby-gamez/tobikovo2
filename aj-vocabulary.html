@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary - Anglický jazyk - Tobikovo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/grid.css">
+</head>
+
+<body>
+    <div class="loading-bar-container">
+        <div class="loading-bar"></div>
+    </div>
+    
+    <nav id="myNavbar">
+        <a href="#home"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
+        <a href="#home">Domů</a>
+        <a href="#ucivo">Učivo</a>
+        <a href="#o-nas">O nás</a>
+    </nav>
+
+    <!-- Obsah stránky -->
+    <main>
+
+        <section>
+            <h1 class="verybig">Vocabulary</h1>
+            <ul class="grid">
+                <li class="grid-item">
+                    <h3>Cutlery</h3>
+                    <span class="subtitle">[Katlery]</span>
+                    <div class="grid-content">
+                        <button type="button" class="ripple-button2" onclick="openCutlery()">Otevřít</button>
+                    </div>
+                </li>
+                <li class="grid-item">
+                    <h3>Food and drink</h3>
+                    <span class="subtitle">[Fu:d end drink]</span>
+                    <div class="grid-content">
+                        <button type="button" class="ripple-button2" onclick="openBebida()">Otevřít</button>
+                    </div>
+                </li>
+                <li class="grid-item">
+                    <h3>Methods of cooking</h3>
+                    <span class="subtitle">[Metds of ku:king]</span>
+                    <div class="grid-content">
+                        <button type="button" class="ripple-button3" onclick="openMetody()">Otevřít</button>
+                    </div>
+                </li>
+                <li class="grid-item">
+                    <h3>Legumes</h3>
+                    <span class="subtitle">[Legju:ms]</span>
+                    <div class="grid-content">
+                        <button type="button" class="ripple-button2" onclick="openLegumes()">Otevřít</button>
+                    </div>
+                </li>
+                <li class="grid-item">
+                    <h3>Nuts</h3>
+                    <span class="subtitle">[Nats]</span>
+                    <div class="grid-content">
+                        <button type="button" class="ripple-button2" onclick="openNuts()">Otevřít</button>
+                    </div>
+                </li>
+                <li class="grid-item">
+                    <h3>Tastes</h3>
+                    <span class="subtitle">[Tejsts]</span>
+                    <div class="grid-content">
+                        <button type="button" class="ripple-button2" onclick="openTastes()">Otevřít</button>
+                    </div>
+                </li>
+                <li class="grid-item">
+                    <h3>Menu</h3>
+                    <span class="subtitle">[Meňu]</span>
+                    <div class="grid-content">
+                        <button type="button" class="ripple-button2" onclick="openMenu()">Otevřít</button>
+                    </div>
+                </li>
+                <li class="grid-item">
+                    <h3>Sports equiment</h3>
+                    <span class="subtitle">[Sports ekvipment]</span>
+                    <div class="grid-content">
+                        <button type="button" class="ripple-button3" onclick="openSports()">Otevřít</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+    <!-- Patička -->
+    <footer>
+        <div class="footer-content">
+            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+        </div>
+    </footer>
+    <!-- JSs -->
+    <script src="javastripts/nav.js"></script>
+    <script>
+        function openCutlery() {
+            window.location.href = "aj-cutlery.html";
+        }
+    </script>
+    <script>
+        function openBebida() {
+            window.location.href = "aj-food-drink.html";
+        }
+    </script>
+    <script>
+        function openMetody() {
+            window.location.href = "aj-metody.html";
+        }
+    </script>
+    <script>
+        function openLegumes() {
+            window.location.href = "aj-legumes.html";
+        }
+    </script>
+    <script>
+        function openNuts() {
+            window.location.href = "aj-nuts.html";
+        }
+    </script>
+    <script>
+        function openTastes() {
+            window.location.href = "aj-tastes.html";
+        }
+    </script>
+    <script>
+        function openMenu() {
+            window.location.href = "aj-menu.html";
+        }
+    </script>
+    <script>
+        function openSports() {
+            window.location.href = "aj-sports.html";
+        }
+    </script>
+</body>
+
+</html>

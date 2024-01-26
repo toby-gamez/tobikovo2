@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Domů - Tobikovo</title>
+    <title>Tobikovo - Tobikovo</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/nav.css">
@@ -17,101 +17,51 @@
     </div>
 
     <nav id="myNavbar">
-        <a href="#"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
-        <a href="#">Domů</a>
-        <a href="#">Učivo</a>
-        <a href="#">O nás</a>
+        <a href="#home"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
+        <a href="#home">Domů</a>
+        <a href="#ucivo">Učivo</a>
+        <a href="#o-nas">O nás</a>
     </nav>
 
     <!-- Obsah stránky -->
     <main>
 
-        <section id="#ucivo">
+        <section>
             <h1 class="verybig">Tobikovo</h1>
-            <h1>Naše učivo</h1>
-            <ul class="grid">
-                <li class="grid-item">
-                    <h3>Mluvnice</h3>
-                    <div class="grid-content">
-                        <button type="button" class="ripple-button" onclick="openMluvnice()">Otevřít</button>
+            <div style="text-align: left;">
+                <p>Jmenuju se Tobias a jsem žák sedmé třídy se zájmem o programování a vytváření webových stránek. S
+                    radostí vám představuji mou vlastní stránku, kterou jsem vytvořil se zaměřením na dva klíčové školní
+                    předměty - Češtinu a Matematiku. Na této stránce naleznete užitečné pomůcky, pracovní listy a
+                    upozornění
+                    na nadcházející testy. Můj cíl je vytvořit prostor, kde studenti jako já mohou snadno získat
+                    potřebné
+                    materiály a informace, aby uspěli ve svém vzdělávání.</p>
                     </div>
-                </li>
-                <li class="grid-item">
-                    <h3>Literatura</h3>
-                    <div class="grid-content">
-                        <button type="button" class="ripple-button" onclick="openLiteratura()">Otevřít</button>
-                    </div>
-                </li>
-                <li class="grid-item">
-                    <h3>Sloh</h3>
-                    <div class="grid-content">
-                        <button type="button" class="ripple-button" onclick="openSloh()">Otevřít</button>
-                    </div>
-                </li>
-                <li class="grid-item">
-                    <h3>Hudební výchova</h3>
-                    <div class="grid-content">
-                        <button type="button" class="ripple-button2" onclick="openHudebka()">Otevřít</button>
-                    </div>
-                </li>
-                <li class="grid-item">
-                    <h3>Matematika</h3>
-                    <div class="grid-content">
-                        <button type="button" class="ripple-button" onclick="openMatematika()">Otevřít</button>
-                    </div>
-                </li>
-                <li class="grid-item">
-                    <h3>Dějepis</h3>
-                    <div class="grid-content">
-                        <button type="button" class="ripple-button">Otevřít</button>
-                    </div>
-                </li>
-                <li class="grid-item">
-                    <h3>Anglický jazyk</h3>
-                    <div class="grid-content">
-                        <button type="button" class="ripple-button">Otevřít</button>
-                    </div>
-                </li>
-                <li class="grid-item">
-                    <h3><em>Zeměpis</em></h3>
-                    <div class="grid-content">
-                        <button type="button" disabled class="ripple-button">Otevřít</button>
-                    </div>
-                </li>
-                <li class="grid-item">
-                    <h3><em>Německý jazyk</em></h3>
-                    <div class="grid-content">
-                        <button type="button" disabled class="ripple-button">Otevřít</button>
-                    </div>
-                </li>
-                <li class="grid-item">
-                    <h3><em>Přírodopis</em></h3>
-                    <div class="grid-content">
-                        <button type="button" disabled class="ripple-button">Otevřít</button>
-                    </div>
-                </li>
-                <li class="grid-item">
-                    <h3><em>Fyzika</em></h3>
-                    <div class="grid-content">
-                        <button type="button" disabled class="ripple-button">Otevřít</button>
-                    </div>
-                </li>
-                <li class="grid-item">
-                    <h3><em>Chemie</em></h3>
-                    <div class="grid-content">
-                        <button type="button" class="ripple-button" disabled>Otevřít</button>
-                    </div>
-                </li>
-            </ul>
+                    <button onclick="openHome()"><span style="font-size: 2.5rem;">Otevřít</span></button>
+                    <hr>
+                    <div style="text-align: left;">
+                    <h2>Kdo jsem?</h2>
+                <p>Jmenuju se Tobias a jsem žák sedmé třídy se zájmem o programování a vytváření webových stránek. S
+                    radostí vám představuji mou vlastní stránku, kterou jsem vytvořil se zaměřením na dva klíčové školní
+                    předměty - Češtinu a Matematiku. Na této stránce naleznete užitečné pomůcky, pracovní listy a
+                    upozornění
+                    na
+                    nadcházející testy. Můj cíl je vytvořit prostor, kde studenti jako já mohou snadno získat potřebné
+                    materiály
+                    a informace, aby uspěli ve svém vzdělávání.</p>
+
+                <p>Díky blogovým příspěvkům se s vámi podělím o nové informace týkající se učiva, zajímavosti z oblasti
+                    školního prostředí a tipy na úspěšné studium.</p>
+
+                <p>Doufám, že tato iniciativa přispěje k lepšímu porozumění školní látky a pomůže vám dosahovat úspěchů
+                    ve
+                    vašem vzdělávání. Pokud máte nějaké nápady, připomínky nebo otázky, neváhejte se se mnou podělit.
+                    Těším
+                    se
+                    na společnou cestu vzdělávání prostřednictvím této webové stránky.</p>
+                </div>
         </section>
 
-        <!-- Changelog -->
-        <section id="#changelog">
-            <h1>Changelog</h1>
-            <p>Dobře, nebudu to protahovat, zde je:</p>
-            <button class="button">Otevřít</button>
-
-        </section>
     </main>
     <!-- Patička -->
     <footer>
@@ -119,30 +69,11 @@
             <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
         </div>
     </footer>
+    <!-- JSs -->
     <script src="javastripts/nav.js"></script>
     <script>
-        function openMluvnice() {
-            window.location.href = "mluvnice.html";
-        }
-    </script>
-    <script>
-        function openLiteratura() {
-            window.location.href = "literatura.html";
-        }
-    </script>
-    <script>
-        function openSloh() {
-            window.location.href = "sloh.html";
-        }
-    </script>
-    <script>
-        function openHudebka() {
-            window.location.href = "hudebni-vychova.html";
-        }
-    </script>
-    <script>
-        function openMatematika() {
-            window.location.href = "matematika.html";
+        function openHome() {
+            window.location.href = "home.html"
         }
     </script>
 </body>

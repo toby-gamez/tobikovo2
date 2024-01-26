@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geometrie - Matematika - Tobikovo</title>
+    <title>Střední středověk - Dějepis - Tobikovo</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/nav.css">
@@ -27,30 +27,39 @@
     <main>
 
         <section>
-            <h1 class="verybig">Geometrie</h1>
+            <h1 class="verybig">Střední středověk</h1>
             <ul class="grid">
                 <li class="grid-item">
-                    <h3>Trojúhelník</h3>
+                    <h3>Byzantská říše</h3>
                     <div class="grid-content">
-                        <button type="button" class="ripple-button" onclick="openTroj()">Otevřít</button>
+                        <button type="button" class="ripple-button" onclick="openByzantska()">Otevřít</button>
                     </div>
                 </li>
                 <li class="grid-item">
-                    <h3>Úhly</h3>
+                    <h3>Islám</h3>
                     <div class="grid-content">
-                        <button type="button" class="ripple-button" onclick="openUhlya()">Otevřít</button>
+                        <button type="button" class="ripple-button" onclick="openIslam()">Otevřít</button>
                     </div>
                 </li>
                 <li class="grid-item">
-                    <h3>Osová souměrnost</h3>
+                    <h3>Sámova říše</h3>
                     <div class="grid-content">
-                        <button type="button" class="ripple-button2" onclick="openOsova()">Otevřít</button>
+                        <button type="button" class="ripple-button" onclick="openSamova()">Otevřít</button>
                     </div>
                 </li>
                 <li class="grid-item">
-                    <h3>hmm...</h3>
+                    <h3>Velká Morava</h3>
                     <div class="grid-content">
-                        <button type="button" class="ripple-button" disabled>Otevřít</button>
+                        <button type="button" class="ripple-button" onclick="openMorava()">Otevřít</button>
+                    </div>
+                </li>
+                <li class="item">
+                    <h3></h3>
+                </li>
+                <li class="grid-item">
+                    <h3>Vikingové</h3>
+                    <div class="grid-content">
+                        <button type="button" class="ripple-button" onclick="openVikingove()">Otevřít</button>
                     </div>
                 </li>
             </ul>
@@ -65,6 +74,26 @@
     </footer>
     <!-- JSs -->
     <script src="javastripts/nav.js"></script>
+    <script>
+        function openByzantska() {
+            window.location.href = "dj-byzantska.html"
+        }
+    </script>
+    <script>
+        function openIslam() {
+            window.location.href = "dj-islam.html"
+        }
+    </script>
+    <script>
+        function openSamova() {
+            window.location.href = "dj-samova.html"
+        }
+    </script>
+    <script>
+        function openMorava() {
+            window.location.href = "dj-morava.html"
+        }
+    </script>
 </body>
 
 </html>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matematika - Tobikovo</title>
+    <title>Pravěk - Dějepis - Tobikovo</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/nav.css">
@@ -27,30 +27,24 @@
     <main>
 
         <section>
-            <h1 class="verybig">Matematika</h1>
+            <h1 class="verybig">Pravěk</h1>
             <ul class="grid">
                 <li class="grid-item">
-                    <h3>Celá čísla</h3>
+                    <h3>Doba kamenná</h3>
                     <div class="grid-content">
-                        <button type="button" class="ripple-button" onclick="openCela()">Otevřít</button>
+                        <button type="button" class="ripple-button" onclick="openKamenna()">Otevřít</button>
                     </div>
                 </li>
                 <li class="grid-item">
-                    <h3>Desetinná čísla</h3>
+                    <h3>Doba bronzová</h3>
                     <div class="grid-content">
-                        <button type="button" class="ripple-button2" onclick="openDesetinna()">Otevřít</button>
+                        <button type="button" class="ripple-button" onclick="openBronzova()">Otevřít</button>
                     </div>
                 </li>
                 <li class="grid-item">
-                    <h3>Zlomky</h3>
+                    <h3>Doba železná</h3>
                     <div class="grid-content">
-                        <button type="button" class="ripple-button" onclick="openZlomky()">Otevřít</button>
-                    </div>
-                </li>
-                <li class="grid-item">
-                    <h3>Geometrie</h3>
-                    <div class="grid-content">
-                        <button type="button" class="ripple-button" onclick="openGeo()">Otevřít</button>
+                        <button type="button" class="ripple-button" onclick="openZelezna()">Otevřít</button>
                     </div>
                 </li>
             </ul>
@@ -66,8 +60,18 @@
     <!-- JSs -->
     <script src="javastripts/nav.js"></script>
     <script>
-        function openGeo() {
-            window.location.href = "geometrie.html"
+        function openKamenna() {
+            window.location.href = "dj-kamenna.html"
+        }
+    </script>
+    <script>
+        function openBronzova() {
+            window.location.href = "dj-bronzova.html"
+        }
+    </script>
+    <script>
+        function openZelezna() {
+            window.location.href = "dj-zelezna.html"
         }
     </script>
 </body>
