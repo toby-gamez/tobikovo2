@@ -29,7 +29,6 @@ body {
 
 hr {
     color: white;
-    width: 800px;
 }
 
 @media screen and (max-width: 600px) {
@@ -71,6 +70,14 @@ section {
 h1 {
     font-size: 32px;
 }
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 25px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+}
 
 a {
     color: #2d7bd4;
@@ -100,6 +107,13 @@ a {
 
 .verybig {
     font-size: 60px;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .verybig {
+        font-size: 40px;
+    }
 }
 
 .underlined {
@@ -145,21 +159,3 @@ button:active {
     /* Příklad: Změna průhlednosti pro naznačení, že je tlačítko disabled */
 }
 
-.ripple-button:disabled {
-    cursor: not-allowed;
-    /* Další styly pro zobrazení disabled tlačítka, např. změna barvy pozadí nebo textu */
-    opacity: 0.5;
-    /* Příklad: Změna průhlednosti pro naznačení, že je tlačítko disabled */
-}
-
-.ripple-button {
-    margin-top: 40%;
-}
-
-.ripple-button2 {
-    margin-top: 25%;
-}
-
-.ripple-button3 {
-    margin-top: 10%;
-}

@@ -29,19 +29,22 @@
         <section>
             <h1 class="verybig">Ostatní</h1>
             <ul class="grid">
-                <li class="item">
-                    <h3></h3>
-                </li>
                 <li class="grid-item">
-                    <h3>Velká a malá písmena</h3>
+                    <h3>Písmena</h3>
                     <div class="grid-content">
-                        <button type="button" class="ripple-button2" onclick="openPismena()">Otevřít</button>
+                        <button type="button" class="ripple-button" onclick="openPismena()">Otevřít</button>
                     </div>
                 </li>
                 <li class="grid-item">
                     <h3>Skladba</h3>
                     <div class="grid-content">
                         <button type="button" class="ripple-button" onclick="openSkladba()">Otevřít</button>
+                    </div>
+                </li>
+                <li class="grid-item">
+                    <h3>Roz. v. členy</h3>
+                    <div class="grid-content">
+                        <button type="button" class="ripple-button" onclick="openRozvijejici()">Otevřít</button>
                     </div>
                 </li>
             </ul>
@@ -66,6 +69,11 @@
             window.location.href = "ml-skladba.html"
         }
     </script>
+        <script>
+            function openRozvijejici() {
+                window.location.href = "ml-roz-vet-cleny.html";
+            }
+        </script>
 </body>
 
 </html>

@@ -4,13 +4,14 @@ var navbar = document.getElementById('myNavbar');
 // Dynamická změna obsahu navbaru
 navbar.innerHTML = `
 <nav>
-    <a href="home.html"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
-    <a href="home.html">Domů</a>
-    <a href="cesky-jazyk.html">Český jazyk</a>
-    <a href="hudebni-vychova.html">Hudební výchova</a>
-    <a href="matematika.html">Matema- tika</a>
-    <a href="dejepis.html">Dějepis</a>
-    <a href="anglictina.html">Anglický jazyk</a>
+    <a href="index.html"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
+    <a href="index.html">Domů</a>
+    <hr style="width: 75px;">
+    <a href="mluvnice.html">Mluvnice</a>
+    <a href="literatura.html">Literatura</a>
+    <a href="sloh.html">Sloh</a>
+    <hr style="width: 75px;">
+    <a href="about.html">O nás</a>
 </nav>
 `;
 /* Loading bar */
