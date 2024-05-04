@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning book - Anglický jazyk - Tobikovo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/grid.css">
+</head>
+
+
+<body>
+    <div class="loading-bar-container">
+        <div class="loading-bar"></div>
+    </div>
+    
+    <nav id="myNavbar">
+        <a href="#home"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
+        <a href="#home">Domů</a>
+        <a href="#ucivo">Učivo</a>
+        <a href="#o-nas">O nás</a>
+    </nav>
+
+    <!-- Obsah stránky -->
+    <main>
+
+        <section>
+            <h1 class="verybig">Learning book</h1>
+            <ul class="grid">
+                <li class="grid-item">
+                    <h3>Countables and uncountables</h3>
+                    <span class="subtitle">[kauntbls end ankauntbls]</span>
+                    <div class="grid-content">
+                        <button type="button" class="ripple-button3" onclick="openCount()">Otevřít</button>
+                    </div>
+                </li>
+                <li class="grid-item">
+                    <h3>Likes and dislikes</h3>
+                    <span class="subtitle">[lajks end dislajks]</span>
+                    <div class="grid-content">
+                        <button type="button" class="ripple-button3" onclick="openLike()">Otevřít</button>
+                    </div>
+                </li>
+                <li class="grid-item">
+                    <h3>Imperatives</h3>
+                    <span class="subtitle">[Imp(e)rativs]</span>
+                    <div class="grid-content">
+                        <button type="button" class="ripple-button2" onclick="openImperatives()">Otevřít</button>
+                    </div>
+                </li>
+                <li class="grid-item">
+                    <h3>Past simple and event</h3>
+                    <span class="subtitle">[Pa:st simpl end event]</span>
+                    <div class="grid-content">
+                        <button type="button" class="ripple-button3" onclick="openPastSE()">Otevřít</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+    <!-- Patička -->
+    <footer>
+        <div class="footer-content">
+            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+        </div>
+    </footer>
+    <!-- JSs -->
+    <script src="javastripts/nav.js"></script>
+    <script>
+        function openCount() {
+            window.location.href = "aj-counta.html";
+        }
+    </script>
+    <script>
+        function openLike() {
+            window.location.href = "aj-likes-dislikes.html";
+        }
+    </script>
+    <script>
+        function openImperatives() {
+            window.location.href = "aj-imperatives.html";
+        }
+    </script>
+    <script>
+        function openPastSE() {
+            window.location.href = "aj-past-simple-event.html";
+        }
+    </script>
+</body>
+
+</html>
