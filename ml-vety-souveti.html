@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ostatní - Mluvnice - Tobikovo</title>
+    <title>Věty a souvětí - Tobikovo</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/nav.css">
@@ -27,30 +27,18 @@
     <main>
 
         <section>
-            <h1 class="verybig">Ostatní</h1>
+            <h1 class="verybig">Věty a souvětí</h1>
             <ul class="grid">
                 <li class="grid-item">
-                    <h3>Písmena</h3>
+                    <h3>Věty a v. ekvivalenty</h3>
                     <div class="grid-content">
-                        <button type="button" class="ripple-button" onclick="openPismena()">Otevřít</button>
+                        <button type="button" class="ripple-button2" onclick="openVetyVE()">Otevřít</button>
                     </div>
                 </li>
                 <li class="grid-item">
-                    <h3>Skladba</h3>
+                    <h3>Souvětí</h3>
                     <div class="grid-content">
-                        <button type="button" class="ripple-button" onclick="openSkladba()">Otevřít</button>
-                    </div>
-                </li>
-                <li class="grid-item">
-                    <h3>Věty a souvětí</h3>
-                    <div class="grid-content">
-                        <button type="button" class="ripple-button" onclick="openVety()">Otevřít</button>
-                    </div>
-                </li>
-                <li class="grid-item">
-                    <h3>Roz. v. členy</h3>
-                    <div class="grid-content">
-                        <button type="button" class="ripple-button" onclick="openRozvijejici()">Otevřít</button>
+                        <button type="button" class="ripple-button" onclick="openSouveti()">Otevřít</button>
                     </div>
                 </li>
             </ul>
@@ -66,23 +54,13 @@
     <!-- JSs -->
     <script src="javastripts/nav.js"></script>
     <script>
-        function openPismena() {
-            window.location.href = "ml-pismena.html"
+        function openVetyVE() {
+            window.location.href = "ml-vety-ve.html";
         }
     </script>
     <script>
-        function openSkladba() {
-            window.location.href = "ml-skladba.html"
-        }
-    </script>
-        <script>
-            function openRozvijejici() {
-                window.location.href = "ml-roz-vet-cleny.html";
-            }
-        </script>
-    <script>
-        function openVety() {
-           window.location.href = "ml-vety-souveti.html";
+        function openSouveti() {
+            window.location.href = "ml-souveti.html";
         }
     </script>
 </body>
