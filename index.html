@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/grid.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" as="style">
+
 </head>
 
 <body>
@@ -17,10 +22,7 @@
     </div>
 
     <nav id="myNavbar">
-        <a href="#"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
-        <a href="#">Domů</a>
-        <a href="#">Učivo</a>
-        <a href="#">O nás</a>
+        <a href="index.html"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
     </nav>
 
     <!-- Obsah stránky -->
@@ -62,16 +64,20 @@
             <h1>Changelog</h1>
             <p>Dobře, nebudu to protahovat, zde je:</p>
             <button class="button" onclick="openChangeLog()">Otevřít</button>
-
         </section>
     </main>
+
+
+
+
+
     <!-- Patička -->
     <footer>
         <div class="footer-content">
             <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
         </div>
     </footer>
-    <script src="javastripts/nav.js"></script>
+    <script src="javastripts/nav.js" defer></script>
     <script>
         function openMluvnice() {
             window.location.href = "mluvnice.html";
@@ -87,11 +93,11 @@
             window.location.href = "sloh.html";
         }
     </script>
-        <script>
-            function openChangeLog() {
-                window.location.href = "changelog.html";
-            }
-        </script>
+    <script>
+        function openChangeLog() {
+            window.location.href = "changelog.html";
+        }
+    </script>
 </body>
 
 </html>

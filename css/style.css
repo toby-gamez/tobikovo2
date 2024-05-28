@@ -10,6 +10,7 @@ ul,
 #myNavbar a {
     font-family: 'Outfit', sans-serif;
 }
+
 h1,
 h2,
 h3 {
@@ -36,8 +37,9 @@ hr {
         color: white;
         width: 290px;
     }
-    
+
 }
+
 .grid .subtitle {
     font-size: 13px;
     font-family: 'Outfit', sans-serif;
@@ -70,10 +72,12 @@ section {
 h1 {
     font-size: 32px;
 }
+
 @media only screen and (max-width: 600px) {
     h1 {
         font-size: 25px;
     }
+
     h2 {
         font-size: 20px;
     }
@@ -107,7 +111,7 @@ a {
 
 .verybig {
     font-size: 60px;
-    
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -132,20 +136,28 @@ a {
 /* Tlačítka */
 
 button {
-    position: relative;
-    overflow: hidden;
-    background-color: #ffffff;
-    color: black;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
+
+    border-radius: 16px;
+    border: solid 3px white;
+    background-color: transparent;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+    outline: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  
+  .spark {
+    position: absolute;
+    width: 30px;
+    height: 8px;
+    border-radius: 3px;
+    background-color: white;
+    transform: none;
+  }
 
 button:hover {
-    background-color: #ebebeb;
+    background-color: #616161;
 }
 
 button:active {
@@ -158,4 +170,3 @@ button:active {
     opacity: 0.5;
     /* Příklad: Změna průhlednosti pro naznačení, že je tlačítko disabled */
 }
-
