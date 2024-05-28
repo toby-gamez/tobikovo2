@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
             <a href="index.html">Domů</a>
             <hr style="width: 75px;">
             <a href="mluvnice.html">Mluvnice</a>
-            <a href="mluvnice.html"><img src="images/icons/caret-right.png" width="5px" alt=""> Mluvnsice</a>
             <a href="literatura.html">Literatura</a>
             <a href="sloh.html">Sloh</a>
             <hr style="width: 75px;">
