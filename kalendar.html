@@ -36,7 +36,18 @@
                     <li>trojčlenka</li>
                     <li>procenta</li>
                 </ul>
-                <button style="float: right;" onclick="addCalendarEvent()">Přidat do kalendáře</button>
+                <button style="float: right;" onclick="addMCalendarEvent()">Přidat do Google kalendáře</button>
+                <p></p>
+                <hr width="700px" />
+                <h2>Český jazyk</h2>
+                <h3>Datum: 6. 6. 2024</h3>
+                <h3>Obsah</h3>
+                <ul>
+                    <li>druhy přídusků</li>
+                    <li>rozvíjející a větné členy</li>
+                    <li>věty vedlejší</li>
+                </ul>
+                <button style="float: right;" onclick="addCJCalendarEvent()">Přidat do Google kalendáře</button>
                 <p></p>
                 <hr width="700px" />
 
@@ -53,12 +64,27 @@
     <!-- JSs -->
     <script src="javastripts/nav.js"></script>
     <script>
-        function addCalendarEvent() {
+        function addMCalendarEvent() {
             // Parametry pro Google Calendar událost
             const title = encodeURIComponent("Písemná práce z matematiky");
             const description = encodeURIComponent("trojčlenka, procenta");
-            const startDate = "20240417";
-            const endDate = "20240418";
+            const startDate = "20240617";
+            const endDate = "20240618";
+            const location = ""; // volitelné
+
+            // Vytvoření URL pro Google Calendar
+            const googleCalendarUrl = `https://www.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${startDate}/${endDate}&details=${description}&location=${location}&trp=false&sprop=&sprop=name:`;
+
+            // Otevření URL v novém okně
+            window.open(googleCalendarUrl, '_blank');
+        }
+
+        function addCJCalendarEvent() {
+            // Parametry pro Google Calendar událost
+            const title = encodeURIComponent("Písemná práce z českého jazyka");
+            const description = encodeURIComponent("druhy přísudků, rozvíjející a větné členy, věty vedlejší");
+            const startDate = "20240606";
+            const endDate = "20240607";
             const location = ""; // volitelné
 
             // Vytvoření URL pro Google Calendar

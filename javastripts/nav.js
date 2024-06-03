@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
             <a href="literatura.html">Literatura</a>
             <a href="sloh.html">Sloh</a>
             <hr style="width: 75px;">
+            <a href="hudebni-vychova.html">Hudební výchova</a>
+            <hr style="width: 75px;">
             <a href="kalendar.html">Kalendář na písemky</a>
             <hr style="width: 75px;">
             <a href="about.html">O mně</a>
