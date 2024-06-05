@@ -27,7 +27,7 @@
     <main>
 
         <section>
-            <h1 class="verybig">Kalendář na pís. práce</h1>
+            <h1 class="verybig">Kalendář na písemné práce</h1>
             <div style="text-align: left;">
                 <h2>Matematika</h2>
                 <h3>Datum: 17. 6. 2024</h3>
@@ -35,15 +35,18 @@
                 <ul>
                     <li>trojčlenka</li>
                     <li>procenta</li>
+                    <li>poměr</li>
+                    <li>měřítko mapy</li>
                 </ul>
                 <button style="float: right;" onclick="addMCalendarEvent()">Přidat do Google kalendáře</button>
                 <p></p>
                 <hr width="700px" />
                 <h2>Český jazyk</h2>
-                <h3>Datum: 6. 6. 2024</h3>
+                <h3>Datum: 6. - 7. 6. 2024</h3>
                 <h3>Obsah</h3>
                 <ul>
-                    <li>druhy přídusků</li>
+                    <li>pravopis</li>
+                    <li>druhy přísudků</li>
                     <li>rozvíjející a větné členy</li>
                     <li>věty vedlejší</li>
                 </ul>
@@ -67,7 +70,7 @@
         function addMCalendarEvent() {
             // Parametry pro Google Calendar událost
             const title = encodeURIComponent("Písemná práce z matematiky");
-            const description = encodeURIComponent("trojčlenka, procenta");
+            const description = encodeURIComponent("trojčlenka, procenta, poměr, měřítko mapy");
             const startDate = "20240617";
             const endDate = "20240618";
             const location = ""; // volitelné
@@ -82,7 +85,7 @@
         function addCJCalendarEvent() {
             // Parametry pro Google Calendar událost
             const title = encodeURIComponent("Písemná práce z českého jazyka");
-            const description = encodeURIComponent("druhy přísudků, rozvíjející a větné členy, věty vedlejší");
+            const description = encodeURIComponent("pravopis,druhy přísudků, rozvíjející a větné členy, věty vedlejší");
             const startDate = "20240606";
             const endDate = "20240607";
             const location = ""; // volitelné
