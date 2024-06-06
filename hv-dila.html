@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hudební díla - Tobikovo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/grid.css">
+</head>
+
+<body>
+    <div class="loading-bar-container">
+        <div class="loading-bar"></div>
+    </div>
+    
+    <nav id="myNavbar">
+        <a href="#home"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
+        <a href="#home">Domů</a>
+        <a href="#ucivo">Učivo</a>
+        <a href="#o-nas">O nás</a>
+    </nav>
+
+    <!-- Obsah stránky -->
+    <main>
+
+        <section>
+            <h1 class="verybig">Hudební díla</h1>
+                <ul class="grid">
+                    <li class="grid-item">
+                        <h3>Koncert</h3>
+                        <div class="grid-content">
+                            <button type="button" class="ripple-button" onclick="openKoncert()">Otevřít</button>
+                        </div>
+                    </li>
+                    <li class="grid-item">
+                        <h3>Kantáta</h3>
+                        <div class="grid-content">
+                            <button type="button" class="ripple-button" onclick="openKantata()">Otevřít</button>
+                        </div>
+                    </li>
+                    <li class="grid-item">
+                        <h3>Oratorium</h3>
+                        <div class="grid-content">
+                            <button type="button" class="ripple-button" onclick="openOratorium()">Otevřít</button>
+                        </div>
+                    </li>
+                    <li class="grid-item">
+                        <h3>Sonáta</h3>
+                        <div class="grid-content">
+                            <button type="button" class="ripple-button" onclick="openSonata()">Otevřít</button>
+                        </div>
+                    </li>
+                    <li class="grid-item">
+                        <h3>Symfonie</h3>
+                        <div class="grid-content">
+                            <button type="button" class="ripple-button" onclick="openSymfonie()">Otevřít</button>
+                        </div>
+                    </li>
+                    <li class="grid-item">
+                        <h3>Muzikál</h3>
+                        <div class="grid-content">
+                            <button type="button" class="ripple-button" onclick="openMuzikal()">Otevřít</button>
+                        </div>
+                    </li>
+                    <li class="grid-item">
+                        <h3>Symfonická báseň</h3>
+                        <div class="grid-content">
+                            <button type="button" class="ripple-button2" onclick="openBasen()">Otevřít</button>
+                        </div>
+                    </li>
+                </ul>
+        </section>
+
+    </main>
+    <!-- Patička -->
+    <footer>
+        <div class="footer-content">
+            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+        </div>
+    </footer>
+    <!-- JSs -->
+    <script src="javastripts/nav.js"></script>
+    <script>
+        function openKoncert() {
+            window.location.href = "hv-koncert.html"
+        }
+    </script>
+    <script>
+        function openKantata() {
+            window.location.href = "hv-kantata.html"
+        }
+    </script>
+    <script>
+        function openOratorium() {
+            window.location.href = "hv-oratorium.html"
+        }
+    </script>
+    <script>
+        function openSonata() {
+            window.location.href = "hv-sonata.html"
+        }
+    </script>
+    <script>
+        function openSymfonie() {
+            window.location.href = "hv-symfonie.html"
+        }
+    </script>
+    <script>
+        function openMuzikal() {
+            window.location.href = "hv-muzikal.html"
+        }
+    </script>
+    <script>
+        function openBasen() {
+            window.location.href = "hv-basen.html"
+        }
+    </script>
+</body>
+
+</html>
