@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celá čísla - Tobikovo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/grid.css">
+</head>
+
+<body>
+    <div class="loading-bar-container">
+        <div class="loading-bar"></div>
+    </div>
+    
+    <nav id="myNavbar">
+        <a href="#home"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
+        <a href="#home">Domů</a>
+        <a href="#ucivo">Učivo</a>
+        <a href="#o-nas">O nás</a>
+    </nav>
+    <button class="openNav opennav-button" onclick="openNav()">☰</button>
+    <!-- Obsah stránky -->
+    <main>
+
+        <section>
+            <h1 class="verybig">Celá čísla</h1>
+            <ul class="grid">
+                <li class="grid-item">
+                    <h3>Dělitelnost</h3>
+                    <div class="grid-content">
+                        <button type="button" class="ripple-button" onclick="openDelitelnost()">
+                            Otevřít
+                        </button>
+                    </div>
+                </li>
+                <li class="grid-item">
+                    <h3>Rozklad na prvočísla</h3>
+                    <div class="grid-content">
+                        <button type="button" class="ripple-button2" onclick="openRozklad()">
+                            Otevřít
+                        </button>
+                    </div>
+                </li>
+                <li class="grid-item">
+                    <h3>Nejmenší společný násobek</h3>
+                    <div class="grid-content">
+                        <button type="button" class="ripple-button3" onclick="openNSN()">
+                            Otevřít
+                        </button>
+                    </div>
+                </li>
+                <li class="grid-item">
+                    <h3>Největší společný dělitel</h3>
+                    <div class="grid-content">
+                        <button type="button" class="ripple-button3" onclick="openNSD()">
+                            Otevřít
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+    <!-- Patička -->
+    <footer>
+        <div class="footer-content">
+            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+        </div>
+    </footer>
+    <!-- JSs -->
+    <script src="javastripts/nav.js"></script>
+    <script>
+        function openDelitelnost()  {
+            window.location.href = "m-delitelnost.html";
+        }
+        function openRozklad()  {
+            window.location.href = "m-rozklad.html";
+        }
+        function openNSD()  {
+            window.location.href = "m-nsd.html";
+        }
+        function openNSN()  {
+            window.location.href = "m-nsn.html";
+        }
+    </script>
+</body>
+
+</html>

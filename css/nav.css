@@ -3,14 +3,16 @@ nav {
     left: 0;
     top: 0;
     height: 100%;
-    width: 80px;
+    width: 87px;
     background-color: #35393f;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
 }
-
+.openNav {
+    visibility: hidden;
+}
 
 nav a {
     color: #fff;
@@ -27,12 +29,26 @@ nav a:hover {
 
 @media screen and (max-width: 600px) {
 
+    nav {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        background-color: #35393f;
+        z-index: 1000;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+    .openNav {
+        visibility: visible;
+    }
+
     /* Zobrazení navigačního menu na menších zařízeních */
     .navbar {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        width: 80%;
         position: fixed;
         top: 0;
         left: 0;

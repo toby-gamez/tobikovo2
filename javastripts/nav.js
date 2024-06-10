@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     var navbar = document.getElementById('myNavbar');
     var storedNavbar = localStorage.getItem('navbar');
 
@@ -7,16 +7,18 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         var navbarContent = `
         <nav>
+            <button style="font-size: 50px; position: absolute; top: 0; right: 10px;" class="openNav nav-button" onclick="openNav()">×</button>
             <a href="index.html"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
             <a href="index.html">Domů</a>
-            <hr style="width: 75px;">
+            <hr style="width: 84px;">
             <a href="mluvnice.html">Mluvnice</a>
             <a href="literatura.html">Literatura</a>
             <a href="sloh.html">Sloh</a>
             <a href="hudebni-vychova.html">Hudební výchova</a>
-            <hr style="width: 75px;">
+            <a href="matematika.html">Matematika</a>
+            <hr style="width: 84px;">
             <a href="kalendar.html">Kalendář na písemky</a>
-            <hr style="width: 75px;">
+            <hr style="width: 84px;">
             <a href="about.html">O mně</a>
         </nav>
         `;
@@ -25,31 +27,25 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// bar pro loading
+
 document.addEventListener('DOMContentLoaded', function () {
-    var loadingBarContainer = document.querySelector('.loading-bar-container');
     var loadingBar = document.querySelector('.loading-bar');
 
-    // Funkce pro zobrazení loading baru s postupně narůstající šířkou
-    function showLoadingBar() {
-        loadingBar.style.width = '100%';
+    // Funkce pro aktualizaci šířky loading baru podle pozice scrollování
+    function updateLoadingBar() {
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        var scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+        var clientHeight = document.documentElement.clientHeight;
+        var scrollPercent = (scrollTop / (scrollHeight - clientHeight)) * 100;
+        loadingBar.style.width = scrollPercent + '%';
     }
 
-    // Po dokončení animace loading baru skryje celý container
-    function hideLoadingContainer() {
-        loadingBarContainer.style.opacity = '0';
-        setTimeout(() => {
-            loadingBarContainer.style.display = 'none';
-        }, 500); // Ponecháme 500ms pro plynulé skrytí
-    }
+    // Aktualizace loading baru při scrollování
+    window.addEventListener('scroll', updateLoadingBar);
 
-    // Spustí simulaci načítání při načtení stránky
-    simulateLoading();
-
-    // Funkce pro simulaci načítání
-    function simulateLoading() {
-        setTimeout(showLoadingBar, 1000); // Simulace trvání načítání (1 sekunda)
-        setTimeout(hideLoadingContainer, 3000); // Po dokončení animace skryje loading container (3 sekundy)
-    }
+    // Prvotní nastavení při načtení stránky
+    updateLoadingBar();
 });
 
 // button
@@ -138,3 +134,32 @@ const makeSpark = (center, rotation) => {
         document.body.removeChild(div);
     }, 1000);
 };
+
+function openNav() {
+    // Získání souboru CSS
+    var cssFile = document.querySelector('link[href="css/nav.css"]').sheet;
+
+    // Projdeme všechna pravidla v souboru CSS
+    for (var i = 0; i < cssFile.cssRules.length; i++) {
+        var rule = cssFile.cssRules[i];
+
+        // Najdeme pravidlo v bloku @media pro navigační panel
+        if (rule.type === CSSRule.MEDIA_RULE && rule.conditionText.includes('max-width: 600px')) {
+            // Projdeme pravidla uvnitř @media bloku
+            for (var j = 0; j < rule.cssRules.length; j++) {
+                var navRule = rule.cssRules[j];
+                // Najdeme pravidlo s transformací pro 'nav'
+                if (navRule.selectorText === 'nav') {
+                    // Změníme hodnotu transformace
+                    if (navRule.style.transform === 'translateY(0%)') {
+                        navRule.style.transform = 'translateY(-100%)';
+                    } else {
+                        navRule.style.transform = 'translateY(0%)';
+                    }
+                    break; // Ukončíme cyklus po úpravě pravidla
+                }
+            }
+            break; // Ukončíme cyklus po nalezení a úpravě @media pravidla
+        }
+    }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matematika - Tobikovo</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/grid.css" />
+</head>
+
+<body>
+  <div class="loading-bar-container">
+    <div class="loading-bar"></div>
+  </div>
+
+  <nav id="myNavbar">
+    <a href="#home"><img src="images/white-logo.png" alt="Logo" width="75px" /></a>
+    <a href="#home">Domů</a>
+    <a href="#ucivo">Učivo</a>
+    <a href="#o-nas">O nás</a>
+  </nav>
+  <button class="openNav opennav-button" onclick="openNav()">☰</button>
+  <!-- Obsah stránky -->
+  <main>
+    <section>
+      <h1 class="verybig">Matematika</h1>
+      <ul class="grid">
+        <li class="grid-item">
+          <h3>Celá čísla</h3>
+          <div class="grid-content">
+            <button type="button" class="ripple-button" onclick="openCelaCisla()">
+              Otevřít
+            </button>
+          </div>
+        </li>
+        <li class="grid-item">
+          <h3>Desetinná čísla</h3>
+          <div class="grid-content">
+            <button type="button" class="ripple-button2" onclick="openDesCisla()">
+              Otevřít
+            </button>
+          </div>
+        </li>
+        <li class="grid-item">
+          <h3>Zlomky</h3>
+          <div class="grid-content">
+            <button type="button" class="ripple-button" onclick="openZlomky()">
+              Otevřít
+            </button>
+          </div>
+        </li>
+        <li class="grid-item">
+          <h3>Společná témata</h3>
+          <div class="grid-content">
+            <button type="button" class="ripple-button2" onclick="openTema()">
+              Otevřít
+            </button>
+          </div>
+        </li>
+        <li class="grid-item">
+          <h3>Geometrie</h3>
+          <div class="grid-content">
+            <button type="button" class="ripple-button" onclick="openGeometrie()">
+              Otevřít
+            </button>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <!-- Patička -->
+  <footer>
+    <div class="footer-content">
+      <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px" /></a>
+    </div>
+  </footer>
+  <!-- JSs -->
+  <script src="javastripts/nav.js"></script>
+  <script>
+    function openCelaCisla() {
+      window.location.href = "m-cela-cisla.html";
+    }
+  </script>
+  <script>
+    function openDesCisla() {
+      window.location.href = "m-desetinna-cisla.html";
+    }
+  </script>
+  <script>
+    function openZlomky() {
+      window.location.href = "m-zlomky.html";
+    }
+  </script>
+  <script>
+    function openTema() {
+      window.location.href = "m-tema.html";
+    }
+  </script>
+  <script>
+    function openGeometrie() {
+      window.location.href = "geometrie.html";
+    }
+  </script>
+</body>
+
+</html>

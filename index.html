@@ -20,14 +20,11 @@
     <div class="loading-bar-container">
         <div class="loading-bar"></div>
     </div>
-
-    <nav id="myNavbar">
-        <a href="index.html"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
-    </nav>
+    <nav id="myNavbar"></nav>
+    <button class="openNav opennav-button" onclick="openNav()">☰</button>
 
     <!-- Obsah stránky -->
     <main>
-
         <section id="#ucivo">
             <h1 class="verybig">Tobikovo</h1>
             <h1>Učivo</h1>
@@ -56,6 +53,12 @@
                         <button type="button" class="ripple-button2" onclick="openHudebka()">Otevřít</button>
                     </div>
                 </li>
+                <li class="grid-item">
+                    <h3>Matematika</h3>
+                    <div class="grid-content">
+                        <button type="button" class="ripple-button" onclick="openMatematika()">Otevřít</button>
+                    </div>
+                </li>
             </ul>
         </section>
 
@@ -77,7 +80,7 @@
             <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
         </div>
     </footer>
-    <script src="javastripts/nav.js" defer></script>
+    <script src="javastripts/nav.js" ></script>
     <script>
         function openMluvnice() {
             window.location.href = "mluvnice.html";
@@ -98,6 +101,11 @@
                 window.location.href = "hudebni-vychova.html";
             }
         </script>
+    <script>
+        function openMatematika() {
+            window.location.href = "matematika.html";
+        }
+    </script>
     <script>
         function openChangeLog() {
             window.location.href = "changelog.html";

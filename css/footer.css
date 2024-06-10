@@ -7,3 +7,15 @@ footer {
 .footer-content {
     margin-left: 5.5rem;
 }
+
+@media only screen and (max-width: 600px) {
+    footer {
+        background-color: #35393f;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+    .footer-content {
+        margin-left: 0rem;
+    }
+}

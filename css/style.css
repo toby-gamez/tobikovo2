@@ -18,6 +18,9 @@ h3,
 h4 {
     font-family: 'Noto Sans Mono', monospace;
 }
+.priklad {
+    font-family: 'Times new Roman';
+}
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -33,6 +36,32 @@ body {
 hr {
     color: white;
 }
+
+.Mcard {
+    background-color: #35393f; /* odpovídá Bootstrap text-bg-secondary */
+    color: #fff; /* textová barva */
+    max-width: 18rem; /* maximální šířka */
+    border: 1px solid #ddd; /* přidání okraje */
+    border-radius: 0.25rem; /* zaoblené rohy */
+  }
+  .Minfo {
+    background-color: #2e3136; /* tmavší šedá pro hlavičku */
+    padding: 0.75rem 1.25rem; /* padding */
+    border-bottom: 1px solid #ddd; /* spodní okraj */
+    border-top-left-radius: 0.25rem; /* zaoblené rohy nahoře */
+    border-top-right-radius: 0.25rem;
+  }
+
+  .Mtelo {
+    padding: 1rem; /* padding */
+  }
+
+  .Mnadpis {
+    font-size: 1.25rem; /* velikost písma */
+    margin-bottom: 0.75rem; /* spodní okraj */
+  }
+
+
 
 @media screen and (max-width: 600px) {
     hr {
@@ -83,6 +112,15 @@ h1 {
     h2 {
         font-size: 20px;
     }
+
+    main {
+        margin-left: 0px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 a {
@@ -107,7 +145,7 @@ a {
     width: 0;
     background-color: #ffffff;
     /* Modrá barva */
-    transition: width 2s ease;
+    transition: width 0.2s linear;
     /* Plynulý přechod */
 }
 
@@ -138,7 +176,6 @@ a {
 /* Tlačítka */
 
 button {
-
     border-radius: 16px;
     border: solid 3px white;
     background-color: transparent;
@@ -171,4 +208,33 @@ button:active {
     /* Další styly pro zobrazení disabled tlačítka, např. změna barvy pozadí nebo textu */
     opacity: 0.5;
     /* Příklad: Změna průhlednosti pro naznačení, že je tlačítko disabled */
+}
+@media only screen and (max-width: 600px) {
+    button {
+        border-radius: 16px;
+        border: solid 3px white;
+        background-color: transparent;
+        cursor: pointer;
+        outline: none;
+        color: white;
+        font-size: 16px;
+        padding: 10px 20px;
+      }
+    .nav-button {
+        border-radius: 16px;
+        border: solid 0px black;
+        cursor: pointer;
+        font-size: 300px;
+        outline: none;
+        color: white;
+        font-size: 16px;
+        padding: 10px 20px;
+      }
+    .opennav-button {
+        font-size: 50px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: 0px solid black;
+    }
 }
