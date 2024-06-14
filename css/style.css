@@ -18,13 +18,18 @@ h3,
 h4 {
     font-family: 'Noto Sans Mono', monospace;
 }
+.verybig {
+    font-size: 60px;
+    text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+
+}
 .priklad {
     font-family: 'Times new Roman';
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #1a1a1a;
+    background-color: #16181b;
     color: #ffffff;
     margin: 0;
     display: flex;
@@ -149,10 +154,7 @@ a {
     /* Plynulý přechod */
 }
 
-.verybig {
-    font-size: 60px;
 
-}
 
 @media only screen and (max-width: 600px) {
     .verybig {

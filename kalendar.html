@@ -15,7 +15,7 @@
     <div class="loading-bar-container">
         <div class="loading-bar"></div>
     </div>
-    
+
     <nav id="myNavbar">
         <a href="#home"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
         <a href="#home">Domů</a>
@@ -37,6 +37,8 @@
                     <li>procenta</li>
                     <li>poměr</li>
                     <li>měřítko mapy</li>
+                    <li>zlomky</li>
+                    <li>rovnoběžníky, lichoběžníky, trojúhelníky</li>
                 </ul>
                 <button style="float: right;" onclick="addMCalendarEvent()">Přidat do Google kalendáře</button>
                 <p></p>
@@ -56,7 +58,7 @@
         function addMCalendarEvent() {
             // Parametry pro Google Calendar událost
             const title = encodeURIComponent("Písemná práce z matematiky");
-            const description = encodeURIComponent("trojčlenka, procenta, poměr, měřítko mapy");
+            const description = encodeURIComponent("trojčlenka, procenta, poměr, měřítko mapy, zlomky, rovnoběžníky, lichoběžníky, trojúhelníky");
             const startDate = "20240617";
             const endDate = "20240618";
             const location = ""; // volitelné
