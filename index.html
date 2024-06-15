@@ -28,36 +28,46 @@
             <h1 class="verybig">Tobikovo</h1>
             <h1>Učivo</h1>
             <ul class="grid">
-                <li class="grid-item">
-                    <h3>Mluvnice</h3>
-                    <div class="grid-content">
-                        <button type="button" class="ripple-button" onclick="openMluvnice()">Otevřít</button>
-                    </div>
-                </li>
-                <li class="grid-item">
-                    <h3>Literatura</h3>
-                    <div class="grid-content">
-                        <button type="button" class="ripple-button" onclick="openLiteratura()">Otevřít</button>
-                    </div>
-                </li>
-                <li class="grid-item">
-                    <h3>Sloh</h3>
-                    <div class="grid-content">
-                        <button type="button" class="ripple-button" onclick="openSloh()">Otevřít</button>
-                    </div>
-                </li>
-                <li class="grid-item">
-                    <h3>Hudební výchova</h3>
-                    <div class="grid-content">
-                        <button type="button" class="ripple-button2" onclick="openHudebka()">Otevřít</button>
-                    </div>
-                </li>
-                <li class="grid-item">
-                    <h3>Matematika</h3>
-                    <div class="grid-content">
-                        <button type="button" class="ripple-button" onclick="openMatematika()">Otevřít</button>
-                    </div>
-                </li>
+                <a href="mluvnice.html">
+                    <li class="grid-item">
+                        <h3>Mluvnice</h3>
+                        <div class="grid-content">
+                            <button type="button" class="ripple-button" onclick="openMluvnice()">Otevřít</button>
+                        </div>
+                    </li>
+                </a>
+                <a href="literatura.html">
+                    <li class="grid-item">
+                        <h3>Literatura</h3>
+                        <div class="grid-content">
+                            <button type="button" class="ripple-button" onclick="openLiteratura()">Otevřít</button>
+                        </div>
+                    </li>
+                </a>
+                <a href="sloh.html">
+                    <li class="grid-item">
+                        <h3>Sloh</h3>
+                        <div class="grid-content">
+                            <button type="button" class="ripple-button" onclick="openSloh()">Otevřít</button>
+                        </div>
+                    </li>
+                </a>
+                <a href="hudebni-vychova.html">
+                    <li class="grid-item">
+                        <h3>Hudební výchova</h3>
+                        <div class="grid-content">
+                            <button type="button" class="ripple-button2" onclick="openHudebka()">Otevřít</button>
+                        </div>
+                    </li>
+                </a>
+                <a href="matematika.html">
+                    <li class="grid-item">
+                        <h3>Matematika</h3>
+                        <div class="grid-content">
+                            <button type="button" class="ripple-button" onclick="openMatematika()">Otevřít</button>
+                        </div>
+                    </li>
+                </a>
             </ul>
         </section>
 
@@ -79,7 +89,7 @@
             <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
         </div>
     </footer>
-    <script src="javastripts/nav.js" ></script>
+    <script src="javastripts/nav.js"></script>
     <script>
         function openMluvnice() {
             window.location.href = "mluvnice.html";
@@ -95,11 +105,11 @@
             window.location.href = "sloh.html";
         }
     </script>
-        <script>
-            function openHudebka() {
-                window.location.href = "hudebni-vychova.html";
-            }
-        </script>
+    <script>
+        function openHudebka() {
+            window.location.href = "hudebni-vychova.html";
+        }
+    </script>
     <script>
         function openMatematika() {
             window.location.href = "matematika.html";

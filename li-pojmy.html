@@ -28,24 +28,30 @@
         <section>
             <h1 class="verybig">Základní pojmy</h1>
             <ul class="grid">
-                <li class="grid-item">
-                    <h3>Poezie a próza</h3>
-                    <div class="grid-content">
-                        <button type="button" class="ripple-button2" onclick="openPoezie()">Otevřít</button>
-                    </div>
-                </li>
-                <li class="grid-item">
-                    <h3>Pojmy v básni</h3>
-                    <div class="grid-content">
-                        <button type="button" class="ripple-button" onclick="openPojmy()">Otevřít</button>
-                    </div>
-                </li>
-                <li class="grid-item">
-                    <h3>Rýmy</h3>
-                    <div class="grid-content">
-                        <button type="button" class="ripple-button" onclick="openRymy()">Otevřít</button>
-                    </div>
-                </li>
+                <a href="li-poezie-proza.html">
+                    <li class="grid-item">
+                        <h3>Poezie a próza</h3>
+                        <div class="grid-content">
+                            <button type="button" class="ripple-button2" onclick="openPoezie()">Otevřít</button>
+                        </div>
+                    </li>
+                </a>
+                <a href="li-pojmy-v-basni.html">
+                    <li class="grid-item">
+                        <h3>Pojmy v básni</h3>
+                        <div class="grid-content">
+                            <button type="button" class="ripple-button" onclick="openPojmy()">Otevřít</button>
+                        </div>
+                    </li>
+                </a>
+                <a href="li-rymy.html">
+                    <li class="grid-item">
+                        <h3>Rýmy</h3>
+                        <div class="grid-content">
+                            <button type="button" class="ripple-button" onclick="openRymy()">Otevřít</button>
+                        </div>
+                    </li>
+                </a>
             </ul>
         </section>
 
@@ -63,16 +69,16 @@
             window.location.href = "li-poezie-proza.html"
         }
     </script>
-        <script>
-            function openPojmy() {
-                window.location.href = "li-pojmy-v-basni.html"
-            }
-        </script>
-                <script>
-                    function openRymy() {
-                        window.location.href = "li-rymy.html"
-                    }
-                </script>
+    <script>
+        function openPojmy() {
+            window.location.href = "li-pojmy-v-basni.html"
+        }
+    </script>
+    <script>
+        function openRymy() {
+            window.location.href = "li-rymy.html"
+        }
+    </script>
 </body>
 
 </html>
