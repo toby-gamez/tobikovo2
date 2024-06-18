@@ -27,6 +27,9 @@ nav a {
 nav a:hover {
     background-color: #1f1f1f;
 }
+nav hr {
+    width: 80px;
+}
 
 @media screen and (max-width: 600px) {
 
@@ -43,6 +46,9 @@ nav a:hover {
 
     .openNav {
         visibility: visible;
+    }
+    nav hr {
+        width: 300px;
     }
 
     /* Zobrazení navigačního menu na menších zařízeních */

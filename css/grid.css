@@ -21,6 +21,18 @@
     /* Výška prvku */
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
 }
+.grid h3 {
+    text-decoration: none;
+    color: white;
+}
+.grid button {
+    text-decoration: none;
+    color: white;
+}
+.grid a {
+    text-decoration: none;
+    color: white;
+}
 
 @media only screen and (max-width: 600px) {
     .grid-item {
@@ -57,15 +69,15 @@
 }
 
 .ripple-button {
-    margin-top: 40%;
-}
-
-.ripple-button2 {
     margin-top: 23%;
 }
 
+.ripple-button2 {
+    margin-top: 8%;
+}
+
 .ripple-button3 {
-    margin-top: 6%;
+    margin-top: -10%;
 }
 
 
