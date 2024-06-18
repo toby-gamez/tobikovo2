@@ -18,11 +18,13 @@ h3,
 h4 {
     font-family: 'Noto Sans Mono', monospace;
 }
+
 .verybig {
     font-size: 60px;
     text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
 
 }
+
 .priklad {
     font-family: 'Times new Roman';
 }
@@ -43,28 +45,41 @@ hr {
 }
 
 .Mcard {
-    background-color: #35393f; /* odpovídá Bootstrap text-bg-secondary */
-    color: #fff; /* textová barva */
-    max-width: 18rem; /* maximální šířka */
-    border: 1px solid #ddd; /* přidání okraje */
-    border-radius: 0.25rem; /* zaoblené rohy */
-  }
-  .Minfo {
-    background-color: #2e3136; /* tmavší šedá pro hlavičku */
-    padding: 0.75rem 1.25rem; /* padding */
-    border-bottom: 1px solid #ddd; /* spodní okraj */
-    border-top-left-radius: 0.25rem; /* zaoblené rohy nahoře */
+    background-color: #35393f;
+    /* odpovídá Bootstrap text-bg-secondary */
+    color: #fff;
+    /* textová barva */
+    max-width: 18rem;
+    /* maximální šířka */
+    border: 1px solid #ddd;
+    /* přidání okraje */
+    border-radius: 0.25rem;
+    /* zaoblené rohy */
+}
+
+.Minfo {
+    background-color: #2e3136;
+    /* tmavší šedá pro hlavičku */
+    padding: 0.75rem 1.25rem;
+    /* padding */
+    border-bottom: 1px solid #ddd;
+    /* spodní okraj */
+    border-top-left-radius: 0.25rem;
+    /* zaoblené rohy nahoře */
     border-top-right-radius: 0.25rem;
-  }
+}
 
-  .Mtelo {
-    padding: 1rem; /* padding */
-  }
+.Mtelo {
+    padding: 1rem;
+    /* padding */
+}
 
-  .Mnadpis {
-    font-size: 1.25rem; /* velikost písma */
-    margin-bottom: 0.75rem; /* spodní okraj */
-  }
+.Mnadpis {
+    font-size: 1.25rem;
+    /* velikost písma */
+    margin-bottom: 0.75rem;
+    /* spodní okraj */
+}
 
 
 
@@ -186,16 +201,16 @@ button {
     color: white;
     font-size: 16px;
     padding: 10px 20px;
-  }
-  
-  .spark {
+}
+
+.spark {
     position: absolute;
     width: 30px;
     height: 8px;
     border-radius: 3px;
     background-color: white;
     transform: none;
-  }
+}
 
 button:hover {
     background-color: #616161;
@@ -211,6 +226,7 @@ button:active {
     opacity: 0.5;
     /* Příklad: Změna průhlednosti pro naznačení, že je tlačítko disabled */
 }
+
 @media only screen and (max-width: 600px) {
     button {
         border-radius: 16px;
@@ -221,7 +237,8 @@ button:active {
         color: white;
         font-size: 16px;
         padding: 10px 20px;
-      }
+    }
+
     .nav-button {
         border-radius: 16px;
         border: solid 0px black;
@@ -231,7 +248,8 @@ button:active {
         color: white;
         font-size: 16px;
         padding: 10px 20px;
-      }
+    }
+
     .opennav-button {
         font-size: 50px;
         position: absolute;
