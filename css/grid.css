@@ -5,30 +5,41 @@
     grid-gap: 20px;
     /* Mezery mezi jednotlivými buňkami gridu */
     list-style: none;
-    padding: 0;
 }
 
 .grid-item {
     background-color: #25292e;
     padding: 20px;
     text-align: center;
-    margin: 0;
     border-radius: 10%;
-    /* Zaoblené rohy pro vytvoření čtverců */
     width: 150px;
-    /* Šířka prvku */
     height: 150px;
-    /* Výška prvku */
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
 }
+
 .grid h3 {
     text-decoration: none;
     color: white;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
 }
+
+.grid-h3 {
+    margin-top: 58px;
+    text-shadow: rgba(0, 0, 0, 0.2);
+}
+
+.grid-h3-2 {
+    margin-top: 38px;
+    text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
 .grid button {
     text-decoration: none;
     color: white;
 }
+
 .grid a {
     text-decoration: none;
     color: white;
@@ -66,18 +77,6 @@
     /* Další styly pro zobrazení disabled tlačítka, např. změna barvy pozadí nebo textu */
     opacity: 0.5;
     /* Příklad: Změna průhlednosti pro naznačení, že je tlačítko disabled */
-}
-
-.ripple-button {
-    margin-top: 23%;
-}
-
-.ripple-button2 {
-    margin-top: 8%;
-}
-
-.ripple-button3 {
-    margin-top: -10%;
 }
 
 
