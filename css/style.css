@@ -15,7 +15,8 @@ ul,
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
     font-family: 'Noto Sans Mono', monospace;
 }
 
@@ -49,7 +50,6 @@ hr {
     /* odpovídá Bootstrap text-bg-secondary */
     color: #fff;
     /* textová barva */
-    max-width: 18rem;
     /* maximální šířka */
     border: 1px solid #ddd;
     /* přidání okraje */
