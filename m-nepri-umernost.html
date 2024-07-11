@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nepřímá úměrnost - Tobikovo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/tabulkad.css">
+
+    <style>
+        @media screen and (max-width: 754px) {
+            table {
+                width: 100px !important;
+                padding: 0;
+            }
+
+            td p {
+                font-size: 10px;
+            }
+
+            td {
+                padding: 0;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loading-bar-container">
+        <div class="loading-bar"></div>
+    </div>
+
+    <nav id="myNavbar"></nav>
+    <button class="openNav opennav-button" onclick="openNav()">☰</button>
+
+    <!-- Obsah stránky -->
+    <main>
+
+        <section>
+            <h1 class="verybig">Nepřímá úměrnost</h1>
+            <div style="text-align: left;">
+                <h2>Informace</h2>
+                <ul>
+                    <li>závislost proměnných x a y</li>
+                    <li>kolikrát se zvětší hodnota x, tolikrát se zmenší hodnota y a kolikrát se zmenší hodnota x,
+                        tolikrát se zvětší hodnota y</li>
+                    <li>hodnoty se mění ve stejném převráceném <a href="m-pomer.html">poměru</a></li>
+                </ul>
+                <p class="priklad">1 dělník .... 36 dnů<br>za jak dlouho vypokou 2, 3, 4, 5, 10 dělníci?</p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>počet dělníků X</p>
+                                <p>délka kopání Y</p>
+                            </td>
+                            <td>
+                                <p>1</p>
+                                <p>36</p>
+                            </td>
+                            <td>
+                                <p>2</p>
+                                <p>18</p>
+                            </td>
+                            <td>
+                                <p>3</p>
+                                <p>12</p>
+                            </td>
+                            <td>
+                                <p>4</p>
+                                <p>9</p>
+                            </td>
+                            <td>
+                                <p>6</p>
+                                <p>6</p>
+                            </td>
+                            <td>
+                                <p>9</p>
+                                <p>4</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="priklad">k (koeficient) = 36 (jak dlouho kope jeden dělník)</p>
+                <p class="priklad">Počet dnů je nepřímo úměrný počtu dělníků.</p>
+                <p>y = 36 ÷ x<br>y = k ÷ x<br>k = y × x</p>
+            </div>
+        </section>
+
+    </main>
+    <!-- Patička -->
+    <footer>
+        <div class="footer-content">
+            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+        </div>
+    </footer>
+    <!-- JSs -->
+    <script src="javastripts/nav.js"></script>
+</body>
+
+</html>
