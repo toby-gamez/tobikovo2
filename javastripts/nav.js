@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 <a href="sloh.html">Sloh</a>
                 <a href="hudebni-vychova.html">Hudební výchova</a>
                 <a href="matematika.html">Matematika</a>
-                <a href="prirodopis.html">Přírodopis</a>
                 <hr>
                 <a href="about.html">O mně</a>
             </nav>
