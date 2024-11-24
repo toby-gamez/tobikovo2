@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <a href="chemie.html">Chemie</a>
                 <hr>
                 <a href="about.html">O mně</a>
+                <a href="nazor.html">Váš názor</a>
             </nav>
             `;
 

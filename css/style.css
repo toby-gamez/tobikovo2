@@ -9,6 +9,8 @@ span,
 button,
 li,
 ul,
+textarea,
+.opinion-input,
 #myNavbar a {
     font-family: 'Outfit', sans-serif;
 }
@@ -265,4 +267,41 @@ button:active {
 
 mn {
     font-family: 'Outfit', sans-serif;
+}
+
+/* textarea */
+
+textarea {
+    border-radius: 10px;
+    border: 2px solid #35393f;
+    background-color: #35393f;
+    color: white;
+    overflow: hidden;
+    /* Skryje posuvník */
+    resize: none;
+    /* Zabrání uživateli měnit velikost */
+    padding: 0.5rem;
+}
+
+textarea:focus {
+    border: 2px solid white;
+    outline: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    textarea {
+        min-width: 20rem;
+        min-height: 10rem;
+        max-width: 20rem;
+        max-height: 10rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    textarea {
+        min-width: 50rem;
+        min-height: 25rem;
+        max-width: 60rem;
+        max-height: 15rem;
+    }
 }
