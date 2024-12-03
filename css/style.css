@@ -1,20 +1,26 @@
 /* Stránka */
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 p,
 span,
-button,
 li,
 ul,
-textarea,
+textarea {
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
 .opinion-input,
+button,
 #myNavbar a {
     font-family: 'Outfit', sans-serif;
 }
 
+/* ;*/
 h1,
 h2,
 h3,
@@ -35,7 +41,6 @@ h5 {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
     background-color: #16181b;
     color: #ffffff;
     margin: 0;

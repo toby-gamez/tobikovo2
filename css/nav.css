@@ -27,6 +27,7 @@ nav a {
 nav a:hover {
     background-color: #1f1f1f;
 }
+
 nav hr {
     width: 80px;
 }
@@ -47,6 +48,7 @@ nav hr {
     .openNav {
         visibility: visible;
     }
+
     nav hr {
         width: 300px;
     }
@@ -86,5 +88,18 @@ nav hr {
 
     .navbar a:hover {
         background-color: #555;
+    }
+}
+
+.navtext {
+    color: #646b74;
+    margin-bottom: 2rem;
+    margin-top: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .navtext {
+        margin-bottom: 5rem;
+        margin-top: auto;
     }
 }

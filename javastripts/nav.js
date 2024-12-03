@@ -16,6 +16,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 <hr>
                 <a href="about.html">O mně</a>
                 <a href="nazor.html">Váš názor</a>
+                <a href="changelog.html">Deník změn</a>
+                <span class="navtext">24w49a</span>
             </nav>
             `;
 
