@@ -15,9 +15,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 <a href="chemie.html">Chemie</a>
                 <hr>
                 <a href="about.html">O mně</a>
-                <a href="nazor.html">Váš názor</a>
+                <a href="nazor.html">Váše zpětná vazba</a>
                 <a href="changelog.html">Deník změn</a>
-                <span class="navtext">24w49a</span>
+                <span class="navtext">24w49b</span>
             </nav>
             `;
 
