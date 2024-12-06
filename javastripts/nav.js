@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', function () {
     var navbarContent = `
             <nav>
                 <button style="font-size: 50px; position: absolute; top: 0; right: 10px;" class="openNav nav-button" onclick="openNav()">×</button>
-                <a href="index.html"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
-                <a href="index.html">Domů</a>
+                <a href="home.html"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
+                <a href="home.html">Domů</a>
                 <hr>
                 <a href="mluvnice.html">Mluvnice</a>
                 <a href="literatura.html">Literatura</a>
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <a href="about.html">O mně</a>
                 <a href="nazor.html">Váše zpětná vazba</a>
                 <a href="changelog.html">Deník změn</a>
-                <span class="navtext">24w49b</span>
+                <span style="font-family: 'Outfit', sans-serif;" class="navtext">24w49c</span>
             </nav>
             `;
 
