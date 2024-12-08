@@ -15,9 +15,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 <a href="chemie.html">Chemie</a>
                 <hr>
                 <a href="about.html">O mně</a>
-                <a href="nazor.html">Váše zpětná vazba</a>
+                <a href="nazor.html">Vaše zpětná vazba</a>
                 <a href="changelog.html">Deník změn</a>
-                <span style="font-family: 'Outfit', sans-serif;" class="navtext">24w49c</span>
+                <span style="font-family: 'Outfit', sans-serif;" class="navtext">24w49d</span>
             </nav>
             `;
 
