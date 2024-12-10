@@ -48,6 +48,10 @@
             font-size: 16px;
         }
 
+        h4 {
+            font-size: 25px;
+        }
+
         .citat.visible,
         .maly-text.visible,
         h1.visible,
@@ -55,72 +59,6 @@
         h3.visible {
             opacity: 1;
             transform: translateY(0);
-        }
-
-        .card-grid {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            max-width: 800px;
-            gap: 20px;
-        }
-
-        .card {
-            background-color: #25292e;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            opacity: 0;
-            transform: translateY(50px);
-        }
-
-        .card.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .card:hover {
-            transform: scale(1.02);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-            border: 5px solid white;
-        }
-
-        .card-image {
-            width: 100%;
-            height: 250px;
-            object-fit: scale-down;
-        }
-
-        .card-content {
-            padding: 20px;
-        }
-
-        .card-title {
-            margin: 0 0 10px;
-            font-size: 1.5em;
-        }
-
-        .card-description {
-            font-size: 1em;
-        }
-
-        .card a {
-            text-decoration: none;
-            color: inherit;
-            display: block;
-        }
-
-        code {
-            font-size: 50px;
-        }
-
-        @media screen and (max-width: 600px) {
-            code {
-                font-size: 20px;
-            }
         }
     </style>
 </head>
@@ -143,57 +81,39 @@
             <div style="margin-top: 25rem;">
                 <h1 class="citat underlined">Učivo</h1>
             </div>
-
-            <div class="card-grid">
-                <div class="card">
-                    <a href="mluvnice.html">
-                        <img src="images/mluvnice.png" alt="Karta 1" class="card-image">
-                        <div class="card-content">
-                            <p class="card-description">Celá gramatika českého jazyka.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="literatura.html">
-                        <img src="images/literatura.png" alt="Karta 1" class="card-image">
-                        <div class="card-content">
-                            <p class="card-description">Vše o literatuře, minulost, historie, díla atd.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="sloh.html">
-                        <img src="images/sloh.png" alt="Karta 3" class="card-image">
-                        <div class="card-content">
-                            <p class="card-description">Zde jsou informace o tom, jak správně psát slohové práce.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="hudebni-vychova.html">
-                        <img src="images/hudebni-vychova.png" alt="Karta 4" class="card-image">
-                        <div class="card-content">
-                            <p class="card-description">Muzika, takty, představitelé, žánry, díla a více!</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="matematika.html">
-                        <img src="images/matematika.png" alt="Karta 4" class="card-image">
-                        <div class="card-content">
-                            <p class="card-description">Matematika zahrnuje mocniny, geometrii, trojčlenku, ale i
-                                jak počítat 1+1.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="chemie.html">
-                        <img src="images/chemie.png" alt="Karta 4" class="card-image">
-                        <div class="card-content">
-                            <p class="card-description">Periodická soustava prvků, tělesa, látky směsi atomy a více!</p>
-                        </div>
-                    </a>
-                </div>
+            <div style="margin-top: 15rem;">
+                <ul class="grid">
+                    <li class="grid-item">
+                        <a href="mluvnice.html">
+                            <h4 class="grid-h3">MLUVNICE</h4>
+                        </a>
+                    </li>
+                    <li class="grid-item">
+                        <a href="literatura.html">
+                            <h4 class="grid-h3">LITERATURA</h4>
+                        </a>
+                    </li>
+                    <li class="grid-item">
+                        <a href="sloh.html">
+                            <h4 class="grid-h3">SLOH</h4>
+                        </a>
+                    </li>
+                    <li class="grid-item">
+                        <a href="hudebni-vychova.html">
+                            <h4 class="grid-h3">HUDEBNÍ VÝCHOVA</h4>
+                        </a>
+                    </li>
+                    <li class="grid-item">
+                        <a href="matematika.html">
+                            <h4 class="grid-h3">MATEMATIKA</h4>
+                        </a>
+                    </li>
+                    <li class="grid-item">
+                        <a href="chemie.html">
+                            <h4 class="grid-h3">CHEMIE</h4>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
         <section>
@@ -208,7 +128,7 @@
 
     <script>
         function checkScroll() {
-            const elements = document.querySelectorAll('h1, h2, h3, .card');
+            const elements = document.querySelectorAll('h1, h2, h3');
             const windowHeight = window.innerHeight;
 
             elements.forEach(el => {

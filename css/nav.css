@@ -3,8 +3,8 @@ nav {
     left: 0;
     top: 0;
     height: 100%;
-    width: 110px;
-    background-color: #35393f;
+    width: 130px;
+    background-color: #ffad8f;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,10 +13,11 @@ nav {
 
 .openNav {
     visibility: hidden;
+    color: #220b00;
 }
 
 nav a {
-    color: #fff;
+    color: #220b00;
     text-decoration: none;
     padding: 15px 0;
     width: 100%;
@@ -25,11 +26,12 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #1f1f1f;
+    background-color: #ff9c66;
 }
 
 nav hr {
-    width: 80px;
+    width: 100px;
+    color: #220b00;
 }
 
 @media screen and (max-width: 600px) {
@@ -39,7 +41,6 @@ nav hr {
         height: 100%;
         position: fixed;
         top: 0;
-        background-color: #35393f;
         z-index: 1000;
         transform: translateY(-100%);
         transition: transform 0.3s ease-in-out;
@@ -62,7 +63,6 @@ nav hr {
         position: fixed;
         top: 0;
         left: 0;
-        background-color: #35393f;
         z-index: 1000;
         transition: transform 0.3s ease-in-out;
     }
@@ -78,7 +78,6 @@ nav hr {
     }
 
     .navbar a {
-        color: #fff;
         text-decoration: none;
         padding: 15px 0;
         width: 100%;
@@ -86,13 +85,10 @@ nav hr {
         transition: background-color 0.3s ease;
     }
 
-    .navbar a:hover {
-        background-color: #555;
-    }
 }
 
 .navtext {
-    color: #646b74;
+    color: #fb8241;
     margin-bottom: 2rem;
     margin-top: auto;
 }
