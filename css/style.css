@@ -41,6 +41,7 @@ h5 {
 }
 
 body {
+    font-family: "Poppins", sans-serif;
     background-color: #ffe8df;
     color: #ffffff;
     margin: 0;
@@ -102,7 +103,7 @@ hr {
 
 .grid .subtitle {
     font-size: 13px;
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 main {
@@ -231,7 +232,7 @@ button:active {
     transform: scale(0.95);
 }
 
-.button:disabled {
+button:disabled {
     cursor: not-allowed;
     /* Další styly pro zobrazení disabled tlačítka, např. změna barvy pozadí nebo textu */
     opacity: 0.5;
@@ -240,30 +241,24 @@ button:active {
 
 @media only screen and (max-width: 600px) {
     button {
-        border-radius: 16px;
-        border: solid 3px white;
-        background-color: transparent;
         cursor: pointer;
-        outline: none;
-        color: white;
         font-size: 16px;
         padding: 10px 20px;
     }
 
     .nav-button {
-        border-radius: 16px;
-        border: solid 0px black;
-        cursor: pointer;
-        font-size: 300px;
-        outline: none;
-        color: white;
-        font-size: 16px;
-        padding: 10px 20px;
+        font-size: 50px;
+        position: absolute;
+        background-color: transparent;
+        top: 0;
+        right: 0;
+        border: 0px solid black;
     }
 
     .opennav-button {
         font-size: 50px;
         position: absolute;
+        background-color: transparent;
         top: 0;
         right: 0;
         border: 0px solid black;
@@ -273,16 +268,16 @@ button:active {
 /*matematika*/
 
 mn {
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* textarea */
 
 textarea {
     border-radius: 10px;
-    border: 2px solid #35393f;
-    background-color: #35393f;
-    color: white;
+    border: 2px solid #ffad8f;
+    background-color: #ffad8f;
+    color: #220b00;
     overflow: hidden;
     /* Skryje posuvník */
     resize: none;
@@ -291,7 +286,7 @@ textarea {
 }
 
 textarea:focus {
-    border: 2px solid white;
+    border: 2px solid #220b00;
     outline: none;
 }
 
@@ -311,4 +306,52 @@ textarea:focus {
         max-width: 60rem;
         max-height: 15rem;
     }
+}
+
+.opinion-input {
+    width: 100%;
+    width: 20rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 2px solid #ffad8f;
+    background-color: #ffad8f;
+    color: #220b00;
+    margin-bottom: 1rem;
+}
+
+.opinion-input:focus,
+textarea:focus {
+    border: 2px solid #220b00;
+    outline: none;
+}
+
+button {
+    margin: 0.5rem;
+}
+
+.opinions-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.opinion-card {
+    background-color: #ffad8f;
+    border-radius: 8px;
+    padding: 1rem;
+    position: relative;
+}
+
+.opinion-card:hover {
+    transform: translateY(-2px);
+}
+
+.opinion-meta {
+    display: flex;
+    justify-content: space-between;
+    color: #6e2300;
+    font-size: 0.875rem;
+    font-family: "Poppins", sans-serif;
+
 }
