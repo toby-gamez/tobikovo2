@@ -9,20 +9,17 @@ th,
 td {
     padding: 10px;
     text-align: left;
-    font-family: 'Roboto Mono', monospace;
     text-align: center;
 }
 
 th {
-    background-color: #35393f;
-    color: white;
+    background-color: #ff946c;
     border-right: 1px;
 }
 
 td:first-child {
-    background-color: #35393f;
-    color: white;
-    font-family: 'Roboto Mono', monospace;
+    background-color: #ff946c;
+    color: white !important;
 }
 
 p {
@@ -30,5 +27,5 @@ p {
 }
 
 td {
-    background-color: #1f1f1f;
+    background-color: #ffad8f;
 }

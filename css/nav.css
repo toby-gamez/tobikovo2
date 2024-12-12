@@ -89,13 +89,16 @@ nav hr {
 
 .navtext {
     color: #6e2300;
-    margin-bottom: 2rem;
-    margin-top: auto;
+    margin-top: 0.5rem;
+    margin-left: auto;
+    margin-right: 20px;
 }
 
 @media screen and (max-width: 600px) {
     .navtext {
         margin-bottom: 5rem;
         margin-top: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
