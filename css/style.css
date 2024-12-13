@@ -66,7 +66,6 @@ img {
 }
 
 .Minfo {
-    background-color: #ffad8f;
     /* tmavší šedá pro hlavičku */
     padding: 0.75rem 1.25rem;
     /* padding */
@@ -89,7 +88,6 @@ img {
 
 @media screen and (max-width: 600px) {
     hr {
-        color: white;
         width: 290px;
     }
 
@@ -101,7 +99,7 @@ img {
 }
 
 main {
-    margin-left: 110px;
+    margin-left: 130px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -303,7 +301,6 @@ textarea:focus {
 }
 
 .opinion-input {
-    width: 100%;
     width: 20rem;
     padding: 0.5rem;
     border-radius: 10px;
