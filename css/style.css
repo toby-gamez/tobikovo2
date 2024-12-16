@@ -259,7 +259,8 @@ button:disabled {
 
 /*matematika*/
 
-mn {
+mn,
+mi {
     font-family: 'Poppins', sans-serif;
 }
 
