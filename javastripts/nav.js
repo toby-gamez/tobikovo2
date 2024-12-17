@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <a href="about.html">O mně</a>
                 <a href="nazor.html">Vaše zpětná vazba</a>
                 <a href="changelog.html">Deník změn</a>
-                <span style="font-family: 'Outfit', sans-serif;" class="navtext">24w51a</span>
+                <span style="font-family: 'Outfit', sans-serif;" class="navtext">24w51b</span>
 
                 <button class="scroll-to-top" onclick="scrollToTop()">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
