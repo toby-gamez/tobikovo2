@@ -31,7 +31,7 @@ nav a:hover {
 
 nav hr {
     width: 100px;
-    color: #220b00;
+    background-color: #ff946c;
 }
 
 @media screen and (max-width: 600px) {

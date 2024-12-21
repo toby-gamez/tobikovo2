@@ -26,6 +26,18 @@ h5 {
 
 }
 
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
 .verybig {
     font-size: 60px;
 }
@@ -46,10 +58,13 @@ body {
 }
 
 hr {
-    color: #160703;
+    background-color: #160703;
+    height: 3px;
+    border: none;
 }
 
-img {
+img,
+video {
     border-radius: 10px;
 }
 
@@ -135,6 +150,14 @@ h1 {
         font-size: 20px;
     }
 
+    h3 {
+        font-size: 17px;
+    }
+
+    h4 {
+        font-size: 15px;
+    }
+
     main {
         margin-left: 0px;
         flex-grow: 1;
@@ -146,7 +169,7 @@ h1 {
 }
 
 a {
-    color: #ff946c;
+    color: #ff7340;
 }
 
 /* Styly pro loading bar */
@@ -187,11 +210,6 @@ a {
 
 .underlined {
     text-decoration: underline;
-}
-
-.rounded {
-    border-radius: 10%;
-    padding: 1%;
 }
 
 .blog-image {
@@ -368,20 +386,6 @@ button {
     }
 }
 
-.static-text {
-    visibility: visible;
-    position: fixed;
-    top: 4rem;
-    right: 4rem;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    border: 3px solid #ff946c;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #ffad8f;
-}
 
 @media only screen and (max-width: 600px) {
     .static-text {
