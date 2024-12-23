@@ -6,7 +6,21 @@ footer {
 }
 
 .footer-content {
-    margin-left: 6.8rem;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 3px;
+    padding-bottom: 0;
+}
+
+.footer-content:hover {
+    background-color: #ff9c66;
 }
 
 @media only screen and (max-width: 600px) {

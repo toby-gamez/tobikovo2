@@ -3,7 +3,7 @@ nav {
     left: 0;
     top: 0;
     height: 100%;
-    width: 130px;
+    width: 200px;
     background-color: #ffad8f;
     display: flex;
     flex-direction: column;
@@ -19,10 +19,14 @@ nav {
 nav a {
     color: #220b00;
     text-decoration: none;
-    padding: 15px 0;
-    width: 100%;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    width: 77%;
     text-align: center;
     transition: background-color 0.3s ease;
+    border-radius: 10px;
 }
 
 nav a:hover {
@@ -30,7 +34,7 @@ nav a:hover {
 }
 
 nav hr {
-    width: 100px;
+    width: 150px;
     background-color: #ff946c;
 }
 
@@ -91,7 +95,7 @@ nav hr {
     color: #6e2300;
     margin-top: 0.5rem;
     margin-left: auto;
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 @media screen and (max-width: 600px) {
