@@ -12,6 +12,7 @@ textarea {
 }
 
 .opinion-input,
+.version-info,
 button,
 #myNavbar a,
 h1,
@@ -120,6 +121,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 60px;
 }
 
 /* Změny pro grid a jiné prvky */
@@ -187,7 +189,7 @@ main a:hover {
     top: 0;
     left: 0;
     width: 93.5%;
-    margin-left: 130px;
+    margin-left: 285px;
     height: 5px;
     background-color: transparent;
     z-index: 9999;

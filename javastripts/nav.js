@@ -2,32 +2,208 @@ document.addEventListener('DOMContentLoaded', function () {
     var navbar = document.getElementById('myNavbar');
 
     var navbarContent = `
-            <nav>
-                            
-                <button style="font-size: 50px; position: absolute; top: 0; right: 10px; color: #220b00;" class="openNav nav-button" onclick="openNav()">×</button>
-                <a href="home.html"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
-                <a href="home.html">Domů</a>
-                <hr>
-                <a href="mluvnice.html">Mluvnice</a>
-                <a href="literatura.html">Literatura</a>
-                <a href="sloh.html">Sloh</a>
-                <a href="hudebni-vychova.html">Hudební výchova</a>
-                <a href="matematika.html">Matematika</a>
-                <a href="chemie.html">Chemie</a>
-                <a href="fyzika.html">Fyzika</a>
-                <hr>
-                <a href="about.html">O mně</a>
-                <a href="nazor.html">Vaše zpětná vazba</a>
-                <a href="changelog.html">Deník změn</a>
-                <span style="font-family: 'Outfit', sans-serif;" class="navtext">24w51e</span>
+    <link href="libs/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Mobilní hlavička -->
+    <div class="mobile-header">
+        <div class="logo">
+            <img src="images/white-logo.png" alt="Logo" height="40">
+        </div>
+        <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+        </button>
+    </div>
 
-                <button class="scroll-to-top" onclick="scrollToTop()">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M8 3.293l-4.146 4.147a.5.5 0 0 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0l4.5 4.5a.5.5 0 0 1-.708.708L8 3.293z"/>
-            <path fill-rule="evenodd" d="M8 12.707a.5.5 0 0 1-.5-.5v-8a.5.5 0 0 1 1 0v8a.5.5 0 0 1-.5.5z"/>
-        </svg>
-    </button>
-            </nav>
+    <!-- Mobilní menu -->
+    <div class="mobile-menu">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link navHo" href="home.html">
+                    <div class="nav-link-content">
+                        <i class="bi bi-house-door"></i>
+                        <span>Domů</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item" >
+                <a class="nav-link navMl" href="mluvnice.html">
+                    <div class="nav-link-content">
+                        <i class="bi bi-journal-text"></i>
+                        <span>Mluvnice</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navLi" href="literatura.html">
+                    <div class="nav-link-content">
+                        <i class="bi bi-book"></i>
+                        <span>Literatura</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navSl" href="sloh.html">
+                    <div class="nav-link-content">
+                        <i class="bi bi-pen"></i>
+                        <span>Sloh</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navHu" href="hudebni-vychova.html">
+                    <div class="nav-link-content">
+                        <i class="bi bi-music-note"></i>
+                        <span>Hudba</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navMa" href="matematika.html">
+                    <div class="nav-link-content">
+                        <i class="bi bi-calculator"></i>
+                        <span>Matematika</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navCh" href="chemie.html">
+                    <div class="nav-link-content">
+                        <i class="bi bi-balloon"></i>
+                        <span>Chemie</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navFy" href="fyzika.html">
+                    <div class="nav-link-content">
+                        <i class="bi bi-gear"></i>
+                        <span>Fyzika</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item" style="padding-top: 3rem">
+                <a class="nav-link navAb" href="about.html">
+                    <div class="nav-link-content">
+                        <i class="bi bi-info-circle"></i>
+                        <span>O mně</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navNa" href="nazor.html">
+                    <div class="nav-link-content">
+                        <i class="bi bi-question-circle"></i>
+                        <span>Zpětná vazba</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navCha" href="changelog.html">
+                    <div class="nav-link-content">
+                        <i class="bi bi-file-text"></i>
+                        <span>Changelog</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Desktop sidebar -->
+    <div id="MyNavBar">
+    <a href="home.html" class="navImg" style="margin-left: auto; margin-right: auto"><img src="images/white-logo.png" width="150px"></img></a>
+        <ul class="nav flex-column w-100">
+            <li class="nav-item">
+                <a class="nav-link navHo" href="home.html">
+                    <div class="nav-link-content">
+                        <i class="bi bi-house-door"></i>
+                        <span>Domů</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item" >
+                <a class="nav-link navMl" href="mluvnice.html">
+                    <div class="nav-link-content">
+                        <i class="bi bi-journal-text"></i>
+                        <span>Mluvnice</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navLi" href="literatura.html">
+                    <div class="nav-link-content">
+                        <i class="bi bi-book"></i>
+                        <span>Literatura</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navSl" href="sloh.html">
+                    <div class="nav-link-content">
+                        <i class="bi bi-pen"></i>
+                        <span>Sloh</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navHu" href="hudebni-vychova.html">
+                    <div class="nav-link-content">
+                        <i class="bi bi-music-note"></i>
+                        <span>Hudba</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navMa" href="matematika.html">
+                    <div class="nav-link-content">
+                        <i class="bi bi-calculator"></i>
+                        <span>Matematika</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navCh" href="chemie.html">
+                    <div class="nav-link-content">
+                        <i class="bi bi-balloon"></i>
+                        <span>Chemie</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navFy" href="fyzika.html">
+                    <div class="nav-link-content">
+                        <i class="bi bi-gear"></i>
+                        <span>Fyzika</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item" style="padding-top: 3rem">
+                <a class="nav-link navAb" href="about.html">
+                    <div class="nav-link-content">
+                        <i class="bi bi-info-circle"></i>
+                        <span>O mně</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navNa" href="nazor.html">
+                    <div class="nav-link-content">
+                        <i class="bi bi-question-circle"></i>
+                        <span>Zpětná vazba</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navCha" href="changelog.html">
+                    <div class="nav-link-content">
+                        <i class="bi bi-file-text"></i>
+                        <span>Changelog</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <div class="version-info">24w51f</div>
+    </div>
+
             `;
 
     navbar.innerHTML = navbarContent;
@@ -54,38 +230,27 @@ document.addEventListener('DOMContentLoaded', function () {
     updateLoadingBar();
 });
 
-// nav
 
-function openNav() {
-    // Získání souboru CSS
-    var cssFile = document.querySelector('link[href="css/nav.css"]').sheet;
 
-    // Projdeme všechna pravidla v souboru CSS
-    for (var i = 0; i < cssFile.cssRules.length; i++) {
-        var rule = cssFile.cssRules[i];
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleButton = document.querySelector('.navbar-toggler');
+    const closeButton = document.querySelector('.close-menu');
+    const mobileMenu = document.querySelector('.mobile-menu');
 
-        // Najdeme pravidlo v bloku @media pro navigační panel
-        if (rule.type === CSSRule.MEDIA_RULE && rule.conditionText.includes('max-width: 600px')) {
-            // Projdeme pravidla uvnitř @media bloku
-            for (var j = 0; j < rule.cssRules.length; j++) {
-                var navRule = rule.cssRules[j];
-                // Najdeme pravidlo s transformací pro 'nav'
-                if (navRule.selectorText === 'nav') {
-                    // Změníme hodnotu transformace
-                    if (navRule.style.transform === 'translateY(0%)') {
-                        navRule.style.transform = 'translateY(-100%)';
-                    } else {
-                        navRule.style.transform = 'translateY(0%)';
-                    }
-                    break; // Ukončíme cyklus po úpravě pravidla
-                }
-            }
-            break; // Ukončíme cyklus po nalezení a úpravě @media pravidla
-        }
+    function toggleMenu() {
+        mobileMenu.classList.toggle('show');
+        document.body.style.overflow = mobileMenu.classList.contains('show') ? 'hidden' : '';
     }
-}
 
+    toggleButton.addEventListener('click', toggleMenu);
+    closeButton.addEventListener('click', toggleMenu);
 
+    // Zavření menu při kliknutí na odkaz
+    const menuLinks = mobileMenu.querySelectorAll('.nav-link');
+    menuLinks.forEach(link => {
+        link.addEventListener('click', toggleMenu);
+    });
+});
 
 
 function scrollToTop() {

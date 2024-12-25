@@ -22,10 +22,8 @@
     border: 4px solid transparent;
     /* Rezervace místa pro rámeček */
     transition: transform 0.2s ease, border 0.2s ease;
-    /* Animace */
     overflow: hidden;
-    /* Zajištění, že obsah nepřeteče */
-    position: relative;
+
 }
 
 .grid-item a {
@@ -40,6 +38,7 @@
     height: 100%;
     /* Roztažení odkazu na celou výšku položky */
     text-decoration: none;
+    z-index: 1000;
 }
 
 .grid-item:hover {
@@ -80,7 +79,6 @@
         border-radius: 10%;
         border: 4px solid transparent;
         overflow: hidden;
-        position: relative;
         align-content: center;
     }
 
