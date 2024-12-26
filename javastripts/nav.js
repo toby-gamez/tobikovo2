@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
                 </a>
             </li>
-            <div class="version-info">24w51h</div>
+            <div class="version-info">24w52e</div>
            <li class="nav-item" style="padding-top: 3rem">
                 <a class="nav-link" href="#">
                     <div class="nav-link-content">
@@ -210,7 +210,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 </a>
             </li>
         </ul>
-        <div class="version-info">24w51h</div>
+        <div class="version-info">24w52e</div>
     </div>
 
             `;
