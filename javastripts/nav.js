@@ -101,7 +101,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 <a class="nav-link navCha" href="changelog.html">
                     <div class="nav-link-content">
                         <i class="bi bi-file-text"></i>
-                        <span>Changelog</span>
+                        <span>Deník změn</span>
+                    </div>
+                </a>
+            </li>
+            <div class="version-info">24w51g</div>
+           <li class="nav-item" style="padding-top: 3rem">
+                <a class="nav-link" href="#">
+                    <div class="nav-link-content">
                     </div>
                 </a>
             </li>
@@ -196,12 +203,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 <a class="nav-link navCha" href="changelog.html">
                     <div class="nav-link-content">
                         <i class="bi bi-file-text"></i>
-                        <span>Changelog</span>
+                        <span>Deník změn</span>
                     </div>
                 </a>
             </li>
         </ul>
-        <div class="version-info">24w51f</div>
+        <div class="version-info">24w51g</div>
     </div>
 
             `;

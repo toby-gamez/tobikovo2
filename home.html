@@ -71,6 +71,11 @@
         </div>
     </footer>
     <script src="javastripts/nav.js"></script>
+    <script>
+        if (localStorage.getItem('navbarContent')) {
+            document.write('<nav id="myNavbar">' + localStorage.getItem('navbarContent') + '</nav>');
+        }
+    </script>
 </body>
 
 </html>

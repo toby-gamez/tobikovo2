@@ -44,6 +44,12 @@ nav {
 #MyNavBar .nav-link:hover {
     background-color: #ff9c66;
     transform: translateX(5px);
+    text-decoration: none;
+}
+
+.navbar-toggler:hover {
+    border: none;
+    background-color: transparent;
 }
 
 .main-content {
@@ -100,10 +106,6 @@ nav {
     cursor: pointer;
     padding: 0.5rem;
     transition: transform 0.3s ease;
-}
-
-.close-menu:hover {
-    transform: rotate(90deg);
 }
 
 .navbar-toggler {
