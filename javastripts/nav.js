@@ -7,7 +7,9 @@ document.addEventListener('DOMContentLoaded', function () {
     <!-- Mobilní hlavička -->
     <div class="mobile-header">
         <div class="logo">
-            <img src="images/white-logo.png" alt="Logo" height="40">
+            <a href="home.html">
+                    <img src="images/white-logo.png" width="150px" alt="">
+            </a>
         </div>
         <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
             <i class="bi bi-list"></i>
@@ -105,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
                 </a>
             </li>
-            <div class="version-info">24w51g</div>
+            <div class="version-info">24w51h</div>
            <li class="nav-item" style="padding-top: 3rem">
                 <a class="nav-link" href="#">
                     <div class="nav-link-content">
@@ -208,7 +210,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 </a>
             </li>
         </ul>
-        <div class="version-info">24w51g</div>
+        <div class="version-info">24w51h</div>
     </div>
 
             `;
