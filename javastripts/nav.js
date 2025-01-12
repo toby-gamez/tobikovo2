@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
                 </a>
             </li>
-            <div class="version-info">25w02a</div>
+            <div class="version-info">25w02b</div>
            <li class="nav-item" style="padding-top: 3rem">
                 <a class="nav-link" href="#">
                     <div class="nav-link-content">
@@ -120,97 +120,99 @@ document.addEventListener('DOMContentLoaded', function () {
     <!-- Desktop sidebar -->
     <div id="MyNavBar">
     <a href="home.html" class="navImg" style="margin-left: auto; margin-right: auto"><img src="images/white-logo.png" width="150px"></img></a>
-        <ul class="nav flex-column w-100">
-            <li class="nav-item">
-                <a class="nav-link navHo" href="home.html">
-                    <div class="nav-link-content">
-                        <i class="bi bi-house-door"></i>
-                        <span>Domů</span>
-                    </div>
-                </a>
-            </li>
-            <li class="nav-item" >
-                <a class="nav-link navMl" href="mluvnice.html">
-                    <div class="nav-link-content">
-                        <i class="bi bi-journal-text"></i>
-                        <span>Mluvnice</span>
-                    </div>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link navLi" href="literatura.html">
-                    <div class="nav-link-content">
-                        <i class="bi bi-book"></i>
-                        <span>Literatura</span>
-                    </div>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link navSl" href="sloh.html">
-                    <div class="nav-link-content">
-                        <i class="bi bi-pen"></i>
-                        <span>Sloh</span>
-                    </div>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link navHu" href="hudebni-vychova.html">
-                    <div class="nav-link-content">
-                        <i class="bi bi-music-note"></i>
-                        <span>Hudba</span>
-                    </div>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link navMa" href="matematika.html">
-                    <div class="nav-link-content">
-                        <i class="bi bi-calculator"></i>
-                        <span>Matematika</span>
-                    </div>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link navCh" href="chemie.html">
-                    <div class="nav-link-content">
-                        <i class="bi bi-balloon"></i>
-                        <span>Chemie</span>
-                    </div>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link navFy" href="fyzika.html">
-                    <div class="nav-link-content">
-                        <i class="bi bi-gear"></i>
-                        <span>Fyzika</span>
-                    </div>
-                </a>
-            </li>
-            <li class="nav-item" style="padding-top: 3rem">
-                <a class="nav-link navAb" href="about.html">
-                    <div class="nav-link-content">
-                        <i class="bi bi-info-circle"></i>
-                        <span>O mně</span>
-                    </div>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link navNa" href="nazor.html">
-                    <div class="nav-link-content">
-                        <i class="bi bi-question-circle"></i>
-                        <span>Zpětná vazba</span>
-                    </div>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link navCha" href="changelog.html">
-                    <div class="nav-link-content">
-                        <i class="bi bi-file-text"></i>
-                        <span>Deník změn</span>
-                    </div>
-                </a>
-            </li>
-        </ul>
-        <div class="version-info">25w02a</div>
+        <div class="scrollable-menu">
+            <ul class="nav flex-column w-100">
+                <li class="nav-item">
+                    <a class="nav-link navHo" href="home.html">
+                        <div class="nav-link-content">
+                            <i class="bi bi-house-door"></i>
+                            <span>Domů</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item" >
+                    <a class="nav-link navMl" href="mluvnice.html">
+                        <div class="nav-link-content">
+                            <i class="bi bi-journal-text"></i>
+                            <span>Mluvnice</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navLi" href="literatura.html">
+                        <div class="nav-link-content">
+                            <i class="bi bi-book"></i>
+                            <span>Literatura</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navSl" href="sloh.html">
+                        <div class="nav-link-content">
+                            <i class="bi bi-pen"></i>
+                            <span>Sloh</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navHu" href="hudebni-vychova.html">
+                        <div class="nav-link-content">
+                            <i class="bi bi-music-note"></i>
+                            <span>Hudba</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navMa" href="matematika.html">
+                        <div class="nav-link-content">
+                            <i class="bi bi-calculator"></i>
+                            <span>Matematika</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navCh" href="chemie.html">
+                        <div class="nav-link-content">
+                            <i class="bi bi-balloon"></i>
+                            <span>Chemie</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navFy" href="fyzika.html">
+                        <div class="nav-link-content">
+                            <i class="bi bi-gear"></i>
+                            <span>Fyzika</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item" style="padding-top: 3rem">
+                    <a class="nav-link navAb" href="about.html">
+                        <div class="nav-link-content">
+                            <i class="bi bi-info-circle"></i>
+                            <span>O mně</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navNa" href="nazor.html">
+                        <div class="nav-link-content">
+                            <i class="bi bi-question-circle"></i>
+                            <span>Zpětná vazba</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navCha" href="changelog.html">
+                        <div class="nav-link-content">
+                            <i class="bi bi-file-text"></i>
+                            <span>Deník změn</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="version-info">25w02b</div>
     </div>
 
             `;

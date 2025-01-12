@@ -1,5 +1,6 @@
 #MyNavBar {
-    min-height: 100vh;
+    height: 100vh;
+    /* Ensure it takes full height */
     width: 285px;
     position: fixed;
     left: 0;
@@ -12,10 +13,34 @@
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
+.scrollable-menu {
+    overflow-y: auto;
+    flex-grow: 1;
+    max-height: calc(100vh - 2rem);
+    /* Adjust height to enable scrolling */
+    scrollbar-width: thin;
+    /* For Firefox */
+    scrollbar-color: #ff9c66 #ffad8f;
+    /* For Firefox */
+}
+
+/* For Webkit browsers (Chrome, Safari) */
+.scrollable-menu::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scrollable-menu::-webkit-scrollbar-thumb {
+    background-color: #ff9c66;
+    border-radius: 10px;
+}
+
+.scrollable-menu::-webkit-scrollbar-track {
+    background-color: #ffad8f;
+}
+
 nav {
     position: fixed;
 }
-
 
 #MyNavBar .nav-link {
     color: #160703;
@@ -90,6 +115,24 @@ nav {
     overflow-y: auto;
     z-index: 1040;
     margin-top: 9px;
+    scrollbar-width: medium;
+    /* For Firefox */
+    scrollbar-color: #ff9c66 #ffad8f;
+    /* For Firefox */
+}
+
+/* For Webkit browsers (Chrome, Safari) */
+.mobile-menu::-webkit-scrollbar {
+    width: 12px;
+}
+
+.mobile-menu::-webkit-scrollbar-thumb {
+    background-color: #ff9c66;
+    border-radius: 10px;
+}
+
+.mobile-menu::-webkit-scrollbar-track {
+    background-color: #ffad8f;
 }
 
 .mobile-menu.show {
@@ -148,6 +191,15 @@ nav {
 
     .mobile-menu .nav-link-content {
         justify-content: flex-start;
+    }
+
+    .mobile-menu {
+        scrollbar-width: thick;
+        /* For Firefox */
+    }
+
+    .mobile-menu::-webkit-scrollbar {
+        width: 16px;
     }
 }
 
