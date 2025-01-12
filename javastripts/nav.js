@@ -94,6 +94,14 @@ document.addEventListener('DOMContentLoaded', function () {
             <li class="nav-item">
                 <a class="nav-link navNa" href="nazor.html">
                     <div class="nav-link-content">
+                        <i class="bi bi-calendar-week"></i>
+                        <span>Kalendář</span>
+                    </div>
+                </a>
+                </li>
+            <li class="nav-item">
+                <a class="nav-link navNa" href="nazor.html">
+                    <div class="nav-link-content">
                         <i class="bi bi-question-circle"></i>
                         <span>Zpětná vazba</span>
                     </div>
@@ -107,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
                 </a>
             </li>
-            <div class="version-info">25w02b</div>
+            <div class="version-info">25w02c</div>
            <li class="nav-item" style="padding-top: 3rem">
                 <a class="nav-link" href="#">
                     <div class="nav-link-content">
@@ -195,6 +203,14 @@ document.addEventListener('DOMContentLoaded', function () {
                     </a>
                 </li>
                 <li class="nav-item">
+                <a class="nav-link navNa" href="kalendar.html">
+                    <div class="nav-link-content">
+                        <i class="bi bi-calendar-week"></i>
+                        <span>Kalendář</span>
+                    </div>
+                </a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link navNa" href="nazor.html">
                         <div class="nav-link-content">
                             <i class="bi bi-question-circle"></i>
@@ -212,7 +228,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 </li>
             </ul>
         </div>
-        <div class="version-info">25w02b</div>
+        <div class="version-info">25w02c</div>
     </div>
 
             `;

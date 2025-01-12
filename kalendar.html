@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalendář - Tobikovo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/grid.css">
+
+    <style>
+        .button-container a {
+            color: #160703;
+            padding: 3px;
+            background-color: transparent;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+            justify-tracks: right;
+        }
+
+        .button-container a:hover {
+            background-color: transparent;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loading-bar-container">
+        <div class="loading-bar"></div>
+    </div>
+
+    <nav id="myNavbar"></nav>
+    <button class="openNav opennav-button" onclick="openNav()">☰</button>
+
+    <!-- Obsah stránky -->
+    <main>
+
+        <section>
+            <h1 class="verybig">Kalendář</h1>
+            <div style="text-align: left;">
+                <h2>13. 1.</h2>
+                <h3>Literatura</h3>
+                <p>celá <a href="li-lite-doby-hus.html">literatura doby husitské</a> a <a
+                        href="li-renesance-humanismus.html">renesance a humanismus</a> (až na představitele v Itálii)
+                </p>
+                <div class="button-container">
+                    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Písemná práce z literatury&dates=20250113/20250114&details=celá literatura doby husitské a
+                renesance a humanismus (až na představitele v Itálii).&sf=true&output=xml" target="_blank"
+                        class="google-calendar-button">
+                        <button><i class="bi bi-calendar-check"></i> Přidat do Google Kalendáře</button>
+                    </a>
+
+                </div>
+
+
+                <hr>
+                <h2>14. 1.</h2>
+                <h3>Matematika</h3>
+                <p><a href="m-celkove-odmocniny-mocniny.html">mocniny</a>, <a href="m-pyth-veta.html">pythagorova
+                        věta</a>, zapiš výraz, <a href="m-roz-zap-cil-des-sou.html">rozklad čísla</a>, <a
+                        href="m-promenne.html">hodnota výrazu</a>, <a href="m-jedno-mnohoclen.html">mnohočleny</a></p>
+
+
+                <div class="button-container">
+                    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Písemná práce z
+                matematiky&dates=20250114/20250115&details=mocniny, pythagorova věta, zapiš výraz, rozklad čísla,
+                hodnota výrazu, mnohočleny &sf=true&output=xml">
+                        <button><i class="bi bi-calendar-check"></i> Přidat do Google Kalendáře</button></a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- Patička -->
+    <footer>
+        <div class="footer-content">
+            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+        </div>
+    </footer>
+    <!-- JSs -->
+    <script src="javastripts/nav.js"></script>
+</body>
+
+</html>
