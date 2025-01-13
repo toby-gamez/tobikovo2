@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link navNa" href="nazor.html">
+                <a class="nav-link navNa" href="kalendar.html">
                     <div class="nav-link-content">
                         <i class="bi bi-calendar-week"></i>
                         <span>Kalendář</span>
