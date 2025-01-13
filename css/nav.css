@@ -18,7 +18,7 @@
     flex-grow: 1;
     max-height: calc(100vh - 2rem);
     /* Adjust height to enable scrolling */
-    scrollbar-width: thin;
+    scrollbar-width: auto;
     /* For Firefox */
     scrollbar-color: #ff9c66 #ffad8f;
     /* For Firefox */
@@ -194,7 +194,7 @@ nav {
     }
 
     .mobile-menu {
-        scrollbar-width: thick;
+        scrollbar-width: auto;
         /* For Firefox */
     }
 

@@ -115,7 +115,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
                 </a>
             </li>
-            <div class="version-info">25w03a</div>
+            <div class="version-info">25w03b</div>
+            
            <li class="nav-item" style="padding-top: 3rem">
                 <a class="nav-link" href="#">
                     <div class="nav-link-content">
@@ -228,7 +229,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 </li>
             </ul>
         </div>
-        <div class="version-info">25w03a</div>
+        <div class="version-info">25w03b</div>
     </div>
 
             `;
