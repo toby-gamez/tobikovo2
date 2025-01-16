@@ -18,3 +18,22 @@ td {
 th {
     background-color: #ff946c;
 }
+
+
+table.dark-mode {
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+
+
+th.dark-mode,
+td.dark-mode {
+    background-color: #942700;
+}
+
+th.dark-mode {
+    background-color: #701e00;
+}

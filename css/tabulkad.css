@@ -11,6 +11,10 @@ td {
     text-align: center;
 }
 
+td {
+    background-color: #ffad8f;
+}
+
 th {
     background-color: #ff946c;
     border-right: 1px;
@@ -25,6 +29,20 @@ p {
     margin: 10px;
 }
 
-td {
-    background-color: #ffad8f;
+
+
+td.dark-mode {
+    background-color: #942700;
+}
+
+th.dark-mode {
+    background-color: #701e00;
+}
+
+td.dark-mode:first-child {
+    background-color: #701e00;
+}
+
+td.dark-mode {
+    background-color: #942700;
 }

@@ -18,7 +18,7 @@ textarea {
 .version-info,
 button,
 #myNavbar a,
-h1,
+.nav-text,
 h2,
 h3,
 h4,
@@ -117,7 +117,7 @@ video {
 }
 
 main {
-    margin-left: 130px;
+    margin-left: 285px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -223,6 +223,7 @@ main a:hover {
 
 .blog-image {
     float: right;
+    border: 5px solid #ffad8f;
 }
 
 /* Tlačítka */
@@ -236,6 +237,7 @@ button {
     color: #220b00;
     font-size: 16px;
     padding: 10px 20px;
+    transition: transform 0.2s ease;
 }
 
 
@@ -400,4 +402,153 @@ button {
     .static-text {
         visibility: hidden;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body.dark-mode {
+    background-color: #1f0900;
+    color: #fcede9;
+}
+
+footer.dark-mode {
+    background-color: #701e00;
+    color: #fcede9;
+}
+
+.footer-content.dark-mode:hover {
+    background-color: #942700;
+    color: #fcede9;
+}
+
+.grid-item.dark-mode {
+    border-color: #701e00;
+    background-color: #701e00;
+}
+
+.grid-item.dark-mode:hover {
+    border-color: #fcede9;
+}
+
+button.dark-mode {
+    background-color: #942700;
+    color: #fcede9;
+}
+
+button.dark-mode:hover {
+    background-color: #701e00;
+}
+
+#MyNavBar.dark-mode {
+    background-color: #701e00;
+}
+
+.scrollable-menu.dark-mode {
+    scrollbar-color: #942700 #942700;
+}
+
+.mobile-menu.dark-mode {
+    background-color: #701e00;
+}
+
+.mobile-menu.dark-mode .nav-link:hover {
+    background-color: #942700;
+}
+
+.mobile-header.dark-mode {
+    background-color: #701e00;
+}
+
+p.dark-mode,
+li.dark-mode,
+ul.dark-mode,
+textarea.dark-mode {
+    color: #fcede9;
+}
+
+.opinion-input.dark-mode,
+.version-info.dark-mode,
+button.dark-mode,
+#myNavbar a.dark-mode,
+.nav-text.dark-mode,
+h2.dark-mode,
+h3.dark-mode,
+h4.dark-mode,
+h5.dark-mode {
+    color: #fcede9;
+}
+
+#MyNavBar .nav-text.dark-mode {
+    color: #fcede9;
+}
+
+#MyNavBar .nav-link.dark-mode:hover {
+    background-color: #942700;
+}
+
+#MyNavBar .nav-item.dark-mode {
+    color: #fcede9;
+}
+
+hr.dark-mode {
+    background-color: #fcede9;
+}
+
+main a.dark-mode {
+    color: #fcede9;
+    background-color: #942700;
+}
+
+main a.dark-mode:hover {
+    background-color: #701e00;
+}
+
+.navImg:hover.dark-mode {
+    background-color: #942700;
+}
+
+
+.version-info.dark-mode {
+    color: #be3300;
+}
+
+.blog-image.dark-mode {
+    border: 5px solid #701e00;
+}
+
+
+.Mcard.dark-mode {
+    background-color: #942700;
+    border: 1px solid #701e00;
+}
+
+.Minfo.dark-mode {
+    background-color: #701e00;
+}
+
+.loading-bar.dark-mode {
+    background-color: #942700;
 }
