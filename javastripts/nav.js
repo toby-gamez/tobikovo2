@@ -6,15 +6,19 @@ document.addEventListener('DOMContentLoaded', function () {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- Mobilní hlavička -->
     <div class="mobile-header">
-        <div class="logo">
+        <div>
             <a href="home.html">
-                    <img src="images/white-logo.png" width="150px" alt="">
+                    <img class="navImg" src="images/white-logo.png" width="150px" alt="">
             </a>
         </div>
+        <div>
+        <i class="bi bi-sun"></i>
         <label class="switch">
             <input type="checkbox" id="dark-mode-toggle-mobile">
             <span class="slider round"></span>
         </label>
+        <i class="bi bi-moon"></i>
+        </div>
         <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
             <i class="bi bi-list"></i>
         </button>
@@ -119,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
                 </a>
             </li>
-            <div class="version-info">25w03c</div>
+            <div class="version-info">25w03d</div>
             
            <li class="nav-item" style="padding-top: 3rem">
                 <a class="nav-link" href="#">
@@ -132,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     <!-- Desktop sidebar -->
     <div id="MyNavBar">
-        <a href="home.html" class="navImg" style="margin-left: auto; margin-right: auto"><img src="images/white-logo.png" width="150px"></img></a>
+        <a href="home.html" style="margin-left: auto; margin-right: auto"><img class="navImg" src="images/white-logo.png" width="150px"></img></a>
         <div class="scrollable-menu">
             <ul class="nav flex-column w-100">
                                 <li class="nav-item">
@@ -233,17 +237,17 @@ document.addEventListener('DOMContentLoaded', function () {
                 </li>
                 <li class="nav-item">
                         <div class="nav-link-content nav-text">
-                        <i class="bi bi-moon"></i>
-                        <span>Tmavý</span>
+                        <i class="bi bi-sun"></i>
                             <label class="switch">
                                 <input type="checkbox" id="dark-mode-toggle">
                                 <span class="slider round"></span>
                             </label>
+                            <i class="bi bi-moon"></i>
                         </div>
                 </li>
             </ul>
         </div>
-        <div class="version-info">25w03c</div>
+        <div class="version-info">25w03d</div>
     </div>
     `;
 
@@ -279,17 +283,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function enableDarkMode() {
         body.classList.add('dark-mode');
-        document.querySelectorAll('footer, p, h2, ul, li, .grid-item, button, #MyNavBar, .scrollable-menu, .nav-text, .version-info, table, th, td, .nav-link, h3, h4, .blog-image, hr, a, .button-container, .button-container a, .footer-content, .navImg, .Mcard, .Minfo, .Mnadpis, .mobile-header, .loading-bar, .mobile-menu').forEach(element => {
+        document.querySelectorAll('footer, p, h2, ul, li, .grid-item, button, #MyNavBar, .scrollable-menu, .nav-text, .version-info, table, th, td, textarea, .opinion-input, .nav-link, h3, h4, img, video, hr, a, .button-container, .button-container a, .footer-content, .navImg, .Mcard, .Minfo, .Mnadpis, .mobile-header, .loading-bar, .mobile-menu').forEach(element => {
             element.classList.add('dark-mode');
         });
         localStorage.setItem('darkMode', 'enabled');
     }
     function disableDarkMode() {
         body.classList.remove('dark-mode');
-        document.querySelectorAll('footer, p, h2, ul, li, .grid-item, button, #MyNavBar, .scrollable-menu, .nav-text, .version-info, .nav-link, th, td, h3, h4, hr, .blog-image, a, .button-container, .button-container a, .footer-content, .navImg, .Mcard, .Minfo, .Mnadpis, .mobile-header, .loading-bar, .mobile-menu').forEach(element => {
+        document.querySelectorAll('footer, p, h2, ul, li, .grid-item, button, #MyNavBar, .scrollable-menu, .nav-text, .version-info, textarea, .opinion-input, .nav-link, th, td, h3, h4, hr, a, img, video, .button-container, .button-container a, .footer-content, .navImg, .Mcard, .Minfo, .Mnadpis, .mobile-header, .loading-bar, .mobile-menu').forEach(element => {
             element.classList.remove('dark-mode');
         });
-        localStorage.setItem('darkMode', 'enabled');
+        localStorage.setItem('darkMode', 'disabled');
     }
 });
 

@@ -103,7 +103,7 @@
     .grid {
         grid-template-columns: 1fr;
         /* Jeden sloupec na malých obrazovkách */
-        grid-gap: 10px;
+        grid-gap: 30px;
     }
 
     .grid-item {

@@ -5,7 +5,8 @@
 p,
 li,
 ul,
-textarea {
+textarea,
+.opinion-input {
     font-family: "Zilla Slab", serif;
     font-weight: 500;
     font-style: normal;
@@ -14,7 +15,6 @@ textarea {
     line-height: 1.6rem;
 }
 
-.opinion-input,
 .version-info,
 button,
 #myNavbar a,
@@ -28,6 +28,14 @@ h5 {
     font-style: normal;
     color: #160703;
 }
+
+::selection {
+    background-color: #fb8241;
+    /* Barva pozadí výběru */
+    color: #382A27;
+    /* Barva textu ve výběru */
+}
+
 
 .priklad {
     font-family: "Marcellus", serif;
@@ -66,9 +74,11 @@ hr {
     border: none;
 }
 
-img,
+
+img:not(.navImg, footer img),
 video {
     border-radius: 10px;
+    border: 5px solid #ffad8f;
 }
 
 .Mcard {
@@ -186,7 +196,7 @@ main a:hover {
     position: fixed;
     top: 0;
     left: 0;
-    width: 93.5%;
+    width: 83.55%;
     margin-left: 285px;
     height: 5px;
     background-color: transparent;
@@ -223,7 +233,6 @@ main a:hover {
 
 .blog-image {
     float: right;
-    border: 5px solid #ffad8f;
 }
 
 /* Tlačítka */
@@ -505,6 +514,7 @@ h5.dark-mode {
     color: #fcede9;
 }
 
+.navImg:hover.dark-mode,
 #MyNavBar .nav-link.dark-mode:hover {
     background-color: #942700;
 }
@@ -526,19 +536,10 @@ main a.dark-mode:hover {
     background-color: #701e00;
 }
 
-.navImg:hover.dark-mode {
-    background-color: #942700;
-}
-
 
 .version-info.dark-mode {
     color: #be3300;
 }
-
-.blog-image.dark-mode {
-    border: 5px solid #701e00;
-}
-
 
 .Mcard.dark-mode {
     background-color: #942700;
@@ -551,4 +552,25 @@ main a.dark-mode:hover {
 
 .loading-bar.dark-mode {
     background-color: #942700;
+}
+
+.opinion-input.dark-mode {
+    border: 2px solid #942700;
+    background-color: #942700;
+}
+
+textarea.dark-mode {
+    border: 2px solid #942700;
+    background-color: #942700;
+}
+
+.opinion-input.dark-mode:focus,
+textarea.dark-mode:focus {
+    border: 2px solid #fcede9;
+    outline: none;
+}
+
+img:not(.navImg, footer img).dark-mode,
+video.dark-mode {
+    border: 5px solid #942700;
 }

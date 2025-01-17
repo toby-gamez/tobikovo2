@@ -95,6 +95,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
+    height: 47px;
     right: 0;
     z-index: 1040;
     background-color: #ffad8f;
