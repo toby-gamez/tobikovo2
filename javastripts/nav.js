@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
                 </a>
             </li>
-            <div class="version-info">25w03d</div>
+            <div class="version-info">25w04a</div>
             
            <li class="nav-item" style="padding-top: 3rem">
                 <a class="nav-link" href="#">
@@ -247,7 +247,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 </li>
             </ul>
         </div>
-        <div class="version-info">25w03d</div>
+        <div class="version-info">25w04a</div>
     </div>
     `;
 
@@ -283,14 +283,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function enableDarkMode() {
         body.classList.add('dark-mode');
-        document.querySelectorAll('footer, p, h2, ul, li, .grid-item, button, #MyNavBar, .scrollable-menu, .nav-text, .version-info, table, th, td, textarea, .opinion-input, .nav-link, h3, h4, img, video, hr, a, .button-container, .button-container a, .footer-content, .navImg, .Mcard, .Minfo, .Mnadpis, .mobile-header, .loading-bar, .mobile-menu').forEach(element => {
+        document.querySelectorAll('footer, p, h2, ul, li, .grid-item, button, #MyNavBar, .scrollable-menu, .nav-text, .underlined, .version-info, table, th, td, textarea, .opinion-input, .nav-link, h3, h4, img, video, hr, a, .button-container, .button-container a, .footer-content, .navImg, .Mcard, .Minfo, .Mnadpis, .mobile-header, .loading-bar, .mobile-menu').forEach(element => {
             element.classList.add('dark-mode');
         });
         localStorage.setItem('darkMode', 'enabled');
     }
     function disableDarkMode() {
         body.classList.remove('dark-mode');
-        document.querySelectorAll('footer, p, h2, ul, li, .grid-item, button, #MyNavBar, .scrollable-menu, .nav-text, .version-info, textarea, .opinion-input, .nav-link, th, td, h3, h4, hr, a, img, video, .button-container, .button-container a, .footer-content, .navImg, .Mcard, .Minfo, .Mnadpis, .mobile-header, .loading-bar, .mobile-menu').forEach(element => {
+        document.querySelectorAll('footer, p, h2, ul, li, .grid-item, button, #MyNavBar, .scrollable-menu, .nav-text, .underlined, .version-info, textarea, .opinion-input, .nav-link, th, td, h3, h4, hr, a, img, video, .button-container, .button-container a, .footer-content, .navImg, .Mcard, .Minfo, .Mnadpis, .mobile-header, .loading-bar, .mobile-menu').forEach(element => {
             element.classList.remove('dark-mode');
         });
         localStorage.setItem('darkMode', 'disabled');

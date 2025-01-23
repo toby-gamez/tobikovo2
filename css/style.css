@@ -36,6 +36,12 @@ h5 {
     /* Barva textu ve výběru */
 }
 
+.underlined::selection {
+    background-color: #fb8241;
+    /* Barva pozadí výběru */
+    color: #382A27;
+    /* Barva textu ve výběru */
+}
 
 .priklad {
     font-family: "Marcellus", serif;
@@ -573,4 +579,11 @@ textarea.dark-mode:focus {
 img:not(.navImg, footer img).dark-mode,
 video.dark-mode {
     border: 5px solid #942700;
+}
+
+.underlined.dark-mode::selection {
+    background-color: #fb8241;
+    /* Barva pozadí výběru */
+    color: #382A27;
+    /* Barva textu ve výběru */
 }
