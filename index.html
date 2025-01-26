@@ -143,6 +143,15 @@
             visibility: visible;
         }
 
+        .hero-pc {
+            display: block;
+        }
+
+        .hero-mob {
+            display: none;
+        }
+
+
 
         @media (max-width: 768px) {
             .hero {
@@ -162,6 +171,7 @@
                 height: 350px;
                 /* Zvětšení výšky */
                 overflow: hidden;
+                border-radius: 10px;
                 /* Ořízne obrázek */
             }
 
@@ -173,6 +183,18 @@
                 /* Ořízne obrázek místo deformace */
                 border-radius: 0;
                 /* Bez zaoblení */
+            }
+
+            .hero-pc {
+                display: none;
+            }
+
+            .hero-mob {
+                display: block;
+                width: 250px;
+                height: 250px;
+                margin-left: auto;
+                margin-right: auto;
             }
 
             .hero-content {
@@ -214,11 +236,14 @@
 
 <body>
     <section class="hero">
-        <div class="hero-image">
+        <div class="hero-image hero-px">
             <img src="images/ucivo.png" alt="Ilustrační obrázek školních předmětů">
         </div>
         <div class="hero-content">
             <h1>Objevte svět vědění</h1>
+            <div class="hero-image hero-mob">
+                <img src="images/ucivo.png" alt="Ilustrační obrázek školních předmětů">
+            </div>
             <p>
                 Tobikovo je vzdělávací platforma zaměřená na školní výuku pro žáky základních
                 škol. Nabízí materiály, které pokrývají různé předměty, jako je mluvnice, literatura, sloh, matematika,
