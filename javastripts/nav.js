@@ -35,8 +35,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
                 </a>
             </li>
-            <li class="nav-item" >
-                <a class="nav-link navMl" href="mluvnice.html">
+            <li class="nav-item" style="padding-top: 3rem">
+                <a class="nav-link navAb" href="mluvnice.html">
                     <div class="nav-link-content">
                         <i class="bi bi-journal-text"></i>
                         <span>Mluvnice</span>
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
                 </a>
             </li>
-            <div class="version-info">25w07a</div>
+            <div class="version-info">25w07b</div>
             
            <li class="nav-item" style="padding-top: 3rem">
                 <a class="nav-link" href="#">
@@ -147,8 +147,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         </div>
                     </a>
                 </li>
-                <li class="nav-item" >
-                    <a class="nav-link navMl" href="mluvnice.html">
+                <li class="nav-item" style="padding-top: 3rem">
+                    <a class="nav-link navAb" href="mluvnice.html">
                         <div class="nav-link-content">
                             <i class="bi bi-journal-text"></i>
                             <span>Mluvnice</span>
@@ -247,7 +247,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 </li>
             </ul>
         </div>
-        <div class="version-info">25w07a</div>
+        <div class="version-info">25w07b</div>
     </div>
     `;
 
