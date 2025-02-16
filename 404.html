@@ -4,19 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nazev - Tobikovo</title>
-    <link rel="stylesheet" href="css/style404.css">
-    <link rel="stylesheet" href="css/footer404.css">
+    <title>404 - Tobikovo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/grid.css">
+    <style>
+        main {
+            margin-left: 0;
+        }
+    </style>
 </head>
 
 <body>
     <div class="loading-bar-container">
         <div class="loading-bar"></div>
     </div>
-    
-
 
     <!-- Obsah stránky -->
     <main>
@@ -26,9 +29,12 @@
             <div style="text-align: left;">
                 <h2>Co je chyba 404?</h2>
                 <hr>
-                <p>Pokud adresu URL neznáte: Občas můžete zaznamenat chyby 404 pro adresy URL, které na vašem webu nikdy nebyly. K těmto chybám dochází, když se někdo pokusí přejít na adresu URL, která na vašem webu neexistuje – například když někdo při zadávání adresy URL do prohlížeče nebo při vytváření odkazu udělá překlep.</p>
+                <p>Pokud adresu URL neznáte: Občas můžete zaznamenat chyby 404 pro adresy URL, které na vašem webu nikdy
+                    nebyly. K těmto chybám dochází, když se někdo pokusí přejít na adresu URL, která na vašem webu
+                    neexistuje – například když někdo při zadávání adresy URL do prohlížeče nebo při vytváření odkazu
+                    udělá překlep.</p>
             </div>
-            <button onclick="openHome()"><span style="font-size: 2.5rem;">Otevřít</span></button>
+            <button onclick="openHome()">Zpět domů</button>
         </section>
 
     </main>
@@ -42,9 +48,9 @@
     <script src="javastripts/nav.js"></script>
     <script>
         function openHome() {
-            window.location.href = "index.html"
+            window.location.href = "home.html"
         }
     </script>
 </body>
 
-</html> 
+</html>

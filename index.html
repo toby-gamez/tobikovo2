@@ -16,7 +16,6 @@
             padding: 0;
             box-sizing: border-box;
             scroll-behavior: smooth;
-            /* Plynulý scroll */
         }
 
         section {
@@ -29,7 +28,6 @@
         }
 
         body {
-
             line-height: 1.8;
             overflow-x: hidden;
         }
@@ -43,7 +41,6 @@
             background: linear-gradient(to left, #ff7340, #ffad8f);
             position: relative;
             flex-direction: row;
-            /* Na počítači (default) obrázek vpravo a text vlevo */
         }
 
         .hero-content {
@@ -52,20 +49,17 @@
 
         .hero h1 {
             font-size: 3.5rem;
-            /* Zvětšený text */
             margin-bottom: 20px;
         }
 
         .hero p {
             font-size: 1.3rem;
-            /* Zvětšený text */
             margin-bottom: 20px;
         }
 
         .hero-image {
             max-width: 25%;
             overflow: hidden;
-            /* Zajistí ořezání obrázku */
         }
 
         .hero-image img {
@@ -75,7 +69,6 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
-        /* Tlačítko pro scroll */
         .scroll-button {
             position: absolute;
             bottom: 20px;
@@ -87,7 +80,6 @@
             cursor: pointer;
             animation: bounce 2s infinite;
             transition: all 0.3s ease;
-
         }
 
         .scroll-button:hover {
@@ -107,21 +99,15 @@
             }
         }
 
-        /* Sekce předmětů */
         #predmety {
             min-height: 100vh;
             padding: 50px 20px;
             text-align: center;
             border: 15px solid #ff7340;
             border-radius: 40px;
-
-            /* Zvýšená tloušťka borderu */
             box-sizing: border-box;
-            /* Zajistí, že border nebude ovlivňovat šířku */
             position: relative;
-            /* Abychom mohli použít pseudo-elementy */
             overflow: hidden;
-            /* Skrytí případného přetékání */
         }
 
         #predmety::before {
@@ -132,11 +118,8 @@
             right: -15px;
             bottom: -15px;
             background-color: #fff;
-            /* Barva pozadí vně */
             border-radius: 20px;
-            /* Vnitřní zaoblení */
             z-index: -1;
-            /* Aby pseudo-element byl pod obsahem */
         }
 
         .sometimes-invisible {
@@ -151,38 +134,27 @@
             display: none;
         }
 
-
-
         @media (max-width: 768px) {
             .hero {
                 flex-direction: column;
                 text-align: center;
                 padding: 0;
-                /* Odstranění paddingu na mobilu */
                 height: 100vh;
-                /* Celková výška hero sekce */
             }
 
             .hero-image {
                 max-width: 100%;
-                /* Obrázek na šířku celé obrazovky */
                 width: 100vw;
-                /* Přiléhá ke krajům stránky */
                 height: 350px;
-                /* Zvětšení výšky */
                 overflow: hidden;
                 border-radius: 10px;
-                /* Ořízne obrázek */
             }
 
             .hero-image img {
                 width: 100%;
                 height: 100%;
-                /* Vyplní výšku */
                 object-fit: cover;
-                /* Ořízne obrázek místo deformace */
                 border-radius: 0;
-                /* Bez zaoblení */
             }
 
             .hero-pc {
@@ -204,12 +176,10 @@
 
             .hero h1 {
                 font-size: 2.5rem;
-                /* Menší titulek pro mobily */
             }
 
             .hero p {
                 font-size: 1.1rem;
-                /* Menší text pro lepší čitelnost */
             }
 
             .sometimes-invisible {
@@ -217,26 +187,21 @@
             }
         }
 
-        /* Při větších obrazovkách (počítač) */
         @media (min-width: 769px) {
             .hero {
                 flex-direction: row-reverse;
-                /* Obrázek vlevo, text vpravo */
             }
 
             .scroll-button {
                 font-size: 3rem;
-                /* Zvýšení velikosti šipky pro desktop */
             }
-
-
         }
     </style>
 </head>
 
 <body>
     <section class="hero">
-        <div class="hero-image hero-px">
+        <div class="hero-image hero-pc">
             <img src="images/ucivo.png" alt="Ilustrační obrázek školních předmětů">
         </div>
         <div class="hero-content">
