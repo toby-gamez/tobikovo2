@@ -517,7 +517,7 @@
     {
         "title": "Hudební historie",
         "url": "hv-historie.html",
-        "content": "První hudební projevy člověka, Řecko, Řím, Středověk, Orfeus, Apollón, Dionýsos, Seikelova píseň, papež Gregor (Řehoř I. Veliký), Gregoriánský chorál, Trubadúři, Trouvéři, Minnesängři"
+        "content": "První hudební projevy člověka, Řecko, Řím, Středověk, Orfeus, Apollón, Dionýsos, Seikelova píseň, papež Gregor (Řehoř I. Veliký), Gregoriánský chorál, Trubadúři, Trouvéři, Minnesängři, renesance, Giovanni da Palestrina, Orlando di Lasso"
     },
     {
         "title": "Jména not",
@@ -1105,19 +1105,19 @@
         "content": "dutina nosní, nosohltan, hrtan, průdušnice, průdušky, průdušinky, plíce, horní cesty dýchací, dolní cesty dýchací, dýchání, dechová frekvence, typy dýchání, Onemocnění dýchací soustavy"
     },
     {
-        "title": "Výklad",
-        "url": "sl-vyklad.html",
-        "content": ""
+        "title": "Změna skupenství",
+        "url": "f-zmena-skupenstvi.html",
+        "content": "sublimace, desublimace, tání, tuhnutí, vypařování, zkapalnění"
     },
     {
-        "title": "",
-        "url": "x.html",
-        "content": ""
+        "title": "Trávící soustava",
+        "url": "pr-travici-sous.html",
+        "content": "dutina ústní, kyselina chlorovodíková, příušní, podjazyková, podčelistní, jazyk, ústa, játra, dvanáctník, tenké, lačník, slinné žlázy, střevo, uvula, kyčelník, žlučovod, patro, zuby, žlučník, jícen, hltan, žaludek, slinivka břišní, vývody, slepé střevo, esovitou, tlusté, pankreatu, střevo, tračník příčný, vzestupný tračník, sestupný tračník, konečník, kličku, apendix, řitní otvor"
     },
     {
-        "title": "",
-        "url": "x.html",
-        "content": ""
+        "title": "Chemická reakce",
+        "url": "ch-reakce.html",
+        "content": "Tepelný průběh, Endotermická reakce, Exotermická reakce, Zákon zachování hmotnosti, Zákon zachování energie, Rychlost chemické reakce, Obsah povrchu, Teplota reakce, Koncentrace reaktantů, Katalyzátor, Slučování, Rozklad, Nahrazování."
     },
     {
         "title": "",

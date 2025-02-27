@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
                 </a>
             </li>
-            <div class="version-info">25w09a</div>
+            <div class="version-info">25w09b</div>
             
            <li class="nav-item" style="padding-top: 3rem">
                 <a class="nav-link" href="#">
@@ -273,7 +273,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 </li>
             </ul>
         </div>
-        <div class="version-info">25w09a</div>
+        <div class="version-info">25w09b</div>
     </div>
 
         <div id="searchModal" class="modal">
@@ -488,6 +488,15 @@ document.addEventListener("DOMContentLoaded", function () {
         return ""; // Pokud nic nenajdeme
     }
 
+    // Funkce pro přepínání scrollování
+    function toggleScrollLock(lock) {
+        if (lock) {
+            document.body.classList.add('scroll-lock');
+        } else {
+            document.body.classList.remove('scroll-lock');
+        }
+    }
+
     // Načtení dat z indexu
     fetch("javastripts/search-index.json")
         .then(response => response.json())
@@ -515,12 +524,14 @@ document.addEventListener("DOMContentLoaded", function () {
     openBtns.forEach(btn => {
         btn.addEventListener("click", function () {
             modal.classList.add("active");
+            toggleScrollLock(true); // Zamkne scrollování
             searchInput.focus();
         });
     });
 
     closeBtn.addEventListener("click", function () {
         modal.classList.remove("active");
+        toggleScrollLock(false); // Odemkne scrollování
         searchInput.value = "";
         document.getElementById("results").innerHTML = "";
     });
@@ -528,6 +539,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("click", function (event) {
         if (event.target === modal) {
             modal.classList.remove("active");
+            toggleScrollLock(false); // Odemkne scrollování
             searchInput.value = "";
             document.getElementById("results").innerHTML = "";
         }
@@ -536,6 +548,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("keydown", function (event) {
         if (event.key === "Escape") {
             modal.classList.remove("active");
+            toggleScrollLock(false); // Odemkne scrollování
             searchInput.value = "";
             document.getElementById("results").innerHTML = "";
         }
@@ -549,6 +562,7 @@ document.addEventListener("DOMContentLoaded", function () {
             event.preventDefault();
             event.stopPropagation();
             modal.classList.add("active");
+            toggleScrollLock(true); // Zamkne scrollování
             searchInput.focus();
         }
     });
