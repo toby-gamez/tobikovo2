@@ -245,10 +245,7 @@ main a:hover {
         width: 100%;
         margin-left: 0;
     }
-}
 
-
-@media only screen and (max-width: 600px) {
     .verybig {
         font-size: 40px;
     }
@@ -259,10 +256,15 @@ main a:hover {
 }
 
 .blog-image {
+    display: block;
     float: right;
     max-width: 300px;
+    min-width: 100px;
     margin-left: 10px;
+}
 
+.blog-image div {
+    width: auto;
 }
 
 .blog-image img {
@@ -292,6 +294,21 @@ main a:hover {
 
 .blog-image p a:hover {
     background-color: #ff7340;
+}
+
+@media only screen and (max-width: 600px) {
+    .blog-image {
+        max-width: 100px;
+        height: auto;
+    }
+
+    .blog-image p {
+        max-width: 100px;
+    }
+
+    .blog-image img {
+        max-width: 100px;
+    }
 }
 
 /* Tlačítka */
@@ -808,4 +825,13 @@ video.dark-mode {
 .blog-image p {
     border: 5px solid #701e00;
     background-color: #852401;
+}
+
+.opinion-card.dark-mode {
+    background-color: #701e00;
+}
+
+.opinion-meta.dark-mode {
+    color: #be3300;
+
 }
