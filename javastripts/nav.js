@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
                 </a>
             </li>
-            <div class="version-info">25w09d</div>
+            <div class="version-info">25w10a</div>
             
            <li class="nav-item" style="padding-top: 3rem">
                 <a class="nav-link" href="#">
@@ -273,7 +273,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 </li>
             </ul>
         </div>
-        <div class="version-info">25w09d</div>
+        <div class="version-info">25w10a</div>
     </div>
 
         <div id="searchModal" class="modal">
@@ -283,6 +283,11 @@ document.addEventListener('DOMContentLoaded', function () {
                     <div id="results"></div>
                 </div>
             </div>
+                    <div id="cookie-consent" style="display: none;">
+            <p>Tento web používá cookies. Pokud nesouhlasíte, budou se posílat jen nezbytné cookies.</p>
+            <button onclick="acceptCookies()">Souhlasím</button>
+            <button class="decline" onclick="declineCookies()">Nesouhlasím</button>
+        </div>
       <script src="https://unpkg.com/lunr/lunr.js"></script>
     `;
 
@@ -297,7 +302,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         function enableDarkMode() {
             body.classList.add('dark-mode');
-            document.querySelectorAll('footer, p, h2, ul, li, .grid-item, .opinion-meta, .opinion-card, .search-snippet, .key-icon, button, #MyNavBar, h5, .modal-content, #results, #results div, .scrollable-menu, .nav-text, .underlined, .version-info, #search, table, th, td, textarea, .opinion-input, .nav-link, h3, h4, img, video, hr, a, .button-container, .button-container a, .footer-content, .navImg, .Mcard, .Minfo, .Mnadpis, .mobile-header, .loading-bar, .mobile-menu').forEach(element => {
+            document.querySelectorAll('footer, p, h2, ul, li, .grid-item, .opinion-meta, .opinion-card, #cookie-consent, .search-snippet, .key-icon, button, #MyNavBar, h5, .modal-content, #results, #results div, .scrollable-menu, .nav-text, .underlined, .version-info, #search, table, th, td, textarea, .opinion-input, .nav-link, h3, h4, img, video, hr, a, .button-container, .button-container a, .footer-content, .navImg, .Mcard, .Minfo, .Mnadpis, .mobile-header, .loading-bar, .mobile-menu').forEach(element => {
                 element.classList.add('dark-mode');
             });
             localStorage.setItem('darkMode', 'enabled');
@@ -306,7 +311,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         function disableDarkMode() {
             body.classList.remove('dark-mode');
-            document.querySelectorAll('footer, p, h2, ul, li, .grid-item, .search-snippet, .opinion-meta, .opinion-card, .key-icon, button, #MyNavBar, h5, .modal-content, #results, #results div, .scrollable-menu, .nav-text, .underlined, .version-info, #search, textarea, .opinion-input, .nav-link, th, td, h3, h4, hr, a, img, video, .button-container, .button-container a, .footer-content, .navImg, .Mcard, .Minfo, .Mnadpis, .mobile-header, .loading-bar, .mobile-menu').forEach(element => {
+            document.querySelectorAll('footer, p, h2, ul, li, .grid-item, .search-snippet, .opinion-meta, #cookie-consent, .opinion-card, .key-icon, button, #MyNavBar, h5, .modal-content, #results, #results div, .scrollable-menu, .nav-text, .underlined, .version-info, #search, textarea, .opinion-input, .nav-link, th, td, h3, h4, hr, a, img, video, .button-container, .button-container a, .footer-content, .navImg, .Mcard, .Minfo, .Mnadpis, .mobile-header, .loading-bar, .mobile-menu').forEach(element => {
                 element.classList.remove('dark-mode');
             });
             localStorage.setItem('darkMode', 'disabled');
@@ -672,3 +677,41 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
+function acceptCookies() {
+    localStorage.setItem("cookieConsent", "true");
+    document.getElementById("cookie-consent").style.display = "none";
+
+    console.log("User accepted cookies.");
+    gtag('consent', 'update', {
+        'analytics_storage': 'granted'
+    });
+
+    loadGoogleAnalytics();
+}
+
+function declineCookies() {
+    localStorage.setItem("cookieConsent", "false");
+    document.getElementById("cookie-consent").style.display = "none";
+
+    console.log("User declined cookies.");
+    gtag('consent', 'update', {
+        'analytics_storage': 'denied'
+    });
+}
+
+window.onload = function () {
+    let consent = localStorage.getItem("cookieConsent");
+
+    if (consent === "true") {
+        console.log("Consent found: Accepted");
+        acceptCookies();
+    } else if (consent === "false") {
+        console.log("Consent found: Declined");
+        declineCookies();
+    } else {
+        console.log("No consent found, showing cookie banner.");
+        document.getElementById("cookie-consent").style.display = "flex";
+    }
+}

@@ -2,6 +2,27 @@
 <html lang="cs">
 
 <head>
+    <!-- Google Consent Mode -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+
+        gtag('consent', 'default', {
+            'analytics_storage': 'denied'
+        });
+        console.log("Google Consent Mode initialized with default: denied");
+    </script>
+
+    <!-- Google Analytics (nenačte se automaticky) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
+    <script>
+        function loadGoogleAnalytics() {
+            console.log("Loading Google Analytics...");
+            gtag('js', new Date());
+            gtag('config', 'G-Q7DH4RTXBC');
+            console.log("Google Analytics loaded.");
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontrast, metafora, metonymie - Literatura - Tobikovo</title>
@@ -29,19 +50,19 @@
             <h1 class="verybig">Kontrast, metafora, metonymie</h1>
             <div style="text-align: left;">
                 <h2>Kontrast (protiklad)</h2>
-            <ul>
-                <li>příklad: Na tváři lehký smích, hluboký v srdci žal... - Mácha</li>
-            </ul>
-            <h2>Metafora</h2>
-            <ul>
-                <li>přenesení pojmenování na základě vnější podobnosti</li>
-                <li>příklad: v mrazivé chýši, tam ptáčata zbyla... - Bezruč</li>
-            </ul>
-            <h2>Metonymie</h2>
-            <ul>
-                <li>přenesení pojmenování na základě vnitřní podobnosti</li>
-                <li>příklad: poslouchat Smetanu, vypít sklenici vody</li>
-            </ul>
+                <ul>
+                    <li>příklad: Na tváři lehký smích, hluboký v srdci žal... - Mácha</li>
+                </ul>
+                <h2>Metafora</h2>
+                <ul>
+                    <li>přenesení pojmenování na základě vnější podobnosti</li>
+                    <li>příklad: v mrazivé chýši, tam ptáčata zbyla... - Bezruč</li>
+                </ul>
+                <h2>Metonymie</h2>
+                <ul>
+                    <li>přenesení pojmenování na základě vnitřní podobnosti</li>
+                    <li>příklad: poslouchat Smetanu, vypít sklenici vody</li>
+                </ul>
             </div>
         </section>
 

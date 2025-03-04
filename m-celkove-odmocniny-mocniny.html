@@ -2,6 +2,27 @@
 <html lang="cs">
 
 <head>
+    <!-- Google Consent Mode -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+
+        gtag('consent', 'default', {
+            'analytics_storage': 'denied'
+        });
+        console.log("Google Consent Mode initialized with default: denied");
+    </script>
+
+    <!-- Google Analytics (nenačte se automaticky) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
+    <script>
+        function loadGoogleAnalytics() {
+            console.log("Loading Google Analytics...");
+            gtag('js', new Date());
+            gtag('config', 'G-Q7DH4RTXBC');
+            console.log("Google Analytics loaded.");
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odmocniny a mocniny - Tobikovo</title>
@@ -75,9 +96,11 @@
                 <p>Například:</p>
                 <ul>
                     <li><span>2<sup>3</sup></span> &times; <span>2<sup>2</sup></span> = <span>2<sup>5</sup></span> =
-                        <span>32</span></li>
+                        <span>32</span>
+                    </li>
                     <li><span>3<sup>4</sup></span> &times; <span>3<sup>2</sup></span> = <span>3<sup>6</sup></span> =
-                        <span>729</span></li>
+                        <span>729</span>
+                    </li>
                 </ul>
 
                 <h2>Podíl mocnin se stejným základem</h2>
@@ -86,9 +109,11 @@
                 <p>Například:</p>
                 <ul>
                     <li><span>5<sup>6</sup></span> ÷ <span>5<sup>2</sup></span> = <span>5<sup>4</sup></span> =
-                        <span>625</span></li>
+                        <span>625</span>
+                    </li>
                     <li><span>7<sup>5</sup></span> ÷ <span>7<sup>3</sup></span> = <span>7<sup>2</sup></span> =
-                        <span>49</span></li>
+                        <span>49</span>
+                    </li>
                 </ul>
 
             </div>

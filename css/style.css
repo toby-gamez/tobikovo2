@@ -435,6 +435,7 @@ textarea:focus {
 
 button {
     margin: 0.5rem;
+    transition: all 0.3s ease;
 }
 
 .opinions-container {
@@ -617,6 +618,61 @@ body.scroll-lock {
 }
 
 
+#cookie-consent {
+    position: fixed;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffad8f;
+    border: 5px solid #ff946c;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1041;
+}
+
+#cookie-consent p {
+    margin: 0;
+}
+
+#cookie-consent button {
+    background: #3aa73d;
+    color: white;
+    width: 150px;
+
+}
+
+#cookie-consent button:hover {
+    background: #248f29;
+}
+
+#cookie-consent .decline {
+    background: #d4332e;
+}
+
+#cookie-consent .decline:hover {
+    background: #b12722;
+}
+
+@media screen and (max-width: 600px) {
+    #cookie-consent {
+        width: 300px;
+        position: fixed;
+        bottom: 50px;
+        left: 50%;
+        background: #ffad8f;
+        border: 5px solid #ff946c;
+        padding: 15px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+}
 
 
 
@@ -822,7 +878,7 @@ video.dark-mode {
     background-color: #701e00;
 }
 
-.blog-image p {
+.blog-image p.dark-mode {
     border: 5px solid #701e00;
     background-color: #852401;
 }
@@ -834,4 +890,26 @@ video.dark-mode {
 .opinion-meta.dark-mode {
     color: #be3300;
 
+}
+
+#cookie-consent button.dark-mode {
+    background: #1f8b22;
+    color: white;
+}
+
+#cookie-consent button.dark-mode:hover {
+    background: #146818;
+}
+
+#cookie-consent .decline.dark-mode {
+    background: #d4332d;
+}
+
+#cookie-consent .decline.dark-mode:hover {
+    background: #b11c17;
+}
+
+#cookie-consent.dark-mode {
+    background: #942700;
+    border: 5px solid #701e00;
 }

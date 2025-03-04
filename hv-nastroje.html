@@ -2,6 +2,27 @@
 <html lang="cs">
 
 <head>
+    <!-- Google Consent Mode -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+
+        gtag('consent', 'default', {
+            'analytics_storage': 'denied'
+        });
+        console.log("Google Consent Mode initialized with default: denied");
+    </script>
+
+    <!-- Google Analytics (nenačte se automaticky) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
+    <script>
+        function loadGoogleAnalytics() {
+            console.log("Loading Google Analytics...");
+            gtag('js', new Date());
+            gtag('config', 'G-Q7DH4RTXBC');
+            console.log("Google Analytics loaded.");
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hudební nástroje - Hudební výchova - Tobikovo</title>
@@ -31,18 +52,18 @@
             <ul class="grid">
                 <li class="grid-item">
                     <a href="hv-orchestralni.html">
-                        <h3 class="grid-h3" style="font-size: 20px;">ORCHESTRÁLNÍ</h3>
+                        <h3 class="grid-h3" style="font-size: 20px;">orchestrální</h3>
                     </a>
                 </li>
                 <li class="grid-item">
                     <a href="hv-lidove.html">
-                        <h3 class="grid-h3">LIDOVÉ</h3>
+                        <h3 class="grid-h3">lidové</h3>
                     </a>
 
                 </li>
                 <li class="grid-item">
                     <a href="hv-symfonickeho-orchestru.html">
-                        <h3 class="grid-h3-2" style="font-size: 20px;">SYMFONICKÉHO ORCHESTRU</h3>
+                        <h3 class="grid-h3-2" style="font-size: 20px;">symfonického orchestru</h3>
                     </a>
                 </li>
             </ul>

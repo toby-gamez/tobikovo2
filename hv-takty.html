@@ -2,6 +2,27 @@
 <html lang="cs">
 
 <head>
+    <!-- Google Consent Mode -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+
+        gtag('consent', 'default', {
+            'analytics_storage': 'denied'
+        });
+        console.log("Google Consent Mode initialized with default: denied");
+    </script>
+
+    <!-- Google Analytics (nenačte se automaticky) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
+    <script>
+        function loadGoogleAnalytics() {
+            console.log("Loading Google Analytics...");
+            gtag('js', new Date());
+            gtag('config', 'G-Q7DH4RTXBC');
+            console.log("Google Analytics loaded.");
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Takty a předznamenání - Hudební výchova - Tobikovo</title>
@@ -15,7 +36,7 @@
     <div class="loading-bar-container">
         <div class="loading-bar"></div>
     </div>
-    
+
     <nav id="myNavbar">
         <a href="#home"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
         <a href="#home">Domů</a>
@@ -30,19 +51,20 @@
             <h1 class="verybig">Takty a předznamenání</h1>
             <div style="text-align: left;">
                 <h2>Takty</h2>
-            <img src="images/takty.jpg" alt="(takty)">
-            <p>Nebo-li dvou/čtvrťový, tří/čtvrťový nebo čtyř/čtvrťový = c (celý)</p>
-            <h2>Předznamenání</h2>
-            <ul>
-            <li># - křížek (zvyšuje notu o půl tónu)</li>
-            <li><em>b</em> - béčko (snižuje notu o půl tónu)</li>
-            <li>♮ - odrážka (ruší #, <em>b</em>)</li>
-            </ul>
-            <h2>Akcenty = důrazy</h2>
-            <ul>
-            <li>< - zesilovat</li>
-            <li>> - zeslabovat</li>
-        </ul>
+                <img src="images/takty.jpg" alt="(takty)">
+                <p>Nebo-li dvou/čtvrťový, tří/čtvrťový nebo čtyř/čtvrťový = c (celý)</p>
+                <h2>Předznamenání</h2>
+                <ul>
+                    <li># - křížek (zvyšuje notu o půl tónu)</li>
+                    <li><em>b</em> - béčko (snižuje notu o půl tónu)</li>
+                    <li>♮ - odrážka (ruší #, <em>b</em>)</li>
+                </ul>
+                <h2>Akcenty = důrazy</h2>
+                <ul>
+                    <li>
+                        < - zesilovat</li>
+                    <li>> - zeslabovat</li>
+                </ul>
             </div>
         </section>
 

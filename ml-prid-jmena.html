@@ -2,6 +2,27 @@
 <html lang="cs">
 
 <head>
+    <!-- Google Consent Mode -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+
+        gtag('consent', 'default', {
+            'analytics_storage': 'denied'
+        });
+        console.log("Google Consent Mode initialized with default: denied");
+    </script>
+
+    <!-- Google Analytics (nenačte se automaticky) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
+    <script>
+        function loadGoogleAnalytics() {
+            console.log("Loading Google Analytics...");
+            gtag('js', new Date());
+            gtag('config', 'G-Q7DH4RTXBC');
+            console.log("Google Analytics loaded.");
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Přídavná jména - Mluvnice - Tobikovo</title>
