@@ -452,7 +452,7 @@
     {
         "title": "Preromantismus",
         "url": "li-preromantismus.html",
-        "content": "Johann Wolfgang von Goethe, Friedrich Schiller, Óda na radost, Faust, Josef Jungmann, Divadlo na Kotcích, Stavovské divadlo, Vlastenecké divadlo, Bouda, Česká expedice, Václav Matěj Kramelius, Josef Dobrovský"
+        "content": "Johann Wolfgang von Goethe, Friedrich Schiller, Óda na radost, Faust, Josef Jungmann, Divadlo na Kotcích, Stavovské divadlo, Vlastenecké divadlo, Bouda, Česká expedice, Václav Matěj Kramelius, Josef Dobrovský, František Palacký, rukopis Královédvorský, rukopis Zelenohorský, Václav Hanka a Josef Linda, František Ladislav Čelakovský, Ohlas písní českých, Toman a lesní panna"
     },
     {
         "title": "Popis uměleckého díla",
@@ -517,7 +517,7 @@
     {
         "title": "Hudební historie",
         "url": "hv-historie.html",
-        "content": "První hudební projevy člověka, Řecko, Řím, Středověk, Orfeus, Apollón, Dionýsos, Seikelova píseň, papež Gregor (Řehoř I. Veliký), Gregoriánský chorál, Trubadúři, Trouvéři, Minnesängři, renesance, Giovanni da Palestrina, Orlando di Lasso"
+        "content": "První hudební projevy člověka, Řecko, Řím, Středověk, Orfeus, Apollón, Dionýsos, Seikelova píseň, papež Gregor (Řehoř I. Veliký), Gregoriánský chorál, Trubadúři, Trouvéři, Minnesängři, renesance, Giovanni da Palestrina, Orlando di Lasso, opera, Claudio Monteverdi, Jacopo Peri"
     },
     {
         "title": "Jména not",
@@ -902,7 +902,27 @@
     {
         "title": "Geometrické tvary",
         "url": "geo-geom-tvary.html",
-        "content": "čtverec, obdélník, trojúhelník, kruh, kosočtverec, lichoběžník, rovnoběžník, rovnoramenný trojúhelník, rovnoramenný lichoběžník, pravoúhlý trojúhelník, pravoúhlý lichoběžník, pravoúhlý rovnoběžník, pravoúhlý rovnoramenný trojúhelník, pravoúhlý rovnoramenný lichoběžník, pravoúhlý rovnoběžník, krychle, kvádr, kruh, koule, kružnice, Thaletova kružnice, obdov, kruhu, délka kružnice"
+        "content": ""
+    },
+    {
+        "title": "3D tvary",
+        "url": "geo-3d-tvary.html",
+        "content": "krychle, kvádr, koule, válec, jehlan, kužel, pyramidy"
+    },
+    {
+        "title": "Čtyřúhelníky",
+        "url": "geo-ctyruhelniky.html",
+        "content": "kosočtverec, lichoběžník, rovnoběžník, čtverec, obdélník"
+    },
+    {
+        "title": "Trojúhelníky",
+        "url": "geo-trojuhelniky.html",
+        "content": "trojúhelník, rovnoramenný trojúhelník, pravoúhlý trojúhelník, pravoúhlý rovnoramenný trojúhelník"
+    },
+    {
+        "title": "Kruhy a kružnice",
+        "url": "geo-kruhy-kruznice.html",
+        "content": "kruh, koule, kružnice, Thaletova kružnice, obvod kruhu, délka kružnice, obsah kruhu"
     },
     {
         "title": "Pravoúhlá soustava souřadnic",
@@ -1117,7 +1137,7 @@
     {
         "title": "Chemická reakce",
         "url": "ch-reakce.html",
-        "content": "Tepelný průběh, Endotermická reakce, Exotermická reakce, Zákon zachování hmotnosti, Zákon zachování energie, Rychlost chemické reakce, Obsah povrchu, Teplota reakce, Koncentrace reaktantů, Katalyzátor, Slučování, Rozklad, Nahrazování."
+        "content": "Tepelný průběh, Endotermická reakce, Exotermická reakce, Zákon zachování hmotnosti, Zákon zachování energie, Rychlost chemické reakce, Obsah povrchu, Teplota reakce, Koncentrace reaktantů, Katalyzátor, Slučování, Rozklad, Nahrazování, reaktanty, produkty, Vyčíslení chemické rovnice, stechiometrické koeficienty"
     },
     {
         "title": "",
