@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
                 </a>
             </li>
-            <div class="version-info">25w10b</div>
+            <div class="version-info">25w11a</div>
             
            <li class="nav-item" style="padding-top: 3rem">
                 <a class="nav-link" href="#">
@@ -273,7 +273,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 </li>
             </ul>
         </div>
-        <div class="version-info">25w10b</div>
+        <div class="version-info">25w11a</div>
     </div>
 
         <div id="searchModal" class="modal">
@@ -283,7 +283,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <div id="results"></div>
                 </div>
             </div>
-                    <div id="cookie-consent" style="display: none;">
+        <div id="cookie-consent" style="display: none;">
             <p>Tento web používá cookies. Pokud nesouhlasíte, budou se posílat jen nezbytné cookies.</p>
             <button onclick="acceptCookies()">Souhlasím</button>
             <button class="decline" onclick="declineCookies()">Nesouhlasím</button>
@@ -391,6 +391,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+function goBack() {
+    window.history.back();
 }
 
 document.addEventListener("DOMContentLoaded", function () {

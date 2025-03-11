@@ -68,9 +68,15 @@ nav {
 .navImg:hover,
 #MyNavBar .nav-link:hover {
     background-color: #ff9c66;
-    transform: translateX(5px);
+    transform: scale(1.05);
     text-decoration: none;
 }
+
+.navImg:active,
+#MyNavBar .nav-link:active {
+    transform: scale(0.95);
+}
+
 
 .navbar-toggler:hover {
     border: none;

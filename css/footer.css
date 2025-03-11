@@ -21,7 +21,11 @@ footer {
 
 .footer-content:hover {
     background-color: #ff9c66;
-    transform: translateX(5px);
+    transform: scale(1.05);
+}
+
+.footer-content:active {
+    transform: scale(0.95);
 }
 
 @media only screen and (max-width: 600px) {

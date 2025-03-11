@@ -1,4 +1,4 @@
-.grid {
+.grid-predmety {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     /* Čtyři sloupce */
@@ -11,44 +11,44 @@
 }
 
 @media screen and (min-width: 1700px) {
-    .grid {
+    .grid-predmety {
         grid-template-columns: repeat(6, 1fr);
     }
 }
 
 
 @media screen and (max-width: 1699px) and (min-width: 1325px) {
-    .grid {
+    .grid-predmety {
         grid-template-columns: repeat(5, 1fr);
     }
 }
 
 @media screen and (max-width: 1100px) and (min-width: 1101px) {
-    .grid {
+    .grid-predmety {
         grid-template-columns: repeat(4, 1fr);
     }
 }
 
 @media screen and (max-width: 1100px) and (min-width: 900px) {
-    .grid {
+    .grid-predmety {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media screen and (max-width: 899px) and (min-width: 690px) {
-    .grid {
+    .grid-predmety {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media screen and (max-width: 689px) and (min-width: 600px) {
-    .grid {
+    .grid-predmety {
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
 
-.grid-item {
+.grid-item-pred {
     width: 180px;
     /* Šířka položky */
     height: 180px;
@@ -61,10 +61,11 @@
     /* Rezervace místa pro rámeček */
     transition: transform 0.2s ease, border 0.2s ease;
     overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 
 }
 
-.grid-item a {
+.grid-item-pred a {
     display: flex;
     /* Flexbox pro centrování obsahu */
     justify-content: center;
@@ -80,7 +81,7 @@
     text-transform: uppercase;
 }
 
-.grid-item:hover {
+.grid-item-pred:hover {
     transform: scale(1.05);
     z-index: 1000;
     /* Zvýšení vizuální velikosti */
@@ -88,15 +89,15 @@
     /* Viditelný rámeček na hover */
 }
 
-.grid-item a:hover {
+.grid-item-pred a:hover {
     z-index: 1000;
 }
 
-.grid-item:active {
+.grid-item-pred:active {
     transform: scale(0.95);
 }
 
-.grid-item h3 {
+.grid-item-pred h3 {
     margin: 0;
     /* Odstranění defaultního marginu */
     /* Velikost textu */
@@ -106,15 +107,97 @@
 }
 
 @media screen and (max-width: 600px) {
-    .grid {
+    .grid-predmety {
         grid-template-columns: 1fr;
         /* Jeden sloupec na malých obrazovkách */
         grid-gap: 30px;
     }
 
-    .grid-item {
+    .grid-item-pred {
         height: 12.5rem;
         width: 12.5rem;
         /* Přizpůsobená výška pro mobilní zařízení */
     }
 }
+
+
+
+
+
+/* gaga */
+.grid {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+    border: 1px solid #fb8241;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item {
+    list-style: none;
+    padding: 0;
+    border-bottom: 1px solid #fb8241;
+    background: #ffad8f;
+    width: 500px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item a {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: transparent;
+    text-align: left;
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+}
+
+.grid-item a:hover {
+    background-color: #ff7340;
+    /* Změna barvy při najetí */
+    border-radius: 0;
+}
+
+.grid-item h3::first-letter {
+    text-transform: uppercase;
+}
+
+.grid-item:last-child {
+    border-bottom: none;
+}
+
+
+.grid a {
+    text-decoration: none;
+    display: block;
+    border-radius: 0;
+}
+
+.grid h3:active {
+    transform: scale(0.95);
+}
+
+.grid h3 {
+    margin: 0;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 600px) {
+    .grid-item {
+        width: 300px;
+    }
+
+    .grid h3 {
+        font-size: 18px;
+    }
+}
+
+/* 
+for small phones xd: width: 300px; 
+for more than 1080px: width: 500px;
+for more than 1440px: width: 700px;
+*/
