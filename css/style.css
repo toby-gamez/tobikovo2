@@ -948,7 +948,7 @@ video.dark-mode {
 }
 
 .grid-item.dark-mode {
-    border-bottom: 1px solid #701e00;
+    border-bottom: 2px solid #701e00;
     background: #701e00;
 }
 
