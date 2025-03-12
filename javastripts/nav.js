@@ -1,7 +1,7 @@
-document.addEventListener('DOMContentLoaded', function () {
-    var navbar = document.getElementById('myNavbar');
+document.addEventListener("DOMContentLoaded", function () {
+  var navbar = document.getElementById("myNavbar");
 
-    var navbarContent = `
+  var navbarContent = `
     <link href="libs/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- Mobilní hlavička -->
@@ -103,6 +103,14 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
                 </a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link navFy" href="zemepis.html">
+                    <div class="nav-link-content">
+                        <i class="bi bi-globe-americas"></i>
+                        <span>Zeměpis</span>
+                    </div>
+                </a>
+            </li>
             <li class="nav-item" style="padding-top: 3rem">
                 <a class="nav-link navAb" href="about.html">
                     <div class="nav-link-content">
@@ -135,8 +143,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
                 </a>
             </li>
-            <div class="version-info">25w11ab</div>
-            
+            <div class="version-info">25w11b</div>
+
            <li class="nav-item" style="padding-top: 3rem">
                 <a class="nav-link" href="#">
                     <div class="nav-link-content">
@@ -229,6 +237,14 @@ document.addEventListener('DOMContentLoaded', function () {
                         </div>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link navFy" href="zemepis.html">
+                        <div class="nav-link-content">
+                            <i class="bi bi-globe-americas"></i>
+                            <span>Zeměpis</span>
+                        </div>
+                    </a>
+                </li>
                 <li class="nav-item" style="padding-top: 3rem">
                     <a class="nav-link navAb" href="about.html">
                         <div class="nav-link-content">
@@ -273,7 +289,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 </li>
             </ul>
         </div>
-        <div class="version-info">25w11ab</div>
+        <div class="version-info">25w11b</div>
     </div>
 
         <div id="searchModal" class="modal">
@@ -291,430 +307,443 @@ document.addEventListener('DOMContentLoaded', function () {
       <script src="https://unpkg.com/lunr/lunr.js"></script>
     `;
 
-    navbar.innerHTML = navbarContent;
+  navbar.innerHTML = navbarContent;
 
-    // Dark mode toggle functionality
-    function initDarkMode() {
-        const toggleButton = document.getElementById('dark-mode-toggle');
-        const toggleButtonMobile = document.getElementById('dark-mode-toggle-mobile');
-        const body = document.body;
-        let darkingmode = '';
+  // Dark mode toggle functionality
+  function initDarkMode() {
+    const toggleButton = document.getElementById("dark-mode-toggle");
+    const toggleButtonMobile = document.getElementById(
+      "dark-mode-toggle-mobile",
+    );
+    const body = document.body;
+    let darkingmode = "";
 
-        function enableDarkMode() {
-            body.classList.add('dark-mode');
-            document.querySelectorAll('footer, p, h2, ul, li, .grid-item, .opinion-meta, .opinion-card, #cookie-consent, .search-snippet, .key-icon, button, #MyNavBar, h5, .modal-content, #results, #results div, .scrollable-menu, .nav-text, .underlined, .version-info, #search, table, th, td, textarea, .opinion-input, .nav-link, h3, h4, img, video, hr, a, .button-container, .button-container a, .footer-content, .navImg, .Mcard, .Minfo, .Mnadpis, .mobile-header, .loading-bar, .mobile-menu').forEach(element => {
-                element.classList.add('dark-mode');
-            });
-            localStorage.setItem('darkMode', 'enabled');
-            darkingmode = "dark-mode";
-        }
-
-        function disableDarkMode() {
-            body.classList.remove('dark-mode');
-            document.querySelectorAll('footer, p, h2, ul, li, .grid-item, .search-snippet, .opinion-meta, #cookie-consent, .opinion-card, .key-icon, button, #MyNavBar, h5, .modal-content, #results, #results div, .scrollable-menu, .nav-text, .underlined, .version-info, #search, textarea, .opinion-input, .nav-link, th, td, h3, h4, hr, a, img, video, .button-container, .button-container a, .footer-content, .navImg, .Mcard, .Minfo, .Mnadpis, .mobile-header, .loading-bar, .mobile-menu').forEach(element => {
-                element.classList.remove('dark-mode');
-            });
-            localStorage.setItem('darkMode', 'disabled');
-            darkingmode = '';
-        }
-
-        // Apply dark mode if previously enabled
-        if (localStorage.getItem('darkMode') === 'enabled') {
-            enableDarkMode();
-            if (toggleButton) toggleButton.checked = true;
-            if (toggleButtonMobile) toggleButtonMobile.checked = true;
-        }
-
-        if (toggleButton) {
-            toggleButton.addEventListener('change', function () {
-                if (body.classList.contains('dark-mode')) {
-                    disableDarkMode();
-                } else {
-                    enableDarkMode();
-                }
-            });
-        }
-
-        if (toggleButtonMobile) {
-            toggleButtonMobile.addEventListener('change', function () {
-                if (body.classList.contains('dark-mode')) {
-                    disableDarkMode();
-                } else {
-                    enableDarkMode();
-                }
-            });
-        }
+    function enableDarkMode() {
+      body.classList.add("dark-mode");
+      document
+        .querySelectorAll(
+          "footer, p, h2, ul, li, .grid-item, .opinion-meta, .opinion-card, #cookie-consent, .search-snippet, .key-icon, button, #MyNavBar, h5, .modal-content, #results, #results div, .scrollable-menu, .nav-text, .underlined, .version-info, #search, table, th, td, textarea, .opinion-input, .nav-link, h3, h4, img, video, hr, a, .button-container, .button-container a, .footer-content, .navImg, .Mcard, .Minfo, .Mnadpis, .mobile-header, .loading-bar, .mobile-menu",
+        )
+        .forEach((element) => {
+          element.classList.add("dark-mode");
+        });
+      localStorage.setItem("darkMode", "enabled");
+      darkingmode = "dark-mode";
     }
-    initDarkMode();
+
+    function disableDarkMode() {
+      body.classList.remove("dark-mode");
+      document
+        .querySelectorAll(
+          "footer, p, h2, ul, li, .grid-item, .search-snippet, .opinion-meta, #cookie-consent, .opinion-card, .key-icon, button, #MyNavBar, h5, .modal-content, #results, #results div, .scrollable-menu, .nav-text, .underlined, .version-info, #search, textarea, .opinion-input, .nav-link, th, td, h3, h4, hr, a, img, video, .button-container, .button-container a, .footer-content, .navImg, .Mcard, .Minfo, .Mnadpis, .mobile-header, .loading-bar, .mobile-menu",
+        )
+        .forEach((element) => {
+          element.classList.remove("dark-mode");
+        });
+      localStorage.setItem("darkMode", "disabled");
+      darkingmode = "";
+    }
+
+    // Apply dark mode if previously enabled
+    if (localStorage.getItem("darkMode") === "enabled") {
+      enableDarkMode();
+      if (toggleButton) toggleButton.checked = true;
+      if (toggleButtonMobile) toggleButtonMobile.checked = true;
+    }
+
+    if (toggleButton) {
+      toggleButton.addEventListener("change", function () {
+        if (body.classList.contains("dark-mode")) {
+          disableDarkMode();
+        } else {
+          enableDarkMode();
+        }
+      });
+    }
+
+    if (toggleButtonMobile) {
+      toggleButtonMobile.addEventListener("change", function () {
+        if (body.classList.contains("dark-mode")) {
+          disableDarkMode();
+        } else {
+          enableDarkMode();
+        }
+      });
+    }
+  }
+  initDarkMode();
 });
 
 // bar pro loading
 
-document.addEventListener('DOMContentLoaded', function () {
-    var loadingBar = document.querySelector('.loading-bar');
+document.addEventListener("DOMContentLoaded", function () {
+  var loadingBar = document.querySelector(".loading-bar");
 
-    // Funkce pro aktualizaci šířky loading baru podle pozice scrollování
-    function updateLoadingBar() {
-        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        var scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
-        var clientHeight = document.documentElement.clientHeight;
-        var scrollPercent = (scrollTop / (scrollHeight - clientHeight)) * 100;
-        loadingBar.style.width = scrollPercent + '%';
-    }
+  // Funkce pro aktualizaci šířky loading baru podle pozice scrollování
+  function updateLoadingBar() {
+    var scrollTop =
+      document.documentElement.scrollTop || document.body.scrollTop;
+    var scrollHeight =
+      document.documentElement.scrollHeight || document.body.scrollHeight;
+    var clientHeight = document.documentElement.clientHeight;
+    var scrollPercent = (scrollTop / (scrollHeight - clientHeight)) * 100;
+    loadingBar.style.width = scrollPercent + "%";
+  }
 
-    // Aktualizace loading baru při scrollování
-    window.addEventListener('scroll', updateLoadingBar);
+  // Aktualizace loading baru při scrollování
+  window.addEventListener("scroll", updateLoadingBar);
 
-    // Prvotní nastavení při načtení stránky
-    updateLoadingBar();
+  // Prvotní nastavení při načtení stránky
+  updateLoadingBar();
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    const toggleButton = document.querySelector('.navbar-toggler');
-    const closeButton = document.querySelector('.close-menu');
-    const mobileMenu = document.querySelector('.mobile-menu');
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleButton = document.querySelector(".navbar-toggler");
+  const closeButton = document.querySelector(".close-menu");
+  const mobileMenu = document.querySelector(".mobile-menu");
 
-    function toggleMenu() {
-        mobileMenu.classList.toggle('show');
-        document.body.style.overflow = mobileMenu.classList.contains('show') ? 'hidden' : '';
-    }
+  function toggleMenu() {
+    mobileMenu.classList.toggle("show");
+    document.body.style.overflow = mobileMenu.classList.contains("show")
+      ? "hidden"
+      : "";
+  }
 
-    toggleButton.addEventListener('click', toggleMenu);
-    closeButton.addEventListener('click', toggleMenu);
+  toggleButton.addEventListener("click", toggleMenu);
+  closeButton.addEventListener("click", toggleMenu);
 
-    // Zavření menu při kliknutí na odkaz
-    const menuLinks = mobileMenu.querySelectorAll('.nav-link');
-    menuLinks.forEach(link => {
-        link.addEventListener('click', toggleMenu);
-    });
+  // Zavření menu při kliknutí na odkaz
+  const menuLinks = mobileMenu.querySelectorAll(".nav-link");
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", toggleMenu);
+  });
 });
 
 function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 function goBack() {
-    window.history.back();
+  window.history.back();
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    let index, pages;
+  let index, pages;
 
-    // Funkce pro odstranění diakritiky
-    function normalizeText(text) {
-        return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  // Funkce pro odstranění diakritiky
+  function normalizeText(text) {
+    return text
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase();
+  }
+
+  // Načtení JSON indexu
+  fetch("javastripts/search-index.json")
+    .then((response) => response.json())
+    .then((data) => {
+      pages = data;
+      index = lunr(function () {
+        this.ref("url");
+        this.field("title");
+        this.field("content");
+
+        data.forEach((page) => {
+          page.title = normalizeText(page.title);
+          page.content = normalizeText(page.content);
+          this.add(page);
+        });
+      });
+    });
+
+  // Událost při psaní do vyhledávače
+  document.getElementById("search").addEventListener("input", function () {
+    let query = normalizeText(this.value.trim());
+    let resultsContainer = document.getElementById("results");
+    resultsContainer.innerHTML = "";
+
+    if (query.length < 2) return; // Minimální délka dotazu
+
+    let results = index.search(`*${query}*`); // Hledá části slov (fuzzy search)
+
+    if (results.length === 0) {
+      resultsContainer.innerHTML = "<p>Žádné výsledky.</p>";
+      return;
     }
 
-    // Načtení JSON indexu
-    fetch("javastripts/search-index.json")
-        .then(response => response.json())
-        .then(data => {
-            pages = data;
-            index = lunr(function () {
-                this.ref("url");
-                this.field("title");
-                this.field("content");
-
-                data.forEach(page => {
-                    page.title = normalizeText(page.title);
-                    page.content = normalizeText(page.content);
-                    this.add(page);
-                });
-            });
-        });
-
-    // Událost při psaní do vyhledávače
-    document.getElementById("search").addEventListener("input", function () {
-        let query = normalizeText(this.value.trim());
-        let resultsContainer = document.getElementById("results");
-        resultsContainer.innerHTML = "";
-
-        if (query.length < 2) return; // Minimální délka dotazu
-
-        let results = index.search(`*${query}*`); // Hledá části slov (fuzzy search)
-
-        if (results.length === 0) {
-            resultsContainer.innerHTML = "<p>Žádné výsledky.</p>";
-            return;
-        }
-
-        results.forEach(result => {
-            let page = pages.find(p => p.url === result.ref);
-            let div = document.createElement("div");
-            div.innerHTML = `<a href="${page.url}">${page.title}</a>`;
-            resultsContainer.appendChild(div);
-        });
+    results.forEach((result) => {
+      let page = pages.find((p) => p.url === result.ref);
+      let div = document.createElement("div");
+      div.innerHTML = `<a href="${page.url}">${page.title}</a>`;
+      resultsContainer.appendChild(div);
     });
+  });
 });
 
-
-
-
-
-
-
-
-
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
-    let index, pages;
+  let index, pages;
 
-    // Funkce pro normalizaci textu (odstranění diakritiky a převedení na malá písmena)
-    function normalizeText(text) {
-        if (!text) return "";
-        return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-    }
+  // Funkce pro normalizaci textu (odstranění diakritiky a převedení na malá písmena)
+  function normalizeText(text) {
+    if (!text) return "";
+    return text
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase();
+  }
 
-    // Funkce pro nalezení a zvýraznění celého pojmu
-    function findAndHighlightTerm(content, query) {
-        if (!content) return "";
+  // Funkce pro nalezení a zvýraznění celého pojmu
+  function findAndHighlightTerm(content, query) {
+    if (!content) return "";
 
-        const normalizedQuery = normalizeText(query);
-        // Rozdělení obsahu podle čárek a následné ořezání mezer
-        const terms = content.split(',').map(term => term.trim());
+    const normalizedQuery = normalizeText(query);
+    // Rozdělení obsahu podle čárek a následné ořezání mezer
+    const terms = content.split(",").map((term) => term.trim());
 
-        for (let term of terms) {
-            if (normalizeText(term).includes(normalizedQuery)) {
-                // Najdeme pozici hledaného výrazu v normalizovaném termínu
-                const normalizedTerm = normalizeText(term);
-                const queryIndex = normalizedTerm.indexOf(normalizedQuery);
+    for (let term of terms) {
+      if (normalizeText(term).includes(normalizedQuery)) {
+        // Najdeme pozici hledaného výrazu v normalizovaném termínu
+        const normalizedTerm = normalizeText(term);
+        const queryIndex = normalizedTerm.indexOf(normalizedQuery);
 
-                if (queryIndex !== -1) {
-                    // Rozdělíme podle přesné pozice výrazu
-                    const prefix = term.substring(0, queryIndex);
-                    const match = term.substring(queryIndex, queryIndex + query.length);
-                    const suffix = term.substring(queryIndex + query.length);
+        if (queryIndex !== -1) {
+          // Rozdělíme podle přesné pozice výrazu
+          const prefix = term.substring(0, queryIndex);
+          const match = term.substring(queryIndex, queryIndex + query.length);
+          const suffix = term.substring(queryIndex + query.length);
 
-                    return prefix + "<strong>" + match + "</strong>" + suffix;
-                }
-
-                return term; // Vrátíme celý pojem, i když nemůžeme přesně lokalizovat hledaný výraz
-            }
+          return prefix + "<strong>" + match + "</strong>" + suffix;
         }
 
-        return ""; // Pokud nic nenajdeme
+        return term; // Vrátíme celý pojem, i když nemůžeme přesně lokalizovat hledaný výraz
+      }
     }
 
-    // Funkce pro přepínání scrollování
-    function toggleScrollLock(lock) {
-        if (lock) {
-            document.body.classList.add('scroll-lock');
-        } else {
-            document.body.classList.remove('scroll-lock');
-        }
+    return ""; // Pokud nic nenajdeme
+  }
+
+  // Funkce pro přepínání scrollování
+  function toggleScrollLock(lock) {
+    if (lock) {
+      document.body.classList.add("scroll-lock");
+    } else {
+      document.body.classList.remove("scroll-lock");
     }
+  }
 
-    // Načtení dat z indexu
-    fetch("javastripts/search-index.json")
-        .then(response => response.json())
-        .then(data => {
-            pages = data;
-            index = lunr(function () {
-                this.ref("url");
-                this.field("title");
-                this.field("content");
+  // Načtení dat z indexu
+  fetch("javastripts/search-index.json")
+    .then((response) => response.json())
+    .then((data) => {
+      pages = data;
+      index = lunr(function () {
+        this.ref("url");
+        this.field("title");
+        this.field("content");
 
-                data.forEach(page => {
-                    this.add(page);
-                });
-            });
-        })
-        .catch(error => {
-            console.error("Chyba při načítání indexu:", error);
+        data.forEach((page) => {
+          this.add(page);
         });
-
-    // Ovládání modalního okna pro hledání
-    const modal = document.getElementById("searchModal");
-    const closeBtn = document.getElementById("closeSearch");
-    const searchInput = document.getElementById("search");
-    const openBtns = document.querySelectorAll("#openSearch");
-    openBtns.forEach(btn => {
-        btn.addEventListener("click", function () {
-            modal.classList.add("active");
-            toggleScrollLock(true); // Zamkne scrollování
-            searchInput.focus();
-        });
+      });
+    })
+    .catch((error) => {
+      console.error("Chyba při načítání indexu:", error);
     });
 
-    closeBtn.addEventListener("click", function () {
-        modal.classList.remove("active");
-        toggleScrollLock(false); // Odemkne scrollování
-        searchInput.value = "";
-        document.getElementById("results").innerHTML = "";
+  // Ovládání modalního okna pro hledání
+  const modal = document.getElementById("searchModal");
+  const closeBtn = document.getElementById("closeSearch");
+  const searchInput = document.getElementById("search");
+  const openBtns = document.querySelectorAll("#openSearch");
+  openBtns.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      modal.classList.add("active");
+      toggleScrollLock(true); // Zamkne scrollování
+      searchInput.focus();
     });
+  });
 
-    window.addEventListener("click", function (event) {
-        if (event.target === modal) {
-            modal.classList.remove("active");
-            toggleScrollLock(false); // Odemkne scrollování
-            searchInput.value = "";
-            document.getElementById("results").innerHTML = "";
-        }
-    });
+  closeBtn.addEventListener("click", function () {
+    modal.classList.remove("active");
+    toggleScrollLock(false); // Odemkne scrollování
+    searchInput.value = "";
+    document.getElementById("results").innerHTML = "";
+  });
 
-    window.addEventListener("keydown", function (event) {
-        if (event.key === "Escape") {
-            modal.classList.remove("active");
-            toggleScrollLock(false); // Odemkne scrollování
-            searchInput.value = "";
-            document.getElementById("results").innerHTML = "";
-        }
+  window.addEventListener("click", function (event) {
+    if (event.target === modal) {
+      modal.classList.remove("active");
+      toggleScrollLock(false); // Odemkne scrollování
+      searchInput.value = "";
+      document.getElementById("results").innerHTML = "";
+    }
+  });
 
-        const activeElement = document.activeElement.tagName.toLowerCase();
-        const isTyping = activeElement === 'input' ||
-            activeElement === 'textarea' ||
-            activeElement === 'select';
-
-        if (event.key.toLowerCase() === 'k' && !isTyping) {
-            event.preventDefault();
-            event.stopPropagation();
-            modal.classList.add("active");
-            toggleScrollLock(true); // Zamkne scrollování
-            searchInput.focus();
-        }
-    });
-
-    // Otevření prvního výsledku při stisknutí Enter
-    window.addEventListener("keydown", function (event) {
-        if (event.key === "Enter") {
-            const firstResult = document.querySelector(".search-result"); // Hledáme první výsledek místo odkazu
-            if (firstResult && firstResult.dataset.url) {
-                window.location.href = firstResult.dataset.url; // Použijeme URL z data atributu
-            }
-        }
-    });
-
-    // Funkce pro hledání
-    function search(query) {
-        if (!pages || query.length < 2) return [];
-
-        const results = [];
-        const normalizedQuery = normalizeText(query);
-
-        pages.forEach(page => {
-            let score = 0;
-            let foundInTitle = false;
-            let foundInContent = false;
-            let highlightedTerm = "";
-
-            // Hledání v názvu
-            if (normalizeText(page.title).includes(normalizedQuery)) {
-                score += 10;
-                foundInTitle = true;
-            }
-
-            // Hledání v obsahu
-            if (page.content && normalizeText(page.content).includes(normalizedQuery)) {
-                score += 5;
-                foundInContent = true;
-                highlightedTerm = findAndHighlightTerm(page.content, query);
-            }
-
-            if (score > 0) {
-                results.push({
-                    title: page.title,
-                    url: page.url,
-                    score: score,
-                    highlightedTerm: highlightedTerm,
-                    foundInTitle: foundInTitle,
-                    foundInContent: foundInContent
-                });
-            }
-        });
-
-        // Seřazení výsledků podle skóre
-        results.sort((a, b) => b.score - a.score);
-        return results;
+  window.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      modal.classList.remove("active");
+      toggleScrollLock(false); // Odemkne scrollování
+      searchInput.value = "";
+      document.getElementById("results").innerHTML = "";
     }
 
-    // Funkce pro zobrazení výsledků vyhledávání
-    function displaySearchResults(query) {
-        if (query.length < 2) return;
+    const activeElement = document.activeElement.tagName.toLowerCase();
+    const isTyping =
+      activeElement === "input" ||
+      activeElement === "textarea" ||
+      activeElement === "select";
 
-        const results = search(query);
-        const resultsContainer = document.getElementById("results");
-        resultsContainer.innerHTML = "";
+    if (event.key.toLowerCase() === "k" && !isTyping) {
+      event.preventDefault();
+      event.stopPropagation();
+      modal.classList.add("active");
+      toggleScrollLock(true); // Zamkne scrollování
+      searchInput.focus();
+    }
+  });
 
-        if (results.length === 0) {
-            resultsContainer.innerHTML = "<div class='no-results'>Žádné výsledky nenalezeny</div>";
-            return;
-        }
+  // Otevření prvního výsledku při stisknutí Enter
+  window.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+      const firstResult = document.querySelector(".search-result"); // Hledáme první výsledek místo odkazu
+      if (firstResult && firstResult.dataset.url) {
+        window.location.href = firstResult.dataset.url; // Použijeme URL z data atributu
+      }
+    }
+  });
 
-        results.forEach(result => {
-            const resultItem = document.createElement("div");
-            resultItem.classList.add("search-result");
-            resultItem.dataset.url = result.url; // Uložíme URL jako data atribut
-            resultItem.style.cursor = "pointer"; // Změníme kurzor na pointer pro indikaci klikatelnosti
+  // Funkce pro hledání
+  function search(query) {
+    if (!pages || query.length < 2) return [];
 
-            // Připravíme text pro pravý sloupec
-            let snippetText = result.highlightedTerm;
+    const results = [];
+    const normalizedQuery = normalizeText(query);
 
-            // Pokud jsme našli výsledek v titulku, ale ne v obsahu, zobrazíme informační text
-            if (result.foundInTitle && !result.foundInContent) {
-                snippetText = "V textu není zmínka";
-            }
+    pages.forEach((page) => {
+      let score = 0;
+      let foundInTitle = false;
+      let foundInContent = false;
+      let highlightedTerm = "";
 
-            // Vytvoříme HTML pro výsledek: vlevo odkaz na stránku, vpravo ukazatel
-            resultItem.innerHTML = `
+      // Hledání v názvu
+      if (normalizeText(page.title).includes(normalizedQuery)) {
+        score += 10;
+        foundInTitle = true;
+      }
+
+      // Hledání v obsahu
+      if (
+        page.content &&
+        normalizeText(page.content).includes(normalizedQuery)
+      ) {
+        score += 5;
+        foundInContent = true;
+        highlightedTerm = findAndHighlightTerm(page.content, query);
+      }
+
+      if (score > 0) {
+        results.push({
+          title: page.title,
+          url: page.url,
+          score: score,
+          highlightedTerm: highlightedTerm,
+          foundInTitle: foundInTitle,
+          foundInContent: foundInContent,
+        });
+      }
+    });
+
+    // Seřazení výsledků podle skóre
+    results.sort((a, b) => b.score - a.score);
+    return results;
+  }
+
+  // Funkce pro zobrazení výsledků vyhledávání
+  function displaySearchResults(query) {
+    if (query.length < 2) return;
+
+    const results = search(query);
+    const resultsContainer = document.getElementById("results");
+    resultsContainer.innerHTML = "";
+
+    if (results.length === 0) {
+      resultsContainer.innerHTML =
+        "<div class='no-results'>Žádné výsledky nenalezeny</div>";
+      return;
+    }
+
+    results.forEach((result) => {
+      const resultItem = document.createElement("div");
+      resultItem.classList.add("search-result");
+      resultItem.dataset.url = result.url; // Uložíme URL jako data atribut
+      resultItem.style.cursor = "pointer"; // Změníme kurzor na pointer pro indikaci klikatelnosti
+
+      // Připravíme text pro pravý sloupec
+      let snippetText = result.highlightedTerm;
+
+      // Pokud jsme našli výsledek v titulku, ale ne v obsahu, zobrazíme informační text
+      if (result.foundInTitle && !result.foundInContent) {
+        snippetText = "V textu není zmínka";
+      }
+
+      // Vytvoříme HTML pro výsledek: vlevo odkaz na stránku, vpravo ukazatel
+      resultItem.innerHTML = `
                 <div class="result-title">${result.title}</div>
                 <p class="search-snippet">${snippetText}</p>
             `;
 
-            // Přidáme event listener pro kliknutí na celý div
-            resultItem.addEventListener("click", function () {
-                window.location.href = result.url;
-            });
+      // Přidáme event listener pro kliknutí na celý div
+      resultItem.addEventListener("click", function () {
+        window.location.href = result.url;
+      });
 
-            resultsContainer.appendChild(resultItem);
-        });
-    }
-
-    // Vyhledávání při zadání textu
-    searchInput.addEventListener("input", function () {
-        const query = searchInput.value;
-        if (query.length >= 2) {
-            displaySearchResults(query);
-        } else {
-            document.getElementById("results").innerHTML = "";
-        }
+      resultsContainer.appendChild(resultItem);
     });
+  }
+
+  // Vyhledávání při zadání textu
+  searchInput.addEventListener("input", function () {
+    const query = searchInput.value;
+    if (query.length >= 2) {
+      displaySearchResults(query);
+    } else {
+      document.getElementById("results").innerHTML = "";
+    }
+  });
 });
 
-
 function acceptCookies() {
-    localStorage.setItem("cookieConsent", "true");
-    document.getElementById("cookie-consent").style.display = "none";
+  localStorage.setItem("cookieConsent", "true");
+  document.getElementById("cookie-consent").style.display = "none";
 
-    console.log("User accepted cookies.");
-    gtag('consent', 'update', {
-        'analytics_storage': 'granted'
-    });
+  console.log("User accepted cookies.");
+  gtag("consent", "update", {
+    analytics_storage: "granted",
+  });
 
-    loadGoogleAnalytics();
+  loadGoogleAnalytics();
 }
 
 function declineCookies() {
-    localStorage.setItem("cookieConsent", "false");
-    document.getElementById("cookie-consent").style.display = "none";
+  localStorage.setItem("cookieConsent", "false");
+  document.getElementById("cookie-consent").style.display = "none";
 
-    console.log("User declined cookies.");
-    gtag('consent', 'update', {
-        'analytics_storage': 'denied'
-    });
+  console.log("User declined cookies.");
+  gtag("consent", "update", {
+    analytics_storage: "denied",
+  });
 }
 
 window.onload = function () {
-    let consent = localStorage.getItem("cookieConsent");
+  let consent = localStorage.getItem("cookieConsent");
 
-    if (consent === "true") {
-        console.log("Consent found: Accepted");
-        acceptCookies();
-    } else if (consent === "false") {
-        console.log("Consent found: Declined");
-        declineCookies();
-    } else {
-        console.log("No consent found, showing cookie banner.");
-        document.getElementById("cookie-consent").style.display = "flex";
-    }
-}
+  if (consent === "true") {
+    console.log("Consent found: Accepted");
+    acceptCookies();
+  } else if (consent === "false") {
+    console.log("Consent found: Declined");
+    declineCookies();
+  } else {
+    console.log("No consent found, showing cookie banner.");
+    document.getElementById("cookie-consent").style.display = "flex";
+  }
+};

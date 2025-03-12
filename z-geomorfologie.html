@@ -25,61 +25,41 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ohebné slovní druhy - Mluvnice - Tobikovo</title>
+    <title>Geomorfologie České Republiky - Zeměpis - Tobikovo</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="icon" href="images/favicon.png">
-    <style>
-
-    </style>
 </head>
 
 <body>
     <div class="loading-bar-container">
         <div class="loading-bar"></div>
     </div>
-    <nav id="myNavbar">
-        <a href="#home"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
-        <a href="#home">Domů</a>
-        <a href="#ucivo">Učivo</a>
-        <a href="#o-nas">O nás</a>
-    </nav>
+
+    <nav id="myNavbar"></nav>
     <button class="openNav opennav-button" onclick="openNav()">☰</button>
+
     <!-- Obsah stránky -->
     <main>
 
         <section>
-            <h1 class="verybig">Ohebné slovní druhy</h1>
-            <ul class="grid">
-                <ul class="grid">
-                    <li class="grid-item">
-                        <a href="ml-pods-jmena.html">
-                            <h3 class="grid-h3-2">podstatná jména</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="ml-prid-jmena.html">
-                            <h3 class="grid-h3-2">přídavná jména</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="ml-zajmena.html">
-                            <h3 class="grid-h3">zájmena</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="ml-cislovky.html">
-                            <h3 class="grid-h3">číslovky</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="ml-slovesa.html">
-                            <h3 class="grid-h3">slovesa</h3>
-                        </a>
-                    </li>
+            <h1 class="verybig">Geomorfologie České Republiky</h1>
+            <div style="text-align: left;">
+                <h2>Informace</h2>
+                <ul>
+                	<li>věda zabívající se vznikem, stáří a tvarem zemského povrchu</li>
+                	<li>v ČR rozlišujeme 4 geomorfologické jednotky</li>
+                	<ul>
+                		<li>Česká vysočina - prvohory, v době hercynského vrásnění</li>
+                		<li>Západní Karpaty - třerihory, v Alpskohimalájském vrásnění</li>
+                		<li>Středoevropská nížina</li>
+                		<li>Západopanonská pánev</li>
+                	</ul>
                 </ul>
+                <button onclick="window.history.back()"><i class="bi bi-arrow-left"></i></button>
+            </div>
         </section>
 
     </main>
@@ -89,8 +69,8 @@
             <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
         </div>
     </footer>
+    <!-- JSs -->
     <script src="javastripts/nav.js"></script>
-
 </body>
 
 </html>

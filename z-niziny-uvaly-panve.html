@@ -25,61 +25,45 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ohebné slovní druhy - Mluvnice - Tobikovo</title>
+    <title>Nížiny, úvaly a pánve - Zeměpis - Tobikovo</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="icon" href="images/favicon.png">
-    <style>
-
-    </style>
 </head>
 
 <body>
     <div class="loading-bar-container">
         <div class="loading-bar"></div>
     </div>
-    <nav id="myNavbar">
-        <a href="#home"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
-        <a href="#home">Domů</a>
-        <a href="#ucivo">Učivo</a>
-        <a href="#o-nas">O nás</a>
-    </nav>
+
+    <nav id="myNavbar"></nav>
     <button class="openNav opennav-button" onclick="openNav()">☰</button>
+
     <!-- Obsah stránky -->
     <main>
 
         <section>
-            <h1 class="verybig">Ohebné slovní druhy</h1>
-            <ul class="grid">
-                <ul class="grid">
-                    <li class="grid-item">
-                        <a href="ml-pods-jmena.html">
-                            <h3 class="grid-h3-2">podstatná jména</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="ml-prid-jmena.html">
-                            <h3 class="grid-h3-2">přídavná jména</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="ml-zajmena.html">
-                            <h3 class="grid-h3">zájmena</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="ml-cislovky.html">
-                            <h3 class="grid-h3">číslovky</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="ml-slovesa.html">
-                            <h3 class="grid-h3">slovesa</h3>
-                        </a>
-                    </li>
+            <h1 class="verybig">Nížiny, úvaly a pánve</h1>
+            <div style="text-align: left;">
+                <h2>Informace</h2>
+                <div class="blog-image">
+                    <a href="images/niziny.jpg"><img src="images/niziny.jpg" class="blog-image" width="300px"></a>
+                    <p>mapa některých nížin ČR</p>
+                    <p>Zdroj: <a href="http://www.vyukovematerialy.cz/svet/rocnik5/foto/cesko/niziny.jpg">vyukovematerialy.cz</a></p>
+                </div>
+                <p>Nížiny jsou rozsáhlé oblasti s malými výškovými rozdíly, které se často nacházejí podél řek a jsou vhodné pro zemědělství. Pánve jsou prohlubně v krajině, které mohou být vyplněné sedimenty nebo vodou, často vznikají tektonickou činností nebo erozí. Úvaly jsou podlouhlé sníženiny mezi vyvýšenými oblastmi, obvykle vytvořené říční erozí, a často slouží jako přirozené dopravní cesty nebo zemědělské oblasti.</p>
+                <ul>
+                    <li>Podkrušnohorská pánev</li>
+                    <li>Hornomoravský úval</li>
+                    <li>Dolnomoravský úval</li>
+                    <li>Polabská nížina</li>
+                    <li>Dyjskosvratecký úval</li>
+                    <li>Moravská brána</li>
                 </ul>
+                <button onclick="window.history.back()"><i class="bi bi-arrow-left"></i></button>
+            </div>
         </section>
 
     </main>
@@ -89,8 +73,8 @@
             <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
         </div>
     </footer>
+    <!-- JSs -->
     <script src="javastripts/nav.js"></script>
-
 </body>
 
 </html>

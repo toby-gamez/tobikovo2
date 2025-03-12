@@ -32,6 +32,10 @@ h5 {
     font-size: 18px;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
+p {
+    text-align: justify; /* Zarovná text do bloku */
+    text-justify: inter-word; /* Optimalizuje mezery mezi slovy */
+}
 
 ::selection {
     background-color: #fb8241;
@@ -163,9 +167,7 @@ main {
 
 /* Změny pro grid a jiné prvky */
 section {
-    width: 100%;
-    max-width: 800px;
-    min-width: 10px;
+    width: 800px;
     text-align: center;
     margin: auto;
     padding: 20px;
@@ -204,8 +206,9 @@ section {
     }
 
     section {
-        padding: 3px;
-        width: 98%;
+        width: 97%;
+        max-width: 340px;
+        padding: 1px;
     }
 }
 
@@ -227,7 +230,7 @@ main a:hover {
     position: fixed;
     top: 0;
     left: 0;
-    width: 83.55%;
+    width: 85.2%;
     margin-left: 285px;
     height: 5px;
     background-color: transparent;
@@ -241,6 +244,7 @@ main a:hover {
     width: 0;
     background-color: #fb8241;
     /* Modrá barva */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 
 }
 
@@ -273,15 +277,19 @@ main a:hover {
 
 .blog-image img {
     background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .blog-image p {
     float: right;
     padding: 5px;
+    margin-bottom: 0;
     border: 5px solid #ff946c;
     background-color: #ffbca4;
     border-radius: 10px;
     text-align: left;
+    word-break: break-word;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .blog-image a {
@@ -511,6 +519,7 @@ button {
     background-color: rgba(0, 0, 0, 0.6);
     justify-content: center;
     align-items: center;
+    transition: all ease 0.3s;
 }
 
 /* Aktivní stav – zobrazí modal */
@@ -540,6 +549,15 @@ button {
     right: 15px;
     font-size: 24px;
     cursor: pointer;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    transition: all ease 0.3s;
+}
+#closeSearch:hover {
+    background-color: #d4332e;
 }
 
 /* Vyhledávací pole – odděleno od křížku */
@@ -556,7 +574,7 @@ button {
     border: 1px solid #fb8241;
     overflow: hidden;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    max-height: 200px;
+    max-height: 300px;
     overflow-y: auto;
     scrollbar-color: #ff9c66 transparent;
     transition: all 0.3s ease;
@@ -963,20 +981,20 @@ video.dark-mode {
 
 
 
-#results {
+#results.dark-mode {
     border: 1px solid #701e00;
     background: #942700;
 }
 
-#results div {
+#results div.dark-mode {
     background: #942700;
 }
 
-.search-result {
+.search-result.dark-mode {
     border-bottom: 1px solid #701e00;
 }
 
 
-#results a:hover {
+#results a:hover.dark-mode {
     background-color: #701e00;
 }
