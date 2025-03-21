@@ -1,101 +1,119 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
+    <head>
+        <!-- Google Consent Mode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-<head>
-    <!-- Google Consent Mode -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
+        </script>
 
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied'
-        });
-        console.log("Google Consent Mode initialized with default: denied");
-    </script>
+        <!-- Google Analytics (nenačte se automaticky) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+        ></script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-Q7DH4RTXBC");
+                console.log("Google Analytics loaded.");
+            }
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Báje - Literatura - Tobikovo</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="icon" href="images/favicon.png" />
+    </head>
 
-    <!-- Google Analytics (nenačte se automaticky) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
-    <script>
-        function loadGoogleAnalytics() {
-            console.log("Loading Google Analytics...");
-            gtag('js', new Date());
-            gtag('config', 'G-Q7DH4RTXBC');
-            console.log("Google Analytics loaded.");
-        }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Báje - Literatura - Tobikovo</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="icon" href="images/favicon.png">
-</head>
-
-<body>
-    <div class="loading-bar-container">
-        <div class="loading-bar"></div>
-    </div>
-    <nav id="myNavbar">
-        <a href="#home"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
-        <a href="#home">Domů</a>
-        <a href="#ucivo">Učivo</a>
-        <a href="#o-nas">O nás</a>
-    </nav>
-    <button class="openNav opennav-button" onclick="openNav()">☰</button>
-    <!-- Obsah stránky -->
-    <main>
-
-        <section>
-            <h1 class="verybig">Báje</h1>
-            <div style="text-align: left;">
-                <h2>Charakteristika</h2>
-
-                <p>Vznikaly, protože si lidé nedokázali vysvětlit různé jevy, přisuzovali je bohům - vyprávěli si
-                    příběhy,
-                    kde byl hrdinou bůh a polobůh.</p>
-
-                <h2>Staré řecké báje a pověsti</h2>
-                <ul>
-                    <li>autor: Eduard Petiška</li>
-                    <li>epické dílo</li>
-                    <li>převyprávěl antické báje, např: Daidalos a Ikaros, Trójská válka, Odysseovy cesty, Orfeus atd.
-                    </li>
-                </ul>
-
-                <h2>Eduard Petiška</h2>
-
-                <ul>
-                    <li>český autor bájí</li>
-                    <li>napsal Staré řecké báje a pověsti</li>
-                    <li>byl to básník, prozaik, dramatik, autor knih pro děti</li>
-                </ul>
-                <h2>Bohové</h2>
-
-                <ul>
-                    <li>Zeus [bůh Dia] - hromy a blesky</li>
-                    <li>Héra - rodina a manželství</li>
-                    <li>Hélios - slunce</li>
-                    <li>Athéna - moudrosti, války a řemesel</li>
-                    <li>Afrodita - lásky a plodnosti</li>
-                    <li>Hádes - říše mrtvých</li>
-                    <li>Dionýsos - víno a zábava</li>
-                    <li>Poseidon - moří</li>
-                </ul>
-                <button onclick="window.history.back()"><i class="bi bi-arrow-left"></i></button>
-            </div>
-        </section>
-
-    </main>
-    <!-- Patička -->
-    <footer>
-        <div class="footer-content">
-            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+    <body>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
         </div>
-    </footer>
-    <!-- JSs -->
-    <script src="javastripts/nav.js"></script>
-</body>
+        <nav id="myNavbar">
+            <a href="#home"
+                ><img src="images/white-logo.png" alt="Logo" width="75px"
+            /></a>
+            <a href="#home">Domů</a>
+            <a href="#ucivo">Učivo</a>
+            <a href="#o-nas">O nás</a>
+        </nav>
+        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+        <!-- Obsah stránky -->
+        <main>
+            <section>
+                <h1 class="verybig">Báje</h1>
+                <div style="text-align: left">
+                    <h2>Charakteristika</h2>
 
+                    <p>
+                        Vznikaly, protože si lidé
+                        <strong>nedokázali vysvětlit různé jevy</strong>,
+                        přisuzovali je bohům - vyprávěli si příběhy, kde byl
+                        hrdinou bůh a polobůh.
+                    </p>
+
+                    <h2>Staré řecké báje a pověsti</h2>
+                    <ul>
+                        <li>autor: Eduard Petiška</li>
+                        <li>epické dílo</li>
+                        <li>
+                            převyprávěl antické báje, např: Daidalos a Ikaros,
+                            Trójská válka, Odysseovy cesty, Orfeus atd.
+                        </li>
+                    </ul>
+
+                    <h2>Eduard Petiška</h2>
+
+                    <ul>
+                        <li>český autor bájí</li>
+                        <li>napsal Staré řecké báje a pověsti</li>
+                        <li>
+                            byl to básník, prozaik, dramatik, autor knih pro
+                            děti
+                        </li>
+                    </ul>
+                    <h2>Bohové</h2>
+
+                    <ul>
+                        <li>Zeus [bůh Dia] - hromy a blesky</li>
+                        <li>Héra - rodina a manželství</li>
+                        <li>Hélios - slunce</li>
+                        <li>Athéna - moudrosti, války a řemesel</li>
+                        <li>Afrodita - lásky a plodnosti</li>
+                        <li>Hádes - říše mrtvých</li>
+                        <li>Dionýsos - víno a zábava</li>
+                        <li>Poseidon - moří</li>
+                    </ul>
+                    <button onclick="window.history.back()">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <!-- Patička -->
+        <footer>
+            <div class="footer-content">
+                <a href="about.html"
+                    ><img
+                        src="images/white-logo.png"
+                        alt="Tobikovo Logo"
+                        width="100px"
+                /></a>
+            </div>
+        </footer>
+        <!-- JSs -->
+        <script src="javastripts/nav.js"></script>
+    </body>
 </html>

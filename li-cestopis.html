@@ -1,98 +1,141 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
+    <head>
+        <!-- Google Consent Mode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-<head>
-    <!-- Google Consent Mode -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
+        </script>
 
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied'
-        });
-        console.log("Google Consent Mode initialized with default: denied");
-    </script>
+        <!-- Google Analytics (nenačte se automaticky) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+        ></script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-Q7DH4RTXBC");
+                console.log("Google Analytics loaded.");
+            }
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cestopis - Literatura - Tobikovo</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="icon" href="images/favicon.png" />
+    </head>
 
-    <!-- Google Analytics (nenačte se automaticky) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
-    <script>
-        function loadGoogleAnalytics() {
-            console.log("Loading Google Analytics...");
-            gtag('js', new Date());
-            gtag('config', 'G-Q7DH4RTXBC');
-            console.log("Google Analytics loaded.");
-        }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cestopis - Literatura - Tobikovo</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="icon" href="images/favicon.png">
-</head>
-
-<body>
-    <div class="loading-bar-container">
-        <div class="loading-bar"></div>
-    </div>
-    <nav id="myNavbar">
-        <a href="#home"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
-        <a href="#home">Domů</a>
-        <a href="#ucivo">Učivo</a>
-        <a href="#o-nas">O nás</a>
-    </nav>
-    <button class="openNav opennav-button" onclick="openNav()">☰</button>
-    <!-- Obsah stránky -->
-    <main>
-
-        <section>
-            <h1 class="verybig">Cestopis</h1>
-            <div style="text-align: left;">
-                <h2>Charakteristika</h2>
-                <p>Je to prozaický literární žánr, ve kterém autor popisuje cesty (nejčastěji) do cizích zemí.</p>
-                <h2>Nejznámější autoři cestopisů:</h2>
-                <h3>Naši</h3>
-                <img src="images/emil-holub.jpg" class="rounded blog-image" height="140 rem" alt="Emil Holub obrázek">
-                <ul>
-                    <li>Václav Šašek z Bířkova (15. století): Deník o jízdě a putování pana Lva z Rožmitálu a z Blatné z
-                        Čech až na konec světa</li>
-                    <li>Alois Jirásek: Z Čech až na konec světa</li>
-                    <li>Karel Čapek: Anglické listy</li>
-                    <li>Emil Holub (obrázek, 18. století): První africká cesta, Druhá africká cesta</li>
-
-                    <li>Jiří Hanzelka a Miroslav Zikmund (20. století): cesty po Evropě, do Afriky a Jižní Ameriky</li>
-                </ul>
-                <h3>Cizí</h3>
-                <ul>
-                    <li>Marco Polo (Ital) 2. polovina 13. století a 1. třetina 14. století: cesty po Číně, nejznámější
-                        kniha: Milion</li>
-                    <li>Jonathan Swift (1667-1745, anglický spisovatel, více <a
-                            href="li-klasicismus-anglie.html">zde</a>): Gulliverovy cesty</li>
-                </ul>
-                <p class="underlined"><strong>Jonathan Swift - Gulliverovy cesty - Cesta do Liliputu</strong></p>
-                <p>Vypravěč, lékař Lemuel Gulliver, se po ztroskotání ocitl mezi trpaslíky. Připoutali ho provazy a
-                    zkoumali
-                    ho. Liliputi se s Gulliverem postupně spřátelili a naučili ho svůj jazyk. Jejich král je ochotný dát
-                    Gulliverovi svobodu. Liliputé sepsali všechno, co měl Gulliver na sobě. Měli ho rádi, už se ho
-                    nebáli, a
-                    tak mu dali svobodu. Král za to chtěl pomoci v boji proti sousední říši, Gulliver mu pomohl a válku
-                    vyhrál. Liliputi se za to o něj starali, šili mu šaty a krmili ho, i když to pro ně bylo nesmírně
-                    náročné.</p>
-                <button onclick="window.history.back()"><i class="bi bi-arrow-left"></i></button>
-            </div>
-        </section>
-
-    </main>
-    <!-- Patička -->
-    <footer>
-        <div class="footer-content">
-            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+    <body>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
         </div>
-    </footer>
-    <!-- JSs -->
-    <script src="javastripts/nav.js"></script>
-</body>
+        <nav id="myNavbar">
+            <a href="#home"
+                ><img src="images/white-logo.png" alt="Logo" width="75px"
+            /></a>
+            <a href="#home">Domů</a>
+            <a href="#ucivo">Učivo</a>
+            <a href="#o-nas">O nás</a>
+        </nav>
+        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+        <!-- Obsah stránky -->
+        <main>
+            <section>
+                <h1 class="verybig">Cestopis</h1>
+                <div style="text-align: left">
+                    <h2>Charakteristika</h2>
+                    <p>
+                        Je to prozaický literární žánr, ve kterém
+                        <strong>autor popisuje cesty</strong> (nejčastěji) do
+                        cizích zemí.
+                    </p>
+                    <h2>Nejznámější autoři cestopisů:</h2>
+                    <h3>Naši</h3>
+                    <img
+                        src="images/emil-holub.webp"
+                        class="rounded blog-image"
+                        height="140 rem"
+                        alt="Emil Holub obrázek"
+                    />
+                    <ul>
+                        <li>
+                            Václav Šašek z Bířkova (15. století): Deník o jízdě
+                            a putování pana Lva z Rožmitálu a z Blatné z Čech až
+                            na konec světa
+                        </li>
+                        <li>Alois Jirásek: Z Čech až na konec světa</li>
+                        <li>Karel Čapek: Anglické listy</li>
+                        <li>
+                            Emil Holub (obrázek, 18. století): První africká
+                            cesta, Druhá africká cesta
+                        </li>
 
+                        <li>
+                            Jiří Hanzelka a Miroslav Zikmund (20. století):
+                            cesty po Evropě, do Afriky a Jižní Ameriky
+                        </li>
+                    </ul>
+                    <h3>Cizí</h3>
+                    <ul>
+                        <li>
+                            Marco Polo (Ital) 2. polovina 13. století a 1.
+                            třetina 14. století: cesty po Číně, nejznámější
+                            kniha: Milion
+                        </li>
+                        <li>
+                            Jonathan Swift (1667-1745, anglický spisovatel, více
+                            <a href="li-klasicismus-anglie.html">zde</a>):
+                            Gulliverovy cesty
+                        </li>
+                    </ul>
+                    <p class="underlined">
+                        <strong
+                            >Jonathan Swift - Gulliverovy cesty - Cesta do
+                            Liliputu</strong
+                        >
+                    </p>
+                    <p>
+                        Vypravěč, lékař Lemuel Gulliver, se po ztroskotání ocitl
+                        mezi trpaslíky. Připoutali ho provazy a zkoumali ho.
+                        Liliputi se s Gulliverem postupně spřátelili a naučili
+                        ho svůj jazyk. Jejich král je ochotný dát Gulliverovi
+                        svobodu. Liliputé sepsali všechno, co měl Gulliver na
+                        sobě. Měli ho rádi, už se ho nebáli, a tak mu dali
+                        svobodu. Král za to chtěl pomoci v boji proti sousední
+                        říši, Gulliver mu pomohl a válku vyhrál. Liliputi se za
+                        to o něj starali, šili mu šaty a krmili ho, i když to
+                        pro ně bylo nesmírně náročné.
+                    </p>
+                    <button onclick="window.history.back()">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <!-- Patička -->
+        <footer>
+            <div class="footer-content">
+                <a href="about.html"
+                    ><img
+                        src="images/white-logo.png"
+                        alt="Tobikovo Logo"
+                        width="100px"
+                /></a>
+            </div>
+        </footer>
+        <!-- JSs -->
+        <script src="javastripts/nav.js"></script>
+    </body>
 </html>

@@ -1,89 +1,128 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
+    <head>
+        <!-- Google Consent Mode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-<head>
-    <!-- Google Consent Mode -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
+        </script>
 
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied'
-        });
-        console.log("Google Consent Mode initialized with default: denied");
-    </script>
+        <!-- Google Analytics (nenačte se automaticky) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+        ></script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-Q7DH4RTXBC");
+                console.log("Google Analytics loaded.");
+            }
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Klasicismus v Anglii - Literatura - Tobikovo</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="icon" href="images/favicon.png" />
+    </head>
 
-    <!-- Google Analytics (nenačte se automaticky) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
-    <script>
-        function loadGoogleAnalytics() {
-            console.log("Loading Google Analytics...");
-            gtag('js', new Date());
-            gtag('config', 'G-Q7DH4RTXBC');
-            console.log("Google Analytics loaded.");
-        }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Klasicismus v Anglii - Literatura - Tobikovo</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="icon" href="images/favicon.png">
-</head>
-
-<body>
-    <div class="loading-bar-container">
-        <div class="loading-bar"></div>
-    </div>
-
-    <nav id="myNavbar"></nav>
-    <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-    <!-- Obsah stránky -->
-    <main>
-
-        <section>
-            <h1 class="verybig">Klasicismus v Anglii</h1>
-            <div style="text-align: left;">
-                <h2>Daniel Defoe [Dyfou]</h2>
-                <img src="images/defoe.jpg" class="rounded blog-image" height="150rem" alt="Daniel Defoe">
-                <ul>
-                    <li>žil od roku 1660 do roku 1731</li>
-                    <li>anglický spisovatel, novinář a obchodník</li>
-                    <li>začal organizovat špionážní síť a bývá považován za zakladatele anglické špionážní služby</li>
-                    <li>nejslavnější dílo - Robinson Crusoe</li>
-                    <li>nový typ románu - dobrodružný</li>
-                </ul>
-                <h2>Jonathan Swift</h2>
-                <img src="images/swift.jpg" class="rounded blog-image" height="150rem" alt="Jonathan Swift">
-                <ul>
-                    <li>nejslavnější dílo - Gulliverovy cesty (ukázka <a href="li-cestopis.html">zde</a>)</li>
-                    <ul>
-                        <li>utopický dobrodružný román - <a href="li-cestopis.html">cestopis</a></li>
-                        <li>díly</li>
-                        <ol>
-                            <li>Liliput</li>
-                            <li>Země obrů</li>
-                            <li>Létající ostrov</li>
-                            <li>Země, kde vládnou ušlechtilí koně</li>
-                        </ol>
-                    </ul>
-                </ul>
-                <button onclick="window.history.back()"><i class="bi bi-arrow-left"></i></button>
-            </div>
-        </section>
-
-    </main>
-    <!-- Patička -->
-    <footer>
-        <div class="footer-content">
-            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+    <body>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
         </div>
-    </footer>
-    <!-- JSs -->
-    <script src="javastripts/nav.js"></script>
-</body>
 
+        <nav id="myNavbar"></nav>
+        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+
+        <!-- Obsah stránky -->
+        <main>
+            <section>
+                <h1 class="verybig">Klasicismus v Anglii</h1>
+                <div style="text-align: left">
+                    <h2>Daniel Defoe [Dyfou]</h2>
+                    <img
+                        src="images/defoe.webp"
+                        class="rounded blog-image"
+                        height="150rem"
+                        alt="Daniel Defoe"
+                    />
+                    <ul>
+                        <li>
+                            žil od roku <strong>1660</strong> do roku
+                            <strong>1731</strong>
+                        </li>
+                        <li>
+                            <strong>anglický spisovatel</strong>, novinář a
+                            obchodník
+                        </li>
+                        <li>
+                            začal organizovat <strong>špionážní síť</strong> a
+                            bývá považován za
+                            <strong
+                                >zakladatele anglické špionážní služby</strong
+                            >
+                        </li>
+                        <li>
+                            nejslavnější dílo - <strong>Robinson Crusoe</strong>
+                        </li>
+                        <li>nový typ románu - <strong>dobrodružný</strong></li>
+                    </ul>
+                    <h2>Jonathan Swift</h2>
+                    <img
+                        src="images/swift.webp"
+                        class="rounded blog-image"
+                        height="150rem"
+                        alt="Jonathan Swift"
+                    />
+                    <ul>
+                        <li>
+                            nejslavnější dílo -
+                            <strong>Gulliverovy cesty</strong> (ukázka
+                            <a href="li-cestopis.html">zde</a>)
+                        </li>
+                        <ul>
+                            <li>
+                                <strong>utopický dobrodružný román</strong> -
+                                <a href="li-cestopis.html">cestopis</a>
+                            </li>
+                            <li>díly</li>
+                            <ol>
+                                <li>Liliput</li>
+                                <li>Země obrů</li>
+                                <li>Létající ostrov</li>
+                                <li>Země, kde vládnou ušlechtilí koně</li>
+                            </ol>
+                        </ul>
+                    </ul>
+                    <button onclick="window.history.back()">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <!-- Patička -->
+        <footer>
+            <div class="footer-content">
+                <a href="about.html"
+                    ><img
+                        src="images/white-logo.png"
+                        alt="Tobikovo Logo"
+                        width="100px"
+                /></a>
+            </div>
+        </footer>
+        <!-- JSs -->
+        <script src="javastripts/nav.js"></script>
+    </body>
 </html>

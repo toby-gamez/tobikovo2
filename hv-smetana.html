@@ -1,120 +1,163 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
+    <head>
+        <!-- Google Consent Mode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-<head>
-    <!-- Google Consent Mode -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
+        </script>
 
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied'
-        });
-        console.log("Google Consent Mode initialized with default: denied");
-    </script>
+        <!-- Google Analytics (nenačte se automaticky) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+        ></script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-Q7DH4RTXBC");
+                console.log("Google Analytics loaded.");
+            }
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bedřich Smetana - Hudební výchova - Tobikovo</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="icon" href="images/favicon.png" />
+    </head>
 
-    <!-- Google Analytics (nenačte se automaticky) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
-    <script>
-        function loadGoogleAnalytics() {
-            console.log("Loading Google Analytics...");
-            gtag('js', new Date());
-            gtag('config', 'G-Q7DH4RTXBC');
-            console.log("Google Analytics loaded.");
-        }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bedřich Smetana - Hudební výchova - Tobikovo</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="icon" href="images/favicon.png">
-</head>
-
-<body>
-    <div class="loading-bar-container">
-        <div class="loading-bar"></div>
-    </div>
-
-    <nav id="myNavbar">
-        <a href="#home"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
-        <a href="#home">Domů</a>
-        <a href="#ucivo">Učivo</a>
-        <a href="#o-nas">O nás</a>
-    </nav>
-    <button class="openNav opennav-button" onclick="openNav()">☰</button>
-    <!-- Obsah stránky -->
-    <main>
-
-        <section>
-            <h1 class="verybig">Bedřich Smetana</h1>
-            <div style="text-align: left;">
-                <h2>Život a díla</h2>
-                <div class="blog-image">
-                    <img src="images/bedrich-smetana.jpg" class="rounded blog-image" alt="Bedřich Smetana"
-                        height="170rem">
-                    <p>Zdroj: <a href="https://www.classic-music.ru/smetana.html">Classic music</a></p>
-                </div>
-                <p>Český hudební skladatel, dirigent, klavírista a pedagog, syn zámečnického sládka se narodil 2.3. 1824
-                    v
-                    Litomyšli. Už jako roční dostal Bedřich housličky a otec ho sám učil. Později mu koupil klavír. Už v
-                    šesti letech hrál na svém prvním koncertě.</p>
-                <p>Ještě v době studií se stal domácím učitelem v rodině hraběte Thuna, vystupoval na koncertech a
-                    věnoval
-                    se komponování. Krátce před svatbou s Kateřinou Kolářovou v Praze roku 1848 otevřel soukromou
-                    hudební
-                    školu, kde sám vyučoval. Smetana neměl lehký život, musel překonávat kromě jiného finanční tíseň.
-                    Zemřela mu žena i tři z jeho dcer. Roku 1874 zcela ohluchl, přesto ale neustále skládal a díla z
-                    tohoto
-                    období patří k pokladům české hudby.
-                </p>
-                <p>Z jeho děl jsou nejznámější opery, cyklus Vltava básní Má Vlast, skladby komorní, klavírní a množství
-                    polek.</p>
-                <h2>Polka</h2>
-                <ul>
-                    <li>oblíbený tanec Bedřicha Smetany</li>
-                    <li><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
-                            <mfrac>
-                                <mi>2</mi>
-                                <mi>4</mi>
-                            </mfrac>
-                        </math> takt</li>
-                    <li>vznik: okolí Hradce Králové</li>
-                </ul>
-                <h2>Opery</h2>
-                <ul>
-                    <li>Braniboři v Čechách</li>
-                    <li>Prodaná nevěsta</li>
-                    <li>Dalibor</li>
-                    <li>Libuše</li>
-                    <li>Dvě vdovy</li>
-                    <li>Hubička</li>
-                    <li>Tajemství</li>
-                    <li>Čertova stěna</li>
-                    <li>Viola - nedokončená</li>
-                </ul>
-                <h3>Národní divadlo</h3>
-                <ul>
-                    <li>1868 - položen základní kámen</li>
-                    <li>1881 - otevřené národní divadlo</li>
-                    <li>1883 - znovuotevřené národní divadlo (protože předtím vyhořelo)</li>
-                </ul>
-                <p>Dávám to sem proto, abyste věděli, že se při otevření/znovuotevření divadla hrála Libuše.</p>
-                <button onclick="window.history.back()"><i class="bi bi-arrow-left"></i></button>
-            </div>
-        </section>
-
-    </main>
-    <!-- Patička -->
-    <footer>
-        <div class="footer-content">
-            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+    <body>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
         </div>
-    </footer>
-    <!-- JSs -->
-    <script src="javastripts/nav.js"></script>
-</body>
 
+        <nav id="myNavbar">
+            <a href="#home"
+                ><img src="images/white-logo.png" alt="Logo" width="75px"
+            /></a>
+            <a href="#home">Domů</a>
+            <a href="#ucivo">Učivo</a>
+            <a href="#o-nas">O nás</a>
+        </nav>
+        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+        <!-- Obsah stránky -->
+        <main>
+            <section>
+                <h1 class="verybig">Bedřich Smetana</h1>
+                <div style="text-align: left">
+                    <h2>Život a díla</h2>
+                    <div class="blog-image" style="width: 200px">
+                        <img
+                            src="images/bedrich-smetana.webp"
+                            class="rounded blog-image"
+                            alt="Bedřich Smetana"
+                            height="170rem"
+                        />
+                        <p>
+                            Zdroj:
+                            <a href="https://www.classic-music.ru/smetana.html"
+                                >Classic music</a
+                            >
+                        </p>
+                    </div>
+                    <p>
+                        <strong
+                            >Český hudební skladatel, dirigent, klavírista a
+                            pedagog</strong
+                        >, syn zámečnického sládka se narodil
+                        <strong>2.3. 1824</strong> v <strong>Litomyšli</strong>.
+                        Už jako roční dostal Bedřich housličky a otec ho sám
+                        učil. Později mu koupil klavír. Už v
+                        <strong>šesti letech</strong>
+                        hrál na svém prvním koncertě.
+                    </p>
+                    <p>
+                        Ještě v době studií se stal domácím učitelem v rodině
+                        hraběte Thuna, vystupoval na koncertech a věnoval se
+                        komponování. Krátce před svatbou s
+                        <strong>Kateřinou Kolářovou</strong> v Praze roku
+                        <strong>1848</strong> otevřel soukromou hudební školu,
+                        kde sám vyučoval. Smetana neměl lehký život, musel
+                        překonávat kromě jiného finanční tíseň. Zemřela mu žena
+                        i tři z jeho dcer. Roku <strong>1874</strong> zcela
+                        ohluchl, přesto ale neustále skládal a díla z tohoto
+                        období patří k pokladům české hudby.
+                    </p>
+                    <p>
+                        Z jeho děl jsou nejznámější opery, cyklus Vltava básní
+                        Má Vlast, skladby komorní, klavírní a množství polek.
+                    </p>
+                    <h2>Polka</h2>
+                    <ul>
+                        <li>oblíbený tanec Bedřicha Smetany</li>
+                        <li>
+                            <math
+                                xmlns="http://www.w3.org/1998/Math/MathML"
+                                display="inline"
+                            >
+                                <mfrac>
+                                    <mi>2</mi>
+                                    <mi>4</mi>
+                                </mfrac>
+                            </math>
+                            takt
+                        </li>
+                        <li>vznik: okolí Hradce Králové</li>
+                    </ul>
+                    <h2>Opery</h2>
+                    <ul>
+                        <li>Braniboři v Čechách</li>
+                        <li>Prodaná nevěsta</li>
+                        <li>Dalibor</li>
+                        <li>Libuše</li>
+                        <li>Dvě vdovy</li>
+                        <li>Hubička</li>
+                        <li>Tajemství</li>
+                        <li>Čertova stěna</li>
+                        <li>Viola - nedokončená</li>
+                    </ul>
+                    <h3>Národní divadlo</h3>
+                    <ul>
+                        <li>1868 - položen základní kámen</li>
+                        <li>1881 - otevřené národní divadlo</li>
+                        <li>
+                            1883 - znovuotevřené národní divadlo (protože
+                            předtím vyhořelo)
+                        </li>
+                    </ul>
+                    <p>
+                        Dávám to sem proto, abyste věděli, že se při
+                        otevření/znovuotevření divadla hrála Libuše.
+                    </p>
+                    <button onclick="window.history.back()">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <!-- Patička -->
+        <footer>
+            <div class="footer-content">
+                <a href="about.html"
+                    ><img
+                        src="images/white-logo.png"
+                        alt="Tobikovo Logo"
+                        width="100px"
+                /></a>
+            </div>
+        </footer>
+        <!-- JSs -->
+        <script src="javastripts/nav.js"></script>
+    </body>
 </html>

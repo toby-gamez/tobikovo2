@@ -1,93 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
+    <head>
+        <!-- Google Consent Mode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-<head>
-    <!-- Google Consent Mode -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
+        </script>
 
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied'
-        });
-        console.log("Google Consent Mode initialized with default: denied");
-    </script>
+        <!-- Google Analytics (nenačte se automaticky) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+        ></script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-Q7DH4RTXBC");
+                console.log("Google Analytics loaded.");
+            }
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Povídka - Literatura - Tobikovo</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="icon" href="images/favicon.png" />
+    </head>
 
-    <!-- Google Analytics (nenačte se automaticky) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
-    <script>
-        function loadGoogleAnalytics() {
-            console.log("Loading Google Analytics...");
-            gtag('js', new Date());
-            gtag('config', 'G-Q7DH4RTXBC');
-            console.log("Google Analytics loaded.");
-        }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Povídka - Literatura - Tobikovo</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="icon" href="images/favicon.png">
-</head>
-
-<body>
-    <div class="loading-bar-container">
-        <div class="loading-bar"></div>
-    </div>
-    <nav id="myNavbar">
-        <a href="#home"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
-        <a href="#home">Domů</a>
-        <a href="#ucivo">Učivo</a>
-        <a href="#o-nas">O nás</a>
-    </nav>
-    <button class="openNav opennav-button" onclick="openNav()">☰</button>
-    <!-- Obsah stránky -->
-    <main>
-
-        <section>
-            <h1 class="verybig">Povídka</h1>
-            <div style="text-align: left;">
-                <h2>Charakteristika</h2>
-                <p>Je to krátké literární dílo s málo postavami a jednoduchým dějem.</p>
-                <h2>Druhy</h2>
-                <ul>
-                    <li>ze současnosti</li>
-                    <li>historické</li>
-                    <li>dobrodružné</li>
-                    <li>detektivní</li>
-                </ul>
-                <h2>Nejvýznamnější autoři:</h2>
-                <ul>
-                    <li>Karel Čapek - povídky s detektivní tématikou</li>
-                    <ul>
-                        <li>Povídky z jedné kapsy</li>
-                        <li>Povídky z druhé kapsy</li>
-                    </ul>
-                    <li>Jan Neruda</li>
-                    <ul>
-                        <li>Povídky Malostranské - přibližují svět Malé Strany z doby autorova mládí</li>
-                    </ul>
-                    <li>Karel Poláček</li>
-                    <ul>
-                        <li>Bylo nás pět</li>
-                    </ul>
-                </ul>
-                <button onclick="window.history.back()"><i class="bi bi-arrow-left"></i></button>
-            </div>
-        </section>
-
-    </main>
-    <!-- Patička -->
-    <footer>
-        <div class="footer-content">
-            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+    <body>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
         </div>
-    </footer>
-    <!-- JSs -->
-    <script src="javastripts/nav.js"></script>
-</body>
-
+        <nav id="myNavbar">
+            <a href="#home"
+                ><img src="images/white-logo.png" alt="Logo" width="75px"
+            /></a>
+            <a href="#home">Domů</a>
+            <a href="#ucivo">Učivo</a>
+            <a href="#o-nas">O nás</a>
+        </nav>
+        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+        <!-- Obsah stránky -->
+        <main>
+            <section>
+                <h1 class="verybig">Povídka</h1>
+                <div style="text-align: left">
+                    <h2>Charakteristika</h2>
+                    <p>
+                        Je to <strong>krátké</strong> literární dílo s
+                        <strong>málo postavami</strong> a
+                        <strong>jednoduchým dějem</strong>.
+                    </p>
+                    <h2>Druhy</h2>
+                    <ul>
+                        <li>ze současnosti</li>
+                        <li>historické</li>
+                        <li>dobrodružné</li>
+                        <li>detektivní</li>
+                    </ul>
+                    <h2>Nejvýznamnější autoři:</h2>
+                    <ul>
+                        <li>Karel Čapek - povídky s detektivní tématikou</li>
+                        <ul>
+                            <li>Povídky z jedné kapsy</li>
+                            <li>Povídky z druhé kapsy</li>
+                        </ul>
+                        <li>Jan Neruda</li>
+                        <ul>
+                            <li>
+                                Povídky Malostranské - přibližují svět Malé
+                                Strany z doby autorova mládí
+                            </li>
+                        </ul>
+                        <li>Karel Poláček</li>
+                        <ul>
+                            <li>Bylo nás pět</li>
+                        </ul>
+                    </ul>
+                    <button onclick="window.history.back()">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <!-- Patička -->
+        <footer>
+            <div class="footer-content">
+                <a href="about.html"
+                    ><img
+                        src="images/white-logo.png"
+                        alt="Tobikovo Logo"
+                        width="100px"
+                /></a>
+            </div>
+        </footer>
+        <!-- JSs -->
+        <script src="javastripts/nav.js"></script>
+    </body>
 </html>

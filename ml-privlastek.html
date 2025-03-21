@@ -1,141 +1,179 @@
-<!DOCTYPE html>
 <html lang="cs">
+    <head>
+        <!-- Google Consent Mode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-<head>
-    <!-- Google Consent Mode -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
+        </script>
 
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied'
-        });
-        console.log("Google Consent Mode initialized with default: denied");
-    </script>
+        <!-- Google Analytics (nenačte se automaticky) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+        ></script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-Q7DH4RTXBC");
+                console.log("Google Analytics loaded.");
+            }
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Přívlastek - Mluvnice - Tobikovo</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="icon" href="images/favicon.png" />
+        <style></style>
+    </head>
 
-    <!-- Google Analytics (nenačte se automaticky) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
-    <script>
-        function loadGoogleAnalytics() {
-            console.log("Loading Google Analytics...");
-            gtag('js', new Date());
-            gtag('config', 'G-Q7DH4RTXBC');
-            console.log("Google Analytics loaded.");
-        }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Přívlastek - Mluvnice - Tobikovo</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="icon" href="images/favicon.png">
-    <style>
+    <body>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
+        </div>
+        <nav id="myNavbar">
+            <a href="#home"
+                ><img src="images/white-logo.png" alt="Logo" width="75px"
+            /></a>
+            <a href="#home">Domů</a>
+            <a href="#ucivo">Učivo</a>
+            <a href="#o-nas">O nás</a>
+        </nav>
+        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+        <!-- Obsah stránky -->
+        <main>
+            <section>
+                <h1 class="verybig">Přívlastek</h1>
+                <div style="text-align: left">
+                    <h2>Základy</h2>
 
-    </style>
-</head>
-
-<body>
-    <div class="loading-bar-container">
-        <div class="loading-bar"></div>
-    </div>
-    <nav id="myNavbar">
-        <a href="#home"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
-        <a href="#home">Domů</a>
-        <a href="#ucivo">Učivo</a>
-        <a href="#o-nas">O nás</a>
-    </nav>
-    <button class="openNav opennav-button" onclick="openNav()">☰</button>
-    <!-- Obsah stránky -->
-    <main>
-
-        <section>
-            <h1 class="verybig">Přívlastek</h1>
-            <div style="text-align: left;">
-                <h2>Základy</h2>
-
-                <ul>
-                    <li>závisí na <span class="underlined">podstatném jméně</span> (rozvíjí ho)</li>
                     <ul>
-                        <li><span class="underlined">malý</span> muž</li>
-                        <li>symbol <span class="underlined">přátelství</span></li>
+                        <li>
+                            závisí na <strong>podstatném jméně</strong> (rozvíjí
+                            ho)
+                        </li>
+                        <ul>
+                            <li><strong>malý</strong> muž</li>
+                            <li>symbol <strong>přátelství</strong></li>
+                        </ul>
+                        <li>
+                            nejčastěji je vyjádřen podstatným jménem, přídavným
+                            jménem, zájmenem, číslovkou, příslovcem nebo
+                            infinitivem
+                        </li>
+                        <li>ptáme se otázkami: Jaký?, Který?, Čí?</li>
                     </ul>
-                    <li>nejčastěji je vyjádřen podstatným jménem, přídavným jménem, zájmenem, číslovkou, příslovcem nebo
-                        infinitivem</li>
-                    <li>ptáme se otázkami: Jaký?, Který?, Čí?</li>
-                </ul>
 
-                <h2>Druhy</h2>
+                    <h2>Druhy</h2>
 
-                <h3>Shodný - PK s.</h3>
-                <p>Přívlastek shodný se shoduje s řídícím podstatným jménem v pádě, čísle a rodě/životnosti. Obvykle
-                    stojí
-                    před podstatným jménem a bývá nejčastěji vyjádřen přídavným jménem, zájmenem a číslovkou. Bývá lépe
-                    poznat.</p>
-                <p><span class="underlined">košatý</span> strom - Jaký? - PK s.</p>
+                    <h3>Shodný - PK s.</h3>
+                    <p>
+                        Přívlastek shodný se shoduje s řídícím podstatným jménem
+                        v pádě, čísle a rodě/životnosti. Obvykle stojí před
+                        podstatným jménem a bývá nejčastěji vyjádřen přídavným
+                        jménem, zájmenem a číslovkou. Bývá lépe poznat.
+                    </p>
+                    <p><strong>košatý</strong> strom - Jaký? - PK s.</p>
 
-                <h3>Neshodný - PK n.</h3>
+                    <h3>Neshodný - PK n.</h3>
 
-                <p>Přívlastek neshodný se neshoduje s řídícím podstatným jménem v pádě, čísle a rodě/životnosti. Obvykle
-                    stojí za podstatným jménem a bývá nejčastěji vyjádřen podstatným jménem, příslovcem, a infinitivem.
-                    Bývá
-                    hůře poznat</p>
-                <p>strom <span class="underlined">přání</span> - Jaký - PK n.</p>
-                <hr>
-                <h3>Několikanásobný - PK n. nás.</h3>
-                <p><em>*platí, pouze, když je více členů</em></p>
-                <ul>
-                    <li>mezi členy můžeme vložit spojku "a"</li>
-                    <li>mezi členy několikanásobného přívlastku píšeme čárku</li>
+                    <p>
+                        Přívlastek neshodný se neshoduje s řídícím podstatným
+                        jménem v pádě, čísle a rodě/životnosti. Obvykle stojí za
+                        podstatným jménem a bývá nejčastěji vyjádřen podstatným
+                        jménem, příslovcem, a infinitivem. Bývá hůře poznat
+                    </p>
+                    <p>strom <strong>přání</strong> - Jaký - PK n.</p>
+                    <hr />
+                    <h3>Několikanásobný - PK n. nás.</h3>
+                    <p><em>*platí, pouze, když je více členů</em></p>
                     <ul>
-                        <li>pokud má více členů, mezi prvními členy píšeme čárku, mezi předposledním a posledním "a"
+                        <li>mezi členy můžeme vložit spojku "a"</li>
+                        <li>
+                            mezi členy několikanásobného přívlastku píšeme čárku
+                        </li>
+                        <ul>
+                            <li>
+                                pokud má více členů, mezi prvními členy píšeme
+                                čárku, mezi předposledním a posledním "a"
+                            </li>
+                        </ul>
+                    </ul>
+                    <p>
+                        <strong>zelená, modrá a červená</strong> látka - PK n.
+                        nás.
+                    </p>
+
+                    <h3>Postupně rozvíjející - PK post. rozv.</h3>
+                    <p><em>*platí, pouze, když je více členů</em></p>
+                    <ul>
+                        <li>nemůžeme mezi členy dát "a"</li>
+                        <li>
+                            členy postupně rozvíjejícího přívlastku neoddělujeme
+                            čárkou
                         </li>
                     </ul>
-                </ul>
-                <p><span class="underlined">zelená, modrá a červená</span> látka - PK n. nás.</p>
-
-
-                <h3>Postupně rozvíjející - PK post. rozv.</h3>
-                <p><em>*platí, pouze, když je více členů</em></p>
-                <ul>
-                    <li>nemůžeme mezi členy dát "a"</li>
-                    <li>členy postupně rozvíjejícího přívlastku neoddělujeme čárkou</li>
-                </ul>
-                <p><span class="underlined">modré osobní</span> auto - PK post. rozv.</p>
-                <hr>
-                <h3>Těsný - PK těsný</h3>
-                <ul>
-                    <li>rozvitý PK s.</li>
-                    <li>stojí za podstatným jménem</li>
-                    <li><span class="underlined">nemůžeme ho vypustit z věty</span>, protože <span class="underlined">by
-                            se změnil její význam</span></li>
-                    <li>neoddělujeme ho čárkami</li>
-                </ul>
-                <p>Všichni žáci <span class="underlined">jedoucí na zájezd</span> se sejdou ve sborovně školy. - PK
-                    těsný</p>
-                <h3>Volný - PK volný</h3>
-                <ul>
-                    <li>rozvitý PK s.</li>
-                    <li>stojí za podstatným jménem</li>
-                    <li><span class="underlined">můžeme ho vypustit z věty, její smysl se nezmění</span></li>
-                    <li>oddělujeme ho čárkami</li>
-                </ul>
-                <p>V zahradní restauraci, <span class="underlined">vybavené pěkným nábytkem</span>, jsme seděli celé
-                    odpoledne. - PK volný</p>
-                <button onclick="window.history.back()"><i class="bi bi-arrow-left"></i></button>
+                    <p><strong>modré osobní</strong> auto - PK post. rozv.</p>
+                    <hr />
+                    <h3>Těsný - PK těsný</h3>
+                    <ul>
+                        <li>rozvitý PK s.</li>
+                        <li>stojí za podstatným jménem</li>
+                        <li>
+                            <strong>nemůžeme ho vypustit z věty</strong>,
+                            protože <strong>by se změnil její význam</strong>
+                        </li>
+                        <li>neoddělujeme ho čárkami</li>
+                    </ul>
+                    <p>
+                        Všichni žáci <strong>jedoucí na zájezd</strong> se
+                        sejdou ve sborovně školy. - PK těsný
+                    </p>
+                    <h3>Volný - PK volný</h3>
+                    <ul>
+                        <li>rozvitý PK s.</li>
+                        <li>stojí za podstatným jménem</li>
+                        <li>
+                            <strong
+                                >můžeme ho vypustit z věty, její smysl se
+                                nezmění</strong
+                            >
+                        </li>
+                        <li>oddělujeme ho čárkami</li>
+                    </ul>
+                    <p>
+                        V zahradní restauraci,
+                        <strong>vybavené pěkným nábytkem</strong>, jsme seděli
+                        celé odpoledne. - PK volný
+                    </p>
+                    <button onclick="window.history.back()">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <!-- Patička -->
+        <footer>
+            <div class="footer-content">
+                <a href="about.html"
+                    ><img
+                        src="images/white-logo.png"
+                        alt="Tobikovo Logo"
+                        width="100px"
+                /></a>
             </div>
-        </section>
-
-    </main>
-    <!-- Patička -->
-    <footer>
-        <div class="footer-content">
-            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
-        </div>
-    </footer>
-    <!-- JSs -->
-    <script src="javastripts/nav.js"></script>
-</body>
-
+        </footer>
+        <!-- JSs -->
+        <script src="javastripts/nav.js"></script>
+    </body>
 </html>

@@ -1,91 +1,148 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
+    <head>
+        <!-- Google Consent Mode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-<head>
-    <!-- Google Consent Mode -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
+        </script>
 
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied'
-        });
-        console.log("Google Consent Mode initialized with default: denied");
-    </script>
+        <!-- Google Analytics (nenačte se automaticky) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+        ></script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-Q7DH4RTXBC");
+                console.log("Google Analytics loaded.");
+            }
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rock & roll - Tobikovo</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="icon" href="images/favicon.png" />
+    </head>
 
-    <!-- Google Analytics (nenačte se automaticky) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
-    <script>
-        function loadGoogleAnalytics() {
-            console.log("Loading Google Analytics...");
-            gtag('js', new Date());
-            gtag('config', 'G-Q7DH4RTXBC');
-            console.log("Google Analytics loaded.");
-        }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock & roll - Tobikovo</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="icon" href="images/favicon.png">
-</head>
-
-<body>
-    <div class="loading-bar-container">
-        <div class="loading-bar"></div>
-    </div>
-
-    <nav id="myNavbar">
-        <a href="#home"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
-        <a href="#home">Domů</a>
-        <a href="#ucivo">Učivo</a>
-        <a href="#o-nas">O nás</a>
-    </nav>
-    <button class="openNav opennav-button" onclick="openNav()">☰</button>
-    <!-- Obsah stránky -->
-    <main>
-
-        <section>
-            <h1 class="verybig">Rock & roll</h1>
-            <div style="text-align: left">
-                <h2>Informace</h2>
-                <ul>
-                    <li>vzniká v 50. letech 20. století</li>
-                    <img src="images/elvis-presley.jpg" class="rounded blog-image" height="140 rem" alt="Elvis Presley">
-                    <li>nástroje - elektricky zesílené kytary a baskytary, klávesy, bicí...</li>
-                    <li>nejslavnější - Elvis Presley</li>
-                    <ul>
-                        <li>označován jako "král Rock & Rollu"</li>
-                        <li>narodil se 8. ledna 1935 Tupelo, Mississippi</li>
-                        <li>umřel 16. srpna 1977 Memphis, Tennessee</li>
-                        <li>skloubil spirituály, blues a country do jednoho</li>
-                    </ul>
-                    <img src="images/beatles.jpg" class="rounded blog-image" height="80 rem" alt="Beatles">
-                    <li>hudební styl si našel i obdivovatele ve Velké Británii - Beatles</li>
-                    <ul>
-                        <li>hráli: John Lennon, Paul McCartney, George Harrison, Ringo Starr</li>
-                        <li>anglická rocková skupina</li>
-                        <li>nejprodávanější kapela v historii (podle RIAA)</li>
-                        <li>do roku 1985 prodali přes miliardu desek a kazet po celém světě</li>
-                    </ul>
-                </ul>
-                <button onclick="window.history.back()"><i class="bi bi-arrow-left"></i></button>
-            </div>
-
-        </section>
-
-    </main>
-    <!-- Patička -->
-    <footer>
-        <div class="footer-content">
-            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+    <body>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
         </div>
-    </footer>
-    <!-- JSs -->
-    <script src="javastripts/nav.js"></script>
-</body>
 
+        <nav id="myNavbar">
+            <a href="#home"
+                ><img src="images/white-logo.png" alt="Logo" width="75px"
+            /></a>
+            <a href="#home">Domů</a>
+            <a href="#ucivo">Učivo</a>
+            <a href="#o-nas">O nás</a>
+        </nav>
+        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+        <!-- Obsah stránky -->
+        <main>
+            <section>
+                <h1 class="verybig">Rock & roll</h1>
+                <div style="text-align: left">
+                    <h2>Informace</h2>
+                    <ul>
+                        <li>
+                            <strong>vzniká v 50. letech 20. století</strong>
+                        </li>
+                        <img
+                            src="images/elvis-presley.webp"
+                            class="rounded blog-image"
+                            height="140 rem"
+                            alt="Elvis Presley"
+                        />
+                        <li>
+                            <strong
+                                >nástroje - elektricky zesílené kytary a
+                                baskytary, klávesy, bicí...</strong
+                            >
+                        </li>
+                        <li><strong>nejslavnější - Elvis Presley</strong></li>
+                        <ul>
+                            <li>
+                                <strong
+                                    >označován jako "král Rock & Rollu"</strong
+                                >
+                            </li>
+                            <li>
+                                narodil se 8. ledna 1935 Tupelo, Mississippi
+                            </li>
+                            <li>umřel 16. srpna 1977 Memphis, Tennessee</li>
+                            <li>
+                                <strong
+                                    >skloubil spirituály, blues a country do
+                                    jednoho</strong
+                                >
+                            </li>
+                        </ul>
+                        <img
+                            src="images/beatles.webp"
+                            class="rounded blog-image"
+                            height="80 rem"
+                            alt="Beatles"
+                        />
+                        <li>
+                            <strong
+                                >hudební styl si našel i obdivovatele ve Velké
+                                Británii - Beatles</strong
+                            >
+                        </li>
+                        <ul>
+                            <li>
+                                <strong
+                                    >hráli: John Lennon, Paul McCartney, George
+                                    Harrison, Ringo Starr</strong
+                                >
+                            </li>
+                            <li><strong>anglická rocková skupina</strong></li>
+                            <li>
+                                <strong
+                                    >nejprodávanější kapela v historii (podle
+                                    RIAA)</strong
+                                >
+                            </li>
+                            <li>
+                                <strong
+                                    >do roku 1985 prodali přes miliardu desek a
+                                    kazet po celém světě</strong
+                                >
+                            </li>
+                        </ul>
+                    </ul>
+                    <button onclick="window.history.back()">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <!-- Patička -->
+        <footer>
+            <div class="footer-content">
+                <a href="about.html"
+                    ><img
+                        src="images/white-logo.png"
+                        alt="Tobikovo Logo"
+                        width="100px"
+                /></a>
+            </div>
+        </footer>
+        <!-- JSs -->
+        <script src="javastripts/nav.js"></script>
+    </body>
 </html>

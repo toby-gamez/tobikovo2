@@ -1,91 +1,133 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
+    <head>
+        <!-- Google Consent Mode -->
+        <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
 
-<head>
-    <!-- Google Consent Mode -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+                gtag("consent", "default", {
+                    analytics_storage: "denied",
+                });
+                console.log("Google Consent Mode initialized with default: denied");
+            </head>script>
 
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied'
-        });
-        console.log("Google Consent Mode initialized with default: denied");
-    </script>
+            <!-- Google Analytics (nenačte se automaticky) -->
+            <script
+                async
+                src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+            >
+        </script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-Q7DH4RTXBC");
+                console.log("Google Analytics loaded.");
+            }
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gilgameš - Literatura - Tobikovo</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="icon" href="images/favicon.png" />
+    </head>
 
-    <!-- Google Analytics (nenačte se automaticky) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
-    <script>
-        function loadGoogleAnalytics() {
-            console.log("Loading Google Analytics...");
-            gtag('js', new Date());
-            gtag('config', 'G-Q7DH4RTXBC');
-            console.log("Google Analytics loaded.");
-        }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gilgameš - Literatura - Tobikovo</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="icon" href="images/favicon.png">
-</head>
-
-<body>
-    <div class="loading-bar-container">
-        <div class="loading-bar"></div>
-    </div>
-
-    <nav id="myNavbar"></nav>
-    <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-    <!-- Obsah stránky -->
-    <main>
-
-        <section>
-            <h1 class="verybig">Gilgameš</h1>
-            <div style="text-align: left;">
-                <h2>Kdo to byl?</h2>
-                <p>Gilgameš byl legendární sumerský král města Uruk, který vládl zhruba ve 3. tisíciletí př. n. l. Jeho
-                    postava se proslavila díky Eposu o Gilgamešovi, jednomu z nejstarších literárních děl v dějinách.
-                    Gilgameš byl z poloviny člověk a z poloviny bůh, což mu poskytovalo neuvěřitelnou sílu, ale i lidské
-                    slabosti. Epos vypráví o jeho hrdinských činech, jako byla například porážka obra Chumbaby nebo boje
-                    s
-                    býkem nebeským, který na něj seslala bohyně Ištar.</p>
-
-                <p>Příběh se ale nezaměřuje jen na Gilgamešovu sílu a odvahu, ale také na jeho cestu za hledáním
-                    nesmrtelnosti, což se stává hlavním motivem eposu. Poté, co Gilgameš ztratí svého blízkého přítele
-                    Enkidua, propadne zoufalství a obavám ze smrti. Vydává se na neúspěšné pátrání po tajemství věčného
-                    života, ale nakonec pochopí, že skutečná nesmrtelnost spočívá v jeho činech a odkazu, který zanechá.
-                    Tento příběh nám tak nabízí nadčasová témata, jako jsou přátelství, smrtelnost a smysl lidské
-                    existence.
-                </p>
-                <h2>Byl opravdový?</h2>
-                <p>Postava Gilgameše je sice známá především z literárních děl, zejména z Eposu o Gilgamešovi, což je
-                    mytologický příběh, nicméně mnoho odborníků se domnívá, že Gilgameš mohl být skutečný historický
-                    vládce. Podle starověkých seznamů králů Gilgameš vládl městu Uruk někdy v období kolem 27. století
-                    př. n. l. O jeho skutečné existenci však nemáme žádné přímé archeologické důkazy, takže zůstává
-                    nejisté, do jaké míry byl reálnou postavou.</p>
-
-                <p>Epos o Gilgamešovi se s postupem času proměnil a obsahuje mnoho nadpřirozených prvků, které ho staví
-                    do role poloboha a hrdiny. Přesto je možné, že tyto příběhy byly založeny na skutečném vládci, jehož
-                    život byl postupně obohacen o mytologii a legendy, jak se to stávalo i u jiných historických postav.
-                </p>
-                <button onclick="window.history.back()"><i class="bi bi-arrow-left"></i></button>
-            </div>
-        </section>
-
-    </main>
-    <!-- Patička -->
-    <footer>
-        <div class="footer-content">
-            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+    <body>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
         </div>
-    </footer>
-    <!-- JSs -->
-    <script src="javastripts/nav.js"></script>
-</body>
 
+        <nav id="myNavbar"></nav>
+        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+
+        <!-- Obsah stránky -->
+        <main>
+            <section>
+                <h1 class="verybig">Gilgameš</h1>
+                <div style="text-align: left">
+                    <h2>Kdo to byl?</h2>
+                    <p>
+                        Gilgameš byl
+                        <strong>legendární sumerský král města Uruk</strong>,
+                        který vládl zhruba ve 3. tisíciletí př. n. l. Jeho
+                        postava se proslavila díky
+                        <strong>Eposu o Gilgamešovi</strong>, jednomu z
+                        nejstarších literárních děl v dějinách.
+                        <strong
+                            >Gilgameš byl z poloviny člověk a z poloviny
+                            bůh</strong
+                        >, což mu poskytovalo neuvěřitelnou sílu, ale i lidské
+                        slabosti. Epos vypráví o jeho hrdinských činech, jako
+                        byla například porážka obra Chumbaby nebo boje s býkem
+                        nebeským, který na něj seslala bohyně Ištar.
+                    </p>
+
+                    <p>
+                        Příběh se ale nezaměřuje jen na Gilgamešovu sílu a
+                        odvahu, ale také na
+                        <strong>jeho cestu za hledáním nesmrtelnosti</strong>,
+                        což se stává hlavním motivem eposu. Poté, co Gilgameš
+                        ztratí svého blízkého přítele Enkidua, propadne
+                        zoufalství a obavám ze smrti. Vydává se na neúspěšné
+                        pátrání po tajemství věčného života, ale nakonec
+                        pochopí, že
+                        <strong
+                            >skutečná nesmrtelnost spočívá v jeho činech a
+                            odkazu, který zanechá</strong
+                        >. Tento příběh nám tak nabízí nadčasová témata, jako
+                        jsou přátelství, smrtelnost a smysl lidské existence.
+                    </p>
+
+                    <h2>Byl opravdový?</h2>
+                    <p>
+                        Postava Gilgameše je sice známá především z literárních
+                        děl, zejména z Eposu o Gilgamešovi, což je mytologický
+                        příběh, nicméně
+                        <strong
+                            >mnoho odborníků se domnívá, že Gilgameš mohl být
+                            skutečný historický vládce</strong
+                        >. Podle starověkých seznamů králů Gilgameš vládl městu
+                        Uruk někdy v období kolem 27. století př. n. l. O jeho
+                        skutečné existenci však nemáme žádné přímé archeologické
+                        důkazy, takže zůstává nejisté, do jaké míry byl reálnou
+                        postavou.
+                    </p>
+
+                    <p>
+                        Epos o Gilgamešovi se s postupem času proměnil a
+                        obsahuje mnoho nadpřirozených prvků, které ho staví do
+                        role poloboha a hrdiny. Přesto je možné, že
+                        <strong
+                            >tyto příběhy byly založeny na skutečném
+                            vládci</strong
+                        >, jehož život byl postupně obohacen o mytologii a
+                        legendy, jak se to stávalo i u jiných historických
+                        postav.
+                    </p>
+                    <button onclick="window.history.back()">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <!-- Patička -->
+        <footer>
+            <div class="footer-content">
+                <a href="about.html"
+                    ><img
+                        src="images/white-logo.png"
+                        alt="Tobikovo Logo"
+                        width="100px"
+                /></a>
+            </div>
+        </footer>
+        <!-- JSs -->
+        <script src="javastripts/nav.js"></script>
+    </body>
 </html>

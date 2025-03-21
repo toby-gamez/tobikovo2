@@ -1,90 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
+    <head>
+        <head>
+            <!-- Open Graph základní meta tagy -->
+            <meta property="og:title" content="Literatura - Tobikovo" />
+            <meta
+                property="og:description"
+                content="Tobikovo je vzdělávací platforma nabízející užitečné materiály pro studenty a učitele."
+            />
+            <meta
+                property="og:image"
+                content="https://tobikovo.caloris.cz/images/ucivo.webp"
+            />
+            <meta property="og:url" content="https://tobikovo.caloris.cz" />
+            <meta property="og:type" content="website" />
+            <meta property="og:locale" content="cs_CZ" />
 
-<head>
-    <!-- Google Consent Mode -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+            <!-- Twitter Cards (pokud chceš vylepšit sdílení na Twitteru) -->
+            <meta name="twitter:card" content="images/ucivo.webp" />
+            <meta name="twitter:title" content="Literatura - Tobikovo" />
+            <meta
+                name="twitter:description"
+                content="Tobikovo je vzdělávací platforma nabízející užitečné materiály pro studenty a učitele."
+            />
+            <meta
+                name="twitter:image"
+                content="https://tobikovo.caloris.cz/images/ucivo.webp"
+            />
+        </head>
 
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied'
-        });
-        console.log("Google Consent Mode initialized with default: denied");
-    </script>
+        <!-- Google Consent Mode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-    <!-- Google Analytics (nenačte se automaticky) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
-    <script>
-        function loadGoogleAnalytics() {
-            console.log("Loading Google Analytics...");
-            gtag('js', new Date());
-            gtag('config', 'G-Q7DH4RTXBC');
-            console.log("Google Analytics loaded.");
-        }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Literatura - Tobikovo</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="icon" href="images/favicon.png">
-</head>
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
+        </script>
 
-<body>
-    <div class="loading-bar-container">
-        <div class="loading-bar"></div>
-    </div>
-    <nav id="myNavbar">
-        <a href="#home"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
-        <a href="#home">Domů</a>
-        <a href="#ucivo">Učivo</a>
-        <a href="#o-nas">O nás</a>
-    </nav>
-    <button class="openNav opennav-button" onclick="openNav()">☰</button>
-    <!-- Obsah stránky -->
-    <main>
+        <!-- Google Analytics (nenačte se automaticky) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+        ></script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-Q7DH4RTXBC");
+                console.log("Google Analytics loaded.");
+            }
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Literatura - Vzdělávací platforma Tobikovo</title>
+        <meta
+            name="description"
+            content="Zde je vše, co potřebuješ vědět o literatuře od teorie až k národnímu obrození a dál!"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="icon" href="images/favicon.png" />
+    </head>
 
-        <section>
-            <h1 class="verybig">Literatura</h1>
-            <ul class="grid-predmety">
-                <li class="grid-item-pred">
-                    <a href="li-pojmy.html">
-                        <h3 class="grid-h3-2">základní pojmy</h3>
-                    </a>
-                </li>
-
-                <li class="grid-item-pred">
-                    <a href="li-zanry.html">
-                        <h3 class="grid-h3-2">literární žánry</h3>
-                    </a>
-                </li>
-
-                <li class="grid-item-pred">
-                    <a href="li-prostredky.html">
-                        <h3 class="grid-h3-2">básnické prostředky</h3>
-                    </a>
-                </li>
-
-                <li class="grid-item-pred">
-                    <a href="li-post-hist.html">
-                        <h3 class="grid-h3-3">postupná historie</h3>
-                    </a>
-                </li>
-            </ul>
-        </section>
-
-    </main>
-    <!-- Patička -->
-    <footer>
-        <div class="footer-content">
-            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+    <body>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
         </div>
-    </footer>
-    <!-- JSs -->
-    <script src="javastripts/nav.js"></script>
-</body>
+        <nav id="myNavbar">
+            <a href="#home"
+                ><img src="images/white-logo.png" alt="Logo" width="75px"
+            /></a>
+            <a href="#home">Domů</a>
+            <a href="#ucivo">Učivo</a>
+            <a href="#o-nas">O nás</a>
+        </nav>
+        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+        <!-- Obsah stránky -->
+        <main>
+            <section>
+                <h1 class="verybig">Literatura</h1>
+                <ul class="grid-predmety">
+                    <li class="grid-item-pred">
+                        <a href="li-pojmy.html">
+                            <h3 class="grid-h3-2">základní pojmy</h3>
+                        </a>
+                    </li>
 
+                    <li class="grid-item-pred">
+                        <a href="li-zanry.html">
+                            <h3 class="grid-h3-2">literární žánry</h3>
+                        </a>
+                    </li>
+
+                    <li class="grid-item-pred">
+                        <a href="li-prostredky.html">
+                            <h3 class="grid-h3-2">básnické prostředky</h3>
+                        </a>
+                    </li>
+
+                    <li class="grid-item-pred">
+                        <a href="li-post-hist.html">
+                            <h3 class="grid-h3-3">postupná historie</h3>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <!-- Patička -->
+        <footer>
+            <div class="footer-content">
+                <a href="about.html"
+                    ><img
+                        src="images/white-logo.png"
+                        alt="Tobikovo Logo"
+                        width="100px"
+                /></a>
+            </div>
+        </footer>
+        <!-- JSs -->
+        <script src="javastripts/nav.js"></script>
+    </body>
 </html>

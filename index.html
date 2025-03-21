@@ -1,313 +1,356 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
+    <head>
+        <!-- Open Graph základní meta tagy -->
+        <meta property="og:title" content="Úvodní stránka - Tobikovo" />
+        <meta
+            property="og:description"
+            content="Tobikovo je vzdělávací platforma nabízející užitečné materiály pro studenty a učitele."
+        />
+        <meta
+            property="og:image"
+            content="https://tobikovo.caloris.cz/images/ucivo.webp"
+        />
+        <meta property="og:url" content="https://tobikovo.caloris.cz" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="cs_CZ" />
 
-<head>
-    <!-- Google Consent Mode -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied'
-        });
-        console.log("Google Consent Mode initialized with default: denied");
-    </script>
-
-    <!-- Google Analytics (nenačte se automaticky) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
-    <script>
-        function loadGoogleAnalytics() {
-            console.log("Loading Google Analytics...");
-            gtag('js', new Date());
-            gtag('config', 'G-Q7DH4RTXBC');
-            console.log("Google Analytics loaded.");
-        }
-    </script>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="icon" href="images/favicon.png">
-    <title>Uvítací stránka - Tobikovo</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
-
-        section {
-            width: 100%;
-            max-width: 300000px;
-        }
-
-        main {
-            margin-left: 0;
-        }
-
-        body {
-            line-height: 1.8;
-            overflow-x: hidden;
-        }
-
-        .hero {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 100vh;
-            padding: 0 50px;
-            background: linear-gradient(to left, #ff7340, #ffad8f);
-            position: relative;
-            flex-direction: row;
-        }
-
-        .hero-content {
-            max-width: 50%;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 20px;
-        }
-
-        .hero-image {
-            max-width: 25%;
-            overflow: hidden;
-        }
-
-        .hero-image img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .scroll-button {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 2rem;
-            border: none;
-            background: none;
-            cursor: pointer;
-            animation: bounce 2s infinite;
-            transition: all 0.3s ease;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.0);
-        }
-
-        .scroll-button:hover {
-            color: #f1f1f1;
-            background-color: transparent;
-        }
-
-        @keyframes bounce {
-
-            0%,
-            100% {
-                transform: translate(-50%, 0);
+        <!-- Twitter Cards (pokud chceš vylepšit sdílení na Twitteru) -->
+        <meta name="twitter:card" content="images/ucivo.webp" />
+        <meta name="twitter:title" content="Úvodní stránka - Tobikovo" />
+        <meta
+            name="twitter:description"
+            content="Tobikovo je vzdělávací platforma nabízející užitečné materiály pro studenty a učitele."
+        />
+        <meta
+            name="twitter:image"
+            content="https://tobikovo.caloris.cz/images/ucivo.webp"
+        />
+        <!-- Google Consent Mode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
             }
 
-            50% {
-                transform: translate(-50%, 10px);
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
+        </script>
+
+        <!-- Google Analytics (nenačte se automaticky) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+        ></script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-Q7DH4RTXBC");
+                console.log("Google Analytics loaded.");
             }
-        }
+        </script>
 
-        #predmety {
-            min-height: 100vh;
-            padding: 50px 20px;
-            text-align: center;
-            border: 15px solid #ff7340;
-            border-radius: 40px;
-            box-sizing: border-box;
-            position: relative;
-            overflow: hidden;
-        }
-
-        #predmety::before {
-            content: '';
-            position: absolute;
-            top: -15px;
-            left: -15px;
-            right: -15px;
-            bottom: -15px;
-            background-color: #fff;
-            border-radius: 20px;
-            z-index: -1;
-        }
-
-        .sometimes-invisible {
-            visibility: visible;
-        }
-
-        .hero-pc {
-            display: block;
-        }
-
-        .hero-mob {
-            display: none;
-        }
-
-        @media (max-width: 768px) {
-            .hero {
-                flex-direction: column;
-                text-align: center;
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="icon" href="images/favicon.png" />
+        <title>Úvodní stránka - Vzdělávací platforma Tobikovo</title>
+        <meta
+            name="description"
+            content=" Tobikovo je vzdělávací platforma zaměřená na školní výuku pro žáky základních škol. Nabízí materiály, které pokrývají různé předměty, jako je mluvnice, literatura, sloh, matematika, chemie a hudební výchova. "
+        />
+        <style>
+            * {
+                margin: 0;
                 padding: 0;
+                box-sizing: border-box;
+                scroll-behavior: smooth;
+            }
+
+            section {
+                width: 100%;
+                max-width: 300000px;
+            }
+
+            main {
+                margin-left: 0;
+            }
+
+            body {
+                line-height: 1.8;
+                overflow-x: hidden;
+            }
+
+            .hero {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
                 height: 100vh;
+                padding: 0 50px;
+                background: linear-gradient(to left, #ff7340, #ffad8f);
+                position: relative;
+                flex-direction: row;
+            }
+
+            .hero-content {
+                max-width: 50%;
+            }
+
+            .hero h1 {
+                font-size: 3.5rem;
+                margin-bottom: 20px;
+            }
+
+            .hero p {
+                font-size: 1.3rem;
+                margin-bottom: 20px;
             }
 
             .hero-image {
-                max-width: 100%;
-                width: 100vw;
-                height: 350px;
+                max-width: 25%;
                 overflow: hidden;
-                border-radius: 10px;
             }
 
             .hero-image img {
                 width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 0;
-            }
-
-            .hero-pc {
-                display: none;
-            }
-
-            .hero-mob {
-                display: block;
-                width: 250px;
-                height: 250px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            .hero-content {
-                max-width: 100%;
-                padding: 20px;
-            }
-
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero p {
-                font-size: 1.1rem;
-            }
-
-            .sometimes-invisible {
-                visibility: hidden;
-            }
-        }
-
-        @media (min-width: 769px) {
-            .hero {
-                flex-direction: row-reverse;
+                height: auto;
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             }
 
             .scroll-button {
-                font-size: 3rem;
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 2rem;
+                border: none;
+                background: none;
+                cursor: pointer;
+                animation: bounce 2s infinite;
+                transition: all 0.3s ease;
+                box-shadow: 2px 2px 10px rgba(0, 0, 0, 0);
             }
-        }
-    </style>
-</head>
 
-<body>
-    <section class="hero">
-        <div class="hero-image hero-pc">
-            <img src="images/ucivo.png" alt="Ilustrační obrázek školních předmětů">
-        </div>
-        <div class="hero-content">
-            <h1>Objevte svět vědění</h1>
-            <div class="hero-image hero-mob">
-                <img src="images/ucivo.png" alt="Ilustrační obrázek školních předmětů">
+            .scroll-button:hover {
+                color: #f1f1f1;
+                background-color: transparent;
+            }
+
+            @keyframes bounce {
+                0%,
+                100% {
+                    transform: translate(-50%, 0);
+                }
+
+                50% {
+                    transform: translate(-50%, 10px);
+                }
+            }
+
+            #predmety {
+                min-height: 100vh;
+                padding: 50px 20px;
+                text-align: center;
+                border: 15px solid #ff7340;
+                border-radius: 40px;
+                box-sizing: border-box;
+                position: relative;
+                overflow: hidden;
+            }
+
+            #predmety::before {
+                content: "";
+                position: absolute;
+                top: -15px;
+                left: -15px;
+                right: -15px;
+                bottom: -15px;
+                background-color: #fff;
+                border-radius: 20px;
+                z-index: -1;
+            }
+
+            .sometimes-invisible {
+                visibility: visible;
+            }
+
+            .hero-pc {
+                display: block;
+            }
+
+            .hero-mob {
+                display: none;
+            }
+
+            @media (max-width: 768px) {
+                .hero {
+                    flex-direction: column;
+                    text-align: center;
+                    padding: 0;
+                    height: 100vh;
+                }
+
+                .hero-image {
+                    max-width: 100%;
+                    width: 100vw;
+                    height: 350px;
+                    overflow: hidden;
+                    border-radius: 10px;
+                }
+
+                .hero-image img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 0;
+                }
+
+                .hero-pc {
+                    display: none;
+                }
+
+                .hero-mob {
+                    display: block;
+                    width: 250px;
+                    height: 250px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                .hero-content {
+                    max-width: 100%;
+                    padding: 20px;
+                }
+
+                .hero h1 {
+                    font-size: 2.5rem;
+                }
+
+                .hero p {
+                    font-size: 1.1rem;
+                }
+
+                .sometimes-invisible {
+                    visibility: hidden;
+                }
+            }
+
+            @media (min-width: 769px) {
+                .hero {
+                    flex-direction: row-reverse;
+                }
+
+                .scroll-button {
+                    font-size: 3rem;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <section class="hero">
+            <div class="hero-image hero-pc">
+                <img
+                    src="images/ucivo.webp"
+                    alt="Ilustrační obrázek školních předmětů"
+                />
             </div>
-            <p>
-                Tobikovo je vzdělávací platforma zaměřená na školní výuku pro žáky základních
-                škol. Nabízí materiály, které pokrývají různé předměty, jako je mluvnice, literatura, sloh, matematika,
-                chemie a hudební výchova.
-            </p>
-            <p class="sometimes-invisible">
-                Platforma se zaměřuje na zpřístupnění učiva základní školy a usnadnění jeho
-                pochopení, což může pomoci žákům efektivněji se učit. Kromě toho obsahuje web také sekci s novinkami,
-                která informuje o aktualizacích a změnách na stránce.
-                Uživatelé se mohou seznámit s novými materiály a metodami výuky, které web nabízí. Celkově je
-                Tobikovo užitečným nástrojem pro všechny, kdo hledají kvalitní vzdělávací obsah na jednom
-                místě.
-            </p>
+            <div class="hero-content">
+                <h1>Objevte svět vědění</h1>
+                <div class="hero-image hero-mob">
+                    <img
+                        src="images/ucivo.webp"
+                        alt="Ilustrační obrázek školních předmětů"
+                    />
+                </div>
+                <p>
+                    Tobikovo je vzdělávací platforma zaměřená na školní výuku
+                    pro žáky základních škol. Nabízí materiály, které pokrývají
+                    různé předměty, jako je mluvnice, literatura, sloh,
+                    matematika, chemie a hudební výchova.
+                </p>
+                <p class="sometimes-invisible">
+                    Platforma se zaměřuje na zpřístupnění učiva základní školy a
+                    usnadnění jeho pochopení, což může pomoci žákům efektivněji
+                    se učit. Kromě toho obsahuje web také sekci s novinkami,
+                    která informuje o aktualizacích a změnách na stránce.
+                    Uživatelé se mohou seznámit s novými materiály a metodami
+                    výuky, které web nabízí. Celkově je Tobikovo užitečným
+                    nástrojem pro všechny, kdo hledají kvalitní vzdělávací obsah
+                    na jednom místě.
+                </p>
+            </div>
+            <button
+                class="scroll-button"
+                onclick="document.getElementById('predmety').scrollIntoView({behavior: 'smooth'});"
+            >
+                ↓
+            </button>
+        </section>
 
-        </div>
-        <button class="scroll-button"
-            onclick="document.getElementById('predmety').scrollIntoView({behavior: 'smooth'});">↓</button>
-    </section>
+        <section id="predmety">
+            <h2 class="verybig"><strong>Učivo</strong></h2>
+            <ul class="grid-predmety">
+                <li class="grid-item-pred">
+                    <a href="mluvnice.html">
+                        <h3 class="grid-h3">mluvnice</h3>
+                    </a>
+                </li>
+                <li class="grid-item-pred">
+                    <a href="literatura.html">
+                        <h3 class="grid-h3">literatura</h3>
+                    </a>
+                </li>
+                <li class="grid-item-pred">
+                    <a href="sloh.html">
+                        <h3 class="grid-h3">sloh</h3>
+                    </a>
+                </li>
+                <li class="grid-item-pred">
+                    <a href="hudebni-vychova.html">
+                        <h3 class="grid-h3">hudba</h3>
+                    </a>
+                </li>
+                <li class="grid-item-pred">
+                    <a href="matematika.html">
+                        <h3 class="grid-h3">matematika</h3>
+                    </a>
+                </li>
+                <li class="grid-item-pred">
+                    <a href="chemie.html">
+                        <h3 class="grid-h3">chemie</h3>
+                    </a>
+                </li>
+                <li class="grid-item-pred">
+                    <a href="fyzika.html">
+                        <h3 class="grid-h3">fyzika</h3>
+                    </a>
+                </li>
+                <li class="grid-item-pred">
+                    <a href="prirodopis.html">
+                        <h3 class="grid-h3">přírodopis</h3>
+                    </a>
+                </li>
+                <li class="grid-item-pred">
+                    <a href="zemepis.html">
+                        <h3 class="grid-h3">zeměpis</h3>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <button onclick="Home()">Domů</button>
 
-    <section id="predmety">
-        <h1 class="verybig">Učivo</h1>
-        <ul class="grid-predmety">
-            <li class="grid-item-pred">
-                <a href="mluvnice.html">
-                    <h3 class="grid-h3">mluvnice</h3>
-                </a>
-            </li>
-            <li class="grid-item-pred">
-                <a href="literatura.html">
-                    <h3 class="grid-h3">literatura</h3>
-                </a>
-            </li>
-            <li class="grid-item-pred">
-                <a href="sloh.html">
-                    <h3 class="grid-h3">sloh</h3>
-                </a>
-            </li>
-            <li class="grid-item-pred">
-                <a href="hudebni-vychova.html">
-                    <h3 class="grid-h3">hudba</h3>
-                </a>
-            </li>
-            <li class="grid-item-pred">
-                <a href="matematika.html">
-                    <h3 class="grid-h3">matematika</h3>
-                </a>
-            </li>
-            <li class="grid-item-pred">
-                <a href="chemie.html">
-                    <h3 class="grid-h3">chemie</h3>
-                </a>
-            </li>
-            <li class="grid-item-pred">
-                <a href="fyzika.html">
-                    <h3 class="grid-h3">fyzika</h3>
-                </a>
-            </li>
-            <li class="grid-item-pred">
-                <a href="prirodopis.html">
-                    <h3 class="grid-h3">přírodopis</h3>
-                </a>
-            </li>
-            <li class="grid-item-pred">
-                <a href="zemepis.html">
-                    <h3 class="grid-h3">zeměpis</h3>
-                </a>
-            </li>
-        </ul>
-    </section>
-    <button onclick="Home()">Domů</button>
-
-    <script>
-        function Home() {
-            window.location.href = "home.html";
-        }
-    </script>
-</body>
-
+        <script>
+            function Home() {
+                window.location.href = "home.html";
+            }
+        </script>
+    </body>
 </html>

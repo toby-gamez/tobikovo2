@@ -1,90 +1,125 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
+    <head>
+        <!-- Google Consent Mode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-<head>
-    <!-- Google Consent Mode -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
+        </script>
 
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied'
-        });
-        console.log("Google Consent Mode initialized with default: denied");
-    </script>
+        <!-- Google Analytics (nenačte se automaticky) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+        ></script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-Q7DH4RTXBC");
+                console.log("Google Analytics loaded.");
+            }
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Leoš Janáček - Hudební výchova - Tobikovo</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="icon" href="images/favicon.png" />
+    </head>
 
-    <!-- Google Analytics (nenačte se automaticky) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
-    <script>
-        function loadGoogleAnalytics() {
-            console.log("Loading Google Analytics...");
-            gtag('js', new Date());
-            gtag('config', 'G-Q7DH4RTXBC');
-            console.log("Google Analytics loaded.");
-        }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leoš Janáček - Hudební výchova - Tobikovo</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="icon" href="images/favicon.png">
-</head>
-
-<body>
-    <div class="loading-bar-container">
-        <div class="loading-bar"></div>
-    </div>
-
-    <nav id="myNavbar">
-        <a href="#home"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
-        <a href="#home">Domů</a>
-        <a href="#ucivo">Učivo</a>
-        <a href="#o-nas">O nás</a>
-    </nav>
-    <button class="openNav opennav-button" onclick="openNav()">☰</button>
-    <!-- Obsah stránky -->
-    <main>
-
-        <section>
-            <h1 class="verybig">Leoš Janáček</h1>
-            <div style="text-align: left;">
-                <h2>Život a díla</h2>
-                <div class="blog-image">
-                    <img src="images/leos-janacek.jpg" class="rounded blog-image" alt="Leoš Janáček" height="180rem">
-                    <p>Zdroj: <a href="https://operaplus.cz/kata-kabanova-janacek-versus-ostrovskij/">Opera plus</a></p>
-                </div>
-                <p>Tento skladatel prožil své dětství v Hukvaldech na Lašsku. Vystudoval pražskou varhanickou školu a
-                    potom
-                    působil v Brně jako ředitel varhanické školy v Brně. Mimo jiné byl také významným sběratelem
-                    lidových
-                    písní a rád si zapisoval nápěvky řeči v každodenním životě.</p>
-                <p>V zahraničí i u nás ho proslavily opery (Její pastorkyňa, Příhody lišky Bystroušky...). Jeho
-                    orchestrální
-                    Lašské tance připomínají kraj, kde se narodil. Básnická sbírka Slezské písně od <a
-                        href="li-balada.html">Petra Bezruče</a> ho inspirovala k napsání několika mužských sborů (<a
-                        href="li-balada.html">Maryčka Magdónová</a>). V dechovém sextetu Mládí vzpomíná skladatel na
-                    svá mladá léta - Pochod modráčků - sbor do kterého chodil jako v mládí měl modré uniformy a
-                    přezdívalo
-                    se jim "modráčci". Jeho hudba je temperamentní, ale i něžně zpěvná jako
-                    lidová
-                    píseň.
-                </p>
-                <button onclick="window.history.back()"><i class="bi bi-arrow-left"></i></button>
-            </div>
-        </section>
-
-    </main>
-    <!-- Patička -->
-    <footer>
-        <div class="footer-content">
-            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+    <body>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
         </div>
-    </footer>
-    <!-- JSs -->
-    <script src="javastripts/nav.js"></script>
-</body>
 
+        <nav id="myNavbar">
+            <a href="#home"
+                ><img src="images/white-logo.png" alt="Logo" width="75px"
+            /></a>
+            <a href="#home">Domů</a>
+            <a href="#ucivo">Učivo</a>
+            <a href="#o-nas">O nás</a>
+        </nav>
+        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+        <!-- Obsah stránky -->
+        <main>
+            <section>
+                <h1 class="verybig">Leoš Janáček</h1>
+                <div style="text-align: left">
+                    <h2>Život a díla</h2>
+                    <div class="blog-image">
+                        <img
+                            src="images/leos-janacek.webp"
+                            class="rounded blog-image"
+                            alt="Leoš Janáček"
+                            height="180rem"
+                        />
+                        <p>
+                            Zdroj:
+                            <a
+                                href="https://operaplus.cz/kata-kabanova-janacek-versus-ostrovskij/"
+                                >Opera plus</a
+                            >
+                        </p>
+                    </div>
+                    <p>
+                        Tento skladatel prožil své dětství v
+                        <strong>Hukvaldech</strong> na Lašsku. Vystudoval
+                        <strong>pražskou varhanickou školu</strong> a potom
+                        působil v Brně jako
+                        <strong>ředitel varhanické školy v Brně</strong>. Mimo
+                        jiné byl také
+                        <strong>významným sběratelem lidových písní</strong> a
+                        rád si zapisoval nápěvky řeči v každodenním životě.
+                    </p>
+                    <p>
+                        V zahraničí i u nás ho proslavily
+                        <strong>opery</strong> (<strong
+                            >Její pastorkyňa, Příhody lišky Bystroušky</strong
+                        >...). Jeho orchestrální
+                        <strong>Lašské tance</strong> připomínají kraj, kde se
+                        narodil. Básnická sbírka
+                        <strong>Slezské písně</strong> od
+                        <a href="li-balada.html">Petra Bezruče</a> ho
+                        inspirovala k napsání několika mužských sborů (<a
+                            href="li-balada.html"
+                            >Maryčka Magdónová</a
+                        >). V dechovém sextetu <strong>Mládí</strong> vzpomíná
+                        skladatel na svá mladá léta -
+                        <strong>Pochod modráčků</strong> - sbor do kterého
+                        chodil jako v mládí měl modré uniformy a přezdívalo se
+                        jim "modráčci". Jeho hudba je
+                        <strong>temperamentní</strong>, ale i
+                        <strong>něžně zpěvná jako lidová píseň</strong>.
+                    </p>
+                    <button onclick="window.history.back()">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <!-- Patička -->
+        <footer>
+            <div class="footer-content">
+                <a href="about.html"
+                    ><img
+                        src="images/white-logo.png"
+                        alt="Tobikovo Logo"
+                        width="100px"
+                /></a>
+            </div>
+        </footer>
+        <!-- JSs -->
+        <script src="javastripts/nav.js"></script>
+    </body>
 </html>

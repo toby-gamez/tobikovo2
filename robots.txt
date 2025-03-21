@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /maj/
+Allow: /images/
+Allow: /css/
+Allow: /libs/
+Allow: /javastripts/
+Allow: /files/
+Allow: /videos/
+Allow: /public/
+Sitemap: sitemap.xml
+

@@ -1,180 +1,293 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
+    <head>
+        <!-- Google Consent Mode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-<head>
-    <!-- Google Consent Mode -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
+        </script>
 
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied'
-        });
-        console.log("Google Consent Mode initialized with default: denied");
-    </script>
+        <!-- Google Analytics (nenačte se automaticky) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+        ></script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-Q7DH4RTXBC");
+                console.log("Google Analytics loaded.");
+            }
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Renesance a humanismus - Literatura - Tobikovo</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="icon" href="images/favicon.png" />
+    </head>
 
-    <!-- Google Analytics (nenačte se automaticky) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
-    <script>
-        function loadGoogleAnalytics() {
-            console.log("Loading Google Analytics...");
-            gtag('js', new Date());
-            gtag('config', 'G-Q7DH4RTXBC');
-            console.log("Google Analytics loaded.");
-        }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Renesance a humanismus - Literatura - Tobikovo</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="icon" href="images/favicon.png">
-</head>
-
-<body>
-    <div class="loading-bar-container">
-        <div class="loading-bar"></div>
-    </div>
-
-    <nav id="myNavbar"></nav>
-    <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-    <!-- Obsah stránky -->
-    <main>
-
-        <section>
-            <h1 class="verybig">Renesance a humanismus</h1>
-            <div style="text-align: left;">
-                <h2>Informace</h2>
-                <ul>
-                    <li>přírodní a astronomické objevy</li>
-                    <li>objevení Ameriky (1492)</li>
-                    <li>rozvoj věd o člověku (anatomie, lékařství)</li>
-                    <li>důraz se přesouvá z posmrtného života na život pozemský</li>
-                    <li>vynález knihtisku - Johannes Gutenberg (1445)</li>
-                    <li>renesance - znovuzrození antického umění, umělecký směr, který vznikl v Itálii</li>
-                    <li>humanismus - důležitější je člověk než bůh</li>
-                </ul>
-                <h2>Italská renesance</h2>
-                <h3>Dante Alighieri (1265 - 1321)</h3>
-                <ul>
-                    <li>dílo - Božská komedie</li>
-                    <ul>
-                        <li>rozsáhlá epická báseň, má 3 části - "Peklo", "Očistec", "Ráj"</li>
-                    </ul>
-                </ul>
-                <h3>Francesco Petrarca (1304 - 1374)</h3>
-                <ul>
-                    <li>dílo - Sonety Lauře</li>
-                    <ul>
-                        <li>sbírka milostné poezie</li>
-                    </ul>
-                </ul>
-                <h3>Giovanni Boccaccio (1313 - 1375)</h3>
-                <ul>
-                    <li>dílo - Dekameron</li>
-                    <ul>
-                        <li>soubor sta novel</li>
-                    </ul>
-                </ul>
-                <h2>Španělská renesance a humanismus</h2>
-                <ul>
-                    <li>období "zlatého věku" španělského písemnictví (16. a 17. století)</li>
-                    <li>vrcholným představitelem je spisovatel, básník, dramatik a voják Miguel de Cervantes y Saavedra
-                    </li>
-                </ul>
-                <h3>Miguel de Cervantes y Saavedra</h3>
-                <div class="blog-image">
-                    <img src="images/cervantes.jpg" class=" blog-image" width="150 rem" alt="Cervantes">
-                    <p>Portrét Miguela de Cesvantese y Saavedry</p>
-                    <p> Autor: Připisováno <a href="https://en.wikipedia.org/wiki/en:Juan_de_J%C3%A1uregui"
-                            class="extiw" title="w:en:Juan de Jáuregui"><span
-                                title="Spanish poet, scholar and painter (1583-1641)">Juan
-                                de
-                                Jáuregui</span></a> – 1. Neznámý2. <a rel="nofollow" class="external text"
-                            href="http://www.cervantesvirtual.com/bib_autor/Cervantes/verfoto.formato?foto=graf/fotos/00_s.jpg&amp;pieFoto=Juan+de+J%26aacute%3Buregui%2C+%3Cem%3ERetrato+de+Miguel+de+Cervantes%3C%2Fem%3E+(%3F).+%3Cbr%3EAlonso+Zamora+Vicente%2C+%3Cem%3EHistoria">cervantesvirtual.com</a>3.
-                        <a href="https://en.wikipedia.org/wiki/en:Bridgeman_Images" class="extiw"
-                            title="w:en:Bridgeman Images"><span title="library">Bridgeman Art Library</span></a>: Object
-                        <a rel="nofollow" class="external text"
-                            href="https://www.bridgemanimages.co.uk/en/asset/119216">119216</a>, Volné dílo, <a
-                            href="https://commons.wikimedia.org/w/index.php?curid=676819">Odkaz</a>
-                    </p>
-                </div>
-                <ul>
-                    <li>pocházel z rodiny zchudlého šlechtice</li>
-                    <li>v mládí přišel o levou ruku v námořní bitvě u Lepanta (Řecko, součást Osmansko-habsburské války)
-                    </li>
-                    <li>pět let strávil v otroctví v Alžíru, kam ho odvedli turečtí piráti, roku 1580 byl z otroctví
-                        vykoupen</li>
-                    <li>po návratu domů vystřídal různá zaměstnání, žil v chudobě, pro dluhy a podezření z vraždy byl
-                        vězněn</li>
-                    <li>napsal Důmyslný rytíř Don Quijote de la Mancha</li>
-                </ul>
-                <h4>Důmyslný rytíř Don Quijote de la Mancha</h4>
-                <p>[don kichote de la manča]</p>
-                <ul>
-                    <li>rytířský román</li>
-                    <li>kritizuje společnost, snaží se o vytvoření spravedlivého světa</li>
-                    <li>hlavní hrdina - zchudlý šlechtic (snílek), který se vypraví do světa, aby obnovil slávu rytířů
-                    </li>
-                    <li>ve světě ho doprovází jeho sluha Sancho Panza (praktický venkovan)</li>
-                    <li>Don Quijote svého koně pojmenuje Rocinante</li>
-                </ul>
-                <h2>Anglická renesance</h2>
-                <ul>
-
-                    <li>největší postavou anglického dramatu byl William Shakespeare (1564 - 1616)</li>
-                </ul>
-                <h3>William Shakespeare</h3>
-                <div class="blog-image">
-                    <img src="images/shakespeare.jpeg" class=" blog-image" width="170 rem" alt="William Shakespeare">
-                    <p>Portrét Williama Shakespeara</p>
-                    <p>Zdroj: <a href="https://www.poetryfoundation.org/poets/william-shakespeare">Poetry Foundation</a>
-                    </p>
-                </div>
-                <ul>
-                    <li>narozen ve Stratfordu</li>
-                    <li>nejprve působil v kočovné divadelní společnosti</li>
-                    <li>po 7 letech se dostal do Londýna, tam působil jako herec a dramatik</li>
-                    <li>stal se i spolumajitelem
-                        divadelní společnosti, která roku 1599 začala hrát v divadle Globe, když divadlo roku 1613
-                        vyhořelo, vrátil se do svého rodiště</li>
-                </ul>
-                <h4>Díla</h4>
-                <p>tragédie</p>
-                <ul>
-                    <li>Romeo a Julie</li>
-                    <li>Hamlet</li>
-                    <li>Othello</li>
-                </ul>
-                <p>komedie</p>
-                <ul>
-                    <li>Mnoho povyku pro nic</li>
-                    <li>Zkrocení zlé ženy</li>
-                </ul>
-                <p>historické hry</p>
-                <ul>
-                    <li>Julius Caesar</li>
-                    <li>Jindřich IV.</li>
-                    <li>Jindřich V.</li>
-                    <li>Jindřich VI.</li>
-                    <li>Jindřich VIII.</li>
-                </ul>
-                <button onclick="window.history.back()"><i class="bi bi-arrow-left"></i></button>
-            </div>
-        </section>
-
-    </main>
-    <!-- Patička -->
-    <footer>
-        <div class="footer-content">
-            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+    <body>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
         </div>
-    </footer>
-    <!-- JSs -->
-    <script src="javastripts/nav.js"></script>
-</body>
 
+        <nav id="myNavbar"></nav>
+        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+
+        <!-- Obsah stránky -->
+        <main>
+            <section>
+                <h1 class="verybig">Renesance a humanismus</h1>
+                <div style="text-align: left">
+                    <h2>Informace</h2>
+                    <ul>
+                        <li>přírodní a astronomické objevy</li>
+                        <li>objevení Ameriky (1492)</li>
+                        <li>rozvoj věd o člověku (anatomie, lékařství)</li>
+                        <li>
+                            důraz se přesouvá z posmrtného života na život
+                            pozemský
+                        </li>
+                        <li>vynález knihtisku - Johannes Gutenberg (1445)</li>
+                        <li>
+                            renesance - znovuzrození antického umění, umělecký
+                            směr, který vznikl v Itálii
+                        </li>
+                        <li>humanismus - důležitější je člověk než bůh</li>
+                    </ul>
+                    <h2>Italská renesance</h2>
+                    <h3>Dante Alighieri (1265 - 1321)</h3>
+                    <ul>
+                        <li>dílo - Božská komedie</li>
+                        <ul>
+                            <li>
+                                rozsáhlá epická báseň, má 3 části - "Peklo",
+                                "Očistec", "Ráj"
+                            </li>
+                        </ul>
+                    </ul>
+                    <h3>Francesco Petrarca (1304 - 1374)</h3>
+                    <ul>
+                        <li>dílo - Sonety Lauře</li>
+                        <ul>
+                            <li>sbírka milostné poezie</li>
+                        </ul>
+                    </ul>
+                    <h3>Giovanni Boccaccio (1313 - 1375)</h3>
+                    <ul>
+                        <li>dílo - Dekameron</li>
+                        <ul>
+                            <li>soubor sta novel</li>
+                        </ul>
+                    </ul>
+                    <h2>Španělská renesance a humanismus</h2>
+                    <ul>
+                        <li>
+                            <strong
+                                >období "zlatého věku" španělského
+                                písemnictví</strong
+                            >
+                            (16. a 17. století)
+                        </li>
+                        <li>
+                            vrcholným představitelem je spisovatel, básník,
+                            dramatik a voják Miguel de Cervantes y Saavedra
+                        </li>
+                    </ul>
+                    <h3>Miguel de Cervantes y Saavedra</h3>
+                    <div class="blog-image">
+                        <img
+                            src="images/cervantes.jpg"
+                            class="blog-image"
+                            width="150 rem"
+                            alt="Cervantes"
+                        />
+                        <p>Portrét Miguela de Cesvantese y Saavedry</p>
+                        <p>
+                            Autor: Připisováno
+                            <a
+                                href="https://en.wikipedia.org/wiki/en:Juan_de_J%C3%A1uregui"
+                                class="extiw"
+                                title="w:en:Juan de Jáuregui"
+                                ><span
+                                    title="Spanish poet, scholar and painter (1583-1641)"
+                                    >Juan de Jáuregui</span
+                                ></a
+                            >
+                            – 1. Neznámý2.
+                            <a
+                                rel="nofollow"
+                                class="external text"
+                                href="http://www.cervantesvirtual.com/bib_autor/Cervantes/verfoto.formato?foto=graf/fotos/00_s.jpg&amp;pieFoto=Juan+de+J%26aacute%3Buregui%2C+%3Cem%3ERetrato+de+Miguel+de+Cervantes%3C%2Fem%3E+(%3F).+%3Cbr%3EAlonso+Zamora+Vicente%2C+%3Cem%3EHistoria"
+                                >cervantesvirtual.com</a
+                            >3.
+                            <a
+                                href="https://en.wikipedia.org/wiki/en:Bridgeman_Images"
+                                class="extiw"
+                                title="w:en:Bridgeman Images"
+                                ><span title="library"
+                                    >Bridgeman Art Library</span
+                                ></a
+                            >: Object
+                            <a
+                                rel="nofollow"
+                                class="external text"
+                                href="https://www.bridgemanimages.co.uk/en/asset/119216"
+                                >119216</a
+                            >, Volné dílo,
+                            <a
+                                href="https://commons.wikimedia.org/w/index.php?curid=676819"
+                                >Odkaz</a
+                            >
+                        </p>
+                    </div>
+                    <ul>
+                        <li>
+                            <strong
+                                >pocházel z rodiny zchudlého šlechtice</strong
+                            >
+                        </li>
+                        <li>
+                            <strong
+                                >v mládí přišel o levou ruku v námořní bitvě u
+                                Lepanta</strong
+                            >
+                            (Řecko, součást Osmansko-habsburské války)
+                        </li>
+                        <li>
+                            <strong>pět let strávil v otroctví v Alžíru</strong
+                            >, kam ho odvedli turečtí piráti, roku 1580 byl z
+                            otroctví vykoupen
+                        </li>
+                        <li>
+                            po návratu domů vystřídal různá zaměstnání, žil v
+                            chudobě, pro dluhy a podezření z vraždy byl vězněn
+                        </li>
+                        <li>
+                            <strong
+                                >napsal Důmyslný rytíř Don Quijote de la
+                                Mancha</strong
+                            >
+                        </li>
+                    </ul>
+                    <h4>Důmyslný rytíř Don Quijote de la Mancha</h4>
+                    <p>[don kichote de la manča]</p>
+                    <ul>
+                        <li><strong>rytířský román</strong></li>
+                        <li>
+                            <strong
+                                >kritizuje společnost, snaží se o vytvoření
+                                spravedlivého světa</strong
+                            >
+                        </li>
+                        <li>
+                            <strong
+                                >hlavní hrdina - zchudlý šlechtic (snílek),
+                                který se vypraví do světa, aby obnovil slávu
+                                rytířů</strong
+                            >
+                        </li>
+                        <li>
+                            <strong
+                                >ve světě ho doprovází jeho sluha Sancho Panza
+                                (praktický venkovan)</strong
+                            >
+                        </li>
+                        <li>Don Quijote svého koně pojmenuje Rocinante</li>
+                    </ul>
+                    <h2>Anglická renesance</h2>
+                    <ul>
+                        <li>
+                            <strong
+                                >největší postavou anglického dramatu byl
+                                William Shakespeare (1564 - 1616)</strong
+                            >
+                        </li>
+                    </ul>
+                    <h3>William Shakespeare</h3>
+                    <div class="blog-image">
+                        <img
+                            src="images/shakespeare.jpeg"
+                            class="blog-image"
+                            width="170 rem"
+                            alt="William Shakespeare"
+                        />
+                        <p>Portrét Williama Shakespeara</p>
+                        <p>
+                            Zdroj:
+                            <a
+                                href="https://www.poetryfoundation.org/poets/william-shakespeare"
+                                >Poetry Foundation</a
+                            >
+                        </p>
+                    </div>
+                    <ul>
+                        <li>narozen ve Stratfordu</li>
+                        <li>nejprve působil v kočovné divadelní společnosti</li>
+                        <li>
+                            <strong
+                                >po 7 letech se dostal do Londýna, tam působil
+                                jako herec a dramatik</strong
+                            >
+                        </li>
+                        <li>
+                            <strong
+                                >stal se i spolumajitelem divadelní společnosti,
+                                která roku 1599 začala hrát v divadle
+                                Globe</strong
+                            >, když divadlo roku 1613 vyhořelo, vrátil se do
+                            svého rodiště
+                        </li>
+                    </ul>
+                    <h4>Díla</h4>
+                    <p>tragédie</p>
+                    <ul>
+                        <li>Romeo a Julie</li>
+                        <li>Hamlet</li>
+                        <li>Othello</li>
+                    </ul>
+                    <p>komedie</p>
+                    <ul>
+                        <li>Mnoho povyku pro nic</li>
+                        <li>Zkrocení zlé ženy</li>
+                    </ul>
+                    <p>historické hry</p>
+                    <ul>
+                        <li>Julius Caesar</li>
+                        <li>Jindřich IV.</li>
+                        <li>Jindřich V.</li>
+                        <li>Jindřich VI.</li>
+                        <li>Jindřich VIII.</li>
+                    </ul>
+                    <button onclick="window.history.back()">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <!-- Patička -->
+        <footer>
+            <div class="footer-content">
+                <a href="about.html"
+                    ><img
+                        src="images/white-logo.png"
+                        alt="Tobikovo Logo"
+                        width="100px"
+                /></a>
+            </div>
+        </footer>
+        <!-- JSs -->
+        <script src="javastripts/nav.js"></script>
+    </body>
 </html>

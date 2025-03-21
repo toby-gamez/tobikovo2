@@ -1,109 +1,150 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
+    <head>
+        <!-- Open Graph základní meta tagy -->
+        <meta property="og:title" content="Domů - Tobikovo" />
+        <meta
+            property="og:description"
+            content="Tobikovo je vzdělávací platforma nabízející užitečné materiály pro studenty a učitele."
+        />
+        <meta
+            property="og:image"
+            content="https://tobikovo.caloris.cz/images/ucivo.webp"
+        />
+        <meta property="og:url" content="https://tobikovo.caloris.cz" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="cs_CZ" />
 
-<head> <!-- Google Consent Mode -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+        <!-- Twitter Cards (pokud chceš vylepšit sdílení na Twitteru) -->
+        <meta name="twitter:card" content="images/ucivo.webp" />
+        <meta name="twitter:title" content="Domů - Tobikovo" />
+        <meta
+            name="twitter:description"
+            content="Tobikovo je vzdělávací platforma nabízející užitečné materiály pro studenty a učitele."
+        />
+        <meta
+            name="twitter:image"
+            content="https://tobikovo.caloris.cz/images/ucivo.webp"
+        />
+        <!-- Google Consent Mode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied'
-        });
-        console.log("Google Consent Mode initialized with default: denied");
-    </script>
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
+        </script>
 
-    <!-- Google Analytics (nenačte se automaticky) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
-    <script>
-        function loadGoogleAnalytics() {
-            console.log("Loading Google Analytics...");
-            gtag('js', new Date());
-            gtag('config', 'G-Q7DH4RTXBC');
-            console.log("Google Analytics loaded.");
-        }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Domů - Tobikovo</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="icon" href="images/favicon.png">
-</head>
+        <!-- Google Analytics (nenačte se automaticky) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+        ></script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-Q7DH4RTXBC");
+                console.log("Google Analytics loaded.");
+            }
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Domů - Vzdělávací platforma Tobikovo</title>
+        <meta
+            name="description"
+            content=" Tobikovo je vzdělávací platforma zaměřená na školní výuku pro žáky základních škol. Nabízí materiály, které pokrývají různé předměty, jako je mluvnice, literatura, sloh, matematika, chemie a hudební výchova. "
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="icon" href="images/favicon.png" />
+    </head>
 
-<body>
-    <div class="loading-bar-container">
-        <div class="loading-bar"></div>
-    </div>
-    <nav id="myNavbar"></nav>
-
-
-    <!-- Obsah stránky -->
-    <main>
-        <section>
-            <h1 class="verybig">Tobikovo</h1>
-            <ul class="grid-predmety">
-                <li class="grid-item-pred">
-                    <a href="mluvnice.html">
-                        <h3 class="grid-h3">Mluvnice</h3>
-                    </a>
-                </li>
-                <li class="grid-item-pred">
-                    <a href="literatura.html">
-                        <h3 class="grid-h3">Literatura</h3>
-                    </a>
-                </li>
-                <li class="grid-item-pred">
-                    <a href="sloh.html">
-                        <h3 class="grid-h3">Sloh</h3>
-                    </a>
-                </li>
-                <li class="grid-item-pred">
-                    <a href="hudebni-vychova.html">
-                        <h3 class="grid-h3">Hudba</h3>
-                    </a>
-                </li>
-                <li class="grid-item-pred">
-                    <a href="matematika.html">
-                        <h3 class="grid-h3">Matematika</h3>
-                    </a>
-                </li>
-                <li class="grid-item-pred">
-                    <a href="chemie.html">
-                        <h3 class="grid-h3">Chemie</h3>
-                    </a>
-                </li>
-                <li class="grid-item-pred">
-                    <a href="fyzika.html">
-                        <h3 class="grid-h3">Fyzika</h3>
-                    </a>
-                </li>
-                <li class="grid-item-pred">
-                    <a href="prirodopis.html">
-                        <h3 class="grid-h3">Přírodopis</h3>
-                    </a>
-                </li>
-                <li class="grid-item-pred">
-                <a href="zemepis.html">
-                    <h3 class="grid-h3">zeměpis</h3>
-                </a>
-            </li>
-            </ul>
-        </section>
-    </main>
-    <!-- Patička -->
-    <footer>
-        <div class="footer-content">
-            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+    <body>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
         </div>
-    </footer>
-    <script src="javastripts/nav.js"></script>
-    <script>
-        if (localStorage.getItem('navbarContent')) {
-            document.write('<nav id="myNavbar">' + localStorage.getItem('navbarContent') + '</nav>');
-        }
-    </script>
-</body>
+        <nav id="myNavbar"></nav>
 
+        <!-- Obsah stránky -->
+        <main>
+            <section>
+                <h1 class="verybig">Tobikovo</h1>
+                <ul class="grid-predmety">
+                    <li class="grid-item-pred">
+                        <a href="mluvnice.html">
+                            <h3 class="grid-h3">Mluvnice</h3>
+                        </a>
+                    </li>
+                    <li class="grid-item-pred">
+                        <a href="literatura.html">
+                            <h3 class="grid-h3">Literatura</h3>
+                        </a>
+                    </li>
+                    <li class="grid-item-pred">
+                        <a href="sloh.html">
+                            <h3 class="grid-h3">Sloh</h3>
+                        </a>
+                    </li>
+                    <li class="grid-item-pred">
+                        <a href="hudebni-vychova.html">
+                            <h3 class="grid-h3">Hudba</h3>
+                        </a>
+                    </li>
+                    <li class="grid-item-pred">
+                        <a href="matematika.html">
+                            <h3 class="grid-h3">Matematika</h3>
+                        </a>
+                    </li>
+                    <li class="grid-item-pred">
+                        <a href="chemie.html">
+                            <h3 class="grid-h3">Chemie</h3>
+                        </a>
+                    </li>
+                    <li class="grid-item-pred">
+                        <a href="fyzika.html">
+                            <h3 class="grid-h3">Fyzika</h3>
+                        </a>
+                    </li>
+                    <li class="grid-item-pred">
+                        <a href="prirodopis.html">
+                            <h3 class="grid-h3">Přírodopis</h3>
+                        </a>
+                    </li>
+                    <li class="grid-item-pred">
+                        <a href="zemepis.html">
+                            <h3 class="grid-h3">zeměpis</h3>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <!-- Patička -->
+        <footer>
+            <div class="footer-content">
+                <a href="about.html"
+                    ><img
+                        src="images/white-logo.png"
+                        alt="Tobikovo Logo"
+                        width="100px"
+                /></a>
+            </div>
+        </footer>
+        <script src="javastripts/nav.js"></script>
+        <script>
+            if (localStorage.getItem("navbarContent")) {
+                document.write(
+                    '<nav id="myNavbar">' +
+                        localStorage.getItem("navbarContent") +
+                        "</nav>",
+                );
+            }
+        </script>
+    </body>
 </html>

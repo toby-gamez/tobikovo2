@@ -1,93 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
+    <head>
+        <!-- Google Consent Mode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-<head>
-    <!-- Google Consent Mode -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
+        </script>
 
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied'
-        });
-        console.log("Google Consent Mode initialized with default: denied");
-    </script>
+        <!-- Google Analytics (nenačte se automaticky) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+        ></script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-Q7DH4RTXBC");
+                console.log("Google Analytics loaded.");
+            }
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jednoduché stroje - Fyzika - Tobikovo</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="icon" href="images/favicon.png" />
+    </head>
 
-    <!-- Google Analytics (nenačte se automaticky) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
-    <script>
-        function loadGoogleAnalytics() {
-            console.log("Loading Google Analytics...");
-            gtag('js', new Date());
-            gtag('config', 'G-Q7DH4RTXBC');
-            console.log("Google Analytics loaded.");
-        }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jednoduché stroje - Fyzika - Tobikovo</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="icon" href="images/favicon.png">
-</head>
-
-<body>
-    <div class="loading-bar-container">
-        <div class="loading-bar"></div>
-    </div>
-    <nav id="myNavbar">
-        <a href="#home"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
-        <a href="#home">Domů</a>
-        <a href="#ucivo">Učivo</a>
-        <a href="#o-nas">O nás</a>
-    </nav>
-    <button class="openNav opennav-button" onclick="openNav()">☰</button>
-    <!-- Obsah stránky -->
-    <main>
-
-        <section>
-            <h1 class="verybig">Jednoduché stroje</h1>
-            <div style="text-align: left;">
-                <h2>Páka</h2>
-                <img src="images/paka.png" width="250rem" class="blog-image" alt="">
-                <ul>
-                    <li>slouží ke změně sil</li>
-                    <li>použití - otvíráky, kleště, nůžky...</li>
-                </ul>
-                <p>*obrázek - Potřebuji využít?</p>
-                <h2>Kladka</h2>
-                <img src="images/kladka.png" height="150rem" class="blog-image" alt="">
-                <ul>
-                    <li>kruh s drážkou po obvodu</li>
-                    <li>dělí se na</li>
-                    <ul>
-                        <li>pevná - je připevněná</li>
-                        <li>volná - volně visí na laně, připevněná tak, aby nevypadla</li>
-                    </ul>
-                </ul>
-                <h2>Kladkostroj</h2>
-                <img src="images/kladkostroj.png" height="150rem" class="blog-image" alt="">
-                <ul>
-                    <li>vzniká spojením 2 a více kladek</li>
-                    <li>využití - jeřáb</li>
-                    <li>umožní zvedat tělesa s menší silou, 1 kladka = polovina síly, 3 kladky = třetina síly, 4 kladky
-                        = čtvrtina síly (musím vyvinout)</li>
-                </ul>
-                <button onclick="window.history.back()"><i class="bi bi-arrow-left"></i></button>
-            </div>
-        </section>
-
-    </main>
-    <!-- Patička -->
-    <footer>
-        <div class="footer-content">
-            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+    <body>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
         </div>
-    </footer>
-    <!-- JSs -->
-    <script src="javastripts/nav.js"></script>
-</body>
-
+        <nav id="myNavbar">
+            <a href="#home"
+                ><img src="images/white-logo.png" alt="Logo" width="75px"
+            /></a>
+            <a href="#home">Domů</a>
+            <a href="#ucivo">Učivo</a>
+            <a href="#o-nas">O nás</a>
+        </nav>
+        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+        <!-- Obsah stránky -->
+        <main>
+            <section>
+                <h1 class="verybig">Jednoduché stroje</h1>
+                <div style="text-align: left">
+                    <h2>Páka</h2>
+                    <img
+                        src="images/paka.webp"
+                        width="250rem"
+                        class="blog-image"
+                        alt="páka"
+                    />
+                    <ul>
+                        <li>slouží ke změně sil</li>
+                        <li>použití - otvíráky, kleště, nůžky...</li>
+                    </ul>
+                    <p>*obrázek - Potřebuji využít?</p>
+                    <h2>Kladka</h2>
+                    <img
+                        src="images/kladka.webp"
+                        width="1rem"
+                        class="blog-image"
+                        alt="kladka"
+                    />
+                    <ul>
+                        <li>kruh s drážkou po obvodu</li>
+                        <li>dělí se na</li>
+                        <ul>
+                            <li>pevná - je připevněná</li>
+                            <li>
+                                volná - volně visí na laně, připevněná tak, aby
+                                nevypadla
+                            </li>
+                        </ul>
+                    </ul>
+                    <h2>Kladkostroj</h2>
+                    <img
+                        src="images/kladkostroj.webp"
+                        height="150rem"
+                        class="blog-image"
+                        alt="kladkostroj"
+                    />
+                    <ul>
+                        <li>vzniká spojením 2 a více kladek</li>
+                        <li>využití - jeřáb</li>
+                        <li>
+                            umožní zvedat tělesa s menší silou, 1 kladka =
+                            polovina síly, 3 kladky = třetina síly, 4 kladky =
+                            čtvrtina síly (musím vyvinout)
+                        </li>
+                    </ul>
+                    <button onclick="window.history.back()">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <!-- Patička -->
+        <footer>
+            <div class="footer-content">
+                <a href="about.html"
+                    ><img
+                        src="images/white-logo.png"
+                        alt="Tobikovo Logo"
+                        width="100px"
+                /></a>
+            </div>
+        </footer>
+        <!-- JSs -->
+        <script src="javastripts/nav.js"></script>
+    </body>
 </html>

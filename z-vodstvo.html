@@ -1,126 +1,169 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
+    <head>
+        <!-- Google Consent Mode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-<head>
-    <!-- Google Consent Mode -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
+        </script>
 
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied'
-        });
-        console.log("Google Consent Mode initialized with default: denied");
-    </script>
+        <!-- Google Analytics (nenačte se automaticky) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+        ></script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-Q7DH4RTXBC");
+                console.log("Google Analytics loaded.");
+            }
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vodstvo a vodní plochy - Zeměpis - Tobikovo</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="icon" href="images/favicon.png" />
+    </head>
 
-    <!-- Google Analytics (nenačte se automaticky) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
-    <script>
-        function loadGoogleAnalytics() {
-            console.log("Loading Google Analytics...");
-            gtag('js', new Date());
-            gtag('config', 'G-Q7DH4RTXBC');
-            console.log("Google Analytics loaded.");
-        }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vodstvo a vodní plochy - Zeměpis - Tobikovo</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="icon" href="images/favicon.png">
-</head>
-
-<body>
-    <div class="loading-bar-container">
-        <div class="loading-bar"></div>
-    </div>
-
-    <nav id="myNavbar"></nav>
-    <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-    <!-- Obsah stránky -->
-    <main>
-
-        <section>
-            <h1 class="verybig">Vodstvo a vodní plochy</h1>
-            <div style="text-align: left;">
-                <h2>Vodstvo</h2>
-                <div class="blog-image">
-                    <a href="images/vodstvo.jpg"><img src="images/vodstvo.jpg" class="blog-image" width="300px"></a>
-                    <p>mapa vodstva ČR</p>
-                    <p>Zdroj: <a href="https://www.slideserve.com/tate/n-zev-vodstvo-esk-republiky-vy-32-inovace-vl4z-02">slideserve.com</a>; upraveno</p>
-                </div>
-                <p>Vodstvo zahrnuje veškeré vody na povrchu i pod povrchem Země, včetně řek, jezer, moří a oceánů. Vodní plochy, jako jsou jezera a přehrady, hrají klíčovou roli v zásobování pitnou vodou, zavlažování i výrobě energie. Řeky a potoky propojují různé ekosystémy a ovlivňují krajinu svým tokem a erozní činností.</p>
-                <ul>
-                    <li>naše <a href="z-hospodarstvi.html">hospodářství</a> je závislé na strážkách</li>
-                    <ul>
-                        <li>1/3 odteče</li>
-                        <li>více než 1/3 se vsákne</li>
-                        <li>zbytek se vypaří</li>
-                    </ul>
-                    <li>nevýhoda našich řek - proměnlivá vodnost během roku</li>
-                    <ul>
-                        <li>záplavy</li>
-                        <li>málo vody</li>
-                    </ul>
-                    <li>povodí - území, které je odvodňováno tokem daného řádu</li>
-                    <li>rozvodí - hranice mezi jednotlivými povodími</li>
-                    <li>úmoří - území, ze kterého všechny toky tečou do jednoho moře</li>
-                </ul>
-                <h2>Vodní plochy</h2>
-                <ol>
-                    <li>umělé</li>
-                    <ul>
-                        <li>přehrady, rybníky, jezera</li>
-                    </ul>
-                    <li>přirozené</li>
-                    <ul>
-                        <li>jezera, tůně, slepá ramena</li>
-                    </ul>
-                </ol>
-                <h3>Přehrady</h3>
-                <ul>
-                    <li>ovlivňují vodní toky</li>
-                    <li>celkem v ČR asi 150 přehrad</li>
-                    <li>nejvíce na Vltavě - Vltavská kaskáda</li>
-                    <li>typy</li>
-                    <ul>
-                        <li>vodárenská</li>
-                        <li>energická</li>
-                        <li>závlahová</li>
-                        <li>protipovodňová</li>
-                        <li>rekreační</li>
-                        <li>rybochovná</li>
-                    </ul>
-                    <li>rekordy</li>
-                    <ul>
-                        <li>nejrozsáhlejší - Lipno (4870 ha)</li>
-                        <li>nejhlubší - Orlík (74 m)</li>
-                        <li>nejobjemnější - Orlík (716 milionů m³)</li>
-                    </ul>
-                </ul>
-                <h3>Přírodní jezera</h3>
-                <ul>
-                    <li>ledovcová - Černé jezero</li>
-                    <li>krasová - Macocha, Hranická propast</li>
-                    <li>rašelinová - Mechová jezírka</li>
-                </ul>
-                <button onclick="window.history.back()"><i class="bi bi-arrow-left"></i></button>
-            </div>
-        </section>
-
-    </main>
-    <!-- Patička -->
-    <footer>
-        <div class="footer-content">
-            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+    <body>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
         </div>
-    </footer>
-    <!-- JSs -->
-    <script src="javastripts/nav.js"></script>
-</body>
 
+        <nav id="myNavbar"></nav>
+        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+
+        <!-- Obsah stránky -->
+        <main>
+            <section>
+                <h1 class="verybig">Vodstvo a vodní plochy</h1>
+                <div style="text-align: left">
+                    <h2>Vodstvo</h2>
+                    <div class="blog-image">
+                        <a href="images/vodstvo.jpg"
+                            ><img
+                                src="images/vodstvo.jpg"
+                                class="blog-image"
+                                width="300px"
+                        /></a>
+                        <p>mapa vodstva ČR</p>
+                        <p>
+                            Zdroj:
+                            <a
+                                href="https://www.slideserve.com/tate/n-zev-vodstvo-esk-republiky-vy-32-inovace-vl4z-02"
+                                >slideserve.com</a
+                            >; upraveno
+                        </p>
+                    </div>
+                    <p>
+                        Vodstvo zahrnuje
+                        <strong
+                            >veškeré vody na povrchu i pod povrchem Země</strong
+                        >, včetně řek, jezer, moří a oceánů. Vodní plochy, jako
+                        jsou jezera a přehrady,
+                        <strong
+                            >hrají klíčovou roli v zásobování pitnou vodou,
+                            zavlažování i výrobě energie</strong
+                        >. Řeky a potoky
+                        <strong>propojují různé ekosystémy</strong> a ovlivňují
+                        krajinu svým tokem a erozní činností.
+                    </p>
+                    <ul>
+                        <li>
+                            naše
+                            <a href="z-hospodarstvi.html">hospodářství</a> je
+                            závislé na strážkách
+                        </li>
+                        <ul>
+                            <li>1/3 odteče</li>
+                            <li>více než 1/3 se vsákne</li>
+                            <li>zbytek se vypaří</li>
+                        </ul>
+                        <li>
+                            nevýhoda našich řek - proměnlivá vodnost během roku
+                        </li>
+                        <ul>
+                            <li>záplavy</li>
+                            <li>málo vody</li>
+                        </ul>
+                        <li>
+                            povodí - území, které je odvodňováno tokem daného
+                            řádu
+                        </li>
+                        <li>rozvodí - hranice mezi jednotlivými povodími</li>
+                        <li>
+                            úmoří - území, ze kterého všechny toky tečou do
+                            jednoho moře
+                        </li>
+                    </ul>
+                    <h2>Vodní plochy</h2>
+                    <ol>
+                        <li>umělé</li>
+                        <ul>
+                            <li>přehrady, rybníky, jezera</li>
+                        </ul>
+                        <li>přirozené</li>
+                        <ul>
+                            <li>jezera, tůně, slepá ramena</li>
+                        </ul>
+                    </ol>
+                    <h3>Přehrady</h3>
+                    <ul>
+                        <li>ovlivňují vodní toky</li>
+                        <li>celkem v ČR asi 150 přehrad</li>
+                        <li>nejvíce na Vltavě - Vltavská kaskáda</li>
+                        <li>typy</li>
+                        <ul>
+                            <li>vodárenská</li>
+                            <li>energická</li>
+                            <li>závlahová</li>
+                            <li>protipovodňová</li>
+                            <li>rekreační</li>
+                            <li>rybochovná</li>
+                        </ul>
+                        <li>rekordy</li>
+                        <ul>
+                            <li>nejrozsáhlejší - Lipno (4870 ha)</li>
+                            <li>nejhlubší - Orlík (74 m)</li>
+                            <li>nejobjemnější - Orlík (716 milionů m³)</li>
+                        </ul>
+                    </ul>
+                    <h3>Přírodní jezera</h3>
+                    <ul>
+                        <li>ledovcová - Černé jezero</li>
+                        <li>krasová - Macocha, Hranická propast</li>
+                        <li>rašelinová - Mechová jezírka</li>
+                    </ul>
+                    <button onclick="window.history.back()">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <!-- Patička -->
+        <footer>
+            <div class="footer-content">
+                <a href="about.html"
+                    ><img
+                        src="images/white-logo.png"
+                        alt="Tobikovo Logo"
+                        width="100px"
+                /></a>
+            </div>
+        </footer>
+        <!-- JSs -->
+        <script src="javastripts/nav.js"></script>
+    </body>
 </html>

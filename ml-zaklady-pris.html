@@ -1,114 +1,150 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
+    <head>
+        <!-- Google Consent Mode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-<head>
-    <!-- Google Consent Mode -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
+        </script>
 
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied'
-        });
-        console.log("Google Consent Mode initialized with default: denied");
-    </script>
+        <!-- Google Analytics (nenačte se automaticky) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+        ></script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-Q7DH4RTXBC");
+                console.log("Google Analytics loaded.");
+            }
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Základy - Mluvnice - Tobikovo</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="icon" href="images/favicon.png" />
+        <style></style>
+    </head>
 
-    <!-- Google Analytics (nenačte se automaticky) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
-    <script>
-        function loadGoogleAnalytics() {
-            console.log("Loading Google Analytics...");
-            gtag('js', new Date());
-            gtag('config', 'G-Q7DH4RTXBC');
-            console.log("Google Analytics loaded.");
-        }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Základy - Mluvnice - Tobikovo</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="icon" href="images/favicon.png">
-    <style>
-
-    </style>
-</head>
-
-<body>
-    <div class="loading-bar-container">
-        <div class="loading-bar"></div>
-    </div>
-    <nav id="myNavbar">
-        <a href="#home"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
-        <a href="#home">Domů</a>
-        <a href="#ucivo">Učivo</a>
-        <a href="#o-nas">O nás</a>
-    </nav>
-    <button class="openNav opennav-button" onclick="openNav()">☰</button>
-    <!-- Obsah stránky -->
-    <main>
-
-        <section>
-            <h1 class="verybig">Základy</h1>
-            <div style="text-align: left;">
-                <h2>Co to jsou?</h2>
-                <ul>
-                    <li>vyjadřují bližší okolnosti dějů nebo vlastností</li>
-                </ul>
-                <h2>Tvoří se</h2>
-                <ul>
-                    <li>od přídavných jmen předponami -e, -ě, -o, -y (krásný - krásn<span class="underlined">ě</span>)
-                    </li>
-                    <li>ustrnutým tvarem <a href="ml-pods-jmena.html">podstatného jména</a> (kolo - kolem, celek -
-                        celkem,
-                        bok - bokem, ráno - zrána)</li>
-                    <li>spojením předložky s jiným slovem = <strong><span class="underlined">PŘÍSLOVEČNÉ
-                                SPŘEŽKY</span></strong></li>
-                    <ul>
-                        <li>s podstatným jménem (ta hromada - kam? dohromady)</li>
-                        <li>s přídavným jménem (jaký? krátký - jak? nakrátko)</li>
-                        <li>se zájmenem (to - proč? proto)</li>
-                        <li>s číslovkou (druhý - podruhé)</li>
-                        <li>s příslovcem (vždy - navždy)</li>
-                    </ul>
-                </ul>
-                <h2>Pravopis</h2>
-                <ul>
-                    <li>tajemný - tajemně</li>
-                    <li>skromný - skromně</li>
-                    <li>příjemný - příjemně</li>
-                    <li>dojemný - dojemně</li>
-                    <li>významný - významně</li>
-                    <li>jemný - jemně</li>
-                    <li>soukromý - soukromě</li>
-                    <li>vzájemný - vzájemně</li>
-                </ul>
-                <h2>Spojená slova</h2>
-                <p>Shora, stěží, zleva, nalevo, zprava, zdola, zcela, zčásti</p>
-                <p>Zpočátku i z počátku, zdaleka i z daleka, zjara i z jara (závisí na situaci)</p>
-                <h2>Druhy</h2>
-                <ul>
-                    <li>místa - otázka: kde, odkud, kudy, kam</li>
-                    <li>času - otázka: kdy, odkdy, dokdy, jak dlouho</li>
-                    <li>způsobu - otázka: jak, jakým způsobem</li>
-                    <li>míry - otázka: jak moc</li>
-                    <li>příčiny - otázka: proč</li>
-                </ul>
-                <button onclick="window.history.back()"><i class="bi bi-arrow-left"></i></button>
-            </div>
-        </section>
-
-    </main>
-    <!-- Patička -->
-    <footer>
-        <div class="footer-content">
-            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+    <body>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
         </div>
-    </footer>
-    <!-- JSs -->
-    <script src="javastripts/nav.js"></script>
-</body>
-
+        <nav id="myNavbar">
+            <a href="#home"
+                ><img src="images/white-logo.png" alt="Logo" width="75px"
+            /></a>
+            <a href="#home">Domů</a>
+            <a href="#ucivo">Učivo</a>
+            <a href="#o-nas">O nás</a>
+        </nav>
+        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+        <!-- Obsah stránky -->
+        <main>
+            <section>
+                <h1 class="verybig">Základy</h1>
+                <div style="text-align: left">
+                    <h2>Co to jsou?</h2>
+                    <ul>
+                        <li>
+                            vyjadřují bližší <strong>okolnosti</strong> dějů
+                            nebo vlastností
+                        </li>
+                    </ul>
+                    <h2>Tvoří se</h2>
+                    <ul>
+                        <li>
+                            <strong>od přídavných jmen</strong> předponami -e,
+                            -ě, -o, -y (krásný - krásn<span class="underlined"
+                                >ě</span
+                            >)
+                        </li>
+                        <li>
+                            ustrnutým tvarem
+                            <a href="ml-pods-jmena.html">podstatného jména</a>
+                            (kolo - kolem, celek - celkem, bok - bokem, ráno -
+                            zrána)
+                        </li>
+                        <li>
+                            spojením předložky s jiným slovem =
+                            <strong
+                                ><span class="underlined"
+                                    >PŘÍSLOVEČNÉ SPŘEŽKY</span
+                                ></strong
+                            >
+                        </li>
+                        <ul>
+                            <li>
+                                s podstatným jménem (ta hromada - kam?
+                                dohromady)
+                            </li>
+                            <li>
+                                s přídavným jménem (jaký? krátký - jak?
+                                nakrátko)
+                            </li>
+                            <li>se zájmenem (to - proč? proto)</li>
+                            <li>s číslovkou (druhý - podruhé)</li>
+                            <li>s příslovcem (vždy - navždy)</li>
+                        </ul>
+                    </ul>
+                    <h2>Pravopis</h2>
+                    <ul>
+                        <li>tajemný - tajemně</li>
+                        <li>skromný - skromně</li>
+                        <li>příjemný - příjemně</li>
+                        <li>dojemný - dojemně</li>
+                        <li>významný - významně</li>
+                        <li>jemný - jemně</li>
+                        <li>soukromý - soukromě</li>
+                        <li>vzájemný - vzájemně</li>
+                    </ul>
+                    <h2>Spojená slova</h2>
+                    <p>
+                        Shora, stěží, zleva, nalevo, zprava, zdola, zcela,
+                        zčásti
+                    </p>
+                    <p>
+                        Zpočátku i z počátku, zdaleka i z daleka, zjara i z jara
+                        (závisí na situaci)
+                    </p>
+                    <h2>Druhy</h2>
+                    <ul>
+                        <li>místa - otázka: kde, odkud, kudy, kam</li>
+                        <li>času - otázka: kdy, odkdy, dokdy, jak dlouho</li>
+                        <li>způsobu - otázka: jak, jakým způsobem</li>
+                        <li>míry - otázka: jak moc</li>
+                        <li>příčiny - otázka: proč</li>
+                    </ul>
+                    <button onclick="window.history.back()">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <!-- Patička -->
+        <footer>
+            <div class="footer-content">
+                <a href="about.html"
+                    ><img
+                        src="images/white-logo.png"
+                        alt="Tobikovo Logo"
+                        width="100px"
+                /></a>
+            </div>
+        </footer>
+        <!-- JSs -->
+        <script src="javastripts/nav.js"></script>
+    </body>
 </html>

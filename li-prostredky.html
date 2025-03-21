@@ -1,193 +1,182 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
+    <head>
+        <!-- Google Consent Mode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-<head>
-    <!-- Google Consent Mode -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
+        </script>
 
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied'
-        });
-        console.log("Google Consent Mode initialized with default: denied");
-    </script>
+        <!-- Google Analytics (nenačte se automaticky) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+        ></script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-Q7DH4RTXBC");
+                console.log("Google Analytics loaded.");
+            }
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Básnické prostředky - Literatura - Tobikovo</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="icon" href="images/favicon.png" />
+    </head>
 
-    <!-- Google Analytics (nenačte se automaticky) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
-    <script>
-        function loadGoogleAnalytics() {
-            console.log("Loading Google Analytics...");
-            gtag('js', new Date());
-            gtag('config', 'G-Q7DH4RTXBC');
-            console.log("Google Analytics loaded.");
-        }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Básnické prostředky - Literatura - Tobikovo</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="icon" href="images/favicon.png">
-</head>
-
-<body>
-    <div class="loading-bar-container">
-        <div class="loading-bar"></div>
-    </div>
-    <nav id="myNavbar">
-        <a href="#home"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
-        <a href="#home">Domů</a>
-        <a href="#ucivo">Učivo</a>
-        <a href="#o-nas">O nás</a>
-    </nav>
-    <button class="openNav opennav-button" onclick="openNav()">☰</button>
-    <!-- Obsah stránky -->
-    <main>
-
-        <section>
-            <h1 class="verybig">Básnické prostředky</h1>
-            <ul class="grid">
-
-                <li class="grid-item">
-                    <a href="li-a-a-a.html">
-                        <h3 class="grid-h3">alegorie</h3>
-                    </a>
-                </li>
-
-
-                <li class="grid-item">
-                    <a href="li-a-a-a.html">
-                        <h3 class="grid-h3">apostrofa</h3>
-                    </a>
-                </li>
-
-
-                <li class="grid-item">
-                    <a href="li-a-a-a.html">
-                        <h3 class="grid-h3">anafora</h3>
-                    </a>
-                </li>
-
-
-                <li class="grid-item">
-                    <a href="li-e-e-e.html">
-                        <h3 class="grid-h3">epifora</h3>
-                    </a>
-                </li>
-
-
-                <li class="grid-item">
-                    <a href="li-e-e-e.html">
-                        <h3 class="grid-h3">epanastrofa</h3>
-                    </a>
-                </li>
-
-
-                <li class="grid-item">
-                    <a href="li-e-e-e.html">
-                        <h3 class="grid-h3">epiteton</h3>
-                    </a>
-                </li>
-
-
-                <li class="grid-item">
-                    <a href="li-e-e-d.html">
-                        <h3 class="grid-h3">epizeuxis</h3>
-                    </a>
-                </li>
-
-
-                <li class="grid-item">
-                    <a href="li-e-e-d.html">
-                        <h3 class="grid-h3">eufemismus</h3>
-                    </a>
-                </li>
-
-
-                <li class="grid-item">
-                    <a href="li-e-e-d.html">
-                        <h3 class="grid-h3">dysfemismus</h3>
-                    </a>
-                </li>
-
-
-                <li class="grid-item">
-                    <a href="li-g-h-i.html">
-                        <h3 class="grid-h3">gradace</h3>
-                    </a>
-                </li>
-
-
-                <li class="grid-item">
-                    <a href="li-g-h-i.html">
-                        <h3 class="grid-h3">hyperbola</h3>
-                    </a>
-                </li>
-
-
-                <li class="grid-item">
-                    <a href="li-g-h-i.html">
-                        <h3 class="grid-h3">ironie</h3>
-                    </a>
-                </li>
-
-
-                <li class="grid-item">
-                    <a href="li-k-m-m.html">
-                        <h3 class="grid-h3">kontrast</h3>
-                    </a>
-                </li>
-
-
-                <li class="grid-item">
-                    <a href="li-k-m-m.html">
-                        <h3 class="grid-h3">metafora</h3>
-                    </a>
-                </li>
-
-
-                <li class="grid-item">
-                    <a href="li-k-m-m.html">
-                        <h3 class="grid-h3">metonymie</h3>
-                    </a>
-                </li>
-
-
-                <li class="grid-item">
-                    <a href="li-o-p-p.html">
-                        <h3 class="grid-h3" style="font-size: 23px;">onomatopoie</h3>
-                    </a>
-                </li>
-
-
-                <li class="grid-item">
-                    <a href="li-o-p-p.html">
-                        <h3 class="grid-h3">přirovnání</h3>
-                    </a>
-                </li>
-
-
-                <li class="grid-item">
-                    <a href="li-o-p-p.html">
-                        <h3 class="grid-h3" style="font-size: 20px;">personifikace</h3>
-                    </a>
-                </li>
-
-            </ul>
-        </section>
-
-    </main>
-    <!-- Patička -->
-    <footer>
-        <div class="footer-content">
-            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+    <body>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
         </div>
-    </footer>
-    <!-- JSs -->
-    <script src="javastripts/nav.js"></script>
-</body>
+        <nav id="myNavbar">
+            <a href="#home"
+                ><img src="images/white-logo.png" alt="Logo" width="75px"
+            /></a>
+            <a href="#home">Domů</a>
+            <a href="#ucivo">Učivo</a>
+            <a href="#o-nas">O nás</a>
+        </nav>
+        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+        <!-- Obsah stránky -->
+        <main>
+            <section>
+                <h1 class="verybig">Básnické prostředky</h1>
+                <ul class="grid">
+                    <li class="grid-item">
+                        <a href="li-a-a-a.html">
+                            <h3 class="grid-h3">alegorie</h3>
+                        </a>
+                    </li>
 
+                    <li class="grid-item">
+                        <a href="li-a-a-a.html">
+                            <h3 class="grid-h3">apostrofa</h3>
+                        </a>
+                    </li>
+
+                    <li class="grid-item">
+                        <a href="li-a-a-a.html">
+                            <h3 class="grid-h3">anafora</h3>
+                        </a>
+                    </li>
+
+                    <li class="grid-item">
+                        <a href="li-e-e-e.html">
+                            <h3 class="grid-h3">epifora</h3>
+                        </a>
+                    </li>
+
+                    <li class="grid-item">
+                        <a href="li-e-e-e.html">
+                            <h3 class="grid-h3">epanastrofa</h3>
+                        </a>
+                    </li>
+
+                    <li class="grid-item">
+                        <a href="li-e-e-e.html">
+                            <h3 class="grid-h3">epiteton</h3>
+                        </a>
+                    </li>
+
+                    <li class="grid-item">
+                        <a href="li-e-e-d.html">
+                            <h3 class="grid-h3">epizeuxis</h3>
+                        </a>
+                    </li>
+
+                    <li class="grid-item">
+                        <a href="li-e-e-d.html">
+                            <h3 class="grid-h3">eufemismus</h3>
+                        </a>
+                    </li>
+
+                    <li class="grid-item">
+                        <a href="li-e-e-d.html">
+                            <h3 class="grid-h3">dysfemismus</h3>
+                        </a>
+                    </li>
+
+                    <li class="grid-item">
+                        <a href="li-g-h-i.html">
+                            <h3 class="grid-h3">gradace</h3>
+                        </a>
+                    </li>
+
+                    <li class="grid-item">
+                        <a href="li-g-h-i.html">
+                            <h3 class="grid-h3">hyperbola</h3>
+                        </a>
+                    </li>
+
+                    <li class="grid-item">
+                        <a href="li-g-h-i.html">
+                            <h3 class="grid-h3">ironie</h3>
+                        </a>
+                    </li>
+
+                    <li class="grid-item">
+                        <a href="li-k-m-m.html">
+                            <h3 class="grid-h3">kontrast</h3>
+                        </a>
+                    </li>
+
+                    <li class="grid-item">
+                        <a href="li-k-m-m.html">
+                            <h3 class="grid-h3">metafora</h3>
+                        </a>
+                    </li>
+
+                    <li class="grid-item">
+                        <a href="li-k-m-m.html">
+                            <h3 class="grid-h3">metonymie</h3>
+                        </a>
+                    </li>
+
+                    <li class="grid-item">
+                        <a href="li-o-p-p.html">
+                            <h3>onomatopoie</h3>
+                        </a>
+                    </li>
+
+                    <li class="grid-item">
+                        <a href="li-o-p-p.html">
+                            <h3 class="grid-h3">přirovnání</h3>
+                        </a>
+                    </li>
+
+                    <li class="grid-item">
+                        <a href="li-o-p-p.html">
+                            <h3>personifikace</h3>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <!-- Patička -->
+        <footer>
+            <div class="footer-content">
+                <a href="about.html"
+                    ><img
+                        src="images/white-logo.png"
+                        alt="Tobikovo Logo"
+                        width="100px"
+                /></a>
+            </div>
+        </footer>
+        <!-- JSs -->
+        <script src="javastripts/nav.js"></script>
+    </body>
 </html>

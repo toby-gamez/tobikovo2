@@ -1,96 +1,143 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
+    <head>
+        <!-- Google Consent Mode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-<head>
-    <!-- Google Consent Mode -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
+        </script>
 
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied'
-        });
-        console.log("Google Consent Mode initialized with default: denied");
-    </script>
+        <!-- Google Analytics (nenačte se automaticky) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+        ></script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-Q7DH4RTXBC");
+                console.log("Google Analytics loaded.");
+            }
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Literatura v období baroka - Literatura - Tobikovo</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="icon" href="images/favicon.png" />
+    </head>
 
-    <!-- Google Analytics (nenačte se automaticky) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
-    <script>
-        function loadGoogleAnalytics() {
-            console.log("Loading Google Analytics...");
-            gtag('js', new Date());
-            gtag('config', 'G-Q7DH4RTXBC');
-            console.log("Google Analytics loaded.");
-        }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Literatura v období baroka - Literatura - Tobikovo</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="icon" href="images/favicon.png">
-</head>
-
-<body>
-    <div class="loading-bar-container">
-        <div class="loading-bar"></div>
-    </div>
-
-    <nav id="myNavbar"></nav>
-    <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-    <!-- Obsah stránky -->
-    <main>
-
-        <section>
-            <h1 class="verybig">Literatura v období baroka</h1>
-            <div style="text-align: left;">
-                <h2>Jan Amos Komenský</h2>
-                <div class="blog-image">
-                    <img src="images/Komensky.jpg" class=" blog-image" width="150 rem" alt="Komenský">
-                    <p>Zdroj: <a
-                            href="https://fineartamerica.com/featured/portrait-of-jan-amos-comenius-jurgen-ovens.html">Fine
-                            art America</a>
-                    </p>
-                </div>
-                <ul>
-                    <li>pedagog, filozof, spisovatel</li>
-                    <li>narodil se roku 1592, místo narození není známo (Uherský Brod, Nivnice, Komňa)</li>
-                    <li>chodil do školy ve Strážnici</li>
-                    <li>studoval na gymnáziu v Přerově a v zahraničí</li>
-                    <li>stal se učitelem a biskupem jednoty bratrské</li>
-                    <li>protože odmítl přejít na katolické náboženství, odešel roku 1628 do Lešna (v dnešním Polsku)
-                    </li>
-                    <li>v Lešně vznikla velká část jeho pedagogických děl, ale při tamějším požáru přišel skoro o
-                        všechna díla</li>
-                    <li>žil i v Maďarsku, Nizozemsku, Švédsku a Velké Británii</li>
-                    <li>do své vlasti se nikdy nevrátil, zemřel roku 1670 v Amsterdamu</li>
-                    <li>pedagogická díla</li>
-                    <ul>
-                        <li>Velká didaktika - zásady moderní pedagogiky</li>
-                        <li>Orbis pictus (Svět v obrazech) - obrázková učebnice</li>
-                        <li>Informatorium školy mateřské - rady matkám k výchově svých dětí</li>
-                    </ul>
-                    <li>filozoficko-náboženská díla</li>
-                    <ul>
-                        <li>Labyrint světa a ráj srdce - alegorický román</li>
-                    </ul>
-                </ul>
-                <button onclick="window.history.back()"><i class="bi bi-arrow-left"></i></button>
-            </div>
-        </section>
-
-    </main>
-    <!-- Patička -->
-    <footer>
-        <div class="footer-content">
-            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+    <body>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
         </div>
-    </footer>
-    <!-- JSs -->
-    <script src="javastripts/nav.js"></script>
-</body>
 
+        <nav id="myNavbar"></nav>
+        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+
+        <!-- Obsah stránky -->
+        <main>
+            <section>
+                <h1 class="verybig">Literatura v období baroka</h1>
+                <div style="text-align: left">
+                    <h2>Jan Amos Komenský</h2>
+                    <div class="blog-image">
+                        <img
+                            src="images/Komensky.jpg"
+                            class="blog-image"
+                            width="150 rem"
+                            alt="Komenský"
+                        />
+                        <p>
+                            Zdroj:
+                            <a
+                                href="https://fineartamerica.com/featured/portrait-of-jan-amos-comenius-jurgen-ovens.html"
+                                >Fine art America</a
+                            >
+                        </p>
+                    </div>
+                    <ul>
+                        <li><strong>pedagog, filozof, spisovatel</strong></li>
+                        <li>
+                            <strong>narodil se roku 1592</strong>, místo
+                            narození není známo (Uherský Brod, Nivnice, Komňa)
+                        </li>
+                        <li>chodil do školy ve Strážnici</li>
+                        <li>studoval na gymnáziu v Přerově a v zahraničí</li>
+                        <li>
+                            <strong
+                                >stal se učitelem a biskupem jednoty
+                                bratrské</strong
+                            >
+                        </li>
+                        <li>
+                            protože odmítl přejít na katolické náboženství,
+                            <strong>odešel roku 1628 do Lešna</strong> (v
+                            dnešním Polsku)
+                        </li>
+                        <li>
+                            v Lešně vznikla velká část jeho pedagogických děl,
+                            ale při tamějším požáru přišel skoro o všechna díla
+                        </li>
+                        <li>
+                            žil i v Maďarsku, Nizozemsku, Švédsku a Velké
+                            Británii
+                        </li>
+                        <li>
+                            do své vlasti se nikdy nevrátil,
+                            <strong>zemřel roku 1670 v Amsterdamu</strong>
+                        </li>
+                        <li><strong>pedagogická díla</strong></li>
+                        <ul>
+                            <li>
+                                <strong>Velká didaktika</strong> - zásady
+                                moderní pedagogiky
+                            </li>
+                            <li>
+                                <strong>Orbis pictus</strong> (Svět v obrazech)
+                                - obrázková učebnice
+                            </li>
+                            <li>
+                                <strong>Informatorium školy mateřské</strong> -
+                                rady matkám k výchově svých dětí
+                            </li>
+                        </ul>
+                        <li><strong>filozoficko-náboženská díla</strong></li>
+                        <ul>
+                            <li>
+                                <strong>Labyrint světa a ráj srdce</strong> -
+                                alegorický román
+                            </li>
+                        </ul>
+                    </ul>
+                    <button onclick="window.history.back()">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <!-- Patička -->
+        <footer>
+            <div class="footer-content">
+                <a href="about.html"
+                    ><img
+                        src="images/white-logo.png"
+                        alt="Tobikovo Logo"
+                        width="100px"
+                /></a>
+            </div>
+        </footer>
+        <!-- JSs -->
+        <script src="javastripts/nav.js"></script>
+    </body>
 </html>

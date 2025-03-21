@@ -1,135 +1,201 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
+    <head>
+        <!-- Google Consent Mode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-<head>
-    <!-- Google Consent Mode -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
+        </script>
 
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied'
-        });
-        console.log("Google Consent Mode initialized with default: denied");
-    </script>
+        <!-- Google Analytics (nenačte se automaticky) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+        ></script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-Q7DH4RTXBC");
+                console.log("Google Analytics loaded.");
+            }
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Podmět - Mluvnice - Tobikovo</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="stylesheet" href="css/tabulkak.css" />
+        <link rel="icon" href="images/favicon.png" />
+        <style></style>
+    </head>
 
-    <!-- Google Analytics (nenačte se automaticky) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
-    <script>
-        function loadGoogleAnalytics() {
-            console.log("Loading Google Analytics...");
-            gtag('js', new Date());
-            gtag('config', 'G-Q7DH4RTXBC');
-            console.log("Google Analytics loaded.");
-        }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Podmět - Mluvnice - Tobikovo</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/tabulkak.css" />
-    <link rel="icon" href="images/favicon.png">
-    <style>
-
-    </style>
-</head>
-
-<body>
-    <div class="loading-bar-container">
-        <div class="loading-bar"></div>
-    </div>
-    <nav id="myNavbar">
-        <a href="#home"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
-        <a href="#home">Domů</a>
-        <a href="#ucivo">Učivo</a>
-        <a href="#o-nas">O nás</a>
-    </nav>
-    <button class="openNav opennav-button" onclick="openNav()">☰</button>
-    <!-- Obsah stránky -->
-    <main>
-
-        <section>
-            <h1 class="verybig">Podmět</h1>
-            <div style="text-align: left;">
-                <h2>Základy</h2>
-                <ul>
-                    <li>vyjadřuje původce, nositele děje</li>
-                    <li>ptáme se: kdo?, co?, + přísudek</li>
-                </ul>
-                <h2>Druhy</h2>
-                <ul>
-                    <li>vyjádřený - <span class="underlined">VŠEMI SLOVNÍMI DRUHY</span></li>
-                    <li>nevyjádřený - poznáme z tvaru slovesa nebo z předcházející věty (Zítra pojed<span
-                            class="underlined">eme</span> na výlet. - my)</li>
-                    <li>všeobecný - nedovedeme ho jednoznačně pojmenovat, myslí se jím kdokoli, jakákoli osoba (Hlásili
-                        to v rozhlase - oni? kdo?)</li>
-                </ul>
-                <h2>Vyjádření</h2>
-                <ul>
-                    <li>podstatným jménem (<span class="underlined">pes</span> štěkal.)</li>
-                    <li>přídavným jménem (<span class="underlined">nejlepší</span> vyhrál.)</li>
-                    <li>zájmenem (<span class="underlined">on</span> je moucha.)</li>
-                    <li>číslovkou (<span class="underlined">první</span> vyhrává.)</li>
-                    <li>slovesem (<span class="underlined">malovat</span> mě baví. - infinitiv)</li>
-                    <li>příslovcem (Každé <span class="underlined">proč</span> má své proto)</li>
-                    <li>předložkou (<span class="underlined">do</span> je předložka.)</li>
-                    <li>spojkou (<span class="underlined">protože</span> je spojka.)</li>
-                    <li>částicí (Tvoje <span class="underlined">ano</span> zní přesvědčivě.)</li>
-                    <li>citoslovcem (Ozývalo se <span class="underlined">mňam, mňam</span>.)</li>
-                    <p>- nebo-li všemi slovními druhy 😀</p>
-                </ul>
-                <h2>Jiné druhy</h2>
-                <ul>
-                    <li>holý - <span class="underlined">Rytíř</span> usedl na koně.</li>
-                    <li>rozvitý - <span class="underlined">Udatný rytíř</span> usedl na koně.</li>
-                    <li>několikanásobný - <span class="underlined">Rytíř a kněžna</span> usedli na koně.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section>
-            <h2>Shoda přísudku s podmětem</h2>
-            <div style="text-align: left;">
-                <p style="color: red;">Hledáme pouze u sloves v minulém čase!</p>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Podmět</th>
-                            <th>Přísudek</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <p>mužský Ž</p>
-                                <p>mužský N</p>
-                                <p>ženský</p>
-                                <p>střední</p>
-                            </td>
-                            <td>
-                                <p>-i</p>
-                                <p>-y</p>
-                                <p>-y</p>
-                                <p>-a</p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <button onclick="window.history.back()"><i class="bi bi-arrow-left"></i></button>
-            </div>
-        </section>
-
-    </main>
-    <!-- Patička -->
-    <footer>
-        <div class="footer-content">
-            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+    <body>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
         </div>
-    </footer>
-    <script src="javastripts/nav.js"></script>
-</body>
+        <nav id="myNavbar">
+            <a href="#home"
+                ><img src="images/white-logo.png" alt="Logo" width="75px"
+            /></a>
+            <a href="#home">Domů</a>
+            <a href="#ucivo">Učivo</a>
+            <a href="#o-nas">O nás</a>
+        </nav>
+        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+        <!-- Obsah stránky -->
+        <main>
+            <section>
+                <h1 class="verybig">Podmět</h1>
+                <div style="text-align: left">
+                    <h2>Základy</h2>
+                    <ul>
+                        <li>vyjadřuje původce, nositele děje</li>
+                        <li>ptáme se: kdo?, co?, + přísudek</li>
+                    </ul>
+                    <h2>Druhy</h2>
+                    <ul>
+                        <li>
+                            vyjádřený - <strong>všemi slovními druhy</strong>
+                        </li>
+                        <ul>
+                            <li>
+                                podstatným jménem (<span class="underlined"
+                                    >pes</span
+                                >
+                                štěkal.)
+                            </li>
+                            <li>
+                                přídavným jménem (<span class="underlined"
+                                    >nejlepší</span
+                                >
+                                vyhrál.)
+                            </li>
+                            <li>
+                                zájmenem (<span class="underlined">on</span> je
+                                moucha.)
+                            </li>
+                            <li>
+                                číslovkou (<span class="underlined">první</span>
+                                vyhrává.)
+                            </li>
+                            <li>
+                                slovesem (<span class="underlined"
+                                    >malovat</span
+                                >
+                                mě baví. - infinitiv)
+                            </li>
+                            <li>
+                                příslovcem (Každé
+                                <span class="underlined">proč</span> má své
+                                proto)
+                            </li>
+                            <li>
+                                předložkou (<span class="underlined">do</span>
+                                je předložka.)
+                            </li>
+                            <li>
+                                spojkou (<span class="underlined">protože</span>
+                                je spojka.)
+                            </li>
+                            <li>
+                                částicí (Tvoje
+                                <span class="underlined">ano</span> zní
+                                přesvědčivě.)
+                            </li>
+                            <li>
+                                citoslovcem (Ozývalo se
+                                <span class="underlined">mňam, mňam</span>.)
+                            </li>
+                        </ul>
+                        <li>
+                            nevyjádřený - poznáme z tvaru slovesa nebo z
+                            předcházející věty (Zítra pojed<span
+                                class="underlined"
+                                >eme</span
+                            >
+                            na výlet. - my)
+                        </li>
+                        <li>
+                            všeobecný - nedovedeme ho jednoznačně pojmenovat,
+                            myslí se jím kdokoli, jakákoli osoba (Hlásili to v
+                            rozhlase - oni? kdo?)
+                        </li>
+                    </ul>
+                    <h2>Jiné druhy</h2>
+                    <ul>
+                        <li>
+                            holý - <span class="underlined">Rytíř</span> usedl
+                            na koně.
+                        </li>
+                        <li>
+                            rozvitý -
+                            <span class="underlined">Udatný rytíř</span> usedl
+                            na koně.
+                        </li>
+                        <li>
+                            několikanásobný -
+                            <span class="underlined">Rytíř a kněžna</span>
+                            usedli na koně.
+                        </li>
+                    </ul>
 
+                    <h2>Shoda přísudku s podmětem</h2>
+                    <div style="text-align: left">
+                        <p style="color: red">
+                            Hledáme pouze u sloves v minulém čase!
+                        </p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Podmět</th>
+                                    <th>Přísudek</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p>mužský Ž</p>
+                                        <p>mužský N</p>
+                                        <p>ženský</p>
+                                        <p>střední</p>
+                                    </td>
+                                    <td>
+                                        <p>-i</p>
+                                        <p>-y</p>
+                                        <p>-y</p>
+                                        <p>-a</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button onclick="window.history.back()">
+                            <i class="bi bi-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Patička -->
+        <footer>
+            <div class="footer-content">
+                <a href="about.html"
+                    ><img
+                        src="images/white-logo.png"
+                        alt="Tobikovo Logo"
+                        width="100px"
+                /></a>
+            </div>
+        </footer>
+        <script src="javastripts/nav.js"></script>
+    </body>
 </html>

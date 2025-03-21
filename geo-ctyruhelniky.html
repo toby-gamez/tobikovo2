@@ -1,157 +1,202 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
+    <head>
+        <!-- Google Consent Mode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-<head>
-    <!-- Google Consent Mode -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
+        </script>
 
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied'
-        });
-        console.log("Google Consent Mode initialized with default: denied");
-    </script>
+        <!-- Google Analytics (nenačte se automaticky) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+        ></script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-Q7DH4RTXBC");
+                console.log("Google Analytics loaded.");
+            }
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Čtyřúhelníky - Geometrie - Tobikovo</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="icon" href="images/favicon.png" />
+    </head>
 
-    <!-- Google Analytics (nenačte se automaticky) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
-    <script>
-        function loadGoogleAnalytics() {
-            console.log("Loading Google Analytics...");
-            gtag('js', new Date());
-            gtag('config', 'G-Q7DH4RTXBC');
-            console.log("Google Analytics loaded.");
-        }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Čtyřúhelníky - Geometrie - Tobikovo</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="icon" href="images/favicon.png">
-</head>
-
-<body>
-    <div class="loading-bar-container">
-        <div class="loading-bar"></div>
-    </div>
-
-    <nav id="myNavbar"></nav>
-    <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-    <!-- Obsah stránky -->
-    <main>
-
-        <section>
-            <h1 class="verybig">Čtyřúhelníky</h1>
-            <div style="text-align: left;">
-                <h2>Čtverec</h2>
-                <p>obvod: 4 × a<br>obsah: a × a</p>
-                <h3>Strany</h3>
-                <ul>
-                    <li>všechny strany stejně dlouhé (a ≅ b ≅ c)</li>
-                    <li>protější jsou rovnoběžné, sousední kolmé</li>
-                </ul>
-                <h3>Úhlopříčky</h3>
-                <ul>
-                    <li>ú1 ⟂ ú2</li>
-                    <li>S - střed středové souměrnosti</li>
-                    <li>S - půlí úhlopříčky</li>
-                </ul>
-                <h3>Úhly</h3>
-                <ul>
-                    <li>α = β = γ = δ</li>
-                    <li>α + β + γ + δ = 360°</li>
-                    <li>úhlopříčky půlí úhly</li>
-                    <li>ABD ≅ CDB ≅ CBD</li>
-                </ul>
-                <img src="images/ctverec.png" style="border-radius: 10px;" width="100px" alt="Čtverec">
-
-                <h2>Obdélník</h2>
-                <p>obvod: 2 × (a + b)<br>obsah: a × b</p>
-                <h3>Strany</h3>
-                <ul>
-                    <li>protější strany jsou stejně dlouhé (a ≅ c, b ≅ d)</li>
-                    <li>protější strany stejně dlouhé, sousední kolmé</li>
-                </ul>
-                <h3>Úhlopříčky</h3>
-                <ul>
-                    <li>S - střed středové souměrnosti</li>
-                    <li>S - půlí úhlopříčky</li>
-                </ul>
-                <h4>Úhly</h4>
-                <ul>
-                    <li>α = β = γ = δ</li>
-                    <li>α + β + γ + δ = 360°</li>
-                    <li>ABD ≅ CDB</li>
-                </ul>
-                <img src="images/obdelnik.png" style="border-radius: 10px;" width="200px" alt="Obdélník">
-
-                <h2>Rovnoběžníky</h2>
-                <h3>Kosočtverec</h3>
-                <p>obvod: 4 × a<br>obsah: a × v<span style="font-size: 11px;">a</span></p>
-                <h4>Strany</h4>
-                <ul>
-                    <li>protější strany jsou //</li>
-                    <li>všechny strany jsou ≅</li>
-                </ul>
-                <h4>Úhlopříčky</h4>
-                <ul>
-                    <li>ú1 ⟂ ú2</li>
-                    <li>mají společný střed</li>
-                    <li>ABD ≅ CBD</li>
-                </ul>
-                <h4>Úhly</h4>
-                <ul>
-                    <li>protější úhly jsou ≅</li>
-                    <li>β ≅ δ, α ≅ γ</li>
-                    <li>součet vedlejších úhlů je 180°</li>
-                </ul>
-                <img src="images/kosoctverec.png" style="border-radius: 10px;" width="200px" alt="Kosočtverec">
-
-                <h3>Kosodélník</h3>
-                <p>obvod: 2 × (a + b)<br>obsah: a × v<span style="font-size: 11px;">a</span></p>
-                <h4>Strany</h4>
-                <ul>
-                    <li>protější strany jsou ≅</li>
-                </ul>
-                <h4>Úhlopříčky</h4>
-                <ul>
-                    <li>mají společný střed</li>
-                    <li>ABC ≅ CDA</li>
-                </ul>
-                <h4>Úhly</h4>
-                <ul>
-                    <li>protější úhly jsou ≅</li>
-                    <li>β ≅ δ, α ≅ γ</li>
-                    <li>α + β + γ + δ = 360°</li>
-                    <li>součet vedlejších úhlů je 180°</li>
-                </ul>
-                <img src="images/kosodelnik.png" style="border-radius: 10px;" width="200px" alt="Kosodélník">
-                <h2>Lichoběžníky</h2>
-                <p>obvod: a + b + c + d<br>obsah: {(a + c) × v} ÷ 2</p>
-                <h3>Druhy</h3>
-                <ul>
-                    <li>pravoúhlý (2 úhly jsou pravé)</li>
-                    <li>rovnoramenný (má 2 shodná ramena)</li>
-                </ul>
-                <img src="images/lichobeznik.png" style="border-radius: 10px;" width="200px" alt="Lichoběžník">
-                <br>
-                <button onclick="window.history.back()"><i class="bi bi-arrow-left"></i></button>
-            </div>
-        </section>
-
-    </main>
-    <!-- Patička -->
-    <footer>
-        <div class="footer-content">
-            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+    <body>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
         </div>
-    </footer>
-    <!-- JSs -->
-    <script src="javastripts/nav.js"></script>
-</body>
 
+        <nav id="myNavbar"></nav>
+        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+
+        <!-- Obsah stránky -->
+        <main>
+            <section>
+                <h1 class="verybig">Čtyřúhelníky</h1>
+                <div style="text-align: left">
+                    <h2>Čtverec</h2>
+                    <p>obvod: 4 × a<br />obsah: a × a</p>
+                    <h3>Strany</h3>
+                    <ul>
+                        <li>všechny strany stejně dlouhé (a ≅ b ≅ c)</li>
+                        <li>protější jsou rovnoběžné, sousední kolmé</li>
+                    </ul>
+                    <h3>Úhlopříčky</h3>
+                    <ul>
+                        <li>ú1 ⟂ ú2</li>
+                        <li>S - střed středové souměrnosti</li>
+                        <li>S - půlí úhlopříčky</li>
+                    </ul>
+                    <h3>Úhly</h3>
+                    <ul>
+                        <li>α = β = γ = δ</li>
+                        <li>α + β + γ + δ = 360°</li>
+                        <li>úhlopříčky půlí úhly</li>
+                        <li>ABD ≅ CDB ≅ CBD</li>
+                    </ul>
+                    <img
+                        src="images/ctverec.webp"
+                        style="border-radius: 10px"
+                        width="100px"
+                        alt="Čtverec"
+                    />
+
+                    <h2>Obdélník</h2>
+                    <p>obvod: 2 × (a + b)<br />obsah: a × b</p>
+                    <h3>Strany</h3>
+                    <ul>
+                        <li>
+                            protější strany jsou stejně dlouhé (a ≅ c, b ≅ d)
+                        </li>
+                        <li>protější strany stejně dlouhé, sousední kolmé</li>
+                    </ul>
+                    <h3>Úhlopříčky</h3>
+                    <ul>
+                        <li>S - střed středové souměrnosti</li>
+                        <li>S - půlí úhlopříčky</li>
+                    </ul>
+                    <h4>Úhly</h4>
+                    <ul>
+                        <li>α = β = γ = δ</li>
+                        <li>α + β + γ + δ = 360°</li>
+                        <li>ABD ≅ CDB</li>
+                    </ul>
+                    <img
+                        src="images/obdelnik.webp"
+                        style="border-radius: 10px"
+                        width="200px"
+                        alt="Obdélník"
+                    />
+
+                    <h2>Rovnoběžníky</h2>
+                    <h3>Kosočtverec</h3>
+                    <p>
+                        obvod: 4 × a<br />obsah: a × v<span
+                            style="font-size: 11px"
+                            >a</span
+                        >
+                    </p>
+                    <h4>Strany</h4>
+                    <ul>
+                        <li>protější strany jsou //</li>
+                        <li>všechny strany jsou ≅</li>
+                    </ul>
+                    <h4>Úhlopříčky</h4>
+                    <ul>
+                        <li>ú1 ⟂ ú2</li>
+                        <li>mají společný střed</li>
+                        <li>ABD ≅ CBD</li>
+                    </ul>
+                    <h4>Úhly</h4>
+                    <ul>
+                        <li>protější úhly jsou ≅</li>
+                        <li>β ≅ δ, α ≅ γ</li>
+                        <li>součet vedlejších úhlů je 180°</li>
+                    </ul>
+                    <img
+                        src="images/kosoctverec.webp"
+                        style="border-radius: 10px"
+                        width="200px"
+                        alt="Kosočtverec"
+                    />
+
+                    <h3>Kosodélník</h3>
+                    <p>
+                        obvod: 2 × (a + b)<br />obsah: a × v<span
+                            style="font-size: 11px"
+                            >a</span
+                        >
+                    </p>
+                    <h4>Strany</h4>
+                    <ul>
+                        <li>protější strany jsou ≅</li>
+                    </ul>
+                    <h4>Úhlopříčky</h4>
+                    <ul>
+                        <li>mají společný střed</li>
+                        <li>ABC ≅ CDA</li>
+                    </ul>
+                    <h4>Úhly</h4>
+                    <ul>
+                        <li>protější úhly jsou ≅</li>
+                        <li>β ≅ δ, α ≅ γ</li>
+                        <li>α + β + γ + δ = 360°</li>
+                        <li>součet vedlejších úhlů je 180°</li>
+                    </ul>
+                    <img
+                        src="images/kosodelnik.webp"
+                        style="border-radius: 10px"
+                        width="200px"
+                        alt="Kosodélník"
+                    />
+                    <h2>Lichoběžníky</h2>
+                    <p>obvod: a + b + c + d<br />obsah: {(a + c) × v} ÷ 2</p>
+                    <h3>Druhy</h3>
+                    <ul>
+                        <li>pravoúhlý (2 úhly jsou pravé)</li>
+                        <li>rovnoramenný (má 2 shodná ramena)</li>
+                    </ul>
+                    <img
+                        src="images/lichobeznik.webp"
+                        style="border-radius: 10px"
+                        width="200px"
+                        alt="Lichoběžník"
+                    />
+                    <br />
+                    <button onclick="window.history.back()">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <!-- Patička -->
+        <footer>
+            <div class="footer-content">
+                <a href="about.html"
+                    ><img
+                        src="images/white-logo.png"
+                        alt="Tobikovo Logo"
+                        width="100px"
+                /></a>
+            </div>
+        </footer>
+        <!-- JSs -->
+        <script src="javastripts/nav.js"></script>
+    </body>
 </html>

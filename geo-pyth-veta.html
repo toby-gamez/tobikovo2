@@ -1,79 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
+    <head>
+        <!-- Google Consent Mode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-<head>
-    <!-- Google Consent Mode -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
+        </script>
 
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied'
-        });
-        console.log("Google Consent Mode initialized with default: denied");
-    </script>
+        <!-- Google Analytics (nenačte se automaticky) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+        ></script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-Q7DH4RTXBC");
+                console.log("Google Analytics loaded.");
+            }
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pythagorova věta - Geometrie - Tobikovo</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="icon" href="images/favicon.png" />
+    </head>
 
-    <!-- Google Analytics (nenačte se automaticky) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
-    <script>
-        function loadGoogleAnalytics() {
-            console.log("Loading Google Analytics...");
-            gtag('js', new Date());
-            gtag('config', 'G-Q7DH4RTXBC');
-            console.log("Google Analytics loaded.");
-        }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pythagorova věta - Geometrie - Tobikovo</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="icon" href="images/favicon.png">
-</head>
-
-<body>
-    <div class="loading-bar-container">
-        <div class="loading-bar"></div>
-    </div>
-
-    <nav id="myNavbar"></nav>
-    <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-    <!-- Obsah stránky -->
-    <main>
-
-        <section>
-            <h1 class="verybig">Pythagorova věta</h1>
-            <div style="text-align: left;">
-                <h2>Základy</h2>
-                <img src="images/pyth.png" style="border-radius: 10px;" width="350px" alt="">
-                <p>přepona .... 5 cm (je vždy nejdelší)<br>odvěsna .... 4 cm<br>odvěsna .... 3 cm</p>
-                <h3>Věta</h3>
-                <p>„Obsah čtverce sestrojeného nad přeponou pravoúhlého trojúhelníku se rovná součtu obsahu čtverců nad
-                    oběma odvěsnami.“</p>
-                <p>a znamená to:</p>
-                <p style="font-size: 20px;">a² + b² = c²</p>
-                <p><strong>ALE V TROJÚHELNÍKU SESTROJENÉM NAHOŘE PLATÍ:</strong></p>
-                <p style="font-size: 20px;">c² + b² = a²</p>
-                <h2>Vypočítání trojúhelníku nahoře</h2>
-                <p>přepona .... 5 cm<br>odvěsna .... 4 cm<br>odvěsna .... 3 cm</p>
-                <p>c² + b² = a²<br>4² + 3² = 5²<br>16 + 9 = 25<br>25 = 25</p>
-                <p>Trojúhelník je pravoúhlý.</p>
-                <button onclick="window.history.back()"><i class="bi bi-arrow-left"></i></button>
-            </div>
-        </section>
-
-    </main>
-    <!-- Patička -->
-    <footer>
-        <div class="footer-content">
-            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+    <body>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
         </div>
-    </footer>
-    <!-- JSs -->
-    <script src="javastripts/nav.js"></script>
-</body>
 
+        <nav id="myNavbar"></nav>
+        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+
+        <!-- Obsah stránky -->
+        <main>
+            <section>
+                <h1 class="verybig">Pythagorova věta</h1>
+                <div style="text-align: left">
+                    <h2>Základy</h2>
+                    <img
+                        src="images/pyth.webp"
+                        style="border-radius: 10px"
+                        width="350px"
+                        alt="trojůhelník"
+                    />
+                    <p>
+                        přepona .... 5 cm (je vždy nejdelší)<br />odvěsna .... 4
+                        cm<br />odvěsna .... 3 cm
+                    </p>
+                    <h3>Věta</h3>
+                    <p>
+                        „Obsah čtverce sestrojeného nad přeponou pravoúhlého
+                        trojúhelníku se rovná součtu obsahu čtverců nad oběma
+                        odvěsnami.“
+                    </p>
+                    <p>a znamená to:</p>
+                    <p style="font-size: 20px">a² + b² = c²</p>
+                    <p>
+                        <strong
+                            >ALE V TROJÚHELNÍKU SESTROJENÉM NAHOŘE
+                            PLATÍ:</strong
+                        >
+                    </p>
+                    <p style="font-size: 20px">c² + b² = a²</p>
+                    <h2>Vypočítání trojúhelníku nahoře</h2>
+                    <p>
+                        přepona .... 5 cm<br />odvěsna .... 4 cm<br />odvěsna
+                        .... 3 cm
+                    </p>
+                    <p>
+                        c² + b² = a²<br />4² + 3² = 5²<br />16 + 9 = 25<br />25
+                        = 25
+                    </p>
+                    <p>Trojúhelník je pravoúhlý.</p>
+                    <button onclick="window.history.back()">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <!-- Patička -->
+        <footer>
+            <div class="footer-content">
+                <a href="about.html"
+                    ><img
+                        src="images/white-logo.png"
+                        alt="Tobikovo Logo"
+                        width="100px"
+                /></a>
+            </div>
+        </footer>
+        <!-- JSs -->
+        <script src="javastripts/nav.js"></script>
+    </body>
 </html>

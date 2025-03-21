@@ -1,91 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
+    <head>
+        <!-- Google Consent Mode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-<head>
-    <!-- Google Consent Mode -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
+        </script>
 
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied'
-        });
-        console.log("Google Consent Mode initialized with default: denied");
-    </script>
+        <!-- Google Analytics (nenačte se automaticky) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+        ></script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-Q7DH4RTXBC");
+                console.log("Google Analytics loaded.");
+            }
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mluvnické kategorie - Mluvnice - Tobikovo</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="icon" href="images/favicon.png" />
+        <style></style>
+    </head>
 
-    <!-- Google Analytics (nenačte se automaticky) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
-    <script>
-        function loadGoogleAnalytics() {
-            console.log("Loading Google Analytics...");
-            gtag('js', new Date());
-            gtag('config', 'G-Q7DH4RTXBC');
-            console.log("Google Analytics loaded.");
-        }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mluvnické kategorie - Mluvnice - Tobikovo</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="icon" href="images/favicon.png">
-    <style>
-
-    </style>
-</head>
-
-<body>
-    <div class="loading-bar-container">
-        <div class="loading-bar"></div>
-    </div>
-    <nav id="myNavbar">
-        <a href="#home"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
-        <a href="#home">Domů</a>
-        <a href="#ucivo">Učivo</a>
-        <a href="#o-nas">O nás</a>
-    </nav>
-    <button class="openNav opennav-button" onclick="openNav()">☰</button>
-    <!-- Obsah stránky -->
-    <main>
-
-        <section>
-            <h1 class="verybig">Mluvnické kategorie</h1>
-            <div style="text-align: left;">
-                <h2>Pád, číslo, rod</h2>
-                <p>Určuje se to podle podstatného jména, takže je totožný <a href="ml-mluv-kat-pods-jmena.html">pád,
-                        číslo a
-                        rod</a>.</p>
-                <h2>Druhy a vzory</h2>
-                <ul>
-                    <li>tvrdá - mladý (mladý, mladá, mladé)</li>
-                    <li>měkká - jarní (jarní, jarní, jarní)</li>
-                    <li>přivlastňovací - otcův, matčin (otcův, otcova, otcovo, matčin, matčina, matčino)</li>
-                </ul>
-                <h3>Vzor mladý</h3>
-                <p>Zjistí se tak, že si přídavné jméno vyskloníme v rodech, např: muž.: tvrdý, žens.: tvrdá, stř.:
-                    tvrdé -
-                    takže koncovky (y, a, e) se mění, takže je to druh - tvrdé, vzor - mladý.</p>
-                <p>Pokud je věta: S novými žáky. - musíme dosadit vzor následovně: S mlad<span
-                        class="underlined">ý</span>m<span class="underlined">i</span> žáky. - napíšeme: S novými žáky.
-                </p>
-                <h3>Vzor jarní</h3>
-                <p>Vždy se píše měkké i.</p>
-                <h3>Vzor otcův a matčin</h3>
-                <p>Většina přídavných jmen je podle vzoru "otcův", ale abychom si pomohli, doplníme vzor "matčin".</p>
-                <button onclick="window.history.back()"><i class="bi bi-arrow-left"></i></button>
-            </div>
-        </section>
-
-    </main>
-    <!-- Patička -->
-    <footer>
-        <div class="footer-content">
-            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+    <body>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
         </div>
-    </footer>
-    <script src="javastripts/nav.js"></script>
-</body>
-
+        <nav id="myNavbar">
+            <a href="#home"
+                ><img src="images/white-logo.png" alt="Logo" width="75px"
+            /></a>
+            <a href="#home">Domů</a>
+            <a href="#ucivo">Učivo</a>
+            <a href="#o-nas">O nás</a>
+        </nav>
+        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+        <!-- Obsah stránky -->
+        <main>
+            <section>
+                <h1 class="verybig">Mluvnické kategorie</h1>
+                <div style="text-align: left">
+                    <h2>Pád, číslo, rod</h2>
+                    <p>
+                        Určuje se to <strong>podle podstatného jména</strong>,
+                        takže je totožný
+                        <a href="ml-mluv-kat-pods-jmena.html"
+                            >pád, číslo a rod</a
+                        >.
+                    </p>
+                    <h2>Druhy a vzory</h2>
+                    <ul>
+                        <li>tvrdá - mladý (mladý, mladá, mladé)</li>
+                        <li>měkká - jarní (jarní, jarní, jarní)</li>
+                        <li>
+                            přivlastňovací - otcův, matčin (otcův, otcova,
+                            otcovo, matčin, matčina, matčino)
+                        </li>
+                    </ul>
+                    <h3>Vzor mladý</h3>
+                    <p>
+                        Zjistí se tak, že si přídavné jméno
+                        <strong>vyskloňujeme</strong> v rodech, např: muž.:
+                        tvrdý, žens.: tvrdá, stř.: tvrdé - takže koncovky (y, a,
+                        e) se mění, takže je to druh - tvrdé, vzor - mladý.
+                    </p>
+                    <p>
+                        Pokud je věta: S novými žáky. - musíme dosadit vzor
+                        následovně: S mlad<span class="underlined">ý</span
+                        >m<span class="underlined">i</span> žáky. - napíšeme: S
+                        novými žáky.
+                    </p>
+                    <h3>Vzor jarní</h3>
+                    <p>Vždy se píše měkké i.</p>
+                    <h3>Vzor otcův a matčin</h3>
+                    <p>
+                        Většina přídavných jmen je podle vzoru "otcův", ale
+                        abychom si pomohli, doplníme vzor "matčin".
+                    </p>
+                    <button onclick="window.history.back()">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <!-- Patička -->
+        <footer>
+            <div class="footer-content">
+                <a href="about.html"
+                    ><img
+                        src="images/white-logo.png"
+                        alt="Tobikovo Logo"
+                        width="100px"
+                /></a>
+            </div>
+        </footer>
+        <script src="javastripts/nav.js"></script>
+    </body>
 </html>

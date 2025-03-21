@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Můj účet - Máj - Tobikovo</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://tobikovo.caloris.cz/css/style.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://tobikovo.caloris.cz/css/footer.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://tobikovo.caloris.cz/css/grid.css"
+        />
+        <link rel="stylesheet" href="https://tobikovo.caloris.cz/css/nav.css" />
+        <link rel="stylesheet" href="style/custom.css" />
+    </head>
+    <body>
+        <script>
+            // Kontrola, zda je uživatel přihlášen
+            if (!localStorage.getItem("loggedInUser")) {
+                window.location.href = "login.html";
+            }
+        </script>
+        <nav class="navbar">
+            <a href="index.html" class="navbar-brand"
+                ><img src="images/máj.png" alt="logo"
+            /></a>
+
+            <button class="navbar-toggler" onclick="toggleMenu()">☰</button>
+
+            <div class="navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Domů</a>
+                    </li>
+                    <li class="nav-item">
+                        <a
+                            href="https://tobikovo.caloris.cz/about.html"
+                            class="nav-link"
+                            >O mně</a
+                        >
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Služby</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Služba 1</a>
+                            <a href="#" class="dropdown-item">Služba 2</a>
+                            <a href="#" class="dropdown-item">Služba 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="account.html" class="nav-link">Účet</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <h1 class="verybig">Můj účet</h1>
+            <section class="account-section">
+                <div class="account-info">
+                    <h2>Informace o účtu</h2>
+                    <div class="user-profile">
+                        <div class="profile-avatar">
+                            <img
+                                src="images/avatar-placeholder.png"
+                                alt="Profilový obrázek"
+                                id="profileImage"
+                            />
+                        </div>
+                        <div class="profile-details">
+                            <p>
+                                <strong>Uživatelské jméno:</strong>
+                                <span id="usernameDisplay"></span>
+                            </p>
+                            <p>
+                                <strong>E-mail:</strong>
+                                <span id="emailDisplay"></span>
+                            </p>
+                            <p>
+                                <strong>Datum registrace:</strong>
+                                <span id="registrationDateDisplay"></span>
+                            </p>
+                            <p>
+                                <strong>Status účtu:</strong>
+                                <span
+                                    id="statusDisplay"
+                                    class="status-active"
+                                ></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="account-activity">
+                    <h2>Aktivita účtu</h2>
+                    <div class="activity-list">
+                        <!-- Zde budou dynamicky vkládány aktivity z JSON souboru nebo ukázkové hodnoty -->
+                    </div>
+                </div>
+                <p>
+                    Pro změnu informací kontaktujte vývojáře
+                    <a
+                        href="mailto:henematobik213@duck.com?subject=Změna informací k účtu"
+                        >zde</a
+                    >. Do obsahu vložte důvod a důkaz, že je to Váš účet. Pokud
+                    bude vyřízeno, budete informováni e-mailem zpět. Změny by se
+                    měly projevit po dalším načtení stránky od času, kdy Vám
+                    vývojář poslal e-mail.
+                </p>
+                <button class="btn-danger" id="logout">Odhlásit se</button>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <a href="about.html"
+                    ><img
+                        src="https://tobikovo.caloris.cz/images/white-logo.png"
+                        alt="Tobikovo Logo"
+                        width="100px"
+                /></a>
+            </div>
+        </footer>
+
+        <script src="account.js"></script>
+    </body>
+</html>
