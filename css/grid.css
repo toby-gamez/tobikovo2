@@ -10,43 +10,41 @@
     margin: 0;
 }
 
-@media screen and (min-width: 1700px) {
+@media screen and (min-width: 1576px) {
     .grid-predmety {
         grid-template-columns: repeat(6, 1fr);
     }
 }
 
-
-@media screen and (max-width: 1699px) and (min-width: 1325px) {
+@media screen and (max-width: 1699px) and (min-width: 1576px) {
     .grid-predmety {
         grid-template-columns: repeat(5, 1fr);
     }
 }
 
-@media screen and (max-width: 1100px) and (min-width: 1101px) {
+@media screen and (max-width: 1101px) and (min-width: 1101px) {
     .grid-predmety {
         grid-template-columns: repeat(4, 1fr);
     }
 }
 
-@media screen and (max-width: 1100px) and (min-width: 900px) {
+@media screen and (max-width: 1024px) and (min-width: 1024px) {
     .grid-predmety {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media screen and (max-width: 899px) and (min-width: 690px) {
+@media screen and (max-width: 690px) and (min-width: 690px) {
     .grid-predmety {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media screen and (max-width: 689px) and (min-width: 600px) {
+@media screen and (max-width: 600px) and (min-width: 600px) {
     .grid-predmety {
         grid-template-columns: repeat(1, 1fr);
     }
 }
-
 
 .grid-item-pred {
     width: 180px;
@@ -59,10 +57,11 @@
     border-radius: 10%;
     /* Zaoblení rohů */
     /* Rezervace místa pro rámeček */
-    transition: transform 0.2s ease, border 0.2s ease;
+    transition:
+        transform 0.2s ease,
+        border 0.2s ease;
     overflow: hidden;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-
 }
 
 .grid-item-pred a {
@@ -103,7 +102,6 @@
     /* Velikost textu */
     text-align: center;
     font-size: 1.3rem;
-
 }
 
 @media screen and (max-width: 600px) {
@@ -120,10 +118,6 @@
     }
 }
 
-
-
-
-
 /* gaga */
 .grid {
     list-style: none;
@@ -133,6 +127,7 @@
     border: 1px solid #fb8241;
     overflow: hidden;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
 }
 
 .grid-item {
@@ -146,7 +141,7 @@
 
 .grid-item a {
     display: block;
-    width: 100%;
+    width: 500px;
     padding: 15px;
     background-color: transparent;
     text-align: left;
@@ -159,6 +154,7 @@
     background-color: #ff7340;
     /* Změna barvy při najetí */
     border-radius: 0;
+    width: 100%;
 }
 
 .grid-item h3::first-letter {
@@ -168,7 +164,6 @@
 .grid-item:last-child {
     border-bottom: none;
 }
-
 
 .grid a {
     text-decoration: none;
@@ -190,14 +185,19 @@
     .grid-item {
         width: 300px;
     }
-
+    .grid-item {
+        width: 300px;
+    }
+    .grid {
+        width: 300px;
+    }
     .grid h3 {
         font-size: 18px;
     }
 }
 
-/* 
-for small phones xd: width: 300px; 
+/*
+for small phones xd: width: 300px;
 for more than 1080px: width: 500px;
 for more than 1440px: width: 700px;
 */
