@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Google Consent Mode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
+        </script>
+
+        <!-- Google Analytics (does not load automatically) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+        ></script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-Q7DH4RTXBC");
+                console.log("Google Analytics loaded.");
+            }
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Privacy Policy - Tobikovo</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="icon" href="images/favicon.png" />
+    </head>
+
+    <body>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
+        </div>
+        <nav id="myNavbar"></nav>
+        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+
+        <!-- Page Content -->
+        <main>
+            <section>
+                <h1 class="verybig">Privacy Policy</h1>
+                <div style="text-align: left">
+                    <p>
+                        <em
+                            >*česká verze:
+                            <a href="privacy-policy-cs.html">zde</a></em
+                        >
+                    </p>
+                    <p>
+                        On this page, you will find information about how we
+                        process and protect your personal data in accordance
+                        with applicable laws, including GDPR regulations.
+                    </p>
+                    <h2>1. Data Controller</h2>
+                    <p>Website Administrator: Tobias Heneman</p>
+                    <p>
+                        Contact by email:
+                        <a
+                            href="mailto:henematobik213@gmail.com?subject=Privacy Policy"
+                            >here</a
+                        >
+                    </p>
+                    <h2>2. What Data We Process</h2>
+                    <p>
+                        On our website, we
+                        <strong>do not collect any personal data</strong> that
+                        you would actively provide to us (for example through a
+                        form).
+                    </p>
+                    <p>
+                        However, the following data may be processed
+                        automatically:
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Google Analytics</strong> – anonymized
+                            traffic monitoring (IP address is anonymized, we
+                            don't track specific users)
+                        </li>
+                        <li>
+                            <strong>Cookies</strong> – only in connection with
+                            traffic measurement (see Cookie banner)
+                        </li>
+                        <li>
+                            <strong>LocalStorage</strong> – used only for
+                            website functionality, we don't store personal data
+                            or share it with anyone
+                        </li>
+                    </ul>
+                    <h2>3. How We Use Data</h2>
+                    <p>Data is used only for:</p>
+                    <ul>
+                        <li>
+                            statistical evaluation of website traffic (Google
+                            Analytics)
+                        </li>
+                        <li>ensuring website functionality</li>
+                    </ul>
+                    <p>
+                        We
+                        <strong
+                            >do not share your data with third parties</strong
+                        >
+                        (except for the use of Google Analytics).
+                    </p>
+                    <h2>4. Google Analytics</h2>
+                    <p>
+                        We use Google Analytics service from Google LLC, which
+                        helps us monitor website traffic. The service works with
+                        cookies and anonymized IP addresses.
+                    </p>
+                    <p>
+                        More about Google's data processing:
+                        <a href="https://policies.google.com/privacy">here</a>
+                    </p>
+                    <h2>5. Cookies and LocalStorage</h2>
+                    <p>
+                        During your first visit to the website, we inform you
+                        about the use of cookies through a cookie banner. There
+                        you can agree or disagree with cookies. LocalStorage is
+                        used exclusively for technical purposes of the website
+                        and contains no personal data.<button
+                            id="removeConsentBtn"
+                        >
+                            Remove consent and delete cookie data
+                        </button>
+                    </p>
+                    <h2>6. Your Rights</h2>
+                    <p>You have the right to:</p>
+                    <ul>
+                        <li>
+                            request information about personal data processing
+                        </li>
+                        <li>
+                            request deletion of data concerning you (if any were
+                            recorded)
+                        </li>
+                        <li>
+                            file a complaint with the Data Protection Authority
+                        </li>
+                    </ul>
+                    <h2>7. Final Provisions</h2>
+                    <p>
+                        These policies are valid from March 24, 2025, and we may
+                        update them from time to time.
+                    </p>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content"></div>
+        </footer>
+        <!-- JSs -->
+        <script src="javastripts/nav.js"></script>
+    </body>
+</html>

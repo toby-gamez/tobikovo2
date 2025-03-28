@@ -1,35 +1,25 @@
 footer {
-    background-color: #ffad8f;
+    background-color: transparent;
     color: white;
     padding: 20px 0;
     text-align: center;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .footer-content {
     text-decoration: none;
+    transition: all 0.3s ease;
+    margin-left: 18rem;
+    height: 50px;
+    display: flex;
     border-radius: 10px;
     transition: all 0.3s ease;
-    width: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 7px;
-    padding-right: 7px;
-    padding-top: 3px;
-    padding-bottom: 0;
-}
-
-.footer-content:hover {
-    background-color: #ff9c66;
-    transform: scale(1.05);
-}
-
-.footer-content:active {
-    transform: scale(0.95);
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 @media only screen and (max-width: 600px) {
-
     .footer-content {
         margin-left: auto;
         margin-right: auto;

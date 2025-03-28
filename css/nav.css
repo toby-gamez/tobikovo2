@@ -41,6 +41,9 @@
 nav {
     position: fixed;
 }
+.nav {
+    padding: 0;
+}
 
 #MyNavBar .nav-link {
     color: #160703;
@@ -48,7 +51,7 @@ nav {
     text-align: center;
     transition: all 0.3s ease;
     text-decoration: none;
-    width: 170px;
+    width: 250px;
     border-radius: 10px;
 }
 
@@ -56,6 +59,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     gap: 0.5rem;
 }
 
@@ -76,7 +82,6 @@ nav {
 #MyNavBar .nav-link:active {
     transform: scale(0.95);
 }
-
 
 .navbar-toggler:hover {
     border: none;
@@ -145,7 +150,9 @@ nav {
 .mobile-menu.show {
     right: 0;
 }
-
+.nav-item {
+    text-align: center;
+}
 .close-menu {
     position: absolute;
     top: 1rem;
@@ -159,8 +166,8 @@ nav {
 }
 
 .navbar-toggler {
-    padding: .25rem .75rem;
-    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 0.25rem 0.75rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
@@ -215,7 +222,6 @@ nav {
     color: #220b00;
 }
 
-
 .switch {
     position: relative;
     display: inline-block;
@@ -237,7 +243,7 @@ nav {
     right: 0;
     bottom: 0;
     background-color: #ffcab7;
-    transition: .4s;
+    transition: 0.4s;
     border-radius: 34px;
 }
 
@@ -249,19 +255,17 @@ nav {
     left: 4px;
     bottom: 4px;
     background-color: white;
-    transition: .4s;
+    transition: 0.4s;
     border-radius: 50%;
 }
 
-input:checked+.slider {
+input:checked + .slider {
     background-color: #942700;
 }
 
-input:checked+.slider:before {
+input:checked + .slider:before {
     transform: translateX(14px);
 }
-
-
 
 #MyNavBar .nav-text {
     color: #160703;

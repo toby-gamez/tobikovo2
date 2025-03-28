@@ -517,7 +517,7 @@
   {
     "title": "Hudební historie",
     "url": "hv-historie.html",
-    "content": "První hudební projevy člověka, Řecko, Řím, Středověk, Orfeus, Apollón, Dionýsos, Seikelova píseň, papež Gregor (Řehoř I. Veliký), Gregoriánský chorál, Trubadúři, Trouvéři, Minnesängři, renesance, Giovanni da Palestrina, Orlando di Lasso, opera, Claudio Monteverdi, Jacopo Peri, dějství, akt, předehra, zpěv"
+    "content": "První hudební projevy člověka, Řecko, Řím, Středověk, Orfeus, Apollón, Dionýsos, Seikelova píseň, papež Gregor (Řehoř I. Veliký), Gregoriánský chorál, Trubadúři, Trouvéři, Minnesängři, renesance, Giovanni da Palestrina, Orlando di Lasso, opera, Claudio Monteverdi, Jacopo Peri, dějství, akt, předehra, zpěv, Georg, Friedrich Händel, Mesiáš, Hudba k ohňostroji"
   },
   {
     "title": "Jména not",
@@ -870,14 +870,9 @@
     "content": ""
   },
   {
-    "title": "Vytýkání",
-    "url": "m-vytykani.html",
-    "content": "rozklad mnohočlenu na součin"
-  },
-  {
-    "title": "Rozkladová vzorce",
-    "url": "m-rozkladove-vzorce.html",
-    "content": "rozklad mnohočlenu na součin"
+    "title": "Rozklad mnohočlenu na součin",
+    "url": "m-rozklad-soucin.html",
+    "content": "vytýkání, rozkladové vrorce"
   },
   {
     "title": "Úhly",
@@ -1127,7 +1122,7 @@
   {
     "title": "Změna skupenství",
     "url": "f-zmena-skupenstvi.html",
-    "content": "sublimace, desublimace, tání, tuhnutí, vypařování, zkapalnění"
+    "content": "sublimace, desublimace, tání, tuhnutí, vypařování, zkapalnění, var"
   },
   {
     "title": "Trávící soustava",
@@ -1142,7 +1137,7 @@
   {
     "title": "Chemické výpočty",
     "url": "ch-vypocty.html",
-    "content": "mol, molarita, molalita, molární hmotnost, molární objem, molární tepelná kapacita, molární entalpie, molární entropie, molární entropie, molární entalpie, molární objem"
+    "content": "mol, molarita, molalita, molární hmotnost, molární objem, molární tepelná kapacita, molární entalpie, molární entropie, molární entropie, molární entalpie, molární objem, látková koncentrace, mol, litr, "
   },
   {
     "title": "Romantismus",
@@ -1215,8 +1210,8 @@
     "content": "počet obyvatel, porodnost, natalita, mortalita, úmrtnost, sčítání lidu"
   },
   {
-    "title": "x",
-    "url": ".html",
+    "title": "Lineární rovnice",
+    "url": "m-linearni-rovnice.html",
     "content": ""
   },
   {

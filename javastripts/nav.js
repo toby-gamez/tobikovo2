@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <a class="nav-link navHu" href="hudebni-vychova.html">
                     <div class="nav-link-content">
                         <i class="bi bi-music-note"></i>
-                        <span>Hudba</span>
+                        <span>Hudební výchova</span>
                     </div>
                 </a>
             </li>
@@ -201,7 +201,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <a class="nav-link navHu" href="hudebni-vychova.html">
                         <div class="nav-link-content">
                             <i class="bi bi-music-note"></i>
-                            <span>Hudba</span>
+                            <span>Hudební výchova</span>
                         </div>
                     </a>
                 </li>
@@ -373,7 +373,19 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   initDarkMode();
 });
+document.addEventListener("DOMContentLoaded", function () {
+  var footers = document.querySelectorAll(".footer-content");
 
+  var footerContent = `
+    <p>© 2025, Všechna práva vyhrazena</p>
+    <a href="privacy-policy-cs.html">Zásady ochrany osobních údajů</a>
+    <a href="about.html">O mně</a>
+  `;
+
+  footers.forEach(function (footer) {
+    footer.innerHTML = footerContent;
+  });
+});
 // bar pro loading
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -747,3 +759,11 @@ window.onload = function () {
     document.getElementById("cookie-consent").style.display = "flex";
   }
 };
+
+document
+  .getElementById("removeConsentBtn")
+  .addEventListener("click", function () {
+    localStorage.removeItem("cookieConsent"); // Vymaže pouze položku cookieConsent
+    alert("Váš souhlas byl odebrán a data cookies byla vymazána.");
+    location.reload();
+  });
