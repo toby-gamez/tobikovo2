@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     </div>
                 </a>
             </li>
-            <div class="version-info">25w12a</div>
+            <div class="version-info">25w13a</div>
 
            <li class="nav-item" style="padding-top: 3rem">
                 <a class="nav-link" href="#">
@@ -289,7 +289,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </li>
             </ul>
         </div>
-        <div class="version-info">25w12a</div>
+        <div class="version-info">25w13a</div>
     </div>
 
         <div id="searchModal" class="modal">
@@ -322,7 +322,7 @@ document.addEventListener("DOMContentLoaded", function () {
       body.classList.add("dark-mode");
       document
         .querySelectorAll(
-          "footer, p, h2, ul, li, .grid-item, .opinion-meta, div, section, .verybig, .opinion-card, #cookie-consent, .search-snippet, .key-icon, button, #MyNavBar, h5, .modal-content, #results, #results div, .scrollable-menu, .nav-text, .underlined, .version-info, #search, table, th, td, textarea, .opinion-input, .nav-link, h3, h4, img, video, hr, a, .button-container, .button-container a, .footer-content, .navImg, .Mcard, .Minfo, .Mnadpis, .mobile-header, .loading-bar, .mobile-menu",
+          "footer, p, h2, ul, li, .grid-item, .opinion-meta, h1, div, section, .verybig, .opinion-card, #cookie-consent, .search-snippet, .key-icon, button, #MyNavBar, h5, .modal-content, #results, #results div, .scrollable-menu, .nav-text, .underlined, .version-info, #search, table, th, td, textarea, .opinion-input, .nav-link, h3, h4, img, video, hr, a, .button-container, .button-container a, .footer-content, .navImg, .Mcard, .Minfo, .Mnadpis, .mobile-header, .loading-bar, .mobile-menu",
         )
         .forEach((element) => {
           element.classList.add("dark-mode");
@@ -335,7 +335,7 @@ document.addEventListener("DOMContentLoaded", function () {
       body.classList.remove("dark-mode");
       document
         .querySelectorAll(
-          "footer, p, h2, ul, li, .grid-item, .search-snippet, div, .verybig, section, .opinion-meta, #cookie-consent, .opinion-card, .key-icon, button, #MyNavBar, h5, .modal-content, #results, #results div, .scrollable-menu, .nav-text, .underlined, .version-info, #search, textarea, .opinion-input, .nav-link, th, td, h3, h4, hr, a, img, video, .button-container, .button-container a, .footer-content, .navImg, .Mcard, .Minfo, .Mnadpis, .mobile-header, .loading-bar, .mobile-menu",
+          "footer, p, h2, ul, li, .grid-item, .search-snippet, h1, div, .verybig, section, .opinion-meta, #cookie-consent, .opinion-card, .key-icon, button, #MyNavBar, h5, .modal-content, #results, #results div, .scrollable-menu, .nav-text, .underlined, .version-info, #search, textarea, .opinion-input, .nav-link, th, td, h3, h4, hr, a, img, video, .button-container, .button-container a, .footer-content, .navImg, .Mcard, .Minfo, .Mnadpis, .mobile-header, .loading-bar, .mobile-menu",
         )
         .forEach((element) => {
           element.classList.remove("dark-mode");

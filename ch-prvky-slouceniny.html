@@ -1,104 +1,173 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
+    <head>
+        <!-- Google Consent Mode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-<head>
-    <!-- Google Consent Mode -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
+        </script>
 
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied'
-        });
-        console.log("Google Consent Mode initialized with default: denied");
-    </script>
+        <!-- Google Analytics (nenačte se automaticky) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+        ></script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-Q7DH4RTXBC");
+                console.log("Google Analytics loaded.");
+            }
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Prvky a sloučeniny - Chemie - Tobikovo</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="icon" href="images/favicon.png" />
+    </head>
 
-    <!-- Google Analytics (nenačte se automaticky) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
-    <script>
-        function loadGoogleAnalytics() {
-            console.log("Loading Google Analytics...");
-            gtag('js', new Date());
-            gtag('config', 'G-Q7DH4RTXBC');
-            console.log("Google Analytics loaded.");
-        }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prvky a sloučeniny - Chemie - Tobikovo</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="icon" href="images/favicon.png">
-</head>
-
-<body>
-    <div class="loading-bar-container">
-        <div class="loading-bar"></div>
-    </div>
-
-    <nav id="myNavbar"></nav>
-    <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-    <!-- Obsah stránky -->
-    <main>
-
-        <section>
-            <h1 class="verybig">Prvky a sloučeniny</h1>
-            <div style="text-align: left;">
-                <h2>Prvky</h2>
-                <p>Prvek je látka tvořená z atomů (sloučených i nesloučených) se stejným počtem protonů. Dosud je známo
-                    přes 100 prvků. Látka je tvořena atomy se stejným protonovým číslem (počet neutronů nezáleží), tyto
-                    atomy mohou být sloučené (O₂) v molekuly nebo nesloučené (He).</p>
-                <h3>Periodická soustava prvků</h3>
-                <div class="blog-image">
-                    <a href="images/peri-sous-prv.svg"><img style="background-color: white;"
-                            src="images/peri-sous-prv.svg" width="300rem" alt=""></a>
-                    <p>
-                        Autor: <a href="//commons.wikimedia.org/wiki/User:Double_sharp"
-                            title="User:Double sharp">User:Double
-                            sharp</a> by
-                        <a href="//commons.wikimedia.org/wiki/User:Offnfopt" title="User:Offnfopt">User:Offnfopt</a> –
-                        <span class="int-own-work" lang="cs">Vlastní dílo</span>, <a
-                            href="https://creativecommons.org/licenses/by-sa/4.0"
-                            title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a
-                            href="https://commons.wikimedia.org/w/index.php?curid=98955505">Odkaz</a>
-                    </p>
-                </div>
-                <p>Periodická soustava prvků je tabulka, ve které jsou prvky uspořádány podle vzrůstajícího protonového
-                    čísla (Z). Prvky jsou uspořádány do řad a sloupců. Řady se nazývají periody a sloupce skupiny. Prvky
-                    ve
-                    stejné skupině mají podobné vlastnosti.</p>
-                <p>každý prvek má</p>
-                <ul>
-                    <li>český název - kyslík, vodík, lithium</li>
-                    <li>mezinárodní (většinou latinský) název - oxygenium, ferrum, helium</li>
-                    <li>značku - O, Fe, He</li>
-                </ul>
-                <h2>Sloučeniny</h2>
-                <p>Sloučenina je látka tvořená stejnými <a href="ch-chemicka-vazba.html">molekulami</a>, které obsahují
-                    atomy různých prvků. Sloučeniny zapisujeme chemickým vzorcem. Chemický vzorec je zápis, který udává
-                    druh a počet sloučených atomů v molekule. Počet atomů se zapisuje dolním indexem (O₂).</p>
-                <h3>Dělení</h3>
-                <ul>
-                    <li>podle původu - anorganické (sůl kuchyňská, oxid uhličitý...), organické (cukry, tuky, líh...)
-                    </li>
-                    <li>podle počtu prvků - dvouprvkové (H₂O), tříprvkové (CaCO₃)...</li>
-                </ul>
-                <button onclick="window.history.back()"><i class="bi bi-arrow-left"></i></button>
-            </div>
-        </section>
-
-    </main>
-    <!-- Patička -->
-    <footer>
-        <div class="footer-content">
-            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+    <body>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
         </div>
-    </footer>
-    <!-- JSs -->
-    <script src="javastripts/nav.js"></script>
-</body>
 
+        <nav id="myNavbar"></nav>
+        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+
+        <!-- Obsah stránky -->
+        <main>
+            <section>
+                <h1 class="verybig">Prvky a sloučeniny</h1>
+                <div style="text-align: left">
+                    <h2>Prvky</h2>
+                    <p>
+                        Prvek je
+                        <strong
+                            >látka tvořená z atomů (sloučených i nesloučených)
+                            se stejným počtem protonů</strong
+                        >. Dosud je známo přes 100 prvků. Látka je tvořena
+                        <strong>atomy se stejným protonovým číslem</strong>
+                        (počet neutronů nezáleží), tyto atomy mohou být sloučené
+                        (O₂) v molekuly nebo nesloučené (He).
+                    </p>
+                    <h3>Periodická soustava prvků</h3>
+                    <div class="blog-image">
+                        <a href="images/peri-sous-prv.svg"
+                            ><img
+                                style="background-color: white"
+                                src="images/peri-sous-prv.svg"
+                                width="300rem"
+                                alt=""
+                        /></a>
+                        <p>
+                            Autor:
+                            <a
+                                href="//commons.wikimedia.org/wiki/User:Double_sharp"
+                                title="User:Double sharp"
+                                >User:Double sharp</a
+                            >
+                            by
+                            <a
+                                href="//commons.wikimedia.org/wiki/User:Offnfopt"
+                                title="User:Offnfopt"
+                                >User:Offnfopt</a
+                            >
+                            –
+                            <span class="int-own-work" lang="cs"
+                                >Vlastní dílo</span
+                            >,
+                            <a
+                                href="https://creativecommons.org/licenses/by-sa/4.0"
+                                title="Creative Commons Attribution-Share Alike 4.0"
+                                >CC BY-SA 4.0</a
+                            >,
+                            <a
+                                href="https://commons.wikimedia.org/w/index.php?curid=98955505"
+                                >Odkaz</a
+                            >
+                        </p>
+                    </div>
+                    <p>
+                        Periodická soustava prvků je tabulka, ve které jsou
+                        <strong
+                            >prvky uspořádány podle vzrůstajícího protonového
+                            čísla (Z)</strong
+                        >. Prvky jsou uspořádány do řad a sloupců.
+                        <strong
+                            >Řady se nazývají periody a sloupce skupiny</strong
+                        >.
+                        <strong
+                            >Prvky ve stejné skupině mají podobné
+                            vlastnosti</strong
+                        >.
+                    </p>
+                    <p>každý prvek má</p>
+                    <ul>
+                        <li>
+                            <strong>český název</strong> - kyslík, vodík,
+                            lithium
+                        </li>
+                        <li>
+                            <strong
+                                >mezinárodní (většinou latinský) název</strong
+                            >
+                            - oxygenium, ferrum, helium
+                        </li>
+                        <li><strong>značku</strong> - O, Fe, He</li>
+                    </ul>
+                    <h2>Sloučeniny</h2>
+                    <p>
+                        <strong
+                            >Sloučenina je látka tvořená stejnými
+                            <a href="ch-chemicka-vazba.html">molekulami</a>,
+                            které obsahují atomy různých prvků</strong
+                        >. Sloučeniny zapisujeme chemickým vzorcem.
+                        <strong
+                            >Chemický vzorec je zápis, který udává druh a počet
+                            sloučených atomů v molekule</strong
+                        >. Počet atomů se zapisuje dolním indexem (O₂).
+                    </p>
+                    <h3>Dělení</h3>
+                    <ul>
+                        <li>
+                            <strong>podle původu</strong> - anorganické (sůl
+                            kuchyňská, oxid uhličitý...), organické (cukry,
+                            tuky, líh...)
+                        </li>
+                        <li>
+                            <strong>podle počtu prvků</strong> - dvouprvkové
+                            (H₂O), tříprvkové (CaCO₃)...
+                        </li>
+                    </ul>
+                    <button onclick="window.history.back()">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <!-- Patička -->
+        <footer>
+            <div class="footer-content">
+                <a href="about.html"
+                    ><img
+                        src="images/white-logo.png"
+                        alt="Tobikovo Logo"
+                        width="100px"
+                /></a>
+            </div>
+        </footer>
+        <!-- JSs -->
+        <script src="javastripts/nav.js"></script>
+    </body>
 </html>

@@ -1,137 +1,189 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
+    <head>
+        <!-- Google Consent Mode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-<head>
-    <!-- Google Consent Mode -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
+        </script>
 
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied'
-        });
-        console.log("Google Consent Mode initialized with default: denied");
-    </script>
+        <!-- Google Analytics (nenačte se automaticky) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+        ></script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-Q7DH4RTXBC");
+                console.log("Google Analytics loaded.");
+            }
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Chemická reakce - Chemie - Tobikovo</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="icon" href="images/favicon.png" />
+    </head>
 
-    <!-- Google Analytics (nenačte se automaticky) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
-    <script>
-        function loadGoogleAnalytics() {
-            console.log("Loading Google Analytics...");
-            gtag('js', new Date());
-            gtag('config', 'G-Q7DH4RTXBC');
-            console.log("Google Analytics loaded.");
-        }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chemická reakce - Chemie - Tobikovo</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="icon" href="images/favicon.png">
-</head>
-
-<body>
-    <div class="loading-bar-container">
-        <div class="loading-bar"></div>
-    </div>
-
-    <nav id="myNavbar"></nav>
-    <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-    <!-- Obsah stránky -->
-    <main>
-
-        <section>
-            <h1 class="verybig">Chemická reakce</h1>
-            <div style="text-align: left;">
-                <h2>Informace</h2>
-                <p>Chemická reakce je proces, při kterém se látky mění na jiné látky. Při chemické reakci se látky
-                    rozkládají
-                    na
-                    jednodušší látky, které se následně spojují do nových látek. Při chemické reakci se mění vazby mezi
-                    atomy
-                    a molekulami. Chemické reakce mohou probíhat různými způsoby, například tepelně, světelně nebo
-                    elektrochemicky.</p>
-                <p>Výchozí látky (reaktanty) jsou v levé straně rovnice a vznikající látky (produkty) jsou na straně
-                    druhé. Šipku čteme jako „vzniká“. Scheriometrické koefincienty jsou čísla, která udávají kolikrát je
-                    atoma/molekula zastoupena.
-                    Příklad chemické rovnice:</p>
-                <p>2Na + 2HCl → 2NaCl + H₂</p>
-                <p><u>Zákon o zachování hmotnosti</u> je základní princip chemie, který říká, že během chemické reakce
-                    se
-                    celková hmotnost reaktantů rovná celkové hmotnosti produktů. To znamená, že hmotnost látek před
-                    reakcí je stejná jako hmotnost látek po reakci.</p>
-                <p><u>Zákon o zachování energie</u> je základní fyzikální princip, který říká, že energie nemůže být
-                    vytvořena
-                    ani zničena, ale může být pouze přeměněna z jedné formy na jinou. To znamená, že celková energie
-                    izolovaného systému zůstává konstantní.</p>
-                <h2>Vyčíslení chemické rovnice</h2>
-                <ul>
-                    <li>na levé straně musí být stejný počet prvků jako na pravé</li>
-                    <li>přidávají se <u>jen</u> stechiometrické koeficienty</li>
-                    <li>většinou se vyplatí postupovat od kyslíku</li>
-                </ul>
-                <h3>Postup vyčíslení</h3>
-                <ol>
-                    <li>Zkontrolovat platnost</li>
-                    <p>Na + HCl → NaCl + H₂</p>
-                    <p>Nesedí, ve vzniku přebývajá vodík, budu zkoušet s <u>koeficienty</u>.</p>
-                    <li>Zkoušení</li>
-                    <p>Na + 2HCl → NaCl + H₂</p>
-                    <p>Přídal jsem jeden vodík (a tím i chlor), vychází mi počet vodíku, ale chlor nevychází, jeden
-                        chybí ve vzniku.</p>
-                    <li>Zkoušení 2</li>
-                    <p>Na + 2HCl → 2NaCl + H₂</p>
-                    <p>Teď mi vychází vodíky i chlory, ale ne sodíky.</p>
-                    <li>Zkoušení 3</li>
-                    <p>2Na + 2HCl → 2NaCl + H₂</p>
-                    <p>Vychází mi mi 2 sodíky, 2 vodíky a 2 chlory, asi je to hotové</p>
-                    <li>Kontrola</li>
-                    <p>2Na + 2HCl → 2NaCl + H₂</p>
-                    <p>Ano, sedí to</p>
-                    <li>Konec</li>
-                </ol>
-                <h2>Tepelný průběh chemické reakce</h2>
-                <p>typy reakcí</p>
-                <ul>
-                    <li>endotermická - spotřebovává se teplo</li>
-                    <li>exotermická - uvolňuje se teplo</li>
-                </ul>
-                <h2>Rychlost chemických reakcí</h2>
-                <p>Rychlost chemické reakce je míra, jakou se reakce odehrává. Rychlost chemické reakce závisí na
-                    několika
-                    faktorech, například na teplotě, koncentraci reaktantů, tlaku a katalyzátorech. Rychlost chemické
-                    reakce
-                    může být ovlivněna změnou teploty, koncentrace reaktantů nebo přidáním katalyzátoru.</p>
-                <p>chemická reakce je rychlejší při</p>
-                <ul>
-                    <li>větším obsahu povrchu</li>
-                    <li>vyšší teplotě</li>
-                    <li>vyšší koncentraci reaktantů</li>
-                    <li>přítomnosti katalyzátoru</li>
-                </ul>
-                <h2>Rozdělení chemických reakcí</h2>
-                <ul>
-                    <li>slučování (z více se stane méně)</li>
-                    <li>rozklad (z méně se stane více)</li>
-                    <li>nahrazování (výměna atomů)</li>
-                </ul>
-                <button onclick="window.history.back()"><i class="bi bi-arrow-left"></i></button>
-            </div>
-        </section>
-
-    </main>
-    <!-- Patička -->
-    <footer>
-        <div class="footer-content">
-            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+    <body>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
         </div>
-    </footer>
-    <!-- JSs -->
-    <script src="javastripts/nav.js"></script>
-</body>
 
+        <nav id="myNavbar"></nav>
+        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+
+        <!-- Obsah stránky -->
+        <main>
+            <section>
+                <h1 class="verybig">Chemická reakce</h1>
+                <div style="text-align: left">
+                    <h2>Informace</h2>
+                    <p>
+                        Chemická reakce je
+                        <strong
+                            >proces, při kterém se látky mění na jiné
+                            látky</strong
+                        >. Při chemické reakci se látky rozkládají na jednodušší
+                        látky, které se následně spojují do nových látek. Při
+                        chemické reakci se mění vazby mezi atomy a molekulami.
+                        Chemické reakce mohou probíhat různými způsoby,
+                        například tepelně, světelně nebo elektrochemicky.
+                    </p>
+                    <p>
+                        <strong>Výchozí látky (reaktanty)</strong> jsou v levé
+                        straně rovnice a
+                        <strong>vznikající látky (produkty)</strong> jsou na
+                        straně druhé. Šipku čteme jako „vzniká".
+                        <strong>Scheriometrické koefincienty</strong> jsou
+                        čísla, která udávají kolikrát je atoma/molekula
+                        zastoupena. Příklad chemické rovnice:
+                    </p>
+                    <p>2Na + 2HCl → 2NaCl + H₂</p>
+                    <p>
+                        <u>Zákon o zachování hmotnosti</u> je základní princip
+                        chemie, který říká, že
+                        <strong
+                            >během chemické reakce se celková hmotnost reaktantů
+                            rovná celkové hmotnosti produktů</strong
+                        >. To znamená, že hmotnost látek před reakcí je stejná
+                        jako hmotnost látek po reakci.
+                    </p>
+                    <p>
+                        <u>Zákon o zachování energie</u> je základní fyzikální
+                        princip, který říká, že
+                        <strong
+                            >energie nemůže být vytvořena ani zničena, ale může
+                            být pouze přeměněna z jedné formy na jinou</strong
+                        >. To znamená, že celková energie izolovaného systému
+                        zůstává konstantní.
+                    </p>
+                    <h2>Vyčíslení chemické rovnice</h2>
+                    <ul>
+                        <li>
+                            <strong
+                                >na levé straně musí být stejný počet prvků jako
+                                na pravé</strong
+                            >
+                        </li>
+                        <li>
+                            přidávají se <u>jen</u>
+                            <strong>stechiometrické koeficienty</strong>
+                        </li>
+                        <li>většinou se vyplatí postupovat od kyslíku</li>
+                    </ul>
+                    <h3>Postup vyčíslení</h3>
+                    <ol>
+                        <li>Zkontrolovat platnost</li>
+                        <p>Na + HCl → NaCl + H₂</p>
+                        <p>
+                            Nesedí, ve vzniku přebývajá vodík, budu zkoušet s
+                            <u>koeficienty</u>.
+                        </p>
+                        <li>Zkoušení</li>
+                        <p>Na + 2HCl → NaCl + H₂</p>
+                        <p>
+                            Přídal jsem jeden vodík (a tím i chlor), vychází mi
+                            počet vodíku, ale chlor nevychází, jeden chybí ve
+                            vzniku.
+                        </p>
+                        <li>Zkoušení 2</li>
+                        <p>Na + 2HCl → 2NaCl + H₂</p>
+                        <p>Teď mi vychází vodíky i chlory, ale ne sodíky.</p>
+                        <li>Zkoušení 3</li>
+                        <p>2Na + 2HCl → 2NaCl + H₂</p>
+                        <p>
+                            Vychází mi mi 2 sodíky, 2 vodíky a 2 chlory, asi je
+                            to hotové
+                        </p>
+                        <li>Kontrola</li>
+                        <p>2Na + 2HCl → 2NaCl + H₂</p>
+                        <p>Ano, sedí to</p>
+                        <li>Konec</li>
+                    </ol>
+                    <h2>Tepelný průběh chemické reakce</h2>
+                    <p>typy reakcí</p>
+                    <ul>
+                        <li>endotermická - spotřebovává se teplo</li>
+                        <li>exotermická - uvolňuje se teplo</li>
+                    </ul>
+                    <h2>Rychlost chemických reakcí</h2>
+                    <p>
+                        <strong>Rychlost chemické reakce</strong> je míra, jakou
+                        se reakce odehrává. Rychlost chemické reakce závisí na
+                        několika <strong>faktorech</strong>, například na
+                        <strong
+                            >teplotě, koncentraci reaktantů, tlaku a
+                            katalyzátorech</strong
+                        >. Rychlost chemické reakce může být ovlivněna
+                        <strong
+                            >změnou teploty, koncentrace reaktantů nebo přidáním
+                            katalyzátoru</strong
+                        >.
+                    </p>
+                    <p>chemická reakce je rychlejší při</p>
+                    <ul>
+                        <li>větším obsahu povrchu</li>
+                        <li>vyšší teplotě</li>
+                        <li>vyšší koncentraci reaktantů</li>
+                        <li>přítomnosti katalyzátoru</li>
+                    </ul>
+                    <h2>Rozdělení chemických reakcí</h2>
+                    <ul>
+                        <li>slučování (z více se stane méně)</li>
+                        <li>rozklad (z méně se stane více)</li>
+                        <li>nahrazování (výměna atomů)</li>
+                    </ul>
+                    <button onclick="window.history.back()">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <!-- Patička -->
+        <footer>
+            <div class="footer-content">
+                <a href="about.html"
+                    ><img
+                        src="images/white-logo.png"
+                        alt="Tobikovo Logo"
+                        width="100px"
+                /></a>
+            </div>
+        </footer>
+        <!-- JSs -->
+        <script src="javastripts/nav.js"></script>
+    </body>
 </html>

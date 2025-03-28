@@ -1,105 +1,119 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
+    <head>
+        <!-- Google Consent Mode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-<head>
-    <!-- Google Consent Mode -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
+        </script>
 
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied'
-        });
-        console.log("Google Consent Mode initialized with default: denied");
-    </script>
+        <!-- Google Analytics (nenačte se automaticky) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+        ></script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-Q7DH4RTXBC");
+                console.log("Google Analytics loaded.");
+            }
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vlastnosti látek - Chemie - Tobikovo</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="icon" href="images/favicon.png" />
+    </head>
 
-    <!-- Google Analytics (nenačte se automaticky) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
-    <script>
-        function loadGoogleAnalytics() {
-            console.log("Loading Google Analytics...");
-            gtag('js', new Date());
-            gtag('config', 'G-Q7DH4RTXBC');
-            console.log("Google Analytics loaded.");
-        }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vlastnosti látek - Chemie - Tobikovo</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="icon" href="images/favicon.png">
-</head>
-
-<body>
-    <div class="loading-bar-container">
-        <div class="loading-bar"></div>
-    </div>
-
-    <nav id="myNavbar"></nav>
-    <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-    <!-- Obsah stránky -->
-    <main>
-
-        <section>
-            <h1 class="verybig">Vlastnosti látek</h1>
-            <div style="text-align: left;">
-                <h2>Vlastnosti</h2>
-                <h3>Kvalitativní</h3>
-                <ul>
-                    <li>popisujeme a pozorujeme smysly</li>
-                </ul>
-                <h3>Kvantitativní</h3>
-                <ul>
-                    <li>umíme změřit</li>
-                </ul>
-                <h2>Katalyzátory</h2>
-                <p><em>*více o nich <a href="ch-reakce.html">zde</a></em></p>
-                <p>Katalyzátory ovlivňují reakci, jsou částí chemické reakce, ale po reakci zůstávají beze změny.</p>
-                <h2>Zjišťování vlastností</h2>
-                <ul>
-                    <li>pozorováním</li>
-                    <ul>
-                        <li>zrakem</li>
-                        <li>čichem</li>
-                        <li>hmatem</li>
-                        <li>sluchem</li>
-                        <li>ne chutí</li>
-                    </ul>
-                    <li>měřením</li>
-                    <ul>
-                        <li>kvantitativní měření (bod varu, hustota)</li>
-                    </ul>
-                    <li>pokusy</li>
-                    <ul>
-                        <li>musí se dodržovat přesný postup bezpečnosti</li>
-                    </ul>
-                </ul>
-                <h2>Nebezpečné látky</h2>
-                <ul>
-                    <li>vážná poranění nebo smrt</li>
-                    <li>látky se dodávají s bezpečnostním listem</li>
-                    <ul>
-                        <li>h věty - rizika</li>
-                        <li>p věty - doporučení</li>
-                    </ul>
-                </ul>
-                <button onclick="window.history.back()"><i class="bi bi-arrow-left"></i></button>
-            </div>
-        </section>
-
-    </main>
-    <!-- Patička -->
-    <footer>
-        <div class="footer-content">
-            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+    <body>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
         </div>
-    </footer>
-    <!-- JSs -->
-    <script src="javastripts/nav.js"></script>
-</body>
 
+        <nav id="myNavbar"></nav>
+        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+
+        <!-- Obsah stránky -->
+        <main>
+            <section>
+                <h1 class="verybig">Vlastnosti látek</h1>
+                <div style="text-align: left">
+                    <h2>Vlastnosti</h2>
+                    <h3>Kvalitativní</h3>
+                    <ul>
+                        <li>popisujeme a pozorujeme <strong>smysly</strong></li>
+                    </ul>
+                    <h3>Kvantitativní</h3>
+                    <ul>
+                        <li>umíme <strong>změřit</strong></li>
+                    </ul>
+                    <h2>Katalyzátory</h2>
+                    <p>
+                        <em>*více o nich <a href="ch-reakce.html">zde</a></em>
+                    </p>
+                    <p>
+                        Katalyzátory <strong>ovlivňují reakci</strong>, jsou
+                        částí chemické reakce, ale po
+                        <strong>reakci zůstávají beze změny</strong>.
+                    </p>
+                    <h2>Zjišťování vlastností</h2>
+                    <ul>
+                        <li>pozorováním</li>
+                        <ul>
+                            <li>zrakem</li>
+                            <li>čichem</li>
+                            <li>hmatem</li>
+                            <li>sluchem</li>
+                            <li>ne chutí</li>
+                        </ul>
+                        <li>měřením</li>
+                        <ul>
+                            <li>kvantitativní měření (bod varu, hustota)</li>
+                        </ul>
+                        <li>pokusy</li>
+                        <ul>
+                            <li>musí se dodržovat přesný postup bezpečnosti</li>
+                        </ul>
+                    </ul>
+                    <h2>Nebezpečné látky</h2>
+                    <ul>
+                        <li>vážná <strong>poranění nebo smrt</strong></li>
+                        <li>látky se dodávají s bezpečnostním listem</li>
+                        <ul>
+                            <li>h věty - rizika</li>
+                            <li>p věty - doporučení</li>
+                        </ul>
+                    </ul>
+                    <button onclick="window.history.back()">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <!-- Patička -->
+        <footer>
+            <div class="footer-content">
+                <a href="about.html"
+                    ><img
+                        src="images/white-logo.png"
+                        alt="Tobikovo Logo"
+                        width="100px"
+                /></a>
+            </div>
+        </footer>
+        <!-- JSs -->
+        <script src="javastripts/nav.js"></script>
+    </body>
 </html>

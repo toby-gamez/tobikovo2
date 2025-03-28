@@ -845,11 +845,6 @@
     "content": ""
   },
   {
-    "title": "Pythagorova věta",
-    "url": "geo-pyth-veta.html",
-    "content": ""
-  },
-  {
     "title": "Rozvinutý zápis čísla v desítkové soustavě",
     "url": "m-roz-zap-cil-des-sou.html",
     "content": "4056, Exponenciální (vědecký) zápis"
@@ -912,7 +907,7 @@
   {
     "title": "Trojúhelníky",
     "url": "geo-trojuhelniky.html",
-    "content": "trojúhelník, rovnoramenný trojúhelník, pravoúhlý trojúhelník, pravoúhlý rovnoramenný trojúhelník"
+    "content": "trojúhelník, rovnoramenný trojúhelník, pravoúhlý trojúhelník, pravoúhlý rovnoramenný trojúhelník, pythagorova věta"
   },
   {
     "title": "Kruhy a kružnice",
@@ -957,7 +952,7 @@
   {
     "title": "Směsi",
     "url": "ch-smesi.html",
-    "content": "roztok, stejnorodá, různorodá"
+    "content": "roztok, stejnorodá, různorodá, hmotnostní zlomek"
   },
   {
     "title": "Složení látek",
