@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <div class="mobile-menu">
         <ul class="nav flex-column">
                       <li class="nav-item">
-                <a class="nav-link navHo" href="home.html">
+                <a class="nav-link navHo" href="index.html">
                     <div class="nav-link-content">
                         <i class="bi bi-house-door"></i>
                         <span>Domů</span>
@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     </div>
                 </a>
             </li>
-            <div class="version-info">25w13a</div>
+            <div class="version-info">Apríl v1</div>
 
            <li class="nav-item" style="padding-top: 3rem">
                 <a class="nav-link" href="#">
@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="scrollable-menu">
             <ul class="nav flex-column w-100">
                 <li class="nav-item">
-                    <a class="nav-link navHo" href="home.html">
+                    <a class="nav-link navHo" href="index.html">
                         <div class="nav-link-content">
                             <i class="bi bi-house-door"></i>
                             <span>Domů</span>
@@ -289,7 +289,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </li>
             </ul>
         </div>
-        <div class="version-info">25w13a</div>
+        <div class="version-info">Apríl v1</div>
     </div>
 
         <div id="searchModal" class="modal">
@@ -373,21 +373,150 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   initDarkMode();
 });
+
+// Mapovanie znakov s háčikmi na čísla
+const hackToNumber = {
+  ř: "5",
+  ť: "7",
+  č: "4",
+  š: "6",
+  ž: "9",
+  ď: "8",
+  ň: "3",
+  ě: "2",
+  Ř: "5",
+  Ť: "7",
+  Č: "4",
+  Š: "6",
+  Ž: "9",
+  Ď: "8",
+  Ň: "3",
+  Ě: "2",
+};
+
+// Funkcia na konverziu textu
+function makeCrazyText(text) {
+  let result = "";
+  for (let i = 0; i < text.length; i++) {
+    let char = text[i];
+
+    // Zameniť háčikové znaky za čísla
+    if (hackToNumber[char]) {
+      result += hackToNumber[char];
+    } else {
+      // Každé druhé písmeno veľké
+      if (i % 2 === 0) {
+        result += char.toUpperCase();
+      } else {
+        result += char.toLowerCase();
+      }
+    }
+  }
+  return result;
+}
+
+// Funkcia pre tlačidlo konvertovania
+function convertText() {
+  const inputText = document.getElementById("inputText").value;
+  const outputText = makeCrazyText(inputText);
+  document.getElementById("outputText").innerText = outputText;
+}
+
+// Automaticky konvertovať všetky texty v body pri načítaní
 document.addEventListener("DOMContentLoaded", function () {
-  var footers = document.querySelectorAll(".footer-content");
+  // Funkcia na spracovanie uzlu a jeho potomkov
+  function processNode(node) {
+    // Ak je to textový uzol, konvertujeme ho
+    if (node.nodeType === Node.TEXT_NODE) {
+      if (node.nodeValue.trim() !== "") {
+        node.nodeValue = makeCrazyText(node.nodeValue);
+      }
+      return;
+    }
 
-  var footerContent = `
-    <p>© 2025, Všechna práva vyhrazena</p>
-    <a href="privacy-policy-cs.html">Zásady ochrany osobních údajů</a>
-    <a href="about.html">O mně</a>
-  `;
+    // Ak je to element, spracujeme jeho deti (ak to nie je formulárový prvok)
+    if (node.nodeType === Node.ELEMENT_NODE) {
+      // Preskočíme script, style, input a textarea elementy
+      if (
+        node.tagName === "SCRIPT" ||
+        node.tagName === "STYLE" ||
+        node.tagName === "INPUT" ||
+        node.tagName === "TEXTAREA"
+      ) {
+        return;
+      }
 
-  footers.forEach(function (footer) {
-    footer.innerHTML = footerContent;
+      // Spracujeme všetky potomky
+      const childNodes = node.childNodes;
+      for (let i = 0; i < childNodes.length; i++) {
+        processNode(childNodes[i]);
+      }
+    }
+  }
+
+  // Spustíme spracovanie od body
+  processNode(document.body);
+
+  // Funkcia na zachovanie originálnych href atribútov v odkazoch
+  const preserveLinks = function () {
+    // Získame všetky odkazy na stránke
+    const links = document.getElementsByTagName("a");
+
+    // Zachováme originálny href pre každý odkaz
+    for (let i = 0; i < links.length; i++) {
+      const link = links[i];
+      // Ak link už má data-original-href, použijeme ho
+      if (!link.getAttribute("data-original-href")) {
+        const originalHref = link.getAttribute("href");
+        link.setAttribute("data-original-href", originalHref);
+      }
+
+      // Obnovíme pôvodný href
+      link.setAttribute("href", link.getAttribute("data-original-href"));
+    }
+  };
+
+  // Aplikujeme zachovanie odkazov pri načítaní a potom pravidelne
+  preserveLinks();
+  setInterval(preserveLinks, 1000); // pre istotu kontrolujeme každú sekundu
+
+  // Hookujeme na zmeny v DOM
+  const observer = new MutationObserver(function (mutations) {
+    mutations.forEach(function (mutation) {
+      if (mutation.type === "childList") {
+        mutation.addedNodes.forEach(function (node) {
+          if (node.nodeType === Node.ELEMENT_NODE) {
+            processNode(node);
+          }
+        });
+      }
+
+      // Text mohol byť tiež zmenený
+      if (mutation.type === "characterData") {
+        const node = mutation.target;
+        if (
+          node.nodeType === Node.TEXT_NODE &&
+          node.parentNode.tagName !== "SCRIPT" &&
+          node.parentNode.tagName !== "STYLE" &&
+          node.parentNode.tagName !== "INPUT" &&
+          node.parentNode.tagName !== "TEXTAREA"
+        ) {
+          node.nodeValue = makeCrazyText(node.nodeValue);
+        }
+      }
+    });
+
+    // Vždy obnovíme originálne href
+    preserveLinks();
+  });
+
+  // Spustíme observer pre celý dokument
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true,
+    characterData: true,
   });
 });
-// bar pro loading
-
 document.addEventListener("DOMContentLoaded", function () {
   var loadingBar = document.querySelector(".loading-bar");
 
