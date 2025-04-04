@@ -1,0 +1,40 @@
+table {
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    background-color: #ffad8f;
+    text-align: center;
+}
+
+th {
+    background-color: #ff946c;
+}
+
+
+table.dark-mode {
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+
+
+th.dark-mode,
+td.dark-mode {
+    background-color: #942700;
+}
+
+th.dark-mode {
+    background-color: #701e00;
+}

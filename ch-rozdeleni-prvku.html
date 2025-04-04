@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="cs">
+    <head>
+        <!-- Google Consent Mode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
+        </script>
+
+        <!-- Google Analytics (nenačte se automaticky) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+        ></script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-Q7DH4RTXBC");
+                console.log("Google Analytics loaded.");
+            }
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rozdělení prvků - Chemie - Tobikovo</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="icon" href="images/favicon.png" />
+    </head>
+
+    <body>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
+        </div>
+
+        <nav id="myNavbar"></nav>
+        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+
+        <!-- Obsah stránky -->
+        <main>
+            <section>
+                <h1 class="verybig">Rozdělení prvků</h1>
+                <div style="text-align: left">
+                    <h2>Podle skupenství</h2>
+                    <h3>Plynné</h3>
+                    <ul>
+                        <li>
+                            na normálních podmínek se plynných 11 prvků, pět z
+                            nich tvoří dvouatomové molekuly (H₂, N₂, O₂, F₂,
+                            Cl₂), zbývajících 6 jsou vzácné plyny
+                        </li>
+                    </ul>
+                    <h3>Kapalné</h3>
+                    <ul>
+                        <li>
+                            za normálních podmínek jsou kapalné jen 2 prvky,
+                            rtuť (Hg) a brom (Br)
+                        </li>
+                    </ul>
+                    <h3>Pevné</h3>
+                    <ul>
+                        <li>patří k nim zbývající prvky</li>
+                    </ul>
+                    <h2>Podle vlastností</h2>
+                    <h3>Kovy</h3>
+                    <ul>
+                        <li><strong>vedou elektrický proud a teplo</strong></li>
+                        <li>na očištěném povrchu mají kovový lesk</li>
+                        <li>
+                            jsou kujné (kladivo) a tažné - dají se dobře
+                            opracovávat
+                        </li>
+                    </ul>
+                    <h4>Slitiny</h4>
+                    <p>
+                        Slitiny jsou pevné
+                        <a href="ch-smesi.html">roztoky</a> nebo
+                        <a href="ch-smesi.html">směsi</a> kovů. Vznikají
+                        smícháním roztavených kovů a dalších prvků. Slitiny se
+                        využívají, protože
+                        <strong>mají lepší vlastnosti než čisté kovy</strong>.
+                    </p>
+                    <p>Mezi známé slitiny patří:</p>
+                    <ul>
+                        <li>bronz (měď + cín)</li>
+                        <li>mosaz (měď + zinek)</li>
+                        <li>dural (hliník + měď + hořčík)</li>
+                        <li>ocel (železo + uhlík)</li>
+                    </ul>
+                    <h3>Nekovy</h3>
+                    <ul>
+                        <li>
+                            <strong>nemají vlastnosti kovů</strong> nebo mají
+                            jen některé
+                        </li>
+                        <li>
+                            zástupci - H, N, C, O, P, S, F, Cl, Br, I, He, Ne,
+                            Ar, Kr, Xe, Rn
+                        </li>
+                    </ul>
+                    <h3>Polokovy</h3>
+                    <ul>
+                        <li>
+                            <strong
+                                >mají některé vlastnosti kovů a některé
+                                vlastnosti nekovů</strong
+                            >
+                        </li>
+                        <li>většinou jsou křehké a nekujné</li>
+                        <li>
+                            použivají se na výrobu polovodičů a dalších
+                            elektronických součástek
+                        </li>
+                        <li>zástupci - B, Si, Ge, As, Se, Sb, Te, At</li>
+                    </ul>
+                    <button onclick="window.history.back()">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <!-- Patička -->
+        <footer>
+            <div class="footer-content">
+                <a href="about.html"
+                    ><img
+                        src="images/white-logo.png"
+                        alt="Tobikovo Logo"
+                        width="100px"
+                /></a>
+            </div>
+        </footer>
+        <!-- JSs -->
+        <script src="javastripts/nav.js"></script>
+    </body>
+</html>
