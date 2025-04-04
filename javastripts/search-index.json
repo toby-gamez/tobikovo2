@@ -282,7 +282,7 @@
   {
     "title": "Básnické prostředky",
     "url": "li-pristredky.html",
-    "content": ""
+    "content": "Alegorie, Apostrofa, Anafora, Epifora, Epanastrofa, Epiteton, Epizeuxis, Eufemismus, Dysfemismus, Gradace, Hyperbola, Ironie, Kontrast, Metafora, Metonymie, Onomatopoie, Přirovnání, Personifikace"
   },
   {
     "title": "Postupná historie literatury",
@@ -363,36 +363,6 @@
     "title": "Fejeton",
     "url": "li-fejeton.html",
     "content": "Karel Čapek, Jan Neruda"
-  },
-  {
-    "title": "Alegorie, apostrofa, anafora",
-    "url": "li-a-a-a.html",
-    "content": ""
-  },
-  {
-    "title": "Epifora, epanastrofa, epiteton",
-    "url": "li-e-e-e.html",
-    "content": ""
-  },
-  {
-    "title": "Epizeuxis, eufemismus, dysfemuzmus",
-    "url": "li-e-e-d.html",
-    "content": ""
-  },
-  {
-    "title": "Gradace, hyperbola, ironie",
-    "url": "li-g-h-i.html",
-    "content": ""
-  },
-  {
-    "title": "Kontrast, metafora, metonymie",
-    "url": "li-k-m-m.html",
-    "content": ""
-  },
-  {
-    "title": "Onomatopoie, přirovnání, personifikace",
-    "url": "li-o-p-p.html",
-    "content": ""
   },
   {
     "title": "Gilgameš",
@@ -517,7 +487,7 @@
   {
     "title": "Hudební historie",
     "url": "hv-historie.html",
-    "content": "První hudební projevy člověka, Řecko, Řím, Středověk, Orfeus, Apollón, Dionýsos, Seikelova píseň, papež Gregor (Řehoř I. Veliký), Gregoriánský chorál, Trubadúři, Trouvéři, Minnesängři, renesance, Giovanni da Palestrina, Orlando di Lasso, opera, Claudio Monteverdi, Jacopo Peri, dějství, akt, předehra, zpěv, Georg, Friedrich Händel, Mesiáš, Hudba k ohňostroji"
+    "content": "První hudební projevy člověka, Řecko, Řím, Středověk, Orfeus, Apollón, Dionýsos, Seikelova píseň, papež Gregor (Řehoř I. Veliký), Gregoriánský chorál, Trubadúři, Trouvéři, Minnesängři, renesance, Giovanni da Palestrina, Orlando di Lasso, opera, Claudio Monteverdi, Jacopo Peri, dějství, akt, předehra, zpěv, Georg, Friedrich Händel, Mesiáš, Hudba k ohňostroji, Antonio Vivaldi, Čtvero ročních dob, Johann Sebastian Bach, Toccata a fuga d moll"
   },
   {
     "title": "Jména not",
@@ -1137,12 +1107,12 @@
   {
     "title": "Romantismus",
     "url": "li-romantismus.html",
-    "content": "Karel Hynek Mácha"
+    "content": "Karel Hynek Mácha, Máj, Cikáni, Pouť krkonošská, Márinka, Křivoklát"
   },
   {
     "title": "Nauka o slovní zásobě",
     "url": "ml-slovni-zasoba.html",
-    "content": "nadřazená, souřadná, podřazená, sousloví, přísloví, rčení, pořekadlo, pranostika, slovní zásoba"
+    "content": "nadřazená, souřadná, podřazená, sousloví, přísloví, rčení, pořekadlo, pranostika, slovní zásoba, jednoznačná, mnohoznačná, metafora, metonymie"
   },
   {
     "title": "Zeměpis",
@@ -1207,22 +1177,22 @@
   {
     "title": "Lineární rovnice",
     "url": "m-linearni-rovnice.html",
+    "content": "proměnná, rovnice, řešení, graf, souřadnice, soustava rovnic"
+  },
+  {
+    "title": "Rozdělení prvků",
+    "url": "z-rozdeleni-prvku.html",
+    "content": "plynné, kapalné, pevné, kovy, nekovy, slitiny, polokovy, kujnost"
+  },
+  {
+    "title": "Motory",
+    "url": "f-motory.html",
     "content": ""
   },
   {
-    "title": "x",
-    "url": ".html",
-    "content": ""
-  },
-  {
-    "title": "x",
-    "url": ".html",
-    "content": ""
-  },
-  {
-    "title": "x",
-    "url": ".html",
-    "content": ""
+    "title": "Vylučovací soustava",
+    "url": "pr-vylucovaci-sous.html",
+    "content": "nefron, moč, krev, ledviny"
   },
   {
     "title": "x",
