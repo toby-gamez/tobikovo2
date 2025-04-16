@@ -1,144 +1,164 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
+    <head>
+        <!-- Google Consent Mode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-<head>
-    <!-- Google Consent Mode -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+            // Výchozí stav: souhlas odepřen
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
+        </script>
 
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied'
-        });
-        console.log("Google Consent Mode initialized with default: denied");
-    </script>
+        <!-- Google Analytics (nenačte se automaticky) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
+        ></script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-1CDLST0SSK");
+                console.log("Google Analytics loaded.");
+            }
+        </script>
 
-    <!-- Google Analytics (nenačte se automaticky) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
-    <script>
-        function loadGoogleAnalytics() {
-            console.log("Loading Google Analytics...");
-            gtag('js', new Date());
-            gtag('config', 'G-Q7DH4RTXBC');
-            console.log("Google Analytics loaded.");
-        }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veličiny - Fyzika - Tobikovo</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="icon" href="images/favicon.png">
-</head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Veličiny - Fyzika - Tobiso</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="icon" href="images/favicon.png" />
+    </head>
 
-<body>
-    <div class="loading-bar-container">
-        <div class="loading-bar"></div>
-    </div>
-    <nav id="myNavbar">
-        <a href="#home"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
-        <a href="#home">Domů</a>
-        <a href="#ucivo">Učivo</a>
-        <a href="#o-nas">O nás</a>
-    </nav>
-    <button class="openNav opennav-button" onclick="openNav()">☰</button>
-    <!-- Obsah stránky -->
-    <main>
-
-        <section>
-            <h1 class="verybig">Veličiny</h1>
-            <div style="text-align: left;">
-                <ul class="grid">
-                    <li class="grid-item">
-                        <a href="f-delka.html">
-                            <h3 class="grid-h3">délka</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="f-hmotnost.html">
-                            <h3 class="grid-h3">hmotnost</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="f-obsah.html">
-                            <h3 class="grid-h3">obsah</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="f-objem.html">
-                            <h3 class="grid-h3">objem</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="f-cas.html">
-                            <h3 class="grid-h3">čas</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="f-teplota.html">
-                            <h3 class="grid-h3">teplota</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="f-rychlost.html">
-                            <h3 class="grid-h3">rychlost</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="f-sila.html">
-                            <h3 class="grid-h3">síla</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="f-tlak.html">
-                            <h3 class="grid-h3">tlak</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="f-draha.html">
-                            <h3 class="grid-h3">dráha</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="f-hustota.html">
-                            <h3 class="grid-h3">hustota</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="f-prace.html">
-                            <h3 class="grid-h3">práce</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="f-vykon.html">
-                            <h3 class="grid-h3">výkon</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="f-energie.html">
-                            <h3 class="grid-h3">energie</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="f-teplo.html">
-                            <h3 class="grid-h3">teplo</h3>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-    </main>
-    <!-- Patička -->
-    <footer>
-        <div class="footer-content">
-            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+    <body>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
         </div>
-    </footer>
-    <!-- JSs -->
-    <script src="javastripts/nav.js"></script>
-</body>
-
+        <nav id="myNavbar">
+            <a href="#home"
+                ><img src="images/white-logo.png" alt="Logo" width="75px"
+            /></a>
+            <a href="#home">Domů</a>
+            <a href="#ucivo">Učivo</a>
+            <a href="#o-nas">O nás</a>
+        </nav>
+        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+        <!-- Obsah stránky -->
+        <main>
+            <section>
+                <h1 class="verybig">Veličiny</h1>
+                <div style="text-align: left">
+                    <ul class="grid">
+                        <li class="grid-item">
+                            <a href="f-delka.html">
+                                <h3 class="grid-h3">délka</h3>
+                            </a>
+                        </li>
+                        <li class="grid-item">
+                            <a href="f-hmotnost.html">
+                                <h3 class="grid-h3">hmotnost</h3>
+                            </a>
+                        </li>
+                        <li class="grid-item">
+                            <a href="f-obsah.html">
+                                <h3 class="grid-h3">obsah</h3>
+                            </a>
+                        </li>
+                        <li class="grid-item">
+                            <a href="f-objem.html">
+                                <h3 class="grid-h3">objem</h3>
+                            </a>
+                        </li>
+                        <li class="grid-item">
+                            <a href="f-cas.html">
+                                <h3 class="grid-h3">čas</h3>
+                            </a>
+                        </li>
+                        <li class="grid-item">
+                            <a href="f-teplota.html">
+                                <h3 class="grid-h3">teplota</h3>
+                            </a>
+                        </li>
+                        <li class="grid-item">
+                            <a href="f-rychlost.html">
+                                <h3 class="grid-h3">rychlost</h3>
+                            </a>
+                        </li>
+                        <li class="grid-item">
+                            <a href="f-sila.html">
+                                <h3 class="grid-h3">síla</h3>
+                            </a>
+                        </li>
+                        <li class="grid-item">
+                            <a href="f-tlak.html">
+                                <h3 class="grid-h3">tlak</h3>
+                            </a>
+                        </li>
+                        <li class="grid-item">
+                            <a href="f-draha.html">
+                                <h3 class="grid-h3">dráha</h3>
+                            </a>
+                        </li>
+                        <li class="grid-item">
+                            <a href="f-hustota.html">
+                                <h3 class="grid-h3">hustota</h3>
+                            </a>
+                        </li>
+                        <li class="grid-item">
+                            <a href="f-prace.html">
+                                <h3 class="grid-h3">práce</h3>
+                            </a>
+                        </li>
+                        <li class="grid-item">
+                            <a href="f-vykon.html">
+                                <h3 class="grid-h3">výkon</h3>
+                            </a>
+                        </li>
+                        <li class="grid-item">
+                            <a href="f-energie.html">
+                                <h3 class="grid-h3">energie</h3>
+                            </a>
+                        </li>
+                        <li class="grid-item">
+                            <a href="f-teplo.html">
+                                <h3 class="grid-h3">teplo</h3>
+                            </a>
+                        </li>
+                        <li class="grid-item">
+                            <a href="f-el-napeti.html">
+                                <h3 class="grid-h3">elektrické napětí</h3>
+                            </a>
+                        </li>
+                        <li class="grid-item">
+                            <a href="f-el-proud.html">
+                                <h3 class="grid-h3">elektrický proud</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <!-- Patička -->
+        <footer>
+            <div class="footer-content">
+                <a href="about.html"
+                    ><img
+                        src="images/white-logo.png"
+                        alt="Tobikovo Logo"
+                        width="100px"
+                /></a>
+            </div>
+        </footer>
+        <!-- JSs -->
+        <script src="javastripts/nav.js"></script>
+    </body>
 </html>

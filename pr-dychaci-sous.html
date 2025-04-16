@@ -5,27 +5,33 @@
     <!-- Google Consent Mode -->
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied'
+        // Výchozí stav: souhlas odepřen
+        gtag("consent", "default", {
+            analytics_storage: "denied",
         });
         console.log("Google Consent Mode initialized with default: denied");
     </script>
 
     <!-- Google Analytics (nenačte se automaticky) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
+    <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
+    ></script>
     <script>
         function loadGoogleAnalytics() {
             console.log("Loading Google Analytics...");
-            gtag('js', new Date());
-            gtag('config', 'G-Q7DH4RTXBC');
+            gtag("js", new Date());
+            gtag("config", "G-1CDLST0SSK");
             console.log("Google Analytics loaded.");
         }
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dýchací soustava - Přírodopis - Tobikovo</title>
+    <title>Dýchací soustava - Přírodopis - Tobiso</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/nav.css">
@@ -47,6 +53,7 @@
         <section>
             <h1 class="verybig">Dýchací soustava</h1>
             <div style="text-align: left;">
+                <div class="intro"><p>Dýchací soustava zajišťuje výměnu plynů mezi tělem a okolním prostředím. Skládá se z nosu, hrtanu, průdušnice, průdušek a plic. Nos a hrtan filtrují a ohřívají vzduch, průdušnice a průdušky vedou vzduch do plic, kde dochází k výměně kyslíku a oxidu uhličitého. Dýchací soustava hraje klíčovou roli v udržování životních funkcí těla.</p></div>
                 <h2>Informace</h2>
                 <p><strong>Dýchací soustava je soustava, která zajišťuje přísun kyslíku do těla a odvádí oxid uhličitý ven z
                     těla.</strong> Dýchací soustava se skládá z nosní dutiny, hrtanu, průdušnice, plic a dýchacích svalů.</p>

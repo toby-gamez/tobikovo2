@@ -8,6 +8,7 @@
                 dataLayer.push(arguments);
             }
 
+            // Výchozí stav: souhlas odepřen
             gtag("consent", "default", {
                 analytics_storage: "denied",
             });
@@ -17,19 +18,19 @@
         <!-- Google Analytics (nenačte se automaticky) -->
         <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
         ></script>
         <script>
             function loadGoogleAnalytics() {
                 console.log("Loading Google Analytics...");
                 gtag("js", new Date());
-                gtag("config", "G-Q7DH4RTXBC");
+                gtag("config", "G-1CDLST0SSK");
                 console.log("Google Analytics loaded.");
             }
         </script>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Takty a předznamenání - Hudební výchova - Tobikovo</title>
+        <title>Takty a předznamenání - Hudební výchova - Tobiso</title>
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/footer.css" />
         <link rel="stylesheet" href="css/nav.css" />
@@ -56,6 +57,17 @@
             <section>
                 <h1 class="verybig">Takty a předznamenání</h1>
                 <div style="text-align: left">
+                    <div class="intro">
+                        <p>
+                            Takt je úsek notového zápisu vymezený taktovými
+                            čarami, udává pravidelné rytmické dělení hudby.
+                            Počet dob v taktu určuje taktové označení (např.
+                            4/4, 3/4). Předznamenání se zapisuje na začátku
+                            notové osnovy a označuje zvýšené (křížek ♯) nebo
+                            snížené (béčko ♭) tóny platné pro celou skladbu nebo
+                            úsek.
+                        </p>
+                    </div>
                     <h2>Takty</h2>
                     <img src="images/takty.webp" alt="(takty)" />
                     <p>
@@ -64,8 +76,8 @@
                     </p>
                     <h2>Předznamenání</h2>
                     <ul>
-                        <li># - křížek (zvyšuje notu o půl tónu)</li>
-                        <li><em>b</em> - béčko (snižuje notu o půl tónu)</li>
+                        <li>♯ - křížek (zvyšuje notu o půl tónu)</li>
+                        <li>♭ - béčko (snižuje notu o půl tónu)</li>
                         <li>♮ - odrážka (ruší #, <em>b</em>)</li>
                     </ul>
                     <h2>Akcenty = důrazy</h2>

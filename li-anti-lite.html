@@ -5,27 +5,33 @@
     <!-- Google Consent Mode -->
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied'
+        // Výchozí stav: souhlas odepřen
+        gtag("consent", "default", {
+            analytics_storage: "denied",
         });
         console.log("Google Consent Mode initialized with default: denied");
     </script>
 
     <!-- Google Analytics (nenačte se automaticky) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
+    <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
+    ></script>
     <script>
         function loadGoogleAnalytics() {
             console.log("Loading Google Analytics...");
-            gtag('js', new Date());
-            gtag('config', 'G-Q7DH4RTXBC');
+            gtag("js", new Date());
+            gtag("config", "G-1CDLST0SSK");
             console.log("Google Analytics loaded.");
         }
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Antická literatura - Literatura - Tobikovo</title>
+    <title>Antická literatura - Literatura - Tobiso</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/nav.css">
@@ -47,6 +53,7 @@
         <section>
             <h1 class="verybig">Antická literatura</h1>
             <div style="text-align: left;">
+                <div class="intro"><p>Antická literatura zahrnuje literární díla starověkého Řecka a Říma, která ovlivnila vývoj západní literatury. Patří sem epické eposy, filozofické texty, dramatické hry a lyrika, přičemž významnými autory jsou Homér, Sofoklés, Vergilius a Ovidius. Tato díla se zabývají tématy jako hrdinství, osud, morálka a vztah člověka k božstvům.</p></div>
                 <h2>Základy</h2>
                 <ul>
                     <li>je to literatura starověkého Řecka a Říma</li>

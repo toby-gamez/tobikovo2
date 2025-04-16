@@ -1,84 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
+    <head>
+        <!-- Google Consent Mode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-<head>
-    <!-- Google Consent Mode -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+            // Výchozí stav: souhlas odepřen
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
+        </script>
 
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied'
-        });
-        console.log("Google Consent Mode initialized with default: denied");
-    </script>
+        <!-- Google Analytics (nenačte se automaticky) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
+        ></script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-1CDLST0SSK");
+                console.log("Google Analytics loaded.");
+            }
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>5. pád v oslovení - Mluvnice - Tobiso</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="icon" href="images/favicon.png" />
+        <style></style>
+    </head>
 
-    <!-- Google Analytics (nenačte se automaticky) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
-    <script>
-        function loadGoogleAnalytics() {
-            console.log("Loading Google Analytics...");
-            gtag('js', new Date());
-            gtag('config', 'G-Q7DH4RTXBC');
-            console.log("Google Analytics loaded.");
-        }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>5. pád v oslovení - Mluvnice - Tobikovo</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="icon" href="images/favicon.png">
-    <style>
-
-    </style>
-</head>
-
-<body>
-    <div class="loading-bar-container">
-        <div class="loading-bar"></div>
-    </div>
-    <nav id="myNavbar">
-        <a href="#home"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
-        <a href="#home">Domů</a>
-        <a href="#ucivo">Učivo</a>
-        <a href="#o-nas">O nás</a>
-    </nav>
-    <button class="openNav opennav-button" onclick="openNav()">☰</button>
-    <!-- Obsah stránky -->
-    <main>
-
-        <section>
-            <h1 class="verybig">5. pád v oslovení</h1>
-            <div style="text-align: left;">
-                <p>soud<span class="underlined">ce</span> - 5. pád - soud<span
-                        class="underlined">ce</span><br>chlap<span class="underlined">ec</span> - 5. pád - chlap<span
-                        class="underlined">če</span></p>
-                <h2>Tvary</h2>
-                <ul>
-                    <li>krátký - chlapče...</li>
-                    <li>dlouhý - chlapcovi</li>
-                    <li>konec - dlouhý tvar</li>
-                </ul>
-                <p>Takže o chlapci Tomáši Dohnálkovi</p>
-                <h2 style="color: red;">Pozor!</h2>
-                <p>Pokud je pods. jméno podle vzoru <strong>předseda</strong>, má ve všech tvarech dlouhý tvar.
-                    <br>Např: Předsedovi Otovi Smetanovi
-                </p>
-                <button onclick="window.history.back()"><i class="bi bi-arrow-left"></i></button>
-            </div>
-        </section>
-
-    </main>
-    <!-- Patička -->
-    <footer>
-        <div class="footer-content">
-            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+    <body>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
         </div>
-    </footer>
-    <script src="javastripts/nav.js"></script>
-</body>
-
+        <nav id="myNavbar">
+            <a href="#home"
+                ><img src="images/white-logo.png" alt="Logo" width="75px"
+            /></a>
+            <a href="#home">Domů</a>
+            <a href="#ucivo">Učivo</a>
+            <a href="#o-nas">O nás</a>
+        </nav>
+        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+        <!-- Obsah stránky -->
+        <main>
+            <section>
+                <h1 class="verybig">5. pád v oslovení</h1>
+                <div style="text-align: left">
+                    <div class="intro">
+                        <p>
+                            Pátý pád v češtině slouží k oslovování osob, zvířat
+                            nebo věcí a patří mezi důležité části skloňování
+                            podstatných jmen. V tomto článku se podíváme na
+                            pravidla tvorby 5. pádu, jeho použití v praxi a
+                            ukážeme si příklady, kde se tvar oslovení liší od 1.
+                            pádu (chlapec – chlapče) i případy, kdy se tvar
+                            nemění (soudce – soudce). Ovládněte správné
+                            oslovování a vyhněte se nejčastějším chybám.
+                        </p>
+                    </div>
+                    <p>
+                        soud<span class="underlined">ce</span> - 5. pád -
+                        soud<span class="underlined">ce</span><br />chlap<span
+                            class="underlined"
+                            >ec</span
+                        >
+                        - 5. pád - chlap<span class="underlined">če</span>
+                    </p>
+                    <h2>Tvary</h2>
+                    <ul>
+                        <li>krátký - chlapče...</li>
+                        <li>dlouhý - chlapcovi</li>
+                        <li>konec - dlouhý tvar</li>
+                    </ul>
+                    <p>Takže o chlapci Tomáši Dohnálkovi</p>
+                    <h2 style="color: red">Pozor!</h2>
+                    <p>
+                        Pokud je pods. jméno podle vzoru
+                        <strong>předseda</strong>, má ve všech tvarech dlouhý
+                        tvar. <br />Např: Předsedovi Otovi Smetanovi
+                    </p>
+                    <button onclick="window.history.back()">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <!-- Patička -->
+        <footer>
+            <div class="footer-content">
+                <a href="about.html"
+                    ><img
+                        src="images/white-logo.png"
+                        alt="Tobikovo Logo"
+                        width="100px"
+                /></a>
+            </div>
+        </footer>
+        <script src="javastripts/nav.js"></script>
+    </body>
 </html>

@@ -8,6 +8,7 @@
                 dataLayer.push(arguments);
             }
 
+            // Výchozí stav: souhlas odepřen
             gtag("consent", "default", {
                 analytics_storage: "denied",
             });
@@ -17,42 +18,25 @@
         <!-- Google Analytics (nenačte se automaticky) -->
         <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
         ></script>
         <script>
             function loadGoogleAnalytics() {
                 console.log("Loading Google Analytics...");
                 gtag("js", new Date());
-                gtag("config", "G-Q7DH4RTXBC");
+                gtag("config", "G-1CDLST0SSK");
                 console.log("Google Analytics loaded.");
             }
         </script>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Přímá úměrnost - Matematika - Tobikovo</title>
+        <title>Přímá úměrnost - Matematika - Tobiso</title>
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/footer.css" />
         <link rel="stylesheet" href="css/nav.css" />
         <link rel="stylesheet" href="css/grid.css" />
         <link rel="stylesheet" href="css/tabulkad.css" />
         <link rel="icon" href="images/favicon.png" />
-
-        <style>
-            @media screen and (max-width: 754px) {
-                table {
-                    width: 100px !important;
-                    padding: 0;
-                }
-
-                td p {
-                    font-size: 10px;
-                }
-
-                td {
-                    padding: 0;
-                }
-            }
-        </style>
     </head>
 
     <body>
@@ -68,6 +52,19 @@
             <section>
                 <h1 class="verybig">Přímá úměrnost</h1>
                 <div style="text-align: left">
+                    <div class="intro">
+                        <p>
+                            Přímá úměrnost je matematický vztah mezi dvěma
+                            veličinami, kdy se jejich hodnoty mění stejným
+                            způsobem. To znamená, že když jedna veličina roste,
+                            druhá také roste, a naopak. Vzorec pro přímou
+                            úměrnost je y=k⋅xy=k⋅x, kde kk je konstantní
+                            koeficient (nazývaný koeficient úměrnosti).
+                            Například pokud se cena zboží zvyšuje se počtem
+                            kusů, jedná se o přímou úměrnost, protože cena roste
+                            v poměru k počtu kusů.
+                        </p>
+                    </div>
                     <h2>Informace</h2>
                     <ul>
                         <li>závislost proměnných x a y</li>
@@ -109,30 +106,6 @@
                                 <td>
                                     <p>4</p>
                                     <p>12</p>
-                                </td>
-                                <td>
-                                    <p>5</p>
-                                    <p>15</p>
-                                </td>
-                                <td>
-                                    <p>6</p>
-                                    <p>18</p>
-                                </td>
-                                <td>
-                                    <p>7</p>
-                                    <p>21</p>
-                                </td>
-                                <td>
-                                    <p>8</p>
-                                    <p>24</p>
-                                </td>
-                                <td>
-                                    <p>9</p>
-                                    <p>27</p>
-                                </td>
-                                <td>
-                                    <p>10</p>
-                                    <p>30</p>
                                 </td>
                             </tr>
                         </tbody>

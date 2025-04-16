@@ -8,6 +8,7 @@
                 dataLayer.push(arguments);
             }
 
+            // Výchozí stav: souhlas odepřen
             gtag("consent", "default", {
                 analytics_storage: "denied",
             });
@@ -17,19 +18,20 @@
         <!-- Google Analytics (nenačte se automaticky) -->
         <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
         ></script>
         <script>
             function loadGoogleAnalytics() {
                 console.log("Loading Google Analytics...");
                 gtag("js", new Date());
-                gtag("config", "G-Q7DH4RTXBC");
+                gtag("config", "G-1CDLST0SSK");
                 console.log("Google Analytics loaded.");
             }
         </script>
+
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Jednoduché stroje - Fyzika - Tobikovo</title>
+        <title>Jednoduché stroje - Fyzika - Tobiso</title>
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/footer.css" />
         <link rel="stylesheet" href="css/nav.css" />
@@ -55,6 +57,17 @@
             <section>
                 <h1 class="verybig">Jednoduché stroje</h1>
                 <div style="text-align: left">
+                    <div class="intro">
+                        <p>
+                            Jednoduché stroje jsou základní mechanické zařízení,
+                            která slouží k usnadnění práce, změně směru síly
+                            nebo jejímu zesílení. Mezi jednoduché stroje patří
+                            páka, kladka, skluz, šroub, kolo s osou a klín. Tyto
+                            stroje se používají k provádění různých úkolů, od
+                            zvedání těžkých předmětů až po řezání nebo
+                            šroubování.
+                        </p>
+                    </div>
                     <h2>Páka</h2>
                     <img
                         src="images/paka.webp"

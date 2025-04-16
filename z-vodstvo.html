@@ -8,6 +8,7 @@
                 dataLayer.push(arguments);
             }
 
+            // Výchozí stav: souhlas odepřen
             gtag("consent", "default", {
                 analytics_storage: "denied",
             });
@@ -17,19 +18,19 @@
         <!-- Google Analytics (nenačte se automaticky) -->
         <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
         ></script>
         <script>
             function loadGoogleAnalytics() {
                 console.log("Loading Google Analytics...");
                 gtag("js", new Date());
-                gtag("config", "G-Q7DH4RTXBC");
+                gtag("config", "G-1CDLST0SSK");
                 console.log("Google Analytics loaded.");
             }
         </script>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Vodstvo a vodní plochy - Zeměpis - Tobikovo</title>
+        <title>Vodstvo a vodní plochy - Zeměpis - Tobiso</title>
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/footer.css" />
         <link rel="stylesheet" href="css/nav.css" />
@@ -50,6 +51,18 @@
             <section>
                 <h1 class="verybig">Vodstvo a vodní plochy</h1>
                 <div style="text-align: left">
+                    <div class="intro">
+                        <p>
+                            Česká republika má bohaté vodní zdroje, i když
+                            nepatří mezi země s rozsáhlými řekami nebo jezerami.
+                            Největší řekou je Labe, následované Vltavou, Moravou
+                            a Odrou. Země je také známá svou sítí rybníků,
+                            přičemž největší je rybník Rožmberk. Voda je klíčová
+                            pro zemědělství, průmysl a turistiku, přičemž české
+                            vodní plochy a nádrže, jako je například Orlík, jsou
+                            oblíbené pro rekreaci.
+                        </p>
+                    </div>
                     <h2>Vodstvo</h2>
                     <div class="blog-image">
                         <a href="images/vodstvo.webp"

@@ -8,6 +8,7 @@
                 dataLayer.push(arguments);
             }
 
+            // Výchozí stav: souhlas odepřen
             gtag("consent", "default", {
                 analytics_storage: "denied",
             });
@@ -17,19 +18,19 @@
         <!-- Google Analytics (nenačte se automaticky) -->
         <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
         ></script>
         <script>
             function loadGoogleAnalytics() {
                 console.log("Loading Google Analytics...");
                 gtag("js", new Date());
-                gtag("config", "G-Q7DH4RTXBC");
+                gtag("config", "G-1CDLST0SSK");
                 console.log("Google Analytics loaded.");
             }
         </script>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Lineární rovnice - Matematika - Tobikovo</title>
+        <title>Lineární rovnice - Matematika - Tobiso</title>
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/footer.css" />
         <link rel="stylesheet" href="css/nav.css" />
@@ -50,6 +51,19 @@
             <section>
                 <h1 class="verybig">Lineární rovnice</h1>
                 <div style="text-align: left">
+                    <div class="intro">
+                        <p>
+                            Lineární rovnice je rovnice, která obsahuje proměnné
+                            pouze v první mocnině a nemá žádné součiny mezi
+                            proměnnými. Obecný tvar lineární rovnice je ax + b =
+                            0, kde aa a b jsou konstanty, a x je proměnná. Tyto
+                            rovnice lze snadno řešit pomocí základních
+                            algebraických operací, jako je sčítání, odčítání,
+                            násobení nebo dělení. Lineární rovnice jsou základem
+                            pro řešení mnoha matematických problémů a analýzu
+                            funkcí.
+                        </p>
+                    </div>
                     <p>
                         <strong>Lineární rovnice</strong> je rovnice, která má
                         tvar <strong>ax + b = 0</strong>, kde <em>a</em> a
@@ -109,7 +123,7 @@
                     </p>
                     <p>2) <strong>Přičteme 6</strong>: <em>3x = 15</em></p>
                     <p>3) <strong>Vydělíme 3</strong>: <em>x = 5</em></p>
-                    <h2>Příklad s rovnicí se zlomkem</h2>
+                    <h2>Příklad rovnice se zlomkem</h2>
                     <p>
                         <strong>Příklad 3:</strong> Řeš rovnici
                         <math>
@@ -153,6 +167,65 @@
                             tvaru a máme výsledek
                         </li>
                     </ul>
+                    <h2>Slovní úlohy s rovnicemi</h2>
+                    <p>
+                        Lineární rovnice se často používají k řešení slovních
+                        úloh. Při řešení postupujeme následovně:
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>zavedeme neznámou (x)</strong> - označíme
+                            hledaný údaj
+                        </li>
+                        <li>
+                            <strong>sestavíme rovnici</strong> - převedeme text
+                            do matematického zápisu
+                        </li>
+                        <li>
+                            <strong>vyřešíme rovnici</strong> - použijeme známé
+                            postupy
+                        </li>
+                        <li>
+                            <strong>odpovíme na otázku</strong> - nezapomeneme
+                            na jednotky a souvislost s úlohou
+                        </li>
+                    </ul>
+                    <p>
+                        <strong>Příklad 1:</strong> Mysli si číslo. Když k němu
+                        přičteš 5 a výsledek vynásobíš 2, dostaneš 30. Jaké
+                        číslo si myslíš?
+                    </p>
+                    <p>Řešení:</p>
+                    <ul>
+                        <li>x = hledané číslo</li>
+                        <li>sestavíme rovnici: 2(x + 5) = 30</li>
+                        <li>roznásobíme závorku: 2x + 10 = 30</li>
+                        <li>odečteme 10: 2x = 20</li>
+                        <li>vydělíme 2: x = 10</li>
+                    </ul>
+                    <p><strong>Odpověď:</strong> Myšlené číslo je 10.</p>
+                    <p>
+                        <strong>Příklad 2:</strong> V pokladničce mám třikrát
+                        více dvoukorunových mincí než pětikorunových. Celkem mám
+                        155 Kč. Kolik mám kterých mincí?
+                    </p>
+                    <p>Řešení:</p>
+                    <ul>
+                        <li>x = počet pětikorunových mincí</li>
+                        <li>3x = počet dvoukorunových mincí</li>
+                        <li>sestavíme rovnici: 5x + 2(3x) = 155</li>
+                        <li>roznásobíme: 5x + 6x = 155</li>
+                        <li>sečteme podobné členy: 11x = 155</li>
+                        <li>vydělíme 11: x = 15</li>
+                    </ul>
+                    <p>
+                        <strong>Odpověď:</strong> V pokladničce je 15
+                        pětikorunových a 45 dvoukorunových mincí.
+                    </p>
+                    <p>
+                        <em>Kontrola:</em> 15 × 5 Kč + 45 × 2 Kč = 75 Kč + 80 Kč
+                        = 155 Kč
+                    </p>
                     <button onclick="window.history.back()">
                         <i class="bi bi-arrow-left"></i>
                     </button>

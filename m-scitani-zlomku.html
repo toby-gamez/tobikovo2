@@ -8,6 +8,7 @@
                 dataLayer.push(arguments);
             }
 
+            // Výchozí stav: souhlas odepřen
             gtag("consent", "default", {
                 analytics_storage: "denied",
             });
@@ -17,19 +18,19 @@
         <!-- Google Analytics (nenačte se automaticky) -->
         <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
         ></script>
         <script>
             function loadGoogleAnalytics() {
                 console.log("Loading Google Analytics...");
                 gtag("js", new Date());
-                gtag("config", "G-Q7DH4RTXBC");
+                gtag("config", "G-1CDLST0SSK");
                 console.log("Google Analytics loaded.");
             }
         </script>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sčítání zlomků - Matematika - Tobikovo</title>
+        <title>Sčítání zlomků - Matematika - Tobiso</title>
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/footer.css" />
         <link rel="stylesheet" href="css/nav.css" />
@@ -49,6 +50,16 @@
             <section>
                 <h1 class="verybig">Sčítání</h1>
                 <div style="text-align: left">
+                    <div class="intro">
+                        <p>
+                            Při sčítání zlomků je potřeba mít stejného
+                            jmenovatele. Pokud zlomky mají různé jmenovatele,
+                            musíme je nejprve upravit na společného jmenovatele.
+                            Například 1/4 + 1/3 se upraví na 3/12 + 4/12, což po
+                            sečtení dá 7/12. Pokud už mají zlomky stejný
+                            jmenovatel, sčítáme pouze čitatele.
+                        </p>
+                    </div>
                     <h2>Zlomky se stejným jmenovatelem</h2>
                     <img
                         src="images/scitani-zlomku1.webp"

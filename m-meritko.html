@@ -8,6 +8,7 @@
                 dataLayer.push(arguments);
             }
 
+            // Výchozí stav: souhlas odepřen
             gtag("consent", "default", {
                 analytics_storage: "denied",
             });
@@ -17,19 +18,19 @@
         <!-- Google Analytics (nenačte se automaticky) -->
         <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
         ></script>
         <script>
             function loadGoogleAnalytics() {
                 console.log("Loading Google Analytics...");
                 gtag("js", new Date());
-                gtag("config", "G-Q7DH4RTXBC");
+                gtag("config", "G-1CDLST0SSK");
                 console.log("Google Analytics loaded.");
             }
         </script>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Měřítko - Matematika - Tobikovo</title>
+        <title>Měřítko - Matematika - Tobiso</title>
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/footer.css" />
         <link rel="stylesheet" href="css/nav.css" />
@@ -50,6 +51,18 @@
             <section>
                 <h1 class="verybig">Měřítko</h1>
                 <div style="text-align: left">
+                    <div class="intro">
+                        <p>
+                            Měřítko mapy udává poměr mezi vzdálenostmi na mapě a
+                            skutečnými vzdálenostmi v terénu. Například měřítko
+                            1:100 000 znamená, že 1 cm na mapě odpovídá 100 000
+                            cm (nebo 1 km) ve skutečnosti. Měřítko mapy pomáhá
+                            určit, jak detailně je zobrazena mapa, čím menší je
+                            číslo ve měřítku, tím větší území mapa pokrývá. Mapy
+                            mohou mít měřítko vyjádřené číselně, graficky nebo
+                            jako poměr.
+                        </p>
+                    </div>
                     <p><em>*myslím tímto měřítko mapy</em></p>
                     <h2>Informace</h2>
                     <ul>

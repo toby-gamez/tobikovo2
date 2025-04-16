@@ -8,6 +8,7 @@
                 dataLayer.push(arguments);
             }
 
+            // Výchozí stav: souhlas odepřen
             gtag("consent", "default", {
                 analytics_storage: "denied",
             });
@@ -17,19 +18,20 @@
         <!-- Google Analytics (nenačte se automaticky) -->
         <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
         ></script>
         <script>
             function loadGoogleAnalytics() {
                 console.log("Loading Google Analytics...");
                 gtag("js", new Date());
-                gtag("config", "G-Q7DH4RTXBC");
+                gtag("config", "G-1CDLST0SSK");
                 console.log("Google Analytics loaded.");
             }
         </script>
+
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Pravoúhlá soustava souřadnic - Geometrie - Tobikovo</title>
+        <title>Pravoúhlá soustava souřadnic - Geometrie - Tobiso</title>
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/footer.css" />
         <link rel="stylesheet" href="css/nav.css" />
@@ -50,6 +52,15 @@
             <section>
                 <h1 class="verybig">Pravoúhlá soustava souřadnic</h1>
                 <div style="text-align: left">
+                    <div class="intro">
+                        <p>
+                            Pravoúhlá soustava souřadnic se skládá z osy x a y,
+                            které se protínají v bodě zvaném počátek. Slouží k
+                            určování polohy bodů na rovině pomocí souřadnic (x,
+                            y). Je základním nástrojem v geometrii i algebře.
+                            Využívá se například při kreslení grafů.
+                        </p>
+                    </div>
                     <h2>Informace</h2>
                     <img
                         src="images/prasousour.webp"

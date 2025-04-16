@@ -1,89 +1,122 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
+    <head>
+        <!-- Google Consent Mode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-<head>
-    <!-- Google Consent Mode -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+            // Výchozí stav: souhlas odepřen
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
+        </script>
 
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied'
-        });
-        console.log("Google Consent Mode initialized with default: denied");
-    </script>
+        <!-- Google Analytics (nenačte se automaticky) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
+        ></script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-1CDLST0SSK");
+                console.log("Google Analytics loaded.");
+            }
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Poezie a próza - Literatura - Tobiso</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="icon" href="images/favicon.png" />
+    </head>
 
-    <!-- Google Analytics (nenačte se automaticky) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
-    <script>
-        function loadGoogleAnalytics() {
-            console.log("Loading Google Analytics...");
-            gtag('js', new Date());
-            gtag('config', 'G-Q7DH4RTXBC');
-            console.log("Google Analytics loaded.");
-        }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poezie a próza - Literatura - Tobikovo</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="icon" href="images/favicon.png">
-</head>
-
-<body>
-    <div class="loading-bar-container">
-        <div class="loading-bar"></div>
-    </div>
-    <nav id="myNavbar">
-        <a href="#home"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
-        <a href="#home">Domů</a>
-        <a href="#ucivo">Učivo</a>
-        <a href="#o-nas">O nás</a>
-    </nav>
-    <button class="openNav opennav-button" onclick="openNav()">☰</button>
-    <!-- Obsah stránky -->
-    <main>
-
-        <section>
-            <h1 class="verybig">Poezie a próza</h1>
-            <div style="text-align: left;">
-                <h2>Poezie</h2>
-                <ul>
-                    <li>je to básnička</li>
-                    <li>je psána ve verších</li>
-                </ul>
-                <p>V básnickém kraji, kde slova jako ptáci,<br>
-                    srdce mé bije v taktu rýmované hry.<br>
-                    V tajemství vět, kde se rýmy skládají,<br>
-                    jsem báseň, co sní o světě, kde písně vznášejí.</p>
-                <p><em>- ChatGPT</em></p>
-                <h2>Próza</h2>
-                <ul>
-                    <li>je psána ve větách</li>
-                    <li>věty tvoří odstavce, ty kapitoly, ty knížku</li>
-                </ul>
-                <h3>Zima</h3>
-                <p>V zimních měsících se krajina proměňuje v pohádkový svět pokrytý bílým sněhem. Stromy se zahalují do
-                    námrazy a vzduch je chladný, ale svěží. Lidé si oblékají teplé kabáty, vychutnávají si horké nápoje
-                    a procházky zasněženými parky. Zima je časem klidu, kdy si můžeme odpočinout od každodenního shonu a
-                    trávit chvíle v tichu přírody.</p>
-                <p><em>- ChatGPT</em></p>
-                <button onclick="window.history.back()"><i class="bi bi-arrow-left"></i></button>
-            </div>
-        </section>
-
-    </main>
-    <!-- Patička -->
-    <footer>
-        <div class="footer-content">
-            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+    <body>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
         </div>
-    </footer>
-    <!-- JSs -->
-    <script src="javastripts/nav.js"></script>
-</body>
-
+        <nav id="myNavbar">
+            <a href="#home"
+                ><img src="images/white-logo.png" alt="Logo" width="75px"
+            /></a>
+            <a href="#home">Domů</a>
+            <a href="#ucivo">Učivo</a>
+            <a href="#o-nas">O nás</a>
+        </nav>
+        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+        <!-- Obsah stránky -->
+        <main>
+            <section>
+                <h1 class="verybig">Poezie a próza</h1>
+                <div style="text-align: left">
+                    <div class="intro">
+                        <p>
+                            Poezie a próza jsou dva základní literární žánry,
+                            které se liší nejen formou, ale i způsobem vyjádření
+                            a emocemi, které v čtenáři vyvolávají. V tomto
+                            článku si vysvětlíme, co je poezie a co próza, jaké
+                            jsou jejich charakteristické rysy a jak se od sebe
+                            vzájemně odlišují. Zaměříme se na to, jak poezie
+                            využívá rytmus, rým a obraznost k vyjádření
+                            hlubokých myšlenek, zatímco próza se soustředí na
+                            příběh, postavy a detailní popis. Ukážeme si, jaké
+                            jsou hlavní rozdíly mezi těmito dvěma žánry a jak si
+                            mohou čtenáři užívat oba styly psaní.
+                        </p>
+                    </div>
+                    <h2>Poezie</h2>
+                    <ul>
+                        <li>je to básnička</li>
+                        <li>je psána ve verších</li>
+                    </ul>
+                    <p>
+                        V básnickém kraji, kde slova jako ptáci,<br />
+                        srdce mé bije v taktu rýmované hry.<br />
+                        V tajemství vět, kde se rýmy skládají,<br />
+                        jsem báseň, co sní o světě, kde písně vznášejí.
+                    </p>
+                    <p><em>- ChatGPT</em></p>
+                    <h2>Próza</h2>
+                    <ul>
+                        <li>je psána ve větách</li>
+                        <li>věty tvoří odstavce, ty kapitoly, ty knížku</li>
+                    </ul>
+                    <h3>Zima</h3>
+                    <p>
+                        V zimních měsících se krajina proměňuje v pohádkový svět
+                        pokrytý bílým sněhem. Stromy se zahalují do námrazy a
+                        vzduch je chladný, ale svěží. Lidé si oblékají teplé
+                        kabáty, vychutnávají si horké nápoje a procházky
+                        zasněženými parky. Zima je časem klidu, kdy si můžeme
+                        odpočinout od každodenního shonu a trávit chvíle v tichu
+                        přírody.
+                    </p>
+                    <p><em>- ChatGPT</em></p>
+                    <button onclick="window.history.back()">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <!-- Patička -->
+        <footer>
+            <div class="footer-content">
+                <a href="about.html"
+                    ><img
+                        src="images/white-logo.png"
+                        alt="Tobikovo Logo"
+                        width="100px"
+                /></a>
+            </div>
+        </footer>
+        <!-- JSs -->
+        <script src="javastripts/nav.js"></script>
+    </body>
 </html>

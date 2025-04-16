@@ -8,6 +8,7 @@
                 dataLayer.push(arguments);
             }
 
+            // Výchozí stav: souhlas odepřen
             gtag("consent", "default", {
                 analytics_storage: "denied",
             });
@@ -17,19 +18,20 @@
         <!-- Google Analytics (nenačte se automaticky) -->
         <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
         ></script>
         <script>
             function loadGoogleAnalytics() {
                 console.log("Loading Google Analytics...");
                 gtag("js", new Date());
-                gtag("config", "G-Q7DH4RTXBC");
+                gtag("config", "G-1CDLST0SSK");
                 console.log("Google Analytics loaded.");
             }
         </script>
+
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Noty a pomlky - Hudební výchova - Tobikovo</title>
+        <title>Délky not a pomlky - Hudební výchova - Tobiso</title>
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/footer.css" />
         <link rel="stylesheet" href="css/nav.css" />
@@ -54,8 +56,20 @@
         <!-- Obsah stránky -->
         <main>
             <section>
-                <h1 class="verybig">Noty a pomlky</h1>
+                <h1 class="verybig">Délky not a pomlky</h1>
                 <div style="text-align: left">
+                    <div class="intro">
+                        <p>
+                            Délky not a pomlky určují, jak dlouho se má nota
+                            hrát nebo jak dlouho trvá ticho. Celá nota trvá 4
+                            doby, půlová nota trvá 2 doby, čtvrťová nota trvá 1
+                            dobu, osminová nota trvá půl doby a šestnáctinová
+                            nota trvá čtvrt doby. Každé z těchto hodnot odpovídá
+                            také pomlka, která značí ticho na stejný počet dob.
+                            Pomlky jsou v hudbě stejně důležité jako samotné
+                            noty, protože pomáhají udržovat rytmus skladby.
+                        </p>
+                    </div>
                     <img
                         src="images/noty-pomlky.webp"
                         alt="vše"

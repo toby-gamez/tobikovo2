@@ -8,6 +8,7 @@
                 dataLayer.push(arguments);
             }
 
+            // Výchozí stav: souhlas odepřen
             gtag("consent", "default", {
                 analytics_storage: "denied",
             });
@@ -17,19 +18,20 @@
         <!-- Google Analytics (nenačte se automaticky) -->
         <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
         ></script>
         <script>
             function loadGoogleAnalytics() {
                 console.log("Loading Google Analytics...");
                 gtag("js", new Date());
-                gtag("config", "G-Q7DH4RTXBC");
+                gtag("config", "G-1CDLST0SSK");
                 console.log("Google Analytics loaded.");
             }
         </script>
+
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Těžiště - Fyzika - Tobikovo</title>
+        <title>Těžiště - Fyzika - Tobiso</title>
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/footer.css" />
         <link rel="stylesheet" href="css/nav.css" />
@@ -55,6 +57,17 @@
             <section>
                 <h1 class="verybig">Těžiště</h1>
                 <div style="text-align: left">
+                    <div class="intro">
+                        <p>
+                            Těžiště je bod, ve kterém lze považovat veškerou
+                            hmotnost tělesa za soustředěnou. V praxi je to bod,
+                            kolem kterého se těleso vyvažuje. Pro symetrická
+                            tělesa leží těžiště na jejich geometrii, u
+                            nepravidelných tvarů je třeba použít výpočty.
+                            Těžiště je klíčové pro analýzu stability a pohybu
+                            objektů.
+                        </p>
+                    </div>
                     <p>
                         <em
                             >*pokud hledáte těžiště v geometrii, je

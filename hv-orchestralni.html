@@ -8,6 +8,7 @@
                 dataLayer.push(arguments);
             }
 
+            // Výchozí stav: souhlas odepřen
             gtag("consent", "default", {
                 analytics_storage: "denied",
             });
@@ -17,19 +18,19 @@
         <!-- Google Analytics (nenačte se automaticky) -->
         <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
         ></script>
         <script>
             function loadGoogleAnalytics() {
                 console.log("Loading Google Analytics...");
                 gtag("js", new Date());
-                gtag("config", "G-Q7DH4RTXBC");
+                gtag("config", "G-1CDLST0SSK");
                 console.log("Google Analytics loaded.");
             }
         </script>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Orchestrální nástroje - Hudební výchova - Tobikovo</title>
+        <title>Orchestrální nástroje - Hudební výchova - Tobiso</title>
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/footer.css" />
         <link rel="stylesheet" href="css/nav.css" />
@@ -56,6 +57,17 @@
             <section>
                 <h1 class="verybig">Orchestrální nástroje</h1>
                 <div style="text-align: left">
+                    <div class="intro">
+                        <p>
+                            Orchestrální nástroje se dělí na strunné (housle,
+                            violoncello), dechové (flétny, trubky), bicí
+                            (tympony, činely) a klávesové (klavír, varhany).
+                            Strunné nástroje vytvářejí zvuk třením smyčce nebo
+                            brnknutím, dechové pomocí vzduchu, bicí úderem a
+                            klávesové kladívky na struny. Každá skupina přispívá
+                            k celkovému zvuku orchestru.
+                        </p>
+                    </div>
                     <h2>Schéma orchestru</h2>
                     <img
                         src="images/schema-orchestru.webp"
@@ -64,10 +76,10 @@
                         height="200rem"
                     />
                     <p>
-                        Zdroj
+                        Zdroj:
                         <a href="https://slideplayer.cz/slide/2986256/"
                             >SidePlayer</a
-                        >; upraveno
+                        >; oříznuto
                     </p>
                     <h3>Nástroje smyčcové</h3>
                     <ul>

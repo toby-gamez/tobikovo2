@@ -8,6 +8,7 @@
                 dataLayer.push(arguments);
             }
 
+            // Výchozí stav: souhlas odepřen
             gtag("consent", "default", {
                 analytics_storage: "denied",
             });
@@ -17,19 +18,19 @@
         <!-- Google Analytics (nenačte se automaticky) -->
         <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
         ></script>
         <script>
             function loadGoogleAnalytics() {
                 console.log("Loading Google Analytics...");
                 gtag("js", new Date());
-                gtag("config", "G-Q7DH4RTXBC");
+                gtag("config", "G-1CDLST0SSK");
                 console.log("Google Analytics loaded.");
             }
         </script>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Absolutní hodnota - Matematika - Tobikovo</title>
+        <title>Absolutní hodnota - Matematika - Tobiso</title>
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/footer.css" />
         <link rel="stylesheet" href="css/nav.css" />
@@ -50,6 +51,18 @@
             <section>
                 <h1 class="verybig">Absolutní hodnota</h1>
                 <div style="text-align: left">
+                    <div class="intro">
+                        <p>
+                            Absolutní hodnota čísla je jeho vzdálenost od nuly
+                            na číselné ose, bez ohledu na znaménko. Například
+                            absolutní hodnota čísla -5 je 5, protože -5 je
+                            vzdáleno od nuly o 5 jednotek. Značíme ji jako |x|,
+                            kde x je libovolné reálné číslo. Pro kladná čísla a
+                            nulu je absolutní hodnota rovna samotnému číslu, pro
+                            záporná čísla je to číslo bez záporného znaménka.
+                            Například: |3| = 3, |-7| = 7.
+                        </p>
+                    </div>
                     <h2>Informace</h2>
                     <ul>
                         <li>udává vzdálenost tohoto čísla od nuly</li>

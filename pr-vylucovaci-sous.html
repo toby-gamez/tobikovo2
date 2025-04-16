@@ -8,6 +8,7 @@
                 dataLayer.push(arguments);
             }
 
+            // Výchozí stav: souhlas odepřen
             gtag("consent", "default", {
                 analytics_storage: "denied",
             });
@@ -17,19 +18,19 @@
         <!-- Google Analytics (nenačte se automaticky) -->
         <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
         ></script>
         <script>
             function loadGoogleAnalytics() {
                 console.log("Loading Google Analytics...");
                 gtag("js", new Date());
-                gtag("config", "G-Q7DH4RTXBC");
+                gtag("config", "G-1CDLST0SSK");
                 console.log("Google Analytics loaded.");
             }
         </script>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Vylučovací soustava - Přírodopis - Tobikovo</title>
+        <title>Vylučovací soustava - Přírodopis - Tobiso</title>
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/footer.css" />
         <link rel="stylesheet" href="css/nav.css" />
@@ -49,28 +50,43 @@
         <main>
             <section>
                 <h1 class="verybig">Vylučovací soustava</h1>
-                <h2>Funkce</h2>
-                <ul>
-                    <li><strong>odvádí z těla odpadní látky + H₂O</strong></li>
-                    <li>udržuje stálé vnitřní prostředí těla</li>
-                    <li>
-                        vylučovací funkci mají
-                        <a href="pr-dychaci-sous.html">plíce</a>, kůže,
-                        <a href="pr-travici-sous.html">tlusté střevo</a> a
-                        ledviny
-                    </li>
+                <div style="text-align: left">
+                    <div class="intro">
+                        <p>
+                            Vylučovací soustava zajišťuje odstranění odpadních
+                            látek a přebytečných látek z těla. Skládá se z
+                            ledvin, močovodů, močového měchýře a močové trubice.
+                            Ledviny filtrují krev, čímž vytvářejí moč, která je
+                            následně transportována močovody do močového
+                            měchýře. Při vylučování se moč z těla odstraňuje
+                            močovou trubicí. Tato soustava udržuje rovnováhu
+                            tekutin a elektrolytů v těle.
+                        </p>
+                    </div>
+
+                    <h2>Funkce</h2>
                     <ul>
                         <li>
-                            ledviny jsou
-                            <strong>párový orgán fazolovitého tvaru</strong>
+                            <strong>odvádí z těla odpadní látky + H₂O</strong>
                         </li>
-                        <li>každá ledvina je jiná</li>
-                        <li>uloženy po stranách bederní páteře</li>
-                        <li><strong>čistí krev, vstváří moč</strong></li>
+                        <li>udržuje stálé vnitřní prostředí těla</li>
+                        <li>
+                            vylučovací funkci mají
+                            <a href="pr-dychaci-sous.html">plíce</a>, kůže,
+                            <a href="pr-travici-sous.html">tlusté střevo</a> a
+                            ledviny
+                        </li>
+                        <ul>
+                            <li>
+                                ledviny jsou
+                                <strong>párový orgán fazolovitého tvaru</strong>
+                            </li>
+                            <li>každá ledvina je jiná</li>
+                            <li>uloženy po stranách bederní páteře</li>
+                            <li><strong>čistí krev, vstváří moč</strong></li>
+                        </ul>
+                        <li>nefron - ledvinová buňka</li>
                     </ul>
-                    <li>nefron - ledvinová buňka</li>
-                </ul>
-                <div style="text-align: left">
                     <button onclick="window.history.back()">
                         <i class="bi bi-arrow-left"></i>
                     </button>

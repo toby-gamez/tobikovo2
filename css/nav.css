@@ -1,11 +1,12 @@
 #MyNavBar {
-    height: 100vh;
+    height: 99vh;
     /* Ensure it takes full height */
     width: 285px;
     position: fixed;
     left: 0;
     top: 0;
     padding-top: 1rem;
+    padding-bottom: 1rem;
     background-color: #ffad8f;
     display: flex;
     flex-direction: column;

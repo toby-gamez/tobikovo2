@@ -1,86 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
+    <head>
+        <!-- Google Consent Mode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-<head>
-    <!-- Google Consent Mode -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+            // Výchozí stav: souhlas odepřen
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
+        </script>
 
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied'
-        });
-        console.log("Google Consent Mode initialized with default: denied");
-    </script>
+        <!-- Google Analytics (nenačte se automaticky) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
+        ></script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-1CDLST0SSK");
+                console.log("Google Analytics loaded.");
+            }
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kroniky - Literatura - Tobiso</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="icon" href="images/favicon.png" />
+    </head>
 
-    <!-- Google Analytics (nenačte se automaticky) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
-    <script>
-        function loadGoogleAnalytics() {
-            console.log("Loading Google Analytics...");
-            gtag('js', new Date());
-            gtag('config', 'G-Q7DH4RTXBC');
-            console.log("Google Analytics loaded.");
-        }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kroniky - Literatura - Tobikovo</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="icon" href="images/favicon.png">
-</head>
-
-<body>
-    <div class="loading-bar-container">
-        <div class="loading-bar"></div>
-    </div>
-    <nav id="myNavbar">
-        <a href="#home"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
-        <a href="#home">Domů</a>
-        <a href="#ucivo">Učivo</a>
-        <a href="#o-nas">O nás</a>
-    </nav>
-    <button class="openNav opennav-button" onclick="openNav()">☰</button>
-    <!-- Obsah stránky -->
-    <main>
-
-        <section>
-            <h1 class="verybig">Kroniky</h1>
-            <div style="text-align: left;">
-                <p><em>(více o žánru kronika <a href="li-kronika.html">zde</a>)</em></p>
-                <h2>Kosmova kronika česká</h2>
-                <ul>
-                    <li>psána latinsky</li>
-                    <li>české dějiny do roku 1125 (Kosmas zemřel)</li>
-                </ul>
-                <ol>
-                    <li>kniha - vyprávění starců</li>
-                    <li>kniha - vyprávění očitých svědků</li>
-                    <li>kniha - vlastní zkušenosti autora</li>
-                </ol>
-                <h2>Kronika tak řečeného Dalimila</h2>
-                <ul>
-                    <li>psána česky, veršovaná</li>
-                    <li>od začátku vlády Jana Lucemburského do roku 1314</li>
-                    <li>autor neznámý</li>
-                    <li>zaměřena proti Němcům</li>
-                </ul>
-                <button onclick="window.history.back()"><i class="bi bi-arrow-left"></i></button>
-            </div>
-        </section>
-
-    </main>
-    <!-- Patička -->
-    <footer>
-        <div class="footer-content">
-            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+    <body>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
         </div>
-    </footer>
-    <!-- JSs -->
-    <script src="javastripts/nav.js"></script>
-</body>
-
+        <nav id="myNavbar">
+            <a href="#home"
+                ><img src="images/white-logo.png" alt="Logo" width="75px"
+            /></a>
+            <a href="#home">Domů</a>
+            <a href="#ucivo">Učivo</a>
+            <a href="#o-nas">O nás</a>
+        </nav>
+        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+        <!-- Obsah stránky -->
+        <main>
+            <section>
+                <h1 class="verybig">Kroniky</h1>
+                <div style="text-align: left">
+                    <p>
+                        <em
+                            >(více o žánru kronika
+                            <a href="li-kronika.html">zde</a>)</em
+                        >
+                    </p>
+                    <h2>Kosmova kronika česká</h2>
+                    <ul>
+                        <li>psána latinsky</li>
+                        <li>české dějiny do roku 1125 (Kosmas zemřel)</li>
+                    </ul>
+                    <ol>
+                        <li>kniha - vyprávění starců</li>
+                        <li>kniha - vyprávění očitých svědků</li>
+                        <li>kniha - vlastní zkušenosti autora</li>
+                    </ol>
+                    <h2>Kronika tak řečeného Dalimila</h2>
+                    <ul>
+                        <li>psána česky, veršovaná</li>
+                        <li>
+                            od začátku vlády Jana Lucemburského do roku 1314
+                        </li>
+                        <li>autor neznámý</li>
+                        <li>zaměřena proti Němcům</li>
+                    </ul>
+                    <button onclick="window.history.back()">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <!-- Patička -->
+        <footer>
+            <div class="footer-content">
+                <a href="about.html"
+                    ><img
+                        src="images/white-logo.png"
+                        alt="Tobikovo Logo"
+                        width="100px"
+                /></a>
+            </div>
+        </footer>
+        <!-- JSs -->
+        <script src="javastripts/nav.js"></script>
+    </body>
 </html>

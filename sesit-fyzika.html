@@ -8,6 +8,7 @@
                 dataLayer.push(arguments);
             }
 
+            // Výchozí stav: souhlas odepřen
             gtag("consent", "default", {
                 analytics_storage: "denied",
             });
@@ -17,19 +18,19 @@
         <!-- Google Analytics (nenačte se automaticky) -->
         <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
         ></script>
         <script>
             function loadGoogleAnalytics() {
                 console.log("Loading Google Analytics...");
                 gtag("js", new Date());
-                gtag("config", "G-Q7DH4RTXBC");
+                gtag("config", "G-1CDLST0SSK");
                 console.log("Google Analytics loaded.");
             }
         </script>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sešit fyziky - Tobikovo</title>
+        <title>Sešit fyziky - Tobiso</title>
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/footer.css" />
         <link rel="stylesheet" href="css/nav.css" />
@@ -53,6 +54,12 @@
                     <span style="color: #9c9c9c"
                         ><em>od nejnovějšího k nejstaršímu</em></span
                     >
+                    <h2>Elektrický proud</h2>
+                    <a href="f-el-proud.html">zde</a>
+                    <h2>Elektrické napětí</h2>
+                    <a href="f-el-napeti.html">zde</a>
+                    <h2>Elektřina</h2>
+                    <a href="f-elektrina.html">zde</a>
                     <h2>Motory</h2>
                     <a href="f-motory.html">zde</a>
                     <h2>Změna skupenství</h2>

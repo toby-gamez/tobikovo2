@@ -1,89 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
+    <head>
+        <!-- Google Consent Mode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-<head>
-    <!-- Google Consent Mode -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+            // Výchozí stav: souhlas odepřen
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
+        </script>
 
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied'
-        });
-        console.log("Google Consent Mode initialized with default: denied");
-    </script>
+        <!-- Google Analytics (nenačte se automaticky) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
+        ></script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-1CDLST0SSK");
+                console.log("Google Analytics loaded.");
+            }
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Předložky - Mluvnice - Tobiso</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="icon" href="images/favicon.png" />
+    </head>
 
-    <!-- Google Analytics (nenačte se automaticky) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
-    <script>
-        function loadGoogleAnalytics() {
-            console.log("Loading Google Analytics...");
-            gtag('js', new Date());
-            gtag('config', 'G-Q7DH4RTXBC');
-            console.log("Google Analytics loaded.");
-        }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Předložky - Mluvnice - Tobikovo</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="icon" href="images/favicon.png">
-</head>
-
-<body>
-    <div class="loading-bar-container">
-        <div class="loading-bar"></div>
-    </div>
-    <nav id="myNavbar">
-        <a href="#home"><img src="images/white-logo.png" alt="Logo" width="75px"></a>
-        <a href="#home">Domů</a>
-        <a href="#ucivo">Učivo</a>
-        <a href="#o-nas">O nás</a>
-    </nav>
-    <button class="openNav opennav-button" onclick="openNav()">☰</button>
-    <!-- Obsah stránky -->
-    <main>
-
-        <section>
-            <h1 class="verybig">Předložky</h1>
-            <div style="text-align: left;">
-                <h2>Dělení</h2>
-                <ul>
-                    <li>vlastní - za, v, do, pro, nad...</li>
-                    <li>nevlastní - nevlastní znamená, že mohou být i jiným slovním druhem, jako kolem (S kolem jsme
-                        jeli do
-                        opravny. - podstatné jméno; Šli jsme kolem rybníku. - předložka; Jeli jsme kolem. - příslovce),
-                        místo, proti, blízko</li>
-                </ul>
-                <h2>Výslovnost</h2>
-                <p>Pro lepší výslovnost používáme k - ke, ku, v - ve, přes - přese</p>
-                <h3>Pozor</h3>
-                <ul>
-                    <li>Předložka <span class="underlined">s</span> se pojí se <span class="underlined">7. pádem</span>
-                    </li>
-                    <li>Předložka <span class="underlined">z</span> se pojí se <span class="underlined">2. pádem</span>
-                    </li>
-                    <li>Předložka <span class="underlined">kromě</span> se pojí se <span class="underlined">2.
-                            pádem</span> (kromě Jirky)</li>
-                    <li>Předložka <span class="underlined">mimo</span> se pojí se <span class="underlined">4.
-                            pádem</span> (mimo Jirku)</li>
-                </ul>
-                <button onclick="window.history.back()"><i class="bi bi-arrow-left"></i></button>
-            </div>
-        </section>
-
-    </main>
-    <!-- Patička -->
-    <footer>
-        <div class="footer-content">
-            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+    <body>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
         </div>
-    </footer>
-    <!-- JSs -->
-    <script src="javastripts/nav.js"></script>
-</body>
-
+        <nav id="myNavbar">
+            <a href="#home"
+                ><img src="images/white-logo.png" alt="Logo" width="75px"
+            /></a>
+            <a href="#home">Domů</a>
+            <a href="#ucivo">Učivo</a>
+            <a href="#o-nas">O nás</a>
+        </nav>
+        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+        <!-- Obsah stránky -->
+        <main>
+            <section>
+                <h1 class="verybig">Předložky</h1>
+                <div style="text-align: left">
+                    <div class="intro">
+                        <p>
+                            Předložky jsou neohebný slovní druh, který vyjadřuje
+                            vztahy mezi slovy ve větě – nejčastěji prostorové,
+                            časové nebo způsobové. V tomto článku si vysvětlíme,
+                            co jsou předložky, jaké existují druhy (se 4., 6.,
+                            7. pádem apod.) a jak správně fungují ve spojení s
+                            jinými slovy. Ukážeme si konkrétní příklady a
+                            upozorníme na časté chyby, kterých se lidé při
+                            používání předložek dopouštějí.
+                        </p>
+                    </div>
+                    <h2>Dělení</h2>
+                    <ul>
+                        <li>vlastní - za, v, do, pro, nad...</li>
+                        <li>
+                            nevlastní - nevlastní znamená, že mohou být i jiným
+                            slovním druhem, jako kolem (S kolem jsme jeli do
+                            opravny. - podstatné jméno; Šli jsme kolem rybníku.
+                            - předložka; Jeli jsme kolem. - příslovce), místo,
+                            proti, blízko
+                        </li>
+                    </ul>
+                    <h2>Výslovnost</h2>
+                    <p>
+                        Pro lepší výslovnost používáme k - ke, ku, v - ve, přes
+                        - přese
+                    </p>
+                    <h3>Pozor</h3>
+                    <ul>
+                        <li>
+                            Předložka <span class="underlined">s</span> se pojí
+                            se <span class="underlined">7. pádem</span>
+                        </li>
+                        <li>
+                            Předložka <span class="underlined">z</span> se pojí
+                            se <span class="underlined">2. pádem</span>
+                        </li>
+                        <li>
+                            Předložka <span class="underlined">kromě</span> se
+                            pojí se
+                            <span class="underlined">2. pádem</span> (kromě
+                            Jirky)
+                        </li>
+                        <li>
+                            Předložka <span class="underlined">mimo</span> se
+                            pojí se
+                            <span class="underlined">4. pádem</span> (mimo
+                            Jirku)
+                        </li>
+                    </ul>
+                    <button onclick="window.history.back()">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <!-- Patička -->
+        <footer>
+            <div class="footer-content">
+                <a href="about.html"
+                    ><img
+                        src="images/white-logo.png"
+                        alt="Tobikovo Logo"
+                        width="100px"
+                /></a>
+            </div>
+        </footer>
+        <!-- JSs -->
+        <script src="javastripts/nav.js"></script>
+    </body>
 </html>

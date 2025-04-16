@@ -8,6 +8,7 @@
                 dataLayer.push(arguments);
             }
 
+            // Výchozí stav: souhlas odepřen
             gtag("consent", "default", {
                 analytics_storage: "denied",
             });
@@ -17,19 +18,19 @@
         <!-- Google Analytics (nenačte se automaticky) -->
         <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
         ></script>
         <script>
             function loadGoogleAnalytics() {
                 console.log("Loading Google Analytics...");
                 gtag("js", new Date());
-                gtag("config", "G-Q7DH4RTXBC");
+                gtag("config", "G-1CDLST0SSK");
                 console.log("Google Analytics loaded.");
             }
         </script>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Rock & roll - Tobikovo</title>
+        <title>Rock & roll - Tobiso</title>
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/footer.css" />
         <link rel="stylesheet" href="css/nav.css" />
@@ -56,6 +57,17 @@
             <section>
                 <h1 class="verybig">Rock & roll</h1>
                 <div style="text-align: left">
+                    <div class="intro">
+                        <p>
+                            Rock & roll je hudební žánr, který vznikl v 50.
+                            letech 20. století v USA. Spojuje prvky blues,
+                            country a rhythm and blues, charakterizuje ho
+                            energický rytmus a jednoduché melodie. Mezi ikony
+                            rock & rollu patří Elvis Presley, Chuck Berry nebo
+                            Little Richard. Tento styl hudby měl obrovský vliv
+                            na vývoj moderní populární hudby.
+                        </p>
+                    </div>
                     <h2>Informace</h2>
                     <ul>
                         <li>

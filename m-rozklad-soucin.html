@@ -8,6 +8,7 @@
                 dataLayer.push(arguments);
             }
 
+            // Výchozí stav: souhlas odepřen
             gtag("consent", "default", {
                 analytics_storage: "denied",
             });
@@ -17,19 +18,19 @@
         <!-- Google Analytics (nenačte se automaticky) -->
         <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
         ></script>
         <script>
             function loadGoogleAnalytics() {
                 console.log("Loading Google Analytics...");
                 gtag("js", new Date());
-                gtag("config", "G-Q7DH4RTXBC");
+                gtag("config", "G-1CDLST0SSK");
                 console.log("Google Analytics loaded.");
             }
         </script>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Rozklad mnohočlenu na součin - Matematika - Tobikovo</title>
+        <title>Rozklad mnohočlenu na součin - Matematika - Tobiso</title>
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/footer.css" />
         <link rel="stylesheet" href="css/nav.css" />
@@ -50,6 +51,19 @@
             <section>
                 <h1 class="verybig">Rozklad mnohočlenu na součin</h1>
                 <div style="text-align: left">
+                    <div class="intro">
+                        <p>
+                            Rozklad mnohočlenu na součin je technika, která
+                            umožňuje přepsat mnohočlen jako součin dvou nebo
+                            více výrazů. Může být prováděn pomocí vytýkání
+                            společného faktoru nebo pomocí vzorců. Při vytýkání
+                            se z mnohých členů vytkne společný faktor, například
+                            3x² + 6x = 3x(x+2). Vzorce, jako součet a rozdíl
+                            čtverců, umožňují rozklad typu a² − b² = (a − b) ·
+                            (a + b). Tyto metody usnadňují řešení rovnic a
+                            úpravy algebraických výrazů.
+                        </p>
+                    </div>
                     <p>
                         <em
                             >*NSD = největší společný dělitel
@@ -184,7 +198,7 @@
                         závorky.
                     </p>
                     <h2>Rozkladové vzorce</h2>
-                    <h3><strong>(a + b)² = a² + 2ab + b²</strong></h3>
+                    <h3><strong>Vzorec (a + b)² = a² + 2ab + b²</strong></h3>
                     <p><strong>(-a - b)² = (a + b)²</strong></p>
                     <h4>Příklady</h4>
                     <p>
@@ -192,7 +206,7 @@
                             >(3a + 4)² = 9a² + 24a + 16</strong
                         >
                     </p>
-                    <h3><strong>(a - b)² = a² - 2ab + b²</strong></h3>
+                    <h3><strong>Vzorec (a - b)² = a² - 2ab + b²</strong></h3>
                     <p><strong>(-a + b)² = (b - a)²</strong></p>
                     <h4>Příklady</h4>
                     <p>
@@ -200,15 +214,15 @@
                             >(3a - 4)² = 9a² - 24a + 16</strong
                         >
                     </p>
-                    <h3><strong>(a + b) · (a - b) = a² - b²</strong></h3>
+                    <h3><strong>Vzorec (a + b) · (a - b) = a² - b²</strong></h3>
                     <p>
                         <strong>(a + b) · (a - b) = (a - b) · (a + b)</strong>
                     </p>
-                    <h4>Příklady</h4>
+                    <h4>Příklad</h4>
                     <p>
                         <strong
-                            >(a + b) · (a - b) = (a² + 2ab + b²) · (a² - 2ab +
-                            b²) = a⁴ - b⁴</strong
+                            >(2 + 4x) · (2 - 4x) = 2² + 2 · 2 · 4x + 4x² = 4 +
+                            16x + 16x²</strong
                         >
                     </p>
                     <button onclick="window.history.back()">

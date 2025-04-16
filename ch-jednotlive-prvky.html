@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="cs">
+    <head>
+        <!-- Google Consent Mode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+
+            // Výchozí stav: souhlas odepřen
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
+        </script>
+
+        <!-- Google Analytics (nenačte se automaticky) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
+        ></script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-1CDLST0SSK");
+                console.log("Google Analytics loaded.");
+            }
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jednotlivé prvky - Chemie - Tobiso</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="icon" href="images/favicon.png" />
+    </head>
+
+    <body>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
+        </div>
+
+        <nav id="myNavbar"></nav>
+        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+
+        <!-- Obsah stránky -->
+        <main>
+            <section>
+                <h1 class="verybig">Jednotlivé prvky</h1>
+                <div style="text-align: left">
+                    <div class="intro">
+                        <p>
+                            Jednotlivé chemické prvky jsou základní stavební
+                            kameny všech látek. Každý prvek má své jedinečné
+                            vlastnosti, značku a atomové číslo. Prvky jsou
+                            uspořádány v periodické tabulce podle počtu protonů.
+                            Dělí se na kovy, nekovy a polokovy.
+                        </p>
+                    </div>
+                    <h2>Vodík (H)</h2>
+                    <h3>Výskyt</h3>
+                    <ul>
+                        <li><strong>ve vesmíru volný</strong></li>
+                        <li>v přírodě ve sloučeninách</li>
+                    </ul>
+                    <h3>Vlastnosti</h3>
+                    <ul>
+                        <li>
+                            <strong
+                                >nejjednodušší prvek (jeden proton, jeden
+                                elektron)</strong
+                            >
+                        </li>
+                        <li>tvoří dvouatomové molekuly</li>
+                        <li>bezbarvý lehký plyn</li>
+                        <li>
+                            <strong
+                                >hořlavý, se vzduchem tvoří výbušnou
+                                směs</strong
+                            >
+                        </li>
+                        <li>uchovává se v červeně označené tlakové lahvi</li>
+                        <li>štěká - štěkání vodíku</li>
+                    </ul>
+                    <h3>Průmyslová výroba</h3>
+                    <ul>
+                        <li><strong>ze zemního plynu</strong></li>
+                        <li>rozklad vody elektrickým proudem</li>
+                    </ul>
+                    <h3>Laboratorní příprava</h3>
+                    <ul>
+                        <li>reakce zinku s kyselinou chlorovodíkovou</li>
+                        <li>reakce sodíku s vodou</li>
+                    </ul>
+                    <h3>Využití</h3>
+                    <ul>
+                        <li>výroba chemikálií</li>
+                        <li>řezání a svařování kovů</li>
+                        <li>
+                            <strong
+                                >raketové palivo, ekologické palivo do
+                                automobilů</strong
+                            >
+                        </li>
+                        <li>stužování tuků</li>
+                    </ul>
+                    <h2>Dusík (N)</h2>
+                    <h3>Výskyt</h3>
+                    <ul>
+                        <li><strong>v atmosféře (78%)</strong></li>
+                        <li>v přírodě ve sloučeninách</li>
+                    </ul>
+                    <h3>Vlastnosti</h3>
+                    <ul>
+                        <li>bezbarvý plyn bez chuti a zápachu</li>
+                        <li>tvoří dvouatomové molekuly</li>
+                        <li><strong>málo reaktivní (inertní)</strong></li>
+                        <li>lehčí než vzduch</li>
+                        <li>špatně rozpustný ve vodě</li>
+                    </ul>
+                    <h3>Průmyslová výroba</h3>
+                    <ul>
+                        <li><strong>destilací zkapalněného vzduchu</strong></li>
+                    </ul>
+                    <h3>Laboratorní příprava</h3>
+                    <ul>
+                        <li>tepelným rozkladem dusitanu amonného</li>
+                        <li>reakcí chloridu amonného s dusitanem sodným</li>
+                    </ul>
+                    <h3>Využití</h3>
+                    <ul>
+                        <li>
+                            <strong>výroba amoniaku a dalších sloučenin</strong>
+                        </li>
+                        <li>ochranná atmosféra (svařování, balení potravin)</li>
+                        <li>plnění žárovek</li>
+                        <li>výroba umělých hnojiv</li>
+                    </ul>
+                    <h2>Kyslík</h2>
+                    <h3>Výskyt</h3>
+                    <ul>
+                        <li><strong>v atmosféře (21%)</strong></li>
+                        <li>v zemské kůře (vázaný ve sloučeninách)</li>
+                        <li>ve vodě</li>
+                    </ul>
+                    <h3>Vlastnosti</h3>
+                    <ul>
+                        <li>bezbarvý plyn bez chuti a zápachu</li>
+                        <li><strong>podporuje hoření</strong></li>
+                        <li>tvoří dvouatomové molekuly</li>
+                        <li><strong>reaktivní prvek</strong></li>
+                        <li><strong>nezbytný pro dýchání</strong></li>
+                    </ul>
+                    <h3>Průmyslová výroba</h3>
+                    <ul>
+                        <li><strong>destilací zkapalněného vzduchu</strong></li>
+                    </ul>
+                    <h3>Laboratorní příprava</h3>
+                    <ul>
+                        <li>rozkladem peroxidu vodíku</li>
+                        <li>rozkladem manganistanu draselného</li>
+                    </ul>
+                    <h3>Využití</h3>
+                    <ul>
+                        <li>
+                            <strong>zdravotnictví (dýchací přístroje)</strong>
+                        </li>
+                        <li>svařování a řezání kovů</li>
+                        <li>čištění odpadních vod</li>
+                        <li>chemický průmysl</li>
+                    </ul>
+                    <h2>Síra</h2>
+                    <h3>Výskyt</h3>
+                    <ul>
+                        <li>volná v sopečných oblastech</li>
+                        <li>
+                            <strong
+                                >vázaná ve sloučeninách (sulfidy,
+                                sírany)</strong
+                            >
+                        </li>
+                    </ul>
+                    <h3>Vlastnosti</h3>
+                    <ul>
+                        <li><strong>žlutá krystalická látka</strong></li>
+                        <li>nerozpustná ve vodě</li>
+                        <li>rozpustná v sirouhlíku</li>
+                        <li>hoří modrým plamenem</li>
+                        <li>
+                            vytváří několik modifikací (rombická, monoklinická)
+                        </li>
+                    </ul>
+                    <h3>Výroba</h3>
+                    <ul>
+                        <li><strong>těžba přírodní síry</strong></li>
+                        <li>zpracování sulfidických rud</li>
+                    </ul>
+                    <h3>Využití</h3>
+                    <ul>
+                        <li><strong>výroba kyseliny sírové</strong></li>
+                        <li>vulkanizace kaučuku</li>
+                        <li>výroba zápalek a střelného prachu</li>
+                        <li>výroba pesticidů</li>
+                        <li>dezinfekční prostředky</li>
+                    </ul>
+                    <h2>Fosfor</h2>
+                    <h3>Výskyt</h3>
+                    <ul>
+                        <li>
+                            <strong
+                                >v přírodě pouze vázaný ve sloučeninách</strong
+                            >
+                        </li>
+                        <li>nejrozšířenější jsou fosforečnany</li>
+                        <li>v kostech a zubech</li>
+                    </ul>
+                    <h3>Vlastnosti</h3>
+                    <ul>
+                        <li>vytváří několik modifikací</li>
+                        <li>
+                            <strong>bílý fosfor - jedovatý, samozápalný</strong>
+                        </li>
+                        <li>
+                            <strong>červený fosfor - nejedovatý, stálý</strong>
+                        </li>
+                        <li>černý fosfor - stálý, výroba elektrotechniky</li>
+                        <li>na vzduchu se samovolně oxiduje</li>
+                    </ul>
+                    <h3>Výroba</h3>
+                    <ul>
+                        <li><strong>z fosforečnanů</strong></li>
+                        <li>redukcí uhlíkem a oxidem křemičitým</li>
+                    </ul>
+                    <h3>Využití</h3>
+                    <ul>
+                        <li>výroba zápalek</li>
+                        <li>výroba pesticidů</li>
+                        <li>přísada do pracích prášků</li>
+                        <li><strong>výroba hnojiv</strong></li>
+                    </ul>
+                    <button onclick="window.history.back()">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <!-- Patička -->
+        <footer>
+            <div class="footer-content">
+                <a href="about.html"
+                    ><img
+                        src="images/white-logo.png"
+                        alt="Tobikovo Logo"
+                        width="100px"
+                /></a>
+            </div>
+        </footer>
+        <!-- JSs -->
+        <script src="javastripts/nav.js"></script>
+    </body>
+</html>

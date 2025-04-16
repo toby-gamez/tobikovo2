@@ -8,6 +8,7 @@
                 dataLayer.push(arguments);
             }
 
+            // Výchozí stav: souhlas odepřen
             gtag("consent", "default", {
                 analytics_storage: "denied",
             });
@@ -17,19 +18,20 @@
         <!-- Google Analytics (nenačte se automaticky) -->
         <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
         ></script>
         <script>
             function loadGoogleAnalytics() {
                 console.log("Loading Google Analytics...");
                 gtag("js", new Date());
-                gtag("config", "G-Q7DH4RTXBC");
+                gtag("config", "G-1CDLST0SSK");
                 console.log("Google Analytics loaded.");
             }
         </script>
+
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Chemické výpočty - Chemie - Tobikovo</title>
+        <title>Chemické výpočty - Chemie - Tobiso</title>
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/footer.css" />
         <link rel="stylesheet" href="css/nav.css" />
@@ -50,6 +52,16 @@
             <section>
                 <h1 class="verybig">Chemické výpočty</h1>
                 <div style="text-align: left">
+                    <div class="intro">
+                        <p>
+                            Chemické výpočty slouží k určení množství látek,
+                            hmotnosti nebo objemu při chemických reakcích.
+                            Základem je práce s moly, molární hmotností a
+                            stechiometrií rovnic. Pomáhají předvídat, kolik
+                            látky je potřeba nebo vznikne. Jsou důležité v
+                            laboratoři i průmyslu.
+                        </p>
+                    </div>
                     <h2>Molární hmotnost</h2>
                     <p>
                         <strong

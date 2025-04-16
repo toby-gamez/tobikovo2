@@ -8,6 +8,7 @@
                 dataLayer.push(arguments);
             }
 
+            // Výchozí stav: souhlas odepřen
             gtag("consent", "default", {
                 analytics_storage: "denied",
             });
@@ -17,19 +18,19 @@
         <!-- Google Analytics (nenačte se automaticky) -->
         <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
         ></script>
         <script>
             function loadGoogleAnalytics() {
                 console.log("Loading Google Analytics...");
                 gtag("js", new Date());
-                gtag("config", "G-Q7DH4RTXBC");
+                gtag("config", "G-1CDLST0SSK");
                 console.log("Google Analytics loaded.");
             }
         </script>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Dělitelnost - Matematika - Tobikovo</title>
+        <title>Dělitelnost - Matematika - Tobiso</title>
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/footer.css" />
         <link rel="stylesheet" href="css/nav.css" />
@@ -56,6 +57,18 @@
             <section>
                 <h1 class="verybig">Dělitelnost</h1>
                 <div style="text-align: left">
+                    <div class="intro">
+                        <p>
+                            Dělitelnost čísla se určuje podle několika pravidel.
+                            Číslo je dělitelné 2, pokud končí sudou číslicí.
+                            Dělitelnost 3 zkontrolujeme tak, že součet jeho
+                            číslic je dělitelný 3. Dělitelnost 5 platí, pokud
+                            číslo končí 0 nebo 5. Dělitelnost 10 je podmíněná
+                            tím, že číslo končí nulou. Další pravidla
+                            dělitelnosti existují pro čísla 4, 6, 9 nebo 11 a
+                            jsou specifická pro konkrétní číslice v čísle.
+                        </p>
+                    </div>
                     <h2>Informace</h2>
                     <p>
                         Aby bylo nějaké číslo dělitelné, musí se dát

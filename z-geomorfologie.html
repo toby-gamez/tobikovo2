@@ -1,76 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
+    <head>
+        <!-- Google Consent Mode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-<head>
-    <!-- Google Consent Mode -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+            // Výchozí stav: souhlas odepřen
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
+        </script>
 
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied'
-        });
-        console.log("Google Consent Mode initialized with default: denied");
-    </script>
+        <!-- Google Analytics (nenačte se automaticky) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
+        ></script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-1CDLST0SSK");
+                console.log("Google Analytics loaded.");
+            }
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Geomorfologie České republiky - Zeměpis - Tobiso</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="icon" href="images/favicon.png" />
+    </head>
 
-    <!-- Google Analytics (nenačte se automaticky) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
-    <script>
-        function loadGoogleAnalytics() {
-            console.log("Loading Google Analytics...");
-            gtag('js', new Date());
-            gtag('config', 'G-Q7DH4RTXBC');
-            console.log("Google Analytics loaded.");
-        }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geomorfologie České Republiky - Zeměpis - Tobikovo</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="icon" href="images/favicon.png">
-</head>
-
-<body>
-    <div class="loading-bar-container">
-        <div class="loading-bar"></div>
-    </div>
-
-    <nav id="myNavbar"></nav>
-    <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-    <!-- Obsah stránky -->
-    <main>
-
-        <section>
-            <h1 class="verybig">Geomorfologie České Republiky</h1>
-            <div style="text-align: left;">
-                <h2>Informace</h2>
-                <ul>
-                	<li>věda zabívající se vznikem, stáří a tvarem zemského povrchu</li>
-                	<li>v ČR rozlišujeme 4 geomorfologické jednotky</li>
-                	<ul>
-                		<li>Česká vysočina - prvohory, v době hercynského vrásnění</li>
-                		<li>Západní Karpaty - třerihory, v Alpskohimalájském vrásnění</li>
-                		<li>Středoevropská nížina</li>
-                		<li>Západopanonská pánev</li>
-                	</ul>
-                </ul>
-                <button onclick="window.history.back()"><i class="bi bi-arrow-left"></i></button>
-            </div>
-        </section>
-
-    </main>
-    <!-- Patička -->
-    <footer>
-        <div class="footer-content">
-            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+    <body>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
         </div>
-    </footer>
-    <!-- JSs -->
-    <script src="javastripts/nav.js"></script>
-</body>
 
+        <nav id="myNavbar"></nav>
+        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+
+        <!-- Obsah stránky -->
+        <main>
+            <section>
+                <h1 class="verybig">Geomorfologie České republiky</h1>
+                <div style="text-align: left">
+                    <div class="intro">
+                        <p>
+                            Geomorfologie České republiky zahrnuje pestrou
+                            krajinu, která se dělí na několik hlavních
+                            geomorfologických jednotek. Mezi nejvýznamnější
+                            patří Česká vysočina, která tvoří centrální část
+                            země, a kolem ní se nachází různé pohoří, jako jsou
+                            Krkonošsko-jesenická soustava na severovýchodě a
+                            Šumava na jihozápadě. Dále se zde nachází i nížiny,
+                            jako je Polabská nebo Českomoravská nížina. Tato
+                            rozmanitost krajiny je výsledkem dlouhého
+                            geologického vývoje, zahrnujícího erozní a
+                            tektonické procesy.
+                        </p>
+                    </div>
+                    <h2>Informace</h2>
+                    <ul>
+                        <li>
+                            věda zabívající se vznikem, stáří a tvarem zemského
+                            povrchu
+                        </li>
+                        <li>v ČR rozlišujeme 4 geomorfologické jednotky</li>
+                        <ul>
+                            <li>
+                                Česká vysočina - prvohory, v době hercynského
+                                vrásnění
+                            </li>
+                            <li>
+                                Západní Karpaty - třerihory, v Alpskohimalájském
+                                vrásnění
+                            </li>
+                            <li>Středoevropská nížina</li>
+                            <li>Západopanonská pánev</li>
+                        </ul>
+                    </ul>
+                    <button onclick="window.history.back()">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <!-- Patička -->
+        <footer>
+            <div class="footer-content">
+                <a href="about.html"
+                    ><img
+                        src="images/white-logo.png"
+                        alt="Tobikovo Logo"
+                        width="100px"
+                /></a>
+            </div>
+        </footer>
+        <!-- JSs -->
+        <script src="javastripts/nav.js"></script>
+    </body>
 </html>

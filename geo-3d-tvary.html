@@ -5,27 +5,34 @@
     <!-- Google Consent Mode -->
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied'
+        // Výchozí stav: souhlas odepřen
+        gtag("consent", "default", {
+            analytics_storage: "denied",
         });
         console.log("Google Consent Mode initialized with default: denied");
     </script>
 
     <!-- Google Analytics (nenačte se automaticky) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
+    <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
+    ></script>
     <script>
         function loadGoogleAnalytics() {
             console.log("Loading Google Analytics...");
-            gtag('js', new Date());
-            gtag('config', 'G-Q7DH4RTXBC');
+            gtag("js", new Date());
+            gtag("config", "G-1CDLST0SSK");
             console.log("Google Analytics loaded.");
         }
     </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D tvary - Geometrie - Tobikovo</title>
+    <title>3D tvary - Geometrie - Tobiso</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/nav.css">
@@ -47,6 +54,7 @@
         <section>
             <h1 class="verybig">3D tvary</h1>
             <div style="text-align: left;">
+                <div class="intro"><p>Trojrozměrné (3D) tvary jsou objekty, které mají šířku, výšku i hloubku. Mezi základní 3D tělesa patří krychle, kvádr, koule, válec, kužel a jehlan. Každý z těchto tvarů má své vlastnosti – povrch, objem a hrany. 3D tělesa se běžně používají v geometrii, architektuře i modelování. Na papír se zobrazují pomocí volného rovnoběžného promítání.</p></div>
                 <h2>Hranol</h2>
                 <h3>Trojboký</h3>
                 <p>obvod: obvod základy + a + b + c<br>obsah: 2 × obsah podstavy + obsah pláště<br>objem: obsah podstavy

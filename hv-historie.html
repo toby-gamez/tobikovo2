@@ -8,6 +8,7 @@
                 dataLayer.push(arguments);
             }
 
+            // Výchozí stav: souhlas odepřen
             gtag("consent", "default", {
                 analytics_storage: "denied",
             });
@@ -17,19 +18,20 @@
         <!-- Google Analytics (nenačte se automaticky) -->
         <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
         ></script>
         <script>
             function loadGoogleAnalytics() {
                 console.log("Loading Google Analytics...");
                 gtag("js", new Date());
-                gtag("config", "G-Q7DH4RTXBC");
+                gtag("config", "G-1CDLST0SSK");
                 console.log("Google Analytics loaded.");
             }
         </script>
+
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Historie - Hudební výchova - Tobikovo</title>
+        <title>Historie - Hudební výchova - Tobiso</title>
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/footer.css" />
         <link rel="stylesheet" href="css/nav.css" />
@@ -50,6 +52,21 @@
             <section>
                 <h1 class="verybig">Historie</h1>
                 <div style="text-align: left">
+                    <div class="intro">
+                        <p>
+                            Historie hudby sahá až do pravěku, kdy lidé
+                            používali jednoduché nástroje a zpěv pro rituály a
+                            komunikaci. V antickém Řecku se hudba stala součástí
+                            filozofie a vzdělání. V průběhu středověku vznikla
+                            západní notace a církevní hudba. V renesanci a
+                            baroku se hudba vyvinula v komplexní formy jako
+                            opera a oratorium. Klasicismus přinesl strukturované
+                            skladby, zatímco romantismus se zaměřil na
+                            emocionální expresi. Ve 20. století se objevily nové
+                            žánry jako jazz, rock nebo elektronická hudba, což
+                            zásadně ovlivnilo současnou hudbu.
+                        </p>
+                    </div>
                     <h2>První hudební projevy člověka</h2>
                     <ul>
                         <li>napodobování ptačího zpěvu</li>
@@ -163,6 +180,48 @@
                     <ul>
                         <li>varhaník</li>
                         <li>nejvýznamnější dílo - Toccata a fuga d moll</li>
+                    </ul>
+                    <h2>Klasicismus</h2>
+                    <ul>
+                        <li>
+                            druhá polovina 18. století - začátek 19. století
+                        </li>
+                        <li>
+                            nastal <strong>rozvoj instrumentální hudby</strong>
+                        </li>
+                        <li>
+                            vyvinula se <a href="hv-symfonie.html">symfonie</a>
+                        </li>
+                        <li>
+                            oblibu si získala <strong>komorní hudba</strong>
+                        </li>
+                    </ul>
+                    <p>Josef Haydn</p>
+                    <ul>
+                        <li>dílo - S úderem kotlů</li>
+                    </ul>
+                    <p>Wolfgang Amadeus Mozart</p>
+                    <ul>
+                        <li>
+                            <strong>jeden z největších tvůrců na světě</strong>
+                        </li>
+                        <li>jezdil často do Čech, rád v Praze přebýval</li>
+                        <li>díla</li>
+                        <ul>
+                            <li>Figarova svatba</li>
+                            <li>Don Giovanni</li>
+                            <li>serenády - Malá noční hudba</li>
+                        </ul>
+                    </ul>
+                    <p>Ludwig van Beethoven</p>
+                    <ul>
+                        <li>
+                            <strong>jeden z největších tvůrců na světě</strong>
+                        </li>
+                        <li>
+                            symfonie - 5. - Osudová, 9. S Ódou na radost - hymna
+                            EU
+                        </li>
                     </ul>
                     <button onclick="window.history.back()">
                         <i class="bi bi-arrow-left"></i>

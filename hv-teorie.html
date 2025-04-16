@@ -1,107 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
+    <head>
+        <!-- Google Consent Mode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-<head>
-  <!-- Google Consent Mode -->
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+            // Výchozí stav: souhlas odepřen
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
+        </script>
 
-    gtag('consent', 'default', {
-      'analytics_storage': 'denied'
-    });
-    console.log("Google Consent Mode initialized with default: denied");
-  </script>
+        <!-- Google Analytics (nenačte se automaticky) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
+        ></script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-1CDLST0SSK");
+                console.log("Google Analytics loaded.");
+            }
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Teorie a základy - Hudební výchova - Tobiso</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="icon" href="images/favicon.png" />
+    </head>
 
-  <!-- Google Analytics (nenačte se automaticky) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"></script>
-  <script>
-    function loadGoogleAnalytics() {
-      console.log("Loading Google Analytics...");
-      gtag('js', new Date());
-      gtag('config', 'G-Q7DH4RTXBC');
-      console.log("Google Analytics loaded.");
-    }
-  </script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Teorie a základy - Hudební výchova - Tobikovo</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/footer.css" />
-  <link rel="stylesheet" href="css/nav.css" />
-  <link rel="stylesheet" href="css/grid.css" />
-  <link rel="icon" href="images/favicon.png">
-</head>
+    <body>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
+        </div>
 
-<body>
-  <div class="loading-bar-container">
-    <div class="loading-bar"></div>
-  </div>
-
-  <nav id="myNavbar">
-    <a href="#home"><img src="images/white-logo.png" alt="Logo" width="75px" /></a>
-    <a href="#home">Domů</a>
-    <a href="#ucivo">Učivo</a>
-    <a href="#o-nas">O nás</a>
-  </nav>
-  <button class="openNav opennav-button" onclick="openNav()">☰</button>
-  <!-- Obsah stránky -->
-  <main>
-    <section>
-      <h1 class="verybig">Teorie a základy</h1>
-      <ul class="grid">
-
-        <li class="grid-item">
-          <a href="hv-jmena-not.html">
-            <h3 class="grid-h3">Jména not</h3>
-          </a>
-        </li>
-        <li class="grid-item">
-          <a href="hv-slozeni-noty.html">
-            <h3 class="grid-h3-2">Složení noty</h3>
-          </a>
-        </li>
-        <li class="grid-item">
-          <a href="hv-takty.html">
-            <h3 class="grid-h3-2">Takty a předznamenání</h3>
-          </a>
-        </li>
-        <li class="grid-item">
-          <a href="hv-znamenka-sily.html">
-            <h3 class="grid-h3-2">Znaménka síly</h3>
-          </a>
-        </li>
-        <li class="grid-item">
-          <a href="hv-noty-pomlky.html">
-            <h3 class="grid-h3-2">noty a pomlky</h3>
-          </a>
-        </li>
-        <li class="grid-item">
-          <a href="hv-hlasy.html">
-            <h3 class="grid-h3-2">zpěvní hlasy</h3>
-          </a>
-        </li>
-        <li class="grid-item">
-          <a href="hv-takty-dirigovani.html">
-            <h3 class="grid-h3-2">takty a dirigování</h3>
-          </a>
-        </li>
-        <li class="grid-item">
-          <a href="hv-pisne-poly-homo.html">
-            <h3 class="grid-h3-3">polyfonie a homofonie</h3>
-          </a>
-        </li>
-      </ul>
-    </section>
-  </main>
-  <!-- Patička -->
-  <footer>
-    <div class="footer-content">
-      <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px" /></a>
-    </div>
-  </footer>
-  <!-- JSs -->
-  <script src="javastripts/nav.js"></script>
-</body>
-
+        <nav id="myNavbar">
+            <a href="#home"
+                ><img src="images/white-logo.png" alt="Logo" width="75px"
+            /></a>
+            <a href="#home">Domů</a>
+            <a href="#ucivo">Učivo</a>
+            <a href="#o-nas">O nás</a>
+        </nav>
+        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+        <!-- Obsah stránky -->
+        <main>
+            <section>
+                <h1 class="verybig">Teorie a základy</h1>
+                <ul class="grid">
+                    <li class="grid-item">
+                        <a href="hv-jmena-not.html">
+                            <h3 class="grid-h3">Jména not</h3>
+                        </a>
+                    </li>
+                    <li class="grid-item">
+                        <a href="hv-slozeni-noty.html">
+                            <h3 class="grid-h3-2">Složení noty</h3>
+                        </a>
+                    </li>
+                    <li class="grid-item">
+                        <a href="hv-takty.html">
+                            <h3 class="grid-h3-2">Takty a předznamenání</h3>
+                        </a>
+                    </li>
+                    <li class="grid-item">
+                        <a href="hv-znamenka-sily.html">
+                            <h3 class="grid-h3-2">Znaménka síly</h3>
+                        </a>
+                    </li>
+                    <li class="grid-item">
+                        <a href="hv-noty-pomlky.html">
+                            <h3 class="grid-h3-2">délky not a pomlky</h3>
+                        </a>
+                    </li>
+                    <li class="grid-item">
+                        <a href="hv-hlasy.html">
+                            <h3 class="grid-h3-2">zpěvní hlasy</h3>
+                        </a>
+                    </li>
+                    <li class="grid-item">
+                        <a href="hv-takty-dirigovani.html">
+                            <h3 class="grid-h3-2">taktování a dirigování</h3>
+                        </a>
+                    </li>
+                    <li class="grid-item">
+                        <a href="hv-pisne-poly-homo.html">
+                            <h3 class="grid-h3-3">polyfonie a homofonie</h3>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <!-- Patička -->
+        <footer>
+            <div class="footer-content">
+                <a href="about.html"
+                    ><img
+                        src="images/white-logo.png"
+                        alt="Tobikovo Logo"
+                        width="100px"
+                /></a>
+            </div>
+        </footer>
+        <!-- JSs -->
+        <script src="javastripts/nav.js"></script>
+    </body>
 </html>

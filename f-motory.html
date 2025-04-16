@@ -3,34 +3,35 @@
     <head>
         <!-- Google Consent Mode -->
         <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag() {
-                    dataLayer.push(arguments);
-                }
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-                gtag("consent", "default", {
-                    analytics_storage: "denied",
-                });
-                console.log("Google Consent Mode initialized with default: denied");
-            </head>script>
-
-            <!-- Google Analytics (nenačte se automaticky) -->
-            <script
-                async
-                src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
-            >
+            // Výchozí stav: souhlas odepřen
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
         </script>
+
+        <!-- Google Analytics (nenačte se automaticky) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
+        ></script>
         <script>
             function loadGoogleAnalytics() {
                 console.log("Loading Google Analytics...");
                 gtag("js", new Date());
-                gtag("config", "G-Q7DH4RTXBC");
+                gtag("config", "G-1CDLST0SSK");
                 console.log("Google Analytics loaded.");
             }
         </script>
+
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Motory - Fyzika - Tobikovo</title>
+        <title>Motory - Fyzika - Tobiso</title>
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/footer.css" />
         <link rel="stylesheet" href="css/nav.css" />
@@ -51,6 +52,17 @@
             <section>
                 <h1 class="verybig">Motory</h1>
                 <div style="text-align: left">
+                    <div class="intro">
+                        <p>
+                            Motory jsou zařízení, která přeměňují různé formy
+                            energie na mechanickou práci. Existují různé typy
+                            motorů, například spalovací, elektrické nebo vodní.
+                            Spalovací motory využívají energii z paliva, zatímco
+                            elektrické motory přeměňují elektrickou energii na
+                            pohyb. Motory jsou klíčové v dopravě, průmyslu a
+                            mnoha dalších oblastech.
+                        </p>
+                    </div>
                     <h2>Typy</h2>
                     <ul>
                         <li>elektrické</li>

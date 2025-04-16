@@ -8,6 +8,7 @@
                 dataLayer.push(arguments);
             }
 
+            // Výchozí stav: souhlas odepřen
             gtag("consent", "default", {
                 analytics_storage: "denied",
             });
@@ -17,19 +18,19 @@
         <!-- Google Analytics (nenačte se automaticky) -->
         <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
         ></script>
         <script>
             function loadGoogleAnalytics() {
                 console.log("Loading Google Analytics...");
                 gtag("js", new Date());
-                gtag("config", "G-Q7DH4RTXBC");
+                gtag("config", "G-1CDLST0SSK");
                 console.log("Google Analytics loaded.");
             }
         </script>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Nauka o slovní zásobě - Mluvnice - Tobikovo</title>
+        <title>Nauka o slovní zásobě - Mluvnice - Tobiso</title>
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/footer.css" />
         <link rel="stylesheet" href="css/nav.css" />
@@ -50,6 +51,23 @@
             <section>
                 <h1 class="verybig">Nauka o slovní zásobě</h1>
                 <div style="text-align: left">
+                    <div class="intro">
+                        <p>
+                            Nauka o slovní zásobě, neboli lexikologie, se
+                            zaměřuje na studium slov, jejich významů, struktury
+                            a vztahů, které tvoří jazyk. V tomto článku se
+                            podíváme nejen na to, co je slovní zásoba a jak se
+                            dělí na jednotlivé kategorie (např. synonyma,
+                            antonyma, homonyma), ale také se zaměříme na
+                            přísloví, rčení a frazeologismy – ustálené jazykové
+                            výrazy, které obohacují naše vyjadřování. Přísloví a
+                            rčení vyjadřují moudrost, zkušenosti a obrazné
+                            myšlenky, zatímco frazeologismy tvoří specifické
+                            obraty s pevně daným významem. Ukážeme si, jak tyto
+                            jazykové prostředky správně používat a jak ovlivňují
+                            efektivitu a bohatost naší komunikace.
+                        </p>
+                    </div>
                     <h2>Význam slova</h2>
                     <ol>
                         <li>věcný (obsahový)</li>
@@ -63,8 +81,10 @@
                     <h3>Sousloví</h3>
                     <ul>
                         <li>
-                            ustálené spojení dvou a více slov s jedním věcným
-                            významem
+                            <strong
+                                >ustálené spojení dvou a více slov s jedním
+                                věcným významem</strong
+                            >
                         </li>
                         <li>
                             dá se vyjádřit i jednoslovným pojmenováním: anglický
@@ -322,6 +342,37 @@
                             vnitřní podobnost -
                             <a href="li-prostredky.html">metonymie</a>
                         </li>
+                    </ul>
+                    <h2>Synonyma, homonyma a antonyma</h2>
+                    <h3>Synonyma</h3>
+                    <ul>
+                        <li>
+                            <strong
+                                >slova souznačná - mají stejný nebo podobný
+                                význam</strong
+                            >
+                        </li>
+                        <li>příklady - chlapec, hoch, kluk; zlý, špatný</li>
+                    </ul>
+                    <h3>Homonyma</h3>
+                    <ul>
+                        <li>
+                            <strong
+                                >slova souzvučná - stejně znějí, ale mají zcela
+                                odlišný význam</strong
+                            >
+                        </li>
+                        <li>
+                            příklady - topit: v kamnech, ve vodě, jeřáb - strom,
+                            stroj
+                        </li>
+                    </ul>
+                    <h3>Antonyma</h3>
+                    <ul>
+                        <li>
+                            <strong>opozita - slova opačného významu</strong>
+                        </li>
+                        <li>příklady - ticho, hluk; dobrý, špatný</li>
                     </ul>
                     <button onclick="window.history.back()">
                         <i class="bi bi-arrow-left"></i>

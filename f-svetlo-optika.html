@@ -8,6 +8,7 @@
                 dataLayer.push(arguments);
             }
 
+            // Výchozí stav: souhlas odepřen
             gtag("consent", "default", {
                 analytics_storage: "denied",
             });
@@ -17,19 +18,20 @@
         <!-- Google Analytics (nenačte se automaticky) -->
         <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=G-Q7DH4RTXBC"
+            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
         ></script>
         <script>
             function loadGoogleAnalytics() {
                 console.log("Loading Google Analytics...");
                 gtag("js", new Date());
-                gtag("config", "G-Q7DH4RTXBC");
+                gtag("config", "G-1CDLST0SSK");
                 console.log("Google Analytics loaded.");
             }
         </script>
+
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Světlo a optika - Fyzika - Tobikovo</title>
+        <title>Světlo a optika - Fyzika - Tobiso</title>
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/footer.css" />
         <link rel="stylesheet" href="css/nav.css" />
@@ -55,6 +57,16 @@
             <section>
                 <h1 class="verybig">Světlo a optika</h1>
                 <div style="text-align: left">
+                    <div class="intro">
+                        <p>
+                            Světlo je elektromagnetické záření, které vnímáme
+                            našimi očima. Optika se zabývá studiem světla, jeho
+                            šířením, lomením, odrazem a rozkladem. Základními
+                            jevy jsou refrakce, disperze a interference. Optické
+                            jevy se využívají v mnoha technologiích, jako jsou
+                            brýle, mikroskopy a dalekohledy.
+                        </p>
+                    </div>
                     <h2>Informace o světle</h2>
                     <ul>
                         <li>má více barev, každá jiné vlastnosti</li>

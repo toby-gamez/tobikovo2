@@ -327,7 +327,7 @@
   {
     "title": "Balada",
     "url": "li-balada.html",
-    "content": "Kytice, K. J. Erben, Petr Bezruč, Slezské písně, Červený květ"
+    "content": "Kytice, Karel Jaromír Erben, Petr Bezruč, Slezské písně, Červený květ"
   },
   {
     "title": "Romance",
@@ -487,7 +487,7 @@
   {
     "title": "Hudební historie",
     "url": "hv-historie.html",
-    "content": "První hudební projevy člověka, Řecko, Řím, Středověk, Orfeus, Apollón, Dionýsos, Seikelova píseň, papež Gregor (Řehoř I. Veliký), Gregoriánský chorál, Trubadúři, Trouvéři, Minnesängři, renesance, Giovanni da Palestrina, Orlando di Lasso, opera, Claudio Monteverdi, Jacopo Peri, dějství, akt, předehra, zpěv, Georg, Friedrich Händel, Mesiáš, Hudba k ohňostroji, Antonio Vivaldi, Čtvero ročních dob, Johann Sebastian Bach, Toccata a fuga d moll"
+    "content": "První hudební projevy člověka, Řecko, Řím, Středověk, Orfeus, Apollón, Dionýsos, Seikelova píseň, papež Gregor (Řehoř I. Veliký), Gregoriánský chorál, Trubadúři, Trouvéři, Minnesängři, renesance, Giovanni da Palestrina, Orlando di Lasso, opera, Claudio Monteverdi, Jacopo Peri, dějství, akt, předehra, zpěv, Georg, Friedrich Händel, Mesiáš, Hudba k ohňostroji, Antonio Vivaldi, Čtvero ročních dob, Johann Sebastian Bach, Toccata a fuga d moll, Klasicismus, komorní hudba, Josef Haydn, Wolfgang Amadeus Mozart, Ludwig van Beethoven"
   },
   {
     "title": "Jména not",
@@ -1107,12 +1107,12 @@
   {
     "title": "Romantismus",
     "url": "li-romantismus.html",
-    "content": "Karel Hynek Mácha, Máj, Cikáni, Pouť krkonošská, Márinka, Křivoklát"
+    "content": "Karel Hynek Mácha, Máj, Cikáni, Pouť krkonošská, Márinka, Křivoklát, Josef Kajetán Tyl, Fidlovačka aneb Žádný hněv a žádná rvačka, Kde domov můj, Strakonický dudák, František Škroup, Karel Jaromír Erben, Kytice, alchivář, František Škroup"
   },
   {
     "title": "Nauka o slovní zásobě",
     "url": "ml-slovni-zasoba.html",
-    "content": "nadřazená, souřadná, podřazená, sousloví, přísloví, rčení, pořekadlo, pranostika, slovní zásoba, jednoznačná, mnohoznačná, metafora, metonymie"
+    "content": "nadřazená, souřadná, podřazená, sousloví, přísloví, rčení, pořekadlo, pranostika, slovní zásoba, jednoznačná, mnohoznačná, metafora, metonymie, synonyma, homonyma, antonyma"
   },
   {
     "title": "Zeměpis",
@@ -1172,7 +1172,7 @@
   {
     "title": "Obyvatelstvo ČR",
     "url": "z-obyvatelstvo.html",
-    "content": "počet obyvatel, porodnost, natalita, mortalita, úmrtnost, sčítání lidu"
+    "content": "počet obyvatel, porodnost, natalita, mortalita, úmrtnost, sčítání lidu, vývojové trendy"
   },
   {
     "title": "Lineární rovnice",
@@ -1193,6 +1193,41 @@
     "title": "Vylučovací soustava",
     "url": "pr-vylucovaci-sous.html",
     "content": "nefron, moč, krev, ledviny"
+  },
+  {
+    "title": "Jednotlivé prvky",
+    "url": "ch-jednotlive-prvky.html",
+    "content": "vodík, kyslík, dusík, síra, fosfor"
+  },
+  {
+    "title": "Elektřina",
+    "url": "f-elektrina.html",
+    "content": "elektrický obvod, vodiče, izolanty, přenos elektrické energie, generátory, transformátory, distribuce, přenos, převody, příjem, zásuvka, baterie, akumulátor, "
+  },
+  {
+    "title": "Elektrické napětí",
+    "url": "f-el-napeti.html",
+    "content": "volt, voltmetr"
+  },
+  {
+    "title": "Elektrický proud",
+    "url": "f-el-proud.html",
+    "content": "ampér, ampérmetr"
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
   },
   {
     "title": "x",
