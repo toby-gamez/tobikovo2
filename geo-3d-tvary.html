@@ -1,89 +1,126 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
+    <head>
+        <!-- Google Consent Mode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-<head>
-    <!-- Google Consent Mode -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+            // Výchozí stav: souhlas odepřen
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+            });
+            console.log("Google Consent Mode initialized with default: denied");
+        </script>
 
-        // Výchozí stav: souhlas odepřen
-        gtag("consent", "default", {
-            analytics_storage: "denied",
-        });
-        console.log("Google Consent Mode initialized with default: denied");
-    </script>
+        <!-- Google Analytics (nenačte se automaticky) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
+        ></script>
+        <script>
+            function loadGoogleAnalytics() {
+                console.log("Loading Google Analytics...");
+                gtag("js", new Date());
+                gtag("config", "G-1CDLST0SSK");
+                console.log("Google Analytics loaded.");
+            }
+        </script>
 
-    <!-- Google Analytics (nenačte se automaticky) -->
-    <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-    ></script>
-    <script>
-        function loadGoogleAnalytics() {
-            console.log("Loading Google Analytics...");
-            gtag("js", new Date());
-            gtag("config", "G-1CDLST0SSK");
-            console.log("Google Analytics loaded.");
-        }
-    </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>3D tvary - Geometrie - Tobiso</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="icon" href="images/favicon.png" />
+    </head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D tvary - Geometrie - Tobiso</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="icon" href="images/favicon.png">
-</head>
-
-<body>
-    <div class="loading-bar-container">
-        <div class="loading-bar"></div>
-    </div>
-
-    <nav id="myNavbar"></nav>
-    <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-    <!-- Obsah stránky -->
-    <main>
-
-        <section>
-            <h1 class="verybig">3D tvary</h1>
-            <div style="text-align: left;">
-                <div class="intro"><p>Trojrozměrné (3D) tvary jsou objekty, které mají šířku, výšku i hloubku. Mezi základní 3D tělesa patří krychle, kvádr, koule, válec, kužel a jehlan. Každý z těchto tvarů má své vlastnosti – povrch, objem a hrany. 3D tělesa se běžně používají v geometrii, architektuře i modelování. Na papír se zobrazují pomocí volného rovnoběžného promítání.</p></div>
-                <h2>Hranol</h2>
-                <h3>Trojboký</h3>
-                <p>obvod: obvod základy + a + b + c<br>obsah: 2 × obsah podstavy + obsah pláště<br>objem: obsah podstavy
-                    × výška</p>
-                <img src="images/trojboky.webp" style="border-radius: 10px;" width="100px" alt="Trojboký">
-                <h3>Čtyřboký</h3>
-                <h4>Kvádr</h4>
-                <p>obvod: 4 × (a + b + c)<br>obsah: S = 2 × (a × b + b × c + c × a) <br>objem: V = a × b × c</p>
-                <img src="images/kvadr.webp" style="border-radius: 10px;" width="200px" alt="Kvádr">
-                <h5>Krychle</h4>
-                    <p>obvod: 12 × a<br>obsah: S = 6 × a × a<br>objem: V: a × a × a</p>
-                    <img src="images/krychle.webp" style="border-radius: 10px;" width="100px" alt="Krychle">
-                    <h2>Válec</h2>
-                    <p>obsah: S = 2πr² + 2πrv = 2πr(r+v)<br>objem: πr²v</p>
-                    <img src="images/valec.webp" width="300px" alt="válec">
-                    <br>
-                    <button onclick="window.history.back()"><i class="bi bi-arrow-left"></i></button>
-            </div>
-        </section>
-
-    </main>
-    <!-- Patička -->
-    <footer>
-        <div class="footer-content">
-            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
+    <body>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
         </div>
-    </footer>
-    <!-- JSs -->
-    <script src="javastripts/nav.js"></script>
-</body>
 
+        <nav id="myNavbar"></nav>
+        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+
+        <!-- Obsah stránky -->
+        <main>
+            <section>
+                <h1 class="verybig">3D tvary</h1>
+                <div style="text-align: left">
+                    <div class="intro">
+                        <p>
+                            Trojrozměrné (3D) tvary jsou objekty, které mají
+                            šířku, výšku i hloubku. Mezi základní 3D tělesa
+                            patří krychle, kvádr, koule, válec, kužel a jehlan.
+                            Každý z těchto tvarů má své vlastnosti – povrch,
+                            objem a hrany. 3D tělesa se běžně používají v
+                            geometrii, architektuře i modelování. Na papír se
+                            zobrazují pomocí volného rovnoběžného promítání.
+                        </p>
+                    </div>
+                    <h2>Hranol</h2>
+                    <h3>Trojboký</h3>
+                    <p>
+                        obvod: obvod základy + a + b + c<br />obsah: 2 × obsah
+                        podstavy + obsah pláště<br />objem: obsah podstavy ×
+                        výška
+                    </p>
+                    <img
+                        src="images/trojboky.png"
+                        style="border-radius: 10px"
+                        width="100px"
+                        alt="Trojboký"
+                    />
+                    <h3>Čtyřboký</h3>
+                    <h4>Kvádr</h4>
+                    <p>
+                        obvod: 4 × (a + b + c)<br />obsah: S = 2 × (a × b + b ×
+                        c + c × a) <br />objem: V = a × b × c
+                    </p>
+                    <img
+                        src="images/kvadr.png"
+                        style="border-radius: 10px"
+                        width="200px"
+                        alt="Kvádr"
+                    />
+                    <h5>Krychle</h5>
+                    <p>
+                        obvod: 12 × a<br />obsah: S = 6 × a × a<br />objem: V: a
+                        × a × a
+                    </p>
+                    <img
+                        src="images/krychle.png"
+                        style="border-radius: 10px"
+                        width="100px"
+                        alt="Krychle"
+                    />
+                    <h2>Válec</h2>
+                    <p>obsah: S = 2πr² + 2πrv = 2πr(r+v)<br />objem: πr²v</p>
+                    <img src="images/valec.png" width="300px" alt="válec" />
+                    <br />
+                    <button onclick="window.history.back()">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <!-- Patička -->
+        <footer>
+            <div class="footer-content">
+                <a href="about.html"
+                    ><img
+                        src="images/white-logo.png"
+                        alt="Tobikovo Logo"
+                        width="100px"
+                /></a>
+            </div>
+        </footer>
+        <!-- JSs -->
+        <script src="javastripts/nav.js"></script>
+    </body>
 </html>

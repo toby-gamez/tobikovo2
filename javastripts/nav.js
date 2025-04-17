@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <div class="mobile-header">
         <div>
             <a href="home.html">
-                    <img class="navImg" src="images/normal-logo.webp" width="150px" alt="">
+              <img class="navImg" src="images/normal-logo.png" width="150px" alt="">
             </a>
         </div>
         <div>
@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     </div>
                 </a>
             </li>
-            <div class="version-info">1.0</div>
+            <div class="version-info">1.1</div>
 
            <li class="nav-item" style="padding-top: 3rem">
                 <a class="nav-link" href="#">
@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     <!-- Desktop sidebar -->
     <div id="MyNavBar">
-        <a href="home.html" style="margin-left: auto; margin-right: auto"><img class="navImg" src="images/normal-logo.webp" width="150px"></img></a>
+        <a href="home.html" style="margin-left: auto; margin-right: auto"><img class="navImg" src="images/normal-logo.png" width="150px"></img></a>
         <div class="scrollable-menu">
             <ul class="nav flex-column w-100">
                 <li class="nav-item">
@@ -289,7 +289,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </li>
             </ul>
         </div>
-        <div class="version-info">1.0</div>
+        <div class="version-info">1.1</div>
     </div>
 
         <div id="searchModal" class="modal">
@@ -344,7 +344,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       localStorage.setItem("darkMode", "disabled");
       logoElements.forEach((logo) => {
-        logo.src = "images/normal-logo.webp";
+        logo.src = "images/normal-logo.png";
       });
     }
 
