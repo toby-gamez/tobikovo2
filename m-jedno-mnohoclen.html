@@ -1,223 +1,141 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
+<!--
+title: Jednočlen a mnohočlen
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Jednočlen je algebraický výraz, který obsahuje pouze jednu část,
+            obvykle součin čísel a proměnných, například 3x². Mnohočlen je
+            součet nebo rozdíl více jednočlenů, jako například 2x² + 3x − 5.
+            Mnohočleny umožňují vyjádřit složitější matematické vztahy. Oba
+            pojmy jsou klíčové pro práci s algebrickými výrazy a rovnicemi.
+        </p>
+    </div>
+    <h2>Násobení dvojčlenu jednočlenem</h2>
+    <p>
+        Při násobení dvojčlenu jednočlenem
+        <strong>vynásobíme jednočlen každým členem dvojčlenu zvlášť</strong>.
+        Používáme <strong>pravidlo distributivity</strong>:
+    </p>
+    <p><em>a(b + c) = ab + ac</em></p>
+    <p>Příklad</p>
+    <p><code>2x(3x + 4)</code></p>
+    <ul>
+        <li>
+            Vynásobíme <code>2x</code> členem <code>3x</code>:
+            <code>2x × 3x = 6x²</code>
+        </li>
+        <li>
+            Vynásobíme <code>2x</code> členem <code>4</code>:
+            <code>2x × 4 = 8x</code>
+        </li>
+    </ul>
+    <p>Výsledek: <code>2x(3x + 4) = 6x² + 8x</code></p>
 
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
+    <h2>Násobení dvojčlenu dvojčlenem</h2>
+    <p>
+        Při násobení dvojčlenu dvojčlenem
+        <strong
+            >vynásobíme každý člen prvního dvojčlenu všemi členy druhého
+            dvojčlenu</strong
+        >. Výrazy pak sečteme. Používáme tzv. <strong>FOIL pravidlo</strong> (z
+        angličtiny "First, Outer, Inner, Last"):
+    </p>
+    <p><em>(a + b)(c + d) = ac + ad + bc + bd</em></p>
 
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Jednočlen a mnohočlen - Matematika - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
+    <p>Příklad</p>
+    <p><code>(x + 2)(x + 3)</code></p>
+    <ul>
+        <li>první členy: <code>x × x = x²</code></li>
+        <li>vnější členy: <code>x × 3 = 3x</code></li>
+        <li>vnitřní členy: <code>2 × x = 2x</code></li>
+        <li>poslední členy: <code>2 × 3 = 6</code></li>
+    </ul>
+    <p>
+        Výsledek:
+        <code>(x + 2)(x + 3) = x² + 3x + 2x + 6 = x² + 5x + 6</code>
+    </p>
 
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
+    <h2>Sčítání a odčítání dvojčlenů</h2>
+    <p>
+        <strong
+            >Sčítání a odčítání dvojčlenů probíhá tak, že sčítáme nebo odčítáme
+            podobné členy</strong
+        >. Podobné členy jsou ty, které mají stejné proměnné se stejnými
+        mocninami.
+    </p>
+    <p><em>(a + b) + (c + d) = (a + c) + (b + d)</em></p>
+    <p><em>(a + b) - (c + d) = (a - c) + (b - d)</em></p>
 
-        <nav id="myNavbar"></nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+    <p>Příklad</p>
+    <p><code>(3x + 4) + (5x - 2)</code></p>
+    <ul>
+        <li>
+            sčítáme členy s <code>x</code>:
+            <code>3x + 5x = 8x</code>
+        </li>
+        <li>sčítáme konstanty: <code>4 - 2 = 2</code></li>
+    </ul>
+    <p>Výsledek: <code>(3x + 4) + (5x - 2) = 8x + 2</code></p>
 
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Jednočlen a mnohočlen</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Jednočlen je algebraický výraz, který obsahuje pouze
-                            jednu část, obvykle součin čísel a proměnných,
-                            například 3x². Mnohočlen je součet nebo rozdíl více
-                            jednočlenů, jako například 2x² + 3x − 5. Mnohočleny
-                            umožňují vyjádřit složitější matematické vztahy. Oba
-                            pojmy jsou klíčové pro práci s algebrickými výrazy a
-                            rovnicemi.
-                        </p>
-                    </div>
-                    <h2>Násobení dvojčlenu jednočlenem</h2>
-                    <p>
-                        Při násobení dvojčlenu jednočlenem
-                        <strong
-                            >vynásobíme jednočlen každým členem dvojčlenu
-                            zvlášť</strong
-                        >. Používáme <strong>pravidlo distributivity</strong>:
-                    </p>
-                    <p><em>a(b + c) = ab + ac</em></p>
-                    <p>Příklad</p>
-                    <p><code>2x(3x + 4)</code></p>
-                    <ul>
-                        <li>
-                            Vynásobíme <code>2x</code> členem <code>3x</code>:
-                            <code>2x × 3x = 6x²</code>
-                        </li>
-                        <li>
-                            Vynásobíme <code>2x</code> členem <code>4</code>:
-                            <code>2x × 4 = 8x</code>
-                        </li>
-                    </ul>
-                    <p>Výsledek: <code>2x(3x + 4) = 6x² + 8x</code></p>
+    <p><code>(7x + 3) - (2x + 5)</code></p>
+    <ul>
+        <li>
+            odčítáme členy s <code>x</code>:
+            <code>7x - 2x = 5x</code>
+        </li>
+        <li>odčítáme konstanty: <code>3 - 5 = -2</code></li>
+    </ul>
+    <p>Výsledek: <code>(7x + 3) - (2x + 5) = 5x - 2</code></p>
 
-                    <h2>Násobení dvojčlenu dvojčlenem</h2>
-                    <p>
-                        Při násobení dvojčlenu dvojčlenem
-                        <strong
-                            >vynásobíme každý člen prvního dvojčlenu všemi členy
-                            druhého dvojčlenu</strong
-                        >. Výrazy pak sečteme. Používáme tzv.
-                        <strong>FOIL pravidlo</strong> (z angličtiny "First,
-                        Outer, Inner, Last"):
-                    </p>
-                    <p><em>(a + b)(c + d) = ac + ad + bc + bd</em></p>
+    <h3>Zvláštní případy</h3>
+    <h4>Druhá mocnina dvojčlenu</h4>
+    <p>
+        <strong
+            >Druhá mocnina dvojčlenu znamená, že dvojčlen násobíme sám
+            sebou</strong
+        >:
+    </p>
+    <p><em>(a + b)² = (a + b)(a + b) = a² + 2ab + b²</em></p>
+    <p>Příklad</p>
+    <p><code>(x + 4)²</code></p>
+    <ul>
+        <li>první člen: <code>x × x = x²</code></li>
+        <li>vnější a vnitřní členy: <code>4x + 4x = 8x</code></li>
+        <li>poslední člen: <code>4 × 4 = 16</code></li>
+    </ul>
+    <p>Výsledek: <code>(x + 4)² = x² + 8x + 16</code></p>
 
-                    <p>Příklad</p>
-                    <p><code>(x + 2)(x + 3)</code></p>
-                    <ul>
-                        <li>první členy: <code>x × x = x²</code></li>
-                        <li>vnější členy: <code>x × 3 = 3x</code></li>
-                        <li>vnitřní členy: <code>2 × x = 2x</code></li>
-                        <li>poslední členy: <code>2 × 3 = 6</code></li>
-                    </ul>
-                    <p>
-                        Výsledek:
-                        <code
-                            >(x + 2)(x + 3) = x² + 3x + 2x + 6 = x² + 5x +
-                            6</code
-                        >
-                    </p>
+    <h4>Rozdíl čtverců</h4>
+    <p>
+        Při násobení dvojčlenů, které mají opačné znaménko, vzniká tzv.
+        <strong>rozdíl čtverců</strong>:
+    </p>
+    <p><em>(a + b)(a - b) = a² - b²</em></p>
+    <p>Příklad</p>
+    <p><code>(x + 5)(x - 5)</code></p>
+    <ul>
+        <li>první člen: <code>x × x = x²</code></li>
+        <li>poslední člen: <code>5 × -5 = -25</code></li>
+    </ul>
+    <p>Výsledek: <code>(x + 5)(x - 5) = x² - 25</code></p>
 
-                    <h2>Sčítání a odčítání dvojčlenů</h2>
-                    <p>
-                        <strong
-                            >Sčítání a odčítání dvojčlenů probíhá tak, že
-                            sčítáme nebo odčítáme podobné členy</strong
-                        >. Podobné členy jsou ty, které mají stejné proměnné se
-                        stejnými mocninami.
-                    </p>
-                    <p><em>(a + b) + (c + d) = (a + c) + (b + d)</em></p>
-                    <p><em>(a + b) - (c + d) = (a - c) + (b - d)</em></p>
-
-                    <p>Příklad</p>
-                    <p><code>(3x + 4) + (5x - 2)</code></p>
-                    <ul>
-                        <li>
-                            sčítáme členy s <code>x</code>:
-                            <code>3x + 5x = 8x</code>
-                        </li>
-                        <li>sčítáme konstanty: <code>4 - 2 = 2</code></li>
-                    </ul>
-                    <p>Výsledek: <code>(3x + 4) + (5x - 2) = 8x + 2</code></p>
-
-                    <p><code>(7x + 3) - (2x + 5)</code></p>
-                    <ul>
-                        <li>
-                            odčítáme členy s <code>x</code>:
-                            <code>7x - 2x = 5x</code>
-                        </li>
-                        <li>odčítáme konstanty: <code>3 - 5 = -2</code></li>
-                    </ul>
-                    <p>Výsledek: <code>(7x + 3) - (2x + 5) = 5x - 2</code></p>
-
-                    <h3>Zvláštní případy</h3>
-                    <h4>Druhá mocnina dvojčlenu</h4>
-                    <p>
-                        <strong
-                            >Druhá mocnina dvojčlenu znamená, že dvojčlen
-                            násobíme sám sebou</strong
-                        >:
-                    </p>
-                    <p><em>(a + b)² = (a + b)(a + b) = a² + 2ab + b²</em></p>
-                    <p>Příklad</p>
-                    <p><code>(x + 4)²</code></p>
-                    <ul>
-                        <li>první člen: <code>x × x = x²</code></li>
-                        <li>
-                            vnější a vnitřní členy: <code>4x + 4x = 8x</code>
-                        </li>
-                        <li>poslední člen: <code>4 × 4 = 16</code></li>
-                    </ul>
-                    <p>Výsledek: <code>(x + 4)² = x² + 8x + 16</code></p>
-
-                    <h4>Rozdíl čtverců</h4>
-                    <p>
-                        Při násobení dvojčlenů, které mají opačné znaménko,
-                        vzniká tzv. <strong>rozdíl čtverců</strong>:
-                    </p>
-                    <p><em>(a + b)(a - b) = a² - b²</em></p>
-                    <p>Příklad</p>
-                    <p><code>(x + 5)(x - 5)</code></p>
-                    <ul>
-                        <li>první člen: <code>x × x = x²</code></li>
-                        <li>poslední člen: <code>5 × -5 = -25</code></li>
-                    </ul>
-                    <p>Výsledek: <code>(x + 5)(x - 5) = x² - 25</code></p>
-
-                    <h2>Tipy a triky</h2>
-                    <ul>
-                        <li>
-                            <strong
-                                >Vždy dávejte pozor na znaménka při násobení,
-                                sčítání a odčítání.</strong
-                            >
-                        </li>
-                        <li>
-                            <strong
-                                >Při násobení více dvojčlenů postupujte
-                                systematicky</strong
-                            >
-                            (nejprve první dva, poté výsledek násobte dalším
-                            dvojčlenem).
-                        </li>
-                        <li>
-                            <strong>Zjednodušujte výsledky</strong>, pokud je to
-                            možné – sečtěte podobné členy.
-                        </li>
-                    </ul>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+    <h2>Tipy a triky</h2>
+    <ul>
+        <li>
+            <strong
+                >Vždy dávejte pozor na znaménka při násobení, sčítání a
+                odčítání.</strong
+            >
+        </li>
+        <li>
+            <strong>Při násobení více dvojčlenů postupujte systematicky</strong>
+            (nejprve první dva, poté výsledek násobte dalším dvojčlenem).
+        </li>
+        <li>
+            <strong>Zjednodušujte výsledky</strong>, pokud je to možné – sečtěte
+            podobné členy.
+        </li>
+    </ul>
+</section>

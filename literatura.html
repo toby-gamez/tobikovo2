@@ -1,135 +1,38 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <head>
-            <!-- Open Graph základní meta tagy -->
-            <meta property="og:title" content="Literatura - Tobiso" />
-            <meta
-                property="og:description"
-                content="Tobiso je vzdělávací platforma nabízející užitečné materiály pro studenty a učitele."
-            />
-            <meta
-                property="og:image"
-                content="https://tobiso.com/images/ucivo.png"
-            />
-            <meta property="og:url" content="https://tobiso.com" />
-            <meta property="og:type" content="website" />
-            <meta property="og:locale" content="cs_CZ" />
+<!--
+title: Literatura
+type: category
+-->
+<ul class="grid-predmety">
+    <li class="grid-item-sesit">
+        <a
+            class="sesit"
+            title="Tento mód vám poskládá učivo tak, jak se učilo od nejnovějšího k nejstaršímu."
+            href="sesit-literatura.html"
+        >
+            <h3><span class="key-icon">nové</span><br />mód sešitu</h3>
+        </a>
+    </li>
+    <li class="grid-item-pred">
+        <a href="li-pojmy.html">
+            <h3 class="grid-h3-2">základní pojmy</h3>
+        </a>
+    </li>
 
-            <!-- Twitter Cards (pokud chceš vylepšit sdílení na Twitteru) -->
-            <meta name="twitter:card" content="images/ucivo.png" />
-            <meta name="twitter:title" content="Literatura - Tobiso" />
-            <meta
-                name="twitter:description"
-                content="Tobiso je vzdělávací platforma nabízející užitečné materiály pro studenty a učitele."
-            />
-            <meta
-                name="twitter:image"
-                content="https://tobiso.com/images/ucivo.png"
-            />
+    <li class="grid-item-pred">
+        <a href="li-zanry.html">
+            <h3 class="grid-h3-2">literární žánry</h3>
+        </a>
+    </li>
 
-            <!-- Google Consent Mode -->
-            <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag() {
-                    dataLayer.push(arguments);
-                }
+    <li class="grid-item-pred">
+        <a href="li-prostredky.html">
+            <h3 class="grid-h3-2">básnické prostředky</h3>
+        </a>
+    </li>
 
-                // Výchozí stav: souhlas odepřen
-                gtag("consent", "default", {
-                    analytics_storage: "denied",
-                });
-                console.log("Google Consent Mode initialized with default: denied");
-            </script>
-
-            <!-- Google Analytics (nenačte se automaticky) -->
-            <script
-                async
-                src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-            ></script>
-            <script>
-                function loadGoogleAnalytics() {
-                    console.log("Loading Google Analytics...");
-                    gtag("js", new Date());
-                    gtag("config", "G-1CDLST0SSK");
-                    console.log("Google Analytics loaded.");
-                }
-            </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Literatura - Vzdělávací platforma Tobiso</title>
-        <meta
-            name="description"
-            content="Zde je vše, co potřebuješ vědět o literatuře od teorie až k národnímu obrození a dál!"
-        />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-        <nav id="myNavbar">
-            <a href="#home"
-                ><img src="images/white-logo.png" alt="Logo" width="75px"
-            /></a>
-            <a href="#home">Domů</a>
-            <a href="#ucivo">Učivo</a>
-            <a href="#o-nas">O nás</a>
-        </nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig"><i class="bi bi-book"></i> Literatura</h1>
-                <ul class="grid-predmety">
-                    <li class="grid-item-sesit">
-                        <a class="sesit" title="Tento mód vám poskládá učivo tak, jak se učilo od nejnovějšího k nejstaršímu." href="sesit-literatura.html">
-                            <h3><span class="key-icon">nové</span><br>mód sešitu</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item-pred">
-                        <a href="li-pojmy.html">
-                            <h3 class="grid-h3-2">základní pojmy</h3>
-                        </a>
-                    </li>
-
-                    <li class="grid-item-pred">
-                        <a href="li-zanry.html">
-                            <h3 class="grid-h3-2">literární žánry</h3>
-                        </a>
-                    </li>
-
-                    <li class="grid-item-pred">
-                        <a href="li-prostredky.html">
-                            <h3 class="grid-h3-2">básnické prostředky</h3>
-                        </a>
-                    </li>
-
-                    <li class="grid-item-pred">
-                        <a href="li-post-hist.html">
-                            <h3 class="grid-h3-3">postupná historie</h3>
-                        </a>
-                    </li>
-                </ul>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+    <li class="grid-item-pred">
+        <a href="li-post-hist.html">
+            <h3 class="grid-h3-3">postupná historie</h3>
+        </a>
+    </li>
+</ul>

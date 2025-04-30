@@ -1,275 +1,170 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Světlo a optika - Fyzika - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-        <nav id="myNavbar">
-            <a href="#home"
-                ><img src="images/white-logo.png" alt="Logo" width="75px"
-            /></a>
-            <a href="#home">Domů</a>
-            <a href="#ucivo">Učivo</a>
-            <a href="#o-nas">O nás</a>
-        </nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Světlo a optika</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Světlo je elektromagnetické záření, které vnímáme
-                            našimi očima. Optika se zabývá studiem světla, jeho
-                            šířením, lomením, odrazem a rozkladem. Základními
-                            jevy jsou refrakce, disperze a interference. Optické
-                            jevy se využívají v mnoha technologiích, jako jsou
-                            brýle, mikroskopy a dalekohledy.
-                        </p>
-                    </div>
-                    <h2>Informace o světle</h2>
-                    <ul>
-                        <li>má více barev, každá jiné vlastnosti</li>
-                        <li>může ohřívat</li>
-                        <li>má různou teplotu barev</li>
-                        <li>
-                            <strong
-                                >šíří se přímočaře rychlostí 300 000 km/s ve
-                                vesmíru (i vakuu)</strong
-                            >
-                        </li>
-                        <li>
-                            <strong
-                                >zdroj je těleso, kde světlo vzniká (ne
-                                Měsíc)</strong
-                            >
-                        </li>
-                        <li>typy zdrojů</li>
-                        <ul>
-                            <li>přírodní</li>
-                            <li>umělé</li>
-                        </ul>
-                    </ul>
-                    <h2>Fáze měsíce</h2>
-                    <div class="blog-image">
-                        <img
-                            src="images/faze-mesice.png"
-                            width="300rem"
-                            alt="fáze měsíce"
-                        />
-                        <p style="margin-top: 0">
-                            Obrázek
-                            <a
-                                href="http://creativecommons.org/licenses/by-sa/3.0/"
-                                title="Creative Commons Attribution-Share Alike 3.0"
-                                >CC BY-SA 3.0</a
-                            >,
-                            <a
-                                href="https://commons.wikimedia.org/w/index.php?curid=14263"
-                                >Odkaz</a
-                            >
-                        </p>
-                    </div>
-                    <p>1 - nov, 5 - úplněk</p>
-                    <p>
-                        <strong>Střídají se za 28 dní</strong>, Měsíc se otáčí
-                        kolem své osy 28 hodin, to znamená, že vždy vidíme jednu
-                        stranu.
-                    </p>
-                    <h2>Odraz světla</h2>
-                    <div class="blog-image">
-                        <img
-                            src="images/periskop.png"
-                            class="blog-image"
-                            width="300rem"
-                            alt="odraz světla"
-                        />
-                        <p>
-                            Autor:
-                            <a
-                                href="//commons.wikimedia.org/wiki/User:Tamasflex"
-                                title="User:Tamasflex"
-                                >Tamasflex</a
-                            >
-                            –
-                            <span class="int-own-work" lang="cs"
-                                >Vlastní dílo</span
-                            >,
-                            <a
-                                href="https://creativecommons.org/licenses/by-sa/3.0"
-                                title="Creative Commons Attribution-Share Alike 3.0"
-                                >CC BY-SA 3.0</a
-                            >,
-                            <a
-                                href="https://commons.wikimedia.org/w/index.php?curid=14799609"
-                                >Odkaz</a
-                            >
-                        </p>
-                    </div>
-                    <ul>
-                        <li>
-                            <strong
-                                >nastane, když světlo narazí na neprůhlednou
-                                překážku</strong
-                            >
-                        </li>
-                        <li>nejlépe odrážejí zrcadla</li>
-                        <li>dělení zrcadel</li>
-                        <ul>
-                            <li>
-                                <strong
-                                    >rovinná - normální obraz,
-                                    převrácený</strong
-                                >
-                            </li>
-                            <li><strong>dutá ) - zvětšují</strong></li>
-                            <li><strong>vypuklá ( - zmenšují</strong></li>
-                        </ul>
-                        <li>
-                            <strong
-                                >světlo se odráží podle zákona odrazu (pod
-                                stejným úhlem, takto funguje periskop)</strong
-                            >
-                        </li>
-                    </ul>
-                    <h2>Čočky</h2>
-                    <img
-                        src="images/cocky.png"
-                        class="blog-image"
-                        width="150rem"
-                        alt="čočky"
-                    />
-                    <ul>
-                        <li>
-                            <strong
-                                >vybroušená sklíčka, která lámou světlo</strong
-                            >
-                        </li>
-                    </ul>
-                    <p>
-                        <strong
-                            >1 - spojka - paprsky spojuje v ohnisko<br />2 -
-                            rozptylka - paprsky rozptyluje</strong
-                        >
-                    </p>
-                    <h2>Lom světla</h2>
-                    <div class="blog-image">
-                        <a href="images/lom-svetla.png"
-                            ><img
-                                src="images/lom-svetla.png"
-                                class="blog-image"
-                                width="320rem"
-                                alt="lom světla"
-                        /></a>
-                    </div>
-                    <ul>
-                        <li>
-                            <strong
-                                >nastane, když světlo jde z jednoho do druhého
-                                průhledného prostředí (vzduch, sklo,
-                                voda)</strong
-                            >
-                        </li>
-                    </ul>
-                    <h2>Oko</h2>
-                    <ul>
-                        <li><strong>má v sobě gelovou spojku</strong></li>
-                        <li>
-                            <strong
-                                >získává obrácený obraz, který mozek převrací
-                                zpátky</strong
-                            >
-                        </li>
-                    </ul>
-                    <h3>Vady zraku</h3>
-                    <h4>dalekozraké</h4>
-                    <ul>
-                        <li><strong>špatně vidí na krátko</strong></li>
-                        <li><strong>potřebuje spojku (brýle)</strong></li>
-                    </ul>
-                    <h4>krátkozraké</h4>
-                    <ul>
-                        <li><strong>špatně vidí do dálky</strong></li>
-                        <li><strong>potřebuje rozptylku (brýle)</strong></li>
-                    </ul>
-                    <h2>Rozklad světla</h2>
-                    <img
-                        src="images/rozklad-svetla.png"
-                        class="blog-image"
-                        width="200rem"
-                        alt="rozklad"
-                    />
-                    <ul>
-                        <li>
-                            <strong
-                                >bílé světlo se při lomu světla rozkládá na 7
-                                barev (barevné spektrum) - červená, oranžová,
-                                žlutá, zelená, tyrkysová (aqua), modrá a
-                                fialová</strong
-                            >
-                        </li>
-                        <li>
-                            můžeme vidět u duhy, v bublině, v olejové skvrně...
-                        </li>
-                    </ul>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Světlo a optika
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Světlo je elektromagnetické záření, které vnímáme našimi očima.
+            Optika se zabývá studiem světla, jeho šířením, lomením, odrazem a
+            rozkladem. Základními jevy jsou refrakce, disperze a interference.
+            Optické jevy se využívají v mnoha technologiích, jako jsou brýle,
+            mikroskopy a dalekohledy.
+        </p>
+    </div>
+    <h2>Informace o světle</h2>
+    <ul>
+        <li>má více barev, každá jiné vlastnosti</li>
+        <li>může ohřívat</li>
+        <li>má různou teplotu barev</li>
+        <li>
+            <strong
+                >šíří se přímočaře rychlostí 300 000 km/s ve vesmíru (i
+                vakuu)</strong
+            >
+        </li>
+        <li>
+            <strong>zdroj je těleso, kde světlo vzniká (ne Měsíc)</strong>
+        </li>
+        <li>typy zdrojů</li>
+        <ul>
+            <li>přírodní</li>
+            <li>umělé</li>
+        </ul>
+    </ul>
+    <h2>Fáze měsíce</h2>
+    <div class="blog-image">
+        <img src="images/faze-mesice.png" width="300rem" alt="fáze měsíce" />
+        <p style="margin-top: 0">
+            Obrázek
+            <a
+                href="http://creativecommons.org/licenses/by-sa/3.0/"
+                title="Creative Commons Attribution-Share Alike 3.0"
+                >CC BY-SA 3.0</a
+            >,
+            <a href="https://commons.wikimedia.org/w/index.php?curid=14263"
+                >Odkaz</a
+            >
+        </p>
+    </div>
+    <p>1 - nov, 5 - úplněk</p>
+    <p>
+        <strong>Střídají se za 28 dní</strong>, Měsíc se otáčí kolem své osy 28
+        hodin, to znamená, že vždy vidíme jednu stranu.
+    </p>
+    <h2>Odraz světla</h2>
+    <div class="blog-image">
+        <img
+            src="images/periskop.png"
+            class="blog-image"
+            width="300rem"
+            alt="odraz světla"
+        />
+        <p>
+            Autor:
+            <a
+                href="//commons.wikimedia.org/wiki/User:Tamasflex"
+                title="User:Tamasflex"
+                >Tamasflex</a
+            >
+            –
+            <span class="int-own-work" lang="cs">Vlastní dílo</span>,
+            <a
+                href="https://creativecommons.org/licenses/by-sa/3.0"
+                title="Creative Commons Attribution-Share Alike 3.0"
+                >CC BY-SA 3.0</a
+            >,
+            <a href="https://commons.wikimedia.org/w/index.php?curid=14799609"
+                >Odkaz</a
+            >
+        </p>
+    </div>
+    <ul>
+        <li>
+            <strong
+                >nastane, když světlo narazí na neprůhlednou překážku</strong
+            >
+        </li>
+        <li>nejlépe odrážejí zrcadla</li>
+        <li>dělení zrcadel</li>
+        <ul>
+            <li>
+                <strong>rovinná - normální obraz, převrácený</strong>
+            </li>
+            <li><strong>dutá ) - zvětšují</strong></li>
+            <li><strong>vypuklá ( - zmenšují</strong></li>
+        </ul>
+        <li>
+            <strong
+                >světlo se odráží podle zákona odrazu (pod stejným úhlem, takto
+                funguje periskop)</strong
+            >
+        </li>
+    </ul>
+    <h2>Čočky</h2>
+    <img src="images/cocky.png" class="blog-image" width="150rem" alt="čočky" />
+    <ul>
+        <li>
+            <strong>vybroušená sklíčka, která lámou světlo</strong>
+        </li>
+    </ul>
+    <p>
+        <strong
+            >1 - spojka - paprsky spojuje v ohnisko<br />2 - rozptylka - paprsky
+            rozptyluje</strong
+        >
+    </p>
+    <h2>Lom světla</h2>
+    <div class="blog-image">
+        <a href="images/lom-svetla.png"
+            ><img
+                src="images/lom-svetla.png"
+                class="blog-image"
+                width="320rem"
+                alt="lom světla"
+        /></a>
+    </div>
+    <ul>
+        <li>
+            <strong
+                >nastane, když světlo jde z jednoho do druhého průhledného
+                prostředí (vzduch, sklo, voda)</strong
+            >
+        </li>
+    </ul>
+    <h2>Oko</h2>
+    <ul>
+        <li><strong>má v sobě gelovou spojku</strong></li>
+        <li>
+            <strong>získává obrácený obraz, který mozek převrací zpátky</strong>
+        </li>
+    </ul>
+    <h3>Vady zraku</h3>
+    <h4>dalekozraké</h4>
+    <ul>
+        <li><strong>špatně vidí na krátko</strong></li>
+        <li><strong>potřebuje spojku (brýle)</strong></li>
+    </ul>
+    <h4>krátkozraké</h4>
+    <ul>
+        <li><strong>špatně vidí do dálky</strong></li>
+        <li><strong>potřebuje rozptylku (brýle)</strong></li>
+    </ul>
+    <h2>Rozklad světla</h2>
+    <img
+        src="images/rozklad-svetla.png"
+        class="blog-image"
+        width="200rem"
+        alt="rozklad"
+    />
+    <ul>
+        <li>
+            <strong
+                >bílé světlo se při lomu světla rozkládá na 7 barev (barevné
+                spektrum) - červená, oranžová, žlutá, zelená, tyrkysová (aqua),
+                modrá a fialová</strong
+            >
+        </li>
+        <li>můžeme vidět u duhy, v bublině, v olejové skvrně...</li>
+    </ul>
+</section>

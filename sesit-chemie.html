@@ -1,106 +1,36 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sešit chemie - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar"></nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Sešit chemie</h1>
-                <div style="text-align: left">
-                    <span style="color: #9c9c9c"
-                        ><em>od nejnovějšího k nejstaršímu</em></span
-                    >
-                    <h2>Jednotlivé prvky</h2>
-                    <a href="ch-jednotlive-prvky.html">zde</a>
-                    <h2>Rozdělení prvků</h2>
-                    <a href="ch-rozdeleni-prvku.html">zde</a>
-                    <h2>Chemické výpočty</h2>
-                    <a href="ch-vypocty.html">zde</a>
-                    <h2>Chemická reakce</h2>
-                    <a href="ch-reakce.html">zde</a>
-                    <h2>Ionty</h2>
-                    <a href="ch-ionty.html">zde</a>
-                    <h2>Prvky a sloučeniny</h2>
-                    <a href="ch-prvky-slouceniny.html">zde</a>
-                    <h2>Chemická vazba</h2>
-                    <a href="ch-chemicka-vazba.html">zde</a>
-                    <h2>Složení látek</h2>
-                    <a href="ch-slozeni-latek.html">zde</a>
-                    <h2>Vzduch</h2>
-                    <a href="ch-vzduch.html">zde</a>
-                    <h2>Voda</h2>
-                    <a href="ch-voda.html">zde</a>
-                    <h2>Směsi</h2>
-                    <a href="ch-smesi.html">zde</a>
-                    <h2>Vlastnosti látek</h2>
-                    <a href="ch-vlastnosti-latek.html">zde</a>
-                    <h2>Dělení látek</h2>
-                    <a href="ch-deleni-latek.html">zde</a>
-                    <h2>Rozdíly</h2>
-                    <a href="ch-rozdily.html">zde</a>
-                    <br />
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Sešit chemie
+type: content
+-->
+<section id="only-content">
+    <span style="color: #9c9c9c"><em>od nejnovějšího k nejstaršímu</em></span>
+    <h2>Jednotlivé prvky</h2>
+    <a href="ch-jednotlive-prvky.html">zde</a>
+    <h2>Rozdělení prvků</h2>
+    <a href="ch-rozdeleni-prvku.html">zde</a>
+    <h2>Chemické výpočty</h2>
+    <a href="ch-vypocty.html">zde</a>
+    <h2>Chemická reakce</h2>
+    <a href="ch-reakce.html">zde</a>
+    <h2>Ionty</h2>
+    <a href="ch-ionty.html">zde</a>
+    <h2>Prvky a sloučeniny</h2>
+    <a href="ch-prvky-slouceniny.html">zde</a>
+    <h2>Chemická vazba</h2>
+    <a href="ch-chemicka-vazba.html">zde</a>
+    <h2>Složení látek</h2>
+    <a href="ch-slozeni-latek.html">zde</a>
+    <h2>Vzduch</h2>
+    <a href="ch-vzduch.html">zde</a>
+    <h2>Voda</h2>
+    <a href="ch-voda.html">zde</a>
+    <h2>Směsi</h2>
+    <a href="ch-smesi.html">zde</a>
+    <h2>Vlastnosti látek</h2>
+    <a href="ch-vlastnosti-latek.html">zde</a>
+    <h2>Dělení látek</h2>
+    <a href="ch-deleni-latek.html">zde</a>
+    <h2>Rozdíly</h2>
+    <a href="ch-rozdily.html">zde</a>
+    <br />
+</section>

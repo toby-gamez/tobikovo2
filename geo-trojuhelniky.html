@@ -1,217 +1,129 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Trojúhelníky - Geometrie - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar"></nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Trojúhelníky</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Trojúhelníky jsou základní geometrické útvary s
-                            třemi stranami a třemi vrcholy. Dělí se podle délek
-                            stran (rovnostranný, rovnoramenný, obecný) nebo
-                            podle úhlů (ostroúhlý, pravoúhlý, tupoúhlý). Součet
-                            vnitřních úhlů je vždy 180 stupňů. Jsou důležité v
-                            geometrii, stavebnictví i fyzice.
-                        </p>
-                    </div>
-                    <h2>Trojúhelník</h2>
-                    <p>
-                        obvod: a + b + c<br />obsah: (a × v<span
-                            style="font-size: 11px"
-                            >a</span
-                        >) ÷ 2
-                    </p>
-                    <h3>Typy</h3>
-                    <ul>
-                        <li>rovnoramenný</li>
-                        <img
-                            src="images/rovnoramenny.png"
-                            style="border-radius: 10px"
-                            width="100px"
-                            alt="Rovnoramenný"
-                        />
-                        <li>rovnostranný</li>
-                        <img
-                            src="images/rovnostranny.png"
-                            style="border-radius: 10px"
-                            width="100px"
-                            alt="Rovnostranný"
-                        />
-                        <li>obecný (jakýkoliv jiný)</li>
-                    </ul>
-                    <h3>Druhy</h3>
-                    <ul>
-                        <li>pravoúhlý - 1 úhel 90°</li>
-                        <li>tupoúhlý - 1 úhel tupý</li>
-                        <li>ostroúhlý - 1 úhel ostrý</li>
-                    </ul>
-                    <h3>Výšky</h3>
-                    <p>
-                        přímka kolmá k jedné straně protínající nejvyšší bod
-                        trojúhelníku
-                    </p>
-                    <img
-                        src="images/vysky-troj.png"
-                        style="border-radius: 10px"
-                        width="200px"
-                        alt="Výšky"
-                    />
-                    <h3>Střední příčky</h3>
-                    <img
-                        src="images/stredny-pricky.png"
-                        style="border-radius: 10px"
-                        width="200px"
-                        alt="Střední příčky"
-                    />
-                    <p><em>*to červené jsou střední příčky</em></p>
-                    <h3>Těžiště</h3>
-                    <img
-                        src="images/teziste.png"
-                        style="border-radius: 10px"
-                        width="200px"
-                        alt="Těžiště"
-                    />
-                    <p>
-                        <em
-                            >*červené čáry jsou těžnice a průsečík těžnic T je
-                            těžiště</em
-                        >
-                    </p>
-                    <h3>Kružnice opsaná</h3>
-                    <img
-                        src="images/kruznice-opsana.png"
-                        style="border-radius: 10px"
-                        width="200px"
-                        alt="Kružnice opsaná"
-                    />
-                    <p><em>*kružnice opsaná je kružnice k</em></p>
-                    <p><em>*osy o1, o2 a o3 jsou osy stran</em></p>
-                    <h3>Kružnice vepsaná</h3>
-                    <img
-                        src="images/kruznice-vepsana.png"
-                        style="border-radius: 10px"
-                        width="220px"
-                        alt="Kružnice vepsaná"
-                    />
-                    <p>
-                        kružnice vepsaná se rýsuje ze středu os
-                        <a href="geo-uhly.html">úhlů</a>
-                    </p>
-                    <h3>Věty</h3>
-                    <h4>SUS</h4>
-                    <p>Věta SUS je ze zadání strany, úhlu a strany.</p>
-                    <h4>USU</h4>
-                    <p>Věta USU je ze zadání úhlu, strany a úhlu.</p>
-                    <h4>SSS</h4>
-                    <p>Věta SSS je ze zadání strany, strany a strany.</p>
-                    <h2>Pythagorova věta</h2>
-                    <h3>Základy</h3>
-                    <img
-                        src="images/pyth.png"
-                        style="border-radius: 10px"
-                        width="350px"
-                        alt="trojůhelník"
-                    />
-                    <p>
-                        přepona .... 5 cm (je vždy nejdelší)<br />odvěsna .... 4
-                        cm<br />odvěsna .... 3 cm
-                    </p>
-                    <h4>Věta</h4>
-                    <p>
-                        „Obsah čtverce sestrojeného nad přeponou pravoúhlého
-                        trojúhelníku se rovná součtu obsahu čtverců nad oběma
-                        odvěsnami.“
-                    </p>
-                    <p>a znamená to:</p>
-                    <p style="font-size: 20px">a² + b² = c²</p>
-                    <p>
-                        Pokud ale hledáme odvěsnu, budeme kratší stranu
-                        <strong>odečítat</strong> od té delší.
-                    </p>
-                    <p>
-                        <strong
-                            >ALE V TROJÚHELNÍKU SESTROJENÉM NAHOŘE
-                            PLATÍ:</strong
-                        >
-                    </p>
-                    <p style="font-size: 20px">c² + b² = a²</p>
-                    <h3>Vypočítání trojúhelníku nahoře</h3>
-                    <p><em>*aneb přepony</em></p>
-                    <p>
-                        přepona .... 5 cm<br />odvěsna .... 4 cm<br />odvěsna
-                        .... 3 cm
-                    </p>
-                    <p>
-                        c² + b² = a²<br />4² + 3² = 5²<br />16 + 9 = 25<br />25
-                        = 25
-                    </p>
-                    <p>Trojúhelník je pravoúhlý.</p>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Trojúhelníky
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Trojúhelníky jsou základní geometrické útvary s třemi stranami a
+            třemi vrcholy. Dělí se podle délek stran (rovnostranný,
+            rovnoramenný, obecný) nebo podle úhlů (ostroúhlý, pravoúhlý,
+            tupoúhlý). Součet vnitřních úhlů je vždy 180 stupňů. Jsou důležité v
+            geometrii, stavebnictví i fyzice.
+        </p>
+    </div>
+    <h2>Trojúhelník</h2>
+    <p>
+        obvod: a + b + c<br />obsah: (a × v<span style="font-size: 11px">a</span
+        >) ÷ 2
+    </p>
+    <h3>Typy</h3>
+    <ul>
+        <li>rovnoramenný</li>
+        <img
+            src="images/rovnoramenny.png"
+            style="border-radius: 10px"
+            width="100px"
+            alt="Rovnoramenný"
+        />
+        <li>rovnostranný</li>
+        <img
+            src="images/rovnostranny.png"
+            style="border-radius: 10px"
+            width="100px"
+            alt="Rovnostranný"
+        />
+        <li>obecný (jakýkoliv jiný)</li>
+    </ul>
+    <h3>Druhy</h3>
+    <ul>
+        <li>pravoúhlý - 1 úhel 90°</li>
+        <li>tupoúhlý - 1 úhel tupý</li>
+        <li>ostroúhlý - 1 úhel ostrý</li>
+    </ul>
+    <h3>Výšky</h3>
+    <p>přímka kolmá k jedné straně protínající nejvyšší bod trojúhelníku</p>
+    <img
+        src="images/vysky-troj.png"
+        style="border-radius: 10px"
+        width="200px"
+        alt="Výšky"
+    />
+    <h3>Střední příčky</h3>
+    <img
+        src="images/stredny-pricky.png"
+        style="border-radius: 10px"
+        width="200px"
+        alt="Střední příčky"
+    />
+    <p><em>*to červené jsou střední příčky</em></p>
+    <h3>Těžiště</h3>
+    <img
+        src="images/teziste.png"
+        style="border-radius: 10px"
+        width="200px"
+        alt="Těžiště"
+    />
+    <p>
+        <em>*červené čáry jsou těžnice a průsečík těžnic T je těžiště</em>
+    </p>
+    <h3>Kružnice opsaná</h3>
+    <img
+        src="images/kruznice-opsana.png"
+        style="border-radius: 10px"
+        width="200px"
+        alt="Kružnice opsaná"
+    />
+    <p><em>*kružnice opsaná je kružnice k</em></p>
+    <p><em>*osy o1, o2 a o3 jsou osy stran</em></p>
+    <h3>Kružnice vepsaná</h3>
+    <img
+        src="images/kruznice-vepsana.png"
+        style="border-radius: 10px"
+        width="220px"
+        alt="Kružnice vepsaná"
+    />
+    <p>
+        kružnice vepsaná se rýsuje ze středu os
+        <a href="geo-uhly.html">úhlů</a>
+    </p>
+    <h3>Věty</h3>
+    <h4>SUS</h4>
+    <p>Věta SUS je ze zadání strany, úhlu a strany.</p>
+    <h4>USU</h4>
+    <p>Věta USU je ze zadání úhlu, strany a úhlu.</p>
+    <h4>SSS</h4>
+    <p>Věta SSS je ze zadání strany, strany a strany.</p>
+    <h2>Pythagorova věta</h2>
+    <h3>Základy</h3>
+    <img
+        src="images/pyth.png"
+        style="border-radius: 10px"
+        width="350px"
+        alt="trojůhelník"
+    />
+    <p>
+        přepona .... 5 cm (je vždy nejdelší)<br />odvěsna .... 4 cm<br />odvěsna
+        .... 3 cm
+    </p>
+    <h4>Věta</h4>
+    <p>
+        „Obsah čtverce sestrojeného nad přeponou pravoúhlého trojúhelníku se
+        rovná součtu obsahu čtverců nad oběma odvěsnami.“
+    </p>
+    <p>a znamená to:</p>
+    <p style="font-size: 20px">a² + b² = c²</p>
+    <p>
+        Pokud ale hledáme odvěsnu, budeme kratší stranu
+        <strong>odečítat</strong> od té delší.
+    </p>
+    <p>
+        <strong>ALE V TROJÚHELNÍKU SESTROJENÉM NAHOŘE PLATÍ:</strong>
+    </p>
+    <p style="font-size: 20px">c² + b² = a²</p>
+    <h3>Vypočítání trojúhelníku nahoře</h3>
+    <p><em>*aneb přepony</em></p>
+    <p>přepona .... 5 cm<br />odvěsna .... 4 cm<br />odvěsna .... 3 cm</p>
+    <p>c² + b² = a²<br />4² + 3² = 5²<br />16 + 9 = 25<br />25 = 25</p>
+    <p>Trojúhelník je pravoúhlý.</p>
+</section>

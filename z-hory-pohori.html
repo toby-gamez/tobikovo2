@@ -1,136 +1,58 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Hory a pohoří - Zeměpis - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar"></nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Hory a pohoří</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Česká republika je bohatá na pohoří a hory, které
-                            vytvářejí rozmanitou krajinu. Nejvyšší horou je
-                            Sněžka (1 603 m n. m.) v Krkonošsko-jesenické
-                            oblasti. Další významná pohoří zahrnují Šumavu na
-                            jihozápadě, Krušné hory na západě, Orlické hory na
-                            severovýchodě a Beskydy na východě. Tyto hory jsou
-                            oblíbené pro turistiku, zimní sporty a jsou součástí
-                            chráněných krajinných oblastí, což z nich činí cenné
-                            přírodní oblasti.
-                        </p>
-                    </div>
-                    <h2>Informace</h2>
-                    <p>
-                        Pohoří je <strong>soustava hor</strong>, které jsou
-                        často propojené <strong>geologickými procesy</strong>,
-                        jako je zemětřesení a vulkanická činnost. Tyto horské
-                        systémy vytvářejí různé <strong>krajinné tvary</strong>,
-                        jako jsou údolí, hřebeny a vrcholy. Pohoří mají
-                        <strong>velký vliv na klima</strong>, hydrologii a biotu
-                        daných oblastí, často působí jako
-                        <strong>bariéry pro větrné a srážkové vzory</strong>.
-                    </p>
-                    <div class="blog-image">
-                        <a href="images/pohori.png"
-                            ><img
-                                src="images/pohori.png"
-                                class="blog-image"
-                                width="300px"
-                        /></a>
-                        <p>mapa pohoří ČR</p>
-                        <p>
-                            Zdroj:
-                            <a
-                                href="https://korthar2015z.blogspot.com/2018/11/mapa-cr-pohori.html"
-                                >korthar2015z.blogspot.com</a
-                            >
-                        </p>
-                    </div>
-                    <ul>
-                        <li>Šumava - Plechý (1378 m. n. m.)</li>
-                        <li>Český les - Čerchov (1042 m. n. m.)</li>
-                        <li>Krušné hory - Klínovec (1244 m. n. m.)</li>
-                        <li>Doupovské hory - Hradiště (934 m. n. m.)</li>
-                        <li>České středohoří - Milešovka (837 m. n. m.)</li>
-                        <li>Lužické hory - Luž (793 m. n. m.)</li>
-                        <li>Jizerské hory - Jizera (1122 m. n. m.)</li>
-                        <li>Krkonoše - Sněžka (1603 m. n. m.)</li>
-                        <li>Orlické hory - Velká Děsná (1115 m. n. m.)</li>
-                        <li>Králický sněžník - (1424 m. n. m.)</li>
-                        <li>Hrubý Jeseník - Praděd (1492 m. n. m.)</li>
-                        <li>Beskydy - Lysá hora (1329 m. n. m.)</li>
-                        <li>Javorníky - Velká Javorník (1019 m. n. m.)</li>
-                        <li>
-                            Broumovské stěny - Božanovský Špičák (773 m. n. m.)
-                        </li>
-                        <li>Novohradské hory - Kleť (1084 m. n. m.)</li>
-                        <li>
-                            Českomoravská Vrchovina - Javořice (836 m. n. m.)
-                        </li>
-                    </ul>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Hory a pohoří
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Česká republika je bohatá na pohoří a hory, které vytvářejí
+            rozmanitou krajinu. Nejvyšší horou je Sněžka (1 603 m n. m.) v
+            Krkonošsko-jesenické oblasti. Další významná pohoří zahrnují Šumavu
+            na jihozápadě, Krušné hory na západě, Orlické hory na severovýchodě
+            a Beskydy na východě. Tyto hory jsou oblíbené pro turistiku, zimní
+            sporty a jsou součástí chráněných krajinných oblastí, což z nich
+            činí cenné přírodní oblasti.
+        </p>
+    </div>
+    <h2>Informace</h2>
+    <p>
+        Pohoří je <strong>soustava hor</strong>, které jsou často propojené
+        <strong>geologickými procesy</strong>, jako je zemětřesení a vulkanická
+        činnost. Tyto horské systémy vytvářejí různé
+        <strong>krajinné tvary</strong>, jako jsou údolí, hřebeny a vrcholy.
+        Pohoří mají <strong>velký vliv na klima</strong>, hydrologii a biotu
+        daných oblastí, často působí jako
+        <strong>bariéry pro větrné a srážkové vzory</strong>.
+    </p>
+    <div class="blog-image">
+        <a href="images/pohori.png"
+            ><img src="images/pohori.png" class="blog-image" width="300px"
+        /></a>
+        <p>mapa pohoří ČR</p>
+        <p>
+            Zdroj:
+            <a
+                href="https://korthar2015z.blogspot.com/2018/11/mapa-cr-pohori.html"
+                >korthar2015z.blogspot.com</a
+            >
+        </p>
+    </div>
+    <ul>
+        <li>Šumava - Plechý (1378 m. n. m.)</li>
+        <li>Český les - Čerchov (1042 m. n. m.)</li>
+        <li>Krušné hory - Klínovec (1244 m. n. m.)</li>
+        <li>Doupovské hory - Hradiště (934 m. n. m.)</li>
+        <li>České středohoří - Milešovka (837 m. n. m.)</li>
+        <li>Lužické hory - Luž (793 m. n. m.)</li>
+        <li>Jizerské hory - Jizera (1122 m. n. m.)</li>
+        <li>Krkonoše - Sněžka (1603 m. n. m.)</li>
+        <li>Orlické hory - Velká Děsná (1115 m. n. m.)</li>
+        <li>Králický sněžník - (1424 m. n. m.)</li>
+        <li>Hrubý Jeseník - Praděd (1492 m. n. m.)</li>
+        <li>Beskydy - Lysá hora (1329 m. n. m.)</li>
+        <li>Javorníky - Velká Javorník (1019 m. n. m.)</li>
+        <li>Broumovské stěny - Božanovský Špičák (773 m. n. m.)</li>
+        <li>Novohradské hory - Kleť (1084 m. n. m.)</li>
+        <li>Českomoravská Vrchovina - Javořice (836 m. n. m.)</li>
+    </ul>
+</section>

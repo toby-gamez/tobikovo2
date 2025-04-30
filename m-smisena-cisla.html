@@ -1,102 +1,27 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Smíšená čísla - Matematika - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar"></nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Smíšená čísla</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Smíšené číslo je kombinací celého čísla a zlomku.
-                            Například číslo 2 ½ znamená dvě celá a půl. Smíšená
-                            čísla se často používají k vyjádření hodnot mezi
-                            celými čísly, ale bez použití desetinné čárky. Při
-                            výpočtech se smíšená čísla často převádějí na
-                            nepravé zlomky, aby bylo snazší je sčítat, odčítat,
-                            násobit nebo dělit.
-                        </p>
-                    </div>
-                    <h2>Informace</h2>
-                    <ul>
-                        <li>
-                            <strong>převádí se ze zlomků</strong>, které jsou
-                            větší než 1
-                        </li>
-                        <li>
-                            píše se např. 5/4 -> 1 1/4 (jedna a jedna čtvrtina)
-                        </li>
-                    </ul>
-                    <img
-                        src="images/smisene-cislo.png"
-                        style="border-radius: 10px"
-                        width="220px"
-                        alt="Smíšené číslo"
-                    />
-                    <br />
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Smíšená čísla
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Smíšené číslo je kombinací celého čísla a zlomku. Například číslo 2
+            ½ znamená dvě celá a půl. Smíšená čísla se často používají k
+            vyjádření hodnot mezi celými čísly, ale bez použití desetinné čárky.
+            Při výpočtech se smíšená čísla často převádějí na nepravé zlomky,
+            aby bylo snazší je sčítat, odčítat, násobit nebo dělit.
+        </p>
+    </div>
+    <h2>Informace</h2>
+    <ul>
+        <li><strong>převádí se ze zlomků</strong>, které jsou větší než 1</li>
+        <li>píše se např. 5/4 -> 1 1/4 (jedna a jedna čtvrtina)</li>
+    </ul>
+    <img
+        src="images/smisene-cislo.png"
+        style="border-radius: 10px"
+        width="220px"
+        alt="Smíšené číslo"
+    />
+    <br />
+</section>

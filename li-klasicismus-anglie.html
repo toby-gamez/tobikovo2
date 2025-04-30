@@ -1,140 +1,63 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Klasicismus v Anglii - Literatura - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar"></nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Klasicismus v Anglii</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Klasicismus v Anglii se rozvinul v 17. a 18.
-                            století, kdy literáti čerpali inspiraci z antické
-                            literatury a filozofie. Tento směr kladl důraz na
-                            rozum, rovnováhu a přísná pravidla literárního
-                            stylu. Významní angličtí autoři jako Daniel Defoe a
-                            Jonathan Swift se soustředili na morální a satirické
-                            prvky, často kritizující společenské neduhy.
-                        </p>
-                    </div>
-                    <h2>Daniel Defoe [Dyfou]</h2>
-                    <img
-                        src="images/defoe.png"
-                        class="rounded blog-image"
-                        height="150rem"
-                        alt="Daniel Defoe"
-                    />
-                    <ul>
-                        <li>
-                            žil od roku <strong>1660</strong> do roku
-                            <strong>1731</strong>
-                        </li>
-                        <li>
-                            <strong>anglický spisovatel</strong>, novinář a
-                            obchodník
-                        </li>
-                        <li>
-                            začal organizovat <strong>špionážní síť</strong> a
-                            bývá považován za
-                            <strong
-                                >zakladatele anglické špionážní služby</strong
-                            >
-                        </li>
-                        <li>
-                            nejslavnější dílo - <strong>Robinson Crusoe</strong>
-                        </li>
-                        <li>nový typ románu - <strong>dobrodružný</strong></li>
-                    </ul>
-                    <h2>Jonathan Swift</h2>
-                    <img
-                        src="images/swift.png"
-                        class="rounded blog-image"
-                        height="150rem"
-                        alt="Jonathan Swift"
-                    />
-                    <ul>
-                        <li>
-                            nejslavnější dílo -
-                            <strong>Gulliverovy cesty</strong> (ukázka
-                            <a href="li-cestopis.html">zde</a>)
-                        </li>
-                        <ul>
-                            <li>
-                                <strong>utopický dobrodružný román</strong> -
-                                <a href="li-cestopis.html">cestopis</a>
-                            </li>
-                            <li>díly</li>
-                            <ol>
-                                <li>Liliput</li>
-                                <li>Země obrů</li>
-                                <li>Létající ostrov</li>
-                                <li>Země, kde vládnou ušlechtilí koně</li>
-                            </ol>
-                        </ul>
-                    </ul>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Klasicismus v Anglii
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Klasicismus v Anglii se rozvinul v 17. a 18. století, kdy literáti
+            čerpali inspiraci z antické literatury a filozofie. Tento směr kladl
+            důraz na rozum, rovnováhu a přísná pravidla literárního stylu.
+            Významní angličtí autoři jako Daniel Defoe a Jonathan Swift se
+            soustředili na morální a satirické prvky, často kritizující
+            společenské neduhy.
+        </p>
+    </div>
+    <h2>Daniel Defoe [Dyfou]</h2>
+    <img
+        src="images/defoe.png"
+        class="rounded blog-image"
+        height="150rem"
+        alt="Daniel Defoe"
+    />
+    <ul>
+        <li>
+            žil od roku <strong>1660</strong> do roku
+            <strong>1731</strong>
+        </li>
+        <li><strong>anglický spisovatel</strong>, novinář a obchodník</li>
+        <li>
+            začal organizovat <strong>špionážní síť</strong> a bývá považován za
+            <strong>zakladatele anglické špionážní služby</strong>
+        </li>
+        <li>nejslavnější dílo - <strong>Robinson Crusoe</strong></li>
+        <li>nový typ románu - <strong>dobrodružný</strong></li>
+    </ul>
+    <h2>Jonathan Swift</h2>
+    <img
+        src="images/swift.png"
+        class="rounded blog-image"
+        height="150rem"
+        alt="Jonathan Swift"
+    />
+    <ul>
+        <li>
+            nejslavnější dílo -
+            <strong>Gulliverovy cesty</strong> (ukázka
+            <a href="li-cestopis.html">zde</a>)
+        </li>
+        <ul>
+            <li>
+                <strong>utopický dobrodružný román</strong> -
+                <a href="li-cestopis.html">cestopis</a>
+            </li>
+            <li>díly</li>
+            <ol>
+                <li>Liliput</li>
+                <li>Země obrů</li>
+                <li>Létající ostrov</li>
+                <li>Země, kde vládnou ušlechtilí koně</li>
+            </ol>
+        </ul>
+    </ul>
+</section>

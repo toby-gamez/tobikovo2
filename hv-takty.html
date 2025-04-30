@@ -1,108 +1,29 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Takty a předznamenání - Hudební výchova - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar">
-            <a href="#home"
-                ><img src="images/white-logo.png" alt="Logo" width="75px"
-            /></a>
-            <a href="#home">Domů</a>
-            <a href="#ucivo">Učivo</a>
-            <a href="#o-nas">O nás</a>
-        </nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Takty a předznamenání</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Takt je úsek notového zápisu vymezený taktovými
-                            čarami, udává pravidelné rytmické dělení hudby.
-                            Počet dob v taktu určuje taktové označení (např.
-                            4/4, 3/4). Předznamenání se zapisuje na začátku
-                            notové osnovy a označuje zvýšené (křížek ♯) nebo
-                            snížené (béčko ♭) tóny platné pro celou skladbu nebo
-                            úsek.
-                        </p>
-                    </div>
-                    <h2>Takty</h2>
-                    <img src="images/takty.png" alt="takty" />
-                    <p>
-                        Nebo-li dvou/čtvrťový, tří/čtvrťový nebo čtyř/čtvrťový =
-                        c (celý)
-                    </p>
-                    <h2>Předznamenání</h2>
-                    <ul>
-                        <li>♯ - křížek (zvyšuje notu o půl tónu)</li>
-                        <li>♭ - béčko (snižuje notu o půl tónu)</li>
-                        <li>♮ - odrážka (ruší #, <em>b</em>)</li>
-                    </ul>
-                    <h2>Akcenty = důrazy</h2>
-                    <ul>
-                        <li>< - zesilovat</li>
-                        <li>> - zeslabovat</li>
-                    </ul>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Takty a předznamenání
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Takt je úsek notového zápisu vymezený taktovými čarami, udává
+            pravidelné rytmické dělení hudby. Počet dob v taktu určuje taktové
+            označení (např. 4/4, 3/4). Předznamenání se zapisuje na začátku
+            notové osnovy a označuje zvýšené (křížek ♯) nebo snížené (béčko ♭)
+            tóny platné pro celou skladbu nebo úsek.
+        </p>
+    </div>
+    <h2>Takty</h2>
+    <img src="images/takty.png" alt="takty" />
+    <p>Nebo-li dvou/čtvrťový, tří/čtvrťový nebo čtyř/čtvrťový = c (celý)</p>
+    <h2>Předznamenání</h2>
+    <ul>
+        <li>♯ - křížek (zvyšuje notu o půl tónu)</li>
+        <li>♭ - béčko (snižuje notu o půl tónu)</li>
+        <li>♮ - odrážka (ruší #, <em>b</em>)</li>
+    </ul>
+    <h2>Akcenty = důrazy</h2>
+    <ul>
+        <li>< - zesilovat</li>
+        <li>> - zeslabovat</li>
+    </ul>
+</section>

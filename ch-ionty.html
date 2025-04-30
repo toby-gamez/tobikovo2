@@ -1,128 +1,50 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ionty - Chemie - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar"></nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Ionty</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Ionty jsou částice s elektrickým nábojem – vznikají
-                            z atomů nebo molekul ztrátou či přijetím elektronů.
-                            Kladně nabité ionty nazýváme kationty, záporně
-                            nabité anionty. Jsou důležité v chemických reakcích
-                            i biologických procesech. Ionty hrají klíčovou roli
-                            i v elektrolytech.
-                        </p>
-                    </div>
-                    <h2>Definice</h2>
-                    <p>
-                        Ionty jsou <strong>elektricky nabitá tělesa</strong>,
-                        která vznikají
-                        <strong>odtržením nebo připojením elektronů</strong> k
-                        atomům nebo molekulám. Ionty mohou být
-                        <strong>kladné (kationty)</strong> nebo
-                        <strong>záporné (anionty)</strong>. Kationty vznikají
-                        odtržením elektronů, anionty připojením elektronů.
-                    </p>
-                    <h3>Typy iontů</h3>
-                    <ul>
-                        <li>
-                            <strong>monovalentní</strong> - obsahují jeden
-                            elektron (Na⁺, Cl⁻)
-                        </li>
-                        <li>
-                            <strong>divalentní</strong> - obsahují dva elektrony
-                            (Ca²⁺, O²⁻)
-                        </li>
-                        <li>
-                            <strong>trivalentní</strong> - obsahují tři
-                            elektrony (Al³⁺, N³⁻)
-                        </li>
-                    </ul>
-                    <h2>Vlastnosti</h2>
-                    <p>
-                        Ionty jsou elektricky nabitá tělesa, která se chovají
-                        podle svého náboje.
-                        <strong
-                            >Kladné ionty se chovají jako kovy, záporné jako
-                            nekovy</strong
-                        >. Ionty se mohou vázat do
-                        <strong>krystalických struktur</strong>, které tvoří
-                        iontové krystaly.
-                    </p>
-                    <h3>Reakce</h3>
-                    <p>
-                        Ionty mohou reagovat s jinými ionty, vytvářejí se tak
-                        <strong>iontové sloučeniny</strong>. Tyto sloučeniny se
-                        zapisují <strong>chemickým vzorcem</strong>, který udává
-                        druh a počet iontů v molekule.
-                    </p>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Ionty
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Ionty jsou částice s elektrickým nábojem – vznikají z atomů nebo
+            molekul ztrátou či přijetím elektronů. Kladně nabité ionty nazýváme
+            kationty, záporně nabité anionty. Jsou důležité v chemických
+            reakcích i biologických procesech. Ionty hrají klíčovou roli i v
+            elektrolytech.
+        </p>
+    </div>
+    <h2>Definice</h2>
+    <p>
+        Ionty jsou <strong>elektricky nabitá tělesa</strong>, která vznikají
+        <strong>odtržením nebo připojením elektronů</strong> k atomům nebo
+        molekulám. Ionty mohou být <strong>kladné (kationty)</strong> nebo
+        <strong>záporné (anionty)</strong>. Kationty vznikají odtržením
+        elektronů, anionty připojením elektronů.
+    </p>
+    <h3>Typy iontů</h3>
+    <ul>
+        <li>
+            <strong>monovalentní</strong> - obsahují jeden elektron (Na⁺, Cl⁻)
+        </li>
+        <li>
+            <strong>divalentní</strong> - obsahují dva elektrony (Ca²⁺, O²⁻)
+        </li>
+        <li>
+            <strong>trivalentní</strong> - obsahují tři elektrony (Al³⁺, N³⁻)
+        </li>
+    </ul>
+    <h2>Vlastnosti</h2>
+    <p>
+        Ionty jsou elektricky nabitá tělesa, která se chovají podle svého
+        náboje.
+        <strong>Kladné ionty se chovají jako kovy, záporné jako nekovy</strong>.
+        Ionty se mohou vázat do <strong>krystalických struktur</strong>, které
+        tvoří iontové krystaly.
+    </p>
+    <h3>Reakce</h3>
+    <p>
+        Ionty mohou reagovat s jinými ionty, vytvářejí se tak
+        <strong>iontové sloučeniny</strong>. Tyto sloučeniny se zapisují
+        <strong>chemickým vzorcem</strong>, který udává druh a počet iontů v
+        molekule.
+    </p>
+</section>

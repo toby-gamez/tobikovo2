@@ -1,193 +1,101 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Složení látek - Chemie - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar"></nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Složení látek</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Látky se skládají z částic – atomů, molekul nebo
-                            iontů. Čisté látky obsahují jen jeden druh částic,
-                            směsi kombinují více druhů. Složení určuje
-                            vlastnosti látky i její využití. Znalost složení je
-                            základem chemie a každého výzkumu.
-                        </p>
-                    </div>
-                    <h2>Částice látek</h2>
-                    <p>
-                        Látky jsou
-                        <strong
-                            >složeny z částic, částice jsou v neustálém
-                            pohybu</strong
-                        >
-                        (někdy mohou pronikat do druhé -
-                        <a href="ch-smesi.html">směsi</a>).
-                    </p>
-                    <h2>Atom</h2>
-                    <ul>
-                        <li>
-                            <strong
-                                >počet protonů je shodný s počtem
-                                elektronů</strong
-                            >
-                        </li>
-                        <li>atom je elektricky <strong>neutrální</strong></li>
-                        <li>
-                            drží pohromadě díky elektrostatickým silám mezi
-                            jádrem a obalem atomu
-                        </li>
-                        <li>jádro atomu obsahuje p⁺ a n⁰</li>
-                        <li>obal atomu <strong>může mít 1-7 vrstev</strong></li>
-                        <li>
-                            počet protonů popisuje
-                            <strong>protonové číslo - Z</strong>
-                        </li>
-                        <li>
-                            počet všech částic v jádře (p⁺ + n⁰) popisuje
-                            <strong>nukleonové číslo - A</strong>
-                        </li>
-                        <li>
-                            zlomek A a Z vypadá takto:
-                            <math
-                                xmlns="http://www.w3.org/1998/Math/MathML"
-                                display="inline"
-                            >
-                                <mfrac>
-                                    <mi>A</mi>
-                                    <mi>Z</mi>
-                                </mfrac> </math
-                            >X
-                        </li>
-                        <li>A - Z - počet n⁰ v jádře</li>
-                        <li>
-                            <strong>p⁺ a n⁰ jsou dále dělitelné částice</strong>
-                            (kvarky)
-                        </li>
-                        <li><strong>počet p⁺ určuje prvek</strong></li>
-                        <li>
-                            <strong
-                                >atomy se stejným počtem p⁺, ale různým počtem
-                                n⁰ se nazývají izotopy</strong
-                            >, tedy mají stejné Z, liší se A
-                        </li>
-                        <li>
-                            <math
-                                xmlns="http://www.w3.org/1998/Math/MathML"
-                                display="inline"
-                            >
-                                <mfrac>
-                                    <mi>1</mi>
-                                    <mi>1</mi>
-                                </mfrac> </math
-                            >H =
-                            <math
-                                xmlns="http://www.w3.org/1998/Math/MathML"
-                                display="inline"
-                            >
-                                <mfrac>
-                                    <mi>n⁰ = 0</mi>
-                                    <mi>p⁺ = 1</mi>
-                                </mfrac> </math
-                            >H;
-                            <math
-                                xmlns="http://www.w3.org/1998/Math/MathML"
-                                display="inline"
-                            >
-                                <mfrac>
-                                    <mi>5</mi>
-                                    <mi>1</mi>
-                                </mfrac> </math
-                            >H =
-                            <math
-                                xmlns="http://www.w3.org/1998/Math/MathML"
-                                display="inline"
-                            >
-                                <mfrac>
-                                    <mi>n⁰ = 4</mi>
-                                    <mi>p⁺ = 1</mi>
-                                </mfrac> </math
-                            >H
-                        </li>
-                        <li>elektrony</li>
-                        <ul>
-                            <li>mají <strong>nejnižší hmotnost</strong></li>
-                            <li><strong>záporně nabité</strong></li>
-                            <li>
-                                v obalu
-                                <strong>se pohybují v různých vrstvách</strong>,
-                                <strong
-                                    >nejdále od jádra se nazývá valenční</strong
-                                >, elektrony v ní nazýváme valenční elektrony -
-                                <strong>mají nejvíce energie</strong>
-                            </li>
-                        </ul>
-                    </ul>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Složení látek
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Látky se skládají z částic – atomů, molekul nebo iontů. Čisté látky
+            obsahují jen jeden druh částic, směsi kombinují více druhů. Složení
+            určuje vlastnosti látky i její využití. Znalost složení je základem
+            chemie a každého výzkumu.
+        </p>
+    </div>
+    <h2>Částice látek</h2>
+    <p>
+        Látky jsou
+        <strong>složeny z částic, částice jsou v neustálém pohybu</strong>
+        (někdy mohou pronikat do druhé -
+        <a href="ch-smesi.html">směsi</a>).
+    </p>
+    <h2>Atom</h2>
+    <ul>
+        <li>
+            <strong>počet protonů je shodný s počtem elektronů</strong>
+        </li>
+        <li>atom je elektricky <strong>neutrální</strong></li>
+        <li>
+            drží pohromadě díky elektrostatickým silám mezi jádrem a obalem
+            atomu
+        </li>
+        <li>jádro atomu obsahuje p⁺ a n⁰</li>
+        <li>obal atomu <strong>může mít 1-7 vrstev</strong></li>
+        <li>
+            počet protonů popisuje
+            <strong>protonové číslo - Z</strong>
+        </li>
+        <li>
+            počet všech částic v jádře (p⁺ + n⁰) popisuje
+            <strong>nukleonové číslo - A</strong>
+        </li>
+        <li>
+            zlomek A a Z vypadá takto:
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+                <mfrac>
+                    <mi>A</mi>
+                    <mi>Z</mi>
+                </mfrac> </math
+            >X
+        </li>
+        <li>A - Z - počet n⁰ v jádře</li>
+        <li>
+            <strong>p⁺ a n⁰ jsou dále dělitelné částice</strong>
+            (kvarky)
+        </li>
+        <li><strong>počet p⁺ určuje prvek</strong></li>
+        <li>
+            <strong
+                >atomy se stejným počtem p⁺, ale různým počtem n⁰ se nazývají
+                izotopy</strong
+            >, tedy mají stejné Z, liší se A
+        </li>
+        <li>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+                <mfrac>
+                    <mi>1</mi>
+                    <mi>1</mi>
+                </mfrac> </math
+            >H =
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+                <mfrac>
+                    <mi>n⁰ = 0</mi>
+                    <mi>p⁺ = 1</mi>
+                </mfrac> </math
+            >H;
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+                <mfrac>
+                    <mi>5</mi>
+                    <mi>1</mi>
+                </mfrac> </math
+            >H =
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+                <mfrac>
+                    <mi>n⁰ = 4</mi>
+                    <mi>p⁺ = 1</mi>
+                </mfrac> </math
+            >H
+        </li>
+        <li>elektrony</li>
+        <ul>
+            <li>mají <strong>nejnižší hmotnost</strong></li>
+            <li><strong>záporně nabité</strong></li>
+            <li>
+                v obalu
+                <strong>se pohybují v různých vrstvách</strong>,
+                <strong>nejdále od jádra se nazývá valenční</strong>, elektrony
+                v ní nazýváme valenční elektrony -
+                <strong>mají nejvíce energie</strong>
+            </li>
+        </ul>
+    </ul>
+</section>

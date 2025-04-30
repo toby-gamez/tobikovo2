@@ -1,171 +1,84 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Písmena - Mluvnice - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar">
-            <a href="#home"
-                ><img src="images/white-logo.png" alt="Logo" width="75px"
-            /></a>
-            <a href="#home">Domů</a>
-            <a href="#ucivo">Učivo</a>
-            <a href="#o-nas">O nás</a>
-        </nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Písmena</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Psaní velkých a malých písmen patří k základním
-                            pravidlům českého pravopisu, která však často dělají
-                            potíže. V tomto článku si přehledně vysvětlíme, kdy
-                            se píší velká písmena – například u vlastních jmen,
-                            názvů institucí, svátků nebo zeměpisných pojmů – a
-                            kdy naopak zůstává písmeno malé. Ukážeme si
-                            nejčastější chyby a nejistoty, a díky praktickým
-                            příkladům si snadno osvojíte správné psaní.
-                        </p>
-                    </div>
-                    <h2>Psaní velkých písmen</h2>
-                    <ol>
-                        <li>Na začátku vět</li>
-                        <p>
-                            <span class="underlined">T</span>oto je krásná a
-                            plně funkční stránka.
-                        </p>
-                        <li>Přímá řeč</li>
-                        <p>
-                            Já se ptám: „<span class="underlined">P</span>roč je
-                            návštěvnost 1 člověk za 3 dny?" (a že se tu za 2
-                            roky nic nezměnilo xd)
-                        </p>
-                        <li>Dopisy - zájmena přivlastňovací</li>
-                        <p>
-                            Posílám <span class="underlined">T</span>i
-                            blahopřání.
-                        </p>
-                        <li>Historické tituly</li>
-                        <p>
-                            <span class="underlined">J</span>eho
-                            <span class="underlined">E</span>xcelence pan
-                            velvyslanec.
-                        </p>
-                        <li>Vlastní jména a názvy</li>
-                        <ul>
-                            <li>
-                                křestní jména a příjmení -
-                                <span class="underlined">F</span>rantišek
-                                <span class="underlined">N</span>esvadba
-                            </li>
-                            <li>
-                                <span class="underlined">jména</span> zvířat -
-                                pes <span class="underlined">A</span>lík
-                            </li>
-                            <li>
-                                zeměpisné názvy -
-                                <span class="underlined">O</span>lomouc,
-                                <span class="underlined">Č</span>eský
-                                <span class="underlined">K</span>rumlov, atd.
-                            </li>
-                            <li>názvy domů - Obecní úřad, Dům umělců</li>
-                            <li>
-                                názvy vesmírných těles - Jupiter, Země, Mléčná
-                                dráha (pokud nemyslíme vesmírné těleso; např.
-                                měsíc - Za měsíc zaplatím., Jupiter má mnoho
-                                měsíců. )
-                            </li>
-                            <li>názvy firem/společností - Škoda Auto</li>
-                            <li>značky firem - Škoda Octavia, máslo Lučina</li>
-                            <li>
-                                původní obyvatel Severní Ameriky, osoba bílé
-                                pleti, osoba tmavé pleti atd. - jejich
-                                hanlivější podoby (indián, běloch, černoch...)
-                                píšeme s malým písmenem
-                            </li>
-                        </ul>
-                    </ol>
-                    <p>
-                        Prostě u jmen nebo názvů jsou velká písmena, pokud je
-                        předložka (Na Příkopě), tak je předložka i sl. druh za
-                        ním velkým písmenem, pokud je název (ulice Zikova), tak
-                        "ulice" je obecné slovo, takže to není název (název je
-                        Zikova).
-                    </p>
-                    <p>
-                        <em
-                            >*Pokud je název na začátku věty, tak zamozřejmě s
-                            velkým.</em
-                        >
-                    </p>
-                    <p>
-                        Když je třeba název města "Český Krumlov" nebo
-                        "Mariánské Lázně" tak "český" i "lázně" v tomto případě
-                        nejsou obecná slova, ale součást jména, tedy s velkým
-                        písmenem.
-                    </p>
-                    <h2>Pracovní list</h2>
-                    <p><a href="files/velka-pismena.docx">Zde</a></p>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Písmena
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Psaní velkých a malých písmen patří k základním pravidlům českého
+            pravopisu, která však často dělají potíže. V tomto článku si
+            přehledně vysvětlíme, kdy se píší velká písmena – například u
+            vlastních jmen, názvů institucí, svátků nebo zeměpisných pojmů – a
+            kdy naopak zůstává písmeno malé. Ukážeme si nejčastější chyby a
+            nejistoty, a díky praktickým příkladům si snadno osvojíte správné
+            psaní.
+        </p>
+    </div>
+    <h2>Psaní velkých písmen</h2>
+    <ol>
+        <li>Na začátku vět</li>
+        <p>
+            <span class="underlined">T</span>oto je krásná a plně funkční
+            stránka.
+        </p>
+        <li>Přímá řeč</li>
+        <p>
+            Já se ptám: „<span class="underlined">P</span>roč je návštěvnost 1
+            člověk za 3 dny?" (a že se tu za 2 roky nic nezměnilo xd)
+        </p>
+        <li>Dopisy - zájmena přivlastňovací</li>
+        <p>Posílám <span class="underlined">T</span>i blahopřání.</p>
+        <li>Historické tituly</li>
+        <p>
+            <span class="underlined">J</span>eho
+            <span class="underlined">E</span>xcelence pan velvyslanec.
+        </p>
+        <li>Vlastní jména a názvy</li>
+        <ul>
+            <li>
+                křestní jména a příjmení -
+                <span class="underlined">F</span>rantišek
+                <span class="underlined">N</span>esvadba
+            </li>
+            <li>
+                <span class="underlined">jména</span> zvířat - pes
+                <span class="underlined">A</span>lík
+            </li>
+            <li>
+                zeměpisné názvy -
+                <span class="underlined">O</span>lomouc,
+                <span class="underlined">Č</span>eský
+                <span class="underlined">K</span>rumlov, atd.
+            </li>
+            <li>názvy domů - Obecní úřad, Dům umělců</li>
+            <li>
+                názvy vesmírných těles - Jupiter, Země, Mléčná dráha (pokud
+                nemyslíme vesmírné těleso; např. měsíc - Za měsíc zaplatím.,
+                Jupiter má mnoho měsíců. )
+            </li>
+            <li>názvy firem/společností - Škoda Auto</li>
+            <li>značky firem - Škoda Octavia, máslo Lučina</li>
+            <li>
+                původní obyvatel Severní Ameriky, osoba bílé pleti, osoba tmavé
+                pleti atd. - jejich hanlivější podoby (indián, běloch,
+                černoch...) píšeme s malým písmenem
+            </li>
+        </ul>
+    </ol>
+    <p>
+        Prostě u jmen nebo názvů jsou velká písmena, pokud je předložka (Na
+        Příkopě), tak je předložka i sl. druh za ním velkým písmenem, pokud je
+        název (ulice Zikova), tak "ulice" je obecné slovo, takže to není název
+        (název je Zikova).
+    </p>
+    <p>
+        <em>*Pokud je název na začátku věty, tak zamozřejmě s velkým.</em>
+    </p>
+    <p>
+        Když je třeba název města "Český Krumlov" nebo "Mariánské Lázně" tak
+        "český" i "lázně" v tomto případě nejsou obecná slova, ale součást
+        jména, tedy s velkým písmenem.
+    </p>
+    <h2>Pracovní list</h2>
+    <p><a href="files/velka-pismena.docx">Zde</a></p>
+</section>

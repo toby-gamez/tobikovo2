@@ -1,121 +1,47 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Mluvnické kategorie - Mluvnice - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-        <style></style>
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-        <nav id="myNavbar">
-            <a href="#home"
-                ><img src="images/white-logo.png" alt="Logo" width="75px"
-            /></a>
-            <a href="#home">Domů</a>
-            <a href="#ucivo">Učivo</a>
-            <a href="#o-nas">O nás</a>
-        </nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Mluvnické kategorie</h1>
-                <div>
-                    <div class="intro">
-                        <p>
-                            Mluvnické kategorie podstatných jmen jsou základem
-                            pro správné skloňování a porozumění české gramatice.
-                            V tomto článku si přehledně vysvětlíme, jaké
-                            existují mluvnické kategorie – rod, číslo, pád,
-                            vzory a životnost – a jak je správně určovat. Pomocí
-                            praktických příkladů si vše snadno osvojíte a budete
-                            mít jasno i při náročnějších cvičeních.
-                        </p>
-                    </div>
-                    <p>Určujeme:</p>
-                    <ul>
-                        <li>pád</li>
-                        <li>číslo</li>
-                        <li>rod</li>
-                        <li>vzor</li>
-                    </ul>
-                    <h3>Pády</h3>
-                    <ul>
-                        <li>1. kdo co</li>
-                        <li>2. (bez) koho čeho</li>
-                        <li>3. (ke) komu čemu</li>
-                        <li>4. (vidím) koho co</li>
-                        <li>5. (oslovujeme, voláme)</li>
-                        <li>6. (o) kom čem</li>
-                        <li>7. (s) kým čím</li>
-                    </ul>
-                    <h3>Číslo</h3>
-                    <ul>
-                        <li>jednotné (č. j.)</li>
-                        <li>množné (č. mn.)</li>
-                    </ul>
-                    <h3>Rod a vzory</h3>
-                    <ul>
-                        <li>
-                            mužský životný/neživotný - pán, hrad (les), muž,
-                            stroj, předseda, soudce
-                        </li>
-                        <li>ženský - žena, růže, píseň, kost</li>
-                        <li>střední - město, moře, kuře, stavení</li>
-                    </ul>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Mluvnické kategorie
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Mluvnické kategorie podstatných jmen jsou základem pro správné
+            skloňování a porozumění české gramatice. V tomto článku si přehledně
+            vysvětlíme, jaké existují mluvnické kategorie – rod, číslo, pád,
+            vzory a životnost – a jak je správně určovat. Pomocí praktických
+            příkladů si vše snadno osvojíte a budete mít jasno i při
+            náročnějších cvičeních.
+        </p>
+    </div>
+    <p>Určujeme:</p>
+    <ul>
+        <li>pád</li>
+        <li>číslo</li>
+        <li>rod</li>
+        <li>vzor</li>
+    </ul>
+    <h3>Pády</h3>
+    <ul>
+        <li>1. kdo co</li>
+        <li>2. (bez) koho čeho</li>
+        <li>3. (ke) komu čemu</li>
+        <li>4. (vidím) koho co</li>
+        <li>5. (oslovujeme, voláme)</li>
+        <li>6. (o) kom čem</li>
+        <li>7. (s) kým čím</li>
+    </ul>
+    <h3>Číslo</h3>
+    <ul>
+        <li>jednotné (č. j.)</li>
+        <li>množné (č. mn.)</li>
+    </ul>
+    <h3>Rod a vzory</h3>
+    <ul>
+        <li>
+            mužský životný/neživotný - pán, hrad (les), muž, stroj, předseda,
+            soudce
+        </li>
+        <li>ženský - žena, růže, píseň, kost</li>
+        <li>střední - město, moře, kuře, stavení</li>
+    </ul>
+</section>

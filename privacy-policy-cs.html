@@ -1,177 +1,99 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
+<!--
+title: Zásady ochrany osobních údajů
+type: content
+-->
+<section id="only-content">
+    <p>
+        <em>*English version: <a href="privacy-policy-en.html">here</a></em>
+    </p>
 
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
+    <p>
+        Tato stránka obsahuje informace o tom, jak zpracováváme a chráníme vaše
+        osobní údaje v souladu s platnými právními předpisy, včetně nařízení
+        GDPR.
+    </p>
 
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Zásady ochrany osobních údajů - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
+    <h2>1. Správce osobních údajů</h2>
+    <p><strong>Správce osobních údajů:</strong> Tobias Heneman</p>
+    <p>
+        Kontaktovat nás můžete e-mailem:
+        <a
+            href="mailto:henematobik213@gmail.com?subject=Zásady ochrany osobních údajů"
+            >zde</a
+        >
+    </p>
 
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-        <nav id="myNavbar"></nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
+    <h2>2. Jaké údaje zpracováváme</h2>
+    <p>
+        Na našem webu
+        <strong>nesbíráme žádné osobní údaje</strong>, které byste nám sami
+        aktivně poskytli (například prostřednictvím formuláře).
+    </p>
+    <p>Automatizovaně však může docházet ke zpracování následujících údajů:</p>
+    <ul>
+        <li>
+            <strong>Google Analytics</strong> – anonymizované sledování
+            návštěvnosti (IP adresa je anonymizována, nesledujeme konkrétní
+            uživatele)
+        </li>
+        <li>
+            <strong>Cookies</strong> – pouze v souvislosti s měřením
+            návštěvnosti (viz Cookie lišta)
+        </li>
+        <li>
+            <strong>LocalStorage</strong> – využíváme pouze pro technickou
+            funkčnost webu, neukládáme osobní údaje ani je nikomu neposkytujeme
+        </li>
+    </ul>
 
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Zásady ochrany osobních údajů</h1>
-                <div style="text-align: left">
-                    <p>
-                        <em
-                            >*English version:
-                            <a href="privacy-policy-en.html">here</a></em
-                        >
-                    </p>
+    <h2>3. Jak data používáme</h2>
+    <p>Shromážděná data slouží pouze k následujícím účelům:</p>
+    <ul>
+        <li>Statistické vyhodnocení návštěvnosti webu (Google Analytics)</li>
+        <li>Zajištění technické funkčnosti webu</li>
+    </ul>
+    <p>
+        Vaše údaje
+        <strong>neposkytujeme třetím stranám</strong>, s výjimkou
+        anonymizovaných dat zpracovávaných službou Google Analytics.
+    </p>
 
-                    <p>
-                        Tato stránka obsahuje informace o tom, jak zpracováváme
-                        a chráníme vaše osobní údaje v souladu s platnými
-                        právními předpisy, včetně nařízení GDPR.
-                    </p>
+    <h2>4. Google Analytics</h2>
+    <p>
+        Používáme službu Google Analytics od společnosti Google LLC, která nám
+        pomáhá sledovat návštěvnost webu. Tato služba pracuje s cookies a
+        anonymizovanými IP adresami.
+    </p>
+    <p>
+        Podrobnosti o zpracování dat společností Google najdete
+        <a href="https://policies.google.com/privacy" target="_blank">zde</a>.
+    </p>
 
-                    <h2>1. Správce osobních údajů</h2>
-                    <p>
-                        <strong>Správce osobních údajů:</strong> Tobias Heneman
-                    </p>
-                    <p>
-                        Kontaktovat nás můžete e-mailem:
-                        <a
-                            href="mailto:henematobik213@gmail.com?subject=Zásady ochrany osobních údajů"
-                            >zde</a
-                        >
-                    </p>
+    <h2>5. Cookies a LocalStorage</h2>
+    <p>
+        Při první návštěvě webu vás informujeme o používání cookies
+        prostřednictvím cookie lišty, kde můžete vyjádřit svůj souhlas nebo
+        nesouhlas. LocalStorage je využíváno výhradně pro technické účely webu a
+        neobsahuje žádné osobní údaje.
+    </p>
+    <button id="removeConsentBtn">
+        Odebrat souhlas a vymazat data cookies
+    </button>
 
-                    <h2>2. Jaké údaje zpracováváme</h2>
-                    <p>
-                        Na našem webu
-                        <strong>nesbíráme žádné osobní údaje</strong>, které
-                        byste nám sami aktivně poskytli (například
-                        prostřednictvím formuláře).
-                    </p>
-                    <p>
-                        Automatizovaně však může docházet ke zpracování
-                        následujících údajů:
-                    </p>
-                    <ul>
-                        <li>
-                            <strong>Google Analytics</strong> – anonymizované
-                            sledování návštěvnosti (IP adresa je anonymizována,
-                            nesledujeme konkrétní uživatele)
-                        </li>
-                        <li>
-                            <strong>Cookies</strong> – pouze v souvislosti s
-                            měřením návštěvnosti (viz Cookie lišta)
-                        </li>
-                        <li>
-                            <strong>LocalStorage</strong> – využíváme pouze pro
-                            technickou funkčnost webu, neukládáme osobní údaje
-                            ani je nikomu neposkytujeme
-                        </li>
-                    </ul>
+    <h2>6. Vaše práva</h2>
+    <p>V souladu s GDPR máte následující práva:</p>
+    <ul>
+        <li>Požadovat informace o zpracování osobních údajů</li>
+        <li>
+            Požadovat opravu nebo výmaz osobních údajů (pokud by nějaké byly
+            evidovány)
+        </li>
+        <li>Podat stížnost u Úřadu pro ochranu osobních údajů</li>
+    </ul>
 
-                    <h2>3. Jak data používáme</h2>
-                    <p>Shromážděná data slouží pouze k následujícím účelům:</p>
-                    <ul>
-                        <li>
-                            Statistické vyhodnocení návštěvnosti webu (Google
-                            Analytics)
-                        </li>
-                        <li>Zajištění technické funkčnosti webu</li>
-                    </ul>
-                    <p>
-                        Vaše údaje
-                        <strong>neposkytujeme třetím stranám</strong>, s
-                        výjimkou anonymizovaných dat zpracovávaných službou
-                        Google Analytics.
-                    </p>
-
-                    <h2>4. Google Analytics</h2>
-                    <p>
-                        Používáme službu Google Analytics od společnosti Google
-                        LLC, která nám pomáhá sledovat návštěvnost webu. Tato
-                        služba pracuje s cookies a anonymizovanými IP adresami.
-                    </p>
-                    <p>
-                        Podrobnosti o zpracování dat společností Google najdete
-                        <a
-                            href="https://policies.google.com/privacy"
-                            target="_blank"
-                            >zde</a
-                        >.
-                    </p>
-
-                    <h2>5. Cookies a LocalStorage</h2>
-                    <p>
-                        Při první návštěvě webu vás informujeme o používání
-                        cookies prostřednictvím cookie lišty, kde můžete
-                        vyjádřit svůj souhlas nebo nesouhlas. LocalStorage je
-                        využíváno výhradně pro technické účely webu a neobsahuje
-                        žádné osobní údaje.
-                    </p>
-                    <button id="removeConsentBtn">
-                        Odebrat souhlas a vymazat data cookies
-                    </button>
-
-                    <h2>6. Vaše práva</h2>
-                    <p>V souladu s GDPR máte následující práva:</p>
-                    <ul>
-                        <li>Požadovat informace o zpracování osobních údajů</li>
-                        <li>
-                            Požadovat opravu nebo výmaz osobních údajů (pokud by
-                            nějaké byly evidovány)
-                        </li>
-                        <li>
-                            Podat stížnost u Úřadu pro ochranu osobních údajů
-                        </li>
-                    </ul>
-
-                    <h2>7. Závěrečná ustanovení</h2>
-                    <p>
-                        Tyto zásady ochrany osobních údajů jsou platné od 28.
-                        března 2025 a mohou být čas od času aktualizovány.
-                    </p>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content"></div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+    <h2>7. Závěrečná ustanovení</h2>
+    <p>
+        Tyto zásady ochrany osobních údajů jsou platné od 28. března 2025 a
+        mohou být čas od času aktualizovány.
+    </p>
+</section>

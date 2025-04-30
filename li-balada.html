@@ -1,153 +1,71 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Balada - Literatura - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-        <nav id="myNavbar">
-            <a href="#home"
-                ><img src="images/white-logo.png" alt="Logo" width="75px"
-            /></a>
-            <a href="#home">Domů</a>
-            <a href="#ucivo">Učivo</a>
-            <a href="#o-nas">O nás</a>
-        </nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Balada</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Balada je lyricko-epický žánr, který vypráví
-                            tragický nebo dramatický příběh. Má často smutný
-                            nebo temný tón a zaměřuje se na osudy postav, které
-                            čelí těžkým životním situacím. Balady bývají
-                            veršované a často obsahují opakování, rýmování a
-                            rytmus.
-                        </p>
-                    </div>
-                    <h2>Charakteristika</h2>
-                    <p>
-                        Je to lyrickoepická báseň se
-                        <strong>smutným dějem</strong> a často
-                        <strong>tragickým koncem</strong>.
-                    </p>
-                    <h2>Nejznámější Autoři</h2>
-                    <ul>
-                        <li>F. L. Čelakovský - Toman a lesní panna</li>
-                        <li>K. J. Erben - Kytice</li>
-                    </ul>
-                    <h2>Sbírka balad Kytice</h2>
-                    <ul>
-                        <li>nejznámější balady:</li>
-                        <ul>
-                            <li>
-                                Polednice - vina matky - volá na své malé dítě
-                                polednici, trest - smrt dítěte
-                            </li>
-                            <li>
-                                Zlatý kolovrat - vztah matky a nevlastní dcery,
-                                matka chce zajistit štěstí pro vlastní dceru,
-                                proto zabijí nevlastní
-                            </li>
-                            <li>
-                                Vodník - dcera neposlechla svou matku a odešla
-                                od dítěte, trest - smrt dítěte
-                            </li>
-                        </ul>
-                    </ul>
-                    <h2>Sociální balada</h2>
-                    <ul>
-                        <li>charakteristiku má jak normální balada</li>
-                        <li>
-                            <strong>obraz</strong> sociálního a národního
-                            <strong>útisku</strong>
-                        </li>
-                    </ul>
-                    <h3>Petr Bezruč</h3>
-                    <ul>
-                        <li>
-                            jeho jméno je pseudonym, pravé jméno: Vladimír Vašek
-                        </li>
-                        <li>narozen v Opavě</li>
-                        <li>
-                            autor jeho jediné básnické sbírky - Slezské písně
-                        </li>
-                    </ul>
-                    <h4>Slezské písně</h4>
-                    <ul>
-                        <li>obsahuje sociální balady</li>
-                        <li>
-                            obraz sociálního a národního útisku na Ostravsku
-                        </li>
-                        <li>nejznámější báseň: Červený květ</li>
-                    </ul>
-                    <h3>Červený květ</h3>
-                    <ul>
-                        <li>uvodní báseň</li>
-                        <li>
-                            obraz kaktusu s jediným květem = symbol vzpoury
-                            vlastního osudu bez lásky, nebo obraz jediné sbírky
-                        </li>
-                    </ul>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Balada
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Balada je lyricko-epický žánr, který vypráví tragický nebo
+            dramatický příběh. Má často smutný nebo temný tón a zaměřuje se na
+            osudy postav, které čelí těžkým životním situacím. Balady bývají
+            veršované a často obsahují opakování, rýmování a rytmus.
+        </p>
+    </div>
+    <h2>Charakteristika</h2>
+    <p>
+        Je to lyrickoepická báseň se
+        <strong>smutným dějem</strong> a často
+        <strong>tragickým koncem</strong>.
+    </p>
+    <h2>Nejznámější Autoři</h2>
+    <ul>
+        <li>F. L. Čelakovský - Toman a lesní panna</li>
+        <li>K. J. Erben - Kytice</li>
+    </ul>
+    <h2>Sbírka balad Kytice</h2>
+    <ul>
+        <li>nejznámější balady:</li>
+        <ul>
+            <li>
+                Polednice - vina matky - volá na své malé dítě polednici, trest
+                - smrt dítěte
+            </li>
+            <li>
+                Zlatý kolovrat - vztah matky a nevlastní dcery, matka chce
+                zajistit štěstí pro vlastní dceru, proto zabijí nevlastní
+            </li>
+            <li>
+                Vodník - dcera neposlechla svou matku a odešla od dítěte, trest
+                - smrt dítěte
+            </li>
+        </ul>
+    </ul>
+    <h2>Sociální balada</h2>
+    <ul>
+        <li>charakteristiku má jak normální balada</li>
+        <li>
+            <strong>obraz</strong> sociálního a národního
+            <strong>útisku</strong>
+        </li>
+    </ul>
+    <h3>Petr Bezruč</h3>
+    <ul>
+        <li>jeho jméno je pseudonym, pravé jméno: Vladimír Vašek</li>
+        <li>narozen v Opavě</li>
+        <li>autor jeho jediné básnické sbírky - Slezské písně</li>
+    </ul>
+    <h4>Slezské písně</h4>
+    <ul>
+        <li>obsahuje sociální balady</li>
+        <li>obraz sociálního a národního útisku na Ostravsku</li>
+        <li>nejznámější báseň: Červený květ</li>
+    </ul>
+    <h3>Červený květ</h3>
+    <ul>
+        <li>uvodní báseň</li>
+        <li>
+            obraz kaktusu s jediným květem = symbol vzpoury vlastního osudu bez
+            lásky, nebo obraz jediné sbírky
+        </li>
+    </ul>
+</section>

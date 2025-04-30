@@ -1,207 +1,115 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
+<!--
+title: Přísudek
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Přísudek je klíčový větný člen, který vyjadřuje, co podmět dělá,
+            jaký je nebo jaký stav vykazuje. V tomto článku si vysvětlíme, co
+            přísudek je, jak ho správně identifikovat a jaké existují jeho druhy
+            – slovesný, jmenný a vyjádrřený citoslovcem. Zaměříme se na to, jak
+            přísudek souvisí s podmětem a jak ovlivňuje význam celé věty.
+            Ukážeme si konkrétní příklady, jak správně používat přísudek v
+            různých větách, aby byla vaše komunikace jasná a gramaticky správná.
+        </p>
+    </div>
+    <h2>Základy</h2>
+    <ul>
+        <li>ptáme se: Co dělá podmět?</li>
+    </ul>
+    <h2>Druhy</h2>
+    <h3>Slovesný</h3>
+    <ul>
+        <li>základem je určitý slovesný tvar</li>
+        <li>
+            příklad: Pavel
+            <span class="underlined">se směje</span>. (podtrháváme vlnovkou)
+        </li>
+    </ul>
+    <h3>Jmenný se sponou</h3>
+    <ul>
+        <li>základem je spona: být, bývat, stát se, stávat se</li>
+        <li>
+            + jmenná část:
+            <a href="ml-pods-jmena.html">podstatné jméno</a>,
+            <a href="ml-prid-jmena.html">přídavné jméno</a>,
+            <a href="ml-zajmena.html">zájmeno</a>,
+            <a href="ml-cislovky.html">číslovka</a>
+        </li>
+        <li>
+            příklad: Milan
+            <span class="underlined">je pilný</span>. Jiří
+            <span class="underlined">se stal lékařem</span>. (vlnovkou)
+        </li>
+    </ul>
+    <h3>Jmenný beze spony</h3>
+    <ul>
+        <li>základem je jméno, chybí spona</li>
+        <li>příklad: Mladost radost. (Mladost je radost.)</li>
+    </ul>
+    <h3>Vyjádřený citoslovcem</h3>
+    <ul>
+        <li>
+            přísudek vyjadřuje citoslovce (Žába
+            <strong>žbluňk</strong> do vody.)
+        </li>
+        <li>citoslovce se neodděluje čárkami</li>
+    </ul>
+    <h2>Shoda přísudku s několikanásobným podmětem</h2>
+    <p>
+        <a href="ml-podmet.html">několikanásobný podmět</a>
+    </p>
+    <ul>
+        <li>
+            alespoň jeden člen
+            <a href="ml-mluv-kat-pods-jmena.html">rodu mužského životného</a>:
+            -i
+        </li>
+        <li>
+            pouze všechny členy
+            <a href="ml-mluv-kat-pods-jmena.html">rodu středního</a>: -a
+        </li>
+        <li>jakoukoli jinou kombinaci: -y</li>
+    </ul>
+    <p>
+        Pokud stojí přísudek
+        <span class="underlined">před</span> několikanásobným
+        <a href="ml-podmet.html">podmětem</a>, můžeme se řídit
+        <span class="underlined">rodem 1. člena podmětu</span>
+        nebo
+        <a href="ml-mluv-kat-pods-jmena.html">rodem mužským Ž</a>
+        (pokud tam je).<br />Takhle: Na oběd přisl<strong>y</strong>
+        <span class="underlined">dívky</span><em> a chlapci</em>. - "dívky" jsou
+        první část podmětu, Na oběd přišl<strong>i</strong> <em>dívky</em>
+        a
+        <span class="underlined">chlapci</span>. - je tam i rod mužský Ž
+    </p>
+    <h2>Shoda přísudku s podmětem</h2>
 
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Přísudek - Mluvnice - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="stylesheet" href="css/tabulkak.css" />
-        <link rel="icon" href="images/favicon.png" />
-        <style></style>
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-        <nav id="myNavbar">
-            <a href="#home"
-                ><img src="images/white-logo.png" alt="Logo" width="75px"
-            /></a>
-            <a href="#home">Domů</a>
-            <a href="#ucivo">Učivo</a>
-            <a href="#o-nas">O nás</a>
-        </nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Přísudek</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Přísudek je klíčový větný člen, který vyjadřuje, co
-                            podmět dělá, jaký je nebo jaký stav vykazuje. V
-                            tomto článku si vysvětlíme, co přísudek je, jak ho
-                            správně identifikovat a jaké existují jeho druhy –
-                            slovesný, jmenný a vyjádrřený citoslovcem. Zaměříme
-                            se na to, jak přísudek souvisí s podmětem a jak
-                            ovlivňuje význam celé věty. Ukážeme si konkrétní
-                            příklady, jak správně používat přísudek v různých
-                            větách, aby byla vaše komunikace jasná a gramaticky
-                            správná.
-                        </p>
-                    </div>
-                    <h2>Základy</h2>
-                    <ul>
-                        <li>ptáme se: Co dělá podmět?</li>
-                    </ul>
-                    <h2>Druhy</h2>
-                    <h3>Slovesný</h3>
-                    <ul>
-                        <li>základem je určitý slovesný tvar</li>
-                        <li>
-                            příklad: Pavel
-                            <span class="underlined">se směje</span>.
-                            (podtrháváme vlnovkou)
-                        </li>
-                    </ul>
-                    <h3>Jmenný se sponou</h3>
-                    <ul>
-                        <li>
-                            základem je spona: být, bývat, stát se, stávat se
-                        </li>
-                        <li>
-                            + jmenná část:
-                            <a href="ml-pods-jmena.html">podstatné jméno</a>,
-                            <a href="ml-prid-jmena.html">přídavné jméno</a>,
-                            <a href="ml-zajmena.html">zájmeno</a>,
-                            <a href="ml-cislovky.html">číslovka</a>
-                        </li>
-                        <li>
-                            příklad: Milan
-                            <span class="underlined">je pilný</span>. Jiří
-                            <span class="underlined">se stal lékařem</span>.
-                            (vlnovkou)
-                        </li>
-                    </ul>
-                    <h3>Jmenný beze spony</h3>
-                    <ul>
-                        <li>základem je jméno, chybí spona</li>
-                        <li>příklad: Mladost radost. (Mladost je radost.)</li>
-                    </ul>
-                    <h3>Vyjádřený citoslovcem</h3>
-                    <ul>
-                        <li>
-                            přísudek vyjadřuje citoslovce (Žába
-                            <strong>žbluňk</strong> do vody.)
-                        </li>
-                        <li>citoslovce se neodděluje čárkami</li>
-                    </ul>
-                    <h2>Shoda přísudku s několikanásobným podmětem</h2>
-                    <p>
-                        <a href="ml-podmet.html">několikanásobný podmět</a>
-                    </p>
-                    <ul>
-                        <li>
-                            alespoň jeden člen
-                            <a href="ml-mluv-kat-pods-jmena.html"
-                                >rodu mužského životného</a
-                            >: -i
-                        </li>
-                        <li>
-                            pouze všechny členy
-                            <a href="ml-mluv-kat-pods-jmena.html"
-                                >rodu středního</a
-                            >: -a
-                        </li>
-                        <li>jakoukoli jinou kombinaci: -y</li>
-                    </ul>
-                    <p>
-                        Pokud stojí přísudek
-                        <span class="underlined">před</span> několikanásobným
-                        <a href="ml-podmet.html">podmětem</a>, můžeme se řídit
-                        <span class="underlined">rodem 1. člena podmětu</span>
-                        nebo
-                        <a href="ml-mluv-kat-pods-jmena.html"
-                            >rodem mužským Ž</a
-                        >
-                        (pokud tam je).<br />Takhle: Na oběd přisl<strong
-                            >y</strong
-                        >
-                        <span class="underlined">dívky</span
-                        ><em> a chlapci</em>. - "dívky" jsou první část podmětu,
-                        Na oběd přišl<strong>i</strong> <em>dívky</em>
-                        a
-                        <span class="underlined">chlapci</span>. - je tam i rod
-                        mužský Ž
-                    </p>
-                    <h2>Shoda přísudku s podmětem</h2>
-
-                    <p style="color: red">
-                        Hledáme pouze u sloves v minulém čase!
-                    </p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Podmět</th>
-                                <th>Přísudek</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <p>mužský Ž</p>
-                                    <p>mužský N</p>
-                                    <p>ženský</p>
-                                    <p>střední</p>
-                                </td>
-                                <td>
-                                    <p>-i</p>
-                                    <p>-y</p>
-                                    <p>-y</p>
-                                    <p>-a</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+    <p style="color: red">Hledáme pouze u sloves v minulém čase!</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Podmět</th>
+                <th>Přísudek</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <p>mužský Ž</p>
+                    <p>mužský N</p>
+                    <p>ženský</p>
+                    <p>střední</p>
+                </td>
+                <td>
+                    <p>-i</p>
+                    <p>-y</p>
+                    <p>-y</p>
+                    <p>-a</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>

@@ -1,138 +1,68 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sešit literatury - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar"></nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Sešit literatury</h1>
-                <div style="text-align: left">
-                    <span style="color: #9c9c9c"
-                        ><em>od nejnovějšího k nejstaršímu</em></span
-                    >
-                    <h2>Romantismus</h2>
-                    <a href="li-romantismus.html">zde</a>
-                    <h2>Preromantismus</h2>
-                    <a href="li-preromantismus.html">zde</a>
-                    <h2>Klasicismus v Anglii</h2>
-                    <a href="li-klasicismus-anglie.html">zde</a>
-                    <h2>Klasicismus v evropské literatuře</h2>
-                    <a href="li-klasicismus-evropa.html">zde</a>
-                    <h2>Literatura v období baroka</h2>
-                    <a href="li-lit-baroko.html">zde</a>
-                    <h2>Renesance a humanismus</h2>
-                    <a href="li-renesance-humanismus.html">zde</a>
-                    <h2>Literatura doby husitské</h2>
-                    <a href="li-lite-doby-hus.html">zde</a>
-                    <h2>Životopisy</h2>
-                    <a href="li-zivotopisy.html">zde</a>
-                    <h2>Kroniky</h2>
-                    <a href="li-kroniky.html">zde</a>
-                    <h2>Středověká literatura</h2>
-                    <a href="li-strvek-lite.html">zde</a>
-                    <h2>Antická literatura</h2>
-                    <a href="li-anti-lite.html">zde</a>
-                    <h2>Bible</h2>
-                    <a href="li-bible.html">zde</a>
-                    <h2>Gilgameš</h2>
-                    <a href="li-gilgames.html">zde</a>
-                    <h2>Fejeton</h2>
-                    <a href="li-fejeton.html">zde</a>
-                    <h2>Drama</h2>
-                    <a href="li-drama.html">zde</a>
-                    <h2>Cestopis</h2>
-                    <a href="li-cestopis.html">zde</a>
-                    <h2>Životopis</h2>
-                    <a href="li-zivotopis.html">zde</a>
-                    <h2>Kronika</h2>
-                    <a href="li-kronika.html">zde</a>
-                    <h2>Legenda</h2>
-                    <a href="li-legenda.html">zde</a>
-                    <h2>Romance</h2>
-                    <a href="li-romance.html">zde</a>
-                    <h2>Balada</h2>
-                    <a href="li-balada.html">zde</a>
-                    <h2>Povídka</h2>
-                    <a href="li-povidka.html">zde</a>
-                    <h2>Pověst</h2>
-                    <a href="li-povest.html">zde</a>
-                    <h2>Báje</h2>
-                    <a href="li-baje.html">zde</a>
-                    <h2>Bajka</h2>
-                    <a href="li-bajka.html">zde</a>
-                    <h2>Pohádka</h2>
-                    <a href="li-pohadka.html">zde</a>
-                    <h2>Básnické prostředky</h2>
-                    <a href="li-prostredky.html">zde</a>
-                    <h2>Rýmy</h2>
-                    <a href="li-rymy.html">zde</a>
-                    <h2>Pojmy v básni</h2>
-                    <a href="li-pojmy-v-basni.html">zde</a>
-                    <h2>Poezie a próza</h2>
-                    <a href="li-poezie-proza.html">zde</a>
-                    <br />
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Sešit literatury
+type: content
+-->
+<section id="only-content">
+    <span style="color: #9c9c9c"><em>od nejnovějšího k nejstaršímu</em></span>
+    <h2>Romantismus</h2>
+    <a href="li-romantismus.html">zde</a>
+    <h2>Preromantismus</h2>
+    <a href="li-preromantismus.html">zde</a>
+    <h2>Klasicismus v Anglii</h2>
+    <a href="li-klasicismus-anglie.html">zde</a>
+    <h2>Klasicismus v evropské literatuře</h2>
+    <a href="li-klasicismus-evropa.html">zde</a>
+    <h2>Literatura v období baroka</h2>
+    <a href="li-lit-baroko.html">zde</a>
+    <h2>Renesance a humanismus</h2>
+    <a href="li-renesance-humanismus.html">zde</a>
+    <h2>Literatura doby husitské</h2>
+    <a href="li-lite-doby-hus.html">zde</a>
+    <h2>Životopisy</h2>
+    <a href="li-zivotopisy.html">zde</a>
+    <h2>Kroniky</h2>
+    <a href="li-kroniky.html">zde</a>
+    <h2>Středověká literatura</h2>
+    <a href="li-strvek-lite.html">zde</a>
+    <h2>Antická literatura</h2>
+    <a href="li-anti-lite.html">zde</a>
+    <h2>Bible</h2>
+    <a href="li-bible.html">zde</a>
+    <h2>Gilgameš</h2>
+    <a href="li-gilgames.html">zde</a>
+    <h2>Fejeton</h2>
+    <a href="li-fejeton.html">zde</a>
+    <h2>Drama</h2>
+    <a href="li-drama.html">zde</a>
+    <h2>Cestopis</h2>
+    <a href="li-cestopis.html">zde</a>
+    <h2>Životopis</h2>
+    <a href="li-zivotopis.html">zde</a>
+    <h2>Kronika</h2>
+    <a href="li-kronika.html">zde</a>
+    <h2>Legenda</h2>
+    <a href="li-legenda.html">zde</a>
+    <h2>Romance</h2>
+    <a href="li-romance.html">zde</a>
+    <h2>Balada</h2>
+    <a href="li-balada.html">zde</a>
+    <h2>Povídka</h2>
+    <a href="li-povidka.html">zde</a>
+    <h2>Pověst</h2>
+    <a href="li-povest.html">zde</a>
+    <h2>Báje</h2>
+    <a href="li-baje.html">zde</a>
+    <h2>Bajka</h2>
+    <a href="li-bajka.html">zde</a>
+    <h2>Pohádka</h2>
+    <a href="li-pohadka.html">zde</a>
+    <h2>Básnické prostředky</h2>
+    <a href="li-prostredky.html">zde</a>
+    <h2>Rýmy</h2>
+    <a href="li-rymy.html">zde</a>
+    <h2>Pojmy v básni</h2>
+    <a href="li-pojmy-v-basni.html">zde</a>
+    <h2>Poezie a próza</h2>
+    <a href="li-poezie-proza.html">zde</a>
+    <br />
+</section>

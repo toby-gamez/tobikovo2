@@ -1,137 +1,59 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Třetí mocnina - Matematika - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar">
-            <a href="#home"
-                ><img src="images/white-logo.png" alt="Logo" width="75px"
-            /></a>
-            <a href="#home">Domů</a>
-            <a href="#ucivo">Učivo</a>
-            <a href="#o-nas">O nás</a>
-        </nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Třetí mocnina</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Třetí mocnina čísla je matematická operace, při
-                            které číslo vynásobíme samo sebou třikrát. Například
-                            třetí mocnina čísla 4 je 4³ = 64. Tato operace se
-                            často používá při výpočtech objemů těles, jako jsou
-                            krychle. Třetí mocnina je důležitá pro různé
-                            aplikace v algebře a geometrii.
-                        </p>
-                    </div>
-                    <h2>Základy</h2>
-                    <p>a × a × a = a&sup3; - „á na třetí“</p>
-                    <img
-                        src="images/treti-mocnina.png"
-                        style="border-radius: 10px"
-                        width="200px"
-                        alt="treti mocnina"
-                    />
-                    <p>
-                        mocnitel - kolikrát násobím číslo samo sebou<br />základ
-                        - číslo, které umocňuji
-                    </p>
-                    <p style="color: red">
-                        <strong
-                            >Třetí mocnina záporného čísla je vždy
-                            záporná.</strong
-                        >
-                    </p>
-                    <p>(-7)&sup3; = -7 × (-7) × (-7) = -343</p>
-                    <p style="color: red">Pozor!</p>
-                    <p>(-2&sup3;) ≠ -2&sup3;</p>
-                    <h3>Pravidlo</h3>
-                    <p>(a + b)&sup3; ≠ a&sup3; + b&sup3;</p>
-                    <h2>Umocňování čísel končících 0</h2>
-                    <p>8000&sup3;</p>
-                    <ol>
-                        <li>odmyslím si všechny poslední nuly - 8</li>
-                        <li>spočítám třetí mocninu - 8&sup3; = 512</li>
-                        <li>vrátím 3x tolik nul - 512 000 000 000</li>
-                    </ol>
-                    <p>8000&sup3; = 512 000 000 000</p>
-                    <h2>Umocňování čísel začínajících 0</h2>
-                    <p>0,06&sup3;</p>
-                    <ol>
-                        <li>odstraním desetinnou čárku - 6</li>
-                        <li>umocním číslo - 6&sup3; = 216</li>
-                        <li>vrátím 3x tolik desetinných míst - 0,000216</li>
-                    </ol>
-                    <p>0,06&sup3; = 0,000216</p>
-                    <h2>Třetí mocnina desetinných míst</h2>
-                    <p>1,3&sup3;</p>
-                    <ol>
-                        <li>odstraním desetinnou čárku - 13</li>
-                        <li>umocním číslo - 13&sup3; = 2197</li>
-                        <li>vrátím 3x tolik desetinných míst - 2,197</li>
-                    </ol>
-                    <p>1,3&sup3; = 2,197</p>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Třetí mocnina
+type: cintent
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Třetí mocnina čísla je matematická operace, při které číslo
+            vynásobíme samo sebou třikrát. Například třetí mocnina čísla 4 je 4³
+            = 64. Tato operace se často používá při výpočtech objemů těles, jako
+            jsou krychle. Třetí mocnina je důležitá pro různé aplikace v algebře
+            a geometrii.
+        </p>
+    </div>
+    <h2>Základy</h2>
+    <p>a × a × a = a&sup3; - „á na třetí“</p>
+    <img
+        src="images/treti-mocnina.png"
+        style="border-radius: 10px"
+        width="200px"
+        alt="treti mocnina"
+    />
+    <p>
+        mocnitel - kolikrát násobím číslo samo sebou<br />základ - číslo, které
+        umocňuji
+    </p>
+    <p style="color: red">
+        <strong>Třetí mocnina záporného čísla je vždy záporná.</strong>
+    </p>
+    <p>(-7)&sup3; = -7 × (-7) × (-7) = -343</p>
+    <p style="color: red">Pozor!</p>
+    <p>(-2&sup3;) ≠ -2&sup3;</p>
+    <h3>Pravidlo</h3>
+    <p>(a + b)&sup3; ≠ a&sup3; + b&sup3;</p>
+    <h2>Umocňování čísel končících 0</h2>
+    <p>8000&sup3;</p>
+    <ol>
+        <li>odmyslím si všechny poslední nuly - 8</li>
+        <li>spočítám třetí mocninu - 8&sup3; = 512</li>
+        <li>vrátím 3x tolik nul - 512 000 000 000</li>
+    </ol>
+    <p>8000&sup3; = 512 000 000 000</p>
+    <h2>Umocňování čísel začínajících 0</h2>
+    <p>0,06&sup3;</p>
+    <ol>
+        <li>odstraním desetinnou čárku - 6</li>
+        <li>umocním číslo - 6&sup3; = 216</li>
+        <li>vrátím 3x tolik desetinných míst - 0,000216</li>
+    </ol>
+    <p>0,06&sup3; = 0,000216</p>
+    <h2>Třetí mocnina desetinných míst</h2>
+    <p>1,3&sup3;</p>
+    <ol>
+        <li>odstraním desetinnou čárku - 13</li>
+        <li>umocním číslo - 13&sup3; = 2197</li>
+        <li>vrátím 3x tolik desetinných míst - 2,197</li>
+    </ol>
+    <p>1,3&sup3; = 2,197</p>
+</section>

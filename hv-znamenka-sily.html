@@ -1,97 +1,22 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Znaménka síly - Hudební výchova - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar">
-            <a href="#home"
-                ><img src="images/white-logo.png" alt="Logo" width="75px"
-            /></a>
-            <a href="#home">Domů</a>
-            <a href="#ucivo">Učivo</a>
-            <a href="#o-nas">O nás</a>
-        </nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Znaménka síly</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Znaménka síly určují hlasitost hudby. Označení
-                            <em>p</em> znamená slabě (piano), <em>pp</em> velmi
-                            slabě (pianissimo), naopak <em>f</em> značí silně
-                            (forte) a <em>ff</em> velmi silně (fortissimo).
-                            Postupné zesilování se zapisuje jako crescendo
-                            (cresc.), zeslabování jako diminuendo (dim.). Tato
-                            znaménka pomáhají vyjádřit emoce a dynamiku skladby.
-                        </p>
-                    </div>
-                    <h2>Znaménka</h2>
-                    <ul>
-                        <li><em>p</em> - piano (slabě)</li>
-                        <li><em>mf</em> - mezzoforte (středně)</li>
-                        <li><em>f</em> - forte (silně)</li>
-                    </ul>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Znaménka síly
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Znaménka síly určují hlasitost hudby. Označení
+            <em>p</em> znamená slabě (piano), <em>pp</em> velmi slabě
+            (pianissimo), naopak <em>f</em> značí silně (forte) a
+            <em>ff</em> velmi silně (fortissimo). Postupné zesilování se
+            zapisuje jako crescendo (cresc.), zeslabování jako diminuendo
+            (dim.). Tato znaménka pomáhají vyjádřit emoce a dynamiku skladby.
+        </p>
+    </div>
+    <h2>Znaménka</h2>
+    <ul>
+        <li><em>p</em> - piano (slabě)</li>
+        <li><em>mf</em> - mezzoforte (středně)</li>
+        <li><em>f</em> - forte (silně)</li>
+    </ul>
+</section>

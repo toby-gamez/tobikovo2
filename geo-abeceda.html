@@ -1,99 +1,29 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Řecká abeceda - Geometrie - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar"></nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Řecká abeceda</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Řecká abeceda se používá nejen v jazyce, ale i v
-                            matematice, fyzice a vědě. Obsahuje 24 písmen, z
-                            nichž známá jsou například alfa (α), beta (β), gama
-                            (γ) nebo omega (ω). Malá i velká písmena mají různý
-                            význam podle oboru použití. Řecké znaky slouží často
-                            k označení proměnných, úhlů, konstant či částic.
-                        </p>
-                    </div>
-                    <h2>Písmena</h2>
-                    <p>
-                        <em
-                            >*toto je jen pár z
-                            <a href="https://cs.wikipedia.org/wiki/Řecké_písmo"
-                                >celé abecedy</a
-                            ></em
-                        >
-                    </p>
-                    <p>
-                        α - alfa<br />
-                        β - beta<br />γ - gama<br />δ - delta<br />ε -
-                        epsilon<br />ρ - ró<br />ω - omega
-                    </p>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Řecká abeceda
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Řecká abeceda se používá nejen v jazyce, ale i v matematice, fyzice
+            a vědě. Obsahuje 24 písmen, z nichž známá jsou například alfa (α),
+            beta (β), gama (γ) nebo omega (ω). Malá i velká písmena mají různý
+            význam podle oboru použití. Řecké znaky slouží často k označení
+            proměnných, úhlů, konstant či částic.
+        </p>
+    </div>
+    <h2>Písmena</h2>
+    <p>
+        <em
+            >*toto je jen pár z
+            <a href="https://cs.wikipedia.org/wiki/Řecké_písmo"
+                >celé abecedy</a
+            ></em
+        >
+    </p>
+    <p>
+        α - alfa<br />
+        β - beta<br />γ - gama<br />δ - delta<br />ε - epsilon<br />ρ - ró<br />ω
+        - omega
+    </p>
+</section>

@@ -1,125 +1,48 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Chemické výpočty - Chemie - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar"></nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Chemické výpočty</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Chemické výpočty slouží k určení množství látek,
-                            hmotnosti nebo objemu při chemických reakcích.
-                            Základem je práce s moly, molární hmotností a
-                            stechiometrií rovnic. Pomáhají předvídat, kolik
-                            látky je potřeba nebo vznikne. Jsou důležité v
-                            laboratoři i průmyslu.
-                        </p>
-                    </div>
-                    <h2>Molární hmotnost</h2>
-                    <p>
-                        <strong
-                            >Chemické výpočty jsou základem pro práci v
-                            chemii</strong
-                        >
-                        a potřebujete je například u zjišťování koncentrací,
-                        hmotností látek nebo objemů.
-                        <strong
-                            >Nejdůležitější jednotkou je mol (značka mol), což
-                            je látkové množství. 1 mol obsahuje přesně 6,022 ·
-                            10<sup>23</sup> částic</strong
-                        >
-                        (molekul nebo atomů). Díky molům můžeme počítat s
-                        látkami pomocí poměrů v chemických rovnicích.
-                        <strong
-                            >Molární hmotnost (značka M) nám říká, kolik gramů
-                            váží jeden mol dané látky</strong
-                        >.
-                        <strong
-                            >Molární objem (V<sub>m</sub>) pro plyny je při
-                            pokojové teplotě a standardním tlaku 22,4
-                            l/mol</strong
-                        >.
-                    </p>
-                    <h2>Látková koncentrace</h2>
-                    <p>
-                        <strong
-                            >Látková koncentrace je velmi důležitá veličina v
-                            chemii, která nám říká, kolik molů rozpuštěné látky
-                            je v jednom litru roztoku. Značí se písmenem c a
-                            její jednotkou je mol/l</strong
-                        >. Výpočet látkové koncentrace provedeme tak, že
-                        vydělíme látkové množství rozpuštěné látky (v molech)
-                        objemem roztoku (v litrech).
-                        <strong
-                            >Čím vyšší je látková koncentrace, tím více je
-                            roztok koncentrovaný</strong
-                        >.
-                    </p>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Chemické výpočty
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Chemické výpočty slouží k určení množství látek, hmotnosti nebo
+            objemu při chemických reakcích. Základem je práce s moly, molární
+            hmotností a stechiometrií rovnic. Pomáhají předvídat, kolik látky je
+            potřeba nebo vznikne. Jsou důležité v laboratoři i průmyslu.
+        </p>
+    </div>
+    <h2>Molární hmotnost</h2>
+    <p>
+        <strong>Chemické výpočty jsou základem pro práci v chemii</strong>
+        a potřebujete je například u zjišťování koncentrací, hmotností látek
+        nebo objemů.
+        <strong
+            >Nejdůležitější jednotkou je mol (značka mol), což je látkové
+            množství. 1 mol obsahuje přesně 6,022 · 10<sup>23</sup>
+            částic</strong
+        >
+        (molekul nebo atomů). Díky molům můžeme počítat s látkami pomocí poměrů
+        v chemických rovnicích.
+        <strong
+            >Molární hmotnost (značka M) nám říká, kolik gramů váží jeden mol
+            dané látky</strong
+        >.
+        <strong
+            >Molární objem (V<sub>m</sub>) pro plyny je při pokojové teplotě a
+            standardním tlaku 22,4 l/mol</strong
+        >.
+    </p>
+    <h2>Látková koncentrace</h2>
+    <p>
+        <strong
+            >Látková koncentrace je velmi důležitá veličina v chemii, která nám
+            říká, kolik molů rozpuštěné látky je v jednom litru roztoku. Značí
+            se písmenem c a její jednotkou je mol/l</strong
+        >. Výpočet látkové koncentrace provedeme tak, že vydělíme látkové
+        množství rozpuštěné látky (v molech) objemem roztoku (v litrech).
+        <strong
+            >Čím vyšší je látková koncentrace, tím více je roztok
+            koncentrovaný</strong
+        >.
+    </p>
+</section>

@@ -18,7 +18,9 @@ math {
     font-family: "Zilla Slab", serif;
     font-weight: 400;
 }
-
+.back-button {
+    width: 60px !important;
+}
 .version-info,
 button,
 #myNavbar a,
@@ -147,6 +149,10 @@ section {
     display: flex;
     flex-direction: column;
 }
+section #only-content {
+    padding: 0;
+    display: block;
+}
 
 section:has(div) {
 }
@@ -238,7 +244,7 @@ main a:hover {
     float: right;
     max-width: 300px;
     min-width: 100px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .blog-image div {

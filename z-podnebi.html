@@ -1,123 +1,44 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Podnebí - Zeměpis - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar"></nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Podnebí</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Podnebí České republiky je mírné, přičemž převládá
-                            přechod mezi oceánským a kontinentálním typem
-                            podnebí. Vzhledem k poloze a reliéfu země se v
-                            různých oblastech liší průměrné teploty a srážky.
-                            Nejvíce srážek spadne na horách, zatímco v nížinách
-                            je podnebí suchější. Roční teploty se pohybují od
-                            chladných zimních měsíců až po teplá léta.
-                        </p>
-                    </div>
-                    <p>
-                        Podnebí je
-                        <strong>souhrn všech meteorologických jevů</strong>,
-                        které působí na určité místo na Zemi. Podnebí je dáno
-                        <strong
-                            >geografickou šířkou, nadmořskou výškou, vzdáleností
-                            od moře, rozlohou pevninského území, polohou vůči
-                            oceánu, větrem, teplotou, srážkami a slunečním
-                            zářením</strong
-                        >.
-                    </p>
-                    <ul>
-                        <li>tři podnební oblasti v ČR</li>
-                        <ul>
-                            <li>teplá oblast - polabská nížina</li>
-                            <li>mírně teplá oblast - většina území</li>
-                            <li>
-                                chladná oblast - Krkonoše, Šumava (horské
-                                oblasti)
-                            </li>
-                        </ul>
-                        <li>západní proudění vlhkého vzduchu - srážky</li>
-                        <li>
-                            proudění teplého vzduchu od Středozemního moře -
-                            teplé počasí
-                        </li>
-                        <li>
-                            proudění vzduchu z vnitrozemí - teplé dny +
-                            minimální srážky
-                        </li>
-                        <li>
-                            jsme v rozhraní mezi oceánským (časté srážky) a
-                            kontinentálním (vysoké teploty) podnebím
-                        </li>
-                        <li>průměrné množství srážek - 600 - 800 mm</li>
-                        <li>průměrná teplota - 7 - 9 °C</li>
-                        <li>4 roční období - jaro, léto, podzim, zima</li>
-                    </ul>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Podnebí
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Podnebí České republiky je mírné, přičemž převládá přechod mezi
+            oceánským a kontinentálním typem podnebí. Vzhledem k poloze a
+            reliéfu země se v různých oblastech liší průměrné teploty a srážky.
+            Nejvíce srážek spadne na horách, zatímco v nížinách je podnebí
+            suchější. Roční teploty se pohybují od chladných zimních měsíců až
+            po teplá léta.
+        </p>
+    </div>
+    <p>
+        Podnebí je
+        <strong>souhrn všech meteorologických jevů</strong>, které působí na
+        určité místo na Zemi. Podnebí je dáno
+        <strong
+            >geografickou šířkou, nadmořskou výškou, vzdáleností od moře,
+            rozlohou pevninského území, polohou vůči oceánu, větrem, teplotou,
+            srážkami a slunečním zářením</strong
+        >.
+    </p>
+    <ul>
+        <li>tři podnební oblasti v ČR</li>
+        <ul>
+            <li>teplá oblast - polabská nížina</li>
+            <li>mírně teplá oblast - většina území</li>
+            <li>chladná oblast - Krkonoše, Šumava (horské oblasti)</li>
+        </ul>
+        <li>západní proudění vlhkého vzduchu - srážky</li>
+        <li>proudění teplého vzduchu od Středozemního moře - teplé počasí</li>
+        <li>proudění vzduchu z vnitrozemí - teplé dny + minimální srážky</li>
+        <li>
+            jsme v rozhraní mezi oceánským (časté srážky) a kontinentálním
+            (vysoké teploty) podnebím
+        </li>
+        <li>průměrné množství srážek - 600 - 800 mm</li>
+        <li>průměrná teplota - 7 - 9 °C</li>
+        <li>4 roční období - jaro, léto, podzim, zima</li>
+    </ul>
+</section>

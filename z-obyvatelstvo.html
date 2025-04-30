@@ -1,131 +1,94 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Obyvatelstvo - Zeměpis - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar"></nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Obyvatestvo</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            K 31. prosinci 2024 žilo v České republice 10 909
-                            500 obyvatel, což je nejvyšší počet od konce druhé
-                            světové války. Přirozený úbytek obyvatelstva činil
-                            −27 900 osob, způsobený převahou zemřelých nad
-                            narozenými. Celkový přírůstek obyvatel byl 8 900
-                            osob, díky zahraniční migraci (+36 800). Počet živě
-                            narozených dětí dosáhl historického minima 84 311,
-                            což představuje meziroční pokles o 8 %.
-                        </p>
-                    </div>
-                    <h2>Informace</h2>
-                    <ul>
-                        <li>
-                            počet obyvatel ČR: 10 897 237 (30. 9. 2024, ČSÚ)
-                        </li>
-                        <li>
-                            porodnost (natalita, počítá se v ‰) - počet
-                            narozených dětí na datém místě v daném čase
-                        </li>
-                        <li>
-                            úmrtnost (mortalita, počítá se v ‰) - počet
-                            zemřelých na datém místě v daném roce
-                        </li>
-                        <li>sčítání lidu - každých 10 let, ČSÚ</li>
-                    </ul>
-                    <h2>Složení obyvatelstva</h2>
-                    <div class="blog-image">
-                        <a
-                            href="https://csu.gov.cz/soubory/staticke/animgraf/cz/index.html?lang=cz"
-                            ><img
-                                src="images/vekova-pyramida.png"
-                                alt="Věková pyramida"
-                                width="300px"
-                        /></a>
-                        <p>data k 31. 12. 2023, ČSÚ</p>
-                    </div>
-                    <ul>
-                        <li>věková pyramida</li>
-                        <li>věkové složení obyvatelstva</li>
-                        <ul>
-                            <li>předproduktivní (0 - 14 let) - 13 %</li>
-                            <li>produktivní (15 - 64 let) - 70 %</li>
-                            <li>postproduktivní (65 a více let) - 17 %</li>
-                        </ul>
-                    </ul>
-                    <h2>Vývojové trendy</h2>
-                    <p>
-                        Více lidí se do ČR přistěhuje, než se zde narodí dětí.
-                    </p>
-                    <p>
-                        Dochází ke stárnutí populace, tj. postupně bude přibývat
-                        obyvatel v důchodovém věku.
-                    </p>
-                    <p>Ženy se dožívají více let něž muži.</p>
-                    <p>Páry mají stále méně dětí.</p>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Obyvatelstvo
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            K 31. prosinci 2024 žilo v České republice 10 909 500 obyvatel, což
+            je nejvyšší počet od konce druhé světové války. Přirozený úbytek
+            obyvatelstva činil −27 900 osob, způsobený převahou zemřelých nad
+            narozenými. Celkový přírůstek obyvatel byl 8 900 osob, díky
+            zahraniční migraci (+36 800). Počet živě narozených dětí dosáhl
+            historického minima 84 311, což představuje meziroční pokles o 8 %.
+        </p>
+    </div>
+    <h2>Informace</h2>
+    <ul>
+        <li>počet obyvatel ČR: 10 897 237 (30. 9. 2024, ČSÚ)</li>
+        <li>
+            porodnost (natalita, počítá se v ‰) - počet narozených dětí na datém
+            místě v daném čase
+        </li>
+        <li>
+            úmrtnost (mortalita, počítá se v ‰) - počet zemřelých na datém místě
+            v daném roce
+        </li>
+        <li>sčítání lidu - každých 10 let, ČSÚ</li>
+    </ul>
+    <h2>Složení obyvatelstva</h2>
+    <div class="blog-image">
+        <a
+            href="https://csu.gov.cz/soubory/staticke/animgraf/cz/index.html?lang=cz"
+            ><img
+                src="images/vekova-pyramida.png"
+                alt="Věková pyramida"
+                width="300px"
+        /></a>
+        <p>data k 31. 12. 2023, ČSÚ</p>
+    </div>
+    <ul>
+        <li>věková pyramida</li>
+        <li>věkové složení obyvatelstva</li>
+        <ul>
+            <li>předproduktivní (0 - 14 let) - 13 %</li>
+            <li>produktivní (15 - 64 let) - 70 %</li>
+            <li>postproduktivní (65 a více let) - 17 %</li>
+        </ul>
+    </ul>
+    <h2>Vývojové trendy</h2>
+    <p>Více lidí se do ČR přistěhuje, než se zde narodí dětí.</p>
+    <p>
+        Dochází ke stárnutí populace, tj. postupně bude přibývat obyvatel v
+        důchodovém věku.
+    </p>
+    <p>Ženy se dožívají více let něž muži.</p>
+    <p>Páry mají stále méně dětí.</p>
+    <h2>Nejvýznamější národopisné oblasti ČR</h2>
+    <h3>Valašsko</h3>
+    <ul>
+        <li>Bílé Karpaty, Javorníky, Beskydy</li>
+        <li>frgál, kroj</li>
+    </ul>
+    <h3>Slovácko</h3>
+    <ul>
+        <li>Dolnomoravský úval</li>
+        <li>vinné sklepy, sýry</li>
+    </ul>
+    <h3>Chodsko</h3>
+    <ul>
+        <li>oblast Českého lesu</li>
+        <li>dudy</li>
+    </ul>
+    <h3>Haná</h3>
+    <ul>
+        <li>Olomoucko</li>
+        <li>tvarůžky, Hanácké kraslice</li>
+    </ul>
+    <h2>Národnosti v ČR</h2>
+    <ul>
+        <li>česká - 81 %</li>
+        <li>moravská - 13 %</li>
+        <li>slezská - 0,4 %</li>
+    </ul>
+    <p>menšiny</p>
+    <ul>
+        <li>slovenská - 3 %</li>
+        <li>polská - 0,6 %</li>
+        <li>německá - 0,5 %</li>
+        <li>rómská - 0,1 %</li>
+        <li>ukrainská - 0,1 %</li>
+        <li>vietnamská - 0,02 %</li>
+    </ul>
+    <p>Údaje jsou platné k únoru roku 2022.</p>
+</section>

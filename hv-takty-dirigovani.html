@@ -1,115 +1,34 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Taktování a dirigování - Hudební výchova - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar">
-            <a href="#home"
-                ><img src="images/white-logo.png" alt="Logo" width="75px"
-            /></a>
-            <a href="#home">Domů</a>
-            <a href="#ucivo">Učivo</a>
-            <a href="#o-nas">O nás</a>
-        </nav>
-
-        <!-- Obsah stránky -->
-        <main>
-            <button class="openNav opennav-button" onclick="openNav()">
-                ☰
-            </button>
-            <section>
-                <h1 class="verybig">Taktování a dirigování</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Taktování a dirigování se zaměřují na udržení rytmu
-                            a tempa v hudbě. Dirigent ukazuje pomocí ruky a
-                            taktovky směr a tempo hudby. Taktování je dělení
-                            hudby na pravidelné rytmické jednotky, zatímco
-                            dirigování je řízení orchestrů nebo sborů. Různé
-                            pohyby ruky označují délku taktu a dynamiku skladby.
-                        </p>
-                    </div>
-                    <h2>Taktování</h2>
-                    <h3>Informace</h3>
-                    <p>
-                        Taktování je pouhé ukazování taktu podle taktovacího
-                        schématu:
-                    </p>
-                    <h3>Taktovací schéma</h3>
-                    <img
-                        style="border-radius: 10px"
-                        width="170rem"
-                        src="images/taktovani.png"
-                        alt="taktovací schéma"
-                    />
-                    <h2>Dirigování</h2>
-                    <h3>Informace</h3>
-                    <ul>
-                        <li>
-                            dirigent - řídí orchestr, používá taktovku, ukazuje
-                            dynamiku, nástupy nástrojů, udává tempo
-                        </li>
-                        <li>sbormistr - řídí pěvecký sbor</li>
-                    </ul>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Taktování a dirigování
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Taktování a dirigování se zaměřují na udržení rytmu a tempa v hudbě.
+            Dirigent ukazuje pomocí ruky a taktovky směr a tempo hudby.
+            Taktování je dělení hudby na pravidelné rytmické jednotky, zatímco
+            dirigování je řízení orchestrů nebo sborů. Různé pohyby ruky
+            označují délku taktu a dynamiku skladby.
+        </p>
+    </div>
+    <h2>Taktování</h2>
+    <h3>Informace</h3>
+    <p>Taktování je pouhé ukazování taktu podle taktovacího schématu:</p>
+    <h3>Taktovací schéma</h3>
+    <img
+        style="border-radius: 10px"
+        width="170rem"
+        src="images/taktovani.png"
+        alt="taktovací schéma"
+    />
+    <h2>Dirigování</h2>
+    <h3>Informace</h3>
+    <ul>
+        <li>
+            dirigent - řídí orchestr, používá taktovku, ukazuje dynamiku,
+            nástupy nástrojů, udává tempo
+        </li>
+        <li>sbormistr - řídí pěvecký sbor</li>
+    </ul>
+</section>

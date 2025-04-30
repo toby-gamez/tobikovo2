@@ -1,142 +1,67 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Chemická vazba - Chemie - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar"></nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Chemická vazba</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Chemická vazba spojuje atomy do molekul nebo pevných
-                            látek. Vzniká sdílením, předáváním nebo přitahováním
-                            elektronů. Existují vazby kovalentní, iontové i
-                            kovové. Jejich typ určuje vlastnosti sloučenin –
-                            třeba pevnost nebo teplotu tání.
-                        </p>
-                    </div>
-                    <p>
-                        Chemické
-                        <strong
-                            >látky se skládají z
-                            <a href="ch-slozeni-latek.html">atomů</a></strong
-                        >
-                        - většinou složených.
-                        <strong
-                            >Atomy se slučují chemickou vazbou v
-                            molekuly</strong
-                        >. <strong>Oktetové pravidlo</strong> - atomy si chtějí
-                        zaplnit valenční vrstvu - 8 (někdy 0, 2) e⁻.
-                    </p>
-                    <h2>Typy vazeb (polarita)</h2>
-                    <ul>
-                        <li>nepolární (menší než 0,4)</li>
-                        <li>polární (mezi 0,4 až 1,7)</li>
-                        <li>iontová (více než 1,7)</li>
-                    </ul>
-                    <h2>Molekula</h2>
-                    <ul>
-                        <li>
-                            nejmenší částice látky, která má vlastnosti látky
-                        </li>
-                        <li><strong>je tvořena dvěma a více atomy</strong></li>
-                        <li>
-                            <strong>atomy jsou spojeny chemickou vazbou</strong>
-                        </li>
-                        <li>neutrální</li>
-                        <li>atomy v ní si <em>"půjčují"</em> elektrony</li>
-                    </ul>
-                    <h2>Příklady</h2>
-                    <p>
-                        <em
-                            >*pozor, kyslík má 8 elektronů (podle periodické
-                            tabulky prvků), ale valenčních má 6, protože první
-                            vrstva zabírá 2, další jsou v druhé vrstvě</em
-                        >
-                    </p>
-                    <h3>H₂O - voda</h3>
-                    <p>
-                        2 atomy vodíku - 1 + 1 = 2 valenční elektrony a jeden
-                        atom kyslíku = 6 valenčních elektronů<br />je pro ně
-                        výhodné se spojit v molekulu, protože 2 + 6 = 8
-                        (oktetové pravidlo)
-                    </p>
-                    <h3>CO₂ - oxid uhličitý</h3>
-                    <p>
-                        jeden atom uhlíku - 4 valenční elektrony, 2 atomy
-                        kyslíku 6 + 6 = 12 valenčních elektronů<br />je pro ně
-                        výhodné se spojit, protože 12 + 4 = 16 (oktetové
-                        pravidlo)
-                    </p>
-                    <h3>NaCl - kuchyňská sůl</h3>
-                    <p>
-                        jeden atom sodíku - 1 valenční elektron, jeden atom
-                        chloru - 7 valenčních elektronů<br />je pro ně výhodné
-                        se spojit, protože 7 + 1 = 8 (oktetové pravidlo)
-                    </p>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Chemická vazba
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Chemická vazba spojuje atomy do molekul nebo pevných látek. Vzniká
+            sdílením, předáváním nebo přitahováním elektronů. Existují vazby
+            kovalentní, iontové i kovové. Jejich typ určuje vlastnosti sloučenin
+            – třeba pevnost nebo teplotu tání.
+        </p>
+    </div>
+    <p>
+        Chemické
+        <strong
+            >látky se skládají z
+            <a href="ch-slozeni-latek.html">atomů</a></strong
+        >
+        - většinou složených.
+        <strong>Atomy se slučují chemickou vazbou v molekuly</strong>.
+        <strong>Oktetové pravidlo</strong> - atomy si chtějí zaplnit valenční
+        vrstvu - 8 (někdy 0, 2) e⁻.
+    </p>
+    <h2>Typy vazeb (polarita)</h2>
+    <ul>
+        <li>nepolární (menší než 0,4)</li>
+        <li>polární (mezi 0,4 až 1,7)</li>
+        <li>iontová (více než 1,7)</li>
+    </ul>
+    <h2>Molekula</h2>
+    <ul>
+        <li>nejmenší částice látky, která má vlastnosti látky</li>
+        <li><strong>je tvořena dvěma a více atomy</strong></li>
+        <li>
+            <strong>atomy jsou spojeny chemickou vazbou</strong>
+        </li>
+        <li>neutrální</li>
+        <li>atomy v ní si <em>"půjčují"</em> elektrony</li>
+    </ul>
+    <h2>Příklady</h2>
+    <p>
+        <em
+            >*pozor, kyslík má 8 elektronů (podle periodické tabulky prvků), ale
+            valenčních má 6, protože první vrstva zabírá 2, další jsou v druhé
+            vrstvě</em
+        >
+    </p>
+    <h3>H₂O - voda</h3>
+    <p>
+        2 atomy vodíku - 1 + 1 = 2 valenční elektrony a jeden atom kyslíku = 6
+        valenčních elektronů<br />je pro ně výhodné se spojit v molekulu,
+        protože 2 + 6 = 8 (oktetové pravidlo)
+    </p>
+    <h3>CO₂ - oxid uhličitý</h3>
+    <p>
+        jeden atom uhlíku - 4 valenční elektrony, 2 atomy kyslíku 6 + 6 = 12
+        valenčních elektronů<br />je pro ně výhodné se spojit, protože 12 + 4 =
+        16 (oktetové pravidlo)
+    </p>
+    <h3>NaCl - kuchyňská sůl</h3>
+    <p>
+        jeden atom sodíku - 1 valenční elektron, jeden atom chloru - 7
+        valenčních elektronů<br />je pro ně výhodné se spojit, protože 7 + 1 = 8
+        (oktetové pravidlo)
+    </p>
+</section>

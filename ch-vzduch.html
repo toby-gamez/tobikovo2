@@ -1,135 +1,57 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Vzduch - Chemie - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar"></nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Vzduch</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Vzduch je směs plynů, která tvoří atmosféru Země.
-                            Hlavními složkami jsou dusík (78 %), kyslík (21 %) a
-                            malé množství dalších plynů, jako je argon a oxid
-                            uhličitý. Vzduch je nezbytný pro dýchání živých
-                            organismů a pro spalování. Jeho složení se může
-                            měnit v závislosti na místě a podmínkách.
-                        </p>
-                    </div>
-                    <p>
-                        Plynný vzduch je základní podmínka života, k dýchání ho
-                        potřebují rostliny i živočichové.
-                    </p>
-                    <h2>Otázky</h2>
-                    <p>Co je hlavním zdrojem kyslíku v atmosféře?</p>
-                    <p>- děje probíhající při růstu zelených rostlin</p>
-                    <p>Vzduch ve městě je (by měl být):</p>
-                    <p>- různorodá směs, aerosol, mlha</p>
-                    <p>Ozonová vrstva je důležitá, protože:</p>
-                    <p>- chrání organismy před škodlivým zářením z kosmu</p>
-                    <p>Smog je:</p>
-                    <p>- směs mlhy, prachu a kouřových zplodin v ovzduší</p>
-                    <p>Čím se znečišťuje planeta?</p>
-                    <p>- spalování benzinu v automobilních motorech</p>
-                    <p>
-                        Člověk zasahuje do přirozeného stavu přírody. Vysvětli,
-                        jak lidská činnost ovlivňuje množství kyslíku.
-                    </p>
-                    <p>- kyselé deště</p>
-                    <p>Hlavní příčinou skleníkového efektu je:</p>
-                    <p>- nadměrná koncentrace oxidu uhličitého</p>
-                    <p>
-                        V Krkonoších na Sněžce je 0˚C, v Peci pod Sněžkou je
-                        -5˚C, co je to za jev?
-                    </p>
-                    <p>- inverze teploty</p>
-                    <p>
-                        Destilovaná voda bude mít na Lomnickém Štítu v Tatrách
-                        teplotu varu větší, stejnou nebo menší než 100˚C?
-                    </p>
-                    <p>- lehce nižší</p>
-                    <p>Co je hlavní příčinou kyselých dešťů?</p>
-                    <p>- vypouštění plynů z továren, SO₂, oxidy</p>
-                    <p>Složení vzduchu:</p>
-                    <p>
-                        - 78% dusíku, 21% kyslíku, 1% vodní pára, oxid uhličitý,
-                        vzácné plyny
-                    </p>
-                    <p>
-                        Proč ryby za letních horkých dní vyplouvají na hladinu?
-                    </p>
-                    <p>- méně rozpustného kyslíku ve vodě</p>
-                    <p>
-                        Každý z nás se při pohybu ve vysokých horách snáze
-                        unaví, proč?
-                    </p>
-                    <p>- nižší tlak vzduchu</p>
-                    <p>Činnosti, u kterých je vzduch nepostradatelný:</p>
-                    <p>- dýchání, fotosyntéza, oheň</p>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Vzduch
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Vzduch je směs plynů, která tvoří atmosféru Země. Hlavními složkami
+            jsou dusík (78 %), kyslík (21 %) a malé množství dalších plynů, jako
+            je argon a oxid uhličitý. Vzduch je nezbytný pro dýchání živých
+            organismů a pro spalování. Jeho složení se může měnit v závislosti
+            na místě a podmínkách.
+        </p>
+    </div>
+    <p>
+        Plynný vzduch je základní podmínka života, k dýchání ho potřebují
+        rostliny i živočichové.
+    </p>
+    <h2>Otázky</h2>
+    <p>Co je hlavním zdrojem kyslíku v atmosféře?</p>
+    <p>- děje probíhající při růstu zelených rostlin</p>
+    <p>Vzduch ve městě je (by měl být):</p>
+    <p>- různorodá směs, aerosol, mlha</p>
+    <p>Ozonová vrstva je důležitá, protože:</p>
+    <p>- chrání organismy před škodlivým zářením z kosmu</p>
+    <p>Smog je:</p>
+    <p>- směs mlhy, prachu a kouřových zplodin v ovzduší</p>
+    <p>Čím se znečišťuje planeta?</p>
+    <p>- spalování benzinu v automobilních motorech</p>
+    <p>
+        Člověk zasahuje do přirozeného stavu přírody. Vysvětli, jak lidská
+        činnost ovlivňuje množství kyslíku.
+    </p>
+    <p>- kyselé deště</p>
+    <p>Hlavní příčinou skleníkového efektu je:</p>
+    <p>- nadměrná koncentrace oxidu uhličitého</p>
+    <p>
+        V Krkonoších na Sněžce je 0˚C, v Peci pod Sněžkou je -5˚C, co je to za
+        jev?
+    </p>
+    <p>- inverze teploty</p>
+    <p>
+        Destilovaná voda bude mít na Lomnickém Štítu v Tatrách teplotu varu
+        větší, stejnou nebo menší než 100˚C?
+    </p>
+    <p>- lehce nižší</p>
+    <p>Co je hlavní příčinou kyselých dešťů?</p>
+    <p>- vypouštění plynů z továren, SO₂, oxidy</p>
+    <p>Složení vzduchu:</p>
+    <p>- 78% dusíku, 21% kyslíku, 1% vodní pára, oxid uhličitý, vzácné plyny</p>
+    <p>Proč ryby za letních horkých dní vyplouvají na hladinu?</p>
+    <p>- méně rozpustného kyslíku ve vodě</p>
+    <p>Každý z nás se při pohybu ve vysokých horách snáze unaví, proč?</p>
+    <p>- nižší tlak vzduchu</p>
+    <p>Činnosti, u kterých je vzduch nepostradatelný:</p>
+    <p>- dýchání, fotosyntéza, oheň</p>
+</section>

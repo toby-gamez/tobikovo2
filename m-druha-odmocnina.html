@@ -1,212 +1,137 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Druhá odmocnina - Matematika - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar"></nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Druhá odmocnina</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Druhá odmocnina je matematická operace, která určuje
-                            číslo, které při umocnění na druhou dává původní
-                            hodnotu. Tento pojem je klíčový v mnoha oblastech
-                            matematiky, včetně algebry a geometrie. Druhá
-                            odmocnina se často používá při výpočtech délky stran
-                            čtverce nebo při analýze kvadratických funkcí.
-                            Umožňuje rychlé a efektivní řešení úloh, kde je
-                            nutné najít původní číslo před jeho umocněním.
-                        </p>
-                    </div>
-                    <h2>Základy</h2>
-                    <p>
-                        čtvercové číslo - přirozené číslo, které je 2 mocninou
-                        nějakého přirozeného čísla (1, 4, 9, 81)
-                    </p>
-                    <p>
-                        b² = a;
-                        <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <msqrt>
-                                <mrow>
-                                    <mn>a</mn>
-                                </mrow>
-                            </msqrt>
-                        </math>
-                        = b
-                    </p>
-                    <img
-                        src="images/druha-odmocnina.png"
-                        style="border-radius: 10px"
-                        width="200px"
-                        alt="druhá odmocnina"
-                    />
-                    <p style="color: red">
-                        Druhá odmocnina ze záporného čísla neexistuje.
-                    </p>
-                    <p>
-                        <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <msqrt>
-                                <mrow>
-                                    <mn>-9</mn>
-                                </mrow>
-                            </msqrt>
-                        </math>
-                        = <span style="color: red">X</span><br />-3 × (-3) =
-                        9<br />3 × 3 = 9
-                    </p>
-                    <p style="color: red">
-                        Druhá odmocnina je vždy 0 nebo kladná.
-                    </p>
-                    <p>
-                        <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <msqrt>
-                                <mrow>
-                                    <mn>16</mn>
-                                </mrow>
-                            </msqrt>
-                        </math>
-                        = 4 - proč ne -4? nemůžeme si vybrat
-                        <em>(ono by to teoreticky šlo, ale matematicky ne) </em>
-                    </p>
-                    <h3>Pravidlo</h3>
-                    <p>
-                        <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <msqrt>
-                                <mrow>
-                                    <mn>a × b</mn>
-                                </mrow>
-                            </msqrt>
-                        </math>
-                        =
-                        <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <msqrt>
-                                <mrow>
-                                    <mn>a</mn>
-                                </mrow>
-                            </msqrt>
-                        </math>
-                        ×
-                        <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <msqrt>
-                                <mrow>
-                                    <mn>b</mn>
-                                </mrow>
-                            </msqrt>
-                        </math>
-                    </p>
-                    <h2>Odmocňování zpaměti</h2>
-                    <p>
-                        <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <msqrt>
-                                <mrow>
-                                    <mn>19600</mn>
-                                </mrow>
-                            </msqrt>
-                        </math>
-                    </p>
-                    <ol>
-                        <li>odstraním koncové 0 - 196</li>
-                        <li>odmocním - 14</li>
-                        <li>vrátím polovinu nul - 140</li>
-                    </ol>
-                    <p>
-                        <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <msqrt>
-                                <mrow>
-                                    <mn>19600</mn>
-                                </mrow>
-                            </msqrt>
-                        </math>
-                        = 140
-                    </p>
-                    <hr />
-                    <p>
-                        <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <msqrt>
-                                <mrow>
-                                    <mn>2,56</mn>
-                                </mrow>
-                            </msqrt>
-                        </math>
-                    </p>
-                    <ol>
-                        <li>odstraním des. čárku - 256</li>
-                        <li>odmocním - 16</li>
-                        <li>vrátím polovinu des. míst - 1,6</li>
-                    </ol>
-                    <p>
-                        <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <msqrt>
-                                <mrow>
-                                    <mn>2,56</mn>
-                                </mrow>
-                            </msqrt>
-                        </math>
-                        = 1,6
-                    </p>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Druhá odmocnina
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Druhá odmocnina je matematická operace, která určuje číslo, které
+            při umocnění na druhou dává původní hodnotu. Tento pojem je klíčový
+            v mnoha oblastech matematiky, včetně algebry a geometrie. Druhá
+            odmocnina se často používá při výpočtech délky stran čtverce nebo
+            při analýze kvadratických funkcí. Umožňuje rychlé a efektivní řešení
+            úloh, kde je nutné najít původní číslo před jeho umocněním.
+        </p>
+    </div>
+    <h2>Základy</h2>
+    <p>
+        čtvercové číslo - přirozené číslo, které je 2 mocninou nějakého
+        přirozeného čísla (1, 4, 9, 81)
+    </p>
+    <p>
+        b² = a;
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <msqrt>
+                <mrow>
+                    <mn>a</mn>
+                </mrow>
+            </msqrt>
+        </math>
+        = b
+    </p>
+    <img
+        src="images/druha-odmocnina.png"
+        style="border-radius: 10px"
+        width="200px"
+        alt="druhá odmocnina"
+    />
+    <p style="color: red">Druhá odmocnina ze záporného čísla neexistuje.</p>
+    <p>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <msqrt>
+                <mrow>
+                    <mn>-9</mn>
+                </mrow>
+            </msqrt>
+        </math>
+        = <span style="color: red">X</span><br />-3 × (-3) = 9<br />3 × 3 = 9
+    </p>
+    <p style="color: red">Druhá odmocnina je vždy 0 nebo kladná.</p>
+    <p>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <msqrt>
+                <mrow>
+                    <mn>16</mn>
+                </mrow>
+            </msqrt>
+        </math>
+        = 4 - proč ne -4? nemůžeme si vybrat
+        <em>(ono by to teoreticky šlo, ale matematicky ne) </em>
+    </p>
+    <h3>Pravidlo</h3>
+    <p>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <msqrt>
+                <mrow>
+                    <mn>a × b</mn>
+                </mrow>
+            </msqrt>
+        </math>
+        =
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <msqrt>
+                <mrow>
+                    <mn>a</mn>
+                </mrow>
+            </msqrt>
+        </math>
+        ×
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <msqrt>
+                <mrow>
+                    <mn>b</mn>
+                </mrow>
+            </msqrt>
+        </math>
+    </p>
+    <h2>Odmocňování zpaměti</h2>
+    <p>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <msqrt>
+                <mrow>
+                    <mn>19600</mn>
+                </mrow>
+            </msqrt>
+        </math>
+    </p>
+    <ol>
+        <li>odstraním koncové 0 - 196</li>
+        <li>odmocním - 14</li>
+        <li>vrátím polovinu nul - 140</li>
+    </ol>
+    <p>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <msqrt>
+                <mrow>
+                    <mn>19600</mn>
+                </mrow>
+            </msqrt>
+        </math>
+        = 140
+    </p>
+    <hr />
+    <p>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <msqrt>
+                <mrow>
+                    <mn>2,56</mn>
+                </mrow>
+            </msqrt>
+        </math>
+    </p>
+    <ol>
+        <li>odstraním des. čárku - 256</li>
+        <li>odmocním - 16</li>
+        <li>vrátím polovinu des. míst - 1,6</li>
+    </ol>
+    <p>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <msqrt>
+                <mrow>
+                    <mn>2,56</mn>
+                </mrow>
+            </msqrt>
+        </math>
+        = 1,6
+    </p>
+</section>

@@ -1,397 +1,295 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Nauka o slovní zásobě - Mluvnice - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar"></nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Nauka o slovní zásobě</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Nauka o slovní zásobě, neboli lexikologie, se
-                            zaměřuje na studium slov, jejich významů, struktury
-                            a vztahů, které tvoří jazyk. V tomto článku se
-                            podíváme nejen na to, co je slovní zásoba a jak se
-                            dělí na jednotlivé kategorie (např. synonyma,
-                            antonyma, homonyma), ale také se zaměříme na
-                            přísloví, rčení a frazeologismy – ustálené jazykové
-                            výrazy, které obohacují naše vyjadřování. Přísloví a
-                            rčení vyjadřují moudrost, zkušenosti a obrazné
-                            myšlenky, zatímco frazeologismy tvoří specifické
-                            obraty s pevně daným významem. Ukážeme si, jak tyto
-                            jazykové prostředky správně používat a jak ovlivňují
-                            efektivitu a bohatost naší komunikace.
-                        </p>
-                    </div>
-                    <h2>Význam slova</h2>
-                    <ol>
-                        <li>věcný (obsahový)</li>
-                        <ul>
-                            <li>nadřazená</li>
-                            <li>podřazená</li>
-                            <li>souřadná</li>
-                        </ul>
-                        <li>mluvnický</li>
-                    </ol>
-                    <h3>Sousloví</h3>
-                    <ul>
-                        <li>
-                            <strong
-                                >ustálené spojení dvou a více slov s jedním
-                                věcným významem</strong
-                            >
-                        </li>
-                        <li>
-                            dá se vyjádřit i jednoslovným pojmenováním: anglický
-                            jazyk - angličtina
-                        </li>
-                    </ul>
-                    <p>
-                        <strong>přísloví</strong> - spojení s poučným obsahem,
-                        které vyjadžuje lidskou zkušenost (kdo šetří, má za 3)
-                    </p>
-                    <p>
-                        <strong>rčení</strong> - jeho původní výraz nevnímáme
-                        doslova, pouze obrazně (vzít nohy na ramena)
-                    </p>
-                    <p>
-                        <strong>pořekadlo</strong> - vyjadřuje životní
-                        zkušenost, nedá se volně ohýbat (chyba lávky)
-                    </p>
-                    <p>
-                        <strong>pranostika</strong> - dává do souvislosti
-                        mereorologické jevy a roční dobu (Metardova kápě 40 dní
-                        kape)
-                    </p>
-                    <h4>50 nejznámějších přísloví</h4>
-                    <p>
-                        <strong>Kam vítr, tam plášť.</strong> – Přizpůsobivost
-                        okolnostem.
-                    </p>
-                    <p>
-                        <strong>Kdo šetří, má za tři.</strong> – Šetrnost se
-                        vyplatí.
-                    </p>
-                    <p>
-                        <strong>Bez práce nejsou koláče.</strong> – Práce
-                        přináší odměnu.
-                    </p>
-                    <p>
-                        <strong>Ranní ptáče dál doskáče.</strong> – Výhody
-                        brzkého vstávání.
-                    </p>
-                    <p>
-                        <strong>Jak si kdo ustele, tak si lehne.</strong> –
-                        Následky vlastních činů.
-                    </p>
-                    <p>
-                        <strong
-                            >Co můžeš udělat dnes, neodkládej na zítřek.</strong
-                        >
-                        – Neodkládej povinnosti.
-                    </p>
-                    <p>
-                        <strong
-                            >Lepší vrabec v hrsti než holub na střeše.</strong
-                        >
-                        – Jistota je lepší než riziko.
-                    </p>
-                    <p>
-                        <strong>Kdo jinému jámu kopá, sám do ní padá.</strong> –
-                        Zlo se vrací.
-                    </p>
-                    <p>
-                        <strong>Starého psa novým kouskům nenaučíš.</strong> –
-                        Zvyk se těžko mění.
-                    </p>
-                    <p>
-                        <strong
-                            >Kdo se směje naposled, ten se směje nejlíp.</strong
-                        >
-                        – Konečný úspěch je rozhodující.
-                    </p>
-                    <p>
-                        <strong>V nouzi poznáš přítele.</strong> – Praví přátelé
-                        se ukážou v těžkých časech.
-                    </p>
-                    <p><strong>Čas jsou peníze.</strong> – Čas má hodnotu.</p>
-                    <p>
-                        <strong>Lépe pozdě než nikdy.</strong> – Lepší něco
-                        udělat pozdě než vůbec.
-                    </p>
-                    <p>
-                        <strong>Dvakrát měř, jednou řež.</strong> – Přemýšlej
-                        před jednáním.
-                    </p>
-                    <p>
-                        <strong>Jablko nepadá daleko od stromu.</strong> – Děti
-                        se podobají rodičům.
-                    </p>
-                    <p>
-                        <strong>Kdo chce kam, pomozme mu tam.</strong> – Kdo si
-                        něco přeje, ať to má.
-                    </p>
-                    <p>
-                        <strong>Vlk se nažral a koza zůstala celá.</strong> –
-                        Kompromisní řešení.
-                    </p>
-                    <p>
-                        <strong
-                            >Jak se do lesa volá, tak se z lesa ozývá.</strong
-                        >
-                        – Akce vyvolává reakci.
-                    </p>
-                    <p>
-                        <strong>Kdo chce psa bít, hůl si vždy najde.</strong> –
-                        Kdo chce škodit, najde způsob.
-                    </p>
-                    <p>
-                        <strong>Nehas, co tě nepálí.</strong> – Nestarej se o
-                        cizí věci.
-                    </p>
-                    <p>
-                        <strong>Na každém šprochu pravdy trochu.</strong> – I
-                        fáma může obsahovat pravdu.
-                    </p>
-                    <p>
-                        <strong>Líná huba – holé neštěstí.</strong> – Kdo se
-                        nezeptá, nic nezíská.
-                    </p>
-                    <p>
-                        <strong>Kdo si počká, ten se dočká.</strong> –
-                        Trpělivost přináší odměnu.
-                    </p>
-                    <p>
-                        <strong>Čert nikdy nespí.</strong> – Problémy mohou
-                        přijít nečekaně.
-                    </p>
-                    <p>
-                        <strong>Hlad je nejlepší kuchař.</strong> – Hlad
-                        zlepšuje chuť jídla.
-                    </p>
-                    <p>
-                        <strong>Tichá voda břehy mele.</strong> – Klidní lidé
-                        mohou být nebezpeční.
-                    </p>
-                    <p>
-                        <strong>Kdo lže, ten krade.</strong> – Lež vede k dalším
-                        hříchům.
-                    </p>
-                    <p>
-                        <strong>Darovanému koni na zuby nehleď.</strong> – Dárek
-                        nekritizuj.
-                    </p>
-                    <p>
-                        <strong>Bez peněz do hospody nelez.</strong> – Bez
-                        prostředků si nic nekoupíš.
-                    </p>
-                    <p>
-                        <strong>Nechval dne před večerem.</strong> – Nehodnoť
-                        výsledek předčasně.
-                    </p>
-                    <p>
-                        <strong>S poctivostí nejdál dojdeš.</strong> – Čestnost
-                        se vyplácí.
-                    </p>
-                    <p>
-                        <strong>Sytý hladovému nevěří.</strong> – Kdo něco má,
-                        nepochopí toho, kdo nemá.
-                    </p>
-                    <p>
-                        <strong>Chytrému napověz, hloupého trkni.</strong> –
-                        Moudrý pochopí rychleji.
-                    </p>
-                    <p>
-                        <strong>Není všechno zlato, co se třpytí.</strong> –
-                        Vnější vzhled klame.
-                    </p>
-                    <p>
-                        <strong>Kdo nic nedělá, nic nezkazí.</strong> – Strach z
-                        chyby brání aktivitě.
-                    </p>
-                    <p>
-                        <strong>Každá liška svůj ocas chválí.</strong> – Každý
-                        si myslí, že je nejlepší.
-                    </p>
-                    <p>
-                        <strong>Přeskoč, přelez, ale nepodlez.</strong> – Hledej
-                        čestné cesty k cíli.
-                    </p>
-                    <p>
-                        <strong>Slova jsou stříbro, mlčení zlato.</strong> –
-                        Mlčení je často lepší než mluvení.
-                    </p>
-                    <p>
-                        <strong>Komu se nelení, tomu se zelení.</strong> –
-                        Pracovitost přináší úspěch.
-                    </p>
-                    <p>
-                        <strong>Co oči nevidí, to srdce nebolí.</strong> –
-                        Nevědomost je někdy lepší.
-                    </p>
-                    <p><strong>Ruka ruku myje.</strong> – Pomoc za pomoc.</p>
-                    <p>
-                        <strong>Když ptáčka lapají, pěkně mu zpívají.</strong> –
-                        Lákání může být klamavé.
-                    </p>
-                    <p>
-                        <strong>Nemoc a nouze naučí člověka znát.</strong> – V
-                        těžkých chvílích poznáš pravé lidi.
-                    </p>
-                    <p>
-                        <strong>Všeho s mírou.</strong> – Nic se nemá přehánět.
-                    </p>
-                    <p>
-                        <strong>Čím víc hlav, tím víc rozumu.</strong> –
-                        Společně se přemýšlí lépe.
-                    </p>
-                    <p>
-                        <strong>Hloupost kvete v každém věku.</strong> – Blbosti
-                        dělají i dospělí.
-                    </p>
-                    <p>
-                        <strong>Kdo málo mluví, více myslí.</strong> – Mlčení
-                        značí moudrost.
-                    </p>
-                    <p>
-                        <strong>Nedráždi hada bosou nohou.</strong> – Neprovokuj
-                        nebezpečí.
-                    </p>
-                    <p>
-                        <strong>Dobrá rada nad zlato.</strong> – Rady jsou
-                        cenné.
-                    </p>
-                    <p>
-                        <strong>Každý svého štěstí strůjcem.</strong> – Každý si
-                        tvoří svůj osud.
-                    </p>
-                    <h2>Slova jednoznačná a mnohoznačná</h2>
-                    <h3>Jednoznačná</h3>
-                    <ul>
-                        <li>
-                            mají jen <strong>jeden věcný výraz</strong>, často
-                            jsou to jména osob, zeměpisné názvy nebo odborné
-                            názvy
-                        </li>
-                        <li>příklady - Jan, Brno, pondělí, stůl</li>
-                    </ul>
-                    <h3>Mnohoznačná</h3>
-                    <ul>
-                        <li>
-                            mají svůj původní význam + další významy, které
-                            vznikly <strong>přenesením slova</strong> na věci,
-                            které s původní skunešností nějak souvisí
-                        </li>
-                        <li>
-                            oko - smyslový orgán, oko na polévce, oko na
-                            punčoše, pytlácké oko...
-                        </li>
-                    </ul>
-                    <h4>Přenesení</h4>
-                    <ul>
-                        <li>
-                            vnější podobnost -
-                            <a href="li-prostredky.html">metafora</a>
-                        </li>
-                        <li>
-                            vnitřní podobnost -
-                            <a href="li-prostredky.html">metonymie</a>
-                        </li>
-                    </ul>
-                    <h2>Synonyma, homonyma a antonyma</h2>
-                    <h3>Synonyma</h3>
-                    <ul>
-                        <li>
-                            <strong
-                                >slova souznačná - mají stejný nebo podobný
-                                význam</strong
-                            >
-                        </li>
-                        <li>příklady - chlapec, hoch, kluk; zlý, špatný</li>
-                    </ul>
-                    <h3>Homonyma</h3>
-                    <ul>
-                        <li>
-                            <strong
-                                >slova souzvučná - stejně znějí, ale mají zcela
-                                odlišný význam</strong
-                            >
-                        </li>
-                        <li>
-                            příklady - topit: v kamnech, ve vodě, jeřáb - strom,
-                            stroj
-                        </li>
-                    </ul>
-                    <h3>Antonyma</h3>
-                    <ul>
-                        <li>
-                            <strong>opozita - slova opačného významu</strong>
-                        </li>
-                        <li>příklady - ticho, hluk; dobrý, špatný</li>
-                    </ul>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+ title: Slovní zásoba
+ type: content
+ -->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Nauka o slovní zásobě, neboli lexikologie, se zaměřuje na studium
+            slov, jejich významů, struktury a vztahů, které tvoří jazyk. V tomto
+            článku se podíváme nejen na to, co je slovní zásoba a jak se dělí na
+            jednotlivé kategorie (např. synonyma, antonyma, homonyma), ale také
+            se zaměříme na přísloví, rčení a frazeologismy – ustálené jazykové
+            výrazy, které obohacují naše vyjadřování. Přísloví a rčení vyjadřují
+            moudrost, zkušenosti a obrazné myšlenky, zatímco frazeologismy tvoří
+            specifické obraty s pevně daným významem. Ukážeme si, jak tyto
+            jazykové prostředky správně používat a jak ovlivňují efektivitu a
+            bohatost naší komunikace.
+        </p>
+    </div>
+    <h2>Význam slova</h2>
+    <ol>
+        <li>věcný (obsahový)</li>
+        <ul>
+            <li>nadřazená</li>
+            <li>podřazená</li>
+            <li>souřadná</li>
+        </ul>
+        <li>mluvnický</li>
+    </ol>
+    <h3>Sousloví</h3>
+    <ul>
+        <li>
+            <strong
+                >ustálené spojení dvou a více slov s jedním věcným
+                významem</strong
+            >
+        </li>
+        <li>
+            dá se vyjádřit i jednoslovným pojmenováním: anglický jazyk -
+            angličtina
+        </li>
+    </ul>
+    <p>
+        <strong>přísloví</strong> - spojení s poučným obsahem, které vyjadžuje
+        lidskou zkušenost (kdo šetří, má za 3)
+    </p>
+    <p>
+        <strong>rčení</strong> - jeho původní výraz nevnímáme doslova, pouze
+        obrazně (vzít nohy na ramena)
+    </p>
+    <p>
+        <strong>pořekadlo</strong> - vyjadřuje životní zkušenost, nedá se volně
+        ohýbat (chyba lávky)
+    </p>
+    <p>
+        <strong>pranostika</strong> - dává do souvislosti mereorologické jevy a
+        roční dobu (Metardova kápě 40 dní kape)
+    </p>
+    <h4>50 nejznámějších přísloví</h4>
+    <p><strong>Kam vítr, tam plášť.</strong> – Přizpůsobivost okolnostem.</p>
+    <p><strong>Kdo šetří, má za tři.</strong> – Šetrnost se vyplatí.</p>
+    <p><strong>Bez práce nejsou koláče.</strong> – Práce přináší odměnu.</p>
+    <p><strong>Ranní ptáče dál doskáče.</strong> – Výhody brzkého vstávání.</p>
+    <p>
+        <strong>Jak si kdo ustele, tak si lehne.</strong> – Následky vlastních
+        činů.
+    </p>
+    <p>
+        <strong>Co můžeš udělat dnes, neodkládej na zítřek.</strong>
+        – Neodkládej povinnosti.
+    </p>
+    <p>
+        <strong>Lepší vrabec v hrsti než holub na střeše.</strong>
+        – Jistota je lepší než riziko.
+    </p>
+    <p>
+        <strong>Kdo jinému jámu kopá, sám do ní padá.</strong> – Zlo se vrací.
+    </p>
+    <p>
+        <strong>Starého psa novým kouskům nenaučíš.</strong> – Zvyk se těžko
+        mění.
+    </p>
+    <p>
+        <strong>Kdo se směje naposled, ten se směje nejlíp.</strong>
+        – Konečný úspěch je rozhodující.
+    </p>
+    <p>
+        <strong>V nouzi poznáš přítele.</strong> – Praví přátelé se ukážou v
+        těžkých časech.
+    </p>
+    <p><strong>Čas jsou peníze.</strong> – Čas má hodnotu.</p>
+    <p>
+        <strong>Lépe pozdě než nikdy.</strong> – Lepší něco udělat pozdě než
+        vůbec.
+    </p>
+    <p><strong>Dvakrát měř, jednou řež.</strong> – Přemýšlej před jednáním.</p>
+    <p>
+        <strong>Jablko nepadá daleko od stromu.</strong> – Děti se podobají
+        rodičům.
+    </p>
+    <p>
+        <strong>Kdo chce kam, pomozme mu tam.</strong> – Kdo si něco přeje, ať
+        to má.
+    </p>
+    <p>
+        <strong>Vlk se nažral a koza zůstala celá.</strong> – Kompromisní
+        řešení.
+    </p>
+    <p>
+        <strong>Jak se do lesa volá, tak se z lesa ozývá.</strong>
+        – Akce vyvolává reakci.
+    </p>
+    <p>
+        <strong>Kdo chce psa bít, hůl si vždy najde.</strong> – Kdo chce škodit,
+        najde způsob.
+    </p>
+    <p><strong>Nehas, co tě nepálí.</strong> – Nestarej se o cizí věci.</p>
+    <p>
+        <strong>Na každém šprochu pravdy trochu.</strong> – I fáma může
+        obsahovat pravdu.
+    </p>
+    <p>
+        <strong>Líná huba – holé neštěstí.</strong> – Kdo se nezeptá, nic
+        nezíská.
+    </p>
+    <p>
+        <strong>Kdo si počká, ten se dočká.</strong> – Trpělivost přináší
+        odměnu.
+    </p>
+    <p><strong>Čert nikdy nespí.</strong> – Problémy mohou přijít nečekaně.</p>
+    <p><strong>Hlad je nejlepší kuchař.</strong> – Hlad zlepšuje chuť jídla.</p>
+    <p>
+        <strong>Tichá voda břehy mele.</strong> – Klidní lidé mohou být
+        nebezpeční.
+    </p>
+    <p><strong>Kdo lže, ten krade.</strong> – Lež vede k dalším hříchům.</p>
+    <p><strong>Darovanému koni na zuby nehleď.</strong> – Dárek nekritizuj.</p>
+    <p>
+        <strong>Bez peněz do hospody nelez.</strong> – Bez prostředků si nic
+        nekoupíš.
+    </p>
+    <p>
+        <strong>Nechval dne před večerem.</strong> – Nehodnoť výsledek
+        předčasně.
+    </p>
+    <p><strong>S poctivostí nejdál dojdeš.</strong> – Čestnost se vyplácí.</p>
+    <p>
+        <strong>Sytý hladovému nevěří.</strong> – Kdo něco má, nepochopí toho,
+        kdo nemá.
+    </p>
+    <p>
+        <strong>Chytrému napověz, hloupého trkni.</strong> – Moudrý pochopí
+        rychleji.
+    </p>
+    <p>
+        <strong>Není všechno zlato, co se třpytí.</strong> – Vnější vzhled
+        klame.
+    </p>
+    <p>
+        <strong>Kdo nic nedělá, nic nezkazí.</strong> – Strach z chyby brání
+        aktivitě.
+    </p>
+    <p>
+        <strong>Každá liška svůj ocas chválí.</strong> – Každý si myslí, že je
+        nejlepší.
+    </p>
+    <p>
+        <strong>Přeskoč, přelez, ale nepodlez.</strong> – Hledej čestné cesty k
+        cíli.
+    </p>
+    <p>
+        <strong>Slova jsou stříbro, mlčení zlato.</strong> – Mlčení je často
+        lepší než mluvení.
+    </p>
+    <p>
+        <strong>Komu se nelení, tomu se zelení.</strong> – Pracovitost přináší
+        úspěch.
+    </p>
+    <p>
+        <strong>Co oči nevidí, to srdce nebolí.</strong> – Nevědomost je někdy
+        lepší.
+    </p>
+    <p><strong>Ruka ruku myje.</strong> – Pomoc za pomoc.</p>
+    <p>
+        <strong>Když ptáčka lapají, pěkně mu zpívají.</strong> – Lákání může být
+        klamavé.
+    </p>
+    <p>
+        <strong>Nemoc a nouze naučí člověka znát.</strong> – V těžkých chvílích
+        poznáš pravé lidi.
+    </p>
+    <p><strong>Všeho s mírou.</strong> – Nic se nemá přehánět.</p>
+    <p>
+        <strong>Čím víc hlav, tím víc rozumu.</strong> – Společně se přemýšlí
+        lépe.
+    </p>
+    <p>
+        <strong>Hloupost kvete v každém věku.</strong> – Blbosti dělají i
+        dospělí.
+    </p>
+    <p><strong>Kdo málo mluví, více myslí.</strong> – Mlčení značí moudrost.</p>
+    <p><strong>Nedráždi hada bosou nohou.</strong> – Neprovokuj nebezpečí.</p>
+    <p><strong>Dobrá rada nad zlato.</strong> – Rady jsou cenné.</p>
+    <p>
+        <strong>Každý svého štěstí strůjcem.</strong> – Každý si tvoří svůj
+        osud.
+    </p>
+    <h2>Slova jednoznačná a mnohoznačná</h2>
+    <h3>Jednoznačná</h3>
+    <ul>
+        <li>
+            mají jen <strong>jeden věcný výraz</strong>, často jsou to jména
+            osob, zeměpisné názvy nebo odborné názvy
+        </li>
+        <li>příklady - Jan, Brno, pondělí, stůl</li>
+    </ul>
+    <h3>Mnohoznačná</h3>
+    <ul>
+        <li>
+            mají svůj původní význam + další významy, které vznikly
+            <strong>přenesením slova</strong> na věci, které s původní
+            skunešností nějak souvisí
+        </li>
+        <li>
+            oko - smyslový orgán, oko na polévce, oko na punčoše, pytlácké
+            oko...
+        </li>
+    </ul>
+    <h4>Přenesení</h4>
+    <ul>
+        <li>
+            vnější podobnost -
+            <a href="li-prostredky.html">metafora</a>
+        </li>
+        <li>
+            vnitřní podobnost -
+            <a href="li-prostredky.html">metonymie</a>
+        </li>
+    </ul>
+    <h2>Synonyma, homonyma a antonyma</h2>
+    <h3>Synonyma</h3>
+    <ul>
+        <li>
+            <strong>slova souznačná - mají stejný nebo podobný význam</strong>
+        </li>
+        <li>příklady - chlapec, hoch, kluk; zlý, špatný</li>
+    </ul>
+    <h3>Homonyma</h3>
+    <ul>
+        <li>
+            <strong
+                >slova souzvučná - stejně znějí, ale mají zcela odlišný
+                význam</strong
+            >
+        </li>
+        <li>příklady - topit: v kamnech, ve vodě, jeřáb - strom, stroj</li>
+    </ul>
+    <h3>Antonyma</h3>
+    <ul>
+        <li>
+            <strong>opozita - slova opačného významu</strong>
+        </li>
+        <li>příklady - ticho, hluk; dobrý, špatný</li>
+    </ul>
+    <h2>Slovní zásoba a způsoby jejího obohacování</h2>
+    <p>Slovní zásoba</p>
+    <p>Všechna slova daného jazyka</p>
+    <p>
+        Neustále se mění, obohacuje, protože vzniká potřeba pojmenovat nové věci
+    </p>
+    <h3>Způsoby obohacování</h3>
+    <ul>
+        <li>Z tvarů již existujících</li>
+        <li>
+            A) odvozování - předpony, přípony, koncovky (číst - přečíst, les -
+            lesík, slon - sloní)
+        </li>
+    </ul>
+    <h2>Rozbor slova</h2>
+    <ul>
+        <li>Kořen - nejmenší společná část všech příbuzných slov</li>
+        <li>Předpona - část slova před kořenem</li>
+        <li>Přípona - část slova za kořenem</li>
+        <li>Koncovka - skloňováním/časováním se mění</li>
+    </ul>
+    <h2>Slovotvorný rozbor</h2>
+    <ul>
+        <li>Odvozené slovo - lesní, možský</li>
+        <li>Základové slovo – les, moře</li>
+        <li>Slovotvorný základ - les, moř</li>
+    </ul>
+    <p>
+        Vytváření z mužských názvů ženské se nazývá přechylování (žák - žákyně)
+    </p>
+</section>

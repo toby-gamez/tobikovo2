@@ -1,137 +1,64 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Úhly - Geometrie - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar"></nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Úhly</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Úhly jsou základním prvkem geometrie, vyjadřují
-                            velikost odchýlení dvou přímek, které se protínají v
-                            bodě. Měří se ve stupních (°) nebo radiánech.
-                            Základní typy úhlů jsou ostrý (méně než 90°), pravý
-                            (90°), tupý (více než 90°) a přímý (180°). Úhly se
-                            často využívají při konstrukcích, výpočtech a
-                            určování tvarů v geometrii.
-                        </p>
-                    </div>
-                    <h2>Úhel</h2>
-                    <img
-                        src="images/uhel.png"
-                        width="230px"
-                        style="border-radius: 10px"
-                        alt="Úhel"
-                    />
-                    <h2>Sčítání a odčítání úhlů</h2>
-                    <img
-                        src="images/scitani-uhlu.png"
-                        width="200px"
-                        style="border-radius: 10px"
-                        alt="2 úhly"
-                    />
-                    <p>Je to velmi jednoduché, sečtou se úhly.</p>
-                    <p class="priklad">α = 40°</p>
-                    <p class="priklad">β = 12°</p>
-                    <p class="priklad">40 + 12 = 52</p>
-                    <p class="priklad">výsledek: 52°</p>
-                    <p>tipy: 60′ = 1°, 180′ = 3°</p>
-                    <h2>Typy úhlů</h2>
-                    <ul>
-                        <li>ostrý - 0° - 90°</li>
-                        <li>pravý - 90°</li>
-                        <li>tupý - 90° - 180°</li>
-                        <li>přímý úhel - 180°</li>
-                    </ul>
-                    <h2>Úhly vedlejší a vrcholové</h2>
-                    <img
-                        src="images/ved-a-vrch-uhly.png"
-                        width="200px"
-                        style="border-radius: 10px"
-                        alt="2 úhly"
-                    />
-                    <ul>
-                        <li>
-                            protější úhly mají <strong>stejnou velikost</strong>
-                        </li>
-                        <li>součet vedlejšího úhlu je 180°</li>
-                    </ul>
-                    <h2>Úhly střídavé a souhlasné</h2>
-                    <a href="images/souhl-strid.png"
-                        ><img
-                            src="images/souhl-strid.png"
-                            width="300px"
-                            style="border-radius: 10px"
-                            alt="2 úhly"
-                    /></a>
-                    <ul>
-                        <li>souhlasné a střídavé úhly jsou shodné</li>
-                    </ul>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Úhly
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Úhly jsou základním prvkem geometrie, vyjadřují velikost odchýlení
+            dvou přímek, které se protínají v bodě. Měří se ve stupních (°) nebo
+            radiánech. Základní typy úhlů jsou ostrý (méně než 90°), pravý
+            (90°), tupý (více než 90°) a přímý (180°). Úhly se často využívají
+            při konstrukcích, výpočtech a určování tvarů v geometrii.
+        </p>
+    </div>
+    <h2>Úhel</h2>
+    <img
+        src="images/uhel.png"
+        width="230px"
+        style="border-radius: 10px"
+        alt="Úhel"
+    />
+    <h2>Sčítání a odčítání úhlů</h2>
+    <img
+        src="images/scitani-uhlu.png"
+        width="200px"
+        style="border-radius: 10px"
+        alt="2 úhly"
+    />
+    <p>Je to velmi jednoduché, sečtou se úhly.</p>
+    <p class="priklad">α = 40°</p>
+    <p class="priklad">β = 12°</p>
+    <p class="priklad">40 + 12 = 52</p>
+    <p class="priklad">výsledek: 52°</p>
+    <p>tipy: 60′ = 1°, 180′ = 3°</p>
+    <h2>Typy úhlů</h2>
+    <ul>
+        <li>ostrý - 0° - 90°</li>
+        <li>pravý - 90°</li>
+        <li>tupý - 90° - 180°</li>
+        <li>přímý úhel - 180°</li>
+    </ul>
+    <h2>Úhly vedlejší a vrcholové</h2>
+    <img
+        src="images/ved-a-vrch-uhly.png"
+        width="200px"
+        style="border-radius: 10px"
+        alt="2 úhly"
+    />
+    <ul>
+        <li>protější úhly mají <strong>stejnou velikost</strong></li>
+        <li>součet vedlejšího úhlu je 180°</li>
+    </ul>
+    <h2>Úhly střídavé a souhlasné</h2>
+    <a href="images/souhl-strid.png"
+        ><img
+            src="images/souhl-strid.png"
+            width="300px"
+            style="border-radius: 10px"
+            alt="2 úhly"
+    /></a>
+    <ul>
+        <li>souhlasné a střídavé úhly jsou shodné</li>
+    </ul>
+</section>

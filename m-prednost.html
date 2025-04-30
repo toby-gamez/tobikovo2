@@ -1,126 +1,48 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Přednost matematických operací - Matematika - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar">
-            <a href="#home"
-                ><img src="images/white-logo.png" alt="Logo" width="75px"
-            /></a>
-            <a href="#home">Domů</a>
-            <a href="#ucivo">Učivo</a>
-            <a href="#o-nas">O nás</a>
-        </nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Přednost matematických operací</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Přednost matematických operací určuje pořadí, jakým
-                            mají být operace v matematickém výrazu prováděny.
-                            Začíná se závorkami, následně se řeší mocniny a
-                            odmocniny. Po nich se provádí násobení a dělení, a
-                            na závěr sčítání a odčítání. Tento postup zajišťuje
-                            správnost výpočtů a je základem pro matematické
-                            výrazy.
-                        </p>
-                    </div>
-                    <h2>Informace</h2>
-                    <ol>
-                        <li>mocniny a odmocniny</li>
-                        <ul>
-                            <li>8000² = 64 000 000</li>
-                            <li>
-                                (b³ = a) =
-                                <math
-                                    xmlns="http://www.w3.org/1998/Math/MathML"
-                                >
-                                    <mroot>
-                                        <mrow>
-                                            <mi>a</mi>
-                                        </mrow>
-                                        <mn>3</mn>
-                                    </mroot>
-                                </math>
-                                = b
-                            </li>
-                        </ul>
-                        <li>závorky</li>
-                        <ul>
-                            <li>1,8 - (0,3 + 0,5) = 1</li>
-                            <li>(1,8 - 0,3) - 0,5 = 1</li>
-                        </ul>
-                        <li>násobení a dělení</li>
-                        <ul>
-                            <li>3,1 - 2 × 0,4 = 2,3</li>
-                        </ul>
-                        <li>sčítání a odčítání (jedině zleva)</li>
-                        <ul>
-                            <li>2,8 - 0,5 - 0,3 = 2</li>
-                            <li>3,2 - 0,5 - 0,3 = 2,4</li>
-                        </ul>
-                    </ol>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Přednost matematických operací
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Přednost matematických operací určuje pořadí, jakým mají být operace
+            v matematickém výrazu prováděny. Začíná se závorkami, následně se
+            řeší mocniny a odmocniny. Po nich se provádí násobení a dělení, a na
+            závěr sčítání a odčítání. Tento postup zajišťuje správnost výpočtů a
+            je základem pro matematické výrazy.
+        </p>
+    </div>
+    <h2>Informace</h2>
+    <ol>
+        <li>mocniny a odmocniny</li>
+        <ul>
+            <li>8000² = 64 000 000</li>
+            <li>
+                (b³ = a) =
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mroot>
+                        <mrow>
+                            <mi>a</mi>
+                        </mrow>
+                        <mn>3</mn>
+                    </mroot>
+                </math>
+                = b
+            </li>
+        </ul>
+        <li>závorky</li>
+        <ul>
+            <li>1,8 - (0,3 + 0,5) = 1</li>
+            <li>(1,8 - 0,3) - 0,5 = 1</li>
+        </ul>
+        <li>násobení a dělení</li>
+        <ul>
+            <li>3,1 - 2 × 0,4 = 2,3</li>
+        </ul>
+        <li>sčítání a odčítání (jedině zleva)</li>
+        <ul>
+            <li>2,8 - 0,5 - 0,3 = 2</li>
+            <li>3,2 - 0,5 - 0,3 = 2,4</li>
+        </ul>
+    </ol>
+</section>

@@ -1,97 +1,20 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
+<!--
+title: O mně
+type: content
+-->
 
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
+<section class="only-content">
+    <p>Ahoj, jsem Tobias, a rád bych vám pověděl trošku o sobě.</p>
 
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>O mně - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-        <nav id="myNavbar">
-            <a href="#home"
-                ><img src="images/white-logo.png" alt="Logo" width="75px"
-            /></a>
-            <a href="#home">Domů</a>
-            <a href="#ucivo">Učivo</a>
-            <a href="#o-nas">O nás</a>
-        </nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">O mně</h1>
-                <div style="text-align: left">
-                    <p>
-                        Ahoj, jsem Tobias, a rád bych vám pověděl trošku o sobě.
-                    </p>
-
-                    <p>
-                        Už od mala mě bavily počítače, natáčení videí a
-                        zkoumání. A tak mě napadlo, že bych mohl vytvořit
-                        webovou stránku, která obsahuje informace ze všech
-                        sešitů.
-                    </p>
-                    <p>
-                        Tato stránka zařazuje vše přehledně do kategorií a
-                        snažím se udělat prostor, kde se může najít všechno
-                        učivo ze základní školy (zatím do 8. ročníku). Je to
-                        někdy těžké, protože nemám moc času a u toho dělám čsto
-                        (často) chyby. Snad mi to omluvíte a vy se běžte učit!
-                    </p>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+    <p>
+        Už od mala mě bavily počítače, natáčení videí a zkoumání. A tak mě
+        napadlo, že bych mohl vytvořit webovou stránku, která obsahuje informace
+        ze všech sešitů.
+    </p>
+    <p>
+        Tato stránka zařazuje vše přehledně do kategorií a snažím se udělat
+        prostor, kde se může najít všechno učivo ze základní školy (zatím do 8.
+        ročníku). Je to někdy těžké, protože nemám moc času a u toho dělám čsto
+        (často) chyby. Snad mi to omluvíte a vy se běžte učit!
+    </p>
+</section>

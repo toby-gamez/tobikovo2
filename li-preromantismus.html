@@ -1,286 +1,197 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Preromantismus - Literatura - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar"></nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Preromantismus</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Přeromantismus je literární směr, který předcházel
-                            romantismu a vyjadřoval touhu po svobodě, přírodě a
-                            emocích. V literatuře přeromantismu se objevují
-                            prvky melancholie a národní identifikace. V české
-                            literatuře tohoto období, spojené s národním
-                            obrozením, se začíná formovat národní vědomí. Autoři
-                            jako Josef Jungmann a Karel Hynek Mácha se zaměřují
-                            na český jazyk a kulturu, čímž podporují českou
-                            národní identitu.
-                        </p>
-                    </div>
-                    <h3>Johann Wolfgang von Goethe [Géte]</h3>
-                    <img
-                        src="images/goethe.png"
-                        class="rounded blog-image"
-                        height="150rem"
-                        alt="Johann Wolfgang von Goethe"
-                    />
-                    <ul>
-                        <li>
-                            žil od roku <strong>1749</strong> do roku
-                            <strong>1832</strong>
-                        </li>
-                        <li>
-                            hodně cestoval do <strong>Itálie</strong>, často
-                            pobýval v českých lázních (<strong
-                                >Karlovy Vary</strong
-                            >
-                            - 13x, <strong>Františkovy Lázně</strong> - 33x,
-                            <strong>Mariánské Lázně</strong> - 4x,
-                            <strong>Teplice</strong> - 3x)
-                        </li>
-                        <li>dílo - <strong>Faust</strong></li>
-                        <ul>
-                            <li>dvoudílná veršovaná tragédie</li>
-                            <li>
-                                inspiraci čerpal ze středověké legendy o učenci
-                                Faustovi, který za poznáním prodal duši ďáblu
-                            </li>
-                        </ul>
-                    </ul>
-                    <h3>Friedrich Schiller [Šiler]</h3>
-                    <img
-                        src="images/schiller.png"
-                        class="rounded blog-image"
-                        height="150rem"
-                        alt="Friedrich Schiller"
-                    />
-                    <ul>
-                        <li>
-                            žil od roku <strong>1759</strong> do roku
-                            <strong>1805</strong>
-                        </li>
-                        <li><strong>dramatik, překladatel a básník</strong></li>
-                        <li>dílo - <strong>Óda na radost</strong></li>
-                        <ul>
-                            <li>
-                                její text použil <strong>Beethoven</strong> v
-                                závěru své 9. symfonie - S Ódou na radost
-                            </li>
-                            <ul>
-                                <li>
-                                    hymna <strong>Evropské unie</strong> a
-                                    <strong>Rady Evropy</strong>
-                                </li>
-                            </ul>
-                        </ul>
-                    </ul>
-                    <h2>České národní obrození</h2>
-                    <ul>
-                        <li>
-                            po
-                            <strong>bitvě na Bílé hoře</strong>
-                            (<strong>1620</strong>) postihlo český národ období
-                            úpadku
-                        </li>
-                        <li>
-                            <strong>poněmčování</strong>, český jazyk pouze na
-                            vesnici, povoleno jen katolické náboženství
-                        </li>
-                    </ul>
-                    <h3>Jazykověda</h3>
-                    <p><strong>Josef Dobrovský</strong></p>
-                    <ul>
-                        <li>
-                            psal německy (nevěřil v budoucnost českého jazyka a
-                            chtěl ho dostat k němcům)
-                        </li>
-                        <li>německá díla</li>
-                        <ul>
-                            <li>
-                                <strong
-                                    >Zevrubná mluvnice jazyka českého</strong
-                                >
-                            </li>
-                            <li>
-                                <strong>Dějiny české řeči a literatury</strong>
-                            </li>
-                        </ul>
-                    </ul>
-                    <p><strong>Česká expedice</strong></p>
-                    <ul>
-                        <li>nakladatelství</li>
-                        <li>
-                            založil ji v roce <strong>1790</strong>
-                            <strong>Václav Matěj Kramelius</strong>
-                        </li>
-                        <ul>
-                            <li>
-                                vydával vlastní noviny -
-                                <strong>Pražské poštovské noviny</strong>,
-                                později
-                                <strong
-                                    >Krameliusovy čísařsko-královské vlastenecké
-                                    noviny</strong
-                                >
-                            </li>
-                        </ul>
-                    </ul>
-                    <p><strong>Divadlo</strong></p>
-                    <ul>
-                        <li>
-                            začalo vychovávat české herce, vytvořilo české hry a
-                            prováděla pravidelná představení
-                        </li>
-                        <li>divadla</li>
-                        <ul>
-                            <li><strong>Divadlo na Kotcích</strong></li>
-                            <li><strong>Stavovské divadlo</strong></li>
-                            <li>
-                                <strong>Bouda</strong> - v roce 1789 bylo
-                                zbořeno na Konském trhu
-                            </li>
-                        </ul>
-                    </ul>
-                    <p><strong>Josef Jungmann</strong></p>
-                    <ul>
-                        <li>
-                            <strong>pětidílný slovník česko-německý</strong>
-                        </li>
-                        <li>překládal z francouzštiny, angličtiny a němčiny</li>
-                    </ul>
-                    <h3>Historie a historická poezie</h3>
-                    <p><strong>František Palacký</strong></p>
-                    <ul>
-                        <li><strong>český historik a politik</strong></li>
-                        <li>
-                            hlavní dílo -
-                            <strong
-                                >Dějiny národu českého v Čechách a v
-                                Moravě</strong
-                            >
-                        </li>
-                        <ul>
-                            <li>
-                                začal vydávat německy, od roku
-                                <strong>1848</strong> česky
-                            </li>
-                        </ul>
-                    </ul>
-                    <p><strong>Rukopisy</strong></p>
-                    <ul>
-                        <li>
-                            padělky, které měly prokázat historii českých zemí,
-                            údajně z 9. a 13. století
-                        </li>
-                        <li>
-                            <strong>rukopis Zelenohorský</strong> - údajně z 9.
-                            století
-                        </li>
-                        <li>
-                            <strong>rukopis Královédvorský</strong> - údajně z
-                            13. století
-                        </li>
-                        <li>
-                            autoři - <strong>Václav Hanka</strong> a
-                            <strong>Josef Linda</strong>
-                        </li>
-                        <li>
-                            jejich nepravost později objevil
-                            <strong>T. G. Masaryk</strong>
-                        </li>
-                    </ul>
-                    <h3>Sběratelská činnost</h3>
-                    <p><strong>František Ladislav Čelakovský</strong></p>
-                    <ul>
-                        <li>díla</li>
-                        <ul>
-                            <li><strong>Slovanské národní písně</strong></li>
-                            <li>
-                                <strong
-                                    >Mudrosloví národa slovanského v
-                                    příslovích</strong
-                                >
-                            </li>
-                        </ul>
-                        <li><strong>ohlasová poezie</strong></li>
-                        <ul>
-                            <li>napodobení lidové slovesnosti</li>
-                            <li>sbírky</li>
-                            <ul>
-                                <li><strong>Ohlas písní ruských</strong></li>
-                                <li>
-                                    <strong>Ohlas písní českých</strong>: > 50 %
-                                    lyrické básně, lidová balada -
-                                    <strong>Toman a lesní panna</strong>
-                                </li>
-                            </ul>
-                        </ul>
-                    </ul>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Preromantismus
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Přeromantismus je literární směr, který předcházel romantismu a
+            vyjadřoval touhu po svobodě, přírodě a emocích. V literatuře
+            přeromantismu se objevují prvky melancholie a národní identifikace.
+            V české literatuře tohoto období, spojené s národním obrozením, se
+            začíná formovat národní vědomí. Autoři jako Josef Jungmann a Karel
+            Hynek Mácha se zaměřují na český jazyk a kulturu, čímž podporují
+            českou národní identitu.
+        </p>
+    </div>
+    <h3>Johann Wolfgang von Goethe [Géte]</h3>
+    <img
+        src="images/goethe.png"
+        class="rounded blog-image"
+        height="150rem"
+        alt="Johann Wolfgang von Goethe"
+    />
+    <ul>
+        <li>
+            žil od roku <strong>1749</strong> do roku
+            <strong>1832</strong>
+        </li>
+        <li>
+            hodně cestoval do <strong>Itálie</strong>, často pobýval v českých
+            lázních (<strong>Karlovy Vary</strong> - 13x,
+            <strong>Františkovy Lázně</strong> - 33x,
+            <strong>Mariánské Lázně</strong> - 4x, <strong>Teplice</strong> -
+            3x)
+        </li>
+        <li>dílo - <strong>Faust</strong></li>
+        <ul>
+            <li>dvoudílná veršovaná tragédie</li>
+            <li>
+                inspiraci čerpal ze středověké legendy o učenci Faustovi, který
+                za poznáním prodal duši ďáblu
+            </li>
+        </ul>
+    </ul>
+    <h3>Friedrich Schiller [Šiler]</h3>
+    <img
+        src="images/schiller.png"
+        class="rounded blog-image"
+        height="150rem"
+        alt="Friedrich Schiller"
+    />
+    <ul>
+        <li>
+            žil od roku <strong>1759</strong> do roku
+            <strong>1805</strong>
+        </li>
+        <li><strong>dramatik, překladatel a básník</strong></li>
+        <li>dílo - <strong>Óda na radost</strong></li>
+        <ul>
+            <li>
+                její text použil <strong>Beethoven</strong> v závěru své 9.
+                symfonie - S Ódou na radost
+            </li>
+            <ul>
+                <li>
+                    hymna <strong>Evropské unie</strong> a
+                    <strong>Rady Evropy</strong>
+                </li>
+            </ul>
+        </ul>
+    </ul>
+    <h2>České národní obrození</h2>
+    <ul>
+        <li>
+            po
+            <strong>bitvě na Bílé hoře</strong>
+            (<strong>1620</strong>) postihlo český národ období úpadku
+        </li>
+        <li>
+            <strong>poněmčování</strong>, český jazyk pouze na vesnici, povoleno
+            jen katolické náboženství
+        </li>
+    </ul>
+    <h3>Jazykověda</h3>
+    <p><strong>Josef Dobrovský</strong></p>
+    <ul>
+        <li>
+            psal německy (nevěřil v budoucnost českého jazyka a chtěl ho dostat
+            k němcům)
+        </li>
+        <li>německá díla</li>
+        <ul>
+            <li>
+                <strong>Zevrubná mluvnice jazyka českého</strong>
+            </li>
+            <li>
+                <strong>Dějiny české řeči a literatury</strong>
+            </li>
+        </ul>
+    </ul>
+    <p><strong>Česká expedice</strong></p>
+    <ul>
+        <li>nakladatelství</li>
+        <li>
+            založil ji v roce <strong>1790</strong>
+            <strong>Václav Matěj Kramelius</strong>
+        </li>
+        <ul>
+            <li>
+                vydával vlastní noviny -
+                <strong>Pražské poštovské noviny</strong>, později
+                <strong
+                    >Krameliusovy čísařsko-královské vlastenecké noviny</strong
+                >
+            </li>
+        </ul>
+    </ul>
+    <p><strong>Divadlo</strong></p>
+    <ul>
+        <li>
+            začalo vychovávat české herce, vytvořilo české hry a prováděla
+            pravidelná představení
+        </li>
+        <li>divadla</li>
+        <ul>
+            <li><strong>Divadlo na Kotcích</strong></li>
+            <li><strong>Stavovské divadlo</strong></li>
+            <li>
+                <strong>Bouda</strong> - v roce 1789 bylo zbořeno na Konském
+                trhu
+            </li>
+        </ul>
+    </ul>
+    <p><strong>Josef Jungmann</strong></p>
+    <ul>
+        <li>
+            <strong>pětidílný slovník česko-německý</strong>
+        </li>
+        <li>překládal z francouzštiny, angličtiny a němčiny</li>
+    </ul>
+    <h3>Historie a historická poezie</h3>
+    <p><strong>František Palacký</strong></p>
+    <ul>
+        <li><strong>český historik a politik</strong></li>
+        <li>
+            hlavní dílo -
+            <strong>Dějiny národu českého v Čechách a v Moravě</strong>
+        </li>
+        <ul>
+            <li>
+                začal vydávat německy, od roku
+                <strong>1848</strong> česky
+            </li>
+        </ul>
+    </ul>
+    <p><strong>Rukopisy</strong></p>
+    <ul>
+        <li>
+            padělky, které měly prokázat historii českých zemí, údajně z 9. a
+            13. století
+        </li>
+        <li><strong>rukopis Zelenohorský</strong> - údajně z 9. století</li>
+        <li><strong>rukopis Královédvorský</strong> - údajně z 13. století</li>
+        <li>
+            autoři - <strong>Václav Hanka</strong> a
+            <strong>Josef Linda</strong>
+        </li>
+        <li>
+            jejich nepravost později objevil
+            <strong>T. G. Masaryk</strong>
+        </li>
+    </ul>
+    <h3>Sběratelská činnost</h3>
+    <p><strong>František Ladislav Čelakovský</strong></p>
+    <ul>
+        <li>díla</li>
+        <ul>
+            <li><strong>Slovanské národní písně</strong></li>
+            <li>
+                <strong>Mudrosloví národa slovanského v příslovích</strong>
+            </li>
+        </ul>
+        <li><strong>ohlasová poezie</strong></li>
+        <ul>
+            <li>napodobení lidové slovesnosti</li>
+            <li>sbírky</li>
+            <ul>
+                <li><strong>Ohlas písní ruských</strong></li>
+                <li>
+                    <strong>Ohlas písní českých</strong>: > 50 % lyrické básně,
+                    lidová balada -
+                    <strong>Toman a lesní panna</strong>
+                </li>
+            </ul>
+        </ul>
+    </ul>
+</section>

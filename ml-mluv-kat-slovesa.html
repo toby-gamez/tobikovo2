@@ -1,203 +1,124 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Mluvnické kategorie - Mluvnice - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="stylesheet" href="css/tabulkak.css" />
-        <link rel="icon" href="images/favicon.png" />
-        <style></style>
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-        <nav id="myNavbar">
-            <a href="#home"
-                ><img src="images/white-logo.png" alt="Logo" width="75px"
-            /></a>
-            <a href="#home">Domů</a>
-            <a href="#ucivo">Učivo</a>
-            <a href="#o-nas">O nás</a>
-        </nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Mluvnické kategorie</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Mluvnické kategorie sloves jsou klíčem k porozumění
-                            časům, osobám a způsobům v češtině. V tomto článku
-                            si přehledně vysvětlíme základní kategorie, které
-                            určují tvar a význam sloves – osoba, číslo, čas,
-                            způsob a rod. Vid příjde postupně po updatech. Díky
-                            konkrétním příkladům a jasnému výkladu snadno
-                            pochopíte, jak správně tvořit slovesné tvary a
-                            používat je v různých větách.
-                        </p>
-                    </div>
-                    <h2>Osoba</h2>
-                    <p><em>*čísla</em></p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Jednotná</th>
-                                <th>Množná</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <p>já</p>
-                                    <p>ty</p>
-                                    <p>on, ona, ono</p>
-                                </td>
-                                <td>
-                                    <p>my</p>
-                                    <p>vy</p>
-                                    <p>oni, ony, ona</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <h2>Číslo</h2>
-                    <ul>
-                        <li>jednotné</li>
-                        <li>množné</li>
-                    </ul>
-                    <h2>Způsob</h2>
-                    <ul>
-                        <li>oznamovací - minulý, přítomný, budoucí</li>
-                        <li>
-                            rozkazovací -
-                            <span style="color: red">NENÍ ŽÁDNÝ ČAS</span>
-                        </li>
-                        <ul>
-                            <li>1. osoba, č. mn.</li>
-                            <li>2. osoba, č. j.</li>
-                            <li>2. osoba, č. mn.</li>
-                        </ul>
-                        <li>podmiňovací přítomný</li>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Jednotné</th>
-                                    <th>Množné</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <p>četl bych</p>
-                                        <p>četl bys</p>
-                                        <p>četl by</p>
-                                    </td>
-                                    <td>
-                                        <p>četli bychom</p>
-                                        <p>četli byste</p>
-                                        <p>četli by</p>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <li>podmiňovací minulý</li>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Jednotné</th>
-                                    <th>Množné</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <p>byl bych četl</p>
-                                        <p>byl bys četl</p>
-                                        <p>byl by četl</p>
-                                    </td>
-                                    <td>
-                                        <p>byli bychom četli</p>
-                                        <p>byli byste četli</p>
-                                        <p>byli by četli</p>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </ul>
-                    <h2>Čas</h2>
-                    <ul>
-                        <li>minulý</li>
-                        <li>přítomný</li>
-                        <li>budoucí</li>
-                    </ul>
-                    <h2>Rod</h2>
-                    <h3>Trpný</h3>
-                    <ul>
-                        <li>trpný rod bývá vyjádřen</li>
-                        <ul>
-                            <li>opisným tvarem trpným - byl schválen</li>
-                            <li>
-                                zvratnou podobou slovesa - Stroje se vyvážejí
-                                do...
-                            </li>
-                        </ul>
-                        <li>podmět nedělá to, co říká přísudek</li>
-                    </ul>
-                    <h3>Činný</h3>
-                    <ul>
-                        <li>tvar, kdy podmět dělá to, co říká přísudek</li>
-                    </ul>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Mluvnická kategorie
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Mluvnické kategorie sloves jsou klíčem k porozumění časům, osobám a
+            způsobům v češtině. V tomto článku si přehledně vysvětlíme základní
+            kategorie, které určují tvar a význam sloves – osoba, číslo, čas,
+            způsob a rod. Vid příjde postupně po updatech. Díky konkrétním
+            příkladům a jasnému výkladu snadno pochopíte, jak správně tvořit
+            slovesné tvary a používat je v různých větách.
+        </p>
+    </div>
+    <h2>Osoba</h2>
+    <p><em>*čísla</em></p>
+    <table>
+        <thead>
+            <tr>
+                <th>Jednotná</th>
+                <th>Množná</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <p>já</p>
+                    <p>ty</p>
+                    <p>on, ona, ono</p>
+                </td>
+                <td>
+                    <p>my</p>
+                    <p>vy</p>
+                    <p>oni, ony, ona</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Číslo</h2>
+    <ul>
+        <li>jednotné</li>
+        <li>množné</li>
+    </ul>
+    <h2>Způsob</h2>
+    <ul>
+        <li>oznamovací - minulý, přítomný, budoucí</li>
+        <li>
+            rozkazovací -
+            <span style="color: red">NENÍ ŽÁDNÝ ČAS</span>
+        </li>
+        <ul>
+            <li>1. osoba, č. mn.</li>
+            <li>2. osoba, č. j.</li>
+            <li>2. osoba, č. mn.</li>
+        </ul>
+        <li>podmiňovací přítomný</li>
+        <table>
+            <thead>
+                <tr>
+                    <th>Jednotné</th>
+                    <th>Množné</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>četl bych</p>
+                        <p>četl bys</p>
+                        <p>četl by</p>
+                    </td>
+                    <td>
+                        <p>četli bychom</p>
+                        <p>četli byste</p>
+                        <p>četli by</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <li>podmiňovací minulý</li>
+        <table>
+            <thead>
+                <tr>
+                    <th>Jednotné</th>
+                    <th>Množné</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>byl bych četl</p>
+                        <p>byl bys četl</p>
+                        <p>byl by četl</p>
+                    </td>
+                    <td>
+                        <p>byli bychom četli</p>
+                        <p>byli byste četli</p>
+                        <p>byli by četli</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </ul>
+    <h2>Čas</h2>
+    <ul>
+        <li>minulý</li>
+        <li>přítomný</li>
+        <li>budoucí</li>
+    </ul>
+    <h2>Rod</h2>
+    <h3>Trpný</h3>
+    <ul>
+        <li>trpný rod bývá vyjádřen</li>
+        <ul>
+            <li>opisným tvarem trpným - byl schválen</li>
+            <li>zvratnou podobou slovesa - Stroje se vyvážejí do...</li>
+        </ul>
+        <li>podmět nedělá to, co říká přísudek</li>
+    </ul>
+    <h3>Činný</h3>
+    <ul>
+        <li>tvar, kdy podmět dělá to, co říká přísudek</li>
+    </ul>
+</section>

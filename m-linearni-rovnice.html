@@ -1,249 +1,224 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
+<!--
+title: Lineární rovnice
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Lineární rovnice je rovnice, která obsahuje proměnné pouze v první
+            mocnině a nemá žádné součiny mezi proměnnými. Obecný tvar lineární
+            rovnice je ax + b = 0, kde aa a b jsou konstanty, a x je proměnná.
+            Tyto rovnice lze snadno řešit pomocí základních algebraických
+            operací, jako je sčítání, odčítání, násobení nebo dělení. Lineární
+            rovnice jsou základem pro řešení mnoha matematických problémů a
+            analýzu funkcí.
+        </p>
+    </div>
+    <p>
+        <strong>Lineární rovnice</strong> je rovnice, která má tvar
+        <strong>ax + b = 0</strong>, kde <em>a</em> a <em>b</em> jsou reálná
+        čísla a <em>x</em> je neznámá.
+    </p>
+    <p>
+        <strong>Lineární rovnice má vždy jedno řešení</strong>, které je reálné
+        číslo.
+    </p>
+    <p>
+        Na procvičování doporučuji
+        <a href="https://www.mathsisfun.com/algebra/add-subtract-balance.html"
+            >tento odkaz</a
+        >.
+    </p>
+    <h2>Úpravy lineárních rovnic</h2>
+    <p>Při řešení lineárních rovnic se provádějí tyto úpravy:</p>
+    <ul>
+        <li>
+            <strong
+                >sčítání nebo odčítání stejného čísla na obou stranách
+                rovnice</strong
+            >
+        </li>
+        <li>
+            <strong
+                >násobení nebo dělení obou stran rovnice stejným nenulovým
+                číslem</strong
+            >
+        </li>
+        <li>
+            <strong>roznásobení závorek a úprava členů</strong>
+        </li>
+    </ul>
 
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
+    <h2>Příklady řešení</h2>
+    <p>
+        <strong>Příklad 1:</strong> Řeš rovnici
+        <em>2x - 4 = 10</em>
+    </p>
+    <p>
+        1) <strong>Přičteme 4</strong> k oběma stranám:
+        <em>2x = 14</em>
+    </p>
+    <p>2) <strong>Vydělíme 2</strong>: <em>x = 7</em></p>
 
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Lineární rovnice - Matematika - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
+    <p>
+        <strong>Příklad 2:</strong> Řeš rovnici
+        <em>3(x - 2) = 9</em>
+    </p>
+    <p>
+        1) <strong>Rozevřeme závorku</strong>:
+        <em>3x - 6 = 9</em>
+    </p>
+    <p>2) <strong>Přičteme 6</strong>: <em>3x = 15</em></p>
+    <p>3) <strong>Vydělíme 3</strong>: <em>x = 5</em></p>
+    <h2>Příklad rovnice se zlomkem</h2>
+    <p>
+        <strong>Příklad 3:</strong> Řeš rovnici
+        <math>
+            <mfrac>
+                <mi>x</mi>
+                <mi>3</mi>
+            </mfrac>
+            + 2 = 5
+        </math>
+    </p>
+    <p>
+        1) <strong>Odečteme 2</strong> od obou stran:
+        <math>
+            <mfrac>
+                <mi>x</mi>
+                <mi>3</mi>
+            </mfrac>
+            = 3
+        </math>
+    </p>
+    <p>
+        2) <strong>Vynásobíme obě strany 3</strong> (tím se zbavíme zlomku):
+        <em>x = 9</em>
+    </p>
+    <p>Při řešení rovnic se zlomky je důležité:</p>
+    <ul>
+        <li>
+            nejdříve odstranit všechny členy bez zlomků na jednu stranu rovnice
+        </li>
+        <li>
+            <strong
+                >vynásobit obě strany rovnice společným jmenovatelem všech
+                zlomků</strong
+            >
+        </li>
+        <li>dále řešit jako běžnou lineární rovnici</li>
+        <li>
+            pokud vyjde zlomek, převedeme ho jen do základního tvaru a máme
+            výsledek
+        </li>
+    </ul>
+    <h2>Slovní úlohy s rovnicemi</h2>
+    <h3>Základní</h3>
+    <p>
+        Lineární rovnice se často používají k řešení slovních úloh. Při řešení
+        postupujeme následovně:
+    </p>
+    <ul>
+        <li><strong>zavedeme neznámou (x)</strong> - označíme hledaný údaj</li>
+        <li>
+            <strong>sestavíme rovnici</strong> - převedeme text do matematického
+            zápisu
+        </li>
+        <li><strong>vyřešíme rovnici</strong> - použijeme známé postupy</li>
+        <li>
+            <strong>odpovíme na otázku</strong> - nezapomeneme na jednotky a
+            souvislost s úlohou
+        </li>
+    </ul>
+    <p>
+        <strong>Příklad 1:</strong> Mysli si číslo. Když k němu přičteš 5 a
+        výsledek vynásobíš 2, dostaneš 30. Jaké číslo si myslíš?
+    </p>
+    <p>Řešení:</p>
+    <ul>
+        <li>x = hledané číslo</li>
+        <li>sestavíme rovnici: 2(x + 5) = 30</li>
+        <li>roznásobíme závorku: 2x + 10 = 30</li>
+        <li>odečteme 10: 2x = 20</li>
+        <li>vydělíme 2: x = 10</li>
+    </ul>
+    <p><strong>Odpověď:</strong> Myšlené číslo je 10.</p>
+    <p>
+        <strong>Příklad 2:</strong> V pokladničce mám třikrát více
+        dvoukorunových mincí než pětikorunových. Celkem mám 155 Kč. Kolik mám
+        kterých mincí?
+    </p>
+    <p>Řešení:</p>
+    <ul>
+        <li>x = počet pětikorunových mincí</li>
+        <li>3x = počet dvoukorunových mincí</li>
+        <li>sestavíme rovnici: 5x + 2(3x) = 155</li>
+        <li>roznásobíme: 5x + 6x = 155</li>
+        <li>sečteme podobné členy: 11x = 155</li>
+        <li>vydělíme 11: x = 15</li>
+    </ul>
+    <p>
+        <strong>Odpověď:</strong> V pokladničce je 15 pětikorunových a 45
+        dvoukorunových mincí.
+    </p>
+    <p><em>Kontrola:</em> 15 × 5 Kč + 45 × 2 Kč = 75 Kč + 80 Kč = 155 Kč</p>
 
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar"></nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Lineární rovnice</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Lineární rovnice je rovnice, která obsahuje proměnné
-                            pouze v první mocnině a nemá žádné součiny mezi
-                            proměnnými. Obecný tvar lineární rovnice je ax + b =
-                            0, kde aa a b jsou konstanty, a x je proměnná. Tyto
-                            rovnice lze snadno řešit pomocí základních
-                            algebraických operací, jako je sčítání, odčítání,
-                            násobení nebo dělení. Lineární rovnice jsou základem
-                            pro řešení mnoha matematických problémů a analýzu
-                            funkcí.
-                        </p>
-                    </div>
-                    <p>
-                        <strong>Lineární rovnice</strong> je rovnice, která má
-                        tvar <strong>ax + b = 0</strong>, kde <em>a</em> a
-                        <em>b</em> jsou reálná čísla a <em>x</em> je neznámá.
-                    </p>
-                    <p>
-                        <strong>Lineární rovnice má vždy jedno řešení</strong>,
-                        které je reálné číslo.
-                    </p>
-                    <p>
-                        Na procvičování doporučuji
-                        <a
-                            href="https://www.mathsisfun.com/algebra/add-subtract-balance.html"
-                            >tento odkaz</a
-                        >.
-                    </p>
-                    <h2>Úpravy lineárních rovnic</h2>
-                    <p>
-                        Při řešení lineárních rovnic se provádějí tyto úpravy:
-                    </p>
-                    <ul>
-                        <li>
-                            <strong
-                                >sčítání nebo odčítání stejného čísla na obou
-                                stranách rovnice</strong
-                            >
-                        </li>
-                        <li>
-                            <strong
-                                >násobení nebo dělení obou stran rovnice stejným
-                                nenulovým číslem</strong
-                            >
-                        </li>
-                        <li>
-                            <strong>roznásobení závorek a úprava členů</strong>
-                        </li>
-                    </ul>
-
-                    <h2>Příklady řešení</h2>
-                    <p>
-                        <strong>Příklad 1:</strong> Řeš rovnici
-                        <em>2x - 4 = 10</em>
-                    </p>
-                    <p>
-                        1) <strong>Přičteme 4</strong> k oběma stranám:
-                        <em>2x = 14</em>
-                    </p>
-                    <p>2) <strong>Vydělíme 2</strong>: <em>x = 7</em></p>
-
-                    <p>
-                        <strong>Příklad 2:</strong> Řeš rovnici
-                        <em>3(x - 2) = 9</em>
-                    </p>
-                    <p>
-                        1) <strong>Rozevřeme závorku</strong>:
-                        <em>3x - 6 = 9</em>
-                    </p>
-                    <p>2) <strong>Přičteme 6</strong>: <em>3x = 15</em></p>
-                    <p>3) <strong>Vydělíme 3</strong>: <em>x = 5</em></p>
-                    <h2>Příklad rovnice se zlomkem</h2>
-                    <p>
-                        <strong>Příklad 3:</strong> Řeš rovnici
-                        <math>
-                            <mfrac>
-                                <mi>x</mi>
-                                <mi>3</mi>
-                            </mfrac>
-                            + 2 = 5
-                        </math>
-                    </p>
-                    <p>
-                        1) <strong>Odečteme 2</strong> od obou stran:
-                        <math>
-                            <mfrac>
-                                <mi>x</mi>
-                                <mi>3</mi>
-                            </mfrac>
-                            = 3
-                        </math>
-                    </p>
-                    <p>
-                        2) <strong>Vynásobíme obě strany 3</strong> (tím se
-                        zbavíme zlomku):
-                        <em>x = 9</em>
-                    </p>
-                    <p>Při řešení rovnic se zlomky je důležité:</p>
-                    <ul>
-                        <li>
-                            nejdříve odstranit všechny členy bez zlomků na jednu
-                            stranu rovnice
-                        </li>
-                        <li>
-                            <strong
-                                >vynásobit obě strany rovnice společným
-                                jmenovatelem všech zlomků</strong
-                            >
-                        </li>
-                        <li>dále řešit jako běžnou lineární rovnici</li>
-                        <li>
-                            pokud vyjde zlomek, převedeme ho jen do základního
-                            tvaru a máme výsledek
-                        </li>
-                    </ul>
-                    <h2>Slovní úlohy s rovnicemi</h2>
-                    <p>
-                        Lineární rovnice se často používají k řešení slovních
-                        úloh. Při řešení postupujeme následovně:
-                    </p>
-                    <ul>
-                        <li>
-                            <strong>zavedeme neznámou (x)</strong> - označíme
-                            hledaný údaj
-                        </li>
-                        <li>
-                            <strong>sestavíme rovnici</strong> - převedeme text
-                            do matematického zápisu
-                        </li>
-                        <li>
-                            <strong>vyřešíme rovnici</strong> - použijeme známé
-                            postupy
-                        </li>
-                        <li>
-                            <strong>odpovíme na otázku</strong> - nezapomeneme
-                            na jednotky a souvislost s úlohou
-                        </li>
-                    </ul>
-                    <p>
-                        <strong>Příklad 1:</strong> Mysli si číslo. Když k němu
-                        přičteš 5 a výsledek vynásobíš 2, dostaneš 30. Jaké
-                        číslo si myslíš?
-                    </p>
-                    <p>Řešení:</p>
-                    <ul>
-                        <li>x = hledané číslo</li>
-                        <li>sestavíme rovnici: 2(x + 5) = 30</li>
-                        <li>roznásobíme závorku: 2x + 10 = 30</li>
-                        <li>odečteme 10: 2x = 20</li>
-                        <li>vydělíme 2: x = 10</li>
-                    </ul>
-                    <p><strong>Odpověď:</strong> Myšlené číslo je 10.</p>
-                    <p>
-                        <strong>Příklad 2:</strong> V pokladničce mám třikrát
-                        více dvoukorunových mincí než pětikorunových. Celkem mám
-                        155 Kč. Kolik mám kterých mincí?
-                    </p>
-                    <p>Řešení:</p>
-                    <ul>
-                        <li>x = počet pětikorunových mincí</li>
-                        <li>3x = počet dvoukorunových mincí</li>
-                        <li>sestavíme rovnici: 5x + 2(3x) = 155</li>
-                        <li>roznásobíme: 5x + 6x = 155</li>
-                        <li>sečteme podobné členy: 11x = 155</li>
-                        <li>vydělíme 11: x = 15</li>
-                    </ul>
-                    <p>
-                        <strong>Odpověď:</strong> V pokladničce je 15
-                        pětikorunových a 45 dvoukorunových mincí.
-                    </p>
-                    <p>
-                        <em>Kontrola:</em> 15 × 5 Kč + 45 × 2 Kč = 75 Kč + 80 Kč
-                        = 155 Kč
-                    </p>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+    <h3>Koláčové rovnice</h3>
+    <p>
+        Příklad 3 (koláčová rovnice): Turisté měli 3 denní výlet, první den ušli
+        1/3 trasy, druhý den 2/5 ze zbývající vzdálenosti. Na poslední den jim
+        zbývalo 18 km. Jak dlouhá byla trasa? Kolik ušli každý den? Řešení:
+    </p>
+    <ul>
+        <li>x ... celkem trasa</li>
+        <li>první den ... 1/3x</li>
+        <li>druhý den 2/5x × 2/3 (zbývající trasa)</li>
+        <li>třetí den 18 km</li>
+        <li>sestavíme rovnici: x = 1/3x + 2/5x × 2/3 + 18</li>
+        <li>zkrátíme rovnici: x = 1/3x + 4/15x + 18</li>
+        <li>vynásobíme 15: 15x = 5x + 4x + 270</li>
+        <li>zkrátíme: 15x = 9x + 270</li>
+        <li>odečteme 9x: 6x = 270</li>
+        <li>vydělíme 6: x = 45</li>
+    </ul>
+    <p>Odpověď: Celá trasa byla 45 km.</p>
+    <h3>Pohybové úlohy proti sobě</h3>
+    <p>
+        <strong>Příklad 4:</strong> Z měst A a B, která jsou od sebe vzdálena
+        120 km, vyjedou současně proti sobě dva cyklisté. První jede rychlostí
+        20 km/h, druhý 25 km/h. Za jak dlouho se potkají?
+    </p>
+    <p>Řešení:</p>
+    <ul>
+        <li>x = čas v hodinách do setkání</li>
+        <li>první ujede: 20x km</li>
+        <li>druhý ujede: 25x km</li>
+        <li>sestavíme rovnici: 20x + 25x = 120</li>
+        <li>45x = 120</li>
+        <li>x = 2,67</li>
+    </ul>
+    <p>
+        <strong>Odpověď:</strong> Cyklisté se potkají za 2 hodiny a 40 minut od
+        startu.
+    </p>
+    <h3>Pohybové úlohy s odlišným časem startu</h3>
+    <p>
+        <strong>Příklad 5:</strong> Z města A vyjede v 8:00 cyklista rychlostí
+        15 km/h. Ve 12:00 za ním vyrazí z téhož místa druhý cyklista rychlostí
+        25 km/h. V kolik hodin druhý cyklista dojede prvního?
+    </p>
+    <p>Řešení:</p>
+    <ul>
+        <li>x = počet hodin od startu druhého cyklisty</li>
+        <li>první ujede: 15(x + 4) km (4 hodiny navíc)</li>
+        <li>druhý ujede: 25x km</li>
+        <li>sestavíme rovnici: 15(x + 4) = 25x</li>
+        <li>roznásobíme závorku: 15x + 60 = 25x</li>
+        <li>odečteme 15x: 60 = 10x</li>
+        <li>x = 6</li>
+    </ul>
+    <p>
+        <strong>Odpověď:</strong> Druhý cyklista dojede prvního v 18:00 (6 hodin
+        po svém startu).
+    </p>
+</section>

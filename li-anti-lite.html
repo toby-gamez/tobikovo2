@@ -1,130 +1,93 @@
-<!DOCTYPE html>
-<html lang="cs">
-
-<head>
-    <!-- Google Consent Mode -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        // Výchozí stav: souhlas odepřen
-        gtag("consent", "default", {
-            analytics_storage: "denied",
-        });
-        console.log("Google Consent Mode initialized with default: denied");
-    </script>
-
-    <!-- Google Analytics (nenačte se automaticky) -->
-    <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-    ></script>
-    <script>
-        function loadGoogleAnalytics() {
-            console.log("Loading Google Analytics...");
-            gtag("js", new Date());
-            gtag("config", "G-1CDLST0SSK");
-            console.log("Google Analytics loaded.");
-        }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Antická literatura - Literatura - Tobiso</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="icon" href="images/favicon.png">
-</head>
-
-<body>
-    <div class="loading-bar-container">
-        <div class="loading-bar"></div>
+<!--
+title: Antická literatura
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Antická literatura zahrnuje literární díla starověkého Řecka a Říma,
+            která ovlivnila vývoj západní literatury. Patří sem epické eposy,
+            filozofické texty, dramatické hry a lyrika, přičemž významnými
+            autory jsou Homér, Sofoklés, Vergilius a Ovidius. Tato díla se
+            zabývají tématy jako hrdinství, osud, morálka a vztah člověka k
+            božstvům.
+        </p>
     </div>
-
-    <nav id="myNavbar"></nav>
-    <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-    <!-- Obsah stránky -->
-    <main>
-
-        <section>
-            <h1 class="verybig">Antická literatura</h1>
-            <div style="text-align: left;">
-                <div class="intro"><p>Antická literatura zahrnuje literární díla starověkého Řecka a Říma, která ovlivnila vývoj západní literatury. Patří sem epické eposy, filozofické texty, dramatické hry a lyrika, přičemž významnými autory jsou Homér, Sofoklés, Vergilius a Ovidius. Tato díla se zabývají tématy jako hrdinství, osud, morálka a vztah člověka k božstvům.</p></div>
-                <h2>Základy</h2>
-                <ul>
-                    <li>je to literatura starověkého Řecka a Říma</li>
-                    <li>nejstarší autor (8. století př. n. l.) - Homér - Ilias a Odyssea</li>
-                </ul>
-                <h2>Ilias a Odyssea</h2>
-                <p>Ilias a Odyssea jsou dvě epické básně připisované starořeckému básníkovi Homérovi, které patří k
-                    nejvýznamnějším dílům starověké literatury. <strong>Ilias</strong> se zaměřuje na poslední týdny
-                    trojské války,
-                    přičemž hlavní postavou je hrdina Achilles a jeho spor s velitelem Řeků, Agamemnonem. Příběh líčí
-                    také osudy dalších hrdinů, jako je Hektor a Paris, a obsahuje motivy hrdinství, boje a božského
-                    zásahu do lidských záležitostí. <strong>Odyssea</strong> je pokračováním těchto událostí a sleduje
-                    dlouhou a náročnou
-                    cestu Odyssea zpět domů po skončení trojské války. Tato cesta trvá deset let a zahrnuje střetnutí s
-                    mnoha mytologickými bytostmi, jako jsou kyklopové, sirény a čarodějnice Kirké. Obě díla se zabývají
-                    tématy hrdinství, věrnosti, osudu a vztahu mezi lidmi a bohy.</p>
-                <h2>Bajky</h2>
-                <p><strong><a href="li-bajka.html">Ezop</a></strong></p>
-                <ul>
-                    <li>nejznámější (6. století př. n. l.)</li>
-                    <li>je považován za zakladatele řeckých bajek</li>
-                </ul>
-                <h2>Řecké drama</h2>
-                <h3>Představitelé</h3>
-                <p><strong>Aischylos</strong></p>
-                <ul>
-                    <li>autor tragédií</li>
-                    <li>zavedl dialog</li>
-                </ul>
-                <p><strong>Sofoklés</strong></p>
-                <ul>
-                    <li>autor tragédií</li>
-                    <li>zavedl třetího herce</li>
-                </ul>
-                <p><strong>Euripidés</strong></p>
-                <ul>
-                    <li>dílo Médeia</li>
-                    <li>Deus ex machina</li>
-                </ul>
-                <h3>Deus ex machina</h3>
-                <ul>
-                    <li>bylo to zařízení, na kterém byl herec v roli boha (nebo socha boha) spuštěn(a) na jeviště</li>
-                </ul>
-                <h2>Ostatní důležití lidé</h2>
-                <p><strong>Sokrates</strong> - jeden z nejvýznamnějších řeckých filozofů<br><strong>Herodotos</strong> - „otec dějepisu"<br><strong>Cicero</strong> - jeden
-                    z nejznámějších řečníků a spisovatelů<br><strong>Publius</strong> <span class="underlined">Vergilius</span> <strong>Maro</strong> -
-                    vytvořil římský národní epos Aeneis<br><strong>Publius</strong> <span class="underlined">Ovidius</span> <strong>Naso</strong> - psal
-                    milostnou lyriku - Umění milovat<br><strong>Platus</strong>
-                <ul>
-                    <li>dramatik, autor komedií v archaické době římské literatury</li>
-                    <li>Komedie o hrnci</li>
-                </ul>
-                <p><strong>Caesar</strong></p>
-                <ul>
-                    <li>nejslavnější římský císař</li>
-                    <li>věnoval se řečnictví, poezii, latinské gramatice a historické próze</li>
-                </ul>
-                </p>
-                <button onclick="window.history.back()"><i class="bi bi-arrow-left"></i></button>
-            </div>
-        </section>
-
-    </main>
-    <!-- Patička -->
-    <footer>
-        <div class="footer-content">
-            <a href="about.html"><img src="images/white-logo.png" alt="Tobikovo Logo" width="100px"></a>
-        </div>
-    </footer>
-    <!-- JSs -->
-    <script src="javastripts/nav.js"></script>
-</body>
-
-</html>
+    <h2>Základy</h2>
+    <ul>
+        <li>je to literatura starověkého Řecka a Říma</li>
+        <li>
+            nejstarší autor (8. století př. n. l.) - Homér - Ilias a Odyssea
+        </li>
+    </ul>
+    <h2>Ilias a Odyssea</h2>
+    <p>
+        Ilias a Odyssea jsou dvě epické básně připisované starořeckému básníkovi
+        Homérovi, které patří k nejvýznamnějším dílům starověké literatury.
+        <strong>Ilias</strong> se zaměřuje na poslední týdny trojské války,
+        přičemž hlavní postavou je hrdina Achilles a jeho spor s velitelem Řeků,
+        Agamemnonem. Příběh líčí také osudy dalších hrdinů, jako je Hektor a
+        Paris, a obsahuje motivy hrdinství, boje a božského zásahu do lidských
+        záležitostí. <strong>Odyssea</strong> je pokračováním těchto událostí a
+        sleduje dlouhou a náročnou cestu Odyssea zpět domů po skončení trojské
+        války. Tato cesta trvá deset let a zahrnuje střetnutí s mnoha
+        mytologickými bytostmi, jako jsou kyklopové, sirény a čarodějnice Kirké.
+        Obě díla se zabývají tématy hrdinství, věrnosti, osudu a vztahu mezi
+        lidmi a bohy.
+    </p>
+    <h2>Bajky</h2>
+    <p>
+        <strong><a href="li-bajka.html">Ezop</a></strong>
+    </p>
+    <ul>
+        <li>nejznámější (6. století př. n. l.)</li>
+        <li>je považován za zakladatele řeckých bajek</li>
+    </ul>
+    <h2>Řecké drama</h2>
+    <h3>Představitelé</h3>
+    <p><strong>Aischylos</strong></p>
+    <ul>
+        <li>autor tragédií</li>
+        <li>zavedl dialog</li>
+    </ul>
+    <p><strong>Sofoklés</strong></p>
+    <ul>
+        <li>autor tragédií</li>
+        <li>zavedl třetího herce</li>
+    </ul>
+    <p><strong>Euripidés</strong></p>
+    <ul>
+        <li>dílo Médeia</li>
+        <li>Deus ex machina</li>
+    </ul>
+    <h3>Deus ex machina</h3>
+    <ul>
+        <li>
+            bylo to zařízení, na kterém byl herec v roli boha (nebo socha boha)
+            spuštěn(a) na jeviště
+        </li>
+    </ul>
+    <h2>Ostatní důležití lidé</h2>
+    <p>
+        <strong>Sokrates</strong> - jeden z nejvýznamnějších řeckých filozofů<br /><strong
+            >Herodotos</strong
+        >
+        - „otec dějepisu"<br /><strong>Cicero</strong> - jeden z nejznámějších
+        řečníků a spisovatelů<br /><strong>Publius</strong>
+        <span class="underlined">Vergilius</span> <strong>Maro</strong> -
+        vytvořil římský národní epos Aeneis<br /><strong>Publius</strong>
+        <span class="underlined">Ovidius</span> <strong>Naso</strong> - psal
+        milostnou lyriku - Umění milovat<br /><strong>Platus</strong>
+    </p>
+    <ul>
+        <li>dramatik, autor komedií v archaické době římské literatury</li>
+        <li>Komedie o hrnci</li>
+    </ul>
+    <p><strong>Caesar</strong></p>
+    <ul>
+        <li>nejslavnější římský císař</li>
+        <li>
+            věnoval se řečnictví, poezii, latinské gramatice a historické próze
+        </li>
+    </ul>
+</section>

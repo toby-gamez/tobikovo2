@@ -1,246 +1,148 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Historie - Hudební výchova - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar"></nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Historie</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Historie hudby sahá až do pravěku, kdy lidé
-                            používali jednoduché nástroje a zpěv pro rituály a
-                            komunikaci. V antickém Řecku se hudba stala součástí
-                            filozofie a vzdělání. V průběhu středověku vznikla
-                            západní notace a církevní hudba. V renesanci a
-                            baroku se hudba vyvinula v komplexní formy jako
-                            opera a oratorium. Klasicismus přinesl strukturované
-                            skladby, zatímco romantismus se zaměřil na
-                            emocionální expresi. Ve 20. století se objevily nové
-                            žánry jako jazz, rock nebo elektronická hudba, což
-                            zásadně ovlivnilo současnou hudbu.
-                        </p>
-                    </div>
-                    <h2>První hudební projevy člověka</h2>
-                    <ul>
-                        <li>napodobování ptačího zpěvu</li>
-                        <li>vznik hudby je spojen s rytmem práce</li>
-                        <li>
-                            první hudební nástroje - bicí - klacky, kosti,
-                            kameny
-                        </li>
-                        <li>
-                            při Době bronzové se projevují strunné nástroje
-                            (lyry, harfy, loutny) + různé píšťaly
-                        </li>
-                    </ul>
-                    <h2>Řecko</h2>
-                    <ul>
-                        <li>
-                            za zakladatele hudby považovali boha Apollóna
-                            (duchovní hudba) a boha Dionýsa (světská hudba)
-                        </li>
-                        <li>nejznámější hudebník - Orfeus</li>
-                        <li>
-                            hudba se zapisovala písmeny podobnými řecké abecedě
-                        </li>
-                        <li>
-                            nejznámější památka - Seikelova píseň - vytesaná na
-                            jeho náhrobním kameni
-                        </li>
-                    </ul>
-                    <h2>Řím</h2>
-                    <ul>
-                        <li>hudba podobná Řecku</li>
-                        <li>
-                            papež Gregor (Řehoř I. Veliký) se na přelomu 6. a 7.
-                            století zasloužil o sjednocení církevní hudby, tím
-                            vznikl Gregoriánský chorál (jednohlasý zpěv bez
-                            doprovodu)
-                        </li>
-                    </ul>
-                    <h2>Středověk</h2>
-                    <ul>
-                        <li>hudba vycházela z řecké</li>
-                        <li>
-                            od konce 11. století se k umění obracejí i vyšší
-                            vrstvy - provozovali hudbu
-                        </li>
-                        <li>rytíři</li>
-                        <ul>
-                            <li>Trubadúři</li>
-                            <li>Trouvéři</li>
-                            <li>Minnesängři</li>
-                        </ul>
-                        <li>náměty písní - hrdinské činy, milostná lyrika</li>
-                    </ul>
-                    <h2>Renesance</h2>
-                    <ul>
-                        <li>od 15. století</li>
-                        <li>rozvoj polyfonie</li>
-                        <li>
-                            nejznámější skladatelé - Giovanni da Palestrina,
-                            Orlando di Lasso
-                        </li>
-                    </ul>
-                    <h2>Počátky opery</h2>
-                    <ul>
-                        <li>od 17. století (baroko)</li>
-                        <li>
-                            nejznámější skladatelé - Claudio Monteverdi, Jacopo
-                            Peri
-                        </li>
-                        <li>
-                            nové hudební formy (<a href="hv-kantata.html"
-                                >kantáta</a
-                            >, <a href="hv-oratorium.html">oratorium</a>, suita,
-                            <a href="hv-koncert.html">koncert</a>, fuga)
-                        </li>
-                        <li>náměty z antiky</li>
-                        <li>části opery</li>
-                        <ul>
-                            <li>předehra - instrumentální</li>
-                            <li>
-                                dějství (akty) - druhy zpěvu: árie recitativ
-                                sbory balet duety
-                            </li>
-                        </ul>
-                        <li>opery - Orfeo, Ariadna</li>
-                        <li>
-                            opera je divadelní hra, kde se
-                            <strong>jen zpívá</strong>
-                        </li>
-                    </ul>
-                    <h2>Baroko</h2>
-                    <p>Georg Friedrich Händel</p>
-                    <ul>
-                        <li>německý hudební skladatel</li>
-                        <li>většinu života prožil v Anglii</li>
-                        <li>
-                            díla - <a href="hv-oratorium.html">Mesiáš</a>, Hudba
-                            k ohňostroji
-                        </li>
-                    </ul>
-                    <p>Antonio Vivaldi</p>
-                    <ul>
-                        <li>jeden z prvních mistrů koncertů</li>
-                        <li>italský skladatel a houslista</li>
-                        <li>
-                            nejvýznamnější dílo - Čtvero ročních dob - koncertní
-                            cyklus
-                        </li>
-                    </ul>
-                    <p>Johann Sebastian Bach</p>
-                    <ul>
-                        <li>varhaník</li>
-                        <li>nejvýznamnější dílo - Toccata a fuga d moll</li>
-                    </ul>
-                    <h2>Klasicismus</h2>
-                    <ul>
-                        <li>
-                            druhá polovina 18. století - začátek 19. století
-                        </li>
-                        <li>
-                            nastal <strong>rozvoj instrumentální hudby</strong>
-                        </li>
-                        <li>
-                            vyvinula se <a href="hv-symfonie.html">symfonie</a>
-                        </li>
-                        <li>
-                            oblibu si získala <strong>komorní hudba</strong>
-                        </li>
-                    </ul>
-                    <p>Josef Haydn</p>
-                    <ul>
-                        <li>dílo - S úderem kotlů</li>
-                    </ul>
-                    <p>Wolfgang Amadeus Mozart</p>
-                    <ul>
-                        <li>
-                            <strong>jeden z největších tvůrců na světě</strong>
-                        </li>
-                        <li>jezdil často do Čech, rád v Praze přebýval</li>
-                        <li>díla</li>
-                        <ul>
-                            <li>Figarova svatba</li>
-                            <li>Don Giovanni</li>
-                            <li>serenády - Malá noční hudba</li>
-                        </ul>
-                    </ul>
-                    <p>Ludwig van Beethoven</p>
-                    <ul>
-                        <li>
-                            <strong>jeden z největších tvůrců na světě</strong>
-                        </li>
-                        <li>
-                            symfonie - 5. - Osudová, 9. S Ódou na radost - hymna
-                            EU
-                        </li>
-                    </ul>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Historie
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Historie hudby sahá až do pravěku, kdy lidé používali jednoduché
+            nástroje a zpěv pro rituály a komunikaci. V antickém Řecku se hudba
+            stala součástí filozofie a vzdělání. V průběhu středověku vznikla
+            západní notace a církevní hudba. V renesanci a baroku se hudba
+            vyvinula v komplexní formy jako opera a oratorium. Klasicismus
+            přinesl strukturované skladby, zatímco romantismus se zaměřil na
+            emocionální expresi. Ve 20. století se objevily nové žánry jako
+            jazz, rock nebo elektronická hudba, což zásadně ovlivnilo současnou
+            hudbu.
+        </p>
+    </div>
+    <h2>První hudební projevy člověka</h2>
+    <ul>
+        <li>napodobování ptačího zpěvu</li>
+        <li>vznik hudby je spojen s rytmem práce</li>
+        <li>první hudební nástroje - bicí - klacky, kosti, kameny</li>
+        <li>
+            při Době bronzové se projevují strunné nástroje (lyry, harfy,
+            loutny) + různé píšťaly
+        </li>
+    </ul>
+    <h2>Řecko</h2>
+    <ul>
+        <li>
+            za zakladatele hudby považovali boha Apollóna (duchovní hudba) a
+            boha Dionýsa (světská hudba)
+        </li>
+        <li>nejznámější hudebník - Orfeus</li>
+        <li>hudba se zapisovala písmeny podobnými řecké abecedě</li>
+        <li>
+            nejznámější památka - Seikelova píseň - vytesaná na jeho náhrobním
+            kameni
+        </li>
+    </ul>
+    <h2>Řím</h2>
+    <ul>
+        <li>hudba podobná Řecku</li>
+        <li>
+            papež Gregor (Řehoř I. Veliký) se na přelomu 6. a 7. století
+            zasloužil o sjednocení církevní hudby, tím vznikl Gregoriánský
+            chorál (jednohlasý zpěv bez doprovodu)
+        </li>
+    </ul>
+    <h2>Středověk</h2>
+    <ul>
+        <li>hudba vycházela z řecké</li>
+        <li>
+            od konce 11. století se k umění obracejí i vyšší vrstvy -
+            provozovali hudbu
+        </li>
+        <li>rytíři</li>
+        <ul>
+            <li>Trubadúři</li>
+            <li>Trouvéři</li>
+            <li>Minnesängři</li>
+        </ul>
+        <li>náměty písní - hrdinské činy, milostná lyrika</li>
+    </ul>
+    <h2>Renesance</h2>
+    <ul>
+        <li>od 15. století</li>
+        <li>rozvoj polyfonie</li>
+        <li>
+            nejznámější skladatelé - Giovanni da Palestrina, Orlando di Lasso
+        </li>
+    </ul>
+    <h2>Počátky opery</h2>
+    <ul>
+        <li>od 17. století (baroko)</li>
+        <li>nejznámější skladatelé - Claudio Monteverdi, Jacopo Peri</li>
+        <li>
+            nové hudební formy (<a href="hv-kantata.html">kantáta</a>,
+            <a href="hv-oratorium.html">oratorium</a>, suita,
+            <a href="hv-koncert.html">koncert</a>, fuga)
+        </li>
+        <li>náměty z antiky</li>
+        <li>části opery</li>
+        <ul>
+            <li>předehra - instrumentální</li>
+            <li>
+                dějství (akty) - druhy zpěvu: árie recitativ sbory balet duety
+            </li>
+        </ul>
+        <li>opery - Orfeo, Ariadna</li>
+        <li>
+            opera je divadelní hra, kde se
+            <strong>jen zpívá</strong>
+        </li>
+    </ul>
+    <h2>Baroko</h2>
+    <p>Georg Friedrich Händel</p>
+    <ul>
+        <li>německý hudební skladatel</li>
+        <li>většinu života prožil v Anglii</li>
+        <li>
+            díla - <a href="hv-oratorium.html">Mesiáš</a>, Hudba k ohňostroji
+        </li>
+    </ul>
+    <p>Antonio Vivaldi</p>
+    <ul>
+        <li>jeden z prvních mistrů koncertů</li>
+        <li>italský skladatel a houslista</li>
+        <li>nejvýznamnější dílo - Čtvero ročních dob - koncertní cyklus</li>
+    </ul>
+    <p>Johann Sebastian Bach</p>
+    <ul>
+        <li>varhaník</li>
+        <li>nejvýznamnější dílo - Toccata a fuga d moll</li>
+    </ul>
+    <h2>Klasicismus</h2>
+    <ul>
+        <li>druhá polovina 18. století - začátek 19. století</li>
+        <li>nastal <strong>rozvoj instrumentální hudby</strong></li>
+        <li>vyvinula se <a href="hv-symfonie.html">symfonie</a></li>
+        <li>oblibu si získala <strong>komorní hudba</strong></li>
+    </ul>
+    <p>Josef Haydn</p>
+    <ul>
+        <li>dílo - S úderem kotlů</li>
+    </ul>
+    <p>Wolfgang Amadeus Mozart</p>
+    <ul>
+        <li>
+            <strong>jeden z největších tvůrců na světě</strong>
+        </li>
+        <li>jezdil často do Čech, rád v Praze přebýval</li>
+        <li>díla</li>
+        <ul>
+            <li>Figarova svatba</li>
+            <li>Don Giovanni</li>
+            <li>serenády - Malá noční hudba</li>
+        </ul>
+    </ul>
+    <p>Ludwig van Beethoven</p>
+    <ul>
+        <li>
+            <strong>jeden z největších tvůrců na světě</strong>
+        </li>
+        <li>symfonie - 5. - Osudová, 9. S Ódou na radost - hymna EU</li>
+    </ul>
+</section>

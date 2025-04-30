@@ -1,105 +1,27 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Dělitelnost - Matematika - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar">
-            <a href="#home"
-                ><img src="images/white-logo.png" alt="Logo" width="75px"
-            /></a>
-            <a href="#home">Domů</a>
-            <a href="#ucivo">Učivo</a>
-            <a href="#o-nas">O nás</a>
-        </nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Dělitelnost</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Dělitelnost čísla se určuje podle několika pravidel.
-                            Číslo je dělitelné 2, pokud končí sudou číslicí.
-                            Dělitelnost 3 zkontrolujeme tak, že součet jeho
-                            číslic je dělitelný 3. Dělitelnost 5 platí, pokud
-                            číslo končí 0 nebo 5. Dělitelnost 10 je podmíněná
-                            tím, že číslo končí nulou. Další pravidla
-                            dělitelnosti existují pro čísla 4, 6, 9 nebo 11 a
-                            jsou specifická pro konkrétní číslice v čísle.
-                        </p>
-                    </div>
-                    <h2>Informace</h2>
-                    <p>
-                        Aby bylo nějaké číslo dělitelné, musí se dát
-                        <strong>dělit beze zbytku</strong> (9 ÷ 3 = 3 (0))
-                    </p>
-                    <h2>Prvočísla</h2>
-                    <p>2, 5, 11, 13, 17...</p>
-                    <p>
-                        mají <strong>právě 2 dělitele</strong> (1 a sami sebe)
-                    </p>
-                    <h2>Složená čísla</h2>
-                    <p>444, 448, 4, 8, 6</p>
-                    <p>mají <strong>3 a více dělitelů</strong></p>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Dělitelnost
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Dělitelnost čísla se určuje podle několika pravidel. Číslo je
+            dělitelné 2, pokud končí sudou číslicí. Dělitelnost 3 zkontrolujeme
+            tak, že součet jeho číslic je dělitelný 3. Dělitelnost 5 platí,
+            pokud číslo končí 0 nebo 5. Dělitelnost 10 je podmíněná tím, že
+            číslo končí nulou. Další pravidla dělitelnosti existují pro čísla 4,
+            6, 9 nebo 11 a jsou specifická pro konkrétní číslice v čísle.
+        </p>
+    </div>
+    <h2>Informace</h2>
+    <p>
+        Aby bylo nějaké číslo dělitelné, musí se dát
+        <strong>dělit beze zbytku</strong> (9 ÷ 3 = 3 (0))
+    </p>
+    <h2>Prvočísla</h2>
+    <p>2, 5, 11, 13, 17...</p>
+    <p>mají <strong>právě 2 dělitele</strong> (1 a sami sebe)</p>
+    <h2>Složená čísla</h2>
+    <p>444, 448, 4, 8, 6</p>
+    <p>mají <strong>3 a více dělitelů</strong></p>
+</section>

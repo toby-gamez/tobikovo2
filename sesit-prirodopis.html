@@ -1,94 +1,28 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sešit přírodopisu - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar"></nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Sešit přírodopisu</h1>
-                <div style="text-align: left">
-                    <span style="color: #9c9c9c"
-                        ><em>od nejnovějšího k nejstaršímu</em></span
-                    >
-                    <h2>Vylučovací soustava</h2>
-                    <a href="pr-vylucovaci-sous.html">zde</a>
-                    <h2>Trávící soustava</h2>
-                    <a href="pr-travici-sous.html">zde</a>
-                    <h2>Dýchací soustava</h2>
-                    <a href="pr-dychaci-sous.html">zde</a>
-                    <h2>Oběhová soustava</h2>
-                    <a href="pr-obehova-sous.html">zde</a>
-                    <h2>Svalová soustava</h2>
-                    <a href="pr-svalova-sous.html">zde</a>
-                    <h2>Opěrná soustava</h2>
-                    <a href="pr-operna-sous.html">zde</a>
-                    <h2>Tkáně</h2>
-                    <a href="pr-tkane.html">zde</a>
-                    <h2>O člověku</h2>
-                    <a href="pr-o-cloveku.html">zde</a>
-                    <br />
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Sešit přírodopisu
+type: content
+-->
+<section id="only-content">
+    <span style="color: #9c9c9c"><em>od nejnovějšího k nejstaršímu</em></span>
+    <h2>Nervová soustava</h2>
+    <a href="pr-nervova-sous.html">zde</a>
+    <h2>Kůže</h2>
+    <a href="pr-kuze.html">zde</a>
+    <h2>Vylučovací soustava</h2>
+    <a href="pr-vylucovaci-sous.html">zde</a>
+    <h2>Trávící soustava</h2>
+    <a href="pr-travici-sous.html">zde</a>
+    <h2>Dýchací soustava</h2>
+    <a href="pr-dychaci-sous.html">zde</a>
+    <h2>Oběhová soustava</h2>
+    <a href="pr-obehova-sous.html">zde</a>
+    <h2>Svalová soustava</h2>
+    <a href="pr-svalova-sous.html">zde</a>
+    <h2>Opěrná soustava</h2>
+    <a href="pr-operna-sous.html">zde</a>
+    <h2>Tkáně</h2>
+    <a href="pr-tkane.html">zde</a>
+    <h2>O člověku</h2>
+    <a href="pr-o-cloveku.html">zde</a>
+    <br />
+</section>

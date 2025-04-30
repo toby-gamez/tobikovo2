@@ -1,125 +1,46 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Fryderyk Chopin - Hudební výchova - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar">
-            <a href="#home"
-                ><img src="images/white-logo.png" alt="Logo" width="75px"
-            /></a>
-            <a href="#home">Domů</a>
-            <a href="#ucivo">Učivo</a>
-            <a href="#o-nas">O nás</a>
-        </nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Fryderyk Chopin</h1>
-                <p>[Fryderyk Šopén]</p>
-                <div style="text-align: left">
-                    <h2>Život a díla</h2>
-                    <img
-                        src="images/fryderyk-chopin.webp"
-                        class="rounded blog-image"
-                        alt="Fryderyk Chopin"
-                        height="170rem"
-                    />
-                    <ul>
-                        <li><strong>19. století - romantismus</strong></li>
-                        <li><strong>polský hudební skladatel</strong></li>
-                        <li><strong>klavírní virtuos</strong></li>
-                        <li>otec byl Francouz, matka Polka</li>
-                        <li>
-                            učil se hrát na klavír a v 7 letech se pokoušel o
-                            své první skladby
-                        </li>
-                        <li>1830 - odjel do Paříže</li>
-                        <li>zemřel na tuberkulózu</li>
-                        <li>
-                            <strong
-                                >díla - skladby pro klavír: Mazurky, Polonézy +
-                                Etudy [etýdy] (cvičné skladby)</strong
-                            >
-                        </li>
-                    </ul>
-                    <h2>Mazurka</h2>
-                    <ul>
-                        <li>oblíbený tanec Fryderyka Chopina</li>
-                        <li>
-                            je to v
-                            <math
-                                xmlns="http://www.w3.org/1998/Math/MathML"
-                                display="inline"
-                            >
-                                <mfrac>
-                                    <mi>3</mi>
-                                    <mi>4</mi>
-                                </mfrac>
-                            </math>
-                            taktu
-                        </li>
-                        <li>vznikl v Polsku</li>
-                    </ul>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Fryderyk Chopin
+type: content
+-->
+<section id="only-content">
+    <p>[Fryderyk Šopén]</p>
+    <h2>Život a díla</h2>
+    <img
+        src="images/fryderyk-chopin.webp"
+        class="rounded blog-image"
+        alt="Fryderyk Chopin"
+        height="170rem"
+    />
+    <ul>
+        <li><strong>19. století - romantismus</strong></li>
+        <li><strong>polský hudební skladatel</strong></li>
+        <li><strong>klavírní virtuos</strong></li>
+        <li>otec byl Francouz, matka Polka</li>
+        <li>
+            učil se hrát na klavír a v 7 letech se pokoušel o své první skladby
+        </li>
+        <li>1830 - odjel do Paříže</li>
+        <li>zemřel na tuberkulózu</li>
+        <li>
+            <strong
+                >díla - skladby pro klavír: Mazurky, Polonézy + Etudy [etýdy]
+                (cvičné skladby)</strong
+            >
+        </li>
+    </ul>
+    <h2>Mazurka</h2>
+    <ul>
+        <li>oblíbený tanec Fryderyka Chopina</li>
+        <li>
+            je to v
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+                <mfrac>
+                    <mi>3</mi>
+                    <mi>4</mi>
+                </mfrac>
+            </math>
+            taktu
+        </li>
+        <li>vznikl v Polsku</li>
+    </ul>
+</section>

@@ -1,139 +1,53 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Středověká literatura - Literatura - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="stylesheet" href="css/tabulkak.css" />
-        <link rel="icon" href="images/favicon.png" />
-        <style></style>
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-        <nav id="myNavbar">
-            <a href="#home"
-                ><img src="images/white-logo.png" alt="Logo" width="75px"
-            /></a>
-            <a href="#home">Domů</a>
-            <a href="#ucivo">Učivo</a>
-            <a href="#o-nas">O nás</a>
-        </nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Středověká literatura</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Středověká literatura zahrnuje literární díla
-                            vzniklá mezi 5. a 15. stoletím, která reflektují
-                            náboženské, rytířské a morální hodnoty té doby.
-                            Patří sem epické básně, legendy, hagiografie, ale i
-                            rytířské romány a alegorické příběhy. Významnými
-                            autory jsou např. Dante Alighieri a Geoffrey
-                            Chaucer, jejichž díla ovlivnila evropskou literaturu
-                            po celé středověké období.
-                        </p>
-                    </div>
-                    <p>
-                        (5. - 15. století, 1492 - vynález knihtisku, Johann
-                        Gutenberg)
-                    </p>
-                    <h2>Typy</h2>
-                    <h3>Lidová literatura</h3>
-                    <ul>
-                        <li>
-                            mnoho lidí neumělo číst a psát - příběhy se
-                            tradovaly ústně
-                        </li>
-                    </ul>
-                    <h3>Světská literatura</h3>
-                    <ul>
-                        <li>
-                            <a href="li-cestopis.html">cestopisy</a>, bajky,
-                            <a href="li-renesance-humanismus.html"
-                                >rytířské romány</a
-                            >, milostná poezie, rytířská epika
-                        </li>
-                    </ul>
-                    <h3>Náboženská literatura</h3>
-                    <ul>
-                        <li>
-                            duchovní písně,
-                            <a href="li-legenda.html">legendy</a>
-                        </li>
-                    </ul>
-                    <h3>Středověké drama</h3>
-                    <ul>
-                        <li>Mastičkář (české drama ze 14. století)</li>
-                    </ul>
-                    <h2>Písemnictví v českých zemích</h2>
-                    <p>
-                        V roce 863 přinesli na Velkou Moravu na žádost knížete
-                        Rostislava <strong>Konstantin</strong> (Cyril, 827 -
-                        869) a <strong>Metoděj</strong> (813 - 885)
-                    </p>
-                    <ul>
-                        <li>jazyk staroslověnštinu</li>
-                        <li>písmo Hlaholici</li>
-                        <li>náboženství křesťanské</li>
-                    </ul>
-                    <p>
-                        Vznikly o nich 2 legendy: Život Konstantinův, Život
-                        Metodějův.
-                    </p>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Středověká literatura
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Středověká literatura zahrnuje literární díla vzniklá mezi 5. a 15.
+            stoletím, která reflektují náboženské, rytířské a morální hodnoty té
+            doby. Patří sem epické básně, legendy, hagiografie, ale i rytířské
+            romány a alegorické příběhy. Významnými autory jsou např. Dante
+            Alighieri a Geoffrey Chaucer, jejichž díla ovlivnila evropskou
+            literaturu po celé středověké období.
+        </p>
+    </div>
+    <p>(5. - 15. století, 1492 - vynález knihtisku, Johann Gutenberg)</p>
+    <h2>Typy</h2>
+    <h3>Lidová literatura</h3>
+    <ul>
+        <li>mnoho lidí neumělo číst a psát - příběhy se tradovaly ústně</li>
+    </ul>
+    <h3>Světská literatura</h3>
+    <ul>
+        <li>
+            <a href="li-cestopis.html">cestopisy</a>, bajky,
+            <a href="li-renesance-humanismus.html">rytířské romány</a>, milostná
+            poezie, rytířská epika
+        </li>
+    </ul>
+    <h3>Náboženská literatura</h3>
+    <ul>
+        <li>
+            duchovní písně,
+            <a href="li-legenda.html">legendy</a>
+        </li>
+    </ul>
+    <h3>Středověké drama</h3>
+    <ul>
+        <li>Mastičkář (české drama ze 14. století)</li>
+    </ul>
+    <h2>Písemnictví v českých zemích</h2>
+    <p>
+        V roce 863 přinesli na Velkou Moravu na žádost knížete Rostislava
+        <strong>Konstantin</strong> (Cyril, 827 - 869) a
+        <strong>Metoděj</strong> (813 - 885)
+    </p>
+    <ul>
+        <li>jazyk staroslověnštinu</li>
+        <li>písmo Hlaholici</li>
+        <li>náboženství křesťanské</li>
+    </ul>
+    <p>Vznikly o nich 2 legendy: Život Konstantinův, Život Metodějův.</p>
+</section>

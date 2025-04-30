@@ -1,111 +1,33 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Stupňování - Mluvnice - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-        <nav id="myNavbar">
-            <a href="#home"
-                ><img src="images/white-logo.png" alt="Logo" width="75px"
-            /></a>
-            <a href="#home">Domů</a>
-            <a href="#ucivo">Učivo</a>
-            <a href="#o-nas">O nás</a>
-        </nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Stupňování</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Stupňování příslovcí nám umožňuje vyjádřit rozdíly v
-                            míře, intenzitě nebo způsobu děje. V tomto článku se
-                            podíváme na to, jak příslovce v češtině stupňujeme –
-                            od základního stupně (rychle), přes druhý (rychleji)
-                            až po třetí (nejrychleji). Ukážeme si pravidelné i
-                            nepravidelné tvary a vysvětlíme rozdíly oproti
-                            stupňování přídavných jmen. Díky přehledným
-                            příkladům si vše snadno osvojíte.
-                        </p>
-                    </div>
-                    <h2>Pravidelné stupňování</h2>
-                    <p>
-                        Je to <strong>stejné</strong> jako u
-                        <a href="ml-prid-jmena.html">přídavných jmen</a>
-                    </p>
-                    <ul>
-                        <li>
-                            2. stupeň - tvoří se z 1. stupně příponami -eji,
-                            ěji, -e
-                        </li>
-                        <li>3. stupeň - tvoří se z 2. stupně předponou nej-</li>
-                    </ul>
-                    <h2>Nepravidelné stupňování</h2>
-                    <ul>
-                        <li>dobře - lépe/líp</li>
-                        <li>zle - hůře/hůř</li>
-                        <li>málo - méně/míň</li>
-                        <li>mnoho - víc/více</li>
-                        <li>brzy - dřív/dříve</li>
-                    </ul>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Stupňování
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Stupňování příslovcí nám umožňuje vyjádřit rozdíly v míře, intenzitě
+            nebo způsobu děje. V tomto článku se podíváme na to, jak příslovce v
+            češtině stupňujeme – od základního stupně (rychle), přes druhý
+            (rychleji) až po třetí (nejrychleji). Ukážeme si pravidelné i
+            nepravidelné tvary a vysvětlíme rozdíly oproti stupňování přídavných
+            jmen. Díky přehledným příkladům si vše snadno osvojíte.
+        </p>
+    </div>
+    <h2>Pravidelné stupňování</h2>
+    <p>
+        Je to <strong>stejné</strong> jako u
+        <a href="ml-prid-jmena.html">přídavných jmen</a>
+    </p>
+    <ul>
+        <li>2. stupeň - tvoří se z 1. stupně příponami -eji, ěji, -e</li>
+        <li>3. stupeň - tvoří se z 2. stupně předponou nej-</li>
+    </ul>
+    <h2>Nepravidelné stupňování</h2>
+    <ul>
+        <li>dobře - lépe/líp</li>
+        <li>zle - hůře/hůř</li>
+        <li>málo - méně/míň</li>
+        <li>mnoho - víc/více</li>
+        <li>brzy - dřív/dříve</li>
+    </ul>
+</section>

@@ -1,90 +1,16 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
+<!--
+title: 404
+type: content
+-->
 
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>404 - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-        <style>
-            main {
-                margin-left: 0;
-            }
-        </style>
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Ajaj...</h1>
-                <div style="text-align: left">
-                    <h2>Co je chyba 404?</h2>
-                    <hr />
-                    <p>
-                        Pokud adresu URL neznáte: Občas můžete zaznamenat chyby
-                        404 pro adresy URL, které na vašem webu nikdy nebyly. K
-                        těmto chybám dochází, když se někdo pokusí přejít na
-                        adresu URL, která na vašem webu neexistuje – například
-                        když někdo při zadávání adresy URL do prohlížeče nebo
-                        při vytváření odkazu udělá překlep.
-                    </p>
-                </div>
-                <button onclick="openHome()">Zpět domů</button>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-        <script>
-            function openHome() {
-                window.location.href = "home.html";
-            }
-        </script>
-    </body>
-</html>
+<section id="only-content">
+    <h2>Co je chyba 404?</h2>
+    <hr />
+    <p>
+        Pokud adresu URL neznáte: Občas můžete zaznamenat chyby 404 pro adresy
+        URL, které na vašem webu nikdy nebyly. K těmto chybám dochází, když se
+        někdo pokusí přejít na adresu URL, která na vašem webu neexistuje –
+        například když někdo při zadávání adresy URL do prohlížeče nebo při
+        vytváření odkazu udělá překlep.
+    </p>
+</section>

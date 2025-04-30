@@ -1,135 +1,60 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Druhá mocnina - Matematika - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar">
-            <a href="#home"
-                ><img src="images/white-logo.png" alt="Logo" width="75px"
-            /></a>
-            <a href="#home">Domů</a>
-            <a href="#ucivo">Učivo</a>
-            <a href="#o-nas">O nás</a>
-        </nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Druhá mocnina</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Druhá mocnina čísla je základní matematická operace,
-                            která spočívá v násobení čísla samo sebou. Tento
-                            pojem je užitečný v různých oblastech, jako je
-                            geometrie nebo výpočty plochy čtverce. Druhá mocnina
-                            se často používá při řešení úloh a výpočtech
-                            souvisejících s kvadratickými funkcemi. Pomůže vám
-                            lépe pochopit principy mnoha matematických konceptů.
-                        </p>
-                    </div>
-                    <h2>Základy</h2>
-                    <p>a × a = a² - „á na druhou“</p>
-                    <img
-                        src="images/druha-mocnina.png"
-                        style="border-radius: 10px"
-                        width="200px"
-                        alt="a na druhou"
-                    />
-                    <p>
-                        mocnitel - kolikrát násobím číslo samo sebou<br />základ
-                        - číslo, které umocňuji
-                    </p>
-                    <p style="color: red">
-                        <strong>Druhá mocnina nemůže být záporná.</strong>
-                    </p>
-                    <p>(-7)² = -7 × (-7) = 49</p>
-                    <p style="color: red">Pozor!</p>
-                    <p>(-2)² ≠ -2²</p>
-                    <h3>Pravidlo</h3>
-                    <p>(a + b)² = a² + 2ab + b²</p>
-                    <h2>Umocňování čísel končících 0</h2>
-                    <p>8000²</p>
-                    <ol>
-                        <li>odmyslím si všechny poslední nuly - 8</li>
-                        <li>spočítám druhou mocninu - 8² = 64</li>
-                        <li>vrátím 2x tolik nul - 64 000 000</li>
-                    </ol>
-                    <p>8000² = 64 000 000</p>
-                    <h2>Umocňování čísel začínajících 0</h2>
-                    <p>0,06²</p>
-                    <ol>
-                        <li>odstraním desetinnou čárku - 6</li>
-                        <li>umocním číslo - 6² = 36</li>
-                        <li>vrátím 2x tolik desetinných míst - 0,0036</li>
-                    </ol>
-                    <p>0,06² = 0,0036</p>
-                    <h2>Druhá mocnina desetinných míst</h2>
-                    <p>1,3²</p>
-                    <ol>
-                        <li>odstraním desetinnou čárku - 13</li>
-                        <li>umocním číslo - 169</li>
-                        <li>vrátím 2x tolik desetinných míst - 1,69</li>
-                    </ol>
-                    <p>1,3² = 1,69</p>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Druhá mocnina
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Druhá mocnina čísla je základní matematická operace, která spočívá v
+            násobení čísla samo sebou. Tento pojem je užitečný v různých
+            oblastech, jako je geometrie nebo výpočty plochy čtverce. Druhá
+            mocnina se často používá při řešení úloh a výpočtech souvisejících s
+            kvadratickými funkcemi. Pomůže vám lépe pochopit principy mnoha
+            matematických konceptů.
+        </p>
+    </div>
+    <h2>Základy</h2>
+    <p>a × a = a² - „á na druhou“</p>
+    <img
+        src="images/druha-mocnina.png"
+        style="border-radius: 10px"
+        width="200px"
+        alt="a na druhou"
+    />
+    <p>
+        mocnitel - kolikrát násobím číslo samo sebou<br />základ - číslo, které
+        umocňuji
+    </p>
+    <p style="color: red">
+        <strong>Druhá mocnina nemůže být záporná.</strong>
+    </p>
+    <p>(-7)² = -7 × (-7) = 49</p>
+    <p style="color: red">Pozor!</p>
+    <p>(-2)² ≠ -2²</p>
+    <h3>Pravidlo</h3>
+    <p>(a + b)² = a² + 2ab + b²</p>
+    <h2>Umocňování čísel končících 0</h2>
+    <p>8000²</p>
+    <ol>
+        <li>odmyslím si všechny poslední nuly - 8</li>
+        <li>spočítám druhou mocninu - 8² = 64</li>
+        <li>vrátím 2x tolik nul - 64 000 000</li>
+    </ol>
+    <p>8000² = 64 000 000</p>
+    <h2>Umocňování čísel začínajících 0</h2>
+    <p>0,06²</p>
+    <ol>
+        <li>odstraním desetinnou čárku - 6</li>
+        <li>umocním číslo - 6² = 36</li>
+        <li>vrátím 2x tolik desetinných míst - 0,0036</li>
+    </ol>
+    <p>0,06² = 0,0036</p>
+    <h2>Druhá mocnina desetinných míst</h2>
+    <p>1,3²</p>
+    <ol>
+        <li>odstraním desetinnou čárku - 13</li>
+        <li>umocním číslo - 169</li>
+        <li>vrátím 2x tolik desetinných míst - 1,69</li>
+    </ol>
+    <p>1,3² = 1,69</p>
+</section>

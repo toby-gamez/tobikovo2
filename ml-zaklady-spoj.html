@@ -1,123 +1,41 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Spojky - Mluvnice - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar">
-            <a href="#home"
-                ><img src="images/white-logo.png" alt="Logo" width="75px"
-            /></a>
-            <a href="#home">Domů</a>
-            <a href="#ucivo">Učivo</a>
-            <a href="#o-nas">O nás</a>
-        </nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Spojky</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Spojky jsou důležitý neohebný slovní druh, který
-                            slouží ke spojování slov, vět nebo větších částí
-                            textu. V tomto článku si vysvětlíme, jaké existují
-                            druhy spojek – souřadicí (a, nebo, ale) a podřadicí
-                            (protože, aby, když), a jak správně fungují ve
-                            větách. Naučíme se, jak spojky ovlivňují stavbu vět
-                            a význam textu, a ukážeme si praktické příklady i
-                            časté chyby v jejich používání.
-                        </p>
-                    </div>
-                    <h2>Základy</h2>
-                    <ul>
-                        <li>spojují větné členy</li>
-                        <li>spojují věty</li>
-                    </ul>
-                    <h2>Dělení</h2>
-                    <p>
-                        <em
-                            >*toto dělení platí pouze pro spojky, které spojují
-                            věty</em
-                        >
-                    </p>
-                    <h3>Podřadící</h3>
-                    <ul>
-                        <li>
-                            spojují
-                            <a href="ml-souveti.html">věty vedlejší</a> k větě,
-                            na níž závisí
-                        </li>
-                        <li>např.: že, protože, aby, jestliže, až, než, -li</li>
-                    </ul>
-                    <h3>Souřadící</h3>
-                    <ul>
-                        <li>
-                            spojují souřadné věty hlavní, souřadné členy v
-                            několikanásobném větném členu
-                        </li>
-                        <li>
-                            např.: a, i, nebo, ale, avšak, však, neboť, či...
-                        </li>
-                    </ul>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Spojky
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Spojky jsou důležitý neohebný slovní druh, který slouží ke spojování
+            slov, vět nebo větších částí textu. V tomto článku si vysvětlíme,
+            jaké existují druhy spojek – souřadicí (a, nebo, ale) a podřadicí
+            (protože, aby, když), a jak správně fungují ve větách. Naučíme se,
+            jak spojky ovlivňují stavbu vět a význam textu, a ukážeme si
+            praktické příklady i časté chyby v jejich používání.
+        </p>
+    </div>
+    <h2>Základy</h2>
+    <ul>
+        <li>spojují větné členy</li>
+        <li>spojují věty</li>
+    </ul>
+    <h2>Dělení</h2>
+    <p>
+        <em>*toto dělení platí pouze pro spojky, které spojují věty</em>
+    </p>
+    <h3>Podřadící</h3>
+    <ul>
+        <li>
+            spojují
+            <a href="ml-souveti.html">věty vedlejší</a> k větě, na níž závisí
+        </li>
+        <li>např.: že, protože, aby, jestliže, až, než, -li</li>
+    </ul>
+    <h3>Souřadící</h3>
+    <ul>
+        <li>
+            spojují souřadné věty hlavní, souřadné členy v několikanásobném
+            větném členu
+        </li>
+        <li>např.: a, i, nebo, ale, avšak, však, neboť, či...</li>
+    </ul>
+</section>

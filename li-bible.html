@@ -1,124 +1,47 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Bible - Literatura - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar"></nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Bible</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Bible je posvátný text, který tvoří základní kámen
-                            víry v judaismu a křesťanství. Skládá se ze Starého
-                            a Nového zákona, které obsahují historii, zákony,
-                            proroctví, poezii a učení. Bible je nejen
-                            náboženským, ale i kulturním a historickým
-                            dokumentem, který měl hluboký vliv na západní
-                            civilizaci.
-                        </p>
-                    </div>
-                    <h2>Starý zákon</h2>
-                    <p>
-                        Je to <strong>první část Bible</strong>, která je
-                        považována za svatý text jak v judaismu, tak v
-                        křesťanství. Skládá se z mnoha knih, které zahrnují
-                        <strong
-                            >příběhy o stvoření světa, o životě a dějinách
-                            izraelského národa, o prorocích a zákonech</strong
-                        >. Mezi nejznámější příběhy patří
-                        <strong
-                            >stvoření Adama a Evy, Noemova archa, Mojžíšův
-                            odchod z Egypta a Desatero přikázání</strong
-                        >. Starý zákon je bohatý na morální a duchovní poučení a
-                        klade důraz na
-                        <strong>smlouvu mezi Bohem a Izraelity</strong>. Je psán
-                        převážně hebrejsky a byl dokončován v průběhu několika
-                        staletí. Byl sepsán pravděpodobně mezi
-                        <strong>13. a 6. stoletím př. n. l.</strong>
-                    </p>
-                    <h2>Nový zákon</h2>
-                    <p>
-                        Nový zákon je <strong>druhá část Bible</strong> a je
-                        specificky křesťanským textem. Zaměřuje se na
-                        <strong
-                            >život, učení, smrt a vzkříšení Ježíše
-                            Krista</strong
-                        >, který je v křesťanství považován za Mesiáše a Božího
-                        Syna. Obsahuje
-                        <strong
-                            >čtyři evangelia (Matouš, Marek, Lukáš a
-                            Jan)</strong
-                        >, která vyprávějí o Ježíšově životě, a také
-                        <strong>listy apoštola Pavla</strong> a dalších raných
-                        křesťanských vůdců, které vysvětlují křesťanskou víru.
-                        Nový zákon uzavírá <strong>kniha Zjevení</strong>, která
-                        předpovídá konec světa a druhý příchod Krista. Text je
-                        napsán v řečtině a vznikal v
-                        <strong>1. století n. l.</strong>
-                    </p>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Bible
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Bible je posvátný text, který tvoří základní kámen víry v judaismu a
+            křesťanství. Skládá se ze Starého a Nového zákona, které obsahují
+            historii, zákony, proroctví, poezii a učení. Bible je nejen
+            náboženským, ale i kulturním a historickým dokumentem, který měl
+            hluboký vliv na západní civilizaci.
+        </p>
+    </div>
+    <h2>Starý zákon</h2>
+    <p>
+        Je to <strong>první část Bible</strong>, která je považována za svatý
+        text jak v judaismu, tak v křesťanství. Skládá se z mnoha knih, které
+        zahrnují
+        <strong
+            >příběhy o stvoření světa, o životě a dějinách izraelského národa, o
+            prorocích a zákonech</strong
+        >. Mezi nejznámější příběhy patří
+        <strong
+            >stvoření Adama a Evy, Noemova archa, Mojžíšův odchod z Egypta a
+            Desatero přikázání</strong
+        >. Starý zákon je bohatý na morální a duchovní poučení a klade důraz na
+        <strong>smlouvu mezi Bohem a Izraelity</strong>. Je psán převážně
+        hebrejsky a byl dokončován v průběhu několika staletí. Byl sepsán
+        pravděpodobně mezi
+        <strong>13. a 6. stoletím př. n. l.</strong>
+    </p>
+    <h2>Nový zákon</h2>
+    <p>
+        Nový zákon je <strong>druhá část Bible</strong> a je specificky
+        křesťanským textem. Zaměřuje se na
+        <strong>život, učení, smrt a vzkříšení Ježíše Krista</strong>, který je
+        v křesťanství považován za Mesiáše a Božího Syna. Obsahuje
+        <strong>čtyři evangelia (Matouš, Marek, Lukáš a Jan)</strong>, která
+        vyprávějí o Ježíšově životě, a také
+        <strong>listy apoštola Pavla</strong> a dalších raných křesťanských
+        vůdců, které vysvětlují křesťanskou víru. Nový zákon uzavírá
+        <strong>kniha Zjevení</strong>, která předpovídá konec světa a druhý
+        příchod Krista. Text je napsán v řečtině a vznikal v
+        <strong>1. století n. l.</strong>
+    </p>
+</section>

@@ -1,233 +1,162 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Kruhy a kružnice - Geometrie - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar"></nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Kruhy a kružnice</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Kružnice je množina bodů ve stejné vzdálenosti od
-                            středu, zatímco kruh zahrnuje i vnitřek této
-                            kružnice. Důležitými pojmy jsou poloměr, průměr a
-                            obvod. Kruhy se využívají v geometrii i technických
-                            oborech. Výpočty souvisejí s číslem π (pí).
-                        </p>
-                    </div>
-                    <h2>Kruh</h2>
-                    <ul>
-                        <li>
-                            je množina bodů, které jsou od středu kružnice ve
-                            stejné a menší vzdálenosti
-                        </li>
-                    </ul>
-                    <h2>Kružnice</h2>
-                    <ul>
-                        <li>
-                            je množina bodů, které jsou od středu kružnice ve
-                            stejné vzdálenosti
-                        </li>
-                    </ul>
-                    <h3>Vzájemná poloha přímky a kružnice</h3>
-                    <h4>Sečna</h4>
-                    <img
-                        src="images/secna.png"
-                        style="border-radius: 10px"
-                        width="200px"
-                        alt="Sečna"
-                    />
-                    <p>Má společné 2 body.</p>
-                    <h4>Tečna</h4>
-                    <img
-                        src="images/tecna.png"
-                        style="border-radius: 10px"
-                        width="200px"
-                        alt="Tečna"
-                    />
-                    <p>Má společný 1 bod.</p>
-                    <h4>Nesečna</h4>
-                    <img
-                        src="images/nesecna.png"
-                        style="border-radius: 10px"
-                        width="200px"
-                        alt="Nesečna"
-                    />
-                    <p>Nemá společné body.</p>
-                    <h4>Tětiva</h4>
-                    <img
-                        src="images/tetiva.png"
-                        style="border-radius: 10px"
-                        width="200px"
-                        alt="Tětiva"
-                    />
-                    <p>Je úsečka spojující 2 body kružnice.</p>
-                    <img
-                        src="images/tetiva-pyth.png"
-                        style="border-radius: 10px"
-                        width="200px"
-                        alt="Tětiva"
-                    />
-                    <p>
-                        Dá se díky ní dopočítat poloměr, vzdálenost od středu,
-                        nebo polovinu délky tětivy pomocí Pythagorovy věty.
-                    </p>
-                    <h3>Vzájemná poloha 2 kružnic</h3>
-                    <p>Středná - úsečka mezi dvěma středy kružnic</p>
-                    <h4>Žádný společný dotyk</h4>
-                    <a href="images/zadny1.png"
-                        ><img
-                            src="images/zadny1.png"
-                            style="border-radius: 10px"
-                            width="300px"
-                            alt="1"
-                    /></a>
-                    <p>|S₁S₂| ≠ 0 mm</p>
-                    <p>|S₁S₂| > r₁ + r₂</p>
-                    <a href="images/zadny2.png"
-                        ><img
-                            src="images/zadny2.png"
-                            style="border-radius: 10px"
-                            width="300px"
-                            alt="2"
-                    /></a>
-                    <p>|S₁S₂| < r₁ + r₂</p>
-                    <h4>Jeden společný bod</h4>
-                    <a href="images/jedenvnitrni.png"
-                        ><img
-                            src="images/jedenvnitrni.png"
-                            style="border-radius: 10px"
-                            width="300px"
-                            alt="2"
-                    /></a>
-                    <p>vnitřní dotyk - kružnice jsou v sobě</p>
-                    <p>|S₁S₂| = r₁ - r₂</p>
-                    <p>|S₁S₂| ≠ 0 mm</p>
-                    <a href="images/jedenvnejsi.png"
-                        ><img
-                            src="images/jedenvnejsi.png"
-                            style="border-radius: 10px"
-                            width="300px"
-                            alt="2"
-                    /></a>
-                    <p>vnější dotyk - kružnice jsou vedle sebe</p>
-                    <p>|S₁S₂| = r₁ + r₂</p>
-                    <p>|S₁S₂| ≠ 0 mm</p>
-                    <h4>Dva společné body</h4>
-                    <a href="images/dva.png"
-                        ><img
-                            src="images/dva.png"
-                            style="border-radius: 10px"
-                            width="300px"
-                            alt="2"
-                    /></a>
-                    <p>|S₁S₂| < r₁ + r₂</p>
-                    <p>|S₁S₂| ≠ 0 mm</p>
-                    <h3>Thaletova kružnice</h3>
-                    <p>
-                        Thaletova kružnice je kružnice, která prochází středy
-                        stran pravoúhlého trojúhelníku.
-                    </p>
-                    <a href="images/thaletova.png"
-                        ><img
-                            src="images/thaletova.png"
-                            style="border-radius: 10px"
-                            width="300px"
-                            alt="2"
-                    /></a>
-                    <h4>Rýsování tečen z bodu mimo kružnici</h4>
-                    <a href="images/tecny-z-bodu.png"
-                        ><img
-                            src="images/tecny-z-bodu.png"
-                            style="border-radius: 10px"
-                            width="300px"
-                            alt="2"
-                    /></a>
-                    <h2>Obvod kruhu a délka kružnice</h2>
-                    <p>obvod kruhu: 5 cm<br />průměr kruhu: 1,59 cm</p>
-                    <p>když vynásobíme průměr s π (pi), výjde nám obvod</p>
-                    <img src="images/pi-calc.png" width="300px" alt="" />
-                    <p>*zaokrouhlíme</p>
-                    <p>
-                        Číslo pi je nekonečné, ale neopakuje se (0,333333...),
-                        má hodnotu příbližně 3,14....
-                    </p>
-                    <h2>Obsah kruhu</h2>
-                    <p>
-                        Krybychom rozdělili kruh na ∞ částí, vznikl by po součnu
-                        obdélník (strana krát strana).
-                    </p>
-                    <a href="images/obsah-kruhu.png"
-                        ><img
-                            src="images/obsah-kruhu.png"
-                            width="300px"
-                            alt="znázornění obsahu"
-                    /></a>
-                    <p>Vzorec: S = πr²</p>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Kruhy a kružnice
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Kružnice je množina bodů ve stejné vzdálenosti od středu, zatímco
+            kruh zahrnuje i vnitřek této kružnice. Důležitými pojmy jsou
+            poloměr, průměr a obvod. Kruhy se využívají v geometrii i
+            technických oborech. Výpočty souvisejí s číslem π (pí).
+        </p>
+    </div>
+    <h2>Kruh</h2>
+    <ul>
+        <li>
+            je množina bodů, které jsou od středu kružnice ve stejné a menší
+            vzdálenosti
+        </li>
+    </ul>
+    <h2>Kružnice</h2>
+    <ul>
+        <li>
+            je množina bodů, které jsou od středu kružnice ve stejné vzdálenosti
+        </li>
+    </ul>
+    <h3>Vzájemná poloha přímky a kružnice</h3>
+    <h4>Sečna</h4>
+    <img
+        src="images/secna.png"
+        style="border-radius: 10px"
+        width="200px"
+        alt="Sečna"
+    />
+    <p>Má společné 2 body.</p>
+    <h4>Tečna</h4>
+    <img
+        src="images/tecna.png"
+        style="border-radius: 10px"
+        width="200px"
+        alt="Tečna"
+    />
+    <p>Má společný 1 bod.</p>
+    <h4>Nesečna</h4>
+    <img
+        src="images/nesecna.png"
+        style="border-radius: 10px"
+        width="200px"
+        alt="Nesečna"
+    />
+    <p>Nemá společné body.</p>
+    <h4>Tětiva</h4>
+    <img
+        src="images/tetiva.png"
+        style="border-radius: 10px"
+        width="200px"
+        alt="Tětiva"
+    />
+    <p>Je úsečka spojující 2 body kružnice.</p>
+    <img
+        src="images/tetiva-pyth.png"
+        style="border-radius: 10px"
+        width="200px"
+        alt="Tětiva"
+    />
+    <p>
+        Dá se díky ní dopočítat poloměr, vzdálenost od středu, nebo polovinu
+        délky tětivy pomocí Pythagorovy věty.
+    </p>
+    <h3>Vzájemná poloha 2 kružnic</h3>
+    <p>Středná - úsečka mezi dvěma středy kružnic</p>
+    <h4>Žádný společný dotyk</h4>
+    <a href="images/zadny1.png"
+        ><img
+            src="images/zadny1.png"
+            style="border-radius: 10px"
+            width="300px"
+            alt="1"
+    /></a>
+    <p>|S₁S₂| ≠ 0 mm</p>
+    <p>|S₁S₂| > r₁ + r₂</p>
+    <a href="images/zadny2.png"
+        ><img
+            src="images/zadny2.png"
+            style="border-radius: 10px"
+            width="300px"
+            alt="2"
+    /></a>
+    <p>|S₁S₂| < r₁ + r₂</p>
+    <h4>Jeden společný bod</h4>
+    <a href="images/jedenvnitrni.png"
+        ><img
+            src="images/jedenvnitrni.png"
+            style="border-radius: 10px"
+            width="300px"
+            alt="2"
+    /></a>
+    <p>vnitřní dotyk - kružnice jsou v sobě</p>
+    <p>|S₁S₂| = r₁ - r₂</p>
+    <p>|S₁S₂| ≠ 0 mm</p>
+    <a href="images/jedenvnejsi.png"
+        ><img
+            src="images/jedenvnejsi.png"
+            style="border-radius: 10px"
+            width="300px"
+            alt="2"
+    /></a>
+    <p>vnější dotyk - kružnice jsou vedle sebe</p>
+    <p>|S₁S₂| = r₁ + r₂</p>
+    <p>|S₁S₂| ≠ 0 mm</p>
+    <h4>Dva společné body</h4>
+    <a href="images/dva.png"
+        ><img
+            src="images/dva.png"
+            style="border-radius: 10px"
+            width="300px"
+            alt="2"
+    /></a>
+    <p>|S₁S₂| < r₁ + r₂</p>
+    <p>|S₁S₂| ≠ 0 mm</p>
+    <h3>Thaletova kružnice</h3>
+    <p>
+        Thaletova kružnice je kružnice, která prochází středy stran pravoúhlého
+        trojúhelníku.
+    </p>
+    <a href="images/thaletova.png"
+        ><img
+            src="images/thaletova.png"
+            style="border-radius: 10px"
+            width="300px"
+            alt="2"
+    /></a>
+    <h4>Rýsování tečen z bodu mimo kružnici</h4>
+    <a href="images/tecny-z-bodu.png"
+        ><img
+            src="images/tecny-z-bodu.png"
+            style="border-radius: 10px"
+            width="300px"
+            alt="2"
+    /></a>
+    <h2>Obvod kruhu a délka kružnice</h2>
+    <p>obvod kruhu: 5 cm<br />průměr kruhu: 1,59 cm</p>
+    <p>když vynásobíme průměr s π (pi), výjde nám obvod</p>
+    <img src="images/pi-calc.png" width="300px" alt="" />
+    <p>*zaokrouhlíme</p>
+    <p>
+        Číslo pi je nekonečné, ale neopakuje se (0,333333...), má hodnotu
+        příbližně 3,14....
+    </p>
+    <h2>Obsah kruhu</h2>
+    <p>
+        Krybychom rozdělili kruh na ∞ částí, vznikl by po součnu obdélník
+        (strana krát strana).
+    </p>
+    <a href="images/obsah-kruhu.png"
+        ><img
+            src="images/obsah-kruhu.png"
+            width="300px"
+            alt="znázornění obsahu"
+    /></a>
+    <p>Vzorec: S = πr²</p>
+</section>

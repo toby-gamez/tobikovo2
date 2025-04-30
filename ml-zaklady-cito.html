@@ -1,117 +1,39 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Citoslovce - Mluvnice - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar">
-            <a href="#home"
-                ><img src="images/white-logo.png" alt="Logo" width="75px"
-            /></a>
-            <a href="#home">Domů</a>
-            <a href="#ucivo">Učivo</a>
-            <a href="#o-nas">O nás</a>
-        </nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Citoslovce</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Citoslovce jsou zvláštní slovní druh, který
-                            napodobuje zvuky, vyjadřuje pocity nebo reakce
-                            mluvčího. V tomto článku si ukážeme, co jsou
-                            citoslovce a jak se používají v mluveném i psaném
-                            projevu. S konkrétními příklady a praktickým
-                            přehledem pochopíte, jak citoslovce oživují jazyk a
-                            pomáhají vyjádřit emoce i děje jednoduše a
-                            přirozeně.
-                        </p>
-                    </div>
-                    <h2>Základy</h2>
-                    <ul>
-                        <li>
-                            vyjadřují
-                            <strong>nálady, city a vůli</strong> mluvčího nebo
-                            označují hlasy a zvuky
-                        </li>
-                        <li>např. hej, prásk, bum, cink</li>
-                    </ul>
-                    <h2>Gramatika (čárky)</h2>
-                    <h3>Samostatně</h3>
-                    <p>
-                        Stojí-li citoslovce samostatně, odděluje se čárkou (Brr,
-                        venku je zima.)
-                    </p>
-                    <h3>Větný člen</h3>
-                    <p>Je-li větným členem, čárkou se neodděluje</p>
-                    <p>
-                        Žába <strong>žbluňk</strong> do vody. - žbluňk =
-                        žbluňkla, skočila - přísudek
-                    </p>
-                    <p>
-                        Pod okny se ozývalo <strong>mňau</strong>. - mňau =
-                        mňouknutí - podmět
-                    </p>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Citoslovce
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Citoslovce jsou zvláštní slovní druh, který napodobuje zvuky,
+            vyjadřuje pocity nebo reakce mluvčího. V tomto článku si ukážeme, co
+            jsou citoslovce a jak se používají v mluveném i psaném projevu. S
+            konkrétními příklady a praktickým přehledem pochopíte, jak
+            citoslovce oživují jazyk a pomáhají vyjádřit emoce i děje jednoduše
+            a přirozeně.
+        </p>
+    </div>
+    <h2>Základy</h2>
+    <ul>
+        <li>
+            vyjadřují
+            <strong>nálady, city a vůli</strong> mluvčího nebo označují hlasy a
+            zvuky
+        </li>
+        <li>např. hej, prásk, bum, cink</li>
+    </ul>
+    <h2>Gramatika (čárky)</h2>
+    <h3>Samostatně</h3>
+    <p>
+        Stojí-li citoslovce samostatně, odděluje se čárkou (Brr, venku je zima.)
+    </p>
+    <h3>Větný člen</h3>
+    <p>Je-li větným členem, čárkou se neodděluje</p>
+    <p>
+        Žába <strong>žbluňk</strong> do vody. - žbluňk = žbluňkla, skočila -
+        přísudek
+    </p>
+    <p>
+        Pod okny se ozývalo <strong>mňau</strong>. - mňau = mňouknutí - podmět
+    </p>
+</section>

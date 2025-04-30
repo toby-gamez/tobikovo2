@@ -1,188 +1,113 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Společná témata - Matematika - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar">
-            <a href="#home"
-                ><img src="images/white-logo.png" alt="Logo" width="75px"
-            /></a>
-            <a href="#home">Domů</a>
-            <a href="#ucivo">Učivo</a>
-            <a href="#o-nas">O nás</a>
-        </nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Společná témata</h1>
-                <ul class="grid">
-                    <li class="grid-item">
-                        <a href="m-zaokrouhlovani.html">
-                            <h3 class="grid-h3">zaokrouhlování</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="m-prednost.html">
-                            <h3 class="grid-h3-2">
-                                přednost matematických operací
-                            </h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="m-ari-prumer.html">
-                            <h3 class="grid-h3-2">aritmetický průměr</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="m-pomer.html">
-                            <h3 class="grid-h3">poměr</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="m-pri-umernost.html">
-                            <h3 class="grid-h3-2">přímá úměrnost</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="m-nepri-umernost.html">
-                            <h3 class="grid-h3-2">nepřímá úměrnost</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="m-trojclenka.html">
-                            <h3 class="grid-h3">trojčlenka</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="m-procenta.html">
-                            <h3 class="grid-h3">procenta</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="m-promile.html">
-                            <h3 class="grid-h3">promile</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="m-meritko.html">
-                            <h3 class="grid-h3">měřítko</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="m-druha-mocnina.html">
-                            <h3 class="grid-h3-2">druhá mocnina</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="m-druha-odmocnina.html">
-                            <h3 class="grid-h3-2">druhá odmocnina</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="m-treti-mocnina.html">
-                            <h3 class="grid-h3-2">třetí mocnina</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="m-treti-odmocnina.html">
-                            <h3 class="grid-h3-2">třetí odmocnina</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="m-celkove-odmocniny-mocniny.html">
-                            <h3 class="grid-h3-2">Mocniny a odmocniny</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="m-roz-zap-cil-des-sou.html">
-                            <h3 class="grid-h3-2">
-                                rozvinutý zápis čísla v desítkové soustavě
-                            </h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="m-promenne.html">
-                            <h3 class="grid-h3-2">proměnné</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="m-jedno-mnohoclen.html">
-                            <h3 class="grid-h3-2">jednočlen a mnohočlen</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="m-opacny-vyraz.html">
-                            <h3 class="grid-h3-2">opačný výraz</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="m-rozklad-soucin.html">
-                            <h3 class="grid-h3-2">
-                                rozklad mnohočlenu na součin
-                            </h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="m-linearni-rovnice.html">
-                            <h3 class="grid-h3">lineární rovnice</h3>
-                        </a>
-                    </li>
-                </ul>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Společná témata
+type: category
+-->
+<ul class="grid">
+    <li class="grid-item">
+        <a href="m-zaokrouhlovani.html">
+            <h3 class="grid-h3">zaokrouhlování</h3>
+        </a>
+    </li>
+    <li class="grid-item">
+        <a href="m-prednost.html">
+            <h3 class="grid-h3-2">přednost matematických operací</h3>
+        </a>
+    </li>
+    <li class="grid-item">
+        <a href="m-ari-prumer.html">
+            <h3 class="grid-h3-2">aritmetický průměr</h3>
+        </a>
+    </li>
+    <li class="grid-item">
+        <a href="m-pomer.html">
+            <h3 class="grid-h3">poměr</h3>
+        </a>
+    </li>
+    <li class="grid-item">
+        <a href="m-pri-umernost.html">
+            <h3 class="grid-h3-2">přímá úměrnost</h3>
+        </a>
+    </li>
+    <li class="grid-item">
+        <a href="m-nepri-umernost.html">
+            <h3 class="grid-h3-2">nepřímá úměrnost</h3>
+        </a>
+    </li>
+    <li class="grid-item">
+        <a href="m-trojclenka.html">
+            <h3 class="grid-h3">trojčlenka</h3>
+        </a>
+    </li>
+    <li class="grid-item">
+        <a href="m-procenta.html">
+            <h3 class="grid-h3">procenta</h3>
+        </a>
+    </li>
+    <li class="grid-item">
+        <a href="m-promile.html">
+            <h3 class="grid-h3">promile</h3>
+        </a>
+    </li>
+    <li class="grid-item">
+        <a href="m-meritko.html">
+            <h3 class="grid-h3">měřítko</h3>
+        </a>
+    </li>
+    <li class="grid-item">
+        <a href="m-druha-mocnina.html">
+            <h3 class="grid-h3-2">druhá mocnina</h3>
+        </a>
+    </li>
+    <li class="grid-item">
+        <a href="m-druha-odmocnina.html">
+            <h3 class="grid-h3-2">druhá odmocnina</h3>
+        </a>
+    </li>
+    <li class="grid-item">
+        <a href="m-treti-mocnina.html">
+            <h3 class="grid-h3-2">třetí mocnina</h3>
+        </a>
+    </li>
+    <li class="grid-item">
+        <a href="m-treti-odmocnina.html">
+            <h3 class="grid-h3-2">třetí odmocnina</h3>
+        </a>
+    </li>
+    <li class="grid-item">
+        <a href="m-celkove-odmocniny-mocniny.html">
+            <h3 class="grid-h3-2">Mocniny a odmocniny</h3>
+        </a>
+    </li>
+    <li class="grid-item">
+        <a href="m-roz-zap-cil-des-sou.html">
+            <h3 class="grid-h3-2">
+                rozvinutý zápis čísla v desítkové soustavě
+            </h3>
+        </a>
+    </li>
+    <li class="grid-item">
+        <a href="m-promenne.html">
+            <h3 class="grid-h3-2">proměnné</h3>
+        </a>
+    </li>
+    <li class="grid-item">
+        <a href="m-jedno-mnohoclen.html">
+            <h3 class="grid-h3-2">jednočlen a mnohočlen</h3>
+        </a>
+    </li>
+    <li class="grid-item">
+        <a href="m-opacny-vyraz.html">
+            <h3 class="grid-h3-2">opačný výraz</h3>
+        </a>
+    </li>
+    <li class="grid-item">
+        <a href="m-rozklad-soucin.html">
+            <h3 class="grid-h3-2">rozklad mnohočlenu na součin</h3>
+        </a>
+    </li>
+    <li class="grid-item">
+        <a href="m-linearni-rovnice.html">
+            <h3 class="grid-h3">lineární rovnice</h3>
+        </a>
+    </li>
+</ul>

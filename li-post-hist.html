@@ -1,160 +1,73 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
+<!--
+title: Postupná historie
+type: category
+-->
+<ul class="grid" style="margin-top: 3rem">
+    <li class="grid-item">
+        <a href="li-gilgames.html">
+            <h3 class="grid-h3">Gilgameš</h3>
+        </a>
+    </li>
 
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
+    <li class="grid-item">
+        <a href="li-bible.html">
+            <h3 class="grid-h3">Bible</h3>
+        </a>
+    </li>
 
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Postupná historie - Literatura - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar">
-            <a href="#home"
-                ><img src="images/white-logo.png" alt="Logo" width="75px"
-            /></a>
-            <a href="#home">Domů</a>
-            <a href="#ucivo">Učivo</a>
-            <a href="#o-nas">O nás</a>
-        </nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Postupná historie</h1>
-                <div style="text-align: left">
-                    <h2>Předmluva</h2>
-                    <p>
-                        S objevením písma (v Mezopotámii, kolem roku 3500 př. n.
-                        l.) vznikají první literární památky.
-                    </p>
-                    <p>
-                        Kromě literatury, která čerpala z náboženského života,
-                        známe i díla, která nás seznamují s hrdinskými činy
-                        vladařů.
-                    </p>
-                    <p>
-                        Sem patří soubor mýtů, jejichž hlavním hrdinou je
-                        Gilgameš (první téma).
-                    </p>
-                </div>
-                <ul class="grid" style="margin-top: 3rem">
-                    <li class="grid-item">
-                        <a href="li-gilgames.html">
-                            <h3 class="grid-h3">Gilgameš</h3>
-                        </a>
-                    </li>
-
-                    <li class="grid-item">
-                        <a href="li-bible.html">
-                            <h3 class="grid-h3">Bible</h3>
-                        </a>
-                    </li>
-
-                    <li class="grid-item">
-                        <a href="li-anti-lite.html">
-                            <h3 class="grid-h3-2">antická literatura</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="li-strvek-lite.html">
-                            <h3>středověká literatura</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="li-kroniky.html">
-                            <h3>kroniky</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="li-zivotopisy.html">
-                            <h3>životopisy</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="li-lite-doby-hus.html">
-                            <h3>literatura doby husitské</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="li-renesance-humanismus.html">
-                            <h3>renesance a humanismus</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="li-lit-baroko.html">
-                            <h3>literatura v období baroka</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="li-klasicismus-evropa.html">
-                            <h3>klasicismus v evropské literatuře</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="li-klasicismus-anglie.html">
-                            <h3>klasicismus v Anglii</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="li-preromantismus.html">
-                            <h3>preromantismus</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item">
-                        <a href="li-romantismus.html">
-                            <h3>romantismus</h3>
-                        </a>
-                    </li>
-                </ul>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+    <li class="grid-item">
+        <a href="li-anti-lite.html">
+            <h3 class="grid-h3-2">antická literatura</h3>
+        </a>
+    </li>
+    <li class="grid-item">
+        <a href="li-strvek-lite.html">
+            <h3>středověká literatura</h3>
+        </a>
+    </li>
+    <li class="grid-item">
+        <a href="li-kroniky.html">
+            <h3>kroniky</h3>
+        </a>
+    </li>
+    <li class="grid-item">
+        <a href="li-zivotopisy.html">
+            <h3>životopisy</h3>
+        </a>
+    </li>
+    <li class="grid-item">
+        <a href="li-lite-doby-hus.html">
+            <h3>literatura doby husitské</h3>
+        </a>
+    </li>
+    <li class="grid-item">
+        <a href="li-renesance-humanismus.html">
+            <h3>renesance a humanismus</h3>
+        </a>
+    </li>
+    <li class="grid-item">
+        <a href="li-lit-baroko.html">
+            <h3>literatura v období baroka</h3>
+        </a>
+    </li>
+    <li class="grid-item">
+        <a href="li-klasicismus-evropa.html">
+            <h3>klasicismus v evropské literatuře</h3>
+        </a>
+    </li>
+    <li class="grid-item">
+        <a href="li-klasicismus-anglie.html">
+            <h3>klasicismus v Anglii</h3>
+        </a>
+    </li>
+    <li class="grid-item">
+        <a href="li-preromantismus.html">
+            <h3>preromantismus</h3>
+        </a>
+    </li>
+    <li class="grid-item">
+        <a href="li-romantismus.html">
+            <h3>romantismus</h3>
+        </a>
+    </li>
+</ul>

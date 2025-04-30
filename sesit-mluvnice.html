@@ -1,158 +1,88 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sešit mluvnice - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar"></nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Sešit mluvnice</h1>
-                <div style="text-align: left">
-                    <span style="color: #9c9c9c"
-                        ><em>od nejnovějšího k nejstaršímu</em></span
-                    >
-                    <h2>Nauka o slovní zásobě</h2>
-                    <a href="ml-slovni-zasoba.html">zde</a>
-                    <h2>Souvětí</h2>
-                    <a href="ml-souveti.html">zde</a>
-                    <h2>Doplňek</h2>
-                    <a href="ml-doplnek.html">zde</a>
-                    <h2>Přístavek</h2>
-                    <a href="ml-pristavek.html">zde</a>
-                    <h2>Přívlastek</h2>
-                    <a href="ml-privlastek.html">zde</a>
-                    <h2>Příslovečná určení</h2>
-                    <a href="ml-prislovecne-urceni.html">zde</a>
-                    <h2>Přísudek</h2>
-                    <a href="ml-prisudek.html">zde</a>
-                    <h2>Věty a větné ekvivalenty</h2>
-                    <a href="ml-vety-ve.html">zde</a>
-                    <h2>Skladba</h2>
-                    <a href="ml-skladba.html">zde</a>
-                    <h2>Písmena</h2>
-                    <a href="ml-pismena.html">zde</a>
-                    <h2>Citoslovce</h2>
-                    <a href="ml-zaklady-cito.html">zde</a>
-                    <h2>Částice</h2>
-                    <a href="ml-zaklady-cast.html">zde</a>
-                    <h2>Spojky</h2>
-                    <a href="ml-zaklady-spoj.html">zde</a>
-                    <h2>Předložky</h2>
-                    <a href="ml-zaklady-pred.html">zde</a>
-                    <h2>Stupňování - příslovce</h2>
-                    <a href="ml-stupnovani-pris.html">zde</a>
-                    <h2>Příslovce</h2>
-                    <a href="ml-zaklady-pris.html">zde</a>
-                    <h2>Slovesný rod</h2>
-                    <a href="ml-mluv-kat-slovesa.html">zde</a>
-                    <h2>Zájmeno jenž</h2>
-                    <a href="ml-zaj-jenz.html">zde</a>
-                    <h2>Souvětí</h2>
-                    <a href="ml-souveti.html">zde</a>
-                    <h2>Věta jednoduchá</h2>
-                    <a href="ml-veta-jednoducha.html">zde</a>
-                    <h2>Příslovečné určení</h2>
-                    <a href="ml-prislovecne-urceni.html">zde</a>
-                    <h2>Přívlastek</h2>
-                    <a href="ml-privlastek.html">zde</a>
-                    <h2>Předmět</h2>
-                    <a href="ml-predmet.html">zde</a>
-                    <h2>Tvar jednoduchý a složený</h2>
-                    <a href="ml-tvary-sloves.html">zde</a>
-                    <h2>Stupňování - přid. jména</h2>
-                    <a href="ml-stupnovani-prid.html">zde</a>
-                    <h2>Jmenné tvary</h2>
-                    <a href="ml-jmenne-tvary.html">zde</a>
-                    <h2>Skloňování lidských částí těla</h2>
-                    <a href="ml-sklonovani-lids-casti-tela.html">zde</a>
-                    <h2>5. pád v oslovení</h2>
-                    <a href="ml-paty-pad.html">zde</a>
-                    <h2>Dělení - pods. jména</h2>
-                    <a href="ml-deleni-pods-jmen.html">zde</a>
-                    <h2>Přísudek</h2>
-                    <a href="ml-prisudek.html">zde</a>
-                    <h2>Podmět</h2>
-                    <a href="ml-podmet.html">zde</a>
-                    <h2>Mluvnické kategorie - slovesa</h2>
-                    <a href="ml-mluv-kat-slovesa.html">zde</a>
-                    <h2>Psaní dva, oba</h2>
-                    <a href="ml-oba-dva.html">zde</a>
-                    <h2>Dělení - číslovky</h2>
-                    <a href="ml-deleni-cisl.html">zde</a>
-                    <h2>Druhy zájmen</h2>
-                    <a href="ml-druhy-zajmen.html">zde</a>
-                    <h2>Mluvnické kategorie - příd. j.</h2>
-                    <a href="ml-mluv-kat-prid.html">zde</a>
-                    <h2>Psaní ě a ostatní</h2>
-                    <a href="ml-m-b-v-p.html">zde</a>
-                    <h2>S/Z/VZ</h2>
-                    <a href="ml-s-z-vz.html">zde</a>
-                    <h2>Skupiny souhlásek</h2>
-                    <a href="ml-skupiny-souhl.html">zde</a>
-                    <h2>Vyjmenovaná slova</h2>
-                    <a href="ml-vyjmenovana.html">zde</a>
-                    <br />
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Sešit mluvnice
+type: content
+-->
+<section id="only-content">
+    <span style="color: #9c9c9c"><em>od nejnovějšího k nejstaršímu</em></span>
+    <h2>Nauka o slovní zásobě</h2>
+    <a href="ml-slovni-zasoba.html">zde</a>
+    <h2>Souvětí</h2>
+    <a href="ml-souveti.html">zde</a>
+    <h2>Doplňek</h2>
+    <a href="ml-doplnek.html">zde</a>
+    <h2>Přístavek</h2>
+    <a href="ml-pristavek.html">zde</a>
+    <h2>Přívlastek</h2>
+    <a href="ml-privlastek.html">zde</a>
+    <h2>Příslovečná určení</h2>
+    <a href="ml-prislovecne-urceni.html">zde</a>
+    <h2>Přísudek</h2>
+    <a href="ml-prisudek.html">zde</a>
+    <h2>Věty a větné ekvivalenty</h2>
+    <a href="ml-vety-ve.html">zde</a>
+    <h2>Skladba</h2>
+    <a href="ml-skladba.html">zde</a>
+    <h2>Písmena</h2>
+    <a href="ml-pismena.html">zde</a>
+    <h2>Citoslovce</h2>
+    <a href="ml-zaklady-cito.html">zde</a>
+    <h2>Částice</h2>
+    <a href="ml-zaklady-cast.html">zde</a>
+    <h2>Spojky</h2>
+    <a href="ml-zaklady-spoj.html">zde</a>
+    <h2>Předložky</h2>
+    <a href="ml-zaklady-pred.html">zde</a>
+    <h2>Stupňování - příslovce</h2>
+    <a href="ml-stupnovani-pris.html">zde</a>
+    <h2>Příslovce</h2>
+    <a href="ml-zaklady-pris.html">zde</a>
+    <h2>Slovesný rod</h2>
+    <a href="ml-mluv-kat-slovesa.html">zde</a>
+    <h2>Zájmeno jenž</h2>
+    <a href="ml-zaj-jenz.html">zde</a>
+    <h2>Souvětí</h2>
+    <a href="ml-souveti.html">zde</a>
+    <h2>Věta jednoduchá</h2>
+    <a href="ml-veta-jednoducha.html">zde</a>
+    <h2>Příslovečné určení</h2>
+    <a href="ml-prislovecne-urceni.html">zde</a>
+    <h2>Přívlastek</h2>
+    <a href="ml-privlastek.html">zde</a>
+    <h2>Předmět</h2>
+    <a href="ml-predmet.html">zde</a>
+    <h2>Tvar jednoduchý a složený</h2>
+    <a href="ml-tvary-sloves.html">zde</a>
+    <h2>Stupňování - přid. jména</h2>
+    <a href="ml-stupnovani-prid.html">zde</a>
+    <h2>Jmenné tvary</h2>
+    <a href="ml-jmenne-tvary.html">zde</a>
+    <h2>Skloňování lidských částí těla</h2>
+    <a href="ml-sklonovani-lids-casti-tela.html">zde</a>
+    <h2>5. pád v oslovení</h2>
+    <a href="ml-paty-pad.html">zde</a>
+    <h2>Dělení - pods. jména</h2>
+    <a href="ml-deleni-pods-jmen.html">zde</a>
+    <h2>Přísudek</h2>
+    <a href="ml-prisudek.html">zde</a>
+    <h2>Podmět</h2>
+    <a href="ml-podmet.html">zde</a>
+    <h2>Mluvnické kategorie - slovesa</h2>
+    <a href="ml-mluv-kat-slovesa.html">zde</a>
+    <h2>Psaní dva, oba</h2>
+    <a href="ml-oba-dva.html">zde</a>
+    <h2>Dělení - číslovky</h2>
+    <a href="ml-deleni-cisl.html">zde</a>
+    <h2>Druhy zájmen</h2>
+    <a href="ml-druhy-zajmen.html">zde</a>
+    <h2>Mluvnické kategorie - příd. j.</h2>
+    <a href="ml-mluv-kat-prid.html">zde</a>
+    <h2>Psaní ě a ostatní</h2>
+    <a href="ml-m-b-v-p.html">zde</a>
+    <h2>S/Z/VZ</h2>
+    <a href="ml-s-z-vz.html">zde</a>
+    <h2>Skupiny souhlásek</h2>
+    <a href="ml-skupiny-souhl.html">zde</a>
+    <h2>Vyjmenovaná slova</h2>
+    <a href="ml-vyjmenovana.html">zde</a>
+    <br />
+</section>

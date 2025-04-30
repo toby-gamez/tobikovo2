@@ -1,159 +1,55 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Open Graph základní meta tagy -->
-        <meta property="og:title" content="Hudební výchova - Tobiso" />
-        <meta
-            property="og:description"
-            content="Tobiso je vzdělávací platforma nabízející užitečné materiály pro studenty a učitele."
-        />
-        <meta
-            property="og:image"
-            content="https://tobiso.com/images/ucivo.png"
-        />
-        <meta property="og:url" content="https://tobiso.com" />
-        <meta property="og:type" content="website" />
-        <meta property="og:locale" content="cs_CZ" />
+<!--
+title: Hudební výchova
+type: category
+-->
+<ul class="grid-predmety">
+    <li class="grid-item-sesit">
+        <a
+            class="sesit"
+            title="Tento mód vám poskládá učivo tak, jak se učilo od nejnovějšího k nejstaršímu."
+            href="sesit-hudebni-vychova.html"
+        >
+            <h3><span class="key-icon">nové</span><br />mód sešitu</h3>
+        </a>
+    </li>
+    <li class="grid-item-pred">
+        <a href="hv-teorie.html">
+            <h3 class="grid-h3-2">teorie a základy</h3>
+        </a>
+    </li>
 
-        <!-- Twitter Cards (pokud chceš vylepšit sdílení na Twitteru) -->
-        <meta name="twitter:card" content="images/ucivo.png" />
-        <meta name="twitter:title" content="Hudební výchova - Tobiso" />
-        <meta
-            name="twitter:description"
-            content="Tobiso je vzdělávací platforma nabízející užitečné materiály pro studenty a učitele."
-        />
-        <meta
-            name="twitter:image"
-            content="https://tobiso.com/images/ucivo.png"
-        />
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
+    <li class="grid-item-pred">
+        <a href="hv-predstavitele.html">
+            <h3 class="grid-h3" style="font-size: 19px">představitelé</h3>
+        </a>
+    </li>
 
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
+    <li class="grid-item-pred">
+        <a href="hv-nastroje.html">
+            <h3 class="grid-h3-2">hudební nástroje</h3>
+        </a>
+    </li>
 
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
+    <li class="grid-item-pred">
+        <a href="hv-pisne.html">
+            <h3 class="grid-h3">písně</h3>
+        </a>
+    </li>
 
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Hudební výchova - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
+    <li class="grid-item-pred">
+        <a href="hv-dila.html">
+            <h3 class="grid-h3">díla</h3>
+        </a>
+    </li>
 
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar">
-            <a href="#home"
-                ><img src="images/white-logo.png" alt="Logo" width="75px"
-            /></a>
-            <a href="#home">Domů</a>
-            <a href="#ucivo">Učivo</a>
-            <a href="#o-nas">O nás</a>
-        </nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">
-                    <i class="bi bi-music-note"></i> Hudební výchova
-                </h1>
-                <ul class="grid-predmety">
-                    <li class="grid-item-sesit">
-                        <a
-                            class="sesit"
-                            title="Tento mód vám poskládá učivo tak, jak se učilo od nejnovějšího k nejstaršímu."
-                            href="sesit-hudebni-vychova.html"
-                        >
-                            <h3>
-                                <span class="key-icon">nové</span><br />mód
-                                sešitu
-                            </h3>
-                        </a>
-                    </li>
-                    <li class="grid-item-pred">
-                        <a href="hv-teorie.html">
-                            <h3 class="grid-h3-2">teorie a základy</h3>
-                        </a>
-                    </li>
-
-                    <li class="grid-item-pred">
-                        <a href="hv-predstavitele.html">
-                            <h3 class="grid-h3" style="font-size: 19px">
-                                představitelé
-                            </h3>
-                        </a>
-                    </li>
-
-                    <li class="grid-item-pred">
-                        <a href="hv-nastroje.html">
-                            <h3 class="grid-h3-2">hudební nástroje</h3>
-                        </a>
-                    </li>
-
-                    <li class="grid-item-pred">
-                        <a href="hv-pisne.html">
-                            <h3 class="grid-h3">písně</h3>
-                        </a>
-                    </li>
-
-                    <li class="grid-item-pred">
-                        <a href="hv-dila.html">
-                            <h3 class="grid-h3">díla</h3>
-                        </a>
-                    </li>
-
-                    <li class="grid-item-pred">
-                        <a href="hv-zanry.html">
-                            <h3 class="grid-h3">žánry</h3>
-                        </a>
-                    </li>
-                    <li class="grid-item-pred">
-                        <a href="hv-historie.html">
-                            <h3 class="grid-h3">historie</h3>
-                        </a>
-                    </li>
-                </ul>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+    <li class="grid-item-pred">
+        <a href="hv-zanry.html">
+            <h3 class="grid-h3">žánry</h3>
+        </a>
+    </li>
+    <li class="grid-item-pred">
+        <a href="hv-historie.html">
+            <h3 class="grid-h3">historie</h3>
+        </a>
+    </li>
+</ul>

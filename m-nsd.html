@@ -1,104 +1,27 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Největší společný dělitel - Matematika - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar">
-            <a href="#home"
-                ><img src="images/white-logo.png" alt="Logo" width="75px"
-            /></a>
-            <a href="#home">Domů</a>
-            <a href="#ucivo">Učivo</a>
-            <a href="#o-nas">O nás</a>
-        </nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Největší společný dělitel</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Největší společný dělitel (NSD) dvou nebo více čísel
-                            je největší číslo, které dělí všechna tato čísla.
-                            Například pro čísla 12 a 18 je NSD rovno 6, protože
-                            6 je největší číslo, které dělí jak 12, tak 18. Pro
-                            výpočet NSD se často používá Euklidův algoritmus,
-                            který postupně odečítá menší číslo od většího, dokud
-                            nezíská zbytek 0.
-                        </p>
-                    </div>
-                    <h2>Informace</h2>
-                    <p>
-                        Největší společný dělitel 2 čísel je např. 4 a 10 je 2.
-                    </p>
-                    <p>D (28, 35) = 7</p>
-                    <p class="priklad">
-                        <span class="underlined priklad">28</span> <br />1 | 28
-                        <br />2 | 14 <br /><strong>4 | 7</strong>
-                    </p>
-                    <p class="priklad">
-                        <span class="underlined priklad">35</span> <br />1 | 35
-                        <br /><strong>5 | 7 </strong>
-                    </p>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Největší společný dělitel
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Největší společný dělitel (NSD) dvou nebo více čísel je největší
+            číslo, které dělí všechna tato čísla. Například pro čísla 12 a 18 je
+            NSD rovno 6, protože 6 je největší číslo, které dělí jak 12, tak 18.
+            Pro výpočet NSD se často používá Euklidův algoritmus, který postupně
+            odečítá menší číslo od většího, dokud nezíská zbytek 0.
+        </p>
+    </div>
+    <h2>Informace</h2>
+    <p>Největší společný dělitel 2 čísel je např. 4 a 10 je 2.</p>
+    <p>D (28, 35) = 7</p>
+    <p class="priklad">
+        <span class="underlined priklad">28</span> <br />1 | 28 <br />2 | 14
+        <br /><strong>4 | 7</strong>
+    </p>
+    <p class="priklad">
+        <span class="underlined priklad">35</span> <br />1 | 35 <br /><strong
+            >5 | 7
+        </strong>
+    </p>
+</section>

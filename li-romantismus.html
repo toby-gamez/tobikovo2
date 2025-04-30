@@ -1,204 +1,118 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Romantismus - Literatura - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar"></nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Romantismus</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Romantismus v české literatuře se rozvíjel v první
-                            polovině 19. století a zdůrazňoval city, svobodu a
-                            přírodu. Nejvýznamnějším představitelem byl Karel
-                            Hynek Mácha, autor lyrickoepické básně Máj. Díla
-                            často zachycovala hrdiny, kteří byli nepochopení a
-                            trpěli pro své ideály. Romantismus se u nás spojoval
-                            i s národním obrozením.
-                        </p>
-                    </div>
-                    <h2>Informace</h2>
-                    <ul>
-                        <li>znaky</li>
-                        <ul>
-                            <li>
-                                autor vkládá
-                                <strong>své myšlenky do úst hrdiny</strong>
-                            </li>
-                            <li>hrdina je výjimečný (kat, zloděj)</li>
-                            <li>výjimečné prostředí (hrady, temné lesy)</li>
-                            <li>časté téma - nešťastná láska</li>
-                        </ul>
-                    </ul>
-                    <h2>Představitelé</h2>
-                    <h3>Karel Hynek Mácha (1810-1836)</h3>
-                    <ul>
-                        <li><strong>básník</strong></li>
-                        <li>díla</li>
-                        <ul>
-                            <li><strong>Máj</strong></li>
-                            <ol>
-                                <li>zpěv</li>
-                                <span
-                                    >Jarmila čeká na svého milého, ale když se
-                                    dozví, že bude popraven, skočí ze skály a
-                                    utopí se v jezeře</span
-                                >
-                                <li>zpěv</li>
-                                <span
-                                    >zachycuje Vilémovo rozjímání mezi vlastním
-                                    osudem - když ho otec vyhnal z domova, stal
-                                    se vůdcem loupežníků a když zabil svůdce své
-                                    dívky, poznal v něm svého otce</span
-                                >
-                                <li>intermezo</li>
-                                <span>na popravišti</span>
-                                <li>zpěv</li>
-                                <span>poprava</span>
-                                <li>intermezzo</li>
-                                <span
-                                    >naříkají loupežníci na osud svého
-                                    vůdce</span
-                                >
-                                <li>zpěv</li>
-                                <span
-                                    >poutník se zamýšlí nad tragikou lidského
-                                    osudu po 7 letech</span
-                                >
-                            </ol>
-                            <li>
-                                <strong>Křivoklát</strong> - historická próza
-                            </li>
-                            <li><strong>Márinka</strong> - současná próza</li>
-                            <li><strong>Pouť krkonošská</strong></li>
-                            <li><strong>Cikáni</strong></li>
-                        </ul>
-                    </ul>
-                    <h3>Josef Kajetán Tyl (1808 - 1856)</h3>
-                    <ul>
-                        <li><strong>herec, dramatik a spisovatel</strong></li>
-                        <li>
-                            <strong>novinář</strong>, organizátor českého
-                            společenského života (bály...)
-                        </li>
-                        <li>
-                            poté, co došlo k rozpuštění českého sboru
-                            <a href="li-preromantismus.html"
-                                >Stavovského divadla</a
-                            >, <strong>založil kočovou společnost</strong>
-                        </li>
-                        <li>díla</li>
-                        <ul>
-                            <li>
-                                <strong
-                                    >Fidlovačka aneb Žádný hněv a žádná
-                                    rvačka</strong
-                                >
-                            </li>
-                            <ul>
-                                <li>
-                                    poprvé zde zazněla česká národní hymna -
-                                    <strong>Kde domov můj</strong>
-                                </li>
-                                <li>
-                                    hudba - <strong>František Škroup</strong>
-                                </li>
-                                <li>zpíval slepý houslista Mareš</li>
-                            </ul>
-                            <li>Strakonický dudák</li>
-                            <ul>
-                                <li>pohádka se zpěvy a dudy</li>
-                                <li>
-                                    postavy - Švanda, Dorotka, Kalifuna, Rosava,
-                                    Vocílka (špatná postava)
-                                </li>
-                            </ul>
-                        </ul>
-                    </ul>
-                    <h3>Karel Jaromír Erben (1811 - 1870)</h3>
-                    <ul>
-                        <li><strong>sběratel lidové slovesnosti</strong></li>
-                        <li>
-                            vystudoval gymnázium v Hradci Králové, práva a
-                            filozofii v Praze
-                        </li>
-                        <li>stal se <strong>alchivářem Prahy</strong></li>
-                        <li>díla</li>
-                        <ul>
-                            <li>
-                                <strong
-                                    >Prostonárodní české písně a říkadla</strong
-                                >
-                            </li>
-                            <li>
-                                <strong>Kytice</strong> - sbírka
-                                <a href="li-balada.html">balad</a>
-                            </li>
-                        </ul>
-                    </ul>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Romantismus
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Romantismus v české literatuře se rozvíjel v první polovině 19.
+            století a zdůrazňoval city, svobodu a přírodu. Nejvýznamnějším
+            představitelem byl Karel Hynek Mácha, autor lyrickoepické básně Máj.
+            Díla často zachycovala hrdiny, kteří byli nepochopení a trpěli pro
+            své ideály. Romantismus se u nás spojoval i s národním obrozením.
+        </p>
+    </div>
+    <h2>Informace</h2>
+    <ul>
+        <li>znaky</li>
+        <ul>
+            <li>
+                autor vkládá
+                <strong>své myšlenky do úst hrdiny</strong>
+            </li>
+            <li>hrdina je výjimečný (kat, zloděj)</li>
+            <li>výjimečné prostředí (hrady, temné lesy)</li>
+            <li>časté téma - nešťastná láska</li>
+        </ul>
+    </ul>
+    <h2>Představitelé</h2>
+    <h3>Karel Hynek Mácha (1810-1836)</h3>
+    <ul>
+        <li><strong>básník</strong></li>
+        <li>díla</li>
+        <ul>
+            <li><strong>Máj</strong></li>
+            <ol>
+                <li>zpěv</li>
+                <span
+                    >Jarmila čeká na svého milého, ale když se dozví, že bude
+                    popraven, skočí ze skály a utopí se v jezeře</span
+                >
+                <li>zpěv</li>
+                <span
+                    >zachycuje Vilémovo rozjímání mezi vlastním osudem - když ho
+                    otec vyhnal z domova, stal se vůdcem loupežníků a když zabil
+                    svůdce své dívky, poznal v něm svého otce</span
+                >
+                <li>intermezo</li>
+                <span>na popravišti</span>
+                <li>zpěv</li>
+                <span>poprava</span>
+                <li>intermezzo</li>
+                <span>naříkají loupežníci na osud svého vůdce</span>
+                <li>zpěv</li>
+                <span
+                    >poutník se zamýšlí nad tragikou lidského osudu po 7
+                    letech</span
+                >
+            </ol>
+            <li><strong>Křivoklát</strong> - historická próza</li>
+            <li><strong>Márinka</strong> - současná próza</li>
+            <li><strong>Pouť krkonošská</strong></li>
+            <li><strong>Cikáni</strong></li>
+        </ul>
+    </ul>
+    <h3>Josef Kajetán Tyl (1808 - 1856)</h3>
+    <ul>
+        <li><strong>herec, dramatik a spisovatel</strong></li>
+        <li>
+            <strong>novinář</strong>, organizátor českého společenského života
+            (bály...)
+        </li>
+        <li>
+            poté, co došlo k rozpuštění českého sboru
+            <a href="li-preromantismus.html">Stavovského divadla</a>,
+            <strong>založil kočovou společnost</strong>
+        </li>
+        <li>díla</li>
+        <ul>
+            <li>
+                <strong>Fidlovačka aneb Žádný hněv a žádná rvačka</strong>
+            </li>
+            <ul>
+                <li>
+                    poprvé zde zazněla česká národní hymna -
+                    <strong>Kde domov můj</strong>
+                </li>
+                <li>hudba - <strong>František Škroup</strong></li>
+                <li>zpíval slepý houslista Mareš</li>
+            </ul>
+            <li>Strakonický dudák</li>
+            <ul>
+                <li>pohádka se zpěvy a dudy</li>
+                <li>
+                    postavy - Švanda, Dorotka, Kalifuna, Rosava, Vocílka (špatná
+                    postava)
+                </li>
+            </ul>
+        </ul>
+    </ul>
+    <h3>Karel Jaromír Erben (1811 - 1870)</h3>
+    <ul>
+        <li><strong>sběratel lidové slovesnosti</strong></li>
+        <li>
+            vystudoval gymnázium v Hradci Králové, práva a filozofii v Praze
+        </li>
+        <li>stal se <strong>alchivářem Prahy</strong></li>
+        <li>díla</li>
+        <ul>
+            <li>
+                <strong>Prostonárodní české písně a říkadla</strong>
+            </li>
+            <li>
+                <strong>Kytice</strong> - sbírka
+                <a href="li-balada.html">balad</a>
+            </li>
+        </ul>
+    </ul>
+</section>

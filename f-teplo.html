@@ -1,127 +1,47 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Teplo - Fyzika - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar"></nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Teplo</h1>
-                <div style="text-align: left">
-                    <h2>Rozdíl mezi teplem a teplotou</h2>
-                    <h3>Teplo</h3>
-                    <ul>
-                        <li>teplo je forma energie</li>
-                        <li>
-                            teplo se přenáší z teplejšího tělesa na chladnější
-                            těleso
-                        </li>
-                        <li>
-                            teplo se <span class="underlined">počítá</span> v
-                            joulech (J)
-                        </li>
-                    </ul>
-                    <h3>Teplota</h3>
-                    <ul>
-                        <li>míra tepla v tělese</li>
-                        <li>
-                            <span class="underlined">měří se</span> ve stupních
-                            Celsia (°C), Fahrenheita (°F), Kelvina (K)
-                        </li>
-                    </ul>
-                    <h2>Dodání tepla tělesu</h2>
-                    <ul>
-                        <li>vedení - lžička v hrnku naplněném vroucí vodou</li>
-                        <li>proudění - radiátor</li>
-                        <li>záření - slunce</li>
-                    </ul>
-                    <h3>Vedení</h3>
-                    <ul>
-                        <li>vodiče - kovy...</li>
-                        <li>
-                            izolanty - dřevo, sklo, polystyren, bavlna, kůže...
-                        </li>
-                    </ul>
-                    <h3>Proudění</h3>
-                    <ul>
-                        <li>způsob šíření tepla v kapalinách a plynech</li>
-                        <li>
-                            ohřátá látka stoupá nahoru, vytlačuje chladnější
-                            látku (princip balónu)
-                        </li>
-                    </ul>
-                    <h3>Záření</h3>
-                    <ul>
-                        <li>způsob dodání tepla na dálku</li>
-                        <li>šíří se vzduchem i vakuem</li>
-                        <li>zářič většinou dodává teplo i světlo</li>
-                        <li>
-                            množství tepla, které těleso pohltí, závisí na jeho
-                            barvě
-                        </li>
-                    </ul>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Teplo
+type: content
+-->
+<section id="only-content">
+    <h2>Rozdíl mezi teplem a teplotou</h2>
+    <h3>Teplo</h3>
+    <ul>
+        <li>teplo je forma energie</li>
+        <li>teplo se přenáší z teplejšího tělesa na chladnější těleso</li>
+        <li>teplo se <span class="underlined">počítá</span> v joulech (J)</li>
+    </ul>
+    <h3>Teplota</h3>
+    <ul>
+        <li>míra tepla v tělese</li>
+        <li>
+            <span class="underlined">měří se</span> ve stupních Celsia (°C),
+            Fahrenheita (°F), Kelvina (K)
+        </li>
+    </ul>
+    <h2>Dodání tepla tělesu</h2>
+    <ul>
+        <li>vedení - lžička v hrnku naplněném vroucí vodou</li>
+        <li>proudění - radiátor</li>
+        <li>záření - slunce</li>
+    </ul>
+    <h3>Vedení</h3>
+    <ul>
+        <li>vodiče - kovy...</li>
+        <li>izolanty - dřevo, sklo, polystyren, bavlna, kůže...</li>
+    </ul>
+    <h3>Proudění</h3>
+    <ul>
+        <li>způsob šíření tepla v kapalinách a plynech</li>
+        <li>
+            ohřátá látka stoupá nahoru, vytlačuje chladnější látku (princip
+            balónu)
+        </li>
+    </ul>
+    <h3>Záření</h3>
+    <ul>
+        <li>způsob dodání tepla na dálku</li>
+        <li>šíří se vzduchem i vakuem</li>
+        <li>zářič většinou dodává teplo i světlo</li>
+        <li>množství tepla, které těleso pohltí, závisí na jeho barvě</li>
+    </ul>
+</section>

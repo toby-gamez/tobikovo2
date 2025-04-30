@@ -1,188 +1,97 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Příslovečná určení - Mluvnice - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-        <style></style>
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-        <nav id="myNavbar">
-            <a href="#home"
-                ><img src="images/white-logo.png" alt="Logo" width="75px"
-            /></a>
-            <a href="#home">Domů</a>
-            <a href="#ucivo">Učivo</a>
-            <a href="#o-nas">O nás</a>
-        </nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Příslovečná určení</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Příslovečná určení jsou větné členy, které vyjadřují
-                            okolnosti děje, jako je čas, místo, způsob nebo
-                            míra. V tomto článku si podrobně vysvětlíme, co jsou
-                            příslovečná určení, jak je rozpoznat a jak správně
-                            používat v různých typech vět. Zaměříme se na různé
-                            druhy příslovečných určení – časová, místní,
-                            způsobová, mírová a další – a ukážeme si konkrétní
-                            příklady, které vám pomohou správně obohatit vaše
-                            věty a vyjádřit podrobnosti o ději.
-                        </p>
-                    </div>
-                    <h2>Základy</h2>
-                    <ul>
-                        <li>
-                            <strong
-                                >závisí na podstatném jméně nebo
-                                příslovci</strong
-                            >
-                        </li>
-                        <li>
-                            vyjadřuje okolnosti nebo vztahy, za kterých probíhá
-                            děj
-                        </li>
-                        <li>
-                            nejčastěji je vyjádřeno příslovcem, podstatným
-                            jménem nebo zájmenem
-                        </li>
-                    </ul>
-                    <h2>Druhy</h2>
-                    <h3>místa (PUm.)</h3>
-                    <ul>
-                        <li>ptáme se: Kde?, Odkud?, Kudy?, Kam?</li>
-                        <li>
-                            příklad: procházet se
-                            <span class="underlined">v pokoji</span>
-                        </li>
-                    </ul>
-                    <h3>času (PUč.)</h3>
-                    <ul>
-                        <li>ptáme se: Kdy?, Odkdy?, Jak dlouho?, Jak často?</li>
-                        <li>
-                            příklad: vstávat
-                            <span class="underlined">brzy</span>
-                        </li>
-                    </ul>
-                    <h3>způsobu (PUzp.)</h3>
-                    <ul>
-                        <li>ptáme se: Jak?, Jakým způsobem?</li>
-                        <li>
-                            příklad: tvářit se
-                            <span class="underlined">šťastně</span>
-                        </li>
-                    </ul>
-                    <h3>příčiny, důvodu (PUpříč.)</h3>
-                    <ul>
-                        <li>vyjadřuje příčinu, která vyvolává nějaký děj</li>
-                        <li>ptáme se: Proč?, Z jakého důvodu?</li>
-                        <li>
-                            tip: když se zeptáme "proč?" a odpovíme si
-                            "protože", tak je to PUpříč.
-                        </li>
-                        <li>
-                            příklad: Knihovna byla zavřena
-                            <span class="underlined">pro nemoc</span>.
-                        </li>
-                    </ul>
-                    <h3>účelu (PUuč.)</h3>
-                    <ul>
-                        <li>vyjadřuje, co je cílem děje</li>
-                        <li>ptáme se: Proč?, Za jakým účelem?</li>
-                        <li>
-                            tip: když se zeptáme "proč?" a odpovíme si "aby",
-                            tak je to PUuč.
-                        </li>
-                        <li>
-                            příklad: Maminka odešla
-                            <span class="underlined">nakoupit</span>.
-                        </li>
-                    </ul>
-                    <h3>podmínky (PUpodm.)</h3>
-                    <ul>
-                        <li>
-                            vyjadřuje podmínku, za které by se mohl děj
-                            uskutečnit
-                        </li>
-                        <li>ptáme se: Za jaké podmínky?, Kdy?</li>
-                        <li>
-                            příklad: Zahradní slavnost se bude konat
-                            <span class="underlined">za</span> pěkného
-                            <span class="underlined">počasí</span>.
-                        </li>
-                    </ul>
-                    <h3>přípustky (PUpříp.)</h3>
-                    <ul>
-                        <li>uvádí okolnost, která je v rozporu s dějem</li>
-                        <li>
-                            ptáme se: I přes co?, Navzdory čemu?, I přes jakou
-                            skutečnost?
-                        </li>
-                        <li>
-                            příklad:
-                            <span class="underlined">I přes</span> trvalý
-                            <span class="underlined">déšť</span> pojedeme na
-                            výlet.
-                        </li>
-                    </ul>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Příslovečná určení
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Příslovečná určení jsou větné členy, které vyjadřují okolnosti děje,
+            jako je čas, místo, způsob nebo míra. V tomto článku si podrobně
+            vysvětlíme, co jsou příslovečná určení, jak je rozpoznat a jak
+            správně používat v různých typech vět. Zaměříme se na různé druhy
+            příslovečných určení – časová, místní, způsobová, mírová a další – a
+            ukážeme si konkrétní příklady, které vám pomohou správně obohatit
+            vaše věty a vyjádřit podrobnosti o ději.
+        </p>
+    </div>
+    <h2>Základy</h2>
+    <ul>
+        <li>
+            <strong>závisí na podstatném jméně nebo příslovci</strong>
+        </li>
+        <li>vyjadřuje okolnosti nebo vztahy, za kterých probíhá děj</li>
+        <li>
+            nejčastěji je vyjádřeno příslovcem, podstatným jménem nebo zájmenem
+        </li>
+    </ul>
+    <h2>Druhy</h2>
+    <h3>místa (PUm.)</h3>
+    <ul>
+        <li>ptáme se: Kde?, Odkud?, Kudy?, Kam?</li>
+        <li>
+            příklad: procházet se
+            <span class="underlined">v pokoji</span>
+        </li>
+    </ul>
+    <h3>času (PUč.)</h3>
+    <ul>
+        <li>ptáme se: Kdy?, Odkdy?, Jak dlouho?, Jak často?</li>
+        <li>
+            příklad: vstávat
+            <span class="underlined">brzy</span>
+        </li>
+    </ul>
+    <h3>způsobu (PUzp.)</h3>
+    <ul>
+        <li>ptáme se: Jak?, Jakým způsobem?</li>
+        <li>
+            příklad: tvářit se
+            <span class="underlined">šťastně</span>
+        </li>
+    </ul>
+    <h3>příčiny, důvodu (PUpříč.)</h3>
+    <ul>
+        <li>vyjadřuje příčinu, která vyvolává nějaký děj</li>
+        <li>ptáme se: Proč?, Z jakého důvodu?</li>
+        <li>
+            tip: když se zeptáme "proč?" a odpovíme si "protože", tak je to
+            PUpříč.
+        </li>
+        <li>
+            příklad: Knihovna byla zavřena
+            <span class="underlined">pro nemoc</span>.
+        </li>
+    </ul>
+    <h3>účelu (PUuč.)</h3>
+    <ul>
+        <li>vyjadřuje, co je cílem děje</li>
+        <li>ptáme se: Proč?, Za jakým účelem?</li>
+        <li>
+            tip: když se zeptáme "proč?" a odpovíme si "aby", tak je to PUuč.
+        </li>
+        <li>
+            příklad: Maminka odešla
+            <span class="underlined">nakoupit</span>.
+        </li>
+    </ul>
+    <h3>podmínky (PUpodm.)</h3>
+    <ul>
+        <li>vyjadřuje podmínku, za které by se mohl děj uskutečnit</li>
+        <li>ptáme se: Za jaké podmínky?, Kdy?</li>
+        <li>
+            příklad: Zahradní slavnost se bude konat
+            <span class="underlined">za</span> pěkného
+            <span class="underlined">počasí</span>.
+        </li>
+    </ul>
+    <h3>přípustky (PUpříp.)</h3>
+    <ul>
+        <li>uvádí okolnost, která je v rozporu s dějem</li>
+        <li>ptáme se: I přes co?, Navzdory čemu?, I přes jakou skutečnost?</li>
+        <li>
+            příklad:
+            <span class="underlined">I přes</span> trvalý
+            <span class="underlined">déšť</span> pojedeme na výlet.
+        </li>
+    </ul>
+</section>

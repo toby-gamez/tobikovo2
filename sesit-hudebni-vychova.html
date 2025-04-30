@@ -1,136 +1,66 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sešit hudební výchovy - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar"></nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Sešit hudební výchovy</h1>
-                <div style="text-align: left">
-                    <span style="color: #9c9c9c"
-                        ><em>od nejnovějšího k nejstaršímu</em></span
-                    >
-                    <h2>Historie</h2>
-                    <a href="hv-historie.html">zde</a>
-                    <h2>Jazz</h2>
-                    <a href="hv-jazz.html">zde</a>
-                    <h2>Rock & Roll</h2>
-                    <a href="hv-rock-and-roll.html">zde</a>
-                    <h2>Symfonická báseň</h2>
-                    <a href="hv-basen.html">zde</a>
-                    <h2>Muzikál</h2>
-                    <a href="hv-muzikal.html">zde</a>
-                    <h2>Symfonie</h2>
-                    <a href="hv-symfonie.html">zde</a>
-                    <h2>Sonáta</h2>
-                    <a href="hv-sonata.html">zde</a>
-                    <h2>Oratorium</h2>
-                    <a href="hv-oratorium.html">zde</a>
-                    <h2>Kantáta</h2>
-                    <a href="hv-kantata.html">zde</a>
-                    <h2>Koncert</h2>
-                    <a href="hv-koncert.html">zde</a>
-                    <h2>Blues, spirituály a pracovní písně</h2>
-                    <a href="hv-pisne-pracovni.html">zde</a>
-                    <h2>Milostné písně</h2>
-                    <a href="hv-pisne-milostne.html">zde</a>
-                    <h2>Písně o vojnĕ</h2>
-                    <a href="hv-pisne-vojne.html">zde</a>
-                    <h2>Dělení</h2>
-                    <a href="hv-pisne-deleni.html">zde</a>
-                    <h2>Nástroje symfonického orchestru</h2>
-                    <a href="hv-symfonickeho-orchestru.html">zde</a>
-                    <h2>Lidové nástroje</h2>
-                    <a href="hv-lidove.html">zde</a>
-                    <h2>Orchestrální nástroje</h2>
-                    <a href="hv-orchestralni.html">zde</a>
-                    <h2>Leoš Janáček</h2>
-                    <a href="hv-janacek.html">zde</a>
-                    <h2>Fryderyk Chopin</h2>
-                    <a href="hv-chopin.html">zde</a>
-                    <h2>Antonín Dvořák</h2>
-                    <a href="hv-dvorak.html">zde</a>
-                    <h2>Bedřich Smetana</h2>
-                    <a href="hv-smetana.html">zde</a>
-                    <h2>Polyfonie a homofonie</h2>
-                    <a href="hv-pisne-poly-homo.html">zde</a>
-                    <h2>Takty a dirigování</h2>
-                    <a href="hv-takty-dirigovani.html">zde</a>
-                    <h2>Zpěvní hlasy</h2>
-                    <a href="hv-hlasy.html">zde</a>
-                    <h2>Noty a pomlky</h2>
-                    <a href="hv-noty-pomlky.html">zde</a>
-                    <h2>Znaménka síly</h2>
-                    <a href="hv-znamenka-sily.html">zde</a>
-                    <h2>Takty a předznamenání</h2>
-                    <a href="hv-takty.html">zde</a>
-                    <h2>Složení noty</h2>
-                    <a href="hv-slozeni-noty.html">zde</a>
-                    <h2>Jména not</h2>
-                    <a href="hv-jmena-not.html">zde</a>
-                    <br />
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Sešit hudební výchovy
+type: content
+-->
+<section id="only-content">
+    <span style="color: #9c9c9c"><em>od nejnovějšího k nejstaršímu</em></span>
+    <h2>Historie</h2>
+    <a href="hv-historie.html">zde</a>
+    <h2>Jazz</h2>
+    <a href="hv-jazz.html">zde</a>
+    <h2>Rock & Roll</h2>
+    <a href="hv-rock-and-roll.html">zde</a>
+    <h2>Symfonická báseň</h2>
+    <a href="hv-basen.html">zde</a>
+    <h2>Muzikál</h2>
+    <a href="hv-muzikal.html">zde</a>
+    <h2>Symfonie</h2>
+    <a href="hv-symfonie.html">zde</a>
+    <h2>Sonáta</h2>
+    <a href="hv-sonata.html">zde</a>
+    <h2>Oratorium</h2>
+    <a href="hv-oratorium.html">zde</a>
+    <h2>Kantáta</h2>
+    <a href="hv-kantata.html">zde</a>
+    <h2>Koncert</h2>
+    <a href="hv-koncert.html">zde</a>
+    <h2>Blues, spirituály a pracovní písně</h2>
+    <a href="hv-pisne-pracovni.html">zde</a>
+    <h2>Milostné písně</h2>
+    <a href="hv-pisne-milostne.html">zde</a>
+    <h2>Písně o vojnĕ</h2>
+    <a href="hv-pisne-vojne.html">zde</a>
+    <h2>Dělení</h2>
+    <a href="hv-pisne-deleni.html">zde</a>
+    <h2>Nástroje symfonického orchestru</h2>
+    <a href="hv-symfonickeho-orchestru.html">zde</a>
+    <h2>Lidové nástroje</h2>
+    <a href="hv-lidove.html">zde</a>
+    <h2>Orchestrální nástroje</h2>
+    <a href="hv-orchestralni.html">zde</a>
+    <h2>Leoš Janáček</h2>
+    <a href="hv-janacek.html">zde</a>
+    <h2>Fryderyk Chopin</h2>
+    <a href="hv-chopin.html">zde</a>
+    <h2>Antonín Dvořák</h2>
+    <a href="hv-dvorak.html">zde</a>
+    <h2>Bedřich Smetana</h2>
+    <a href="hv-smetana.html">zde</a>
+    <h2>Polyfonie a homofonie</h2>
+    <a href="hv-pisne-poly-homo.html">zde</a>
+    <h2>Takty a dirigování</h2>
+    <a href="hv-takty-dirigovani.html">zde</a>
+    <h2>Zpěvní hlasy</h2>
+    <a href="hv-hlasy.html">zde</a>
+    <h2>Noty a pomlky</h2>
+    <a href="hv-noty-pomlky.html">zde</a>
+    <h2>Znaménka síly</h2>
+    <a href="hv-znamenka-sily.html">zde</a>
+    <h2>Takty a předznamenání</h2>
+    <a href="hv-takty.html">zde</a>
+    <h2>Složení noty</h2>
+    <a href="hv-slozeni-noty.html">zde</a>
+    <h2>Jména not</h2>
+    <a href="hv-jmena-not.html">zde</a>
+    <br />
+</section>

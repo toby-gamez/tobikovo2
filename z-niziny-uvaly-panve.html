@@ -1,125 +1,49 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Nížiny, úvaly a pánve - Zeměpis - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar"></nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Nížiny, úvaly a pánve</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            V České republice se nachází několik významných
-                            nížin, úvalů a pánví, které tvoří část krajinné
-                            struktury. Největší nížinou je Polabská nížina,
-                            která leží podél řeky Labe a je významným
-                            zemědělským regionem. Další významné oblasti
-                            zahrnují Českomoravskou nížinu, která se táhne
-                            střední částí země, a západočeskou pánvi, která je
-                            známá svou geotermální aktivitou. Úvaly, jako
-                            například Brněnský nebo Hranický úval, jsou také
-                            součástí krajiny, která byla formována činností řek
-                            a geologickými procesy.
-                        </p>
-                    </div>
-                    <h2>Informace</h2>
-                    <div class="blog-image">
-                        <a href="images/niziny.png"
-                            ><img
-                                src="images/niziny.png"
-                                class="blog-image"
-                                width="300px"
-                        /></a>
-                        <p>mapa některých nížin ČR</p>
-                        <p>
-                            Zdroj:
-                            <a
-                                href="http://www.vyukovematerialy.cz/svet/rocnik5/foto/cesko/niziny.jpg"
-                                >vyukovematerialy.cz</a
-                            >
-                        </p>
-                    </div>
-                    <p>
-                        <strong>Nížiny</strong> jsou rozsáhlé oblasti s malými
-                        výškovými rozdíly, které se často nacházejí podél řek a
-                        jsou vhodné pro zemědělství. <strong>Pánve</strong> jsou
-                        prohlubně v krajině, které mohou být vyplněné sedimenty
-                        nebo vodou, často vznikají tektonickou činností nebo
-                        erozí. <strong>Úvaly</strong> jsou podlouhlé sníženiny
-                        mezi vyvýšenými oblastmi, obvykle vytvořené říční erozí,
-                        a často slouží jako přirozené dopravní cesty nebo
-                        zemědělské oblasti.
-                    </p>
-                    <ul>
-                        <li>Podkrušnohorská pánev</li>
-                        <li>Hornomoravský úval</li>
-                        <li>Dolnomoravský úval</li>
-                        <li>Polabská nížina</li>
-                        <li>Dyjskosvratecký úval</li>
-                        <li>Moravská brána</li>
-                    </ul>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Nížiny, úvaly a pánve
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            V České republice se nachází několik významných nížin, úvalů a
+            pánví, které tvoří část krajinné struktury. Největší nížinou je
+            Polabská nížina, která leží podél řeky Labe a je významným
+            zemědělským regionem. Další významné oblasti zahrnují Českomoravskou
+            nížinu, která se táhne střední částí země, a západočeskou pánvi,
+            která je známá svou geotermální aktivitou. Úvaly, jako například
+            Brněnský nebo Hranický úval, jsou také součástí krajiny, která byla
+            formována činností řek a geologickými procesy.
+        </p>
+    </div>
+    <h2>Informace</h2>
+    <div class="blog-image">
+        <a href="images/niziny.png"
+            ><img src="images/niziny.png" class="blog-image" width="300px"
+        /></a>
+        <p>mapa některých nížin ČR</p>
+        <p>
+            Zdroj:
+            <a
+                href="http://www.vyukovematerialy.cz/svet/rocnik5/foto/cesko/niziny.jpg"
+                >vyukovematerialy.cz</a
+            >
+        </p>
+    </div>
+    <p>
+        <strong>Nížiny</strong> jsou rozsáhlé oblasti s malými výškovými
+        rozdíly, které se často nacházejí podél řek a jsou vhodné pro
+        zemědělství. <strong>Pánve</strong> jsou prohlubně v krajině, které
+        mohou být vyplněné sedimenty nebo vodou, často vznikají tektonickou
+        činností nebo erozí. <strong>Úvaly</strong> jsou podlouhlé sníženiny
+        mezi vyvýšenými oblastmi, obvykle vytvořené říční erozí, a často slouží
+        jako přirozené dopravní cesty nebo zemědělské oblasti.
+    </p>
+    <ul>
+        <li>Podkrušnohorská pánev</li>
+        <li>Hornomoravský úval</li>
+        <li>Dolnomoravský úval</li>
+        <li>Polabská nížina</li>
+        <li>Dyjskosvratecký úval</li>
+        <li>Moravská brána</li>
+    </ul>
+</section>

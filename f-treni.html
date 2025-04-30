@@ -1,235 +1,136 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
+<!--
+title: Tření
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Tření je síla, která brání pohybu dvou povrchů vůči sobě. Vzniká v
+            důsledku mikroskopických nepravidelností na těchto površích. Tření
+            může být statické (brání pohybu) nebo kinetické (brání skluzu). Tato
+            síla má významný vliv na mnoho každodenních činností, od chůze po
+            jízdu vozidel.
+        </p>
+    </div>
+    <h2>Informace</h2>
+    <p>
+        Jevu, který nazýváme <strong>třecí síla</strong>, říkáme
+        <strong>tření</strong>.
+    </p>
+    <ul>
+        <li><strong>směr protipohybu</strong></li>
+        <li>vlastnosti třecí síly závisí na</li>
+        <ul>
+            <li><strong>hmotnosti tělesa</strong></li>
+            <li><strong>materiálu - drsnosti</strong></li>
+            <li>
+                <strong>velikosti ploch (dotýkajících se)</strong>
+            </li>
+        </ul>
+        <li>tření můžeme zvýšit</li>
+        <ul>
+            <li>podrážkami</li>
+            <li>posypáním</li>
+            <li>zimními pneumatikami</li>
+        </ul>
+        <li>tření můžeme snížit</li>
+        <ul>
+            <li>namazáním</li>
+            <li>odtížením</li>
+        </ul>
+    </ul>
+    <video src="videos/treni.mp4" type="video/mp4" controls width="300rem">
+        Video není k dispozici.
+    </video>
+    <h2>Ložiska</h2>
+    <h3>Kuličkové</h3>
+    <div class="blog-image">
+        <a href="images/lozisko-kulickove.png"
+            ><img
+                class="blog-image"
+                src="images/lozisko-kulickove.png"
+                width="100rem"
+                alt="kuličkové"
+        /></a>
+        <p>
+            Autor obrázku:
+            <a
+                href="//commons.wikimedia.org/wiki/User:Silberwolf"
+                title="User:Silberwolf"
+                >Silberwolf</a
+            >
+            – created by
+            <a
+                href="//commons.wikimedia.org/wiki/User:Silberwolf"
+                title="User:Silberwolf"
+                >Silberwolf</a
+            >,
+            <a
+                href="https://creativecommons.org/licenses/by/2.5"
+                title="Creative Commons Attribution 2.5"
+                >CC BY 2.5</a
+            >,
+            <a href="https://commons.wikimedia.org/w/index.php?curid=657845"
+                >Odkaz</a
+            >
+        </p>
+    </div>
+    <h4>Výhody</h4>
+    <ul>
+        <li>
+            <strong>schopnost přenášet radiální i axiální síly</strong>
+        </li>
+        <li>
+            <strong>schopnost pracovat ve velmi vysokých otáčkách</strong>
+        </li>
+        <li><strong>nízká cena</strong></li>
+        <li>montáž do převodovky nevyžaduje speciální postup</li>
+    </ul>
+    <h4>Nevýhody</h4>
+    <ul>
+        <li>
+            <strong>nezvládají přenést větší síly jako jiná ložiska</strong>
+        </li>
+    </ul>
+    <h3>Válečkové</h3>
+    <div class="blog-image">
+        <a href="images/valeckove-lozisko.png"
+            ><img
+                class="blog-image"
+                src="images/valeckove-lozisko.png"
+                width="100rem"
+                alt="válečkové"
+        /></a>
+        <p>
+            Autor obrázku:
+            <a
+                href="//commons.wikimedia.org/wiki/User:Silberwolf"
+                title="User:Silberwolf"
+                >Silberwolf</a
+            >
+            – created by
+            <a
+                href="//commons.wikimedia.org/wiki/User:Silberwolf"
+                title="User:Silberwolf"
+                >Silberwolf</a
+            >,
+            <a
+                href="https://creativecommons.org/licenses/by/2.5"
+                title="Creative Commons Attribution 2.5"
+                >CC BY 2.5</a
+            >,
+            <a href="https://commons.wikimedia.org/w/index.php?curid=657845"
+                >Odkaz</a
+            >
+        </p>
+    </div>
+    <h4>Výhody</h4>
+    <ul>
+        <li>
+            <strong>schopnost přenášet velké radiální síly</strong>
+        </li>
+        <li>montáž do převodovky nevyžaduje speciální postup</li>
+    </ul>
 
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Tření - Fyzika - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-        <nav id="myNavbar">
-            <a href="#home"
-                ><img src="images/white-logo.png" alt="Logo" width="75px"
-            /></a>
-            <a href="#home">Domů</a>
-            <a href="#ucivo">Učivo</a>
-            <a href="#o-nas">O nás</a>
-        </nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Tření</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Tření je síla, která brání pohybu dvou povrchů vůči
-                            sobě. Vzniká v důsledku mikroskopických
-                            nepravidelností na těchto površích. Tření může být
-                            statické (brání pohybu) nebo kinetické (brání
-                            skluzu). Tato síla má významný vliv na mnoho
-                            každodenních činností, od chůze po jízdu vozidel.
-                        </p>
-                    </div>
-                    <h2>Informace</h2>
-                    <p>
-                        Jevu, který nazýváme <strong>třecí síla</strong>, říkáme
-                        <strong>tření</strong>.
-                    </p>
-                    <ul>
-                        <li><strong>směr protipohybu</strong></li>
-                        <li>vlastnosti třecí síly závisí na</li>
-                        <ul>
-                            <li><strong>hmotnosti tělesa</strong></li>
-                            <li><strong>materiálu - drsnosti</strong></li>
-                            <li>
-                                <strong
-                                    >velikosti ploch (dotýkajících se)</strong
-                                >
-                            </li>
-                        </ul>
-                        <li>tření můžeme zvýšit</li>
-                        <ul>
-                            <li>podrážkami</li>
-                            <li>posypáním</li>
-                            <li>zimními pneumatikami</li>
-                        </ul>
-                        <li>tření můžeme snížit</li>
-                        <ul>
-                            <li>namazáním</li>
-                            <li>odtížením</li>
-                        </ul>
-                    </ul>
-                    <video
-                        src="videos/treni.mp4"
-                        type="video/mp4"
-                        controls
-                        width="300rem"
-                    >
-                        Video není k dispozici.
-                    </video>
-                    <h2>Ložiska</h2>
-                    <h3>Kuličkové</h3>
-                    <div class="blog-image">
-                        <a href="images/lozisko-kulickove.png"
-                            ><img
-                                class="blog-image"
-                                src="images/lozisko-kulickove.png"
-                                width="100rem"
-                                alt="kuličkové"
-                        /></a>
-                        <p>
-                            Autor obrázku:
-                            <a
-                                href="//commons.wikimedia.org/wiki/User:Silberwolf"
-                                title="User:Silberwolf"
-                                >Silberwolf</a
-                            >
-                            – created by
-                            <a
-                                href="//commons.wikimedia.org/wiki/User:Silberwolf"
-                                title="User:Silberwolf"
-                                >Silberwolf</a
-                            >,
-                            <a
-                                href="https://creativecommons.org/licenses/by/2.5"
-                                title="Creative Commons Attribution 2.5"
-                                >CC BY 2.5</a
-                            >,
-                            <a
-                                href="https://commons.wikimedia.org/w/index.php?curid=657845"
-                                >Odkaz</a
-                            >
-                        </p>
-                    </div>
-                    <h4>Výhody</h4>
-                    <ul>
-                        <li>
-                            <strong
-                                >schopnost přenášet radiální i axiální
-                                síly</strong
-                            >
-                        </li>
-                        <li>
-                            <strong
-                                >schopnost pracovat ve velmi vysokých
-                                otáčkách</strong
-                            >
-                        </li>
-                        <li><strong>nízká cena</strong></li>
-                        <li>
-                            montáž do převodovky nevyžaduje speciální postup
-                        </li>
-                    </ul>
-                    <h4>Nevýhody</h4>
-                    <ul>
-                        <li>
-                            <strong
-                                >nezvládají přenést větší síly jako jiná
-                                ložiska</strong
-                            >
-                        </li>
-                    </ul>
-                    <h3>Válečkové</h3>
-                    <div class="blog-image">
-                        <a href="images/valeckove-lozisko.png"
-                            ><img
-                                class="blog-image"
-                                src="images/valeckove-lozisko.png"
-                                width="100rem"
-                                alt="válečkové"
-                        /></a>
-                        <p>
-                            Autor obrázku:
-                            <a
-                                href="//commons.wikimedia.org/wiki/User:Silberwolf"
-                                title="User:Silberwolf"
-                                >Silberwolf</a
-                            >
-                            – created by
-                            <a
-                                href="//commons.wikimedia.org/wiki/User:Silberwolf"
-                                title="User:Silberwolf"
-                                >Silberwolf</a
-                            >,
-                            <a
-                                href="https://creativecommons.org/licenses/by/2.5"
-                                title="Creative Commons Attribution 2.5"
-                                >CC BY 2.5</a
-                            >,
-                            <a
-                                href="https://commons.wikimedia.org/w/index.php?curid=657845"
-                                >Odkaz</a
-                            >
-                        </p>
-                    </div>
-                    <h4>Výhody</h4>
-                    <ul>
-                        <li>
-                            <strong
-                                >schopnost přenášet velké radiální síly</strong
-                            >
-                        </li>
-                        <li>
-                            montáž do převodovky nevyžaduje speciální postup
-                        </li>
-                    </ul>
-
-                    <br />
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+    <br />
+</section>

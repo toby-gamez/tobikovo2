@@ -1,98 +1,28 @@
-<!doctype html>
-<html lang="cs">
-    <head>
-        <!-- Google Consent Mode -->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-
-            // Výchozí stav: souhlas odepřen
-            gtag("consent", "default", {
-                analytics_storage: "denied",
-            });
-            console.log("Google Consent Mode initialized with default: denied");
-        </script>
-
-        <!-- Google Analytics (nenačte se automaticky) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-1CDLST0SSK"
-        ></script>
-        <script>
-            function loadGoogleAnalytics() {
-                console.log("Loading Google Analytics...");
-                gtag("js", new Date());
-                gtag("config", "G-1CDLST0SSK");
-                console.log("Google Analytics loaded.");
-            }
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Promile - Matematika - Tobiso</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" href="css/nav.css" />
-        <link rel="stylesheet" href="css/grid.css" />
-        <link rel="icon" href="images/favicon.png" />
-    </head>
-
-    <body>
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-
-        <nav id="myNavbar"></nav>
-        <button class="openNav opennav-button" onclick="openNav()">☰</button>
-
-        <!-- Obsah stránky -->
-        <main>
-            <section>
-                <h1 class="verybig">Promile</h1>
-                <div style="text-align: left">
-                    <div class="intro">
-                        <p>
-                            Promile je jednotka, která vyjadřuje jednu tisícinu
-                            celku. Zkratka promile je ‰, což znamená, že 1
-                            promile je 1/1000 nebo 0,1 %. Promile se často
-                            používá k vyjádření malých částí celku, například
-                            při měření alkoholu v krvi. Pokud například obsah
-                            alkoholu v krvi je 0,5 ‰, znamená to, že na 1000
-                            dílů krve připadá 0,5 dílu alkoholu.
-                        </p>
-                    </div>
-                    <h2>Informace</h2>
-                    <ul>
-                        <li>1‰ je 1/1000 a 0,001</li>
-                        <li>např. 1 ‰ z 35 = 35 × 0,001 = 0,035</li>
-                        <li>1000/1000 je základ</li>
-                        <li>1000/1000 = 1000 ‰ = 1</li>
-                    </ul>
-                    <p>
-                        Máme 6l krve. Naměřili jsme v krvi 5 promile alkoholu.
-                        Kolik je alkoholu v krvi?
-                    </p>
-                    <p>5‰ z 6l = 30</p>
-                    <p>V krvi je 30 ml alkoholu.</p>
-                    <button onclick="window.history.back()">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <!-- Patička -->
-        <footer>
-            <div class="footer-content">
-                <a href="about.html"
-                    ><img
-                        src="images/white-logo.png"
-                        alt="Tobikovo Logo"
-                        width="100px"
-                /></a>
-            </div>
-        </footer>
-        <!-- JSs -->
-        <script src="javastripts/nav.js"></script>
-    </body>
-</html>
+<!--
+title: Promile
+type: content
+-->
+<section id="only-content">
+    <div class="intro">
+        <p>
+            Promile je jednotka, která vyjadřuje jednu tisícinu celku. Zkratka
+            promile je ‰, což znamená, že 1 promile je 1/1000 nebo 0,1 %.
+            Promile se často používá k vyjádření malých částí celku, například
+            při měření alkoholu v krvi. Pokud například obsah alkoholu v krvi je
+            0,5 ‰, znamená to, že na 1000 dílů krve připadá 0,5 dílu alkoholu.
+        </p>
+    </div>
+    <h2>Informace</h2>
+    <ul>
+        <li>1‰ je 1/1000 a 0,001</li>
+        <li>např. 1 ‰ z 35 = 35 × 0,001 = 0,035</li>
+        <li>1000/1000 je základ</li>
+        <li>1000/1000 = 1000 ‰ = 1</li>
+    </ul>
+    <p>
+        Máme 6l krve. Naměřili jsme v krvi 5 promile alkoholu. Kolik je alkoholu
+        v krvi?
+    </p>
+    <p>5‰ z 6l = 30</p>
+    <p>V krvi je 30 ml alkoholu.</p>
+</section>
