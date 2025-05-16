@@ -188,6 +188,36 @@ type: content
         120 km, vyjedou současně proti sobě dva cyklisté. První jede rychlostí
         20 km/h, druhý 25 km/h. Za jak dlouho se potkají?
     </p>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Vzdálenost (km)</th>
+                <th>Rychlost (km/h)</th>
+                <th>Čas (h)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>První cyklista</td>
+                <td>20x</td>
+                <td>20</td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <td>Druhý cyklista</td>
+                <td>25x</td>
+                <td>25</td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <td>Celkem</td>
+                <td>120</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
     <p>Řešení:</p>
     <ul>
         <li>x = čas v hodinách do setkání</li>
@@ -207,6 +237,30 @@ type: content
         15 km/h. Ve 12:00 za ním vyrazí z téhož místa druhý cyklista rychlostí
         25 km/h. V kolik hodin druhý cyklista dojede prvního?
     </p>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Vzdálenost (km)</th>
+                <th>Rychlost (km/h)</th>
+                <th>Čas (h)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>První cyklista</td>
+                <td>15(x + 4)</td>
+                <td>15</td>
+                <td>x + 4</td>
+            </tr>
+            <tr>
+                <td>Druhý cyklista</td>
+                <td>25x</td>
+                <td>25</td>
+                <td>x</td>
+            </tr>
+        </tbody>
+    </table>
     <p>Řešení:</p>
     <ul>
         <li>x = počet hodin od startu druhého cyklisty</li>
@@ -220,5 +274,155 @@ type: content
     <p>
         <strong>Odpověď:</strong> Druhý cyklista dojede prvního v 18:00 (6 hodin
         po svém startu).
+    </p>
+    <h3>Úlohy o směsích</h3>
+    <p>
+        Lineární rovnice lze využít i při řešení úloh o směsích, například při
+        počítání celkové ceny ovoce, když známe ceny a počty jednotlivých druhů.
+    </p>
+    <p>
+        <strong>Příklad 1:</strong> V obchodě koupili celkem 12 kg ovoce –
+        jablek a hrušek. Jablka stojí 30 Kč za kg, hrušky 40 Kč za kg. Kolik
+        kilogramů jablek a kolik kilogramů hrušek koupili, když celkem zaplatili
+        420 Kč?
+    </p>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Počet kg</th>
+                <th>Cena za 1 kg (Kč)</th>
+                <th>Celková cena (Kč)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jablka</td>
+                <td>x</td>
+                <td>30</td>
+                <td>30x</td>
+            </tr>
+            <tr>
+                <td>Hrušky</td>
+                <td>12 - x</td>
+                <td>40</td>
+                <td>40(12 - x)</td>
+            </tr>
+            <tr>
+                <td>Celkem</td>
+                <td>12</td>
+                <td></td>
+                <td>420</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Řešení:</p>
+    <ul>
+        <li>x = počet kg jablek</li>
+        <li>počet kg hrušek = 12 - x</li>
+        <li>rovnice: 30x + 40(12 - x) = 420</li>
+        <li>30x + 480 - 40x = 420</li>
+        <li>-10x + 480 = 420</li>
+        <li>-10x = -60</li>
+        <li>x = 6</li>
+        <li>počet kg hrušek = 12 - 6 = 6</li>
+    </ul>
+    <p><strong>Odpověď:</strong> Koupili 6 kg jablek a 6 kg hrušek.</p>
+    <p>
+        <strong>Příklad 2:</strong> Rýže stojí 28 Kč za kg, čočka 36 Kč za kg.
+        Kolik kg rýže a kolik kg čočky koupíme, když chceme celkem 10 kg směsi
+        za 320 Kč?
+    </p>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Počet kg</th>
+                <th>Cena za 1 kg (Kč)</th>
+                <th>Celková cena (Kč)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Rýže</td>
+                <td>x</td>
+                <td>28</td>
+                <td>28x</td>
+            </tr>
+            <tr>
+                <td>Čočka</td>
+                <td>10 - x</td>
+                <td>36</td>
+                <td>36(10 - x)</td>
+            </tr>
+            <tr>
+                <td>Celkem</td>
+                <td>10</td>
+                <td></td>
+                <td>320</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Řešení:</p>
+    <ul>
+        <li>x = počet kg rýže</li>
+        <li>počet kg čočky = 10 - x</li>
+        <li>rovnice: 28x + 36(10 - x) = 320</li>
+        <li>28x + 360 - 36x = 320</li>
+        <li>-8x + 360 = 320</li>
+        <li>-8x = -40</li>
+        <li>x = 5</li>
+        <li>počet kg čočky = 10 - 5 = 5</li>
+    </ul>
+    <p><strong>Odpověď:</strong> Koupíme 5 kg rýže a 5 kg čočky.</p>
+    <p>
+        <strong>Příklad 3:</strong> Ořechy stojí 25 Kč za kg, rozinky 35 Kč za
+        kg. Kolik kg ořechů a kolik kg rozinek koupíme, když ořechů bude o 2 kg
+        více než rozinek a celkem zaplatíme 300 Kč?
+    </p>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Počet kg</th>
+                <th>Cena za 1 kg (Kč)</th>
+                <th>Celková cena (Kč)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ořechy</td>
+                <td>x</td>
+                <td>25</td>
+                <td>25x</td>
+            </tr>
+            <tr>
+                <td>Rozinky</td>
+                <td>x - 2</td>
+                <td>35</td>
+                <td>35(x - 2)</td>
+            </tr>
+            <tr>
+                <td>Celkem</td>
+                <td>2x - 2</td>
+                <td></td>
+                <td>300</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Řešení:</p>
+    <ul>
+        <li>x = počet kg ořechů</li>
+        <li>počet kg rozinek = x - 2</li>
+        <li>rovnice: 25x + 35(x - 2) = 300</li>
+        <li>25x + 35x - 70 = 300</li>
+        <li>60x - 70 = 300</li>
+        <li>60x = 370</li>
+        <li>x = 6,17</li>
+        <li>počet kg rozinek = 6,17 - 2 = 4,17</li>
+    </ul>
+    <p>
+        <strong>Odpověď:</strong> Koupíme přibližně 6,17 kg ořechů a 4,17 kg
+        rozinek.
     </p>
 </section>

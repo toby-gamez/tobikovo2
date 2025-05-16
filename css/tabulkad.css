@@ -23,14 +23,11 @@ th {
 
 td:first-child {
     background-color: #ff946c;
-    color: white !important;
 }
 
 p {
     margin: 10px;
 }
-
-
 
 td.dark-mode {
     background-color: #942700;

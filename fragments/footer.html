@@ -1,12 +1,17 @@
     </section>
        </main>
         <footer>
+            <p>© 2025, Všechna práva vyhrazena</p>
             <div class="footer-content">
-    <p>© 2025, Všechna práva vyhrazena</p>
-    <a href="privacy-policy-cs.html">Zásady ochrany osobních údajů</a>
-    <a href="about.html">O mně</a>
-    </div>
-    </footer>
+                <button onclick="navigateTo('privacy-policy-cs.html')">Zásady ochrany osobních údajů</button>
+                <button onclick="navigateTo('about.html')">O mně</button>
+                <script>
+                    function navigateTo(url) {
+                        window.location.href = url;
+                    }
+                </script>
+            </div>
+        </footer>
     <script src="https://unpkg.com/lunr/lunr.js"></script>
     <script src="js/script.js"></script>
 </body>

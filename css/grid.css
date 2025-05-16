@@ -9,40 +9,37 @@
     padding: 0;
     margin: 0;
 }
-
-@media screen and (min-width: 1576px) {
-    .grid-predmety {
-        grid-template-columns: repeat(6, 1fr);
-    }
+.grid-predmety {
+    grid-template-columns: repeat(1, 1fr); /* výchozí pro mobily */
 }
 
-@media screen and (max-width: 1699px) and (min-width: 1576px) {
-    .grid-predmety {
-        grid-template-columns: repeat(5, 1fr);
-    }
-}
-
-@media screen and (max-width: 1101px) and (min-width: 1101px) {
-    .grid-predmety {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-@media screen and (max-width: 1024px) and (min-width: 1024px) {
-    .grid-predmety {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media screen and (max-width: 690px) and (min-width: 690px) {
+@media (min-width: 690px) {
     .grid-predmety {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media screen and (max-width: 600px) and (min-width: 600px) {
+@media (min-width: 1101px) {
     .grid-predmety {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1101px) {
+    .grid-predmety {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 1345px) {
+    .grid-predmety {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media (min-width: 1699px) {
+    .grid-predmety {
+        grid-template-columns: repeat(6, 1fr);
     }
 }
 

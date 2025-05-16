@@ -152,7 +152,7 @@
   {
     "title": "Mluvnické kategorie sloves",
     "url": "ml-mluv-kat-slovesa.html",
-    "content": "osoba, číslo, způsob, čas, rod"
+    "content": "osoba, číslo, způsob, čas, rod, vid, dokonavá, nedokonavá"
   },
   {
     "title": "Tvar jednoduchý a složený",
@@ -487,7 +487,7 @@
   {
     "title": "Hudební historie",
     "url": "hv-historie.html",
-    "content": "První hudební projevy člověka, Řecko, Řím, Středověk, Orfeus, Apollón, Dionýsos, Seikelova píseň, papež Gregor (Řehoř I. Veliký), Gregoriánský chorál, Trubadúři, Trouvéři, Minnesängři, renesance, Giovanni da Palestrina, Orlando di Lasso, opera, Claudio Monteverdi, Jacopo Peri, dějství, akt, předehra, zpěv, Georg, Friedrich Händel, Mesiáš, Hudba k ohňostroji, Antonio Vivaldi, Čtvero ročních dob, Johann Sebastian Bach, Toccata a fuga d moll, Klasicismus, komorní hudba, Josef Haydn, Wolfgang Amadeus Mozart, Ludwig van Beethoven"
+    "content": "První hudební projevy člověka, Řecko, Řím, Středověk, Orfeus, Apollón, Dionýsos, Seikelova píseň, papež Gregor (Řehoř I. Veliký), Gregoriánský chorál, Trubadúři, Trouvéři, Minnesängři, renesance, Giovanni da Palestrina, Orlando di Lasso, opera, Claudio Monteverdi, Jacopo Peri, dějství, akt, předehra, zpěv, Georg, Friedrich Händel, Mesiáš, Hudba k ohňostroji, Antonio Vivaldi, Čtvero ročních dob, Johann Sebastian Bach, Toccata a fuga d moll, Klasicismus, komorní hudba, Josef Haydn, Wolfgang Amadeus Mozart, Ludwig van Beethoven, Giuseppe Verdi, Richard Wagner, Georges Bizet, Peter Iljič Čajkovskij, Labutí jezero, Louskáček, La travia, Nabucco"
   },
   {
     "title": "Jména not",
@@ -1112,7 +1112,7 @@
   {
     "title": "Nauka o slovní zásobě",
     "url": "ml-slovni-zasoba.html",
-    "content": "nadřazená, souřadná, podřazená, sousloví, přísloví, rčení, pořekadlo, pranostika, slovní zásoba, jednoznačná, mnohoznačná, metafora, metonymie, synonyma, homonyma, antonyma, odvozování, rozbor slova, slovotvorný rozbor, odvozené slovo, přechylování, skládání, složeniny, spojovací samohláska"
+    "content": "nadřazená, souřadná, podřazená, sousloví, přísloví, rčení, pořekadlo, pranostika, slovní zásoba, jednoznačná, mnohoznačná, metafora, metonymie, synonyma, homonyma, antonyma, odvozování, rozbor slova, slovotvorný rozbor, odvozené slovo, přechylování, skládání, složeniny, spojovací samohláska, zkracování, zkratková slova, archaismy, historismy, slovo"
   },
   {
     "title": "Zeměpis",
@@ -1177,12 +1177,12 @@
   {
     "title": "Lineární rovnice",
     "url": "m-linearni-rovnice.html",
-    "content": "proměnná, rovnice, řešení, graf, souřadnice, soustava rovnic, Pohybové úlohy s odlišným časem startu, Pohybové úlohy proti sobě, Koláčové rovnice"
+    "content": "proměnná, rovnice, řešení, graf, souřadnice, soustava rovnic, Pohybové úlohy s odlišným časem startu, Pohybové úlohy proti sobě, Koláčové rovnice, úlohy o směsích"
   },
   {
     "title": "Rozdělení prvků",
     "url": "ch-rozdeleni-prvku.html",
-    "content": "plynné, kapalné, pevné, kovy, nekovy, slitiny, polokovy, kujnost"
+    "content": "plynné, kapalné, pevné, kovy, nekovy, slitiny, polokovy, kujnost, Kovy alkalických zemin, Alkalické kovy"
   },
   {
     "title": "Motory",
@@ -1197,7 +1197,7 @@
   {
     "title": "Jednotlivé prvky",
     "url": "ch-jednotlive-prvky.html",
-    "content": "vodík, kyslík, dusík, síra, fosfor"
+    "content": "vodík, kyslík, dusík, síra, fosfor, fluor, chrol, brom, jód, železo, hliník, měď, stříbro, zlato, rtuť, zinek, olovo, cín"
   },
   {
     "title": "Elektřina",
@@ -1228,6 +1228,336 @@
     "title": "Nervová soustava",
     "url": "pr-nervova-sous.html",
     "content": "neuron, mozek, reflex, koncový mozek, prodloužená mícha, Varolův most, mozeček, střední mozek, mezimozek, zánět pozkových blan, epilepsie, otřes mozku, cévní mozková příhoda, mrtvice, migréna, schizofrenie, bipolární porucha, demence, autismus, ADHD, OCD, kleptománie, drogy"
+  },
+  {
+    "title": "Realismus ve světové literatuře",
+    "url": "li-realismus-svet.html",
+    "content": "Nikolaj Vasiljevič Gogol, Lev Nikolajevič Tolstoj, Fjodor Michajlovič Dostojevskij, Anton Pavlovič Čechov, Honoré de Balzac, Stendhal, Gustave Flaubert, Émile Zola, Guy de Maupassant, Jules Verne, Charles Dickens, Charlotte Brontëová, Hans Christian Andersen, Mark Twain, Henryk Sienkiewicz, Revizor, Mrtvé duše, Vojna a mír, Anna Kareninová, Zločin a trest, Idiot, Bratři Karamazovi, Višňový sad, Racek, Otec Goriot, Ztracené iluze, Červený a černý, Paní Bovaryová, Zabiják, Nana, Kulička, Miláček, Cesta do středu Země, Dvacet tisíc mil pod mořem, Cesta kolem světa za 80 dní, Oliver Twist, Nadějné vyhlídky, Jana Eyrová, Malá mořská víla, Ošklivé káčátko, Císařovy nové šaty, Dobrodružství Toma Sawyera, Dobrodružství Huckleberryho Finna, Quo vadis, Ohněm a mečem"
+  },
+  {
+    "title": "Realismus v české literatuře",
+    "url": "li-realismus-cesko.html",
+    "content": "Božena Němcová, Barbora Panklová, Babička, Karel Havlíček Borovský, Národní noviny, Slovan, Tyrolské elegie, Král Lávra, Křest svatého Vladimíra, Epigramy"
+  },
+  {
+    "title": "Smyslová soustava",
+    "url": "pr-smyslova-sous.html",
+    "content": "zrak, sluch, čich, hmat, chuť"
+  },
+  {
+    "title": "Informace o regionech",
+    "url": "z-info-regiony.html",
+    "content": "NUTS, kraje, jednotka"
+  },
+  {
+    "title": "Středočeský kraj",
+    "url": "z-kraj-stredocesky.html",
+    "content": "Praha, největší kraj, nejlidnatější kraj, Tok, Brdy, Polabská nížina, Středočeská pahorkatina, Křivoklátsko, Vltava, Labe, Berounka, Sázava, Jizera, Ohře, Škoda Auto Mladá, Boleslav, Kralupy nad Vltavou, Neratovice, Kladno, Poděbrady, Karlštejn, Křivoklát, Konopiště, Kutná Hora UNESCO, Český kras, Blaník, D1, D5, D8, D10, D11, obyvatelstvo, průmysl, zemědělství, turistika, památky, doprava"
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
+  },
+  {
+    "title": "x",
+    "url": ".html",
+    "content": ""
   },
   {
     "title": "x",

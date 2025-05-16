@@ -4,6 +4,7 @@ p,
 li,
 ul,
 textarea,
+.email-input,
 .opinion-input,
 #search {
     font-family: "Zilla Slab", serif;
@@ -152,9 +153,7 @@ section {
 section #only-content {
     padding: 0;
     display: block;
-}
-
-section:has(div) {
+    text-align: left;
 }
 
 section:has(ul.grid),
@@ -242,8 +241,7 @@ main a:hover {
 .blog-image {
     display: block;
     float: right;
-    max-width: 300px;
-    min-width: 100px;
+    max-width: 150px;
     margin-left: 20px;
 }
 
@@ -319,12 +317,6 @@ button:disabled {
 }
 
 @media only screen and (max-width: 600px) {
-    button {
-        cursor: pointer;
-        font-size: 16px;
-        padding: 10px 20px;
-    }
-
     .nav-button,
     .opennav-button {
         font-size: 50px;
@@ -342,6 +334,7 @@ mi {
 }
 
 textarea,
+.email-input,
 .opinion-input,
 #search {
     border-radius: 10px;
@@ -356,13 +349,13 @@ textarea {
     overflow: hidden;
     resize: none;
 }
-
+.email-input,
 .opinion-input,
 #search {
     width: 20rem;
     margin-bottom: 1rem;
 }
-
+.email-input:focus,
 .opinion-input:focus,
 #search:focus,
 textarea:focus {
@@ -375,6 +368,22 @@ textarea:focus {
         min-width: 50rem;
         min-height: 25rem;
         max-width: 60rem;
+        max-height: 15rem;
+    }
+}
+@media only screen and (max-width: 1199px) and (min-width: 950px) {
+    textarea {
+        min-width: 35rem;
+        min-height: 18rem;
+        max-width: 15rem;
+        max-height: 12rem;
+    }
+}
+@media only screen and (min-width: 740px) and (max-width: 949px) {
+    textarea {
+        min-width: 25rem;
+        min-height: 15rem;
+        max-width: 25rem;
         max-height: 15rem;
     }
 }
@@ -462,9 +471,9 @@ textarea:focus {
 }
 
 #closeSearch {
-    position: absolute;
     top: 10px;
     right: 15px;
+    margin-left: auto;
     font-size: 24px;
     cursor: pointer;
     padding: 0 10px;
@@ -477,6 +486,7 @@ textarea:focus {
 }
 #search {
     margin: 20px auto 10px;
+    margin-top: 0;
 }
 
 #results {
@@ -663,6 +673,7 @@ p.dark-mode,
 li.dark-mode,
 ul.dark-mode,
 textarea.dark-mode,
+.email-input.dark-mode,
 .opinion-input.dark-mode,
 #search.dark-mode,
 .version-info.dark-mode,
@@ -712,6 +723,7 @@ main a.dark-mode:hover {
 }
 
 .opinion-input.dark-mode,
+.email-input.dark-mode,
 #search.dark-mode,
 textarea.dark-mode {
     border: 2px solid #942700;
@@ -719,6 +731,7 @@ textarea.dark-mode {
 }
 
 .opinion-input.dark-mode:focus,
+.email-input.dark-mode:focus,
 #search.dark-mode:focus,
 textarea.dark-mode:focus {
     border: 2px solid #fcede9;

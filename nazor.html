@@ -1,44 +1,124 @@
 <!--
-title: Názor
+title: Zpětná vazba
 type: content
 -->
+
 <section id="only-content">
+    <style>
+        .success-message {
+            display: none;
+            color: #27ae60;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .error-message {
+            display: none;
+            color: #e74c3c;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+    </style>
     <h2>Přidat</h2>
-    <p>Napište nám svou zpětnou vazbu:</p>
+    <p>
+        V této verzi již funguje zpětná vazba, vše, co se Vám nelíbí nebo byste
+        chtěli změnit mi zde můžete napsat.
+    </p>
     <div>
-        <input
-            type="text"
-            id="author-input"
-            class="opinion-input"
-            placeholder="Vaše jméno"
-        />
-        <br />
-        <textarea placeholder="Zde napište svou zpětnou vazbu"></textarea>
-        <br />
-        <button onclick="addOpinion()">Přidat zpětnou vazbu</button>
-    </div>
-
-    <h2>Zpětná vazba ostatních</h2>
-    <p>
-        <em
-            >Poznámka #1: Tato verze stránky neumožňuje ukládat zpětnou vazbu,
-            již je ale vyvinut Blazor, kde to funguje. Zatím jsou ale zpětné
-            vazby pouze jako doplnění funkcí mezi Blazorem a touto verzí. Teď se
-            tyto názory jen uloží do LocalStorage.</em
+        <!-- Formspree formulář s veřejným ID -->
+        <form
+            id="feedbackForm"
+            action="https://formspree.io/f/mqaqnlld"
+            method="POST"
         >
-    </p>
-
-    <p>
-        <em
-            >Poznámka #2: Pokud ale přesto budete chtít mi napsat, můžete využít
-            e-mail
-            <a href="mailto:henematobik213@gmail.com?subject=Pomoc pro Tobikovo"
-                >zde</a
-            >.</em
+            <input
+                type="text"
+                name="name"
+                class="opinion-input"
+                placeholder="Vaše jméno"
+                required
+            />
+            <input
+                type="email"
+                name="email"
+                class="email-input"
+                placeholder="Váš e-mail"
+                required
+            />
+            <textarea
+                name="message"
+                placeholder="Zde napište svou zpětnou vazbu"
+                required
+            ></textarea>
+            <button type="submit">Odeslat zpětnou vazbu</button>
+        </form>
+        <div class="success-message" id="successMessage">
+            Děkujeme! Vaše zpětná vazba byla úspěšně odeslána.
+        </div>
+        <div
+            class="error-message"
+            id="errorMessage"
+            style="
+                display: none;
+                color: #e74c3c;
+                font-weight: bold;
+                margin-top: 15px;
+            "
         >
-    </p>
-    <span style="color: #9c9c9c"><em>od nejnovějšího k nejstaršímu</em></span>
-    <div class="opinions-container" id="opinions-container">
-        <!-- Názory se načítají sem -->
+            Při odesílání došlo k chybě. Prosím zkuste to znovu.
+        </div>
     </div>
+    <script>
+        // JavaScript pro zpracování odeslání formuláře a zobrazení zpětné vazby
+        document
+            .getElementById("feedbackForm")
+            .addEventListener("submit", function (event) {
+                event.preventDefault(); // Zastavíme výchozí chování formuláře
+
+                var form = this;
+                var formData = new FormData(form);
+                var button = form.querySelector("button");
+                var originalButtonText = button.textContent;
+
+                // Změníme text tlačítka na "Odesílání..."
+                button.textContent = "Odesílání...";
+                button.disabled = true;
+
+                // Odešleme data na Formspree pomocí fetch API
+                fetch(form.action, {
+                    method: form.method,
+                    body: formData,
+                    headers: {
+                        Accept: "application/json",
+                    },
+                })
+                    .then((response) => response.json())
+                    .then((data) => {
+                        if (data.ok) {
+                            // Úspěšné odeslání
+                            document.getElementById(
+                                "feedbackForm",
+                            ).style.display = "none";
+                            document.getElementById(
+                                "successMessage",
+                            ).style.display = "block";
+                        } else {
+                            // Chyba při odesílání
+                            throw new Error("Chyba při odesílání formuláře");
+                        }
+                    })
+                    .catch((error) => {
+                        // Zobrazení chybové zprávy
+                        button.textContent = "Chyba! Zkuste to znovu.";
+                        setTimeout(() => {
+                            button.textContent = originalButtonText;
+                            button.disabled = false;
+                        }, 3000);
+                        console.error("Error:", error);
+                        alert(
+                            "Došlo k chybě při odesílání formuláře. Zkuste to prosím znovu.",
+                        );
+                    });
+            });
+    </script>
 </section>
