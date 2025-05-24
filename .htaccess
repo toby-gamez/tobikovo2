@@ -1,0 +1,18 @@
+# Zapnutí mod_rewrite
+RewriteEngine On
+
+# Výchozí stránka
+DirectoryIndex index.html
+
+# Přesměrování z /neco.html na /neco (SEO friendly)
+RewriteCond %{THE_REQUEST} \s/([^.]+)\.html [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# Interní přepis z /neco na /neco.html (jen pokud .html existuje)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# Vlastní 404 stránka
+ErrorDocument 404 /404.html
