@@ -689,8 +689,10 @@ h5.dark-mode,
 #MyNavBar .nav-item.dark-mode {
     color: #fcede9;
 }
+.version-info.dark-mode {
+    border-top: 3px solid #942700;
+}
 
-.navImg:hover.dark-mode,
 #MyNavBar .nav-link.dark-mode:hover {
     background-color: #942700;
 }
@@ -742,7 +744,6 @@ img:not(.navImg, footer img).dark-mode,
 video.dark-mode {
     border: 5px solid #942700;
 }
-
 .underlined.dark-mode::selection {
     background-color: #fb8241;
     color: #382a27;
@@ -850,4 +851,7 @@ video.dark-mode {
 }
 .intro.dark-mode {
     background-color: #2e0d00;
+}
+a:has(.navImg).dark-mode {
+    border-bottom: 3px solid #942700;
 }
